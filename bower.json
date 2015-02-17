@@ -1,0 +1,45 @@
+{
+  "name": "availity-uikit",
+  "description": "Availity UI Kit powered by Bootstrap 3",
+  "version": "0.2.3",
+  "keywords": [
+    "availity",
+    "css",
+    "js",
+    "less",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "main": [
+    "./less/availity-uikit.less",
+    "./dist/css/availity-uikit.css",
+    "./dist/js/availity-uikit.js",
+    "./dist/fonts/availity-font.eot",
+    "./dist/fonts/availity-font.svg",
+    "./dist/fonts/availity-font.ttf",
+    "./dist/fonts/availity-font.woff"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.1 <2.0.0",
+    "bootstrap": "~3.3.2",
+    "yamm3": "~1.0.0",
+    "eonasdan-bootstrap-datetimepicker": "~4.0.0",
+    "typeahead.js": "~0.10.5",
+    "typeahead.js-bootstrap3.less": "~0.2.3",
+    "chartjs": "1.0.1",
+    "ExplorerCanvas": "*",
+    "select2": "~3.5.2",
+    "select2-bootstrap-css": "~1.4.6",
+    "velocity": "~1.2.1"
+  },
+  "resolutions": {
+    "jquery": "1.11.2",
+    "bootstrap": "~3.3.2"
+  },
+  "ignore": [
+    "/.*",
+    "docs",
+    "build"
+  ]
+}

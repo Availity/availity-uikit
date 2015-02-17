@@ -1,0 +1,88 @@
+{
+  "name": "availity-uikit",
+  "description": "Availity UI Kit powered by Bootstrap 3",
+  "version": "0.2.3",
+  "author": "Robert McGuinness <rob.mcguinness@availity.com>",
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:Availity/availity-uikit.git"
+  },
+  "authors": [
+    {
+      "name": "Robert McGuinness",
+      "email": "rob.mcguinness@availity.com"
+    },
+    {
+      "name": "Robert Ventrone",
+      "email": "robert.ventrone@availity.com"
+    },
+    {
+      "name": "Robert Warner",
+      "email": "rob.warner@availity.com"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "^1.6.2",
+    "chalk": "^0.5.1",
+    "cheerio": "^0.18.0",
+    "del": "^0.1.3",
+    "fake-identity": "^1.0.6",
+    "faker": "^2.1.1",
+    "glob": "^4.0.6",
+    "gulp": "^3.8.9",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-bump": "^0.1.11",
+    "gulp-concat": "^2.4.1",
+    "gulp-filter": "^2.0.0",
+    "gulp-flatten": "0.0.4",
+    "gulp-front-matter": "^1.0.0",
+    "gulp-git": "^0.5.5",
+    "gulp-if": "^1.2.5",
+    "gulp-insert": "^0.4.0",
+    "gulp-jscs": "^1.2.1",
+    "gulp-jshint": "^1.8.6",
+    "gulp-less": "^3.0.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-plumber": "^0.6.6",
+    "gulp-prompt": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.2",
+    "gulp-sourcemaps": "^1.2.4",
+    "gulp-tag-version": "^1.2.1",
+    "gulp-uglify": "^1.0.2",
+    "gulp-using": "0.0.1",
+    "gulp-util": "^3.0.1",
+    "gulp-verb": "^0.3.0",
+    "gulpsmith": "^0.5.2",
+    "handlebars": "^2.0.0",
+    "he": "^0.5.0",
+    "jshint-stylish": "^1.0.0",
+    "lodash": "^2.4.1",
+    "metalsmith": "^1.0.1",
+    "metalsmith-collections": "^0.6.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metadata": "0.0.1",
+    "metalsmith-path": "^0.1.0",
+    "metalsmith-templates": "^0.6.0",
+    "minimist": "^1.1.0",
+    "mocha": "^1.21.4",
+    "moment": "^2.8.4",
+    "prismjs": "git://github.com/LeaVerou/prism#gh-pages",
+    "request": "^2.44.0",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "semver": "^4.2.0",
+    "underscore.string": "^2.3.3"
+  }
+}

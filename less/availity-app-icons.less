@@ -1,0 +1,89 @@
+.app-icon-black {
+  .diag-gradient(
+    @startColor: @availity-app-icon-black-gradient-color-start,
+    @endColor: @availity-app-icon-black-gradient-color-end
+  );
+}
+
+.app-icon-blue {
+  .diag-gradient(
+    @startColor: @availity-app-icon-blue-gradient-color-start,
+    @endColor: @availity-app-icon-blue-gradient-color-end
+  );
+}
+
+.app-icon-green {
+  .diag-gradient(
+    @startColor: @availity-app-icon-green-gradient-color-start,
+    @endColor: @availity-app-icon-green-gradient-color-end
+  );
+}
+
+.app-icon-neon {
+  .diag-gradient(
+    @startColor: @availity-app-icon-neon-gradient-color-start,
+    @endColor: @availity-app-icon-neon-gradient-color-end
+  );
+}
+
+.app-icon-orange {
+  .diag-gradient(
+    @startColor: @availity-app-icon-orange-gradient-color-start,
+    @endColor: @availity-app-icon-orange-gradient-color-end
+  );
+}
+
+// app icons
+.app-icon {
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: @availity-app-icon-border-radius;
+  width: @availity-app-icon-width;
+  height: @availity-app-icon-height;
+  color: @availity-app-icon-color;
+  font-size: @availity-app-icon-font-size;
+  font-weight: @availity-app-icon-font-weight;
+  line-height: @availity-app-icon-line-height;
+  text-align: center;
+  text-transform: uppercase;
+
+  // caret for branded labels
+  .caret {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 0;
+    border-color: transparent #000 transparent transparent;
+  }
+
+  // large
+  &.app-icon-lg {
+    width: @availity-app-icon-large-width;
+    height: @availity-app-icon-large-height;
+    font-size: @availity-app-icon-large-font-size;
+    line-height: @availity-app-icon-large-line-height;
+    .caret {
+      border-width: 0 25px 25px 0;
+    }
+  }
+}
+
+.app-icon-is-branded {
+  border: 1px solid @availity-app-icon-branded-border-color;
+  background-color: @availity-app-icon-branded-border-bg;
+  color: @availity-app-icon-branded-color;
+  .caret {
+    border-color: transparent @availity-app-icon-branded-caret-border-color transparent transparent;
+  }
+}
+
+.app-icon-is-branded-alt {
+  &:extend(.app-icon-is-branded);
+  .caret {
+    border-color: transparent @availity-app-icon-branded-caret-border-color-alt transparent transparent;
+  }
+}

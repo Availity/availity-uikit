@@ -1,0 +1,44 @@
+.header-link(@color: lighten(@gray, 20%)) {
+  font-size: @font-size-small;
+  font-weight: normal;
+  color: @color;
+  text-decoration: none;
+
+  &:after {
+    .iconify-right(@availity-icon-angle-right);
+    line-height: inherit;
+  }
+
+  &:hover {
+    color: @gray-darker;
+  }
+}
+
+.header-link-right(@color: lighten(@gray, 20%)) {
+  .header-link(@color);
+
+  @media (min-width: @grid-float-breakpoint) {
+    float: right;
+  }
+}
+
+.header-icon-link(@color: lighten(@gray, 20%)) {
+  font-size: @font-size-small;
+  font-weight: normal;
+  color: @color;
+  text-decoration: none;
+
+  &:hover {
+    color: @gray-darker;
+  }
+}
+
+.header-icon-link-right(@color: lighten(@gray, 20%)) {
+  .header-icon-link(@color);
+
+  @media (min-width: @grid-float-breakpoint) {
+    float: right;
+  }
+}
+
+

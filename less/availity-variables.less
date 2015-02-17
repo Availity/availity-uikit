@@ -1,0 +1,340 @@
+//== Colors
+//
+@gray:                      #4d4f53;
+@gray-darker:               #363f45;
+@gray-darkest:              #203545;
+@gray-light:                #e1e3e3;
+@gray-lighter:              #e8ebeb;
+@gray-lightest:             #f2f5f5;
+@slate:                     #3e6887;
+
+@white:                     #ffffff;
+
+@blue:                      #2261b5;
+@blue-darker:               #1a4e94;
+@blue-darkest:              #16437d;
+
+@green:                     #02a17c;
+@green-secondary:           #009a57;
+@green-darker:              #038166;
+@green-darkest:             #026e56;
+@green-lighter:             #7fccab;
+
+@red:                       #b21909;
+@yellow:                    #ffda00;
+
+@brand-primary: @blue;
+@brand-success: @green;
+@brand-info: @slate;
+@brand-danger: @red;
+@brand-warning: @yellow;
+
+@text-color: @gray;
+@text-darker: #313336;
+@text-darkest: #000000;
+@text-lighter: #747676;
+@text-link: @brand-primary;
+@text-muted: lighten(@gray, 20%);
+
+//== Scaffolding
+//
+
+//** Background color for `<body>`.
+@main-bg: @gray-lightest;
+
+//== Fonts
+@font-path: "../fonts";
+@availity-font-weight-normal: 300;
+@availity-font-weight-bold: bold;
+@availity-css-prefix: icon;
+@availity-icon-font: "availity-font";
+@availity-icon-angle-right: '\e84d';
+@availity-icon-angle-non-collapsed: '\e802';
+@availity-icon-angle-collapsed: '\e806';
+@availity-icon-link-ext: '\e80a';
+@availity-icon-cancel: '\e862';
+@availity-icon-filter: '\e81a';
+@availity-icon-down: '\e802';
+@availity-icon-up: '\e804';
+@availity-icon-search: '\e84f';
+
+
+
+@font-size-base: 14px; // FIXME[rm3]: why is this variable undefined in our less files but defined in variables.less?
+@font-size-medium: floor((@font-size-base * 1.15)); // ~16px
+
+@font-size-h1: 30px;
+@font-size-h2: 22px;
+@font-size-h3: 18px;
+@font-size-h4: 16px;
+
+//== Type
+@headings-small-color: @text-muted;
+@page-header-border-color: darken(@gray-lighter, 5%);
+
+//== Components
+
+@border-radius-base:  2px;
+@border-radius-small: 2px;
+@border-radius-large: 4px;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight: 400;
+@btn-default-bg: @gray-light;
+@btn-warning-color: @text-color;
+
+//== Z-index master list
+
+// should be lower than primary navbar
+@availity-zindex-secondary: (@zindex-navbar - 10);
+
+//== Navbar
+
+// Basics of a navbar
+@navbar-height: 46px;
+
+@navbar-default-color:                      lighten(@gray-light, 15%);
+@navbar-default-bg:                         @gray-darker;
+@navbar-default-border:                     #30383f;
+
+// Navbar links
+@navbar-default-link-color:                 @gray-lighter;
+@navbar-default-link-hover-color:           @white;
+@availity-navbar-default-icon-opacity:      .5;
+@navbar-default-link-hover-bg:              transparent;
+@navbar-default-link-active-color:          @navbar-default-link-hover-color;
+@navbar-default-link-active-bg:             darken(@navbar-default-bg, 10%);
+@navbar-default-link-disabled-color:        #444;
+@navbar-default-link-disabled-bg:           transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:                @navbar-default-link-color;
+@navbar-default-brand-hover-color:          @white;
+@navbar-default-brand-hover-bg:             transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:            #333;
+@navbar-default-toggle-icon-bar-bg:         @white;
+@navbar-default-toggle-border-color:        #333;
+
+// Secondary navbar
+@availity-navbar-secondary-color:                      lighten(@gray-light, 15%);
+@availity-navbar-secondary-bg:                         #48535c;
+@availity-navbar-secondary-border:                     #404a53;
+
+// Navbar links
+@availity-navbar-secondary-link-color:                 @gray-lighter;
+@availity-navbar-secondary-link-hover-color:           @white;
+@availity-navbar-secondary-link-hover-bg:              transparent;
+@availity-navbar-secondary-link-active-color:          @availity-navbar-secondary-link-hover-color;
+@availity-navbar-secondary-link-active-bg:             darken(@availity-navbar-secondary-bg, 10%);
+@availity-navbar-secondary-link-disabled-color:        #444;
+@availity-navbar-secondary-link-disabled-bg:           transparent;
+
+// Navbar brand label
+@availity-navbar-secondary-brand-color:                @availity-navbar-secondary-link-color;
+@availity-navbar-secondary-brand-hover-color:          @white;
+@availity-navbar-secondary-brand-hover-bg:             transparent;
+
+// Navbar toggle
+@availity-navbar-secondary-toggle-hover-bg:            #333;
+@availity-navbar-secondary-toggle-icon-bar-bg:         @white;
+@availity-navbar-secondary-toggle-border-color:        #333;
+
+// Inverted navbar - Reset inverted navbar basics
+@navbar-inverse-bg:                         #f8f8f8;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 6.5%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                #777;
+@navbar-inverse-link-hover-color:          #333;
+@navbar-inverse-link-hover-bg:             transparent;
+@navbar-inverse-link-active-color:         #555;
+@navbar-inverse-link-active-bg:            darken(@navbar-inverse-bg, 6.5%);
+@navbar-inverse-link-disabled-color:       #ccc;
+@navbar-inverse-link-disabled-bg:          transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:               @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:         darken(@navbar-inverse-brand-color, 10%);
+@navbar-inverse-brand-hover-bg:            transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:           #ddd;
+@navbar-inverse-toggle-icon-bar-bg:        #888;
+@navbar-inverse-toggle-border-color:       #ddd;
+
+// Navbar + Main
+@availity-navbar-main-padding: (@navbar-height + 10);
+
+// Navbar Availity Logo
+@availity-logo-height: 27px;
+@availity-navbar-padding-vertical: ((@navbar-height - @availity-logo-height) / 2 );
+
+@availity-nav-button-margin: 15px;
+
+//== Breadcrumbs
+@breadcrumb-padding-vertical:             15px;
+@breadcrumb-padding-horizontal:           15px;
+//** Breadcrumb background color
+@breadcrumb-bg:                           transparent;
+//** Breadcrumb text color
+@breadcrumb-color:                        @text-lighter;
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color:                 @text-color;
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator:                    @availity-icon-angle-right;
+@availity-breadcrumb-font-weight:         @availity-font-weight-bold;
+@availity-breadcrumb-font-weight-active:  @availity-font-weight-normal;
+@availity-breadcrumb-border-color:        @gray-light;
+
+//== Progress Bars
+@progress-bg:                                         #c7c9c9;
+@progress-border-radius: @border-radius-large;
+@progress-bar-color:                                  @green;
+@availity-progress-bar-icon-complete-color:           @white;
+@availity-progress-bar-height:                        10px;
+@availity-progress-bar-icon-complete-top:             -6px;
+@availity-progress-bar-icon-complete-height:          (@availity-progress-bar-height - @availity-progress-bar-icon-complete-top);
+@availity-progress-bar-icon-complete-right:           -1px;
+@availity-progress-bar-icon-complete-content:         "\e853";
+@availity-progress-bar-icon-complete-content-overlay: "\e85c";
+
+
+//== List group
+
+@list-group-hover-bg: @gray-lighter;
+
+//== Labels
+@label-color:                       @white;
+
+//== Modals
+@availity-modal-padding: 24px;
+@availity-modal-input-border-radius: @border-radius-large;
+@modal-inner-padding: @availity-modal-padding;
+@availity-modal-header-bg-color: @gray-lightest;
+@availity-modal-footer-bg-color: @gray-lightest;
+
+//== Badges
+@badge-bg: @gray;
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+@state-success-text:             #39a034;
+@state-success-bg:               #dbffec;
+@state-success-border:           lighten(@state-success-text, 20%);
+
+@state-info-text:                #3084f5;
+@state-info-bg:                  #dbf2ff;
+@state-info-border:              lighten(@state-info-text, 20%);
+
+@state-warning-text:             @text-darker;
+@state-warning-bg:               #fffcdb;
+@state-warning-border:           darken(@state-warning-bg, 50%);
+
+@state-danger-text:              @red;
+@state-danger-bg:                #ffdbe1;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 10%);
+
+//== App Icons
+
+@availity-app-icon-border-radius:                   @border-radius-base;
+@availity-app-icon-width:                           30px;
+@availity-app-icon-height:                          30px;
+@availity-app-icon-large-width:                     70px;
+@availity-app-icon-large-height:                    70px;
+@availity-app-icon-color:                           @white;
+@availity-app-icon-font-size:                       12px;
+@availity-app-icon-large-font-size:                 24px;
+@availity-app-icon-font-weight:                     @availity-font-weight-bold;
+@availity-app-icon-line-height:                     30px;
+@availity-app-icon-large-line-height:               70px;
+@availity-app-icon-black-gradient-color-start:      #4a4b4e;
+@availity-app-icon-black-gradient-color-end:        #35373a;
+@availity-app-icon-blue-gradient-color-start:       #0aaefb;
+@availity-app-icon-blue-gradient-color-end:         #1396d4;
+@availity-app-icon-green-gradient-color-start:      @green;
+@availity-app-icon-green-gradient-color-end:        #0c8c6f;
+@availity-app-icon-orange-gradient-color-start:     #ee5522;
+@availity-app-icon-orange-gradient-color-end:       #db4e1f;
+@availity-app-icon-neon-gradient-color-start:       #05e170;
+@availity-app-icon-neon-gradient-color-end:         #04c963;
+@availity-app-icon-branded-color:                   @text-color;
+@availity-app-icon-branded-border-color:            @gray-light;
+@availity-app-icon-branded-border-bg:               @white;
+@availity-app-icon-branded-caret-border-color:      #7ac043;
+@availity-app-icon-branded-caret-border-color-alt:  #0092d1;
+
+@green:                     #02a17c;
+@green-darker:              #038166;
+@green-darkest:             #026e56;
+@green-lighter:             #7fccab;
+
+// Panel
+@availity-panel-card-padding: 24px;
+@availity-panel-collapse-border: 1px solid @gray-lightest;
+
+// Tables
+@availity-table-border-color: #dddddd;
+
+// Buttons
+@button-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+@button-box-shadow-inset: inset 0 1px 2px rgba(0,0,0,.1);
+
+//== Pills
+@nav-pills-active-link-hover-bg: @gray-lightest;
+
+//== Alerts and warnings
+@alert-border-radius: 3px;
+
+//== Footer
+@availity-footer-color: #9fa2a4;
+@availity-footer-bg: @availity-navbar-secondary-bg;
+@availity-footer-height: 40px;
+@availity-footer-link-color: @navbar-default-link-color;
+@availity-footer-padding: 10px;
+
+//== Popovers
+@popover-arrow-color:                 @gray-lightest;
+@availity-popover-title-color:        @text-darker;
+@availity-popover-title-font-weight:  @availity-font-weight-bold;
+
+//== Pagination
+@pagination-color:                @text-link;
+@pagination-bg:                   @gray-lighter;
+@pagination-border:               #ccc;
+@pagination-hover-bg:             #d2d4d5;
+@pagination-active-color:         @white;
+@pagination-active-bg:            @blue-darker;
+@pagination-active-border:        @blue-darker;
+@pagination-disabled-color:       @text-color;
+@pagination-disabled-bg:          @gray-light;
+@pagination-disabled-border:      #ccc;
+@availity-pagination-font-weight: 400;
+
+//== Dropdowns
+
+@availity-menu-max-width: 550px;
+@availity-menu-min-width: 400px;
+@vaility-menu-link-color: @link-color;
+
+@availity-menu-padding-vertical: 15px;
+@availity-menu-padding-horizontal: 5px;
+
+@availity-notifications-menu-bg: @gray-lightest;
+
+// Dropdown Notification
+@dropdown-notification-bg: @gray-lightest;
+
+//== Tooltips
+@tooltip-max-width:   320px;
+@tooltip-color:       @white;
+@tooltip-bg:          #1c2f3d;
+@tooltip-arrow-color: #1c2f3d;
+
+//== Utilities
+@availity-bump: 1em;

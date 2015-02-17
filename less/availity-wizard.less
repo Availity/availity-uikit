@@ -1,0 +1,59 @@
+.stepwizard-step p {
+  margin-top: (@line-height-computed / 2);
+}
+
+.stepwizard-row {
+  display: table-row;
+}
+
+.stepwizard {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+
+.stepwizard-step {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+
+  &.complete {
+    > .btn-step {
+      .btn-success;
+    }
+  }
+
+  &.active {
+    > .btn-step {
+      .btn-success;
+      color: @text-color;
+      background-color: @white;
+
+      &:hover {
+        color: @text-color;
+        background-color: @gray-lighter;
+      }
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    > .btn-step {
+      color: @white;
+      background-color: @gray;
+    }
+
+  }
+}
+
+.btn-step {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  border-width: 2px;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}

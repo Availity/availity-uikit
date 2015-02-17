@@ -1,0 +1,47 @@
+
+.mega-menu {
+  &:extend(.yamm all);
+
+  .dropdown.mega-menu-fw .dropdown-menu {
+    left: 0;
+    right: 0;
+  }
+
+  .mega-menu-content {
+    padding: 20px;
+  }
+
+  // tighten up the spacing in mega menus
+  h1, h2, h3, h4, h5 {
+    margin-top: 0;
+  }
+}
+
+
+.mega-menu-md {
+
+  min-width: 300px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    max-width: 550px;
+  }
+
+}
+
+.mega-menu-content .list-group {
+  margin-bottom: 0;
+}
+
+.mega-menu-feature {
+  background-color: @gray-lightest;
+}
+
+.mega-menu-default {
+  padding: 0;
+}
+
+@media (max-width: @grid-float-breakpoint-max) {
+  .mega-menu-default {
+    background-color: @white;
+  }
+}
