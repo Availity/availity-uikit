@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  {{> defaultHeader}}
+</head>
+<body>
+
+{{> nav}}
+
+<main class="guide">
+
+  <div class="container">
+
+  {{#each collections.components}}
+    <section class="guide-section">
+      {{#if this.title}}
+      <h2 class="guide-section-header">
+        {{{this.title}}}
+        {{#if this.description}}
+          <span
+            data-toggle="popover"
+            data-trigger="hover"
+            data-placement="left"
+            title="{{{this.title}}}"
+            class="pull-right text-info"
+            data-content="
+              <p>{{{this.description}}}</p>
+              {{#if this.usage}}
+                <h3>When to Use</h3>
+                <p>{{{this.usage}}}</p>
+              {{/if}}
+              {{#if this.notes}}
+                <h3>UX Notes</h3>
+                <p>{{{this.notes}}}</p>
+              {{/if}}"
+              >
+            <i class="icon icon-info-circle"></i>
+          </span>
+        {{/if}}
+      </h2>
+      {{else}}
+        <h2 style="color:red">**Missing YAML Front Matter Title Attribute**</h2>
+      {{/if}}
+      {{{this.contents}}}
+    </section>
+  {{/each}}
+
+  </div>
+</main>
+
+{{> defaultFooter}}
+
+</body>
+</html>
