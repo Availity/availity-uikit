@@ -46,6 +46,7 @@
   font-weight: @availity-app-icon-font-weight;
   line-height: @availity-app-icon-line-height;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 
   // caret for branded labels
@@ -56,8 +57,30 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 8px 8px 0;
+    border-width: 0 22px 22px 0;
     border-color: transparent #000 transparent transparent;
+  }
+
+  // extra small
+  &.app-icon-xs {
+    width: @availity-app-icon-xs-width;
+    height: @availity-app-icon-xs-height;
+    font-size: @availity-app-icon-xs-font-size;
+    line-height: @availity-app-icon-xs-line-height;
+    .caret {
+      border-width: 0 8px 8px 0;
+    }
+  }
+
+  // small
+  &.app-icon-sm {
+    width: @availity-app-icon-small-width;
+    height: @availity-app-icon-small-height;
+    font-size: @availity-app-icon-small-font-size;
+    line-height: @availity-app-icon-small-line-height;
+    .caret {
+      border-width: 0 14px 14px 0;
+    }
   }
 
   // large
@@ -67,7 +90,7 @@
     font-size: @availity-app-icon-large-font-size;
     line-height: @availity-app-icon-large-line-height;
     .caret {
-      border-width: 0 25px 25px 0;
+      border-width: 0 28px 28px 0;
     }
   }
 }
