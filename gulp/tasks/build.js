@@ -4,7 +4,7 @@ var config = require('../config');
 var handlebarsPaths = require('../utils/handlebars.paths');
 var handlebarsPartials = require('../utils/handlebars.partials');
 var metalsmithHighlight = require('../utils/metalsmith.highlight');
-var metalsmithMock = require('../utils/metalsmith.mock');
+var metalsmithMock = require('metalsmith-mock');
 var Sort = require('../utils/metalsmith.title.sorting');
 
 var frontMatter = require('gulp-front-matter');
