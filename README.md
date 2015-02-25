@@ -68,7 +68,8 @@ $ npm install availity-uikit --save
 **Robert Warner**
 + [rob.warner@availity.com](rob.warner@availity.com)
 
-
+## Disclaimer
+Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
 
 ## License
 Copyright (c) 2015 Availity, LLC
