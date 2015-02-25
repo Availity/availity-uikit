@@ -39,12 +39,12 @@
   display: inline-block;
   border: 1px solid transparent;
   border-radius: @availity-app-icon-border-radius;
-  width: @availity-app-icon-width;
-  height: @availity-app-icon-height;
+  width: @availity-app-icon-md-width;
+  height: @availity-app-icon-md-height;
   color: @availity-app-icon-color;
-  font-size: @availity-app-icon-font-size;
+  font-size: @availity-app-icon-md-font-size;
   font-weight: @availity-app-icon-font-weight;
-  line-height: @availity-app-icon-line-height;
+  line-height: @availity-app-icon-md-line-height;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -57,38 +57,38 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 22px 22px 0;
+    border-width: 0 14px 14px 0;
     border-color: transparent #000 transparent transparent;
   }
 
-  // extra small
-  &.app-icon-xs {
-    width: @availity-app-icon-xs-width;
-    height: @availity-app-icon-xs-height;
-    font-size: @availity-app-icon-xs-font-size;
-    line-height: @availity-app-icon-xs-line-height;
+  // small
+  &.app-icon-sm {
+    width: @availity-app-icon-sm-width;
+    height: @availity-app-icon-sm-height;
+    font-size: @availity-app-icon-sm-font-size;
+    line-height: @availity-app-icon-sm-line-height;
     .caret {
       border-width: 0 8px 8px 0;
     }
   }
 
-  // small
-  &.app-icon-sm {
-    width: @availity-app-icon-small-width;
-    height: @availity-app-icon-small-height;
-    font-size: @availity-app-icon-small-font-size;
-    line-height: @availity-app-icon-small-line-height;
+  // large
+  &.app-icon-lg {
+    width: @availity-app-icon-lg-width;
+    height: @availity-app-icon-lg-height;
+    font-size: @availity-app-icon-lg-font-size;
+    line-height: @availity-app-icon-lg-line-height;
     .caret {
-      border-width: 0 14px 14px 0;
+      border-width: 0 22px 22px 0;
     }
   }
 
-  // large
-  &.app-icon-lg {
-    width: @availity-app-icon-large-width;
-    height: @availity-app-icon-large-height;
-    font-size: @availity-app-icon-large-font-size;
-    line-height: @availity-app-icon-large-line-height;
+  // extra large
+  &.app-icon-xl {
+    width: @availity-app-icon-xl-width;
+    height: @availity-app-icon-xl-height;
+    font-size: @availity-app-icon-xl-font-size;
+    line-height: @availity-app-icon-xl-line-height;
     .caret {
       border-width: 0 28px 28px 0;
     }
