@@ -1,6 +1,5 @@
 // loosely copied from fontello output.
 .iconify(@icon) {
-
   font-family: @availity-icon-font;
   content: @icon;
   font-style: normal;
@@ -19,34 +18,11 @@
   .iconify(@icon);
   padding-left: @padding;
 }
-
-.icon-before(@icon, @color: @text-color) {
-
+ 
+.iconify-before(@icon, @color: @text-color, @padding: 5px) {
   &:before {
     .iconify(@icon);
-    content: @icon;
     color: @color;
+    margin-right: @padding; 
   }
-}
-
-.icon-left() {
-  position: relative;
-  float: left;
-  margin-right: 5px;
-  font-family: @availity-icon-font;
-  font-weight: normal;
-}
-
-.icon-right() {
-  position: relative;
-  float: right;
-  margin-left: 5px;
-  font-family: @availity-icon-font;
-  font-weight: normal;
-}
-
-.icon-inline() {
-  position: relative;
-  font-family: @availity-icon-font;
-  font-weight: normal;
 }
