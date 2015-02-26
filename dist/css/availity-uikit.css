@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.3.0 -- February-24
+ * availity-uikit v0.3.1 -- February-25
  * Copyright 2015 Availity, LLC 
  */
 
@@ -6396,12 +6396,12 @@ button.close {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 2px;
-  width: 70px;
-  height: 70px;
+  width: 35px;
+  height: 35px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 70px;
+  line-height: 35px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -6413,34 +6413,25 @@ button.close {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 22px 22px 0;
+  border-width: 0 8px 8px 0;
   border-color: transparent #000 transparent transparent;
 }
-.app-icon.app-icon-xs {
-  width: 35px;
-  height: 35px;
-  font-size: 12px;
-  line-height: 35px;
+.app-icon.app-icon-lg {
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  line-height: 70px;
 }
-.app-icon.app-icon-xs .caret {
-  border-width: 0 8px 8px 0;
-}
-.app-icon.app-icon-sm {
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
-  line-height: 50px;
-}
-.app-icon.app-icon-sm .caret {
+.app-icon.app-icon-lg .caret {
   border-width: 0 14px 14px 0;
 }
-.app-icon.app-icon-lg {
+.app-icon.app-icon-xl {
   width: 90px;
   height: 90px;
   font-size: 32px;
   line-height: 90px;
 }
-.app-icon.app-icon-lg .caret {
+.app-icon.app-icon-xl .caret {
   border-width: 0 28px 28px 0;
 }
 .app-icon-is-branded,

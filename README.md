@@ -6,11 +6,12 @@
 * [Intro](#intro)
 * [Quickstart](#quickstart)
 * [Authors](#authors)
+* [Disclaimer](#disclaimer)
 * [License](#license)
 
 
 ## Intro
-Availity UIKit is based on [Boostrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
+Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
 
 
 ## Quickstart
@@ -68,8 +69,11 @@ $ npm install availity-uikit --save
 **Robert Warner**
 + [rob.warner@availity.com](rob.warner@availity.com)
 
+
+
 ## Disclaimer
 Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
+
 
 ## License
 Copyright (c) 2015 Availity, LLC

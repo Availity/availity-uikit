@@ -14,6 +14,9 @@
 ## Authors
 {%= docs("authors") %}
 
+## Disclaimer
+{%= docs("disclaimer") %}
+
 ## License
 Copyright (c) {%= date('YYYY') %} Availity, LLC
 {%= license() %}
