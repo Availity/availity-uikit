@@ -51,10 +51,13 @@
 });
 
   setInterval(function() {
-    $('.loading-bullet')
-      .velocity('transition.slideRightIn', { stagger: 250 })
-      .delay(750)
-      .velocity({ opacity: 0 }, 500);
+    var indicators = $('.loading-indicator');
+    for (var i = 0; i < indicators.length; i++) {
+      $(indicators[i]).find('.loading-bullet')
+        .velocity('transition.slideRightIn', { stagger: 250 })
+        .delay(750)
+        .velocity({ opacity: 0 }, 500);
+    }
   }, 2000);
 
   // Twitter Typeahead
