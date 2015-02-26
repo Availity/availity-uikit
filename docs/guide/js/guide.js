@@ -51,7 +51,7 @@
 });
 
   setInterval(function() {
-    var indicators = $('.loading-indicator:visible');
+    var indicators = $('.loading-indicator');
     for (var i = 0; i < indicators.length; i++) {
       $(indicators[i]).find('.loading-bullet')
         .velocity('transition.slideRightIn', { stagger: 250 })
