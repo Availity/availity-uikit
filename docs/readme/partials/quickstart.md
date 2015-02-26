@@ -31,7 +31,8 @@ $ npm install availity-uikit --save
 ├── /build/                     # The folder for compiled docs
 ├── /dist/                      # CSS style sheets and Javascript ready for distribution
 ├── /docs/                      # Raw documentation assets for README.md and style guide
-├── /node_modules/              # 3rd-party libraries and utilities
+├── /node_modules/              # npm 3rd-party libraries and utilities
+├── /bower_components/          # bower 3rd-party libraries and utilities
 ├── /fonts/                     # Icon fonts and web text fonts
 ├── /images/                    # Graphics (.png, .jpg, .svg etc.)
 ├── /gulp/                      # Gulp tasks and utility classes
