@@ -10,19 +10,13 @@
   background-color: @gray-light;
   color: #515357;
   font-weight: @availity-font-weight-bold;
-
-  &:before {
-    .icon-left();
-    content: "\e849";
-  }
-
+  .iconify-before("\e849");
   &:hover,
   &:focus {
     color: @white;
     background-color: #242a2e;
     border-color: #242a2e;
   }
-
 }
 
 .btn-add-favorites {
@@ -88,7 +82,7 @@
   font-weight: 700;
   width: 125px;
 
- .icon-before(@availity-icon-filter);
+ .iconify-before(@availity-icon-filter);
 
   span {
     &:before {
