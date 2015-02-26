@@ -11,6 +11,9 @@
 ## Quickstart
 {%= docs("quickstart") %}
 
+## Icon Fonts
+{%= docs("fonts") %}
+
 ## Authors
 {%= docs("authors") %}
 

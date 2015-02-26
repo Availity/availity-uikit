@@ -5,6 +5,7 @@
 ## Table of Contents
 * [Intro](#intro)
 * [Quickstart](#quickstart)
+* [Icon Fonts](#icon-fonts)
 * [Authors](#authors)
 * [Disclaimer](#disclaimer)
 * [License](#license)
@@ -48,7 +49,8 @@ $ npm install availity-uikit --save
 ├── /build/                     # The folder for compiled docs
 ├── /dist/                      # CSS style sheets and Javascript ready for distribution
 ├── /docs/                      # Raw documentation assets for README.md and style guide
-├── /node_modules/              # 3rd-party libraries and utilities
+├── /node_modules/              # npm 3rd-party libraries and utilities
+├── /bower_components/          # bower 3rd-party libraries and utilities
 ├── /fonts/                     # Icon fonts and web text fonts
 ├── /images/                    # Graphics (.png, .jpg, .svg etc.)
 ├── /gulp/                      # Gulp tasks and utility classes
@@ -56,6 +58,14 @@ $ npm install availity-uikit --save
 │── bower.json                  # Bower list of 3rd party libraries
 └── package.json                # NPM list of 3rd party libraries and utilities
 ```
+
+
+## Icon Fonts
+Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (glyphicons).  Our font configuration can be found in the [config.json](./fonts/config.json). The UIKit currently uses icon fonts from the following libraries:
+
++ [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
++ [Typicons](http://typicons.com/)
++ [Elusive Icons](http://elusiveicons.com/)
 
 
 ## Authors
