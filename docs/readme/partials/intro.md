@@ -1,1 +1,1 @@
-Availity UIKit is based on [Boostrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
+Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
