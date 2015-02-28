@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var config = require('../config');
 var handlebarsPaths = require('../utils/handlebars.paths');
 var handlebarsPartials = require('../utils/handlebars.partials');
-var metalsmithHighlight = require('../utils/metalsmith.highlight');
+var metlsmithPrism = require('metalsmith-prism');
 var metalsmithMock = require('metalsmith-mock');
 var Sort = require('../utils/metalsmith.title.sorting');
 
@@ -75,7 +75,7 @@ gulp.task('build:docs', function() {
         examples: {} // empty pattern because the pages are tagged with collection attribute in YAML front matter
       }))
       .use(metalsmithPaths())
-      .use(metalsmithHighlight())
+      .use(metlsmithPrism())
       .use(metalsmithMock())
       .use(templates({
         engine: 'handlebars',
