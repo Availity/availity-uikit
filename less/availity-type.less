@@ -1,3 +1,6 @@
+// HACK: Importing Bootstrap mixin explicitly because it is inaccessible despite being imported in availity-bootstrap
+@import (reference) "../bower_components/bootstrap/less/mixins/text-overflow.less";
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 
@@ -36,6 +39,7 @@ p {
 }
 
 .text-normal { text-transform: none; }
+.text-truncate { .text-overflow; }
 
 .section-header {
 
