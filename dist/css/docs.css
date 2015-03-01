@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.3.2 -- February-26
+ * availity-uikit v0.3.3 -- March-01
  * Copyright 2015 Availity, LLC 
  */
 
@@ -76,8 +76,8 @@
   border: 1px solid #e8ebeb;
 }
 .color-item-header {
-  height: 150px;
-  line-height: 150px;
+  height: 100px;
+  line-height: 100px;
 }
 .color-item-header .icon {
   vertical-align: middle;
@@ -132,6 +132,23 @@ div[title] {
 div[title] i {
   font-size: 1.5em;
 }
+.tocify {
+  border: none;
+  font-size: 16px;
+  border-radius: 0;
+}
+.tocify ul,
+.tocify li {
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: .8em;
+}
+@media (max-width: 992px) {
+  .tocify {
+    display: none;
+  }
+}
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -148,6 +165,7 @@ pre[class*="language-"] {
   word-break: normal;
   line-height: 1.5;
   -moz-tab-size: 4;
+  -o-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -186,7 +204,6 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"] {
   position: relative;
   padding: .2em;
-  -o-border-radius: 0.3em;
   border-radius: 0.3em;
   color: #c92c2c;
   border: 1px solid rgba(0, 0, 0, 0.1);

@@ -1,7 +1,7 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
     "node": ">=0.10.x"

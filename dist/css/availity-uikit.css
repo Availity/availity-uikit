@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.3.2 -- February-26
+ * availity-uikit v0.3.3 -- March-01
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1354,6 +1354,11 @@ p {
 }
 .text-normal {
   text-transform: none;
+}
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .section-header {
   margin: 20px 0 20px;
@@ -2895,6 +2900,7 @@ label {
   font-size: 16px;
   font-weight: 300;
   color: #000000;
+  cursor: pointer;
 }
 label small {
   font-size: 65%;
@@ -8250,6 +8256,7 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   background-color: #fff;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.5, #ffffff));
   background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, #ffffff 50%);
+  background-image: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
   background-image: -webkit-linear-gradient(bottom, #eeeeee 0%, #ffffff 50%);
   background-image: linear-gradient(to top, #eeeeee 0%, #ffffff 50%);
@@ -8262,6 +8269,7 @@ html[dir="rtl"] .select2-container .select2-choice {
   border-radius: 0 0 4px 4px;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.9, #ffffff));
   background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, #ffffff 90%);
+  background-image: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
   background-image: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 90%);
   background-image: linear-gradient(to bottom, #eeeeee 0%, #ffffff 90%);
@@ -8367,6 +8375,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   background: #ccc;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(0.6, #eeeeee));
   background-image: -webkit-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
+  background-image: -moz-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0);
   background-image: -webkit-linear-gradient(bottom, #cccccc 0%, #eeeeee 60%);
   background-image: linear-gradient(to top, #cccccc 0%, #eeeeee 60%);
@@ -8448,6 +8457,7 @@ html[dir="rtl"] .select2-search input {
   background-color: #eee;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ffffff), color-stop(0.5, #eeeeee));
   background-image: -webkit-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%);
+  background-image: -moz-linear-gradient(center bottom, #ffffff 0%, #eeeeee 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
   background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #eeeeee 50%);
   background-image: linear-gradient(to top, #ffffff 0%, #eeeeee 50%);
@@ -8458,6 +8468,7 @@ html[dir="rtl"] .select2-search input {
   border-top-color: transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(0.5, #eeeeee));
   background-image: -webkit-linear-gradient(center top, #ffffff 0%, #eeeeee 50%);
+  background-image: -moz-linear-gradient(center top, #ffffff 0%, #eeeeee 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 50%);
   background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 50%);
@@ -8776,7 +8787,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   overflow: scroll;
 }
 /* Retina-ize icons */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
   .select2-search input,
   .select2-search-choice-close,
   .select2-container .select2-choice abbr,
@@ -9336,6 +9347,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .select2-container-multi .select2-choices .select2-search-field input.select2-active {
   background: none !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  .select2-search input,
+  .select2-search-choice-close,
+  .select2-container .select2-choice abbr,
+  .select2-container .select2-choice .select2-arrow b {
+    background-image: none !important;
+  }
 }
 .has-error .select2-choice,
 .has-error .select2-choices {
