@@ -38,17 +38,17 @@
     var $this = $(this);
     if($this.parents('[class*="has-"]').length) {
 
-    // get all CSS-classes from the element where we found "has-*" and collect them in an array
-    var classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
+      // get all CSS-classes from the element where we found "has-*" and collect them in an array
+      var classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
 
-    // go through the class names, find "has-"
-    for(var i = 0; i < classNames.length; ++i) {
-      if(classNames[i].match("has-")) {
-        $('#select2-drop').addClass(classNames[i]);
+      // go through the class names, find "has-"
+      for(var i = 0; i < classNames.length; ++i) {
+        if(classNames[i].match("has-")) {
+          $('#select2-drop').addClass(classNames[i]);
+        }
       }
     }
-  }
-});
+  });
 
   setInterval(function() {
     var indicators = $('.loading-indicator');
@@ -138,5 +138,11 @@
       maintainAspectRatio: false
     });
   }
+
+  $("#nav").tocify({
+    selectors: ".guide-section-header, .guide-subsection-title",
+    theme: 'bootstrap',
+    scrollTo: 100
+  });
 
 })(jQuery);

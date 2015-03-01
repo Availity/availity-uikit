@@ -1,5 +1,5 @@
 ---
-title: Form Components
+title: Forms
 description: |
   Form elements and interactive components for inputting data into the
   system.
@@ -16,31 +16,31 @@ notes: |
   instance, should be smaller than a street address field, as one is known
   to be 5 characters while the other could be much longer.
 ---
-<h3 class="guide-subsection-title">Label for text input <small>with placholder text</small></h3>
+<h3 class="guide-subsection-title">Label <small>with placholder text</small></h3>
 <div class="guide-example">
   <div class="form-group">
-    <label for="text1">My cool input box</label>
-    <input type="text" class="form-control" id="text1" placeholder="Text input">
+    <label for="text1">State</label>
+    <input type="text" class="form-control" id="text1" placeholder="">
   </div>
 </div>
 <code class="language-markup">
 <div class="form-group">
-  <label for="text1">My cool input box</label>
-  <input type="text" class="form-control" id="text1" placeholder="Text input">
+  <label for="text2">My cool input box</label>
+  <input type="text" class="form-control" id="text2" placeholder="Text input">
 </div>
 </code>
 
 <h3 class="guide-subsection-title">Inline Help</h3>
 <div class="guide-example">
   <div class="form-group">
-    <label for="text2">Label for text input <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">What’s this?</span></label>
-    <input type="text" class="form-control" id="text2" placeholder="Type what you want here">
+    <label for="text3">Label for text input <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">What’s this?</span></label>
+    <input type="text" class="form-control" id="text3" placeholder="Type what you want here">
   </div>
 </div>
 <code class="language-markup">
 <div class="form-group">
-  <label for="text2">Label for text input <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">What’s this?</span></label>
-  <input type="text" class="form-control" id="text2" placeholder="Type what you want here">
+  <label for="text4">Label for text input <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">What’s this?</span></label>
+  <input type="text" class="form-control" id="text4" placeholder="Type what you want here">
 </div>
 </code>
 
@@ -52,15 +52,15 @@ notes: |
   <div class="row">
     <div class="col-md-5">
       <div class="form-group">
-        <label for="text">First Name</label>
+        <label for="firstName10">First Name</label>
         <input type="email" class="form-control" id="firstName10" placeholder="Text input">
       </div>
       <div class="form-group">
-        <label for="text-optional">Last Name</label>
+        <label for="lastName10">Last Name</label>
         <input type="email" class="form-control" id="lastName10" placeholder="Text input">
       </div>
       <div class="form-group">
-        <label for="text-optional">Phone <small>(Optional)</small></label>
+        <label for="phonenNumber10">Phone <small>(Optional)</small></label>
         <input type="email" class="form-control" id="phonenNumber10" placeholder="Text input">
       </div>
     </div>
@@ -74,16 +74,16 @@ notes: |
   <div class="row">
     <div class="col-xs-5">
       <div class="form-group">
-        <label for="text">First Name</label>
-        <input type="email" class="form-control" id="firstName10" placeholder="Text input">
+        <label for="firstName11">First Name</label>
+        <input type="email" class="form-control" id="firstName11" placeholder="Text input">
       </div>
       <div class="form-group">
-        <label for="text-optional">Last Name</label>
-        <input type="email" class="form-control" id="lastName10" placeholder="Text input">
+        <label for="lastName11">Last Name</label>
+        <input type="email" class="form-control" id="lastName11" placeholder="Text input">
       </div>
       <div class="form-group">
-        <label for="text-optional">Phone <small>(Optional)</small></label>
-        <input type="email" class="form-control" id="phonenNumber10" placeholder="Text input">
+        <label for="phonenNumber11">Phone <small>(Optional)</small></label>
+        <input type="email" class="form-control" id="phonenNumber11" placeholder="Text input">
       </div>
     </div>
   </div>
@@ -94,35 +94,35 @@ notes: |
 <h3 class="guide-subsection-title">Validation states</h3>
 <div class="guide-example">
   <div class="form-group has-error">
-    <label for="text3">Label for text input</label>
-    <input type="email" class="form-control" id="text3" placeholder="" value="This is error text">
+    <label for="text5">Label for text input</label>
+    <input type="email" class="form-control" id="text5" placeholder="" value="This is error text">
     <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group has-success">
-    <label for="text4">Label for text input</label>
-    <input type="email" class="form-control" id="text4" placeholder="" value="this is success text">
+    <label for="text6">Label for text input</label>
+    <input type="email" class="form-control" id="text6" placeholder="" value="this is success text">
     <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="form-group has-warning">
-    <label for="text5">Label for text input</label>
-    <input type="email" class="form-control" id="text5" placeholder="" value="this is warning text">
+    <label for="text7">Label for text input</label>
+    <input type="email" class="form-control" id="text7" placeholder="" value="this is warning text">
     <p class="help-block">Example block-level help text here.</p>
   </div>
 </div>
 <code class="language-markup">
 <div class="form-group has-error">
-  <label for="text3">Label for text input</label>
-  <input type="email" class="form-control" id="text3" placeholder="" value="This is error text">
+  <label for="text8">Label for text input</label>
+  <input type="email" class="form-control" id="text8" placeholder="" value="This is error text">
   <p class="help-block">Example block-level help text here.</p>
 </div>
 <div class="form-group has-success">
-  <label for="text4">Label for text input</label>
-  <input type="email" class="form-control" id="text4" placeholder="" value="this is success text">
+  <label for="text9">Label for text input</label>
+  <input type="email" class="form-control" id="text9" placeholder="" value="this is success text">
   <p class="help-block">Example block-level help text here.</p>
 </div>
 <div class="form-group has-warning">
-  <label for="text5">Label for text input</label>
-  <input type="email" class="form-control" id="text5" placeholder="" value="this is warning text">
+  <label for="text10">Label for text input</label>
+  <input type="email" class="form-control" id="text10" placeholder="" value="this is warning text">
   <p class="help-block">Example block-level help text here.</p>
 </div>
 </code>
@@ -240,14 +240,14 @@ notes: |
     <div class="row">
       <div class="col-sm-3">
         <div class="form-group">
-          <label for="input1">Item 1</label>
-          <input type="text" class="form-control" id="input1" placeholder="">
+          <label for="input3">Item 1</label>
+          <input type="text" class="form-control" id="input3" placeholder="">
         </div>
       </div>
       <div class="col-sm-3">
         <div class="form-group">
-          <label for="input2">Item 2</label>
-          <input type="text" class="form-control" id="input2" placeholder="">
+          <label for="input4">Item 2</label>
+          <input type="text" class="form-control" id="input4" placeholder="">
         </div>
       </div>
     </div>

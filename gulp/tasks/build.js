@@ -1,12 +1,6 @@
 var gulp = require('gulp');
-
-var config = require('../config');
-var handlebarsPaths = require('../utils/handlebars.paths');
-var handlebarsPartials = require('../utils/handlebars.partials');
 var metlsmithPrism = require('metalsmith-prism');
 var metalsmithMock = require('metalsmith-mock');
-var Sort = require('../utils/metalsmith.title.sorting');
-
 var frontMatter = require('gulp-front-matter');
 var _ = require('lodash');
 var fs = require('fs');
@@ -21,6 +15,11 @@ var using = require('gulp-using');
 var moment = require('moment');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+
+var config = require('../config');
+var Sort = require('../utils/metalsmith.title.sorting');
+var handlebarsPaths = require('../utils/handlebars.paths');
+var handlebarsPartials = require('../utils/handlebars.partials');
 
 var Handlebars = require('handlebars');
 
