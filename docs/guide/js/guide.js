@@ -27,7 +27,19 @@
 
   // Datepicker
   $('#datetimepicker6, #datetimepicker7, #datetimepicker8').datetimepicker({
-    format: 'MM/DD/YYYY'
+      format: 'YYYY-MM-DD',
+      minDate: '2015-02-26',
+      maxDate: '2015-03-15',
+      icons: {
+        time: 'icon icon-clock',
+        date: 'icon icon-calendar',
+        up: 'icon icon-up-dir',
+        down: 'icon icon-down-dir',
+        previous: 'icon icon-left-dir',
+        next: 'icon icon-right-dir',
+        today: 'icon icon-screenshot',
+        clear: 'icon icon-trash'
+      }
   });
 
   // Select2
