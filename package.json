@@ -44,6 +44,7 @@
     "gulp-filter": "^2.0.0",
     "gulp-flatten": "0.0.4",
     "gulp-front-matter": "^1.0.0",
+    "gulp-gh-pages": "^0.4.0",
     "gulp-git": "^1.0.0",
     "gulp-if": "^1.2.5",
     "gulp-insert": "^0.4.0",
