@@ -1,0 +1,509 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Availity UIKit Authorization Form</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.css">
+  <link rel="stylesheet" href="css/availity-uikit.css">
+  <link rel="stylesheet" href="css/docs.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lte IE 8]>
+    <script src="js/excanvas.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<body class="body">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#availity-example-navbar-collapse-3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand-availity" href="#">
+        <img alt="Availity Logo" src="images/logo-availity.png">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li>
+          <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
+            <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
+            <span class="badge badge-success">3</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
+            <li>
+              <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
+                <li class="active">
+                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
+                </li>
+                <li>
+                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
+                </li>
+                <li>
+                  <a data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="all1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="alerts1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="notifications-menu-footer">
+                <a href="#">Show All Notifications</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+            <i class="icon icon-help-circle"></i> Help
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+            John's Account
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-default navbar-secondary navbar-fixed-top mega-menu" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#availity-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Registration</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Payments</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown dropdown-favorites">
+          <button href="#" class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+          <ul class="dropdown-menu favorites-menu" role="menu">
+            <li>
+              <h5 class="favorites-menu-title">Favorites</h5>
+
+              <div class="favorites-menu-body">
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-blue">ar</span> Authorizations &amp; Referrals
+                </a>
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-orange">eb</span> Eligibility &amp; Benefits
+                </a>
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-is-branded">
+                    cr
+                    <span class="caret"></span>
+                  </span>
+                  Humana Credentialing Status
+                </a>
+
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-is-branded-alt">
+                    pr
+                    <span class="caret"></span>
+                  </span>
+                  Provider Management
+                </a>
+              </div>
+              <div class="favorites-menu-footer">
+                <a href="#">Manage Favorites</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Payer Spaces</a>
+          <ul class="dropdown-menu mega-menu-default mega-menu-md" role="menu">
+            <li>
+              <div class="mega-menu-content">
+                <h5 class="mega-menu-title">My Patient Access Apps</h5>
+
+                <div class="list-group list-group-unstyled">
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Eligibility &amp; Benefits
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Care Reminders
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Patient Care Summary
+                  </a>
+
+                  <hr>
+
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Authorizations &amp; Referrals
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content mega-menu-feature">
+                <h4>Availity Premium Apps</h4>
+
+                <p>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis
+                      parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block">Upgrade Today</button>
+                  </div>
+                </div>
+                <p></p>
+
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <h1>
+      Authorizations
+      <span class="inline-help" data-toggle="tooltip" data-placement="top" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+        Learn more about Authorizations
+      </span>
+    </h1>
+    <form class="form">
+      <div class="panel panel-card">
+        <div class="panel-body">
+          <div class="ro2">
+            <div class="col-lg-4 col-md-5 col-sm-6">
+              <h3 class="subheader panel-header">Basic Information</h3>
+              <div class="form-group">
+                <label for="payer">Payer
+                  <span class="inline-help"data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+                    What's this
+                  </span>
+                </label>
+                <select class="form-control" id="payer">
+                  <option>Select one</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="transactionType">Transaction Type</label>
+                <select class="form-control" id="transactionType">
+                  <option>Select one</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="organization">Organization</label>
+                <select class="form-control" id="organization">
+                  <option>Select one</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-card">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6">
+              <h3 class="subheader panel-header">Request Information</h3>
+              <div class="form-group">
+                <label for="memberID">
+                  Member ID
+                  <span class="inline-help"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title=""
+                        data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+                    What's this
+                  </span>
+                </label>
+                <input type="text" class="form-control" id="memberID" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="relationshipToSubscriber">
+                  Relationship to Subscriber
+                  <span class="inline-help"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title=""
+                        data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+                    What's this
+                  </span>
+                </label>
+                <select class="form-control" id="relationshipToSubscriber">
+                  <option>Select one</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="datetimepicker7">
+                  Date of Birth
+                </label>
+                <input type="text" class="form-control" id="datetimepicker7" placeholder="mm/dd/yyyy">
+              </div>
+              <div class="form-group">
+                <label for="serviceQuantityType">
+                  Service Quantity/Type
+                </label>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <input type="text" id="serviceQuantityType" class="form-control">
+                  </div>
+                  <div class="col-xs-8">
+                    <select class="form-control" id="rts">
+                      <option>Select one</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-card">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6">
+              <h3 class="subheader panel-header">Requesting Provider Information</h3>
+              <div class="form-group">
+                <label>Requesting Provider Type</label>
+                <div class="radio-group-vertical">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                    Provider
+                  </label>
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Front Office (5 users)
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="requestProvider">
+                  Express Entry - Requesting Provider
+                  <span class="inline-help"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title=""
+                        data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+                    What's this
+                  </span>
+                </label>
+                <select class="form-control" id="requestProvider">
+                  <option>Select one</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="zip">Zipcode (optional)</label>
+                <div class="row">
+                  <div class="col-xs-7">
+                    <input type="text" class="form-control" id="zip" placeholder="">
+                  </div>
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" id="zipext" placeholder="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group-block">
+            <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-6">
+                <label>
+                  Diagnosis Code(s)
+                  <span class="inline-help"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title=""
+                        data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+                    What's this
+                  </span>
+                </label>
+                <div class="row">
+                  <div class="col-xs-12 col-ms-6 col-sm-6 form-group">
+                    <label for="code">Code</label>
+                    <input type="text" class="form-control" id="code" placeholder="">
+                  </div>
+                  <div class="col-xs-12 col-ms-6 col-sm-6 form-group">
+                    <label for="datetimepicker8">Date</label>
+                    <input type="text" class="form-control" id="datetimepicker8" placeholder="mm/dd/yyyy">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#"><span class="icon icon-plus-circle"></span> Add another code</a>
+        </div>
+      </div>
+      <div class="form-controls">
+        <input type="submit" class="btn btn-default" value="Clear">
+        <input type="submit" class="btn btn-default" value="Add to Batch">
+        <input type="submit" class="btn btn-primary form-controls-right" value="Submit">
+      </div>
+    </form>
+  </div>
+</main>
+
+
+<footer class="footer">
+  <div class="footer-body container">
+    <span class="footer-copy">&copy; 2015 Availity, LLC.</span>
+    <ul class="footer-links">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/availity-uikit.js"></script>
+<script src="js/guide.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Availity UIKit Payer Spaces Apps</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.css">
+  <link rel="stylesheet" href="css/availity-uikit.css">
+  <link rel="stylesheet" href="css/docs.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lte IE 8]>
+    <script src="js/excanvas.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<body class="body">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#availity-example-navbar-collapse-3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand-availity" href="#">
+        <img alt="Availity Logo" src="images/logo-availity.png">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li>
+          <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
+            <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
+            <span class="badge badge-success">3</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
+            <li>
+              <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
+                <li class="active">
+                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
+                </li>
+                <li>
+                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
+                </li>
+                <li>
+                  <a data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="all1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="alerts1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="notifications-menu-footer">
+                <a href="#">Show All Notifications</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+            <i class="icon icon-help-circle"></i> Help
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+            John's Account
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-default navbar-secondary navbar-fixed-top mega-menu" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#availity-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Registration</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Payments</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown dropdown-favorites">
+          <button href="#" class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+          <ul class="dropdown-menu favorites-menu" role="menu">
+            <li>
+              <h5 class="favorites-menu-title">Favorites</h5>
+
+              <div class="favorites-menu-body">
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-blue">ar</span> Authorizations &amp; Referrals
+                </a>
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-orange">eb</span> Eligibility &amp; Benefits
+                </a>
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-is-branded">
+                    cr
+                    <span class="caret"></span>
+                  </span>
+                  Humana Credentialing Status
+                </a>
+
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-is-branded-alt">
+                    pr
+                    <span class="caret"></span>
+                  </span>
+                  Provider Management
+                </a>
+              </div>
+              <div class="favorites-menu-footer">
+                <a href="#">Manage Favorites</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Payer Spaces</a>
+          <ul class="dropdown-menu mega-menu-default mega-menu-md" role="menu">
+            <li>
+              <div class="mega-menu-content">
+                <h5 class="mega-menu-title">My Patient Access Apps</h5>
+
+                <div class="list-group list-group-unstyled">
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Eligibility &amp; Benefits
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Care Reminders
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Patient Care Summary
+                  </a>
+
+                  <hr>
+
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Authorizations &amp; Referrals
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content mega-menu-feature">
+                <h4>Availity Premium Apps</h4>
+
+                <p>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis
+                      parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block">Upgrade Today</button>
+                  </div>
+                </div>
+                <p></p>
+
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+  <h1>Payer Spaces</h1>
+  <section>
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="section-header">
+        Recommended Apps
+        </h3>
+        <div role="tabpanel">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="app1">
+              <div class="panel panel-card">
+                <div class="panel-body panel-branded">
+                  <h3 class="subheader panel-header">Humana</h3>
+                  <h2>Primary Prior Authorization</h2>
+                  <p>Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid.</p>
+                  <h4>Category</h4>
+                  <p>Patient Access</p>
+                  <button class="btn btn-default">View Details</button>
+                  <img class="panel-logo" src="images/logo-humana-wide.png">
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="app2">
+              <div class="panel panel-card">
+                <div class="panel-body panel-branded">
+                  <h3 class="subheader panel-header">Anthem</h3>
+                  <h2>Fee Schedule</h2>
+                  <p>Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid.</p>
+                  <h4>Category</h4>
+                  <p>Administration</p>
+                  <button class="btn btn-default">View Details</button>
+                  <img class="panel-logo" src="images/logo-anthem-wide.png">
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="app3">
+              <div class="panel panel-card">
+                <div class="panel-body panel-branded">
+                  <h3 class="subheader panel-header">Humana</h3>
+                  <h2>Provider Management</h2>
+                  <p>Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid.</p>
+                  <h4>Category</h4>
+                  <p>Administration</p>
+                  <button class="btn btn-default">View Details</button>
+                  <img class="panel-logo" src="images/logo-florida-blue-wide.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="nav nav-cards nav-justified " role="tablist">
+            <li class="active">
+              <a href="#app1" role="tab" data-toggle="tab">
+                <h6 class="subheader">Humana</h6>
+                Pharmacy Prior Authorization
+              </a>
+            </li>
+            <li>
+              <a href="#app2" role="tab" data-toggle="tab">
+                <h6 class="subheader">Anthem</h6>
+                Fee Schedule
+              </a>
+            </li>
+            <li>
+              <a href="#app3" role="tab" data-toggle="tab">
+                <h6 class="subheader">Florida Blue</h6>
+                Provider Management
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3 class="section-header">My Payer Spaces</h3>
+        <div class="panel panel-card">
+          <div class="panel-body">
+
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default">Search</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="panel panel-summary-secondary panel-xs">
+                  <div class="panel-body">
+                    <img src="images/logo-humana-box.png" alt="Humana Logo" class="img-responsive">
+                    <h5 class="subheader">Humana</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="panel panel-summary-secondary panel-xs">
+                  <div class="panel-body">
+                    <img src="images/logo-florida-blue-box.png" alt="Humana Logo" class="img-responsive">
+                    <h6 class="subheader">Florida Blue</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="panel panel-summary-secondary panel-xs">
+                  <div class="panel-body">
+                    <img src="images/logo-wellpoint-box.png" alt="Humana Logo" class="img-responsive">
+                    <h6 class="subheader">Well Point</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="panel panel-summary-secondary panel-xs">
+                  <div class="panel-body">
+                    <img src="images/logo-humana-box.png" alt="Humana Logo" class="img-responsive">
+                    <h6 class="subheader">Humana</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="panel panel-summary-secondary panel-xs">
+                  <div class="panel-body">
+                    <img src="images/logo-florida-blue-box.png" alt="Humana Logo" class="img-responsive">
+                    <h6 class="subheader">Florida Blue</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="panel panel-summary-secondary panel-xs">
+                  <div class="panel-body">
+                    <img src="images/logo-wellpoint-box.png" alt="Humana Logo" class="img-responsive">
+                    <h6 class="subheader">Humana</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+  <div role="tabpanel">
+    <ul class="nav nav-pills-secondary nav-header" role="tablist">
+      <li class="active">
+        <a href="#home2" role="tab" data-toggle="tab">All Apps</a>
+      </li>
+      <li>
+        <a href="#profile2" role="tab" data-toggle="tab">My Apps</a>
+      </li>
+      <li>
+        <a href="#messages2" role="tab" data-toggle="tab">Favorite Apps</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home2">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-inverse panel-card">
+              <div class="panel-heading">
+                <h4 class="panel-card-title">
+                Payer Apps
+                <span class="inline-help panel-heading-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.">About Payer Apps</span>
+                </h4>
+              </div>
+              <div class="panel-body">
+                <form class="form">
+                  <div class="form-group">
+                    <label for="search1">Search</label>
+                    <div class="input-group">
+                      <input type="text" id="search1" class="form-control" placeholder="Search">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Search</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="text1">Category</label>
+                    <select class="form-control">
+                      <option>All</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Sort By</label>
+                    <div class="btn-group btn-group-block">
+                      <button type="button" class="btn btn-default">Recent</button>
+                      <button type="button" class="btn btn-default">Name</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="panel panel-card panel-branded">
+              <div class="caret"></div>
+              <div class="panel-body">
+                <h4>Humana</h4>
+                <h3><a href="#">Primary Prior Authorization</a></h3>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p>Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quid securi etiam tamquam eu fugiat nulla pariatur. Quae vero auctorem tractata ab fiducia dicuntur. Contra legem facit qui id facit quodprohibet.</p>
+                    <p>
+                      <strong class="h7">Revelant Plans in Your Region</strong>
+                      Humana Connect (All), Humana Direct Bronze, Medicare (All)
+                    </p>
+                    <p>
+                      <strong class="h7">Category</strong>
+                      <a href="#">Print Access</a>
+                    </p>
+                  </div>
+                  <div class="col-sm-4">
+                    <p>
+                      <button class="btn btn-lg btn-primary btn-block">Request Access</button>
+                    </p>
+                    <p><small>This tool is not currently enabled for your organization. Request access from your admin (Name Name) to use this tool.</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-card panel-branded">
+              <div class="caret"></div>
+              <div class="panel-body">
+                <h4>Humana</h4>
+                <h3><a href="#">Credential Lookup</a></h3>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p>Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quid securi etiam tamquam eu fugiat nulla pariatur. Quae vero auctorem tractata ab fiducia dicuntur. Contra legem facit qui id facit quodprohibet.</p>
+                    <p>
+                      <strong class="h7">Revelant Plans in Your Region</strong>
+                      Humana Connect (All), Humana Direct Bronze, Medicare (All)
+                    </p>
+                    <p>
+                      <strong class="h7">Category</strong>
+                      <a href="#">Resources</a>
+                    </p>
+                  </div>
+                  <div class="col-sm-4">
+                    <p>
+                      <button class="btn btn-lg btn-primary btn-block">Request Access</button>
+                    </p>
+                    <p>
+                      <small>This tool is not currently enabled for your organization. Request access from your admin (Name Name) to use this tool.</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="profile2">
+        <p class="lead">My Apps</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="messages2">
+        <p class="lead">Favorite Apps</p>
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+</main>
+
+
+<footer class="footer">
+  <div class="footer-body container">
+    <span class="footer-copy">&copy; 2015 Availity, LLC.</span>
+    <ul class="footer-links">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/availity-uikit.js"></script>
+<script src="js/guide.js"></script>
+
+</body>
+</html>
