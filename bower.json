@@ -24,7 +24,6 @@
     "jquery": ">=1.9.1 <2.0.0",
     "bootstrap": "~3.3.2",
     "yamm3": "~1.0.0",
-    "eonasdan-bootstrap-datetimepicker": "~4.0.0",
     "typeahead.js": "~0.10.5",
     "typeahead.js-bootstrap3.less": "~0.2.3",
     "chartjs": "1.0.1",
