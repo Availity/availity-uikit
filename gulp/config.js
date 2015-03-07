@@ -99,7 +99,7 @@ module.exports = {
     dest: 'build/guide/js'
   },
   jsGuide: {
-    src: ['docs/guide/js/guide.js'],
+    src: ['docs/guide/js/docs.js'],
     dest: 'build/guide/js'
   },
   lib: {
@@ -126,7 +126,7 @@ module.exports = {
     src: [
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/moment/moment.js',
-      'bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js',
+      'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
       'bower_components/typeahead.js/dist/typeahead.bundle.js',
       'bower_components/select2/select2.js',
       'bower_components/velocity/velocity.js',
