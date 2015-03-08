@@ -27,3 +27,42 @@
     width: auto;
   }
 }
+
+.pagination.pagination-unstyled {
+  > li {
+	> a,
+	> span {
+	  padding: @padding-base-vertical;
+	  background-color: transparent;
+	  border-width: 0;
+	}
+  }
+
+  > li > a,
+  > li > span {
+	&:hover,
+	&:focus {
+	  background-color: @pagination-hover-bg;
+	}
+  }
+
+  > .active > a,
+  > .active > span {
+	&,
+	&:hover,
+	&:focus {
+	  background-color: @pagination-active-bg;
+	}
+  }
+
+  > .disabled {
+	> span,
+	> span:hover,
+	> span:focus,
+	> a,
+	> a:hover,
+	> a:focus {
+	  background-color: transparent;
+	}
+  }
+}
