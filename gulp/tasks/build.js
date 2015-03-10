@@ -22,7 +22,6 @@ var handlebarsPaths = require('../utils/handlebars.paths');
 var handlebarsPartials = require('../utils/handlebars.partials');
 
 var Handlebars = require('handlebars');
-var ghPages = require('gulp-gh-pages');
 
 gulp.task('build', ['build:handlebars:partials', 'build:docs']);
 
@@ -95,10 +94,5 @@ gulp.task('build:docs', function() {
     .pipe(gulp.dest(config.docs.dest))
     .pipe(reload({stream:true}));
 
-});
-
-gulp.task('deploy:ghpages', function () {
-  return gulp.src('./build/guide/**/*')
-    .pipe(ghPages());
 });
 

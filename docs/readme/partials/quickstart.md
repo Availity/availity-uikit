@@ -1,26 +1,19 @@
-* Install the Availity UIKit with Bower.
++ Install the Availity UIKit with Bower.
 
 >
 ```bash
 $ bower install availity-uikit --save
 ```
 
-or with NPM:
-
-
->```bash
-$ npm install availity-uikit --save
-```
-
-* Include the required libraries is your `index.html`
++ Include the required libraries is your `index.html`
 
 >
 ```html
 <!-- place in header -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/availity-uikit/0.0.1/css/availity-uikit.min.css"/>
+<link rel="stylesheet" href="//bower_components/availity-uikit/dist/availity-uikit.min.css"/>
 <!-- place before closing body tag -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/availity-uikit/0.0.1/js/availity-uikit.min.js"></script>
+<script src="//bower_components/availity-uikit/dist/js/availity-uikit.min.js"></script>
 ```
 
 ### Directory Layout
@@ -33,7 +26,9 @@ $ npm install availity-uikit --save
 ├── /docs/                      # Raw documentation assets for README.md and style guide
 ├── /node_modules/              # npm 3rd-party libraries and utilities
 ├── /bower_components/          # bower 3rd-party libraries and utilities
+├── /js/                        # Javascript source files
 ├── /fonts/                     # Icon fonts and web text fonts
+├── /less/                      # Less source files
 ├── /images/                    # Graphics (.png, .jpg, .svg etc.)
 ├── /gulp/                      # Gulp tasks and utility classes
 │── gulpfile.js                 # Configuration file for automated builds
