@@ -7,20 +7,39 @@
 
 {{> nav}}
 
-<main class="guide">
+<main class="body">
+
   <div class="container">
-
-    {{#each collections.examples}}
-      <section>
-        {{#if this.title}}
-          <a href="{{this.path}}">{{{this.title}}}</a>
-        {{else}}
-          <a href="#">**Missing YAML Front Matter Title Attribute**</a>
-        {{/if}}
-      </section>
-    {{/each}}
-
+    <h2 class="guide-section-header">Pages</h2>
   </div>
+
+  <div class="container">
+  {{#grouped_each 3 collections.examples}}
+  <div class="container-md-height">
+    <div class="row row-md-height">
+      {{#each this }}
+        <div class="col-md-3 col-md-height">
+          <div class="panel panel-summary">
+            <div class="panel-body">
+              {{#if this.title}}
+                <span class="app-icon app-icon-lg app-icon-{{{this.icon}}}">{{this.shortName}}</span>
+                <h3>{{{this.title}}}</h3>
+                <p>
+                  <a class="btn btn-primary" href="{{this.path}}">View</a>
+                </p>
+
+              {{else}}
+                <strong>** Missing YAML Front Matter Title Attribute **</strong>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  {{/grouped_each}}
+  </div>
+
 </main>
 
 {{> defaultFooter}}
