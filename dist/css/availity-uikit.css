@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.4.0 -- March-07
+ * availity-uikit v0.4.1 -- March-10
  * Copyright 2015 Availity, LLC 
  */
 
@@ -2946,6 +2946,11 @@ select.form-control {
 }
 .form-controls:after {
   clear: both;
+}
+.form-controls > .btn,
+.form-controls > .btn-group,
+.form-controls > .input-group {
+  margin-left: 5px;
 }
 @media (min-width: 768px) {
   .form-controls-right {
