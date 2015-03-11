@@ -48,12 +48,14 @@ gulp.task('build:handlebars:partials', function() {
 
   // http://funkjedi.com/technology/412-every-nth-item-in-handlebars/
   Handlebars.registerHelper('grouped_each', function(every, context, options) {
-    var out = "", subcontext = [], i;
+    var out = '';
+    var subcontext = [];
+    var i;
     if(context && context.length > 0) {
       for(i = 0; i < context.length; i++) {
         if(i > 0 && i % every === 0) {
-            out += options.fn(subcontext);
-            subcontext = [];
+          out += options.fn(subcontext);
+          subcontext = [];
         }
         subcontext.push(context[i]);
       }
