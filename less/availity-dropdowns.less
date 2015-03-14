@@ -9,8 +9,13 @@
 .dropdown-menu-md {
   min-width: 400px;
 
-
   @media (min-width: @grid-float-breakpoint) {
     max-width: 550px;
   }
+}
+
+.dropdown-menu-scrollable {
+  height: auto;
+  max-height: @availity-menu-max-height;
+  overflow-x: hidden;
 }
