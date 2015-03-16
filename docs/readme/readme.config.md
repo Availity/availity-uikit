@@ -14,6 +14,9 @@
 ## Icon Fonts
 {%= docs("fonts") %}
 
+## Supported Browsers
+{%= docs("supported") %}
+
 ## Authors
 {%= docs("authors") %}
 
