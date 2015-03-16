@@ -6,6 +6,7 @@
 * [Intro](#intro)
 * [Quickstart](#quickstart)
 * [Icon Fonts](#icon-fonts)
+* [Supported Browsers](#supported-browsers)
 * [Authors](#authors)
 * [Disclaimer](#disclaimer)
 * [License](#license)
@@ -65,6 +66,16 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (g
 + [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 + [Typicons](http://typicons.com/)
 + [Elusive Icons](http://elusiveicons.com/)
+
+
+## Supported Browsers
+availity-uikit is tested using the following browsers:
+
+* Internet Explorer 8 and newer
+* Google Chrome (latest version)
+* Mozilla Firefox (latest version)
+
+availity-uikit should likely work fine with other browsers as well, though you may experience some issues.
 
 
 ## Authors
