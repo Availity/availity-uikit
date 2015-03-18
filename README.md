@@ -4,9 +4,9 @@
 
 ## Table of Contents
 * [Intro](#intro)
+* [Supported Browsers](#supported-browsers)
 * [Quickstart](#quickstart)
 * [Icon Fonts](#icon-fonts)
-* [Supported Browsers](#supported-browsers)
 * [Authors](#authors)
 * [Disclaimer](#disclaimer)
 * [License](#license)
@@ -18,6 +18,16 @@ Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with override
 ### Demo
 
 [http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
+
+
+## Supported Browsers
+availity-uikit is tested using the following browsers:
+
+* Internet Explorer 8 and newer
+* Google Chrome (latest version)
+* Mozilla Firefox (latest version)
+
+availity-uikit should likely work fine with other browsers as well, though you may experience some issues.
 
 
 ## Quickstart
@@ -68,14 +78,6 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (g
 + [Elusive Icons](http://elusiveicons.com/)
 
 
-## Supported Browsers
-availity-uikit is tested using the following browsers:
-
-* Internet Explorer 8 and newer
-* Google Chrome (latest version)
-* Mozilla Firefox (latest version)
-
-availity-uikit should likely work fine with other browsers as well, though you may experience some issues.
 
 
 ## Authors
