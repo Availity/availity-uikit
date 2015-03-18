@@ -8,14 +8,16 @@
 ## Intro
 {%= docs("intro") %}
 
+## Supported Browsers
+{%= docs("supported") %}
+
 ## Quickstart
 {%= docs("quickstart") %}
 
 ## Icon Fonts
 {%= docs("fonts") %}
 
-## Supported Browsers
-{%= docs("supported") %}
+
 
 ## Authors
 {%= docs("authors") %}
