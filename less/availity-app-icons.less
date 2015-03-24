@@ -84,18 +84,38 @@
   }
 }
 
-.app-icon-is-branded {
+.app-icon-branded-black,
+.app-icon-branded-blue,
+.app-icon-branded-green,
+.app-icon-branded-neon,
+.app-icon-branded-orange {
   border: 1px solid @availity-app-icon-branded-border-color;
   background-color: @availity-app-icon-branded-border-bg;
   color: @availity-app-icon-branded-color;
-  .caret {
-    border-color: transparent @availity-app-icon-branded-caret-border-color transparent transparent;
-  }
 }
 
-.app-icon-is-branded-alt {
-  &:extend(.app-icon-is-branded);
+.app-icon-branded-black {
   .caret {
-    border-color: transparent @availity-app-icon-branded-caret-border-color-alt transparent transparent;
+    border-color: transparent @availity-app-icon-branded-black-caret-color transparent transparent;
+  }
+}
+.app-icon-branded-blue {
+  .caret {
+    border-color: transparent @availity-app-icon-branded-blue-caret-color transparent transparent;
+  }
+}
+.app-icon-branded-green {
+  .caret {
+    border-color: transparent @availity-app-icon-branded-green-caret-color transparent transparent;
+  }
+}
+.app-icon-branded-neon {
+  .caret {
+    border-color: transparent @availity-app-icon-branded-neon-caret-color transparent transparent;
+  }
+}
+.app-icon-branded-orange {
+  .caret {
+    border-color: transparent @availity-app-icon-branded-orange-caret-color transparent transparent;
   }
 }
