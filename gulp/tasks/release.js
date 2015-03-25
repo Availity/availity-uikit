@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var bump = require('gulp-bump');
+var fs = require('fs');
+var path = require('path');
 var prompt = require('gulp-prompt');
 var semver = require('semver');
 var git = require('gulp-git');
@@ -24,8 +26,14 @@ gulp.task('release:sequence', function() {
 });
 
 gulp.task('release:tag', function() {
+
+  var getPkg = function() {
+    var pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
+    return pkg.version;
+  };
+
   return gulp.src(['./package.json', './bower.json', './dist/*', 'README.md'])
-    .pipe(git.commit('bump package version')) // commit the changed version number
+    .pipe(git.commit('bump package version v' + getPkg())) // commit the changed version number
     .pipe(filter('package.json'))
     .pipe(tagVersion());
 });
