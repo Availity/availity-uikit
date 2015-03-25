@@ -67,6 +67,7 @@
     "he": "^0.5.0",
     "jshint-stylish": "^1.0.0",
     "lodash": "^3.3.1",
+    "markdown-it": "^4.0.2",
     "metalsmith": "^1.0.1",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-mock": "^1.0.0",
