@@ -72,7 +72,7 @@ module.exports = {
         'Badges',
         'Breadcrumbs',
         'Buttons',
-        'Contextual Menu',
+        'Dropdowns',
         'Footer',
         'Form',
         'Labels',
