@@ -4,6 +4,7 @@
 
 ## Table of Contents
 * [Intro](#intro)
+* [Demo](#demo)
 * [Supported Browsers](#supported-browsers)
 * [Quickstart](#quickstart)
 * [Icon Fonts](#icon-fonts)
@@ -15,19 +16,17 @@
 ## Intro
 Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
 
-### Demo
 
+## Demo
 [http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
 
 
 ## Supported Browsers
-availity-uikit is tested using the following browsers:
-
 * Internet Explorer 8 and newer
 * Google Chrome (latest version)
 * Mozilla Firefox (latest version)
 
-availity-uikit should likely work fine with other browsers as well, though you may experience some issues.
+> Other browsers should be supported as well but you may experience some issues.
 
 
 ## Quickstart
