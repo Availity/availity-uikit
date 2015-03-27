@@ -75,6 +75,11 @@ p {
   border-left: 5px solid @availity-disclaimer-warning-border;
 }
 
+.disclaimer-unstyled {
+  &:extend(blockquote);
+  border-left: none;
+}
+
 .agreement {
   height: 300px;
   overflow-y: scroll;
