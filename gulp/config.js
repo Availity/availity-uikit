@@ -64,7 +64,7 @@ module.exports = {
       components: [
         'Colors',
         'App Icons',
-        'Type',
+        'Typography',
         'Navbar',
         'Navs',
         'Mega Menu',
