@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.4.3 -- March-25
+ * availity-uikit v0.4.4 -- March-27
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1067,7 +1067,9 @@ th {
     content: "";
   }
   pre,
-  blockquote {
+  blockquote,
+  .disclaimer,
+  .disclaimer-unstyled {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -1599,7 +1601,9 @@ abbr[data-original-title] {
   font-size: 90%;
   text-transform: uppercase;
 }
-blockquote {
+blockquote,
+.disclaimer,
+.disclaimer-unstyled {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
@@ -1911,6 +1915,21 @@ p {
 }
 .metric-heading {
   margin-bottom: 0;
+}
+.disclaimer {
+  font-size: 14px;
+  border-left: 5px solid #e6c400;
+}
+.disclaimer-unstyled {
+  font-size: 14px;
+  border-left: none;
+}
+.agreement {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: .2em;
+  font-size: 12px;
 }
 code,
 kbd,
