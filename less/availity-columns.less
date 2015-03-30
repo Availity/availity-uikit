@@ -1,20 +1,25 @@
 // http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
 
 /* vertical alignment styles */
-.col-top {
-  vertical-align: top;
-}
-.col-middle {
-  vertical-align: middle;
-}
-.col-bottom {
-  vertical-align: bottom;
+
+.vertical-alignment-styles() {
+  .col-top {
+    vertical-align: top;
+  }
+  .col-middle {
+    vertical-align: middle;
+  }
+  .col-bottom {
+    vertical-align: bottom;
+  }
+
+  .full {
+    height: 100%;
+    min-height: 100%;
+  }
 }
 
-.full {
-  height: 100%;
-  min-height: 100%;
-}
+.vertical-alignment-styles();
 
 /* columns of same height styles */
 .container-xs-height {
@@ -38,6 +43,8 @@
     .col-sm-height {
       .table-cell();
     }
+
+    .vertical-alignment-styles();
 }
 
 @media (min-width: @screen-md-min) {
@@ -50,6 +57,8 @@
     .col-md-height {
       .table-cell();
     }
+
+    .vertical-alignment-styles();
 }
 
 @media (min-width: @screen-lg-min) {
@@ -62,4 +71,6 @@
     .col-lg-height {
       .table-cell();
     }
+
+    .vertical-alignment-styles();
 }
