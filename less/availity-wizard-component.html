@@ -1,6 +1,7 @@
 ---
 title: Wizard
 ---
+<h3 class="guide-subsection-title">Horizontal Wizard</h3>
 <div class="guide-example">
   <div class="stepwizard">
     <div class="stepwizard-row">
@@ -22,26 +23,74 @@ title: Wizard
       </div>
     </div>
   </div>
+
+  <code class="language-markup">
+    <div class="stepwizard">
+      <div class="stepwizard-row">
+        <div class="stepwizard-step complete">
+          <a href="#step-1" type="button" class="btn btn-step">1</a>
+          <p>First step description</p>
+        </div>
+        <div class="stepwizard-step active">
+          <a href="#step-2" type="button" class="btn btn-default btn-step">2</a>
+          <p>Second step description</p>
+        </div>
+        <div class="stepwizard-step disabled">
+          <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">3</a>
+          <p>Third step description</p>
+        </div>
+        <div class="stepwizard-step disabled">
+          <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">4</a>
+          <p>Fourth step description</p>
+        </div>
+      </div>
+    </div>
+  </code>
 </div>
-<code class="language-markup">
-<div class="stepwizard">
-  <div class="stepwizard-row">
-    <div class="stepwizard-step complete">
-      <a href="#step-1" type="button" class="btn btn-step">1</a>
-      <p>First step description</p>
-    </div>
-    <div class="stepwizard-step active">
-      <a href="#step-2" type="button" class="btn btn-default btn-step">2</a>
-      <p>Second step description</p>
-    </div>
-    <div class="stepwizard-step disabled">
-      <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">3</a>
-      <p>Third step description</p>
-    </div>
-    <div class="stepwizard-step disabled">
-      <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">4</a>
-      <p>Fourth step description</p>
+
+<h3 class="guide-subsection-title">Vertical Wizard</h3>
+<div class="guide-example">
+  <div class="stepwizard">
+    <div class="stepwizard-column">
+      <div class="stepwizard-step complete">
+        <a href="#step-1" type="button" class="btn btn-step">1</a>
+        <span>First step description</span>
+      </div>
+      <div class="stepwizard-step active">
+        <a href="#step-2" type="button" class="btn btn-default btn-step">2</a>
+        <span>Second step description</span>
+      </div>
+      <div class="stepwizard-step disabled">
+        <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">3</a>
+        <span>Third step description</span>
+      </div>
+      <div class="stepwizard-step disabled">
+        <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">4</a>
+        <span>Fourth step description</span>
+      </div>
     </div>
   </div>
+
+  <code class="language-markup">
+    <div class="stepwizard">
+      <div class="stepwizard-column">
+        <div class="stepwizard-step complete">
+          <a href="#step-1" type="button" class="btn btn-step">1</a>
+          <span>First step description</span>
+        </div>
+        <div class="stepwizard-step active">
+          <a href="#step-2" type="button" class="btn btn-default btn-step">2</a>
+          <span>Second step description</span>
+        </div>
+        <div class="stepwizard-step disabled">
+          <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">3</a>
+          <span>Third step description</span>
+        </div>
+        <div class="stepwizard-step disabled">
+          <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">4</a>
+          <span>Fourth step description</span>
+        </div>
+      </div>
+    </div>
+  </code>
 </div>
-</code>
