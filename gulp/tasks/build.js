@@ -20,6 +20,7 @@ var config = require('../config');
 var Sort = require('../utils/metalsmith.title.sorting');
 var handlebarsPaths = require('../utils/handlebars.paths');
 var handlebarsPartials = require('../utils/handlebars.partials');
+var metalsmithMarkdown = require('../utils/metalsmith.data.markdown');
 
 var Handlebars = require('handlebars');
 
@@ -95,6 +96,7 @@ gulp.task('build:docs', function() {
       .use(metalsmithPaths())
       .use(metlsmithPrism())
       .use(metalsmithMock())
+      .use(metalsmithMarkdown())
       .use(templates({
         engine: 'handlebars',
         directory: config.docs.templates.src
