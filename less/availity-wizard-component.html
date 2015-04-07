@@ -1,47 +1,73 @@
 ---
 title: Wizard
 ---
+
+<h3 class="guide-subsection-title">Horizontal</h3>
 <div class="guide-example">
   <div class="stepwizard">
     <div class="stepwizard-row">
-      <div class="stepwizard-step complete">
-        <a href="#step-1" type="button" class="btn btn-step">1</a>
-        <p>First</p>
-      </div>
-      <div class="stepwizard-step active">
-        <a href="#step-2" type="button" class="btn btn-default btn-step">2</a>
-        <p>Second with some long text</p>
-      </div>
-      <div class="stepwizard-step disabled">
-        <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">3</a>
-        <p>Third</p>
-      </div>
-      <div class="stepwizard-step disabled">
-        <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">4</a>
-        <p>Fourth with some long text</p>
-      </div>
+      <a class="stepwizard-step complete">
+        <span href="#step-1" class="stepwizard-badge">1</span>
+        <span class="stepwizard-title">First</span>
+      </a>
+      <a class="stepwizard-step active">
+        <span href="#step-2" class="stepwizard-badge">2</span>
+        <span class="stepwizard-title">Second with some long text</span>
+      </a>
+      <a class="stepwizard-step disabled">
+        <span href="#step-3" class="stepwizard-badge">3</span>
+        <span class="stepwizard-title">Third</span>
+      </a>
+      <a class="stepwizard-step disabled">
+        <span href="#step-3" class="stepwizard-badge">4</span>
+        <span class="stepwizard-title">Fourth with longest text ever written in a wizard</span>
+      </a>
     </div>
   </div>
 </div>
 <code class="language-markup">
 <div class="stepwizard">
   <div class="stepwizard-row">
-    <div class="stepwizard-step complete">
-      <a href="#step-1" type="button" class="btn btn-step">1</a>
-      <p>First step description</p>
-    </div>
-    <div class="stepwizard-step active">
-      <a href="#step-2" type="button" class="btn btn-default btn-step">2</a>
-      <p>Second step description</p>
-    </div>
-    <div class="stepwizard-step disabled">
-      <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">3</a>
-      <p>Third step description</p>
-    </div>
-    <div class="stepwizard-step disabled">
-      <a href="#step-3" type="button" class="btn btn-default btn-step" disabled="disabled">4</a>
-      <p>Fourth step description</p>
-    </div>
+    <a class="stepwizard-step complete">
+      <span href="#step-1" class="stepwizard-badge">1</span>
+      <span class="stepwizard-title">First</span>
+    </a>
+    <a class="stepwizard-step active">
+      <span href="#step-2" class="stepwizard-badge">2</span>
+      <span class="stepwizard-title">Second with some long text</span>
+    </a>
+    <a class="stepwizard-step disabled">
+      <span href="#step-3" class="stepwizard-badge">3</span>
+      <span class="stepwizard-title">Third</span>
+    </a>
+    <a class="stepwizard-step disabled">
+      <span href="#step-3" class="stepwizard-badge">4</span>
+      <span class="stepwizard-title">Fourth with some really really really long text</span>
+    </a>
   </div>
 </div>
 </code>
+
+<h3 class="guide-subsection-title">Vertical</h3>
+<div class="guide-example">
+  <div class="stepwizard stepwizard-stacked">
+    <div class="stepwizard-row">
+      <a class="stepwizard-step complete">
+        <span href="#step-1" class="stepwizard-badge">1</span>
+        <span class="stepwizard-title">First</span>
+      </a>
+      <a class="stepwizard-step active">
+        <span href="#step-2" class="stepwizard-badge">2</span>
+        <span class="stepwizard-title">Second with some long text</span>
+      </a>
+      <a class="stepwizard-step disabled">
+        <span href="#step-3" class="stepwizard-badge">3</span>
+        <span class="stepwizard-title">Third</span>
+      </a>
+      <a class="stepwizard-step disabled">
+        <span href="#step-3" class="stepwizard-badge">4</span>
+        <span class="stepwizard-title">Fourth with longest text ever written in a wizard</span>
+      </a>
+    </div>
+  </div>
+</div>

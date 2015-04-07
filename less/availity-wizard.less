@@ -12,48 +12,85 @@
   position: relative;
 }
 
+.stepwizard-badge {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 0;
+  color: @text-color;
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: @btn-success-bg;
+  border: 2px solid @btn-success-border;
+}
+
+.stepwizard-title {
+  display: block;
+}
 
 .stepwizard-step {
   display: table-cell;
   text-align: center;
   width: 1%;
+  cursor: pointer;
+  color: @text-color;
+  padding: @nav-link-padding;
+
+  > p {
+    margin: .3em;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: @gray-lightest;
+  }
 
   &.complete {
-    > .btn-step {
-      .btn-success;
+    > .stepwizard-badge {
+      color: @white;
     }
   }
 
   &.active {
-    > .btn-step {
-      .btn-success;
+
+    > .stepwizard-badge {
       color: @text-color;
       background-color: @white;
-
-      &:hover {
-        color: @text-color;
-        background-color: @gray-lighter;
-      }
     }
   }
 
   &.disabled {
     cursor: not-allowed;
-    > .btn-step {
-      color: @white;
-      background-color: @gray;
+    background-color: transparent;
+    color: @text-color;
+
+    > .stepwizard-badge {
+      background-color: @btn-default-bg;
+      border: 2px solid @btn-default-border;
     }
 
   }
 }
 
-.btn-step {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  border-width: 2px;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
+.stepwizard-stacked {
+  display: block;
+
+  .stepwizard-row {
+    display: block;
+  }
+
+  .stepwizard-step {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .stepwizard-title {
+    display: inline;
+    margin-left: .3em;
+  }
+
 }
+
+
