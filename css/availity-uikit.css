@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.4.5 -- March-29
+ * availity-uikit v0.5.0 -- April-06
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1227,6 +1227,9 @@ hr {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+[role="button"] {
+  cursor: pointer;
 }
 html {
   min-height: 100%;
@@ -3025,9 +3028,12 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  cursor: not-allowed;
   background-color: #e8ebeb;
   opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
 }
 textarea.form-control {
   height: auto;
@@ -3095,6 +3101,7 @@ input[type="search"] {
 }
 .radio-inline,
 .checkbox-inline {
+  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -3131,6 +3138,7 @@ fieldset[disabled] .checkbox label {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
+  min-height: 34px;
 }
 .form-control-static.input-lg,
 .form-control-static.input-sm {
@@ -3172,6 +3180,7 @@ select[multiple].form-group-sm .form-control {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
+  min-height: 32px;
 }
 .input-lg {
   height: 46px;
@@ -3208,6 +3217,7 @@ select[multiple].form-group-lg .form-control {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
+  min-height: 38px;
 }
 .has-feedback {
   position: relative;
@@ -4020,11 +4030,9 @@ input[type="button"].btn-block {
 }
 .collapse {
   display: none;
-  visibility: hidden;
 }
 .collapse.in {
   display: block;
-  visibility: visible;
 }
 tr.collapse.in {
   display: table-row;
@@ -4049,7 +4057,7 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px solid;
+  border-top: 4px dashed;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -4720,11 +4728,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .tab-pane {
   display: none;
-  visibility: hidden;
 }
 .tab-content > .active {
   display: block;
-  visibility: visible;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4832,7 +4838,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse.collapse {
     display: block !important;
-    visibility: visible !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
@@ -5729,7 +5734,8 @@ a.label:focus {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge {
+.btn-xs .badge,
+.btn-group-xs > .btn .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6910,10 +6916,10 @@ a.list-group-item-danger.active:focus {
   width: 100%;
   border: 0;
 }
-.embed-responsive.embed-responsive-16by9 {
+.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3 {
+.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 .well {
@@ -7767,123 +7773,63 @@ button.close {
   width: 100%;
   position: relative;
 }
+.stepwizard-badge {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  padding: 4px 0;
+  color: #4d4f53;
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: #02a17c;
+  border: 2px solid #028869;
+}
+.stepwizard-title {
+  display: block;
+}
 .stepwizard-step {
   display: table-cell;
   text-align: center;
   width: 1%;
+  cursor: pointer;
+  color: #4d4f53;
+  padding: 10px 15px;
 }
-.stepwizard-step.complete > .btn-step {
+.stepwizard-step:hover {
+  text-decoration: none;
+  background-color: #f2f5f5;
+}
+.stepwizard-step.complete > .stepwizard-badge {
   color: #ffffff;
-  background-color: #02a17c;
-  border-color: #028869;
 }
-.stepwizard-step.complete > .btn-step:hover,
-.stepwizard-step.complete > .btn-step:focus,
-.stepwizard-step.complete > .btn-step.focus,
-.stepwizard-step.complete > .btn-step:active,
-.stepwizard-step.complete > .btn-step.active,
-.open > .dropdown-toggle.stepwizard-step.complete > .btn-step {
-  color: #ffffff;
-  background-color: #016f55;
-  border-color: #014b3a;
-}
-.stepwizard-step.complete > .btn-step:active,
-.stepwizard-step.complete > .btn-step.active,
-.open > .dropdown-toggle.stepwizard-step.complete > .btn-step {
-  background-image: none;
-}
-.stepwizard-step.complete > .btn-step.disabled,
-.stepwizard-step.complete > .btn-step[disabled],
-fieldset[disabled] .stepwizard-step.complete > .btn-step,
-.stepwizard-step.complete > .btn-step.disabled:hover,
-.stepwizard-step.complete > .btn-step[disabled]:hover,
-fieldset[disabled] .stepwizard-step.complete > .btn-step:hover,
-.stepwizard-step.complete > .btn-step.disabled:focus,
-.stepwizard-step.complete > .btn-step[disabled]:focus,
-fieldset[disabled] .stepwizard-step.complete > .btn-step:focus,
-.stepwizard-step.complete > .btn-step.disabled.focus,
-.stepwizard-step.complete > .btn-step[disabled].focus,
-fieldset[disabled] .stepwizard-step.complete > .btn-step.focus,
-.stepwizard-step.complete > .btn-step.disabled:active,
-.stepwizard-step.complete > .btn-step[disabled]:active,
-fieldset[disabled] .stepwizard-step.complete > .btn-step:active,
-.stepwizard-step.complete > .btn-step.disabled.active,
-.stepwizard-step.complete > .btn-step[disabled].active,
-fieldset[disabled] .stepwizard-step.complete > .btn-step.active {
-  background-color: #02a17c;
-  border-color: #028869;
-}
-.stepwizard-step.complete > .btn-step .badge {
-  color: #02a17c;
-  background-color: #ffffff;
-}
-.stepwizard-step.active > .btn-step {
-  color: #ffffff;
-  background-color: #02a17c;
-  border-color: #028869;
+.stepwizard-step.active > .stepwizard-badge {
   color: #4d4f53;
   background-color: #ffffff;
-}
-.stepwizard-step.active > .btn-step:hover,
-.stepwizard-step.active > .btn-step:focus,
-.stepwizard-step.active > .btn-step.focus,
-.stepwizard-step.active > .btn-step:active,
-.stepwizard-step.active > .btn-step.active,
-.open > .dropdown-toggle.stepwizard-step.active > .btn-step {
-  color: #ffffff;
-  background-color: #016f55;
-  border-color: #014b3a;
-}
-.stepwizard-step.active > .btn-step:active,
-.stepwizard-step.active > .btn-step.active,
-.open > .dropdown-toggle.stepwizard-step.active > .btn-step {
-  background-image: none;
-}
-.stepwizard-step.active > .btn-step.disabled,
-.stepwizard-step.active > .btn-step[disabled],
-fieldset[disabled] .stepwizard-step.active > .btn-step,
-.stepwizard-step.active > .btn-step.disabled:hover,
-.stepwizard-step.active > .btn-step[disabled]:hover,
-fieldset[disabled] .stepwizard-step.active > .btn-step:hover,
-.stepwizard-step.active > .btn-step.disabled:focus,
-.stepwizard-step.active > .btn-step[disabled]:focus,
-fieldset[disabled] .stepwizard-step.active > .btn-step:focus,
-.stepwizard-step.active > .btn-step.disabled.focus,
-.stepwizard-step.active > .btn-step[disabled].focus,
-fieldset[disabled] .stepwizard-step.active > .btn-step.focus,
-.stepwizard-step.active > .btn-step.disabled:active,
-.stepwizard-step.active > .btn-step[disabled]:active,
-fieldset[disabled] .stepwizard-step.active > .btn-step:active,
-.stepwizard-step.active > .btn-step.disabled.active,
-.stepwizard-step.active > .btn-step[disabled].active,
-fieldset[disabled] .stepwizard-step.active > .btn-step.active {
-  background-color: #02a17c;
-  border-color: #028869;
-}
-.stepwizard-step.active > .btn-step .badge {
-  color: #02a17c;
-  background-color: #ffffff;
-}
-.stepwizard-step.active > .btn-step:hover {
-  color: #4d4f53;
-  background-color: #e8ebeb;
 }
 .stepwizard-step.disabled {
   cursor: not-allowed;
+  background-color: transparent;
+  color: #4d4f53;
 }
-.stepwizard-step.disabled > .btn-step {
-  color: #ffffff;
-  background-color: #4d4f53;
+.stepwizard-step.disabled > .stepwizard-badge {
+  background-color: #e1e3e3;
+  border: 2px solid #cccccc;
 }
-.btn-step {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  border-width: 2px;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
+.stepwizard-stacked {
+  display: block;
+}
+.stepwizard-stacked .stepwizard-row {
+  display: block;
+}
+.stepwizard-stacked .stepwizard-step {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.stepwizard-stacked .stepwizard-title {
+  display: inline;
+  margin-left: .2em;
 }
 .modal-open {
   overflow: hidden;
@@ -7896,7 +7842,7 @@ fieldset[disabled] .stepwizard-step.active > .btn-step.active {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
@@ -7932,10 +7878,12 @@ fieldset[disabled] .stepwizard-step.active > .btn-step.active {
   outline: 0;
 }
 .modal-backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
+  z-index: 1040;
   background-color: #000000;
 }
 .modal-backdrop.fade {
@@ -8018,7 +7966,6 @@ fieldset[disabled] .stepwizard-step.active > .btn-step.active {
   position: absolute;
   z-index: 1070;
   display: block;
-  visibility: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -8480,15 +8427,6 @@ fieldset[disabled] .stepwizard-step.active > .btn-step.active {
   font-size: 1.2em;
   color: #009a57;
 }
-/*!
- * Datepicker for Bootstrap
- *
- * Copyright 2012 Stefan Petre
- * Improvements by Andrew Rowls
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- */
 .datepicker {
   padding: 4px;
   border-radius: 4px;
@@ -8557,13 +8495,9 @@ fieldset[disabled] .stepwizard-step.active > .btn-step.active {
 .datepicker > div {
   display: none;
 }
-.datepicker.days div.datepicker-days {
-  display: block;
-}
-.datepicker.months div.datepicker-months {
-  display: block;
-}
-.datepicker.years div.datepicker-years {
+.datepicker.days .datepicker-days,
+.datepicker.months .datepicker-months,
+.datepicker.years .datepicker-years {
   display: block;
 }
 .datepicker table {
@@ -9302,7 +9236,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .datepicker table tr td span.new {
   color: #e1e3e3;
 }
-.datepicker th.datepicker-switch {
+.datepicker .datepicker-switch {
   width: 145px;
 }
 .datepicker thead tr:first-child th,
@@ -9319,12 +9253,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   padding: 0 2px 0 5px;
   vertical-align: middle;
 }
-.datepicker thead tr:first-child th.cw {
+.datepicker thead tr:first-child .cw {
   cursor: default;
   background-color: transparent;
 }
-.input-group.date .input-group-addon i {
+.input-group.date .input-group-addon {
   cursor: pointer;
+}
+.input-daterange {
+  width: 100%;
 }
 .input-daterange input {
   text-align: center;
@@ -10805,7 +10742,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 .affix {
   position: fixed;
