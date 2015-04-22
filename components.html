@@ -25,7 +25,7 @@
 
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand-availity" href="index.html">
           <img alt="Availity Logo Alt" src="images/logo-availity.png">
@@ -35,7 +35,7 @@
     </div>
   </nav>
   <nav class="navbar navbar-default navbar-secondary navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -523,6 +523,31 @@ Link. If an action occurs, AND the user goes to a new page as a result
           </section>
           <section class="guide-section">
             <h2 class="guide-section-header">
+              Containers
+            </h2>
+            
+<div data-markdown=""><blockquote>
+<p>To see full page examples for different container sizes please see our <a href="/container-sizes.html">examples page</a></p>
+</blockquote>
+</div>
+<h3 class="guide-subsection-title">Small</h3>
+<div class="guide-example">
+  <div class="container-sm">
+    <div class="well">
+    ...
+    </div>
+  </div>
+</div>
+<code class="language-markup">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container-sm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code>
+
+
+          </section>
+          <section class="guide-section">
+            <h2 class="guide-section-header">
               App Icons
             </h2>
             
@@ -690,7 +715,7 @@ relevant, should be codified in a separate pattern.</p>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
 </code>
 
-<h3 class="guide-subsection-title">Forms</h3>
+<h3 class="guide-subsection-title">Forms in navbar</h3>
 <div class="guide-example">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
