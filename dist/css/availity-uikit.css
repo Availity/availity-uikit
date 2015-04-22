@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.5.0 -- April-06
+ * availity-uikit v0.5.1 -- April-22
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1997,6 +1997,18 @@ pre code {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+.container-sm {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .container-sm {
+    width: 700px;
+  }
 }
 .container {
   margin-right: auto;
@@ -7762,16 +7774,13 @@ button.close {
 .notifications-menu-count {
   color: #7e8188;
 }
-.stepwizard-step p {
-  margin-top: 10px;
-}
-.stepwizard-row {
-  display: table-row;
-}
 .stepwizard {
   display: table;
   width: 100%;
   position: relative;
+}
+.stepwizard-row {
+  display: table-row;
 }
 .stepwizard-badge {
   width: 30px;
@@ -10667,6 +10676,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
+.container-sm:before,
+.container-sm:after,
 .container:before,
 .container:after,
 .container-fluid:before,
@@ -10698,6 +10709,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .clearfix:after,
 .dl-horizontal dd:after,
+.container-sm:after,
 .container:after,
 .container-fluid:after,
 .row:after,
