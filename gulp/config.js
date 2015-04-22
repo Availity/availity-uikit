@@ -65,6 +65,7 @@ module.exports = {
         'Colors',
         'Typography',
         'Buttons',
+        'Containers',
         'App Icons',
         'Navbar',
         'Navs',
