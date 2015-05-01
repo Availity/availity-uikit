@@ -35,7 +35,8 @@
 
   // Select2
   $('.select2, .select2-multiple').select2({
-    placeholder: 'Select a State'
+    placeholder: 'Select a State',
+    allowClear: true
   }).on("select2-open", function () {
 
     var $this = $(this);

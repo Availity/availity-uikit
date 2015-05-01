@@ -473,6 +473,10 @@ sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation"
               </h2>
             
 <h3 class="guide-subsection-title">Single Select</h3>
+<div data-markdown=""><blockquote>
+<p>Select2 requires an empty <code>&lt;option&gt;&lt;/option&gt;</code> tag in order for the plugin option <code>allowClear</code> to work properly.</p>
+</blockquote>
+</div>
 <div class="guide-example">
     <div class="form-group">
         <label for="single" class="control-label">State</label>
@@ -555,7 +559,10 @@ sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation"
 
 <span class="token comment" spellcheck="true">&lt;!-- Javascript --&gt;</span>
 <span class="token script language-javascript"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;.select2, .select2-multiple&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select2</span><span class="token punctuation">(</span><span class="token punctuation">{</span> placeholder<span class="token punctuation">:</span> <span class="token string">&quot;Select a State&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;.select2, .select2-multiple&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select2</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  placeholder<span class="token punctuation">:</span> <span class="token string">&quot;Select a State&quot;</span><span class="token punctuation">,</span>
+  allowClear<span class="token punctuation">:</span> <span class="token keyword">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span>
 </code>
 
@@ -641,7 +648,9 @@ sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation"
 
 <span class="token comment" spellcheck="true">&lt;!-- Javascript --&gt;</span>
 <span class="token script language-javascript"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token function">$</span><span class="token punctuation">(</span> <span class="token string">&quot;.select2, .select2-multiple&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select2</span><span class="token punctuation">(</span><span class="token punctuation">{</span> placeholder<span class="token punctuation">:</span> <span class="token string">&quot;Select a State&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;.select2, .select2-multiple&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select2</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  placeholder<span class="token punctuation">:</span> <span class="token string">&quot;Select a State&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></span>
 </code>
 
