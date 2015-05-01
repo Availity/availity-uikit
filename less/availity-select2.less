@@ -1,18 +1,3 @@
-.select2-search-choice-close {
-  background: none;
-  font-size: inherit;
-  color: @text-color;
-
-  &:after {
-    .iconify(@availity-icon-cancel);
-  }
-
-  &:hover {
-    color: darken(@text-color, 50%);
-    text-decoration: none;
-  }
-}
-
 .select2-search {
 
   &:after {
@@ -28,8 +13,20 @@
   }
 }
 
-.select2-container .select2-choice abbr {
-  background: none; // should be close button for {allowClear: true}
+.select2-container .select2-choice abbr, .select2-search-choice-close {
+
+  background: none;
+
+  &:before {
+    .iconify(@availity-icon-cancel);
+    color: @text-color;
+    font-size: 12px;
+  }
+
+  &:hover:before {
+    color: darken(@text-color, 50%);
+    text-decoration: none;
+  }
 }
 
 .select2-container .select2-choice .select2-arrow b {
