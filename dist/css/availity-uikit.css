@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.5.1 -- April-22
+ * availity-uikit v0.5.2 -- May-01
  * Copyright 2015 Availity, LLC 
  */
 
@@ -7140,6 +7140,9 @@ button.close {
 .app-icon-branded-orange .caret {
   border-color: transparent #db4e1f transparent transparent;
 }
+.dropdown-menu > li.app-menu-item {
+  padding: .4em 0;
+}
 .footer {
   color: #9fa2a4;
   background-color: #48535c;
@@ -10510,29 +10513,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   height: 1px !important;
   position: absolute !important;
 }
-.select2-search-choice-close {
-  background: none;
-  font-size: inherit;
-  color: #4d4f53;
-}
-.select2-search-choice-close:after {
-  font-family: "availity-icon-font";
-  content: '\e862';
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-}
-.select2-search-choice-close:hover {
-  color: #000000;
-  text-decoration: none;
-}
 .select2-search:after {
   font-family: "availity-icon-font";
   content: '\e84f';
@@ -10554,8 +10534,31 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-search input {
   background: none;
 }
-.select2-container .select2-choice abbr {
+.select2-container .select2-choice abbr,
+.select2-search-choice-close {
   background: none;
+}
+.select2-container .select2-choice abbr:before,
+.select2-search-choice-close:before {
+  font-family: "availity-icon-font";
+  content: '\e862';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  color: #4d4f53;
+  font-size: 12px;
+}
+.select2-container .select2-choice abbr:hover:before,
+.select2-search-choice-close:hover:before {
+  color: #000000;
+  text-decoration: none;
 }
 .select2-container .select2-choice .select2-arrow b {
   background: none;
