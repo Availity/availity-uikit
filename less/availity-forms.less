@@ -86,3 +86,10 @@ select.form-control {
   }
 }
 
+// http://stackoverflow.com/questions/14007655/remove-ie10s-clear-field-x-button-on-certain-inputs
+input[type=text] {
+  &::-ms-clear {
+    display: none;
+  }
+}
+
