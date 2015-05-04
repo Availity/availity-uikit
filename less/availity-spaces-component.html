@@ -1,0 +1,104 @@
+---
+title: Spaces Tiles
+description: |
+  Large Clickable Tiles displayed from Mega Menu in horizontal orintation.
+usage: |
+  Spaces tiles should be use when drop down menu needs to display large tiles that expands horizontally.
+notes: |
+  Depending on how it's used, it may be appropriate to develop a separate
+  pattern for use in wizards and other user-driven workflows.
+---
+
+<nav class="navbar-default navbar mega-menu spaces-navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#availity-navbar-secondary" >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="availity-navbar-secondary-spaces">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Payer Spaces</a>
+          <div class="dropdown-menu mega-menu-default spaces-tile-menu dropdown-menu-scrollable" role="menu">
+            <div class="row row-sm-height">
+              <div class="col spaces-tile spaces-tile-logo-font" align="center">
+                <a href="https://www.availity.com" class="panel-body" target="_blank">
+                  <img src="images/tile-anthem-ca.png" alt="Availity Home" class="img-responsive spaces-tile-logo">
+                  Anthem CA
+                </a>
+              </div>
+              <div class="col spaces-tile spaces-tile-logo-font" align="center">
+                <a href="https://www.availity.com" class="panel-body" target="_blank">
+                  <img src="images/tile-anthem-nv.png" alt="Availity Home" class="img-responsive spaces-tile-logo">
+                  Anthem NV
+                </a>
+              </div>
+              <div class="col spaces-tile spaces-tile-logo-font" align="center">
+                <a href="https://www.availity.com" class="panel-body" target="_blank">
+                  <img src="images/tile-florida-blue.png" alt="Availity Home" class="img-responsive spaces-tile-logo">
+                  Florida Blue
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<code class="language-markup">
+  <nav class="navbar-default navbar mega-menu spaces-navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+                ng-click="navbar.toggleHamburger()"
+                data-toggle="collapse"
+                data-target="#availity-navbar-secondary" >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="availity-navbar-secondary">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">Payer Spaces</a>
+            <div class="dropdown-menu mega-menu-default spaces-tile-menu dropdown-menu-scrollable" role="menu">
+              <div class="row row-sm-height">
+                <div class="col spaces-tile spaces-tile-logo-font" align="center">
+                  <a href="https://www.availity.com" class="panel-body" target="_blank">
+                    <img src="images/tile-anthem-ca.png" alt="Availity Home" class="img-responsive spaces-tile-logo">
+                    Anthem CA
+                  </a>
+                </div>
+                <div class="col spaces-tile spaces-tile-logo-font" align="center">
+                  <a href="https://www.availity.com" class="panel-body" target="_blank">
+                    <img src="images/tile-anthem-nv.png" alt="Availity Home" class="img-responsive spaces-tile-logo">
+                    Anthem NV
+                  </a>
+                </div>
+                <div class="col spaces-tile spaces-tile-logo-font" align="center">
+                  <a href="https://www.availity.com" class="panel-body" target="_blank">
+                    <img src="images/tile-florida-blue.png" alt="Availity Home" class="img-responsive spaces-tile-logo">
+                    Florida Blue
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</code> 
+
