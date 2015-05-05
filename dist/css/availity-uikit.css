@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.5.2 -- May-01
+ * availity-uikit v0.5.3 -- May-05
  * Copyright 2015 Availity, LLC 
  */
 
@@ -3539,6 +3539,9 @@ select.form-control {
 }
 .radio-group-vertical input:checked {
   background-color: #e8ebeb;
+}
+input[type=text]::-ms-clear {
+  display: none;
 }
 .btn,
 .btn-favorites {
