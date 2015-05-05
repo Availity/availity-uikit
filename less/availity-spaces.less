@@ -1,8 +1,51 @@
+.billboard-featured {
+  padding: @availity-panel-card-padding;
+  font-size: @font-size-medium;
+}
+
 .spaces-header {
-  margin: 0 0 (@line-height-computed / 2);
+  .clearfix;
+  margin-bottom: 1em;
+}
+
+.spaces-logo {
+  width: 234px;
+  height: 60px;
+  display: inline-block;
 }
 
 .spaces-link {
   font-weight: bold;
   font-size: @font-size-medium;
+  display: none;
 }
+
+@media (min-width: @screen-xs-max) {
+
+  .spaces-link {
+    display: inline;
+  }
+
+  .spaces-header {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .spaces-header-col {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .spaces-header-col-left {
+    text-align: left;
+  }
+
+  .spaces-header-col-right {
+    text-align: right;
+  }
+
+}
+
