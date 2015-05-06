@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.5.2 -- May-01
+ * availity-uikit v0.5.2 -- May-06
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1227,9 +1227,6 @@ hr {
   margin: 0;
   overflow: visible;
   clip: auto;
-}
-[role="button"] {
-  cursor: pointer;
 }
 html {
   min-height: 100%;
@@ -3040,12 +3037,9 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
+  cursor: not-allowed;
   background-color: #e8ebeb;
   opacity: 1;
-}
-.form-control[disabled],
-fieldset[disabled] .form-control {
-  cursor: not-allowed;
 }
 textarea.form-control {
   height: auto;
@@ -3113,7 +3107,6 @@ input[type="search"] {
 }
 .radio-inline,
 .checkbox-inline {
-  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -3150,7 +3143,6 @@ fieldset[disabled] .checkbox label {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 34px;
 }
 .form-control-static.input-lg,
 .form-control-static.input-sm {
@@ -3192,7 +3184,6 @@ select[multiple].form-group-sm .form-control {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  min-height: 32px;
 }
 .input-lg {
   height: 46px;
@@ -3229,7 +3220,6 @@ select[multiple].form-group-lg .form-control {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  min-height: 38px;
 }
 .has-feedback {
   position: relative;
@@ -3539,6 +3529,9 @@ select.form-control {
 }
 .radio-group-vertical input:checked {
   background-color: #e8ebeb;
+}
+input[type=text]::-ms-clear {
+  display: none;
 }
 .btn,
 .btn-favorites {
@@ -4042,9 +4035,11 @@ input[type="button"].btn-block {
 }
 .collapse {
   display: none;
+  visibility: hidden;
 }
 .collapse.in {
   display: block;
+  visibility: visible;
 }
 tr.collapse.in {
   display: table-row;
@@ -4069,7 +4064,7 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px dashed;
+  border-top: 4px solid;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -4740,9 +4735,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .tab-pane {
   display: none;
+  visibility: hidden;
 }
 .tab-content > .active {
   display: block;
+  visibility: visible;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4850,6 +4847,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse.collapse {
     display: block !important;
+    visibility: visible !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
@@ -5746,8 +5744,7 @@ a.label:focus {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge,
-.btn-group-xs > .btn .badge {
+.btn-xs .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6928,10 +6925,10 @@ a.list-group-item-danger.active:focus {
   width: 100%;
   border: 0;
 }
-.embed-responsive-16by9 {
+.embed-responsive.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive-4by3 {
+.embed-responsive.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 .well {
@@ -7854,7 +7851,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1040;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
@@ -7890,12 +7887,10 @@ button.close {
   outline: 0;
 }
 .modal-backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 1040;
   background-color: #000000;
 }
 .modal-backdrop.fade {
@@ -7978,6 +7973,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
+  visibility: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -8439,6 +8435,15 @@ button.close {
   font-size: 1.2em;
   color: #009a57;
 }
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Improvements by Andrew Rowls
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
 .datepicker {
   padding: 4px;
   border-radius: 4px;
@@ -8507,9 +8512,13 @@ button.close {
 .datepicker > div {
   display: none;
 }
-.datepicker.days .datepicker-days,
-.datepicker.months .datepicker-months,
-.datepicker.years .datepicker-years {
+.datepicker.days div.datepicker-days {
+  display: block;
+}
+.datepicker.months div.datepicker-months {
+  display: block;
+}
+.datepicker.years div.datepicker-years {
   display: block;
 }
 .datepicker table {
@@ -9248,7 +9257,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .datepicker table tr td span.new {
   color: #e1e3e3;
 }
-.datepicker .datepicker-switch {
+.datepicker th.datepicker-switch {
   width: 145px;
 }
 .datepicker thead tr:first-child th,
@@ -9265,15 +9274,12 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   padding: 0 2px 0 5px;
   vertical-align: middle;
 }
-.datepicker thead tr:first-child .cw {
+.datepicker thead tr:first-child th.cw {
   cursor: default;
   background-color: transparent;
 }
-.input-group.date .input-group-addon {
+.input-group.date .input-group-addon i {
   cursor: pointer;
-}
-.input-daterange {
-  width: 100%;
 }
 .input-daterange input {
   text-align: center;
@@ -10757,6 +10763,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .hidden {
   display: none !important;
+  visibility: hidden !important;
 }
 .affix {
   position: fixed;
@@ -10971,58 +10978,81 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     display: none !important;
   }
 }
-.jumbotron-florida-blue {
-  background: url("../images/jumbotron-florida-blue.png") no-repeat center center;
+.billboard-featured {
+  padding: 24px;
+  font-size: 16px;
 }
-.btn-primary-florida-blue {
+.spaces-header {
+  margin-bottom: 1em;
+}
+.spaces-header:before,
+.spaces-header:after {
+  content: " ";
+  display: table;
+}
+.spaces-header:after {
+  clear: both;
+}
+.spaces-header:before,
+.spaces-header:after {
+  content: " ";
+  display: table;
+}
+.spaces-header:after {
+  clear: both;
+}
+.spaces-logo {
+  width: 234px;
+  height: 60px;
+  display: inline-block;
+}
+.spaces-link {
+  font-weight: bold;
+  font-size: 16px;
+  display: none;
+}
+@media (min-width: 767px) {
+  .spaces-link {
+    display: inline;
+  }
+  .spaces-header {
+    display: table;
+    width: 100%;
+  }
+  .spaces-header-col {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .spaces-header-col-left {
+    text-align: left;
+  }
+  .spaces-header-col-right {
+    text-align: right;
+  }
+}
+.spaces-florida-blue .spaces-logo {
+  background: url(../images/banner-florida-blue.png) no-repeat center center;
+}
+.spaces-florida-blue .billboard {
+  background: url("../images/billboard-florida-blue.png") no-repeat center center;
+  background-color: white;
   color: #ffffff;
-  background-color: #1791d0;
-  border-color: #1481b9;
 }
-.btn-primary-florida-blue:hover,
-.btn-primary-florida-blue:focus,
-.btn-primary-florida-blue.focus,
-.btn-primary-florida-blue:active,
-.btn-primary-florida-blue.active,
-.open > .dropdown-toggle.btn-primary-florida-blue {
+.spaces-florida-blue .billboard-featured {
+  padding: 24px;
+  background-color: #1791d0;
+}
+.spaces-anthem .spaces-logo {
+  background: url(../images/banner-anthem.png) no-repeat center center;
+}
+.spaces-anthem .billboard {
+  background: url("../images/billboard-anthem.png") no-repeat center center;
+  background-color: white;
   color: #ffffff;
-  background-color: #1271a2;
-  border-color: #0e5b82;
 }
-.btn-primary-florida-blue:active,
-.btn-primary-florida-blue.active,
-.open > .dropdown-toggle.btn-primary-florida-blue {
-  background-image: none;
-}
-.btn-primary-florida-blue.disabled,
-.btn-primary-florida-blue[disabled],
-fieldset[disabled] .btn-primary-florida-blue,
-.btn-primary-florida-blue.disabled:hover,
-.btn-primary-florida-blue[disabled]:hover,
-fieldset[disabled] .btn-primary-florida-blue:hover,
-.btn-primary-florida-blue.disabled:focus,
-.btn-primary-florida-blue[disabled]:focus,
-fieldset[disabled] .btn-primary-florida-blue:focus,
-.btn-primary-florida-blue.disabled.focus,
-.btn-primary-florida-blue[disabled].focus,
-fieldset[disabled] .btn-primary-florida-blue.focus,
-.btn-primary-florida-blue.disabled:active,
-.btn-primary-florida-blue[disabled]:active,
-fieldset[disabled] .btn-primary-florida-blue:active,
-.btn-primary-florida-blue.disabled.active,
-.btn-primary-florida-blue[disabled].active,
-fieldset[disabled] .btn-primary-florida-blue.active {
+.spaces-anthem .billboard-featured {
   background-color: #1791d0;
-  border-color: #1481b9;
-}
-.btn-primary-florida-blue .badge {
-  color: #1791d0;
-  background-color: #ffffff;
-}
-.btn-outline-florida-blue {
-  color: #1791d0;
-  background-color: transparent;
-  border-color: #1791d0;
 }
 .col-ms-1,
 .col-ms-2,
