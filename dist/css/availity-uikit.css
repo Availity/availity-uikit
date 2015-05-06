@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.5.3 -- May-05
+ * availity-uikit v0.5.4 -- May-05
  * Copyright 2015 Availity, LLC 
  */
 
@@ -6991,7 +6991,7 @@ button.close {
   padding-right: 0;
 }
 .inline-help {
-  margin-left: 1em;
+  margin-left: .5em;
   color: #4d4f53;
   font-size: 12px;
 }
