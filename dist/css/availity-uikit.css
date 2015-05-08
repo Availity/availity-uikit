@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.5.4 -- May-05
+ * availity-uikit v0.6.0 -- May-08
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1232,13 +1232,11 @@ hr {
   cursor: pointer;
 }
 html {
-  min-height: 100%;
-  position: relative;
+  height: 100%;
 }
 body {
   font-weight: 300;
   min-height: 100%;
-  margin-bottom: 40px;
 }
 .body {
   background-color: #f2f5f5;
@@ -1870,6 +1868,10 @@ p {
 .text-break {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+}
+.page-header,
+.section-header {
+  margin: 20px 0 20px;
 }
 .section-header {
   margin: 20px 0 20px;
@@ -7146,14 +7148,18 @@ button.close {
 .dropdown-menu > li.app-menu-item {
   padding: .4em 0;
 }
+.main-page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+}
 .footer {
   color: #9fa2a4;
   background-color: #48535c;
   width: 100%;
   min-height: 40px;
   font-weight: 400;
-  position: absolute;
-  bottom: 0;
 }
 .footer a {
   color: #e8ebeb;
