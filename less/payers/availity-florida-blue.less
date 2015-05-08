@@ -1,15 +1,19 @@
 @fb-color-primary: #1791d0;
 
-.jumbotron-florida-blue {
-  background: url("../images/jumbotron-florida-blue.png") no-repeat center center;
-}
+.spaces-florida-blue {
 
-.btn-primary-florida-blue {
-  .button-variant(@white; @fb-color-primary; darken(@fb-color-primary, 5%))
-}
+  .spaces-logo {
+    background: url(../images/banner-florida-blue.png) no-repeat center center;
+  }
 
-.btn-outline-florida-blue {
-  color: @fb-color-primary;
-  background-color: transparent;
-  border-color: @fb-color-primary;
+  .billboard {
+    background: url("../images/billboard-florida-blue.png") no-repeat center center;
+    background-color: white;
+    color: @white;
+  }
+
+  .billboard-featured {
+    padding: @availity-panel-card-padding;
+    background-color: @fb-color-primary;
+  }
 }
