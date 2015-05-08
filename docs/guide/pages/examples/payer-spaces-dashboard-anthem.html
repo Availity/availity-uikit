@@ -45,50 +45,73 @@ icon: blue
 
   <hr>
 
-  <div class="container-sm-height">
-    <div class="row row-sm-height">
-      <div class="col-sm-4 col-sm-height">
-        <div class="panel panel-card">
-          <div class="panel-body">
-            <h3>835 Registration</h3>
-            <p data-mock="sentences:1"></p>
-            <p>
-              <button type="button" class="btn btn-default">
-                Request Access »
-              </button>
-            </p>
+  <div role="tabpanel">
+      <ul class="nav nav-pills-secondary" role="tablist">
+        <li class="active">
+          <a href="#apps" role="tab" data-toggle="tab">Applications</a>
+        </li>
+        <li>
+          <a href="#resources" role="tab" data-toggle="tab">Resources</a>
+        </li>
+        <li>
+          <a href="#news" role="tab" data-toggle="tab">News and Announcments</a>
+        </li>
+      </ul>
+      <div class="tab-content tab-bump">
+        <div role="tabpanel" class="tab-pane active" id="apps">
+          <div class="container-sm-height">
+            <div class="row row-sm-height">
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>835 Registration</h3>
+                    <p data-mock="sentences:1"></p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access »
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>Eligibility &amp; Benefits</h3>
+                    <p data-mock="sentences:1"></p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access »
+                      </button>
+                    <p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>Provider Registration &amp; Self-Service</h3>
+                    <p data-mock="sentences:1"></p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access »
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-height">
-        <div class="panel panel-card">
-          <div class="panel-body">
-            <h3>Eligibility &amp; Benefits</h3>
-            <p data-mock="sentences:1"></p>
-            <p>
-              <button type="button" class="btn btn-default">
-                Request Access »
-              </button>
-            <p>
-          </div>
+        <div role="tabpanel" class="tab-pane" id="resources">
+          <p class="lead">Resources</p>
         </div>
-      </div>
-
-      <div class="col-sm-4 col-sm-height">
-        <div class="panel panel-card">
-          <div class="panel-body">
-            <h3>Provider Registration &amp; Self-Service</h3>
-            <p data-mock="sentences:1"></p>
-            <p>
-              <button type="button" class="btn btn-default">
-                Request Access »
-              </button>
-            </p>
-          </div>
+        <div role="tabpanel" class="tab-pane" id="news">
+          <p class="lead">News</p>
         </div>
       </div>
     </div>
-  </div>
 </main>
 
