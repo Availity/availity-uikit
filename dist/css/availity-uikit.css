@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.6.0 -- May-08
+ * availity-uikit v0.7.0 -- May-10
  * Copyright 2015 Availity, LLC 
  */
 
@@ -6103,6 +6103,17 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
+.media-body,
+.media {
+  overflow: visible;
+}
+.media-body:after,
+.media:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+}
 .list-group,
 .favorites-menu-body,
 .notifications-menu-body {
@@ -10980,58 +10991,81 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     display: none !important;
   }
 }
-.jumbotron-florida-blue {
-  background: url("../images/jumbotron-florida-blue.png") no-repeat center center;
+.billboard-featured {
+  padding: 24px;
+  font-size: 16px;
 }
-.btn-primary-florida-blue {
+.spaces-header {
+  margin-bottom: 1em;
+}
+.spaces-header:before,
+.spaces-header:after {
+  content: " ";
+  display: table;
+}
+.spaces-header:after {
+  clear: both;
+}
+.spaces-header:before,
+.spaces-header:after {
+  content: " ";
+  display: table;
+}
+.spaces-header:after {
+  clear: both;
+}
+.spaces-logo {
+  width: 234px;
+  height: 60px;
+  display: inline-block;
+}
+.spaces-link {
+  font-weight: bold;
+  font-size: 16px;
+  display: none;
+}
+@media (min-width: 767px) {
+  .spaces-link {
+    display: inline;
+  }
+  .spaces-header {
+    display: table;
+    width: 100%;
+  }
+  .spaces-header-col {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .spaces-header-col-left {
+    text-align: left;
+  }
+  .spaces-header-col-right {
+    text-align: right;
+  }
+}
+.spaces-florida-blue .spaces-logo {
+  background: url(../images/banner-florida-blue.png) no-repeat center center;
+}
+.spaces-florida-blue .billboard {
+  background: url("../images/billboard-florida-blue.png") no-repeat center center;
+  background-color: white;
   color: #ffffff;
-  background-color: #1791d0;
-  border-color: #1481b9;
 }
-.btn-primary-florida-blue:hover,
-.btn-primary-florida-blue:focus,
-.btn-primary-florida-blue.focus,
-.btn-primary-florida-blue:active,
-.btn-primary-florida-blue.active,
-.open > .dropdown-toggle.btn-primary-florida-blue {
+.spaces-florida-blue .billboard-featured {
+  padding: 24px;
+  background-color: #1791d0;
+}
+.spaces-anthem .spaces-logo {
+  background: url(../images/banner-anthem.png) no-repeat center center;
+}
+.spaces-anthem .billboard {
+  background: url("../images/billboard-anthem.png") no-repeat center center;
+  background-color: white;
   color: #ffffff;
-  background-color: #1271a2;
-  border-color: #0e5b82;
 }
-.btn-primary-florida-blue:active,
-.btn-primary-florida-blue.active,
-.open > .dropdown-toggle.btn-primary-florida-blue {
-  background-image: none;
-}
-.btn-primary-florida-blue.disabled,
-.btn-primary-florida-blue[disabled],
-fieldset[disabled] .btn-primary-florida-blue,
-.btn-primary-florida-blue.disabled:hover,
-.btn-primary-florida-blue[disabled]:hover,
-fieldset[disabled] .btn-primary-florida-blue:hover,
-.btn-primary-florida-blue.disabled:focus,
-.btn-primary-florida-blue[disabled]:focus,
-fieldset[disabled] .btn-primary-florida-blue:focus,
-.btn-primary-florida-blue.disabled.focus,
-.btn-primary-florida-blue[disabled].focus,
-fieldset[disabled] .btn-primary-florida-blue.focus,
-.btn-primary-florida-blue.disabled:active,
-.btn-primary-florida-blue[disabled]:active,
-fieldset[disabled] .btn-primary-florida-blue:active,
-.btn-primary-florida-blue.disabled.active,
-.btn-primary-florida-blue[disabled].active,
-fieldset[disabled] .btn-primary-florida-blue.active {
+.spaces-anthem .billboard-featured {
   background-color: #1791d0;
-  border-color: #1481b9;
-}
-.btn-primary-florida-blue .badge {
-  color: #1791d0;
-  background-color: #ffffff;
-}
-.btn-outline-florida-blue {
-  color: #1791d0;
-  background-color: transparent;
-  border-color: #1791d0;
 }
 .col-ms-1,
 .col-ms-2,
