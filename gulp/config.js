@@ -77,6 +77,7 @@ module.exports = {
         'Dropdowns',
         'Footer',
         'Labels',
+        'Media Object',
         'List Groups',
         'Pagination',
         'Breadcrumbs',
