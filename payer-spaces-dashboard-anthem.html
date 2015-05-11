@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Payer Spaces Dashboard</title>
+  <title>Availity UIKit Payer Spaces Anthem</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -174,7 +174,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">More...</a>
           <ul class="dropdown-menu dropdown-menu-scrollable" role="menu">
-            <li><a href="#"><strong>Auths and Referrals</strong></li>
+            <li><a href="#"><strong>Auths and Referrals</strong></a></li>
             <li><a href="#"> Drug Authorization (CCStpa)</a></li>
             <li><a href="#"> Current Admissions Report (Humana)</a></li>
             <li><a href="#"> Current Admissions Report (Humana)</a></li>
@@ -205,7 +205,7 @@
           </ul>
         </li>
         <li class="dropdown dropdown-favorites">
-          <button href="#" class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+          <button class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
           <ul class="dropdown-menu favorites-menu" role="menu">
             <li>
               <h5 class="favorites-menu-title">Favorites</h5>
@@ -288,99 +288,125 @@
 </nav>
 
 <main>
-  <div class="container">
-    <ul class="breadcrumb">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Payer Spaces</a>
-      </li>
-      <li class="active">
-        Florida Blue
-      </li>
-    </ul>
-  </div>
+<main class="container-fluid">
 
-  <div class="container">
-    <div class="jumbotron jumbotron-florida-blue">
-      <div>
-        <div class="row">
-          <div class="col-sm-4">
+  <ul class="breadcrumb">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li class="active">
+      Anthem
+    </li>
+  </ul>
+
+  <div class="spaces-anthem">
+
+    <div class="spaces-header">
+      <div class="spaces-header-col spaces-header-col-left">
+        <a href="http://www.anthem.com" class="spaces-logo"></a>
+      </div>
+      <div class="spaces-header-col spaces-header-col-right">
+        <a href="http://www.anthem.com" class="spaces-link"> www.anthem.com</a>
+      </div>
+    </div>
+
+    <div class="billboard">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="billboard-featured">
+            <h2>Fee Schedule</h2>
+            <p>Fee Schedules retrieves your contracted price information for the patient services you perform</p>
             <p>
-              <a href="http://www.floridablue.com">
-                <img src="images/logo-florida-blue-wide-large.png" class="img-responsive" alt="Florida Blue">
-              </a>
-            </p>
-            <hr class="divider-lg">
-            <p>
-              <a class="btn btn-lg btn-primary-florida-blue" href="payer-spaces.html">View Apps &#xBB;</a>
+              <a class="btn btn-lg btn-default btn-billboard" href="payer-spaces.html">Access &#xBB;</a>
             </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <hr>
+  <hr>
 
-    <div class="container-fluid container-sm-height">
-      <div class="row row-sm-height">
-        <div class="col-sm-4 col-sm-height">
-          <div class="panel panel-summary">
-            <div class="panel-body">
-              <h3>835 Registration</h3>
-              <p data-mock="sentences:1">exercitationem architecto non cumque alias non autem suscipit explicabo
-dolore quis laudantium tempora sunt fugiat ut
-exercitationem consequatur voluptatem modi earum enim qui</p>
-              <p>
-                <button type="button" class="btn btn-default">
-                  Request Access &#xBB;
-                </button>
-              </p>
+  <div role="tabpanel">
+      <ul class="nav nav-pills-secondary" role="tablist">
+        <li class="active">
+          <a href="#apps" role="tab" data-toggle="tab">Applications</a>
+        </li>
+        <li>
+          <a href="#resources" role="tab" data-toggle="tab">Resources</a>
+        </li>
+        <li>
+          <a href="#news" role="tab" data-toggle="tab">News and Announcments</a>
+        </li>
+      </ul>
+      <div class="tab-content tab-bump">
+        <div role="tabpanel" class="tab-pane active" id="apps">
+          <div class="container-sm-height">
+            <div class="row row-sm-height">
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>835 Registration</h3>
+                    <p data-mock="sentences:1">at doloremque minima similique perspiciatis beatae aspernatur
+sequi minus sed sint
+iure hic quasi est</p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access &#xBB;
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>Eligibility &amp; Benefits</h3>
+                    <p data-mock="sentences:1">at doloremque minima similique perspiciatis beatae aspernatur
+sequi minus sed sint
+iure hic quasi est</p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access &#xBB;
+                      </button>
+                    </p><p>
+                  </p></div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>Provider Registration &amp; Self-Service</h3>
+                    <p data-mock="sentences:1">at doloremque minima similique perspiciatis beatae aspernatur
+sequi minus sed sint
+iure hic quasi est</p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access &#xBB;
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-sm-4 col-sm-height">
-          <div class="panel panel-summary">
-            <div class="panel-body">
-              <h3>Eligibility &amp; Benefits</h3>
-              <p data-mock="sentences:1">exercitationem architecto non cumque alias non autem suscipit explicabo
-dolore quis laudantium tempora sunt fugiat ut
-exercitationem consequatur voluptatem modi earum enim qui</p>
-              <p>
-                <button type="button" class="btn btn-default">
-                  Request Access &#xBB;
-                </button>
-              </p><p>
-            </p></div>
-          </div>
+        <div role="tabpanel" class="tab-pane" id="resources">
+          <p class="lead">Resources</p>
         </div>
-
-        <div class="col-sm-4 col-sm-height">
-          <div class="panel panel-summary">
-            <div class="panel-body">
-              <h3>Provider Registration &amp; Self-Service</h3>
-              <p data-mock="sentences:1">exercitationem architecto non cumque alias non autem suscipit explicabo
-dolore quis laudantium tempora sunt fugiat ut
-exercitationem consequatur voluptatem modi earum enim qui</p>
-              <p>
-                <button type="button" class="btn btn-default">
-                  Request Access &#xBB;
-                </button>
-              </p>
-            </div>
-          </div>
+        <div role="tabpanel" class="tab-pane" id="news">
+          <p class="lead">News</p>
         </div>
       </div>
     </div>
-  </div>
 </main>
 
 
-
-<footer class="footer">
-  <div class="footer-body container">
+</main>
+<!-- <footer class="footer">
+  <div class="footer-body container-fluid">
     <span class="footer-copy">&copy; 2015 Availity, LLC.</span>
     <ul class="footer-links">
       <li><a href="#">Contact</a></li>
@@ -388,8 +414,7 @@ exercitationem consequatur voluptatem modi earum enim qui</p>
       <li><a href="#">Terms of Use</a></li>
     </ul>
   </div>
-</footer>
-
+</footer> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
