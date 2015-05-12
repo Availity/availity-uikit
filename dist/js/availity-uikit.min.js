@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.7.0 -- May-10
+ * availity-uikit v0.7.1 -- May-12
  * Copyright 2015 Availity, LLC 
  */
 
