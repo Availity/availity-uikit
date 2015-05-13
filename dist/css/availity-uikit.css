@@ -1,6 +1,6 @@
 /**
  * availity-uikit v0.7.1 -- May-12
- * Copyright 2015 Availity, LLC 
+ * Copyright 2015 Availity, LLC
  */
 
 @font-face {
@@ -6335,6 +6335,10 @@ a.list-group-item-danger.active:focus {
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+.panel-borderless {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
 .panel-body {
   padding: 15px;
 }
@@ -7591,7 +7595,7 @@ button.close {
 /*!
  * Yamm!3
  * Yet another megamenu for Bootstrap 3
- * 
+ *
  * http://geedmo.github.com/yamm3
  */
 .yamm .nav,
