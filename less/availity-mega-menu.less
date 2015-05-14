@@ -51,15 +51,15 @@
   overflow-y: auto; 
 }
 
-.mega-menu-tile-cushion{
-  padding: 10px 22px 15px 22px;
+.mega-menu-tile{
+  padding: @mega-menu-tile-padding-top @mega-menu-tile-padding-side-md @mega-menu-tile-padding-bottom @mega-menu-tile-padding-side-md;
 
   @media (max-width: @screen-sm-min){
-    padding: 10px 5px 15px 5px;
+    padding: @mega-menu-tile-padding-top @mega-menu-tile-padding-side-sm @mega-menu-tile-padding-bottom @mega-menu-tile-padding-side-sm;
   }
 }
 
-.mega-menu-tile-cushion a{
+.mega-menu-tile a{
   
   color: @text-muted;
   font-weight: @availity-font-weight-bold;
