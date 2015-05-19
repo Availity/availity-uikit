@@ -17,9 +17,15 @@
   }
 }
 
+.mega-menu-sm {
+  min-width: 300px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    max-width: 400px;
+  }
+}
 
 .mega-menu-md {
-
   min-width: 300px;
 
   @media (min-width: @grid-float-breakpoint) {
@@ -34,6 +40,7 @@
 
 .mega-menu-feature {
   background-color: @gray-lightest;
+  border-top: 1px solid darken(@gray-lightest, 10%);
 }
 
 .mega-menu-default {
@@ -44,4 +51,27 @@
   .mega-menu-default {
     background-color: @white;
   }
+}
+
+.mega-menu-tiles {
+  max-height: @mega-menu-tiles-max-height;
+  overflow-y: auto;
+}
+
+.mega-menu-tile {
+  color: @text-muted;
+  font-weight: @availity-font-weight-bold;
+  text-align: center;
+
+  > img {
+    width: 75px;
+    margin: 0 auto;
+  }
+
+  > p {
+    padding-top: .5em;
+    padding-bottom: 0;
+  }
+  // padding: @mega-menu-tile-padding-top @mega-menu-tile-padding-side-md @mega-menu-tile-padding-bottom @mega-menu-tile-padding-side-md;
+
 }
