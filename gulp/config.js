@@ -89,7 +89,7 @@ module.exports = {
     }
   },
   packages: {
-    src: ['./package.json', './bower.json']
+    src: ['package.json', 'bower.json']
   },
   readme: {
     src: ['docs/readme/readme.config.md'],
@@ -106,21 +106,21 @@ module.exports = {
   },
   lib: {
     name: 'availity-uikit.js',
-    src: [
+    src: [
       'js/*.js'
     ],
     targets: 'js/*.js',
-    dest: 'build/guide/js',
+    dest: 'build/guide/js',
     destDist: 'dist/js'
   },
   libBundle: { // combine Bootstrap and availity-uikit.js
     name: 'availity-uikit-bundle.js',
-    src: [
+    src: [
       'node_modules/bootstrap/dist/js/bootstrap.js',
       'js/*.js'
     ],
     targets: 'js/*.js',
-    dest: 'build/guide/js',
+    dest: 'build/guide/js',
     destDist: 'dist/js'
   },
   vendor: {
