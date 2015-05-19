@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Inbox</title>
+  <title>Availity UIKit Notifications</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -287,296 +287,73 @@
   </div>
 </nav>
 
-<main class="main-container">
-
-<div class="container-fluid">
-  <dic class="row">
-    <div class="col-sm-4 main-sidebar left">
-      <div class="panel panel-card panel-inverse full">
-        <div class="panel-heading">
-          <h4 class="panel-card-title">
-            Recent Requests
-          </h4>
+<main>
+<div class="container-sm">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="media">
+        <div class="media-left">
+          <span class="app-icon app-icon-blue">FA</span>
         </div>
-        <div class="panel-body full">
-          <div class="form-group">
-            <label class="sr-only" for="input25">Search</label>
-            <div class="input-group">
-              <input type="text" class="form-control" id="input25" placeholder="Search...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Search</button>
-              </span>
-            </div>
-          </div>
-          <div class="list-group list-group-cards">
-            <a class="list-group-item success" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:1">Audrey Hall</h4>
-              <p class="list-group-item-text" data-mock="company:1">Woodgrove Bank</p>
-            </a>
-            <a class="list-group-item pending" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:2">Hailey Coleman</h4>
-              <p class="list-group-item-text" data-mock="company:2">AdventureWorks Cycles</p>
-            </a>
-            <a class="list-group-item error" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:3">James Richardson</h4>
-              <p class="list-group-item-text" data-mock="company:3">Wide World Importers</p>
-            </a>
-            <a class="list-group-item canceled" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:4">Nevaeh Rogers</h4>
-              <p class="list-group-item-text" data-mock="company:4">Coho Vineyard</p>
-            </a>
-            <a class="list-group-item" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:5">Grace Lopez</h4>
-              <p class="list-group-item-text" data-mock="company:5">Margie&apos;s Travel</p>
-            </a>
-            <a class="list-group-item success" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:6">Alexis Nelson</h4>
-              <p class="list-group-item-text" data-mock="company:6">Lucerne Publishing</p>
-            </a>
-            <a class="list-group-item pending" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:7">Benjamin Walker</h4>
-              <p class="list-group-item-text" data-mock="company:7">Contoso Pharmaceuticals</p>
-            </a>
-            <a class="list-group-item error" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:8">James Mitchell</h4>
-              <p class="list-group-item-text" data-mock="company:8">Lucerne Publishing</p>
-            </a>
-            <a class="list-group-item canceled" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:9">Brianna Wilson</h4>
-              <p class="list-group-item-text" data-mock="company:9">Coho Winery</p>
-            </a>
-            <a class="list-group-item" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:10">Mason Brown</h4>
-              <p class="list-group-item-text" data-mock="company:10">Northridge Video</p>
-            </a>
-          </div>
+        <div class="media-body">
+          <div class="btn-group pull-right">
+            <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+              <span class="icon icon-menu"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+           </div>
+          <h4 class="media-heading condensed"><a href="#">New Florida Blue risk assessment</a></h4>
+          Completing the assessment will maximize your revenue
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <span class="app-icon app-icon-neon">GA</span>
+        </div>
+        <div class="media-body">
+          <div class="btn-group pull-right">
+            <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+              <span class="icon icon-menu"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+           </div>
+          <h4 class="media-heading condensed"><a href="#">New Humana risk assessment</a></h4>
+          Completing the assessment will maximize your revenue
         </div>
       </div>
     </div>
-    <div class="col-sm-8 main-content">
-      <div class="panel panel-card">
-        <div class="panel-body">
-          <table class="table table-list">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Gender</th>
-                <th>DOB</th>
-                <th>Member ID</th>
-                <th>Address</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="#" data-mock="fullName:1">Audrey Hall</a></td>
-                <td data-mock="sexShort:1">F</td>
-                <td data-mock="dob:1">23/11/1955</td>
-                <td data-mock="memberId:1">522186497</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:1">4144 River Street</div>
-                    <div data-mock="addressLine2:1">Springfield TN, TN 37084</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:1">(555) 555-1821</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:2">Hailey Coleman</a></td>
-                <td data-mock="sexShort:2">F</td>
-                <td data-mock="dob:2">22/07/1994</td>
-                <td data-mock="memberId:2">650035093</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:2">9713 Washington Street</div>
-                    <div data-mock="addressLine2:2">Centerville GA, GA 30321</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:2">(555) 555-4981</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:3">James Richardson</a></td>
-                <td data-mock="sexShort:3">M</td>
-                <td data-mock="dob:3">01/08/1961</td>
-                <td data-mock="memberId:3">615621394</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:3">1016 Adams Street</div>
-                    <div data-mock="addressLine2:3">Glendale FL, FL 33679</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:3">(555) 555-0869</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:4">Nevaeh Rogers</a></td>
-                <td data-mock="sexShort:4">F</td>
-                <td data-mock="dob:4">22/08/1969</td>
-                <td data-mock="memberId:4">004025941</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:4">7804 North Street</div>
-                    <div data-mock="addressLine2:4">Marion NY, NY 14999</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:4">(555) 555-7238</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:5">Grace Lopez</a></td>
-                <td data-mock="sexShort:5">F</td>
-                <td data-mock="dob:5">26/04/1989</td>
-                <td data-mock="memberId:5">697373806</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:5">8580 3rd Street</div>
-                    <div data-mock="addressLine2:5">Fairview CA, CA 94584</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:5">(555) 555-9585</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:6">Alexis Nelson</a></td>
-                <td data-mock="sexShort:6">F</td>
-                <td data-mock="dob:6">27/03/1966</td>
-                <td data-mock="memberId:6">717869388</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:6">4651 Park Street</div>
-                    <div data-mock="addressLine2:6">Glendale SD, SD 57805</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:6">(555) 555-5545</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:7">Benjamin Walker</a></td>
-                <td data-mock="sexShort:7">M</td>
-                <td data-mock="dob:7">13/03/1974</td>
-                <td data-mock="memberId:7">225172962</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:7">813 Main Street North</div>
-                    <div data-mock="addressLine2:7">Greenwood NE, NE 69006</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:7">(555) 555-3338</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:8">James Mitchell</a></td>
-                <td data-mock="sexShort:8">M</td>
-                <td data-mock="dob:8">10/03/1975</td>
-                <td data-mock="memberId:8">968420231</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:8">1726 Jefferson Avenue</div>
-                    <div data-mock="addressLine2:8">Arlington FL, FL 34403</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:8">(555) 555-8171</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:9">Brianna Wilson</a></td>
-                <td data-mock="sexShort:9">F</td>
-                <td data-mock="dob:9">05/11/1978</td>
-                <td data-mock="memberId:9">620207834</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:9">4233 Prospect Street</div>
-                    <div data-mock="addressLine2:9">Cedar Grove MO, MO 65338</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:9">(555) 555-6238</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:10">Mason Brown</a></td>
-                <td data-mock="sexShort:10">M</td>
-                <td data-mock="dob:10">21/11/1956</td>
-                <td data-mock="memberId:10">841991571</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:10">8519 5th Street</div>
-                    <div data-mock="addressLine2:10">Salem CA, CA 96761</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:10">(555) 555-0355</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:11">Hailey Cox</a></td>
-                <td data-mock="sexShort:11">F</td>
-                <td data-mock="dob:11">26/10/1964</td>
-                <td data-mock="memberId:11">249157749</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:11">7264 11th Street</div>
-                    <div data-mock="addressLine2:11">Clinton NJ, NJ 07887</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:11">(555) 555-1215</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:12">Nicholas Simmons</a></td>
-                <td data-mock="sexShort:12">M</td>
-                <td data-mock="dob:12">08/09/1976</td>
-                <td data-mock="memberId:12">157231959</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:12">1018 Center Street</div>
-                    <div data-mock="addressLine2:12">Lakewood OH, OH 44166</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:12">(555) 555-0540</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:13">Anthony Hill</a></td>
-                <td data-mock="sexShort:13">M</td>
-                <td data-mock="dob:13">28/02/1981</td>
-                <td data-mock="memberId:13">666924256</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:13">1850 High Street</div>
-                    <div data-mock="addressLine2:13">Lakewood FL, FL 32444</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:13">(555) 555-1510</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:14">Nevaeh Foster</a></td>
-                <td data-mock="sexShort:14">F</td>
-                <td data-mock="dob:14">30/09/1959</td>
-                <td data-mock="memberId:14">147837410</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:14">4496 Lincoln Avenue</div>
-                    <div data-mock="addressLine2:14">Salem MN, MN 56058</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:14">(555) 555-7818</span>
-                  </address>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="#" data-mock="fullName:15">Jordan Richardson</a></td>
-                <td data-mock="sexShort:15">M</td>
-                <td data-mock="dob:15">24/07/1976</td>
-                <td data-mock="memberId:15">365366715</td>
-                <td>
-                  <address>
-                    <div data-mock="addressLine1:15">345 Water Street</div>
-                    <div data-mock="addressLine2:15">Clinton RI, RI 02946</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:15">(555) 555-7909</span>
-                  </address>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </dic>
+  </div>
 </div>
 
+</main>
+<!-- <footer class="footer">
+  <div class="footer-body container-fluid">
+    <span class="footer-copy">&copy; 2015 Availity, LLC.</span>
+    <ul class="footer-links">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+  </div>
+</footer> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
 <script src="js/vendor.js"></script>
 <script src="js/availity-uikit.js"></script>
 <script src="js/docs.js"></script>
-</main>
 
 </body>
 </html>

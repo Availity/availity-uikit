@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.7.1 -- May-12
+ * availity-uikit v0.7.2 -- May-18
  * Copyright 2015 Availity, LLC 
  */
 
@@ -4037,6 +4037,56 @@ input[type="button"].btn-block {
 .btn-filters.active span:before {
   content: 'Hide ';
 }
+.btn-ghost {
+  color: #333333;
+  background-color: #e1e3e3;
+  border-color: #cccccc;
+  border-color: transparent;
+  background-color: transparent;
+}
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost.focus,
+.btn-ghost:active,
+.btn-ghost.active,
+.open > .dropdown-toggle.btn-ghost {
+  color: #333333;
+  background-color: #c7caca;
+  border-color: #adadad;
+}
+.btn-ghost:active,
+.btn-ghost.active,
+.open > .dropdown-toggle.btn-ghost {
+  background-image: none;
+}
+.btn-ghost.disabled,
+.btn-ghost[disabled],
+fieldset[disabled] .btn-ghost,
+.btn-ghost.disabled:hover,
+.btn-ghost[disabled]:hover,
+fieldset[disabled] .btn-ghost:hover,
+.btn-ghost.disabled:focus,
+.btn-ghost[disabled]:focus,
+fieldset[disabled] .btn-ghost:focus,
+.btn-ghost.disabled.focus,
+.btn-ghost[disabled].focus,
+fieldset[disabled] .btn-ghost.focus,
+.btn-ghost.disabled:active,
+.btn-ghost[disabled]:active,
+fieldset[disabled] .btn-ghost:active,
+.btn-ghost.disabled.active,
+.btn-ghost[disabled].active,
+fieldset[disabled] .btn-ghost.active {
+  background-color: #e1e3e3;
+  border-color: #cccccc;
+}
+.btn-ghost .badge {
+  color: #e1e3e3;
+  background-color: #333333;
+}
+.btn-ghost:hover {
+  background-color: transparent;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -7640,6 +7690,14 @@ button.close {
 .mega-menu h5 {
   margin-top: 0;
 }
+.mega-menu-sm {
+  min-width: 300px;
+}
+@media (min-width: 768px) {
+  .mega-menu-sm {
+    max-width: 400px;
+  }
+}
 .mega-menu-md {
   min-width: 300px;
 }
@@ -7653,6 +7711,7 @@ button.close {
 }
 .mega-menu-feature {
   background-color: #f2f5f5;
+  border-top: 1px solid #d5dfdf;
 }
 .mega-menu-default {
   padding: 0;
@@ -7661,6 +7720,23 @@ button.close {
   .mega-menu-default {
     background-color: #ffffff;
   }
+}
+.mega-menu-tiles {
+  max-height: 280px;
+  overflow-y: auto;
+}
+.mega-menu-tile {
+  color: #7e8188;
+  font-weight: bold;
+  text-align: center;
+}
+.mega-menu-tile > img {
+  width: 75px;
+  margin: 0 auto;
+}
+.mega-menu-tile > p {
+  padding-top: .5em;
+  padding-bottom: 0;
 }
 .favorites-menu,
 .notifications-menu {
