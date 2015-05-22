@@ -17,7 +17,7 @@
   color: @text-color;
   font-size: 12px;
   border-radius: 15px;
-  background-color: @btn-success-bg;
+  background-color: @white;
   border: 2px solid @btn-success-border;
 }
 
@@ -41,14 +41,15 @@
   &.complete {
     > .stepwizard-badge {
       color: @white;
+      background-color: @btn-success-bg;
     }
   }
 
   &.active {
 
     > .stepwizard-badge {
-      color: @text-color;
-      background-color: @white;
+      color: @white;
+      background-color: @btn-success-bg;
     }
   }
 
