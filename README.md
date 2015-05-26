@@ -1,5 +1,7 @@
 # availity-uikit
 
+[![Join the chat at https://gitter.im/Availity/availity-uikit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Availity/availity-uikit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > Availity UI Kit powered by Bootstrap 3
 
 ## Table of Contents
