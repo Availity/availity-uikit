@@ -2,7 +2,7 @@
 title: Wizard
 ---
 
-<h3 class="guide-subsection-title">Horizontal</h3>
+<h3 class="guide-subsection-title">Horizontal (Linear example)</h3>
 <div class="guide-example">
   <div class="stepwizard">
     <div class="stepwizard-row">
@@ -47,8 +47,53 @@ title: Wizard
   </div>
 </div>
 </code>
+<h3 class="guide-subsection-title">Horizontal (Non-Linear Example)</h3>
+<div class="guide-example">
+  <div class="stepwizard">
+    <div class="stepwizard-row">
+      <a class="stepwizard-step complete">
+        <span href="#step-1" class="stepwizard-badge"><i class="icon icon-ok"></i></span>
+        <span class="stepwizard-title">Complete</span>
+      </a>
+      <a class="stepwizard-step active">
+        <span href="#step-2" class="stepwizard-badge"></span>
+        <span class="stepwizard-title">Active</span>
+      </a>
+      <a class="stepwizard-step">
+        <span href="#step-3" class="stepwizard-badge"></span>
+        <span class="stepwizard-title">Normal</span>
+      </a>
+      <a class="stepwizard-step disabled">
+        <span href="#step-3" class="stepwizard-badge"></span>
+        <span class="stepwizard-title">Disabled</span>
+      </a>
+    </div>
+  </div>
+</div>
+<code class="language-markup">
+<div class="stepwizard">
+  <div class="stepwizard-row">
+    <a class="stepwizard-step complete">
+      <span href="#step-1" class="stepwizard-badge"><i class="icon icon-ok"></i></span>
+      <span class="stepwizard-title">Complete</span>
+    </a>
+    <a class="stepwizard-step active">
+      <span href="#step-2" class="stepwizard-badge"></span>
+      <span class="stepwizard-title">Active</span>
+    </a>
+    <a class="stepwizard-step">
+      <span href="#step-3" class="stepwizard-badge"></span>
+      <span class="stepwizard-title">Normal</span>
+    </a>
+    <a class="stepwizard-step disabled">
+      <span href="#step-3" class="stepwizard-badge"></span>
+      <span class="stepwizard-title">Disabled</span>
+    </a>
+  </div>
+</div>
+</code>
 
-<h3 class="guide-subsection-title">Vertical</h3>
+<h3 class="guide-subsection-title">Vertical (Linear example)</h3>
 <div class="guide-example">
   <div class="stepwizard stepwizard-stacked">
     <div class="stepwizard-row">
@@ -76,11 +121,11 @@ title: Wizard
   <div class="stepwizard-row">
     <a class="stepwizard-step complete">
       <span href="#step-1" class="stepwizard-badge"><i class="icon icon-ok"></i></span>
-      <span class="stepwizard-title">First</span>
+      <span class="stepwizard-title">First (Complete)</span>
     </a>
     <a class="stepwizard-step active">
       <span href="#step-2" class="stepwizard-badge">2</span>
-      <span class="stepwizard-title">Second with some long text</span>
+      <span class="stepwizard-title">Second with some long text (Active)</span>
     </a>
     <a class="stepwizard-step">
       <span href="#step-3" class="stepwizard-badge">3</span>
@@ -88,7 +133,52 @@ title: Wizard
     </a>
     <a class="stepwizard-step disabled">
       <span href="#step-3" class="stepwizard-badge">4</span>
-      <span class="stepwizard-title">Fourth with some really really really long text</span>
+      <span class="stepwizard-title">Fourth with longest text ever written in a wizard (Disabled)</span>
+    </a>
+  </div>
+</div>
+</code>
+<h3 class="guide-subsection-title">Vertical (Non-Linear Example)</h3>
+<div class="guide-example">
+  <div class="stepwizard stepwizard-stacked">
+    <div class="stepwizard-row">
+      <a class="stepwizard-step complete">
+        <span href="#step-1" class="stepwizard-badge"><i class="icon icon-ok"></i></span>
+        <span class="stepwizard-title">Complete</span>
+      </a>
+      <a class="stepwizard-step active">
+        <span href="#step-2" class="stepwizard-badge"></span>
+        <span class="stepwizard-title">Active</span>
+      </a>
+      <a class="stepwizard-step">
+        <span href="#step-3" class="stepwizard-badge"></span>
+        <span class="stepwizard-title">Normal</span>
+      </a>
+      <a class="stepwizard-step disabled">
+        <span href="#step-3" class="stepwizard-badge"></span>
+        <span class="stepwizard-title">Disabled</span>
+      </a>
+    </div>
+  </div>
+</div>
+<code class="language-markup">
+<div class="stepwizard stepwizard-stacked">
+  <div class="stepwizard-row">
+    <a class="stepwizard-step complete">
+      <span href="#step-1" class="stepwizard-badge"><i class="icon icon-ok"></i></span>
+      <span class="stepwizard-title">Complete</span>
+    </a>
+    <a class="stepwizard-step active">
+      <span href="#step-2" class="stepwizard-badge"></span>
+      <span class="stepwizard-title">Active</span>
+    </a>
+    <a class="stepwizard-step">
+      <span href="#step-3" class="stepwizard-badge"></span>
+      <span class="stepwizard-title">Normal</span>
+    </a>
+    <a class="stepwizard-step disabled">
+      <span href="#step-3" class="stepwizard-badge"></span>
+      <span class="stepwizard-title">Disabled</span>
     </a>
   </div>
 </div>
