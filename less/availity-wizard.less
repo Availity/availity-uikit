@@ -17,7 +17,7 @@
   color: @text-color;
   font-size: 12px;
   border-radius: 15px;
-  background-color: @white;
+  background-color: @btn-success-bg;;
   border: 2px solid @btn-success-border;
 }
 
@@ -41,15 +41,13 @@
   &.complete {
     > .stepwizard-badge {
       color: @white;
-      background-color: @btn-success-bg;
     }
   }
 
   &.active {
-
     > .stepwizard-badge {
-      color: @white;
-      background-color: @btn-success-bg;
+      color: @text-color;
+      background-color: @white;
     }
   }
 
@@ -86,4 +84,28 @@
 
 }
 
+.wizard-progress {
+  .stepwizard-badge {
+    color: @text-color;
+    background-color: @white;
+    border: 2px solid @green-secondary;
+  }
+
+  .stepwizard-step {
+    //color: @text-color;
+    &.complete {
+      > .stepwizard-badge {
+        color: @white;
+        background-color: @green-secondary;
+      }
+    }
+
+    &.active {
+      > .stepwizard-badge {
+        color: @white;
+        background-color: @green-secondary;
+      }
+    }
+  }
+}
 
