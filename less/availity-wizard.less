@@ -91,6 +91,9 @@
     color: @text-color;
     background-color: @white;
     border: 2px solid @green-secondary;
+    &:after {
+      content: '\0000a0';
+    }
   }
 
   .stepwizard-step {
@@ -98,6 +101,9 @@
       > .stepwizard-badge {
         color: @white;
         background-color: @green-secondary;
+        &:after {
+          .iconify(@availity-icon-ok);
+        }
       }
     }
 
