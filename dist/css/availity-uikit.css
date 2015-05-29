@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.7.4 -- May-24
+ * availity-uikit v0.8.0 -- May-29
  * Copyright 2015 Availity, LLC 
  */
 
@@ -7877,7 +7877,7 @@ button.close {
   display: inline-block;
   text-align: center;
   padding: 4px 0;
-  color: #4d4f53;
+  color: #ffffff;
   font-size: 12px;
   border-radius: 15px;
   background-color: #02a17c;
@@ -7911,6 +7911,7 @@ button.close {
   color: #4d4f53;
 }
 .stepwizard-step.disabled > .stepwizard-badge {
+  color: #4d4f53;
   background-color: #e1e3e3;
   border: 2px solid #cccccc;
 }
@@ -7928,6 +7929,36 @@ button.close {
 .stepwizard-stacked .stepwizard-title {
   display: inline;
   margin-left: .2em;
+}
+.stepwizard-progress .stepwizard-badge {
+  color: #4d4f53;
+  background-color: #ffffff;
+  border: 2px solid #009a57;
+}
+.stepwizard-progress .stepwizard-badge:after {
+  content: '\0000a0';
+}
+.stepwizard-progress .stepwizard-step.complete > .stepwizard-badge {
+  color: #ffffff;
+  background-color: #009a57;
+}
+.stepwizard-progress .stepwizard-step.complete > .stepwizard-badge:after {
+  font-family: "availity-icon-font";
+  content: '\e85c';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
+.stepwizard-progress .stepwizard-step.active > .stepwizard-badge {
+  color: #ffffff;
+  background-color: #009a57;
 }
 .modal-open {
   overflow: hidden;
