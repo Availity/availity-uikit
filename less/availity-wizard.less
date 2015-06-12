@@ -13,12 +13,12 @@
   height: 30px;
   display: inline-block;
   text-align: center;
-  padding: 4px 0;
-  color: @white;
+  padding: 5px;
+  color: @text-color;
   font-size: 12px;
   border-radius: 15px;
-  background-color: @btn-success-bg;;
-  border: 2px solid @btn-success-border;
+  background-color: @white;
+  border: 2px solid @btn-success-bg;
 }
 
 .stepwizard-title {
@@ -41,13 +41,21 @@
   &.complete {
     > .stepwizard-badge {
       color: @white;
+      background-color: @btn-success-bg;
+      border-color: @btn-success-bg;
     }
   }
 
   &.active {
     > .stepwizard-badge {
-      color: @text-color;
-      background-color: @white;
+      color: @white;
+      background-color: @btn-success-bg;
+      border-color: @btn-success-bg;
+    }
+
+    > .stepwizard-title {
+      color: @brand-success;
+      font-weight: @availity-font-weight-bold;
     }
   }
 
@@ -59,7 +67,7 @@
     > .stepwizard-badge {
       color: @text-color;
       background-color: @btn-default-bg;
-      border: 2px solid @btn-default-border;
+      border-color: @btn-default-bg;
     }
 
   }
@@ -88,9 +96,6 @@
 .stepwizard-progress {
 
   .stepwizard-badge {
-    color: @text-color;
-    background-color: @white;
-    border: 2px solid @green-secondary;
     &:after {
       content: '\0000a0';
     }
@@ -99,18 +104,9 @@
   .stepwizard-step {
     &.complete {
       > .stepwizard-badge {
-        color: @white;
-        background-color: @green-secondary;
         &:after {
           .iconify(@availity-icon-ok);
         }
-      }
-    }
-
-    &.active {
-      > .stepwizard-badge {
-        color: @white;
-        background-color: @green-secondary;
       }
     }
   }
