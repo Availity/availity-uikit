@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.8.0 -- May-29
+ * availity-uikit v0.8.1 -- June-18
  * Copyright 2015 Availity, LLC 
  */
 
@@ -7196,6 +7196,9 @@ button.close {
 .app-icon-branded-orange .caret {
   border-color: transparent #db4e1f transparent transparent;
 }
+.app-icon-title {
+  vertical-align: middle;
+}
 .dropdown-menu > li.app-menu-item {
   padding: .4em 0;
 }
@@ -7868,6 +7871,9 @@ button.close {
   width: 100%;
   position: relative;
 }
+.stepwizard a {
+  text-decoration: none;
+}
 .stepwizard-row {
   display: table-row;
 }
@@ -7876,12 +7882,12 @@ button.close {
   height: 30px;
   display: inline-block;
   text-align: center;
-  padding: 4px 0;
-  color: #ffffff;
+  padding: 5px;
+  color: #4d4f53;
   font-size: 12px;
   border-radius: 15px;
-  background-color: #02a17c;
-  border: 2px solid #028869;
+  background-color: #ffffff;
+  border: 2px solid #02a17c;
 }
 .stepwizard-title {
   display: block;
@@ -7895,15 +7901,21 @@ button.close {
   padding: 10px 15px;
 }
 .stepwizard-step:hover {
-  text-decoration: none;
   background-color: #f2f5f5;
 }
 .stepwizard-step.complete > .stepwizard-badge {
   color: #ffffff;
+  background-color: #02a17c;
+  border-color: #02a17c;
 }
 .stepwizard-step.active > .stepwizard-badge {
-  color: #4d4f53;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #02a17c;
+  border-color: #02a17c;
+}
+.stepwizard-step.active > .stepwizard-title {
+  color: #02a17c;
+  font-weight: bold;
 }
 .stepwizard-step.disabled {
   cursor: not-allowed;
@@ -7913,7 +7925,7 @@ button.close {
 .stepwizard-step.disabled > .stepwizard-badge {
   color: #4d4f53;
   background-color: #e1e3e3;
-  border: 2px solid #cccccc;
+  border-color: #e1e3e3;
 }
 .stepwizard-stacked {
   display: block;
@@ -7930,17 +7942,8 @@ button.close {
   display: inline;
   margin-left: .2em;
 }
-.stepwizard-progress .stepwizard-badge {
-  color: #4d4f53;
-  background-color: #ffffff;
-  border: 2px solid #009a57;
-}
 .stepwizard-progress .stepwizard-badge:after {
   content: '\0000a0';
-}
-.stepwizard-progress .stepwizard-step.complete > .stepwizard-badge {
-  color: #ffffff;
-  background-color: #009a57;
 }
 .stepwizard-progress .stepwizard-step.complete > .stepwizard-badge:after {
   font-family: "availity-icon-font";
@@ -7955,10 +7958,6 @@ button.close {
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
-}
-.stepwizard-progress .stepwizard-step.active > .stepwizard-badge {
-  color: #ffffff;
-  background-color: #009a57;
 }
 .modal-open {
   overflow: hidden;
