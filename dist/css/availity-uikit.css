@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.8.1 -- June-18
+ * availity-uikit v0.8.2 -- July-02
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1658,6 +1658,20 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.42857143;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
 }
 h1.subheader,
 h2.subheader,
@@ -4077,6 +4091,25 @@ fieldset[disabled] .btn-ghost.active {
 .btn-ghost:hover {
   background-color: transparent;
 }
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -5769,6 +5802,49 @@ a.label:focus {
 .label-default,
 .label-warning {
   color: #4d4f53;
+}
+.label-block {
+  display: block;
+  text-align: left;
+  padding: .3em;
+}
+h1.label-block,
+h2.label-block,
+h3.label-block,
+h4.label-block,
+h5.label-block,
+h6.label-block,
+.h1.label-block,
+.h2.label-block,
+.h3.label-block,
+.h4.label-block,
+.h5.label-block,
+.h6.label-block {
+  margin: 0;
+}
+h1.label-block,
+.h1.label-block {
+  font-size: 30px;
+}
+h2.label-block,
+.h2.label-block {
+  font-size: 22px;
+}
+h3.label-block,
+.h3.label-block {
+  font-size: 18px;
+}
+h4.label-block,
+.h4.label-block {
+  font-size: 16px;
+}
+h5.label-block,
+.h5.label-block {
+  font-size: 14px;
+}
+h6.label-block,
+.h6.label-block {
+  font-size: 12px;
 }
 .badge {
   display: inline-block;
