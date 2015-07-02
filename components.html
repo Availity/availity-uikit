@@ -520,6 +520,22 @@ Link. If an action occurs, AND the user goes to a new page as a result
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 </code>
 
+<h3 class="guide-subsection-title">File Upload</h3>
+<div class="guide-example">
+  <span class="btn btn-danger btn-file">
+    <i class="glyphicon glyphicon-plus"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+</div>
+<code class="language-markup">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn btn-danger btn-file<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>glyphicon glyphicon-plus<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Add files...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>files[]<span class="token punctuation">&quot;</span></span> <span class="token attr-name">multiple</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+</code>
+
           </section>
           <section class="guide-section">
             <h2 class="guide-section-header">
@@ -1309,8 +1325,8 @@ relevant, should be codified in a separate pattern.</p>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token script language-javascript"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
-<span class="token comment" spellcheck="true">// prevent the dropdown from closing on tab show
-</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;.dropdown-menu a[data-toggle=&quot;tab&quot;]&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token comment" spellcheck="true">// prevent the dropdown from closing on tab show</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;.dropdown-menu a[data-toggle=&quot;tab&quot;]&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">tab</span><span class="token punctuation">(</span><span class="token string">&apos;show&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3160,7 +3176,8 @@ footer into a default view.</p>
             <h2 class="guide-section-header">
               Labels
             </h2>
-            <div class="guide-example">
+            <h3 class="guide-subsection-title">Examples</h3>
+<div class="guide-example">
   <p>
     <span class="label label-default">Default Label</span>
     <span class="label label-primary">Primary Label</span>
@@ -3187,6 +3204,50 @@ footer into a default view.</p>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-danger<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Danger Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
 </code>
 
+<h3 class="guide-subsection-title">Header Labels</h3>
+<div class="guide-example">
+  <p>
+    </p><h1>Example heading <span class="label label-default">New</span></h1>
+    <h2>Example heading <span class="label label-default">New</span></h2>
+    <h3>Example heading <span class="label label-default">New</span></h3>
+    <h4>Example heading <span class="label label-default">New</span></h4>
+    <h5>Example heading <span class="label label-default">New</span></h5>
+    <h6>Example heading <span class="label label-default">New</span></h6>
+  <p></p>
+</div>
+<code class="language-markup">
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span>Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span>
+</code>
+
+<h3 class="guide-subsection-title">Block Labels</h3>
+<div class="guide-example">
+  <p></p><h1 class="label label-default label-block">Default Label</h1><p></p>
+  <p></p><h2 class="label label-primary label-block">Primary Label</h2><p></p>
+  <p></p><h3 class="label label-success label-block">Success Label</h3><p></p>
+  <p></p><h4 class="label label-info label-block">Info Label</h4><p></p>
+  <p></p><h5 class="label label-warning label-block">Warning Label</h5><p></p>
+  <p></p><h6 class="label label-danger label-block">Danger Label</h6><p></p>
+
+  <p><div class="label label-default label-block">Default Label</div></p>
+
+</div>
+<code class="language-markup">
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Default Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-primary label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Primary Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-success label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Success Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-info label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Info Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-warning label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Warning Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-danger label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Danger Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>label label-default label-block<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Default Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+</code>
 
           </section>
           <section class="guide-section">
