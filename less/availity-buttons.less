@@ -113,7 +113,13 @@
 .btn-file {
   position: relative;
   overflow: hidden;
+
+  &:hover {
+    background-color: @gray-light;
+    text-decoration: none;
+  }
 }
+
 .btn-file input[type=file] {
   position: absolute;
   top: 0;
