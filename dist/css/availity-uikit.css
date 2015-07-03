@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.8.2 -- July-02
+ * availity-uikit v0.8.3 -- July-02
  * Copyright 2015 Availity, LLC 
  */
 
@@ -4094,6 +4094,10 @@ fieldset[disabled] .btn-ghost.active {
 .btn-file {
   position: relative;
   overflow: hidden;
+}
+.btn-file:hover {
+  background-color: #e1e3e3;
+  text-decoration: none;
 }
 .btn-file input[type=file] {
   position: absolute;
