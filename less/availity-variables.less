@@ -1,40 +1,124 @@
 //== Colors
 //
-@gray:                      #4d4f53;
-@gray-darker:               #363f45;
-@gray-darkest:              #203545;
-@gray-light:                #e1e3e3;
-@gray-lighter:              #e8ebeb;
-@gray-lightest:             #f2f5f5;
-@slate:                     #3e6887;
+@black: #000000;
 
-@white:                     #ffffff;
+@white: #ffffff;
 
-@blue:                      #2261b5;
-@blue-darker:               #1a4e94;
-@blue-darkest:              #16437d;
+@gray: #4d4f53;
 
-@green:                     #02a17c;
-@green-secondary:           #009a57;
-@green-darker:              #038166;
-@green-darkest:             #026e56;
-@green-lighter:             #7fccab;
+@text-color: @gray; 
 
-@red:                       #b21909;
-@yellow:                    #ffda00;
+@secondary-text-color: #4d4f53; 
+
+@disabled-text-color: #cccccc;
+
+@gray-darkest: #30383f; 
+
+@gray-darker: #363f45; 
+
+@gray-dark: #48535c;
+
+@gray-lighter: #e8ebeb;
+
+@gray-light: #f8f8f8;
+
+ 
 
 @brand-primary: @blue;
+
+@blue: #2261b5; 
+
+@secondary-blue: #0093e8; 
+
 @brand-success: @green;
+
+@green: #02a17c;
+
 @brand-info: @slate;
+
+@slate: #3e6887; 
+
 @brand-danger: @red;
+
+@red:#b21909; 
+
 @brand-warning: @yellow;
 
-@text-color: @gray;
-@text-darker: #313336;
-@text-darkest: #000000;
-@text-lighter: #747676;
+@yellow: #ffda00; 
+
+@brand-color: @orange;
+
+@orange: #ed5624; 
+
+
+ 
+
+@green-darkest: #0b8c6f;
+
+@blue-darkest: #2a62ae;
+
+@slate-darkest: #2f5263;
+
+@orange-darkest: #da5027;
+
+@secondary-blue-darkest: #0476b0;
+
+@yellow-darkest: #FEC40D;
+
+@red-darkest: #931b1d;
+
+
+ 
+
+@green-lightest: #b4e0da;
+
+@blue-lightest: #b5e4fa;
+
+@slate-lightest: #ccdee2;
+
+@orange-lightest: #f9cdaf;
+
+@blue-lightest: #2a62ae;
+
+@yellow-lightest: #fef5a0;
+
+@red-lightest: #F58981;
+
+
+ 
+
+@gray-lightest: #e8ebeb;
+
+@green-darker: #0b8c6f;
+
+@blue-darker: #2a62ae;
+
+@slate-darker: #2f5263;
+
+@orange-darker: #da5027;
+
+@yellow-darker: @yellow-darkest;
+
+@red-darker: #931b1d;
+
+@green-secondary: #02a17c;
+
+@green-lighter: #b4e0da;
+
+@text-darker: #30383f;
+
+@text-darkest: @black;
+
+@text-lighter: @secondary-text-color;
+
 @text-link: @brand-primary;
+
 @text-muted: lighten(@gray, 20%);
+
+@gray-base: @black;
+
+
+
 
 //== Scaffolding
 //
@@ -88,7 +172,7 @@
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 @btn-font-weight: 400;
-@btn-default-bg: @gray-light;
+@btn-default-bg: @gray-lighter;
 @btn-warning-color: @text-color;
 
 //== Z-index master list
@@ -103,7 +187,7 @@
 
 @navbar-default-color:                      lighten(@gray-light, 15%);
 @navbar-default-bg:                         @gray-darker;
-@navbar-default-border:                     #30383f;
+@navbar-default-border:                     @text-darker;
 
 // Navbar links
 @navbar-default-link-color:                 @gray-lighter;
@@ -112,7 +196,7 @@
 @navbar-default-link-hover-bg:              transparent;
 @navbar-default-link-active-color:          @navbar-default-link-hover-color;
 @navbar-default-link-active-bg:             darken(@navbar-default-bg, 10%);
-@navbar-default-link-disabled-color:        #444;
+@navbar-default-link-disabled-color:        @secondary-text-color;
 @navbar-default-link-disabled-bg:           transparent;
 
 // Navbar brand label
@@ -121,14 +205,14 @@
 @navbar-default-brand-hover-bg:             transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:            #333;
+@navbar-default-toggle-hover-bg:            @black;
 @navbar-default-toggle-icon-bar-bg:         @white;
-@navbar-default-toggle-border-color:        #333;
+@navbar-default-toggle-border-color:        @black;
 
 // Secondary navbar
 @availity-navbar-secondary-color:                      lighten(@gray-light, 15%);
-@availity-navbar-secondary-bg:                         #48535c;
-@availity-navbar-secondary-border:                     #404a53;
+@availity-navbar-secondary-bg:                         @gray-dark;
+@availity-navbar-secondary-border:                     @gray-dark;
 
 // Navbar links
 @availity-navbar-secondary-link-color:                 @gray-lighter;
@@ -136,7 +220,7 @@
 @availity-navbar-secondary-link-hover-bg:              transparent;
 @availity-navbar-secondary-link-active-color:          @availity-navbar-secondary-link-hover-color;
 @availity-navbar-secondary-link-active-bg:             darken(@availity-navbar-secondary-bg, 10%);
-@availity-navbar-secondary-link-disabled-color:        #444;
+@availity-navbar-secondary-link-disabled-color:        @secondary-text-color;
 @availity-navbar-secondary-link-disabled-bg:           transparent;
 
 // Navbar brand label
@@ -145,21 +229,21 @@
 @availity-navbar-secondary-brand-hover-bg:             transparent;
 
 // Navbar toggle
-@availity-navbar-secondary-toggle-hover-bg:            #333;
+@availity-navbar-secondary-toggle-hover-bg:            @black;
 @availity-navbar-secondary-toggle-icon-bar-bg:         @white;
-@availity-navbar-secondary-toggle-border-color:        #333;
+@availity-navbar-secondary-toggle-border-color:        @black;
 
 // Inverted navbar - Reset inverted navbar basics
-@navbar-inverse-bg:                         #f8f8f8;
+@navbar-inverse-bg:                         @gray-light;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 6.5%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                #777;
-@navbar-inverse-link-hover-color:          #333;
+@navbar-inverse-link-color:                @secondary-text-color;
+@navbar-inverse-link-hover-color:          @text-color;
 @navbar-inverse-link-hover-bg:             transparent;
-@navbar-inverse-link-active-color:         #555;
+@navbar-inverse-link-active-color:         @text-color;
 @navbar-inverse-link-active-bg:            darken(@navbar-inverse-bg, 6.5%);
-@navbar-inverse-link-disabled-color:       #ccc;
+@navbar-inverse-link-disabled-color:       @disabled-text-color;
 @navbar-inverse-link-disabled-bg:          transparent;
 
 // Inverted navbar brand label
@@ -168,9 +252,9 @@
 @navbar-inverse-brand-hover-bg:            transparent;
 
 // Inverted navbar toggle
-@navbar-inverse-toggle-hover-bg:           #ddd;
-@navbar-inverse-toggle-icon-bar-bg:        #888;
-@navbar-inverse-toggle-border-color:       #ddd;
+@navbar-inverse-toggle-hover-bg:           @disabled-text-color;
+@navbar-inverse-toggle-icon-bar-bg:        @secondary-text-color;
+@navbar-inverse-toggle-border-color:       @disabled-text-color;
 
 // Navbar + Main
 @availity-navbar-main-padding: (@navbar-height + 10);
@@ -200,7 +284,7 @@
 @availity-breadcrumb-border-color:        @gray-light;
 
 //== Progress Bars
-@progress-bg:                                         #c7c9c9;
+@progress-bg:                                         @disabled-text-color;
 @progress-border-radius: @border-radius-large;
 @progress-bar-color:                                  @green;
 @availity-progress-bar-icon-complete-color:           @white;
@@ -211,20 +295,21 @@
 @availity-progress-bar-icon-complete-content:         "\e853";
 @availity-progress-bar-icon-complete-content-overlay: "\e85c";
 
-
 //== List group
-
-@list-group-hover-bg: @gray-lighter;
+@list-group-hover-bg: 				@gray-light;
+@list-group-border:             @disabled-text-color;
+@list-group-disabled-color:      	@gray-lighter;
 
 //== Labels
 @label-color:                       @white;
+@label-default-bg:            transparent;
 
 //== Modals
 @availity-modal-padding: 24px;
 @availity-modal-input-border-radius: @border-radius-large;
 @modal-inner-padding: @availity-modal-padding;
-@availity-modal-header-bg-color: @gray-lightest;
-@availity-modal-footer-bg-color: @gray-lightest;
+@availity-modal-header-bg-color: @gray-lighter;
+@availity-modal-footer-bg-color: @gray-lighter;
 
 //== Badges
 @badge-bg: @gray;
@@ -232,21 +317,21 @@
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
-@state-success-text:             #39a034;
-@state-success-bg:               #dbffec;
-@state-success-border:           lighten(@state-success-text, 20%);
+@state-success-text:             @brand-success;
+@state-success-bg:               @green-lightest;
+@state-success-border:           @green-darkest;
 
-@state-info-text:                #3084f5;
-@state-info-bg:                  #dbf2ff;
+@state-info-text:                @brand-info;
+@state-info-bg:                  @slate-lightest;
 @state-info-border:              lighten(@state-info-text, 20%);
 
-@state-warning-text:             @text-darker;
-@state-warning-bg:               #fffcdb;
-@state-warning-border:           darken(@state-warning-bg, 50%);
+@state-warning-text:             @yellow-darkest;
+@state-warning-bg:               @yellow-lightest;
+@state-warning-border:           @yellow-darkest;
 
-@state-danger-text:              @red;
-@state-danger-bg:                #ffdbe1;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 10%);
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                @red-lightest;
+@state-danger-border:            @red-darkest;
 
 //== App Icons
 
@@ -265,18 +350,18 @@
 @availity-app-icon-md-line-height:                  35px;
 @availity-app-icon-lg-line-height:                  70px;
 @availity-app-icon-xl-line-height:                  90px;
-@availity-app-icon-black-gradient-color-start:      #4a4b4e;
-@availity-app-icon-black-gradient-color-end:        #35373a;
-@availity-app-icon-blue-gradient-color-start:       #0aaefb;
-@availity-app-icon-blue-gradient-color-end:         #1396d4;
+@availity-app-icon-black-gradient-color-start:      @gray;
+@availity-app-icon-black-gradient-color-end:        @gray-darkest;
+@availity-app-icon-blue-gradient-color-start:       @secondary-blue;
+@availity-app-icon-blue-gradient-color-end:         @secondary-blue-darkest;
 @availity-app-icon-green-gradient-color-start:      @green;
-@availity-app-icon-green-gradient-color-end:        #0c8c6f;
-@availity-app-icon-orange-gradient-color-start:     #ee5522;
-@availity-app-icon-orange-gradient-color-end:       #db4e1f;
-@availity-app-icon-neon-gradient-color-start:       #05e170;
-@availity-app-icon-neon-gradient-color-end:         #04c963;
+@availity-app-icon-green-gradient-color-end:        @green-darkest;
+@availity-app-icon-orange-gradient-color-start:     @orange;
+@availity-app-icon-orange-gradient-color-end:       @orange-darkest;
+@availity-app-icon-neon-gradient-color-start:       @green;
+@availity-app-icon-neon-gradient-color-end:         @green-darkest;
 @availity-app-icon-branded-color:                   @text-color;
-@availity-app-icon-branded-border-color:            @gray-light;
+@availity-app-icon-branded-border-color:            @gray-lighter;
 @availity-app-icon-branded-border-bg:               @white;
 @availity-app-icon-branded-black-caret-color:       @availity-app-icon-black-gradient-color-end;
 @availity-app-icon-branded-blue-caret-color:        @availity-app-icon-blue-gradient-color-end;
@@ -284,40 +369,40 @@
 @availity-app-icon-branded-neon-caret-color:        @availity-app-icon-neon-gradient-color-end;
 @availity-app-icon-branded-orange-caret-color:      @availity-app-icon-orange-gradient-color-end;
 
-@green:                     #02a17c;
-@green-darker:              #038166;
-@green-darkest:             #026e56;
-@green-lighter:             #7fccab;
-
 // Panel
-@panel-success-border: darken(@brand-success, 5%);
+@panel-success-border: @green-darkest;
 @panel-success-text: @white;
 @panel-success-heading-bg: @brand-success;
+@well-bg:                     @gray-lighter;
 
-@panel-info-border: darken(@brand-info, 5%);
+@panel-info-border: @slate-darkest;
 @panel-info-text: @white;
 @panel-info-heading-bg: @brand-info;
 
-@panel-warning-border: darken(@brand-warning, 5%);
+@panel-warning-border: @yellow-darkest;
 @panel-warning-text: @text-darker;
 @panel-warning-heading-bg: @brand-warning;
 
-@panel-danger-border: darken(@brand-danger, 5%);
+@panel-danger-border: @red-darkest;
 @panel-danger-text: @white;
 @panel-danger-heading-bg: @brand-danger;
 
+@panel-default-heading-bg:    @gray-lighter;
+@panel-footer-bg:             @gray-lighter;
+
 @availity-panel-card-padding: 24px;
-@availity-panel-collapse-border: 1px solid @gray-lightest;
+@availity-panel-collapse-border: 1px solid @gray-lighter;
 
 // Tables
-@availity-table-border-color: #dddddd;
+@availity-table-border-color: @disabled-text-color;
 
 // Buttons
 @button-box-shadow: 0 1px 2px rgba(0,0,0,.1);
 @button-box-shadow-inset: inset 0 1px 2px rgba(0,0,0,.1);
+@btn-link-disabled-color:        @disabled-text-color;
 
 //== Pills
-@nav-pills-active-link-hover-bg: @gray-lightest;
+@nav-pills-active-link-hover-bg: @gray-lighter;
 
 //== Alerts and warnings
 @alert-border-radius: 3px;
@@ -334,37 +419,36 @@
 @alert-warning-text: @text-darker;
 @alert-warning-bg: @brand-warning;
 
-
 @alert-danger-border: darken(@brand-danger, 5%);
 @alert-danger-text: @white;
 @alert-danger-bg: @brand-danger;
 
 //== Typography
-@availity-disclaimer-warning-border: darken(@brand-warning, 5%);
+@availity-disclaimer-warning-border: @yellow-darkest;
 
 //== Footer
-@availity-footer-color: #9fa2a4;
-@availity-footer-bg: @availity-navbar-secondary-bg;
+@availity-footer-color: @gray-lighter;
+@availity-footer-bg: @gray-dark;
 @availity-footer-height: 40px;
 @availity-footer-link-color: @navbar-default-link-color;
 @availity-footer-padding: 10px;
 
 //== Popovers
-@popover-arrow-color:                 @gray-lightest;
+@popover-arrow-color:                 @white;
 @availity-popover-title-color:        @text-darker;
 @availity-popover-title-font-weight:  @availity-font-weight-bold;
 
 //== Pagination
 @pagination-color:                @text-link;
-@pagination-bg:                   @gray-lighter;
-@pagination-border:               #ccc;
-@pagination-hover-bg:             #d2d4d5;
+@pagination-bg:                   @gray-light;
+@pagination-border:               @disabled-text-color;
+@pagination-hover-bg:             @gray-lighter;
 @pagination-active-color:         @white;
-@pagination-active-bg:            @blue-darker;
-@pagination-active-border:        @blue-darker;
+@pagination-active-bg:            @blue;
+@pagination-active-border:        @blue-darkest;
 @pagination-disabled-color:       @text-color;
 @pagination-disabled-bg:          @gray-light;
-@pagination-disabled-border:      #ccc;
+@pagination-disabled-border:      @disabled-text-color;
 @availity-pagination-font-weight: 400;
 
 //== Dropdowns
@@ -377,16 +461,16 @@
 @availity-menu-padding-vertical: 15px;
 @availity-menu-padding-horizontal: 5px;
 
-@availity-notifications-menu-bg: @gray-lightest;
+@availity-notifications-menu-bg: @gray-lighter;
 
 // Dropdown Notification
-@dropdown-notification-bg: @gray-lightest;
+@dropdown-notification-bg: @gray-lighter;
 
 //== Tooltips
 @tooltip-max-width:   320px;
 @tooltip-color:       @white;
-@tooltip-bg:          #1c2f3d;
-@tooltip-arrow-color: #1c2f3d;
+@tooltip-bg:          @gray-darkest;
+@tooltip-arrow-color: @gray-darkest;
 
 //== Utilities
 @availity-bump: 1em;
