@@ -127,7 +127,7 @@
 @availity-height-md: 400px;
 
 //** Background color for `<body>`.
-@main-bg: @gray-lightest;
+@main-bg: @gray-light;
 
 //== Fonts
 @font-path: "../fonts";
@@ -302,7 +302,7 @@
 
 //== Labels
 @label-color:                       @white;
-@label-default-bg:            transparent;
+@label-default-bg:            @gray-lighter;
 
 //== Modals
 @availity-modal-padding: 24px;
@@ -325,7 +325,7 @@
 @state-info-bg:                  @slate-lightest;
 @state-info-border:              lighten(@state-info-text, 20%);
 
-@state-warning-text:             @yellow-darkest;
+@state-warning-text:             darken(@yellow-darkest, 10%);
 @state-warning-bg:               @yellow-lightest;
 @state-warning-border:           @yellow-darkest;
 
