@@ -5,51 +5,48 @@
 }
 
 .list-group-selectable {
+
   .list-group-item {
-	cursor: pointer;
+    cursor: pointer;
 
-	&:hover {
-	  background-color: @gray-lighter;
-	}
+    &.active {
+     background: @gray-lighter;
+     color: @gray;
 
-	&.active {
-	  background: @gray-lighter;
-	  color: @gray;
+     &:hover {
+      border-color: darken(@list-group-border, 5%);
+    }
 
-	  &:hover {
-		border-color: darken(@list-group-border, 5%);
-	  }
-
-	  .list-group-item-text {
-		color: @gray;
-	  }
-	}
+    .list-group-item-text {
+      color: @gray;
+    }
   }
+}
 }
 
 .list-group-cards {
 
   .list-group-item {
+
     margin-bottom: 10px;
-    padding: 20px;
-    border: 1px solid darken(@list-group-border, 5%);
-    border-left: 10px solid @gray-light;
+    border: 1px solid @disabled-text-color;
+    border-left: 10px solid @disabled-text-color;
 
     border-radius: 4px;
 
-	&.pending, &.active.pending {
+    &.pending, &.active.pending {
       border-left-color: @brand-info;
     }
 
-	&.success, &.active.success {
+    &.success, &.active.success {
       border-left-color: @brand-success;
     }
 
-	&.error, &.active.error {
+    &.error, &.active.error {
       border-left-color: @brand-danger;
     }
 
-	&.canceled, &.active.canceled {
+    &.canceled, &.active.canceled {
       border-left-color: @brand-warning;
     }
 

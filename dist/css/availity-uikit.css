@@ -6246,7 +6246,7 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #cccccc;
 }
 .list-group-item:first-child {
   border-top-right-radius: 2px;
@@ -6428,8 +6428,8 @@ a.list-group-item-danger.active:focus {
 .list-group-cards .list-group-item {
   margin-bottom: 10px;
   padding: 20px;
-  border: 1px solid #d0d0d0;
-  border-left: 10px solid #e1e3e3;
+  border: 1px solid #cccccc;
+  border-left: 10px solid #4d4f53;
   border-radius: 4px;
 }
 .list-group-cards .list-group-item.pending,

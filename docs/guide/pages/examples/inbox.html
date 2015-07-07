@@ -9,70 +9,86 @@ icon: black
 
 <div class="container-fluid">
   <dic class="row">
-    <div class="col-sm-4 main-sidebar left">
-      <div class="panel panel-card panel-inverse full">
-        <div class="panel-heading">
-          <h4 class="panel-card-title">
-            Recent Requests
-          </h4>
+    <div class="col-sm-3 main-sidebar left">
+      <div class="main-sidebar-body">
+        <h4>
+          Recent Requests
+        </h4>
+        <div class="form-group">
+          <label class="sr-only" for="search">Search</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="search" placeholder="Search...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Search</button>
+            </span>
+          </div>
         </div>
-        <div class="panel-body full">
-          <div class="form-group">
-            <label class="sr-only" for="input25">Search</label>
-            <div class="input-group">
-              <input type="text" class="form-control" id="input25" placeholder="Search...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Search</button>
-              </span>
-            </div>
-          </div>
-          <div class="list-group list-group-cards">
-            <a class="list-group-item success" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:1"></h4>
-              <p class="list-group-item-text" data-mock="company:1"></p>
-            </a>
-            <a class="list-group-item pending" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:2"></h4>
-              <p class="list-group-item-text" data-mock="company:2"></p>
-            </a>
-            <a class="list-group-item error" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:3"></h4>
-              <p class="list-group-item-text" data-mock="company:3"></p>
-            </a>
-            <a class="list-group-item canceled" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:4"></h4>
-              <p class="list-group-item-text" data-mock="company:4"></p>
-            </a>
-            <a class="list-group-item" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:5"></h4>
-              <p class="list-group-item-text" data-mock="company:5"></p>
-            </a>
-            <a class="list-group-item success" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:6"></h4>
-              <p class="list-group-item-text" data-mock="company:6"></p>
-            </a>
-            <a class="list-group-item pending" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:7"></h4>
-              <p class="list-group-item-text" data-mock="company:7"></p>
-            </a>
-            <a class="list-group-item error" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:8"></h4>
-              <p class="list-group-item-text" data-mock="company:8"></p>
-            </a>
-            <a class="list-group-item canceled" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:9"></h4>
-              <p class="list-group-item-text" data-mock="company:9"></p>
-            </a>
-            <a class="list-group-item" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:10"></h4>
-              <p class="list-group-item-text" data-mock="company:10"></p>
-            </a>
-          </div>
+        <div class="list-group list-group-cards">
+          <a class="list-group-item success" href="#">
+            <span class="label label-unstyled pull-right">10:33 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:1"></h4>
+            <h6 data-mock="company:1"></h6>
+            <p class="list-group-item-text" data-mock="sentences:1"></p>
+          </a>
+          <a class="list-group-item pending" href="#">
+            <span class="label label-unstyled pull-right">09:21 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:2"></h4>
+            <h6 data-mock="company:2"></h6>
+            <p class="list-group-item-text" data-mock="sentences:2"></p>
+          </a>
+          <a class="list-group-item error" href="#">
+            <span class="label label-unstyled pull-right">06:01 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:3"></h4>
+            <h6 data-mock="company:3"></h6>
+            <p class="list-group-item-text" data-mock="sentences:3"></p>
+          </a>
+          <a class="list-group-item canceled" href="#">
+            <span class="label label-unstyled pull-right">04:47 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:4"></h4>
+            <h6 data-mock="company:4"></h6>
+            <p class="list-group-item-text" data-mock="sentences:4"></p>
+          </a>
+          <a class="list-group-item" href="#">
+            <span class="label label-unstyled pull-right">01:47 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:5"></h4>
+            <h6 data-mock="company:5"></h6>
+            <p class="list-group-item-text" data-mock="sentences:5"></p>
+          </a>
+          <a class="list-group-item success" href="#">
+            <span class="label label-unstyled pull-right">12:47 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:6"></h4>
+            <h6 data-mock="company:6"></h6>
+            <p class="list-group-item-text" data-mock="sentences:6"></p>
+          </a>
+          <a class="list-group-item pending" href="#">
+            <span class="label label-unstyled pull-right">11:30 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:7"></h4>
+            <h6 data-mock="company:7"></h6>
+            <p class="list-group-item-text" data-mock="sentences:7"></p>
+          </a>
+          <a class="list-group-item error" href="#">
+            <span class="label label-unstyled pull-right">10:31 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:8"></h4>
+            <h6 data-mock="company:8"></h6>
+            <p class="list-group-item-text" data-mock="sentences:8"></p>
+          </a>
+          <a class="list-group-item canceled" href="#">
+            <span class="label label-unstyled pull-right">08:30 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:9"></h4>
+            <h6 data-mock="company:9"></h6>
+            <p class="list-group-item-text" data-mock="sentences:9"></p>
+          </a>
+          <a class="list-group-item" href="#">
+            <span class="label label-unstyled pull-right">7:59 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:10"></h4>
+            <h6 data-mock="company:10"></h6>
+            <p class="list-group-item-text" data-mock="sentences:10"></p>
+          </a>
         </div>
       </div>
     </div>
-    <div class="col-sm-8 main-content">
-      <div class="panel panel-card">
+    <div class="col-sm-9 main-content">
+      <div class="panel">
         <div class="panel-body">
           <table class="table table-list">
             <thead>
@@ -82,6 +98,7 @@ icon: black
                 <th>DOB</th>
                 <th>Member ID</th>
                 <th>Address</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -97,6 +114,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:1"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:2"></a></td>
@@ -109,6 +138,18 @@ icon: black
                     <div data-mock="addressLine2:2"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:2"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -123,6 +164,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:3"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:4"></a></td>
@@ -135,6 +188,18 @@ icon: black
                     <div data-mock="addressLine2:4"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:4"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -149,6 +214,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:5"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:6"></a></td>
@@ -161,6 +238,18 @@ icon: black
                     <div data-mock="addressLine2:6"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:6"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -175,6 +264,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:7"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:8"></a></td>
@@ -187,6 +288,18 @@ icon: black
                     <div data-mock="addressLine2:8"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:8"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -201,6 +314,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:9"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:10"></a></td>
@@ -213,6 +338,18 @@ icon: black
                     <div data-mock="addressLine2:10"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:10"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -227,6 +364,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:11"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:12"></a></td>
@@ -239,6 +388,18 @@ icon: black
                     <div data-mock="addressLine2:12"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:12"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -253,6 +414,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:13"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:14"></a></td>
@@ -266,6 +439,18 @@ icon: black
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:14"></span>
                   </address>
                 </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td><a href="#" data-mock="fullName:15"></a></td>
@@ -278,6 +463,18 @@ icon: black
                     <div data-mock="addressLine2:15"></div>
                     <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:15"></span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
             </tbody>
