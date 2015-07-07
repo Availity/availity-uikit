@@ -5,14 +5,11 @@
 }
 
 .list-group-selectable {
+
   .list-group-item {
-   cursor: pointer;
+    cursor: pointer;
 
-   &:hover {
-     background-color: @gray-lighter;
-   }
-
-   &.active {
+    &.active {
      background: @gray-lighter;
      color: @gray;
 
@@ -30,10 +27,11 @@
 .list-group-cards {
 
   .list-group-item {
+
     margin-bottom: 10px;
     padding: 20px;
     border: 1px solid @disabled-text-color;
-    border-left: 10px solid @gray-lighter;
+    border-left: 10px solid @disabled-text-color;
 
     border-radius: 4px;
 
