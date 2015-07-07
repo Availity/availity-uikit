@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.8.3 -- July-02
+ * availity-uikit v0.9.0 -- July-07
  * Copyright 2015 Availity, LLC 
  */
 
@@ -89,7 +89,7 @@
 }
 .color-item-footer {
   display: block;
-  background-color: #f2f5f5;
+  background-color: #e8ebeb;
   line-height: 2;
   text-align: center;
   padding: 1.5em;
@@ -341,7 +341,7 @@ code[class*=language] {
   letter-spacing: 0;
   color: #4d4f53;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: #f8f9f9;
+  background-color: #edf0f0;
   border: 1px solid #e1e1e8;
   border-radius: 2px;
   padding: 30px 15px 15px;
@@ -365,7 +365,7 @@ pre[class*="language-"] {
   letter-spacing: 0;
   color: #4d4f53;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: #f8f9f9;
+  background-color: #edf0f0;
   border: 1px solid #e1e1e8;
   border-radius: 2px;
   padding: 30px 15px 15px;
