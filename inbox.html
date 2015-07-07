@@ -291,70 +291,106 @@
 
 <div class="container-fluid">
   <dic class="row">
-    <div class="col-sm-4 main-sidebar left">
-      <div class="panel panel-card panel-inverse full">
-        <div class="panel-heading">
-          <h4 class="panel-card-title">
-            Recent Requests
-          </h4>
+    <div class="col-sm-3 main-sidebar left">
+      <div class="main-sidebar-body">
+        <h4>
+          Recent Requests
+        </h4>
+        <div class="form-group">
+          <label class="sr-only" for="search">Search</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="search" placeholder="Search...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Search</button>
+            </span>
+          </div>
         </div>
-        <div class="panel-body full">
-          <div class="form-group">
-            <label class="sr-only" for="input25">Search</label>
-            <div class="input-group">
-              <input type="text" class="form-control" id="input25" placeholder="Search...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Search</button>
-              </span>
-            </div>
-          </div>
-          <div class="list-group list-group-cards">
-            <a class="list-group-item success" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:1">Zoe Anderson</h4>
-              <p class="list-group-item-text" data-mock="company:1">TailSpin Toys</p>
-            </a>
-            <a class="list-group-item pending" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:2">Alyssa King</h4>
-              <p class="list-group-item-text" data-mock="company:2">School of Fine Art</p>
-            </a>
-            <a class="list-group-item error" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:3">Riley Murphy</h4>
-              <p class="list-group-item-text" data-mock="company:3">Coho Winery</p>
-            </a>
-            <a class="list-group-item canceled" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:4">Sophia Perez</h4>
-              <p class="list-group-item-text" data-mock="company:4">TailSpin Toys</p>
-            </a>
-            <a class="list-group-item" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:5">Brayden King</h4>
-              <p class="list-group-item-text" data-mock="company:5">Electronic, Inc.</p>
-            </a>
-            <a class="list-group-item success" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:6">Savannah Phillips</h4>
-              <p class="list-group-item-text" data-mock="company:6">Trey Research Inc.</p>
-            </a>
-            <a class="list-group-item pending" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:7">Aubrey Hall</h4>
-              <p class="list-group-item-text" data-mock="company:7">Coho Vineyard</p>
-            </a>
-            <a class="list-group-item error" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:8">Brooklyn Davis</h4>
-              <p class="list-group-item-text" data-mock="company:8">Fabrikam, Inc.</p>
-            </a>
-            <a class="list-group-item canceled" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:9">Carter Flores</h4>
-              <p class="list-group-item-text" data-mock="company:9">Electronic, Inc.</p>
-            </a>
-            <a class="list-group-item" href="#">
-              <h4 class="list-group-item-heading" data-mock="fullName:10">Natalie Rogers</h4>
-              <p class="list-group-item-text" data-mock="company:10">AdventureWorks Cycles</p>
-            </a>
-          </div>
+        <div class="list-group list-group-cards">
+          <a class="list-group-item success" href="#">
+            <span class="label label-unstyled pull-right">10:33 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:1">Zoey Roberts</h4>
+            <h6 data-mock="company:1">Fabrikam, Inc.</h6>
+            <p class="list-group-item-text" data-mock="sentences:1">provident praesentium dolorem quos ratione aut fugiat laboriosam
+ut velit enim optio neque architecto quos dolor
+inventore dicta et</p>
+          </a>
+          <a class="list-group-item pending" href="#">
+            <span class="label label-unstyled pull-right">09:21 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:2">Mia Bailey</h4>
+            <h6 data-mock="company:2">Southbridge Video</h6>
+            <p class="list-group-item-text" data-mock="sentences:2">autem nam quo modi
+reiciendis quaerat eligendi minus
+sed accusamus sequi eum voluptatem</p>
+          </a>
+          <a class="list-group-item error" href="#">
+            <span class="label label-unstyled pull-right">06:01 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:3">Evelyn Robinson</h4>
+            <h6 data-mock="company:3">Fabrikam, Inc.</h6>
+            <p class="list-group-item-text" data-mock="sentences:3">voluptas aut nihil excepturi nobis quae corrupti consequatur harum
+suscipit earum dolores fugit quia
+dolorem est nobis aperiam excepturi maiores repellendus</p>
+          </a>
+          <a class="list-group-item canceled" href="#">
+            <span class="label label-unstyled pull-right">04:47 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:4">Brandon King</h4>
+            <h6 data-mock="company:4">Awesome Computers</h6>
+            <p class="list-group-item-text" data-mock="sentences:4">consequuntur consequatur dolorum reiciendis recusandae voluptatum veritatis ut tenetur voluptatem
+et vel neque est delectus molestiae laborum inventore nisi assumenda
+ut dolorem et officiis illo doloremque quasi maiores</p>
+          </a>
+          <a class="list-group-item" href="#">
+            <span class="label label-unstyled pull-right">01:47 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:5">Isabella Torres</h4>
+            <h6 data-mock="company:5">Lucerne Publishing</h6>
+            <p class="list-group-item-text" data-mock="sentences:5">quis voluptatem architecto natus pariatur similique doloremque fugiat odio ut
+facilis nulla sit
+et tenetur corrupti unde inventore ut sit pariatur reiciendis</p>
+          </a>
+          <a class="list-group-item success" href="#">
+            <span class="label label-unstyled pull-right">12:47 PM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:6">Zoey Brown</h4>
+            <h6 data-mock="company:6">WingTip Toys</h6>
+            <p class="list-group-item-text" data-mock="sentences:6">et facere necessitatibus expedita voluptas dolorem voluptatem omnis
+impedit distinctio est et voluptatem
+voluptates nemo eos vel nam quasi quisquam aspernatur dolorem</p>
+          </a>
+          <a class="list-group-item pending" href="#">
+            <span class="label label-unstyled pull-right">11:30 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:7">Riley Bailey</h4>
+            <h6 data-mock="company:7">LitWare Inc.</h6>
+            <p class="list-group-item-text" data-mock="sentences:7">neque assumenda commodi illo atque facilis
+tempora temporibus pariatur quibusdam rem dolorem harum velit exercitationem
+inventore sit unde nisi ut voluptates nostrum voluptatem sed facere</p>
+          </a>
+          <a class="list-group-item error" href="#">
+            <span class="label label-unstyled pull-right">10:31 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:8">Brianna Rogers</h4>
+            <h6 data-mock="company:8">Alpine Ski House</h6>
+            <p class="list-group-item-text" data-mock="sentences:8">occaecati dolor qui error sunt est harum minus quia et
+dicta ex dolorum quae repellat alias in asperiores ut
+velit fugiat labore odio nihil</p>
+          </a>
+          <a class="list-group-item canceled" href="#">
+            <span class="label label-unstyled pull-right">08:30 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:9">Evelyn Sanders</h4>
+            <h6 data-mock="company:9">Blue Yonder Airlines</h6>
+            <p class="list-group-item-text" data-mock="sentences:9">quam illo suscipit quidem reprehenderit natus est
+sit magni corporis voluptas ut
+quasi commodi natus quia dolorem</p>
+          </a>
+          <a class="list-group-item" href="#">
+            <span class="label label-unstyled pull-right">7:59 AM</span>
+            <h4 class="list-group-item-heading" data-mock="fullName:10">Abigail Campbell</h4>
+            <h6 data-mock="company:10">Graphic Design Institute</h6>
+            <p class="list-group-item-text" data-mock="sentences:10">aspernatur ut dolorem dignissimos fugiat est architecto perspiciatis
+et rem qui qui neque optio a suscipit repudiandae quos
+nemo et est fugiat sit illum</p>
+          </a>
         </div>
       </div>
     </div>
-    <div class="col-sm-8 main-content">
-      <div class="panel panel-card">
+    <div class="col-sm-9 main-content">
+      <div class="panel">
         <div class="panel-body">
           <table class="table table-list">
             <thead>
@@ -364,202 +400,383 @@
                 <th>DOB</th>
                 <th>Member ID</th>
                 <th>Address</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><a href="#" data-mock="fullName:1">Zoe Anderson</a></td>
+                <td><a href="#" data-mock="fullName:1">Zoey Roberts</a></td>
                 <td data-mock="sexShort:1">F</td>
-                <td data-mock="dob:1">02/02/1972</td>
-                <td data-mock="memberId:1">125469753</td>
+                <td data-mock="dob:1">18/08/1965</td>
+                <td data-mock="memberId:1">043597306</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:1">1423 Jefferson Street</div>
-                    <div data-mock="addressLine2:1">Burlington NY, NY 13183</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:1">(555) 555-9557</span>
+                    <div data-mock="addressLine1:1">2683 Water Street</div>
+                    <div data-mock="addressLine2:1">Glendale TN, TN 37893</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:1">(555) 555-4563</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:2">Alyssa King</a></td>
+                <td><a href="#" data-mock="fullName:2">Mia Bailey</a></td>
                 <td data-mock="sexShort:2">F</td>
-                <td data-mock="dob:2">12/08/1987</td>
-                <td data-mock="memberId:2">343633260</td>
+                <td data-mock="dob:2">09/09/1959</td>
+                <td data-mock="memberId:2">954447457</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:2">2009 Broadway</div>
-                    <div data-mock="addressLine2:2">Milton TX, TX 77827</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:2">(555) 555-1241</span>
+                    <div data-mock="addressLine1:2">7873 Main Street North</div>
+                    <div data-mock="addressLine2:2">Hudson GA, GA 30152</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:2">(555) 555-2852</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:3">Riley Murphy</a></td>
+                <td><a href="#" data-mock="fullName:3">Evelyn Robinson</a></td>
                 <td data-mock="sexShort:3">F</td>
-                <td data-mock="dob:3">22/02/1973</td>
-                <td data-mock="memberId:3">139619919</td>
+                <td data-mock="dob:3">01/07/1996</td>
+                <td data-mock="memberId:3">396008457</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:3">526 Meadow Lane</div>
-                    <div data-mock="addressLine2:3">Ashland CT, CT 06706</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:3">(555) 555-2292</span>
+                    <div data-mock="addressLine1:3">4947 Route 30</div>
+                    <div data-mock="addressLine2:3">Centerville GA, GA 31009</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:3">(555) 555-6589</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:4">Sophia Perez</a></td>
-                <td data-mock="sexShort:4">F</td>
-                <td data-mock="dob:4">27/03/1957</td>
-                <td data-mock="memberId:4">888157052</td>
+                <td><a href="#" data-mock="fullName:4">Brandon King</a></td>
+                <td data-mock="sexShort:4">M</td>
+                <td data-mock="dob:4">14/04/1982</td>
+                <td data-mock="memberId:4">764286710</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:4">9034 Highland Avenue</div>
-                    <div data-mock="addressLine2:4">Cedar Grove SC, SC 29121</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:4">(555) 555-8639</span>
+                    <div data-mock="addressLine1:4">8507 Pearl Street</div>
+                    <div data-mock="addressLine2:4">Liberty PA, PA 15020</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:4">(555) 555-0218</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:5">Brayden King</a></td>
-                <td data-mock="sexShort:5">M</td>
-                <td data-mock="dob:5">19/08/1982</td>
-                <td data-mock="memberId:5">981074497</td>
+                <td><a href="#" data-mock="fullName:5">Isabella Torres</a></td>
+                <td data-mock="sexShort:5">F</td>
+                <td data-mock="dob:5">13/08/1957</td>
+                <td data-mock="memberId:5">242623467</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:5">8673 State Street</div>
-                    <div data-mock="addressLine2:5">Washington TX, TX 77003</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:5">(555) 555-9385</span>
+                    <div data-mock="addressLine1:5">462 Cherry Lane</div>
+                    <div data-mock="addressLine2:5">Pleasant Valley MI, MI 48270</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:5">(555) 555-2620</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:6">Savannah Phillips</a></td>
+                <td><a href="#" data-mock="fullName:6">Zoey Brown</a></td>
                 <td data-mock="sexShort:6">F</td>
-                <td data-mock="dob:6">19/03/1966</td>
-                <td data-mock="memberId:6">836262161</td>
+                <td data-mock="dob:6">23/04/1966</td>
+                <td data-mock="memberId:6">492379572</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:6">785 1st Street</div>
-                    <div data-mock="addressLine2:6">Mount Vernon AR, AR 71298</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:6">(555) 555-5867</span>
+                    <div data-mock="addressLine1:6">9696 11th Street</div>
+                    <div data-mock="addressLine2:6">Midway ME, ME 03974</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:6">(555) 555-5274</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:7">Aubrey Hall</a></td>
+                <td><a href="#" data-mock="fullName:7">Riley Bailey</a></td>
                 <td data-mock="sexShort:7">F</td>
-                <td data-mock="dob:7">17/01/1970</td>
-                <td data-mock="memberId:7">768350061</td>
+                <td data-mock="dob:7">26/07/1995</td>
+                <td data-mock="memberId:7">221294058</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:7">1395 Woodland Drive</div>
-                    <div data-mock="addressLine2:7">Dayton AR, AR 72451</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:7">(555) 555-9552</span>
+                    <div data-mock="addressLine1:7">8636 Valley Road</div>
+                    <div data-mock="addressLine2:7">Glendale FL, FL 33467</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:7">(555) 555-1550</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:8">Brooklyn Davis</a></td>
+                <td><a href="#" data-mock="fullName:8">Brianna Rogers</a></td>
                 <td data-mock="sexShort:8">F</td>
-                <td data-mock="dob:8">09/06/1984</td>
-                <td data-mock="memberId:8">101004483</td>
+                <td data-mock="dob:8">31/03/1993</td>
+                <td data-mock="memberId:8">447847223</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:8">2731 Highland Avenue</div>
-                    <div data-mock="addressLine2:8">Greenwood CA, CA 90302</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:8">(555) 555-4399</span>
+                    <div data-mock="addressLine1:8">2663 Elm Street</div>
+                    <div data-mock="addressLine2:8">New Hope CA, CA 92332</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:8">(555) 555-4570</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:9">Carter Flores</a></td>
-                <td data-mock="sexShort:9">M</td>
-                <td data-mock="dob:9">24/01/1957</td>
-                <td data-mock="memberId:9">034096777</td>
+                <td><a href="#" data-mock="fullName:9">Evelyn Sanders</a></td>
+                <td data-mock="sexShort:9">F</td>
+                <td data-mock="dob:9">26/02/1964</td>
+                <td data-mock="memberId:9">300989070</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:9">7301 Walnut Street</div>
-                    <div data-mock="addressLine2:9">Glendale TX, TX 76886</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:9">(555) 555-1611</span>
+                    <div data-mock="addressLine1:9">7123 Liberty Street</div>
+                    <div data-mock="addressLine2:9">Franklin OH, OH 45746</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:9">(555) 555-4763</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:10">Natalie Rogers</a></td>
+                <td><a href="#" data-mock="fullName:10">Abigail Campbell</a></td>
                 <td data-mock="sexShort:10">F</td>
-                <td data-mock="dob:10">27/06/1956</td>
-                <td data-mock="memberId:10">627290356</td>
+                <td data-mock="dob:10">13/02/1962</td>
+                <td data-mock="memberId:10">003747295</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:10">143 3rd Avenue</div>
-                    <div data-mock="addressLine2:10">Glendale NJ, NJ 08874</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:10">(555) 555-3342</span>
+                    <div data-mock="addressLine1:10">5049 3rd Street West</div>
+                    <div data-mock="addressLine2:10">Fairview CA, CA 94630</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:10">(555) 555-3374</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:11">Lucas Foster</a></td>
-                <td data-mock="sexShort:11">M</td>
-                <td data-mock="dob:11">01/08/1980</td>
-                <td data-mock="memberId:11">090821171</td>
+                <td><a href="#" data-mock="fullName:11">Addison Moore</a></td>
+                <td data-mock="sexShort:11">F</td>
+                <td data-mock="dob:11">31/07/1979</td>
+                <td data-mock="memberId:11">072254075</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:11">7532 5th Avenue</div>
-                    <div data-mock="addressLine2:11">Salem IA, IA 51172</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:11">(555) 555-3778</span>
+                    <div data-mock="addressLine1:11">7413 Spruce Street</div>
+                    <div data-mock="addressLine2:11">Shiloh OH, OH 43911</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:11">(555) 555-7848</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:12">Claire Morris</a></td>
+                <td><a href="#" data-mock="fullName:12">Aubrey Turner</a></td>
                 <td data-mock="sexShort:12">F</td>
-                <td data-mock="dob:12">03/02/1972</td>
-                <td data-mock="memberId:12">980557265</td>
+                <td data-mock="dob:12">03/03/1988</td>
+                <td data-mock="memberId:12">355353887</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:12">8707 Elm Street</div>
-                    <div data-mock="addressLine2:12">Winchester CA, CA 90110</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:12">(555) 555-3053</span>
+                    <div data-mock="addressLine1:12">5879 3rd Street</div>
+                    <div data-mock="addressLine2:12">Oxford TX, TX 78758</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:12">(555) 555-4206</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:13">James Price</a></td>
+                <td><a href="#" data-mock="fullName:13">Jonathan Wright</a></td>
                 <td data-mock="sexShort:13">M</td>
-                <td data-mock="dob:13">10/10/1976</td>
-                <td data-mock="memberId:13">032194015</td>
+                <td data-mock="dob:13">01/01/1985</td>
+                <td data-mock="memberId:13">121617552</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:13">1442 Pleasant Street</div>
-                    <div data-mock="addressLine2:13">Concord PA, PA 15277</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:13">(555) 555-9134</span>
+                    <div data-mock="addressLine1:13">3012 3rd Avenue</div>
+                    <div data-mock="addressLine2:13">Ashland TX, TX 79142</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:13">(555) 555-3172</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:14">Khloe Alexander</a></td>
-                <td data-mock="sexShort:14">F</td>
-                <td data-mock="dob:14">09/01/1984</td>
-                <td data-mock="memberId:14">301515140</td>
+                <td><a href="#" data-mock="fullName:14">Isaac Rivera</a></td>
+                <td data-mock="sexShort:14">M</td>
+                <td data-mock="dob:14">10/08/1968</td>
+                <td data-mock="memberId:14">775183105</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:14">2112 Park Place</div>
-                    <div data-mock="addressLine2:14">Lakewood MI, MI 48668</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:14">(555) 555-1618</span>
+                    <div data-mock="addressLine1:14">5604 Pennsylvania Avenue</div>
+                    <div data-mock="addressLine2:14">Centerville IL, IL 60248</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:14">(555) 555-2807</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td><a href="#" data-mock="fullName:15">Abigail Bennett</a></td>
-                <td data-mock="sexShort:15">F</td>
-                <td data-mock="dob:15">29/05/1986</td>
-                <td data-mock="memberId:15">716930726</td>
+                <td><a href="#" data-mock="fullName:15">Luke Edwards</a></td>
+                <td data-mock="sexShort:15">M</td>
+                <td data-mock="dob:15">28/01/1989</td>
+                <td data-mock="memberId:15">943862914</td>
                 <td>
                   <address>
-                    <div data-mock="addressLine1:15">4405 Water Street</div>
-                    <div data-mock="addressLine2:15">Washington MA, MA 02272</div>
-                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:15">(555) 555-5757</span>
+                    <div data-mock="addressLine1:15">5319 Franklin Street</div>
+                    <div data-mock="addressLine2:15">Pleasant Valley MS, MS 38283</div>
+                    <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:15">(555) 555-9436</span>
                   </address>
+                </td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                      <i class="icon icon-menu"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Edit</a></li>
+                      <li><a href="#">Save</a></li>
+                      <li><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </td>
               </tr>
             </tbody>
