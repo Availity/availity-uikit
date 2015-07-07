@@ -1,9 +1,10 @@
-// HACK: Importing Bootstrap mixin explicitly because it is inaccessible despite being imported in availity-bootstrap
+// HACK: Importing Bootstrap mixin explicitly because it is inaccessible
+// despite being imported in availity-bootstrap
 @import (reference) "../bower_components/bootstrap/less/mixins/text-overflow.less";
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-
+  font-weight: 600;
   &.subheader {
     color: @text-lighter;
   }

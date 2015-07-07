@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.8.0 -- May-29
+ * availity-uikit v0.8.3 -- July-02
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1658,6 +1658,20 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.42857143;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
 }
 h1.subheader,
 h2.subheader,
@@ -4077,6 +4091,29 @@ fieldset[disabled] .btn-ghost.active {
 .btn-ghost:hover {
   background-color: transparent;
 }
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file:hover {
+  background-color: #e1e3e3;
+  text-decoration: none;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -5770,6 +5807,49 @@ a.label:focus {
 .label-warning {
   color: #4d4f53;
 }
+.label-block {
+  display: block;
+  text-align: left;
+  padding: .3em;
+}
+h1.label-block,
+h2.label-block,
+h3.label-block,
+h4.label-block,
+h5.label-block,
+h6.label-block,
+.h1.label-block,
+.h2.label-block,
+.h3.label-block,
+.h4.label-block,
+.h5.label-block,
+.h6.label-block {
+  margin: 0;
+}
+h1.label-block,
+.h1.label-block {
+  font-size: 30px;
+}
+h2.label-block,
+.h2.label-block {
+  font-size: 22px;
+}
+h3.label-block,
+.h3.label-block {
+  font-size: 18px;
+}
+h4.label-block,
+.h4.label-block {
+  font-size: 16px;
+}
+h5.label-block,
+.h5.label-block {
+  font-size: 14px;
+}
+h6.label-block,
+.h6.label-block {
+  font-size: 12px;
+}
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -7196,6 +7276,9 @@ button.close {
 .app-icon-branded-orange .caret {
   border-color: transparent #db4e1f transparent transparent;
 }
+.app-icon-title {
+  vertical-align: middle;
+}
 .dropdown-menu > li.app-menu-item {
   padding: .4em 0;
 }
@@ -7868,6 +7951,9 @@ button.close {
   width: 100%;
   position: relative;
 }
+.stepwizard a {
+  text-decoration: none;
+}
 .stepwizard-row {
   display: table-row;
 }
@@ -7876,12 +7962,12 @@ button.close {
   height: 30px;
   display: inline-block;
   text-align: center;
-  padding: 4px 0;
-  color: #ffffff;
+  padding: 5px;
+  color: #4d4f53;
   font-size: 12px;
   border-radius: 15px;
-  background-color: #02a17c;
-  border: 2px solid #028869;
+  background-color: #ffffff;
+  border: 2px solid #02a17c;
 }
 .stepwizard-title {
   display: block;
@@ -7895,15 +7981,21 @@ button.close {
   padding: 10px 15px;
 }
 .stepwizard-step:hover {
-  text-decoration: none;
   background-color: #f2f5f5;
 }
 .stepwizard-step.complete > .stepwizard-badge {
   color: #ffffff;
+  background-color: #02a17c;
+  border-color: #02a17c;
 }
 .stepwizard-step.active > .stepwizard-badge {
-  color: #4d4f53;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #02a17c;
+  border-color: #02a17c;
+}
+.stepwizard-step.active > .stepwizard-title {
+  color: #02a17c;
+  font-weight: bold;
 }
 .stepwizard-step.disabled {
   cursor: not-allowed;
@@ -7913,7 +8005,7 @@ button.close {
 .stepwizard-step.disabled > .stepwizard-badge {
   color: #4d4f53;
   background-color: #e1e3e3;
-  border: 2px solid #cccccc;
+  border-color: #e1e3e3;
 }
 .stepwizard-stacked {
   display: block;
@@ -7930,17 +8022,8 @@ button.close {
   display: inline;
   margin-left: .2em;
 }
-.stepwizard-progress .stepwizard-badge {
-  color: #4d4f53;
-  background-color: #ffffff;
-  border: 2px solid #009a57;
-}
 .stepwizard-progress .stepwizard-badge:after {
   content: '\0000a0';
-}
-.stepwizard-progress .stepwizard-step.complete > .stepwizard-badge {
-  color: #ffffff;
-  background-color: #009a57;
 }
 .stepwizard-progress .stepwizard-step.complete > .stepwizard-badge:after {
   font-family: "availity-icon-font";
@@ -7955,10 +8038,6 @@ button.close {
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
-}
-.stepwizard-progress .stepwizard-step.active > .stepwizard-badge {
-  color: #ffffff;
-  background-color: #009a57;
 }
 .modal-open {
   overflow: hidden;
