@@ -133,7 +133,8 @@ module.exports = {
       'bower_components/select2/select2.js',
       'bower_components/velocity/velocity.js',
       'bower_components/velocity/velocity.ui.js',
-      'bower_components/chartjs/Chart.js'
+      'bower_components/chartjs/Chart.js',
+      'bower_components/holderjs/holder.js'
     ],
     dest: 'build/guide/js'
   },
