@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.9.0 -- July-07
+ * availity-uikit v0.9.1 -- July-07
  * Copyright 2015 Availity, LLC 
  */
 
@@ -76,7 +76,7 @@
 }
 .color-item {
   margin-bottom: 4px;
-  border: 1px solid #e8ebeb;
+  border: 1px solid #cdd3d3;
 }
 .color-item-header {
   height: 100px;
@@ -89,7 +89,8 @@
 }
 .color-item-footer {
   display: block;
-  background-color: #e8ebeb;
+  border-top: 1px solid #cdd3d3;
+  background-color: #f8f9f9;
   line-height: 2;
   text-align: center;
   padding: 1.5em;
