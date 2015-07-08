@@ -112,7 +112,7 @@
 
 .color-item {
   margin-bottom: 4px;
-  border: 1px solid @gray-lighter;
+  border: 1px solid darken(@gray-lighter, 10%);
 
 }
 
@@ -130,7 +130,8 @@
 
 .color-item-footer {
   display: block;
-  background-color: @gray-lightest;
+  border-top: 1px solid darken(@gray-lighter, 10%);
+  background-color: lighten(@gray-lightest, 6%);
   line-height: 2;
   text-align: center;
   padding: 1.5em;
