@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.9.1 -- July-07
+ * availity-uikit v0.9.2 -- July-14
  * Copyright 2015 Availity, LLC 
  */
 
@@ -5807,6 +5807,12 @@ a.label:focus {
 .label-default,
 .label-warning {
   color: #4d4f53;
+}
+.label-brand {
+  background-color: #ed5624;
+}
+.label-extra {
+  background-color: #0093e8;
 }
 .label-block {
   display: block;
