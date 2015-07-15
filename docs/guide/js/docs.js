@@ -16,7 +16,7 @@
     '<div>' +
       '<hr class="divider-lg"/>' +
       '<div class="btn-toolbar">' +
-        '<button class="btn btn-default btn-sm" data-toggle="code">' +
+        '<button class="btn btn-ghost btn-sm" data-toggle="code">' +
           'View Code<i class="icon icon-code"></i>' +
         '</button>' +
       '</div>' +
