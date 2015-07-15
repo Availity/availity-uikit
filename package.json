@@ -71,6 +71,7 @@
     "markdown-it": "^4.3.0",
     "metalsmith": "^1.7.0",
     "metalsmith-collections": "^0.7.0",
+    "metalsmith-define": "^1.0.0",
     "metalsmith-mock": "^1.0.0",
     "metalsmith-path": "^0.1.0",
     "metalsmith-prism": "^1.1.0",
