@@ -2,6 +2,7 @@
 @prism-less-path: "../../node_modules/prismjs";
 
 @import (reference) "@{bootstrap-less-path}/mixins/clearfix.less";
+
 @import (reference) "../mixins/availity-mixins-type.less";
 @import (reference) "../mixins/availity-mixins-icons.less";
 @import "@{bootstrap-less-path}/variables.less";
@@ -14,6 +15,9 @@
 @guide-color: lighten(@gray, 30%);
 @guide-font-code: 12px;
 
+blockquote {
+  margin-top: 10px;
+}
 
 .guide {
   background-color: @body-bg;
@@ -67,6 +71,8 @@
   border-top: 0 !important;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  display: none;
+
 }
 
 //== Layout

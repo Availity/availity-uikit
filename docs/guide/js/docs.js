@@ -6,7 +6,40 @@
   $('[data-toggle="popover"]').popover({
     html : true
   });
+
   $('[data-toggle="tooltip"]').tooltip();
+
+
+  $('.guide-example').each(function() {
+    var btn = '' +
+    '<div>' +
+      '<hr class="divider-lg"/>' +
+      '<div class="btn-toolbar">' +
+        '<button class="btn btn-default btn" data-toggle="code">' +
+          '<i class="icon icon-code"></i>' +
+        '</button>' +
+      '</div>' +
+    '</div>';
+
+    $(this).append($(btn));
+  });
+
+  $('[data-toggle="code"]').click(function(e) {
+
+    e.preventDefault();
+
+    var target = $(this).parents('.guide-example').next('.language-markup');
+
+    if(target.is(':visible')) {
+      target.velocity("slideUp", { duration: 200 });
+    }else {
+      target.velocity("fadeIn", {
+        duration: 300,
+        display: 'block'
+      });
+    }
+
+  });
 
   //filter popover
   $('[data-toggle="filter"]').popover({
