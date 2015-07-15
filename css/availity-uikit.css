@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.9.2 -- July-14
+ * availity-uikit v0.9.3 -- July-15
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1685,7 +1685,7 @@ h6.subheader,
 .h4.subheader,
 .h5.subheader,
 .h6.subheader {
-  color: #4d4f53;
+  color: #7e8188;
 }
 h1.condensed,
 h2.condensed,
@@ -2925,6 +2925,7 @@ table th[class*="col-"] {
 }
 .table > thead > tr > th {
   border-width: 1px;
+  font-weight: bold;
 }
 .table > tbody > tr > td.status-col {
   padding-left: 1.3em;
@@ -4835,7 +4836,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li > a,
 .nav-pills-secondary > li > a,
 .nav-cards > li > a {
-  color: #4d4f53;
+  color: #7e8188;
 }
 .nav-tabs > li.active > a,
 .nav-pills > li.active > a,
@@ -5255,7 +5256,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #4d4f53;
+  color: #7e8188;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
@@ -5296,7 +5297,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #4d4f53;
+    color: #7e8188;
     background-color: transparent;
   }
 }
@@ -5317,25 +5318,25 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 fieldset[disabled] .navbar-default .btn-link:hover,
 .navbar-default .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-default .btn-link:focus {
-  color: #4d4f53;
+  color: #7e8188;
 }
 .navbar-inverse {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
 .navbar-inverse .navbar-brand {
-  color: #4d4f53;
+  color: #7e8188;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #343639;
+  color: #65686e;
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #4d4f53;
+  color: #7e8188;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -5362,7 +5363,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #cccccc;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #4d4f53;
+  background-color: #7e8188;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
@@ -5382,7 +5383,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: #e7e7e7;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #4d4f53;
+    color: #7e8188;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5403,13 +5404,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #4d4f53;
+  color: #7e8188;
 }
 .navbar-inverse .navbar-link:hover {
   color: #4d4f53;
 }
 .navbar-inverse .btn-link {
-  color: #4d4f53;
+  color: #7e8188;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
@@ -5514,7 +5515,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .breadcrumb > li + li:before {
   content: "\e84d\00a0";
   padding: 0 5px;
-  color: #4d4f53;
+  color: #7e8188;
 }
 .breadcrumb > .active {
   color: #4d4f53;

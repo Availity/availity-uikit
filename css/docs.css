@@ -1,10 +1,15 @@
 /**
- * availity-uikit v0.9.2 -- July-14
+ * availity-uikit v0.9.3 -- July-15
  * Copyright 2015 Availity, LLC 
  */
 
 .section-header {
   margin: 20px 0 20px;
+}
+blockquote,
+.disclaimer,
+.disclaimer-unstyled {
+  margin-top: 10px;
 }
 .guide {
   background-color: #ffffff;
@@ -46,6 +51,7 @@
   border-top: 0 !important;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  display: none;
 }
 .guide-section-header {
   padding-bottom: 9px;
@@ -336,6 +342,13 @@ pre[data-line] code {
 }
 pre .line-highlight {
   margin-top: 0;
+}
+[data-toggle="code"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+[data-toggle="code"] .icon {
+  text-decoration: none;
 }
 code[class*=language] {
   font-size: 14px;
