@@ -11,12 +11,13 @@
 
 
   $('.guide-example').each(function() {
+
     var btn = '' +
     '<div>' +
       '<hr class="divider-lg"/>' +
       '<div class="btn-toolbar">' +
-        '<button class="btn btn-default btn" data-toggle="code">' +
-          '<i class="icon icon-code"></i>' +
+        '<button class="btn btn-default btn-sm" data-toggle="code">' +
+          'View Code<i class="icon icon-code"></i>' +
         '</button>' +
       '</div>' +
     '</div>';
