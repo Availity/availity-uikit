@@ -32,7 +32,9 @@
     "select2-bootstrap-css": "~1.4.6",
     "velocity": "~1.2.1",
     "bootstrap-datepicker": "~1.4.0",
-    "moment": "~2.9.0",
+    "moment": "~2.9.0"
+  },
+  "devDependencies": {
     "holderjs": "~2.8.1"
   },
   "resolutions": {
