@@ -9,16 +9,16 @@
   "scripts": {
     "postinstall": "bower install"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
+  "homepage": "http://availity.github.io/availity-uikit/",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:Availity/availity-uikit.git"
   },
-  "authors": [
+  "bugs": {
+    "url": "https://github.com:Availity/availity-uikit/issues"
+  },
+  "contributors": [
     {
       "name": "Robert McGuinness",
       "email": "rob.mcguinness@availity.com"
@@ -84,5 +84,12 @@
     "run-sequence": "^1.1.1",
     "semver": "^4.3.6",
     "underscore.string": "^3.1.1"
-  }
+  },
+  "keywords": [
+    "css",
+    "less",
+    "uikit",
+    "framework",
+    "web"
+  ]
 }
