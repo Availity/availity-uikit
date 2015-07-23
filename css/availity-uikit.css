@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.9.3 -- July-15
+ * availity-uikit v0.10.0 -- July-23
  * Copyright 2015 Availity, LLC 
  */
 
@@ -2956,6 +2956,9 @@ table th[class*="col-"] {
 a.status-col-complete:before:hover {
   color: #016f55;
 }
+table.table-fixed {
+  table-layout: fixed;
+}
 fieldset {
   padding: 0;
   margin: 0;
@@ -4096,7 +4099,7 @@ fieldset[disabled] .btn-ghost.active {
   position: relative;
   overflow: hidden;
 }
-.btn-file:hover {
+.btn-file.btn-link:hover {
   background-color: #f8f8f8;
   text-decoration: none;
 }
@@ -11228,11 +11231,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     text-align: right;
   }
 }
-.spaces-florida-blue .spaces-logo {
-  background: url(../images/banner-florida-blue.png) no-repeat center center;
-}
 .spaces-florida-blue .billboard {
-  background: url("../images/billboard-florida-blue.png") no-repeat center center;
   background-color: white;
   color: #ffffff;
 }
