@@ -30,6 +30,10 @@
     {
       "name": "Robert Warner",
       "email": "rob.warner@availity.com"
+    },
+    {
+      "name": "Bobby Bennett",
+      "email": "bobby.bennett@availity.com"
     }
   ],
   "devDependencies": {

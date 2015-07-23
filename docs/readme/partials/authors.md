@@ -1,4 +1,4 @@
-{% _.each(authors, function(person) { %}
+{% _.each(contributors, function(person) { %}
 **{%= person.name %}**
 + [{%= person.email %}]({%= person.email %})
 {% }); %}
