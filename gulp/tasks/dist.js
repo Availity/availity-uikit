@@ -19,7 +19,7 @@ var uglify = require('gulp-uglify');
 
 gulp.task('dist:css', function() {
 
-  return gulp.src(config.css.targets)
+  return gulp.src(config.less.src)
     .pipe(plumber(function(err) {
       logger.error(err.message);
       this.emit('end');

@@ -12,7 +12,7 @@ module.exports = {
     select: [/url\('select2/g, "url('../images/vendor/select2"]
   },
   less: {
-    src: ['less/availity-uikit.less', 'less/pages/docs.less'],
+    src: ['less/availity-uikit.less', 'less/pages/availity-docs.less', 'less/availity-uikit-vendor.less'],
     targets: ['**/*.less'],
     dest: 'build/guide/css',
     destMaps: './maps', // relative to dest folder
@@ -20,7 +20,6 @@ module.exports = {
   },
   css: {
     src: 'build/guide/**/*.css',
-    targets: ['less/availity-uikit.less', 'less/pages/docs.less'],
     dest: 'dist/css',
     destMaps: './maps' // relative to dest folder
   },
