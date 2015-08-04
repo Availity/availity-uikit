@@ -12,7 +12,7 @@ module.exports = {
     select: [/url\('select2/g, "url('../images/vendor/select2"]
   },
   less: {
-    src: ['less/availity-uikit.less', 'less/pages/availity-docs.less', 'less/availity-uikit-vendor.less'],
+    src: ['less/availity-uikit.less', 'less/pages/availity-docs.less', 'less/availity-uikit-extras.less'],
     targets: ['**/*.less'],
     dest: 'build/guide/css',
     destMaps: './maps', // relative to dest folder
@@ -106,16 +106,7 @@ module.exports = {
   lib: {
     name: 'availity-uikit.js',
     src: [
-      'js/*.js'
-    ],
-    targets: 'js/*.js',
-    dest: 'build/guide/js',
-    destDist: 'dist/js'
-  },
-  libBundle: { // combine Bootstrap and availity-uikit.js
-    name: 'availity-uikit-bundle.js',
-    src: [
-      'node_modules/bootstrap/dist/js/bootstrap.js',
+      '!js/npm.js',
       'js/*.js'
     ],
     targets: 'js/*.js',
