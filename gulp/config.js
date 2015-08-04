@@ -100,7 +100,7 @@ module.exports = {
     dest: 'build/guide/js'
   },
   jsGuide: {
-    src: ['docs/guide/js/docs.js'],
+    src: ['docs/guide/js/availity-docs.js'],
     dest: 'build/guide/js'
   },
   lib: {
