@@ -20,6 +20,7 @@ gulp.task('release:sequence', function() {
     ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
     'release:bump',
     ['dist:css', 'dist:js', 'dist:fonts', 'dist:images'],
+    'tests',
     'readme',
     'release:add',
     'release:tag'
