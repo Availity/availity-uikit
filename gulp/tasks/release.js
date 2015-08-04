@@ -20,7 +20,9 @@ gulp.task('release:sequence', function() {
     ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
     'release:bump',
     ['dist:css', 'dist:js', 'dist:fonts', 'dist:images'],
+    'tests',
     'readme',
+    'release:add',
     'release:tag'
   );
 });
@@ -36,6 +38,11 @@ gulp.task('release:tag', function() {
     .pipe(git.commit('bump package version v' + getPkg())) // commit the changed version number
     .pipe(filter('package.json'))
     .pipe(tagVersion());
+});
+
+gulp.task('release:add', function() {
+  return gulp.src('./dist/*')
+    .pipe(git.add({args: '-f'}));
 });
 
 gulp.task('release:bump', function() {

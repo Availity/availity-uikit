@@ -17,9 +17,16 @@ var concat = require('gulp-concat');
 var replace = require('gulp-replace');
 var uglify = require('gulp-uglify');
 
+gulp.task('dist', ['clean:dist'], function() {
+  gulp.start('dist:js');
+  gulp.start('dist:css');
+  gulp.start('dist:fonts');
+  gulp.start('dist:images');
+});
+
 gulp.task('dist:css', function() {
 
-  return gulp.src(config.css.targets)
+  return gulp.src(config.less.src)
     .pipe(plumber(function(err) {
       logger.error(err.message);
       this.emit('end');
@@ -79,9 +86,4 @@ gulp.task('dist:images', function() {
     .pipe(gulp.dest(config.images.destDist));
 });
 
-gulp.task('dist', ['clean:dist'], function() {
-  gulp.start('dist:css');
-  gulp.start('dist:js');
-  gulp.start('dist:fonts');
-  gulp.start('dist:images');
-});
+

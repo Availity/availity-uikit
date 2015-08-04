@@ -20,8 +20,6 @@
 ## Icon Fonts
 {%= docs("fonts") %}
 
-
-
 ## Authors
 {%= docs("authors") %}
 

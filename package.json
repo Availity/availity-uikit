@@ -11,9 +11,10 @@
   },
   "license": "MIT",
   "homepage": "http://availity.github.io/availity-uikit/",
+  "main": "./js/npm",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:Availity/availity-uikit.git"
+    "url": "https://github.com/Availity/availity-uikit.git"
   },
   "bugs": {
     "url": "https://github.com:Availity/availity-uikit/issues"
@@ -37,7 +38,8 @@
     }
   ],
   "devDependencies": {
-    "browser-sync": "^2.7.13",
+    "browser-sync": "^2.8.2",
+    "chai": "^3.2.0",
     "chalk": "^1.1.0",
     "cheerio": "^0.19.0",
     "del": "^1.2.0",
@@ -57,12 +59,13 @@
     "gulp-jshint": "^1.11.2",
     "gulp-less": "^3.0.3",
     "gulp-minify-css": "^1.2.0",
+    "gulp-mocha": "^2.1.3",
     "gulp-plumber": "^1.0.1",
     "gulp-prompt": "^0.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.2",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-tag-version": "^1.2.1",
+    "gulp-tag-version": "^1.3.0",
     "gulp-uglify": "^1.2.0",
     "gulp-using": "0.0.1",
     "gulp-util": "^3.0.6",
@@ -71,22 +74,23 @@
     "handlebars": "^3.0.3",
     "he": "^0.5.0",
     "jshint-stylish": "^2.0.1",
-    "lodash": "^3.10.0",
-    "markdown-it": "^4.3.0",
+    "lodash": "^3.10.1",
+    "markdown-it": "^4.4.0",
     "metalsmith": "^1.7.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-define": "^1.0.0",
     "metalsmith-mock": "^1.0.0",
     "metalsmith-path": "^0.1.0",
-    "metalsmith-prism": "^1.1.0",
+    "metalsmith-prism": "^1.1.1",
     "metalsmith-templates": "^0.7.0",
-    "minimist": "^1.1.1",
+    "minimist": "^1.1.2",
     "mocha": "^2.2.5",
-    "moment": "^2.10.3",
+    "moment": "^2.10.6",
     "prismjs": "git://github.com/LeaVerou/prism#gh-pages",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.1.1",
+    "run-sequence": "^1.1.2",
     "semver": "^4.3.6",
+    "stylestats": "^5.4.2",
     "underscore.string": "^3.1.1"
   },
   "keywords": [
