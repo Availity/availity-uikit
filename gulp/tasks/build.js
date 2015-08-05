@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var metlsmithPrism = require('metalsmith-prism');
+var metalsmithPrism = require('metalsmith-prism');
 var metalsmithMock = require('metalsmith-mock');
 var frontMatter = require('gulp-front-matter');
 var _ = require('lodash');
@@ -98,7 +98,7 @@ gulp.task('build:docs', function() {
         examples: {} // empty pattern because the pages are tagged with collection attribute in YAML front matter
       }))
       .use(metalsmithPaths())
-      .use(metlsmithPrism())
+      .use(metalsmithPrism())
       .use(metalsmithMock())
       .use(metalsmithMarkdown())
       .use(templates({
