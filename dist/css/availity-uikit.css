@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.10.1 -- July-27
+ * availity-uikit v0.11.0 -- August-13
  * Copyright 2015 Availity, LLC 
  */
 
@@ -6032,6 +6032,29 @@ h6.label-block,
 .h6.label-block {
   font-size: 12px;
 }
+.label-remove {
+  display: inline-block;
+}
+.label-remove a {
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.label-remove a:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+.label-remove .icon {
+  text-align: left;
+  margin-left: 0;
+}
+.label-remove[disabled="disabled"] {
+  opacity: 0.65;
+}
+.label-remove[disabled="disabled"] a:hover {
+  opacity: 0.5;
+  cursor: default;
+}
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -6635,12 +6658,16 @@ button.list-group-item-danger.active:focus {
 .list-group-selectable .list-group-item {
   cursor: pointer;
 }
+.list-group-selectable .list-group-item:hover,
+.list-group-selectable .list-group-item:focus {
+  text-decoration: none;
+  color: #555555;
+  background-color: #f8f8f8;
+  border-color: #bfbfbf;
+}
 .list-group-selectable .list-group-item.active {
   background: #e8ebeb;
   color: #4d4f53;
-}
-.list-group-selectable .list-group-item.active:hover {
-  border-color: #bfbfbf;
 }
 .list-group-selectable .list-group-item.active .list-group-item-text {
   color: #4d4f53;

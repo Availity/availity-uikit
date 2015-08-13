@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.10.1 -- July-27
+ * availity-uikit v0.11.0 -- August-13
  * Copyright 2015 Availity, LLC 
  */
 
@@ -167,7 +167,7 @@ div[title] i {
 code[class*="language-"],
 pre[class*="language-"] {
   color: black;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
