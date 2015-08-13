@@ -21,9 +21,6 @@ notes: |
   decide on a single approach and disable the other pattern.
 ---
 
-<div data-markdown>
-> When using a `.list-group` without anchors, the `.list-group-selectable` class will provide the hover and selection styling.
-</div>
 <h3 class="guide-subsection-title">Cards</h3>
 <div class="guide-example">
   <div class="list-group list-group-cards">
@@ -50,26 +47,78 @@ notes: |
   </div>
 </div>
 <code class="language-markup">
-<div class="list-group list-group-cards">
-  <a class="list-group-item success" href="#">
-    <h4 class="list-group-item-heading">Acey, Sofia</h4>
-    <p class="list-group-item-text">Masung Corp.</p>
-  </a>
-  <a class="list-group-item pending" href="#">
-    <h4 class="list-group-item-heading">Barish, Joseph</h4>
-    <p class="list-group-item-text">Masung Corp.</p>
-  </a>
-  <a class="list-group-item error" href="#">
-    <h4 class="list-group-item-heading">Benson, Sarah</h4>
-    <p class="list-group-item-text">ZetaComm</p>
-  </a>
-  <a class="list-group-item canceled" href="#">
-    <h4 class="list-group-item-heading">Wayne, Bruce</h4>
-    <p class="list-group-item-text">Wayne Industries</p>
-  </a>
-  <a class="list-group-item" href="#">
-    <h4 class="list-group-item-heading">Wayne, Bruce</h4>
-    <p class="list-group-item-text">Wayne Industries</p>
-  </a>
+  <div class="list-group list-group-cards">
+    <a class="list-group-item success" href="#">
+      <h4 class="list-group-item-heading">Acey, Sofia</h4>
+      <p class="list-group-item-text">Masung Corp.</p>
+    </a>
+    <a class="list-group-item pending" href="#">
+      <h4 class="list-group-item-heading">Barish, Joseph</h4>
+      <p class="list-group-item-text">Masung Corp.</p>
+    </a>
+    <a class="list-group-item error" href="#">
+      <h4 class="list-group-item-heading">Benson, Sarah</h4>
+      <p class="list-group-item-text">ZetaComm</p>
+    </a>
+    <a class="list-group-item canceled" href="#">
+      <h4 class="list-group-item-heading">Wayne, Bruce</h4>
+      <p class="list-group-item-text">Wayne Industries</p>
+    </a>
+    <a class="list-group-item" href="#">
+      <h4 class="list-group-item-heading">Wayne, Bruce</h4>
+      <p class="list-group-item-text">Wayne Industries</p>
+    </a>
+  </div>
+</code>
+  <h3 class="guide-subsection-title">Card <small>without anchor tags</small></h3>
+  <div data-markdown>
+  > When using a `.list-group` without anchors, the `.list-group-selectable` class will provide the hover and selection styling.
+  </div>
+<div class="guide-example">
+  <div class="list-group list-group-cards list-group-selectable">
+    <div class="list-group-item success" href="#">
+      <h4 class="list-group-item-heading">Paker, Peter</h4>
+      <p class="list-group-item-text">Daily Planet</p>
+    </div>
+    <div class="list-group-item pending" href="#">
+      <h4 class="list-group-item-heading">Banner, Bruce</h4>
+      <p class="list-group-item-text">United States Defense Department</p>
+    </div>
+    <div class="list-group-item error" href="#">
+      <h4 class="list-group-item-heading">Stark, Tony</h4>
+      <p class="list-group-item-text">Stark Industries</p>
+    </div>
+    <div class="list-group-item canceled" href="#">
+      <h4 class="list-group-item-heading">Wayne, Bruce</h4>
+      <p class="list-group-item-text">Wayne Industries</p>
+    </div>
+    <div class="list-group-item" href="#">
+      <h4 class="list-group-item-heading">Kent, Clark</h4>
+      <p class="list-group-item-text">Daily Planet</p>
+    </div>
+  </div>
 </div>
+<code class="language-markup">
+  <div class="list-group list-group-cards list-group-selectable">
+    <div class="list-group-item success" href="#">
+      <h4 class="list-group-item-heading">Paker, Peter</h4>
+      <p class="list-group-item-text">Daily Planet</p>
+    </div>
+    <div class="list-group-item pending" href="#">
+      <h4 class="list-group-item-heading">Banner, Bruce</h4>
+      <p class="list-group-item-text">United States Defense Department</p>
+    </div>
+    <div class="list-group-item error" href="#">
+      <h4 class="list-group-item-heading">Stark, Tony</h4>
+      <p class="list-group-item-text">Stark Industries</p>
+    </div>
+    <div class="list-group-item canceled" href="#">
+      <h4 class="list-group-item-heading">Wayne, Bruce</h4>
+      <p class="list-group-item-text">Wayne Industries</p>
+    </div>
+    <div class="list-group-item" href="#">
+      <h4 class="list-group-item-heading">Kent, Clark</h4>
+      <p class="list-group-item-text">Daily Planet</p>
+    </div>
+  </div>
 </code>
