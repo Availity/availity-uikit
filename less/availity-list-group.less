@@ -9,18 +9,18 @@
   .list-group-item {
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: none;
       color: @list-group-link-hover-color;
       background-color: @list-group-hover-bg;
+      border-color: darken(@list-group-border, 5%);
     }
 
     &.active {
       background: @gray-lighter;
       color: @gray;
-      &:hover {
-        border-color: darken(@list-group-border, 5%);
-      }
+
       .list-group-item-text {
         color: @gray;
       }
