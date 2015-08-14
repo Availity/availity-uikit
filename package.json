@@ -78,7 +78,7 @@
     "metalsmith-define": "^1.0.0",
     "metalsmith-mock": "^1.0.0",
     "metalsmith-path": "^0.1.0",
-    "metalsmith-prism": "^1.1.0",
+    "metalsmith-prism": "^1.1.2",
     "metalsmith-templates": "^0.7.0",
     "minimist": "^1.1.1",
     "mocha": "^2.2.5",
