@@ -39,9 +39,7 @@
   },
   "resolutions": {
     "jquery": "1.11.2",
-    "bootstrap": "~3.3.4",
-    "chartjs": "~1.0.2",
-    "bootstrap-datepicker": "~1.4.0"
+    "bootstrap": "~3.3.4"
   },
   "ignore": [
     "/.*",
