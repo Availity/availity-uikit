@@ -6,39 +6,7 @@
   $('[data-toggle="popover"]').popover({
     html : true
   });
-
   $('[data-toggle="tooltip"]').tooltip();
-
-
-  $('.guide-example').each(function() {
-
-    var btn = '' +
-      '<hr class="divider-lg"/>' +
-      '<div class="btn-toolbar">' +
-        '<button class="btn btn-ghost btn-sm" data-toggle="code">' +
-          'View Code <i class="icon icon-code"></i>' +
-        '</button>' +
-      '</div>';
-
-    $(this).append($(btn));
-  });
-
-  $('[data-toggle="code"]').click(function(e) {
-
-    e.preventDefault();
-
-    var target = $(this).parents('.guide-example').next('.language-markup');
-
-    if(target.is(':visible')) {
-      target.velocity("slideUp", { duration: 200 });
-    }else {
-      target.velocity("fadeIn", {
-        duration: 300,
-        display: 'block'
-      });
-    }
-
-  });
 
   //filter popover
   $('[data-toggle="filter"]').popover({
@@ -57,43 +25,36 @@
       $(this).tab('show');
   });
 
-  $('#datetimepicker6').datepicker({
-      autoclose: true,
-      clearBtn: true,
-      todayBtn: true,
-      todayHighlight: true,
-      format: 'mm/dd/yyyy'
+  // Datepicker
+  $('#datetimepicker6, #datetimepicker7, #datetimepicker8').datetimepicker({
+    format: 'MM/DD/YYYY'
   });
 
   // Select2
   $('.select2, .select2-multiple').select2({
-    placeholder: 'Select a State',
-    allowClear: true
+    placeholder: 'Select a State'
   }).on("select2-open", function () {
 
     var $this = $(this);
     if($this.parents('[class*="has-"]').length) {
 
-      // get all CSS-classes from the element where we found "has-*" and collect them in an array
-      var classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
+    // get all CSS-classes from the element where we found "has-*" and collect them in an array
+    var classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
 
-      // go through the class names, find "has-"
-      for(var i = 0; i < classNames.length; ++i) {
-        if(classNames[i].match("has-")) {
-          $('#select2-drop').addClass(classNames[i]);
-        }
+    // go through the class names, find "has-"
+    for(var i = 0; i < classNames.length; ++i) {
+      if(classNames[i].match("has-")) {
+        $('#select2-drop').addClass(classNames[i]);
       }
     }
-  });
+  }
+});
 
   setInterval(function() {
-    var indicators = $('.loading-indicator');
-    for (var i = 0; i < indicators.length; i++) {
-      $(indicators[i]).find('.loading-bullet')
-        .velocity('transition.slideRightIn', { stagger: 250 })
-        .delay(750)
-        .velocity({ opacity: 0 }, 500);
-    }
+    $('.loading-bullet')
+      .velocity('transition.slideRightIn', { stagger: 250 })
+      .delay(750)
+      .velocity({ opacity: 0 }, 500);
   }, 2000);
 
   // Twitter Typeahead
@@ -174,11 +135,5 @@
       maintainAspectRatio: false
     });
   }
-
-  $("#nav").tocify({
-    selectors: ".guide-section-header, .guide-subsection-title",
-    theme: 'bootstrap',
-    scrollTo: 100
-  });
 
 })(jQuery);

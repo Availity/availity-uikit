@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Container Sizes</title>
+  <title>Availity UIKit Payer Spaces Dashboard</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -23,7 +23,7 @@
 </head>
 <body class="body">
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
               data-target="#availity-example-navbar-collapse-3">
@@ -48,10 +48,10 @@
             <li>
               <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
                 <li class="active">
-                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(2)</span></a>
+                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
                 </li>
                 <li>
-                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(1)</span></a>
+                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
                 </li>
                 <li>
                   <a data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
@@ -67,9 +67,15 @@
                       <a href="#" class="notification-menu-link">View Request</a>
                     </div>
                     <div class="list-group-item">
-                      <h6 class="subheader">FLORIDA BLUE | HEALTH RISK ASSESSMENTS <a href="#"><i class="icon icon-cancel"></i></a></h6>
-                      <h5 class="condensed">You have risk assessments to complete</h5>
-                      <p>Complete your risk assessments to maximize your revenue from Florida Blue.</p>
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
                       <a href="#" class="notification-menu-link">View Request</a>
                     </div>
                   </div>
@@ -82,14 +88,20 @@
                       <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
                       <a href="#" class="notification-menu-link">View Request</a>
                     </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
                   </div>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="messages1">
                   <div class="notifications-menu-body">
                     <div class="list-group-item">
-                      <h6 class="subheader">FLORIDA BLUE | HEALTH RISK ASSESSMENTS <a href="#"><i class="icon icon-cancel"></i></a></h6>
-                      <h5 class="condensed">You have risk assessments to complete</h5>
-                      <p>Complete your risk assessments to maximize your revenue from Florida Blue.</p>
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
                       <a href="#" class="notification-menu-link">View Request</a>
                     </div>
                   </div>
@@ -108,10 +120,11 @@
             <i class="icon icon-help-circle"></i> Help
           </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Find Help</a></li>
-            <li><a href="#">Get Trained</a></li>
-            <li><a href="#">Search Knowledge</a></li>
-            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -119,10 +132,10 @@
             John's Account
           </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#">Who controls my access?</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
             <li class="divider"></li>
-            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -130,7 +143,7 @@
   </div>
 </nav>
 <nav class="navbar navbar-default navbar-secondary navbar-fixed-top mega-menu" role="navigation">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
               data-target="#availity-example-navbar-collapse-2">
@@ -145,67 +158,41 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Registration</a>
           <ul class="dropdown-menu" role="menu">
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">EB</span> Eligibility and Benefits Inquiry</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">R</span> Referral</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">A</span> Authorization</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">ARS</span> Auth/Referral Status</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">PCS</span> Patient Care Summary</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims</a>
           <ul class="dropdown-menu" role="menu">
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CSI</span> Claim Status Inquiry</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CRT</span> Claim Reconciliation Tool</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CR</span> Claim Research Tool (BCBSTX)</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">PC</span> Professional Claim</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">FC</span> Facility Claim</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">EDI</span> Send and Receive EDI Files</a></li>
-            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">MA</span> Medical Attachments</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Payments</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#"><span class="app-icon app-icon-green">RV</span> Remittance Viewer</a></li>
-            <li><a href="#"><span class="app-icon app-icon-green">CP</span> Collect Payment</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">More...</a>
-          <ul class="dropdown-menu dropdown-menu-scrollable" role="menu">
-            <li><a href="#"><strong>Auths and Referrals</strong></a></li>
-            <li><a href="#"> Drug Authorization (CCStpa)</a></li>
-            <li><a href="#"> Current Admissions Report (Humana)</a></li>
-            <li><a href="#"> Current Admissions Report (Humana)</a></li>
-            <li><a href="#"> Claims Missing Referrals (Humana)</a></li>
-            <li><a href="#"> Referral Report (Humana)</a></li>
-            <li><a href="#"> Radiology Referral Submission (Humana)</a></li>
-            <li><a href="#"> Health Choice Authorization (Prestige)</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
-            <li><a href="#"> <strong>Availity Payer List</strong></a></li>
-            <li><a href="#"> Payer List</a></li>
+            <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
-            <li><a href="#"> <strong>Enrollments</strong></a></li>
-            <li><a href="#"> ERA Enrollment - Electronic</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>My Account</strong></a></li>
-            <li><a href="#"> EFT Enrollment</a></li>
-            <li><a href="#"> Manage My Code List</a></li>
-            <li><a href="#"> My Favorite Codes</a></li>
-            <li><a href="#"> View My Code List</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>My Payer Portals</strong></a></li>
-            <li><a href="#"> Amerigroup Provider Self Service</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>Reporting</strong></a></li>
-            <li><a href="#"> My Organization Reports</a></li>
-            <li><a href="#"> Health Choice Reports (Prestige)</a></li>
-            <li><a href="#"> Web Transaction Report</a></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
         <li class="dropdown dropdown-favorites">
-          <button class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+          <button href="#" class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
           <ul class="dropdown-menu favorites-menu" role="menu">
             <li>
               <h5 class="favorites-menu-title">Favorites</h5>
@@ -218,12 +205,18 @@
                   <span class="app-icon app-icon-orange">eb</span> Eligibility &amp; Benefits
                 </a>
                 <a href="#" class="list-group-item">
-                  <span class="app-icon app-icon-branded-black">cr<span class="caret"></span></span>
+                  <span class="app-icon app-icon-is-branded">
+                    cr
+                    <span class="caret"></span>
+                  </span>
                   Humana Credentialing Status
                 </a>
 
                 <a href="#" class="list-group-item">
-                  <span class="app-icon app-icon-branded-neon">pr<span class="caret"></span></span>
+                  <span class="app-icon app-icon-is-branded-alt">
+                    pr
+                    <span class="caret"></span>
+                  </span>
                   Provider Management
                 </a>
               </div>
@@ -288,27 +281,99 @@
 </nav>
 
 <main>
-<div class="container-fluid">
-  <div class="alert alert-info">
-    <code>.container-fluid</code>
+  <div class="container">
+    <ul class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Payer Spaces</a>
+      </li>
+      <li class="active">
+        Florida Blue
+      </li>
+    </ul>
   </div>
-</div>
 
-<div class="container">
-  <div class="alert alert-warning">
-    <code>.container</code>
+  <div class="container">
+    <div class="jumbotron jumbotron-florida-blue">
+      <div>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              <a href="http://www.floridablue.com">
+                <img src="images/logo-florida-blue-wide-large.png" class="img-responsive" alt="Florida Blue">
+              </a>
+            </p>
+            <hr class="divider-lg">
+            <p>
+              <a class="btn btn-lg btn-primary-florida-blue" href="payer-spaces.html">View Apps &#xBB;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid container-sm-height">
+      <div class="row row-sm-height">
+        <div class="col-sm-4 col-sm-height">
+          <div class="panel panel-summary">
+            <div class="panel-body">
+              <h3>835 Registration</h3>
+              <p data-mock="sentences:1">et fugit et voluptates repudiandae saepe odit accusamus
+atque ut in rem recusandae maxime et impedit eius unde
+veritatis quaerat quos molestias sit nemo voluptates similique qui nulla</p>
+              <p>
+                <button type="button" class="btn btn-default">
+                  Request Access &#xBB;
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-sm-height">
+          <div class="panel panel-summary">
+            <div class="panel-body">
+              <h3>Eligibility &amp; Benefits</h3>
+              <p data-mock="sentences:1">et fugit et voluptates repudiandae saepe odit accusamus
+atque ut in rem recusandae maxime et impedit eius unde
+veritatis quaerat quos molestias sit nemo voluptates similique qui nulla</p>
+              <p>
+                <button type="button" class="btn btn-default">
+                  Request Access &#xBB;
+                </button>
+              </p><p>
+            </p></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-sm-height">
+          <div class="panel panel-summary">
+            <div class="panel-body">
+              <h3>Provider Registration &amp; Self-Service</h3>
+              <p data-mock="sentences:1">et fugit et voluptates repudiandae saepe odit accusamus
+atque ut in rem recusandae maxime et impedit eius unde
+veritatis quaerat quos molestias sit nemo voluptates similique qui nulla</p>
+              <p>
+                <button type="button" class="btn btn-default">
+                  Request Access &#xBB;
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="container-sm">
-  <div class="alert alert-success">
-    <code>.container-sm</code>
-  </div>
-</div>
-
 </main>
-<!-- <footer class="footer">
-  <div class="footer-body container-fluid">
+
+
+
+<footer class="footer">
+  <div class="footer-body container">
     <span class="footer-copy">&copy; 2015 Availity, LLC.</span>
     <ul class="footer-links">
       <li><a href="#">Contact</a></li>
@@ -316,7 +381,8 @@
       <li><a href="#">Terms of Use</a></li>
     </ul>
   </div>
-</footer> -->
+</footer>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
