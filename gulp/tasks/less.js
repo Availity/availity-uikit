@@ -9,6 +9,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var using = require('gulp-using');
 var gulpif = require('gulp-if');
+var bless = require('gulp-bless');
 var replace = require('gulp-replace');
 
 var config = require('../config');
@@ -26,12 +27,15 @@ gulp.task('less:dev', function() {
     }))
     .pipe(less())
     .pipe(replace(config.regex.select[0], config.regex.select[1]))
-    .pipe(sourcemaps.init({loadMaps: true}))
+    // .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(prefixer({
       browsers: config.less.browsers
     }))
     .pipe(insert.prepend(banner() + '\n'))
-    .pipe(sourcemaps.write(config.less.destMaps))
+    // .pipe(sourcemaps.write(config.less.destMaps))
+    .pipe(bless({
+      imports: true
+    }))
     .pipe(gulp.dest(config.less.dest))
     .pipe(filter('**/*.css')) // Filtering stream to only css files
     .pipe(gulpif(config.args.verbose, using({prefix:'Task [less:dev] using'})))
