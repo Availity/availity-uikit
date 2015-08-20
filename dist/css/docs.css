@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.11.0 -- August-13
+ * availity-uikit v0.11.1 -- August-20
  * Copyright 2015 Availity, LLC 
  */
 
@@ -69,6 +69,8 @@ blockquote,
   min-height: .8em;
   background-color: #dadfdf;
   margin: .8em 0;
+  width: 100%;
+  text-align: left;
 }
 .guide-block-text-medium {
   width: 80%;
@@ -79,6 +81,14 @@ blockquote,
 .colors-container {
   margin-bottom: 30px;
   text-align: center;
+}
+.colors-container:before,
+.colors-container:after {
+  content: " ";
+  display: table;
+}
+.colors-container:after {
+  clear: both;
 }
 .color-item {
   margin-bottom: 4px;

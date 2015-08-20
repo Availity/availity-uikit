@@ -26,7 +26,9 @@ Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with override
 * Google Chrome (latest version)
 * Mozilla Firefox (latest version)
 
-> Other browsers should be supported as well but you may experience some issues.
+> Internet Explorer 9 and below requires a CSS post processor like [gulp-bless](https://github.com/BlessCSS/gulp-bless), [bless.js](https://github.com/BlessCSS/bless) or [grunt-bless](https://github.com/BlessCSS/grunt-bless) in order to get circumvent the 4095 limit on selector on style sheets
+
+
 
 
 ## Quickstart
