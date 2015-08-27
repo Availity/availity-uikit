@@ -9,6 +9,7 @@ gulp.task('server:sync', function() {
 
   browserSync({
     notify: true,
+    ghostMode: false,
     logPrefix: 'browersync',
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
