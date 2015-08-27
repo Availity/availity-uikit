@@ -20,7 +20,6 @@ module.exports = {
   },
   css: {
     src: 'build/guide/**/*.css',
-    targets: ['less/availity-uikit.less', 'less/pages/docs.less'],
     dest: 'dist/css',
     destMaps: './maps' // relative to dest folder
   },
