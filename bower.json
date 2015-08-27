@@ -12,6 +12,7 @@
     "framework",
     "web"
   ],
+  "moduleType": "globals",
   "main": [
     "less/availity-uikit.less",
     "dist/css/availity-uikit.css",
