@@ -21,6 +21,7 @@ gulp.task('release:sequence', function() {
     'release:bump',
     'dist',
     'readme',
+    'release:add',
     'release:tag'
   );
 });
