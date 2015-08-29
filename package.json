@@ -1,7 +1,7 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
-  "version": "0.11.2",
+  "version": "0.12.0",
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
     "node": ">=0.10.x"
@@ -13,7 +13,7 @@
   "homepage": "http://availity.github.io/availity-uikit/",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:Availity/availity-uikit.git"
+    "url": "https://github.com/Availity/availity-uikit.git"
   },
   "bugs": {
     "url": "https://github.com:Availity/availity-uikit/issues"
@@ -38,7 +38,7 @@
   ],
   "devDependencies": {
     "browser-sync": "^2.7.13",
-    "chalk": "^1.1.0",
+    "chalk": "^1.1.1",
     "cheerio": "^0.19.0",
     "del": "^1.2.0",
     "glob": "^5.0.13",
@@ -47,24 +47,24 @@
     "gulp-bless": "^3.0.1",
     "gulp-bump": "^0.3.1",
     "gulp-concat": "^2.6.0",
-    "gulp-filter": "^3.0.0",
-    "gulp-flatten": "^0.1.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-flatten": "^0.2.0",
     "gulp-front-matter": "^1.2.3",
     "gulp-gh-pages": "^0.5.2",
     "gulp-git": "^1.2.4",
     "gulp-if": "^1.2.5",
-    "gulp-insert": "^0.4.0",
+    "gulp-insert": "^0.5.0",
     "gulp-jscs": "^2.0.0",
     "gulp-jshint": "^1.11.2",
     "gulp-less": "^3.0.3",
-    "gulp-minify-css": "^1.2.0",
+    "gulp-minify-css": "^1.2.1",
     "gulp-plumber": "^1.0.1",
     "gulp-prompt": "^0.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.2",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-tag-version": "^1.2.1",
-    "gulp-uglify": "^1.2.0",
+    "gulp-uglify": "^1.4.0",
     "gulp-using": "0.0.1",
     "gulp-util": "^3.0.6",
     "gulp-verb": "^0.3.0",
@@ -79,15 +79,15 @@
     "metalsmith-define": "^1.0.0",
     "metalsmith-mock": "^1.0.0",
     "metalsmith-path": "^0.1.0",
-    "metalsmith-prism": "^1.1.3",
+    "metalsmith-prism": "^2.0.0",
     "metalsmith-templates": "^0.7.0",
-    "minimist": "^1.1.1",
+    "minimist": "^1.2.0",
     "mocha": "^2.2.5",
     "moment": "^2.10.3",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.1",
     "semver": "^5.0.1",
-    "underscore.string": "^3.1.1"
+    "underscore.string": "^3.2.0"
   },
   "keywords": [
     "css",

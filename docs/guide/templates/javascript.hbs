@@ -19,32 +19,12 @@
         {{#each collections.javascript}}
           <section class="guide-section">
             {{#if this.title}}
-              <h2 class="guide-section-header">
-                {{{this.title}}}
-                {{#if this.description}}
-                  <span data-container="body"
-                        data-toggle="popover"
-                        data-trigger="hover"
-                        data-placement="left"
-                        class="pull-right text-info"
-                        title="{{{this.title}}}"
-                        data-content="
-                          <p>{{{this.description}}}</p>
-                          {{#if this.whenToUse}}
-                            <h3>When to Use</h3>
-                            <p>{{{this.whenToUse}}}</p>
-                          {{/if}}
-                          {{#if this.uxNotes}}
-                            <h3>UX Notes</h3>
-                            <p>{{{this.uxNotes}}}</p>
-                          {{/if}}
-                  ">
-                    <i class="icon icon-info-circle"></i>
-                  </span>
-                {{/if}}
-              </h2>
+              <h2 class="guide-section-header">{{{this.title}}}</h2>
             {{else}}
               <h2 style="color:red">**Missing YAML Front Matter Title Attribute**</h2>
+            {{/if}}
+            {{#if this.description}}
+            <p class="lead">{{this.description}}</p>
             {{/if}}
             {{{this.contents}}}
           </section>

@@ -20,7 +20,6 @@ module.exports = {
   },
   css: {
     src: 'build/guide/**/*.css',
-    targets: ['less/availity-uikit.less', 'less/pages/docs.less'],
     dest: 'dist/css',
     destMaps: './maps' // relative to dest folder
   },
@@ -65,12 +64,13 @@ module.exports = {
         'Colors',
         'Typography',
         'Buttons',
+        'Cards',
+        'Panels',
         'Containers',
         'App Icons',
         'Navbar',
         'Navs',
         'Mega Menu',
-        'Panels &amp; Cards',
         'Forms',
         'Alerts and Warnings',
         'Badges',

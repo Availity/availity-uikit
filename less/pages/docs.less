@@ -56,11 +56,17 @@ blockquote {
 }
 
 .guide-example {
+  margin-top: 1rem;
   position: relative;
   padding: (2.5 * @guide-padding) @guide-padding @guide-padding @guide-padding;
   border: 1px solid @gray-lighter;
   border-radius: @border-radius-large @border-radius-large 0 0;
+
+  .card {
+    max-width: 40rem;
+  }
 }
+
 
 .guide-example:before {
   .code-label("Example");
@@ -72,7 +78,6 @@ blockquote {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   display: none;
-
 }
 
 //== Layout

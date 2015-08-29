@@ -85,12 +85,6 @@
     border:none;
   }
 
-  a {
-    color: @link-color;
-    text-decoration: none;
-    .iconify-before(@availity-icon-angle-non-collapsed);
-  }
-
   .collapsed {
     .iconify-before(@availity-icon-angle-collapsed);
   }
@@ -98,6 +92,16 @@
   .collapse, .collapsing {
     border: @availity-panel-collapse-border;
     border-top: none;
+  }
+}
+
+.panel-collapsible-link {
+  color: @link-color;
+  text-decoration: none;
+  .iconify-before(@availity-icon-angle-non-collapsed);
+
+  &:hover {
+    text-decoration: none;
   }
 }
 

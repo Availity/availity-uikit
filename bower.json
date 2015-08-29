@@ -1,7 +1,8 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
-  "version": "0.11.2",
+  "version": "0.12.0",
+  "license": "MIT",
   "keywords": [
     "availity",
     "css",
@@ -11,6 +12,7 @@
     "framework",
     "web"
   ],
+  "moduleType": "globals",
   "main": [
     "less/availity-uikit.less",
     "dist/css/availity-uikit.css",

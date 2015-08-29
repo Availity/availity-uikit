@@ -1,14 +1,7 @@
 ---
-title: Panels &amp; Cards
-description: |
-  An information panel meant to be embedded into a larger information
-  display, which allows for non-essential information to be shown or hidden
-  at the user's discretion.
-usage: |
-  Use an expand/collapse panel anytime you want to provide secondary,
-  non-essential information without adding length or clutter to the page.
-  Do not put any essential information in a collapsed panel.
+title: Panels
 ---
+
 <h3 class="guide-subsection-title">Basic</h3>
 <div class="guide-example">
   <div class="panel panel-default">
@@ -59,13 +52,16 @@ usage: |
   <div class="panel panel-default panel-collapsible">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" href="#exampleCollapse">
+        <a class="panel-collapsible-link collapsed" data-toggle="collapse" href="#exampleCollapse">
           Collapsible Panel
         </a>
       </h4>
     </div>
     <div id="exampleCollapse" class="collapse" aria-expanded="false">
       <div class="panel-body">
+        <div class="clearfix text-right">
+          <a href="javascript:void(0)" class="external" onclick="window.open('//www.availity.com')">Availity.com</a>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et ligula ut elit mattis sodales. Fusce pharetra magna ut maximus maximus. Praesent vehicula nibh tincidunt elit congue malesuada.</p>
         <p>semper, ut consectetur turpis sollicitudin. Etiam vel sodales enim. Integer sed varius dolor.</p>
       </div>
@@ -155,7 +151,10 @@ usage: |
 </div>
 </code>
 
-<h3 class="guide-subsection-title">Card</h3>
+<h3 class="guide-subsection-title">Panel Card &otimes;</h3>
+<div data-markdown>
+  > `.panel-card` has been **DEPRECATED** in favor of `.card`. See [Cards](#elCardo).
+</div>
 <div class="guide-example">
   <div class="panel panel-card">
     <h4 class="panel-heading panel-title">
@@ -214,7 +213,10 @@ usage: |
   </div>
 </code>
 
-<h3 class="guide-subsection-title">Card <small>with header emphasis</small></h3>
+<h3 class="guide-subsection-title">Header &otimes;</h3>
+<div data-markdown>
+  > `.panel-card` has been **DEPRECATED** in favor of `.card`. See [Cards](#elCardo).
+</div>
 <div class="guide-example">
   <div class="panel panel-card">
     <div class="panel-heading">
@@ -251,7 +253,10 @@ usage: |
 </div>
 </code>
 
-<h3 class="guide-subsection-title">Card Inverse</h3>
+<h3 class="guide-subsection-title">Inverse  &otimes;</h3>
+<div data-markdown>
+  > `.panel-card` has been **DEPRECATED** in favor of `.card`. See [Cards](#elCardo).
+</div>
 <div class="guide-example">
   <div class="panel panel-inverse panel-card">
     <h4 class="panel-heading panel-title">
@@ -276,7 +281,10 @@ usage: |
 </div>
 </code>
 
-<h3 class="guide-subsection-title">Card summary payers</h3>
+<h3 class="guide-subsection-title">Card Summary &otimes;</h3>
+<div data-markdown>
+  > `.panel-card` has been **DEPRECATED** in favor of `.card`. See [Cards](#elCardo).
+</div>
 <div class="guide-example">
   <div class="container-fluid container-md-height">
     <div class="row row-md-height">
@@ -344,7 +352,10 @@ usage: |
 </div>
 </code>
 
-<h3 class="guide-subsection-title">Card summary apps</h3>
+<h3 class="guide-subsection-title">Card Apps &otimes;</h3>
+<div data-markdown>
+  > `.panel-card` has been **DEPRECATED** in favor of `.card`. See [Cards](#elCardo).
+</div>
 <div class="guide-example">
   <div class="container-fluid container-md-height">
     <div class="row row-md-height">

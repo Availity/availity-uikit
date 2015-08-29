@@ -19,10 +19,16 @@ gulp.task('release:sequence', function() {
     'lint',
     ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
     'release:bump',
-    ['dist:css', 'dist:js', 'dist:fonts', 'dist:images'],
+    'dist',
     'readme',
+    'release:add',
     'release:tag'
   );
+});
+
+gulp.task('release:add', function() {
+  return gulp.src('./dist/*')
+    .pipe(git.add({args: '-f'}));
 });
 
 gulp.task('release:tag', function() {
