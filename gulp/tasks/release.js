@@ -19,7 +19,7 @@ gulp.task('release:sequence', function() {
     'lint',
     ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
     'release:bump',
-    ['dist'],
+    'dist',
     'readme',
     'release:add',
     'release:tag'
