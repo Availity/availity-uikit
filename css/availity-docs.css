@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.12.0 -- August-28
+ * availity-uikit v0.10.1 -- August-04
  * Copyright 2015 Availity, LLC 
  */
 
@@ -30,14 +30,10 @@ blockquote,
   position: static;
 }
 .guide-example {
-  margin-top: 1rem;
   position: relative;
   padding: 3.75em 1.5em 1.5em 1.5em;
   border: 1px solid #e8ebeb;
   border-radius: 4px 4px 0 0;
-}
-.guide-example .card {
-  max-width: 40rem;
 }
 .guide-example:before {
   content: "Example";
@@ -73,8 +69,6 @@ blockquote,
   min-height: .8em;
   background-color: #dadfdf;
   margin: .8em 0;
-  width: 100%;
-  text-align: left;
 }
 .guide-block-text-medium {
   width: 80%;
@@ -85,14 +79,6 @@ blockquote,
 .colors-container {
   margin-bottom: 30px;
   text-align: center;
-}
-.colors-container:before,
-.colors-container:after {
-  content: " ";
-  display: table;
-}
-.colors-container:after {
-  clear: both;
 }
 .color-item {
   margin-bottom: 4px;
@@ -412,3 +398,5 @@ pre[class*="language-"] {
 .language-json .token.keyword {
   color: #a67f59;
 }
+
+/*# sourceMappingURL=maps/availity-docs.css.map */
