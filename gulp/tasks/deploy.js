@@ -1,12 +1,24 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence').use(gulp);
 var ghPages = require('gulp-gh-pages');
+var os = require('os');
+var path = require('path');
+var fs = require('fs');
+
+var config = require('../config');
 
 gulp.task('deploy', ['deploy:sequence']);
 
+var getName = function() {
+  var pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
+  return pkg.name;
+};
+
 gulp.task('deploy:github:pages', function () {
   return gulp.src('./build/guide/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      cacheDir: path.join(os.tmpdir(), getName())
+    }));
 });
 
 var tasks = [
