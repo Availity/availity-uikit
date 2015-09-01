@@ -17,7 +17,7 @@ var type = 'patch';
 gulp.task('release:sequence', function() {
   runSequence(
     'lint',
-    ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
+    'clean:dist',
     'release:bump',
     'dist',
     'readme',
