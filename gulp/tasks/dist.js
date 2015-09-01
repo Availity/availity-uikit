@@ -17,11 +17,13 @@ var concat = require('gulp-concat');
 var replace = require('gulp-replace');
 var uglify = require('gulp-uglify');
 
-gulp.task('dist', ['clean:dist'], function() {
-  gulp.start('dist:js');
-  gulp.start('dist:css');
-  gulp.start('dist:fonts');
-  gulp.start('dist:images');
+var runSequence = require('run-sequence').use(gulp);
+
+gulp.task('dist', function() {
+  runSequence(
+    ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
+    ['dist:css', 'dist:js', 'dist:fonts', 'dist:images']
+  );
 });
 
 gulp.task('dist:css', function() {
@@ -84,11 +86,4 @@ gulp.task('dist:images', function() {
   return gulp.src(config.images.src)
     .pipe(gulpif(config.args.verbose, using({prefix:'Task [dist:images] using'})))
     .pipe(gulp.dest(config.images.destDist));
-});
-
-gulp.task('dist', ['clean:dist'], function() {
-  gulp.start('dist:css');
-  gulp.start('dist:js');
-  gulp.start('dist:fonts');
-  gulp.start('dist:images');
 });
