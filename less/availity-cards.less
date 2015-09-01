@@ -6,6 +6,7 @@
   margin-bottom: @line-height-computed;
   border: 1px solid @panel-default-border;
   border-radius: @border-radius-base;
+  background-color: #fff;
 }
 
 .card-block {
@@ -15,6 +16,14 @@
 .card-title {
   margin-top: 0;
   margin-bottom: .5em;
+}
+
+.card-title-secondary {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: @text-muted;
 }
 
 .card-subtitle {
@@ -32,6 +41,12 @@
   + .card-link {
     margin-left: (@grid-gutter-width / 2);
   }
+}
+
+.card-logo {
+  position: absolute;
+  bottom: @panel-body-padding;
+  right: @panel-body-padding;
 }
 
 .card {
@@ -61,6 +76,10 @@
   &:first-child {
     border-radius: (@border-radius-base - 1) (@border-radius-base - 1) 0 0;
   }
+}
+
+.card-header-outline {
+  background-color: transparent;
 }
 
 .card-footer {
