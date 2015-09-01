@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.12.0 -- August-28
+ * availity-uikit v0.12.1 -- August-31
  * Copyright 2015 Availity, LLC 
  */
 
@@ -6283,14 +6283,6 @@ a.thumbnail.active {
   margin-bottom: 20px;
   padding-left: 0;
 }
-.list-group-flush {
-  margin-bottom: 0;
-}
-.list-group-flush > .list-group-item {
-  border-radius: 0;
-  border-left: 0;
-  border-right: 0;
-}
 .list-group-item {
   position: relative;
   display: block;
@@ -6502,6 +6494,10 @@ a.list-group-item-danger.active:focus {
 .list-group-cards .list-group-item.canceled,
 .list-group-cards .list-group-item.active.canceled {
   border-left-color: #ffda00;
+}
+.list-group-flush .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
 }
 .panel {
   margin-bottom: 20px;
@@ -10722,4 +10718,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .has-success.select2-drop-active {
   border-color: #016f55;
+}
+.has-success.select2-drop-active.select2-drop.select2-drop-above {
+  border-top-color: #016f55;
 }

@@ -1,8 +1,5 @@
-@import url('availity-uikit-blessed1.css?z=1440812229037');
+@import url('availity-uikit-blessed1.css?z=1441067601830');
 
-.has-success.select2-drop-active.select2-drop.select2-drop-above {
-  border-top-color: #016f55;
-}
 /**
  * Make Select2's active-styles - applied to .select2-container when the widget receives focus -
  * fit Bootstrap 3's .form-element:focus appearance.
