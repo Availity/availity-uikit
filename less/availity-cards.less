@@ -13,6 +13,10 @@
   padding: @panel-body-padding;
 }
 
+.card-block + .card-block {
+  padding-top: 0;
+}
+
 .card-title {
   margin-top: 0;
   margin-bottom: .5em;
@@ -78,8 +82,21 @@
   }
 }
 
-.card-header-outline {
-  background-color: transparent;
+.card-header-link {
+  .header-link-right;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+.card-header-secondary {
+  border-bottom: 1px solid @panel-default-border;
+  padding-bottom: .8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &.card-header-secondary {
+    margin-top: 0;
+  }
 }
 
 .card-footer {
