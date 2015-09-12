@@ -66,7 +66,7 @@
   });
 
   // Select2
-  $('.select2, .select2-multiple').select2({
+  $('#single-select, #multiple-select').select2({
     placeholder: 'Select a State',
     allowClear: true
   }).on("select2-open", function () {
@@ -84,6 +84,10 @@
         }
       }
     }
+  });
+
+  $('.select2, .select2-multiple').select2({
+    allowClear: true
   });
 
   setInterval(function() {
