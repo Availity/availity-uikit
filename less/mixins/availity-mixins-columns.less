@@ -21,6 +21,7 @@
 
 .table() {
   display: table;
+  table-layout: fixed;
   padding-left: 0px;
   padding-right: 0px;
   height: 100%;
@@ -33,6 +34,7 @@
 
 // height 100% on a table-cell makes the content render outside the table-row in FIREFOX
 .table-cell() {
+
   display: table-cell;
   float: none;
   .col-top;
@@ -41,6 +43,17 @@
   .panel-summary, .panel-card, .panel {
     height: 100%;
     margin-bottom: 0;
+  }
+
+  > .card {
+    height: 100%;
+    margin-bottom: 0;
+
+    > .card-block {
+      height: 100%;
+      margin-bottom: 0;
+    }
+
   }
 
   .panel-body {
