@@ -7,6 +7,10 @@
   border: 1px solid @panel-default-border;
   border-radius: @border-radius-base;
   background-color: #fff;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 .card-block {
@@ -83,9 +87,15 @@
 }
 
 .card-header-link {
+
   .header-link-right;
+
   line-height: 1em;
   font-weight: bold;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
 }
 
 .card-header-secondary {
