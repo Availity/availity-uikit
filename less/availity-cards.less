@@ -63,6 +63,7 @@
 }
 
 .card {
+
   > .list-group:first-child {
     .list-group-item:first-child {
       border-radius: @border-radius-base @border-radius-base 0 0;
@@ -149,6 +150,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: @brand-danger;
   border-color: @brand-danger;
 }
+.card-default {
+  background-color: @well-bg;
+  border-color: @well-border;
+}
 
 
 //
@@ -164,7 +169,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
   // The warning background is too light to make effective use of the inverse colors.
-  &:not(.card-warning) {
+  &.card-primary, &.card-success, &.card-warning, &.card-danger, &.card-info {
+
     .card-header,
     .card-footer,
     .card-title,
@@ -188,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  &.card-warning {
+  &.card-warning, &.card-default {
     .card-header,
     .card-footer,
     .card-title,
