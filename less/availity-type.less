@@ -62,6 +62,22 @@ p {
   color: @text-muted;
 }
 
+.card {
+  > ul, ol {
+    padding-left: @panel-body-padding+5;
+  }
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: (@line-height-computed / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
 
 .page-header {
   margin: (@line-height-computed * 1) 0 @line-height-computed;
