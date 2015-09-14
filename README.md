@@ -29,8 +29,6 @@ Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with override
 > Internet Explorer 9 and below requires a CSS post processor like [gulp-bless](https://github.com/BlessCSS/gulp-bless), [bless.js](https://github.com/BlessCSS/bless) or [grunt-bless](https://github.com/BlessCSS/grunt-bless) in order to get circumvent the 4095 limit on selector on style sheets
 
 
-
-
 ## Quickstart
 + Install the Availity UIKit with Bower.
 
@@ -70,16 +68,12 @@ $ bower install availity-uikit --save
 └── package.json                # NPM list of 3rd party libraries and utilities
 ```
 
-
 ## Icon Fonts
 Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (glyphicons).  Our font configuration can be found in the [config.json](./fonts/config.json). The UIKit currently uses icon fonts from the following libraries:
 
 + [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 + [Typicons](http://typicons.com/)
 + [Elusive Icons](http://elusiveicons.com/)
-
-
-
 
 ## Authors
 
@@ -95,11 +89,8 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (g
 **Bobby Bennett**
 + [bobby.bennett@availity.com](bobby.bennett@availity.com)
 
-
-
 ## Disclaimer
 Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
-
 
 ## License
 Copyright (c) 2015 Availity, LLC

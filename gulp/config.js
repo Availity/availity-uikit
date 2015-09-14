@@ -91,11 +91,6 @@ module.exports = {
   packages: {
     src: ['./package.json', './bower.json']
   },
-  readme: {
-    src: ['docs/readme/readme.config.md'],
-    name: 'README.md',
-    dest: './'
-  },
   js: {
     src: ['gulpfile.js', 'gulp/**/*.js'],
     dest: 'build/guide/js'

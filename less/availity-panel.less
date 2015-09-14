@@ -80,6 +80,7 @@
 .panel-collapsible {
 
   border: @availity-panel-collapse-border;
+  margin-bottom: 0;
 
   .panel-heading {
     border:none;
@@ -100,7 +101,7 @@
   text-decoration: none;
   .iconify-before(@availity-icon-angle-non-collapsed);
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
   }
 }

@@ -6,15 +6,44 @@
   margin-bottom: @line-height-computed;
   border: 1px solid @panel-default-border;
   border-radius: @border-radius-base;
+  background-color: #fff;
+
+  & > :first-child {
+      margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 .card-block {
   padding: @panel-body-padding;
 }
 
+.card-caret {
+  position: absolute;
+  top: @panel-body-padding;
+  right: @panel-body-padding;
+  width: 0;
+  height: 0;
+  border-right: 4px;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent @availity-app-icon-branded-neon-caret-color transparent transparent;
+}
+
 .card-title {
   margin-top: 0;
   margin-bottom: .5em;
+}
+
+.card-title-secondary {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: @text-muted;
 }
 
 .card-subtitle {
@@ -28,13 +57,21 @@
 
 .card-link {
   text-decoration: none;
+  cursor: pointer;
 
   + .card-link {
     margin-left: (@grid-gutter-width / 2);
   }
 }
 
+.card-logo {
+  position: absolute;
+  bottom: @panel-body-padding;
+  right: @panel-body-padding;
+}
+
 .card {
+
   > .list-group:first-child {
     .list-group-item:first-child {
       border-radius: @border-radius-base @border-radius-base 0 0;
@@ -61,6 +98,23 @@
   &:first-child {
     border-radius: (@border-radius-base - 1) (@border-radius-base - 1) 0 0;
   }
+}
+
+.card-header-link, .card-title-link {
+
+  .header-link-right;
+
+  line-height: 1em;
+  font-weight: bold;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+.card-header-secondary {
+  border-bottom: 1px solid @panel-default-border;
+  padding-bottom: .8em;
 }
 
 .card-footer {
@@ -98,6 +152,10 @@
   background-color: @brand-danger;
   border-color: @brand-danger;
 }
+.card-default {
+  background-color: @well-bg;
+  border-color: @well-border;
+}
 
 
 //
@@ -105,25 +163,60 @@
 //
 
 .card-inverse {
+
   .card-header,
   .card-footer {
     border-bottom: 1px solid rgba(255,255,255,.2);
   }
-  .card-header,
-  .card-footer,
-  .card-title,
-  .card-blockquote {
-    color: #fff;
-  }
-  .card-link,
-  .card-text,
-  .card-blockquote > footer {
-    color: rgba(255,255,255,.65);
-  }
-  .card-link {
-    &:hover,
-    &:focus {
+
+
+  // The warning background is too light to make effective use of the inverse colors.
+  &.card-primary, &.card-success, &.card-warning, &.card-danger, &.card-info {
+
+    .card-header,
+    .card-footer,
+    .card-title,
+    .card-blockquote {
       color: #fff;
+    }
+    .card-link,
+    .card-text,
+    .card-blockquote > footer {
+      color: rgba(255,255,255,.80);
+    }
+    .card-link {
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255,255,255,.80);
+      &:hover,
+      &:focus {
+        color: rgba(255,255,255,.90);
+        border-bottom: 1px solid rgba(255,255,255,.90);
+        color: #fff;
+      }
+    }
+  }
+
+  &.card-warning, &.card-default {
+    .card-header,
+    .card-footer,
+    .card-title,
+    .card-blockquote {
+      color: @gray;
+    }
+    .card-link,
+    .card-text,
+    .card-blockquote > footer {
+      color: rgba(0,0,0,.65);
+    }
+    .card-link {
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(0,0,0,.65);
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid rgba(0,0,0,.90);
+        color: rgba(0,0,0,.90);
+        color: @gray-darker;
+      }
     }
   }
 }

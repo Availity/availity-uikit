@@ -1,11 +1,42 @@
+.billboard {
+
+  min-height: 100%;
+
+  @media (max-width: @screen-xs-max) {
+    background: none !important;
+  }
+
+  @media (min-width: @screen-xs-max) {
+    display: table;
+    width: 100%;
+  }
+
+}
+
 .billboard-featured {
+
   padding: @availity-panel-card-padding;
-  font-size: @font-size-medium;
+
+  @media (min-width: @screen-xs-max) {
+    display: table-cell;
+  }
+
+  > .card {
+    margin-bottom:  0;
+  }
+
 }
 
 .spaces-header {
+
   .clearfix;
-  margin-bottom: 1em;
+  margin-bottom: .3rem;
+
+  @media (min-width: @screen-xs-max) {
+    display: table;
+    width: 100%;
+  }
+
 }
 
 .spaces-logo {
@@ -18,20 +49,18 @@
   font-weight: bold;
   font-size: @font-size-medium;
   display: none;
+
+  @media (min-width: @screen-xs-max) {
+    display: inline;
+  }
+
 }
 
 @media (min-width: @screen-xs-max) {
 
-  .spaces-link {
-    display: inline;
-  }
-
-  .spaces-header {
-    display: table;
-    width: 100%;
-  }
 
   .spaces-header-col {
+
     display: table-cell;
     text-align: center;
     vertical-align: middle;

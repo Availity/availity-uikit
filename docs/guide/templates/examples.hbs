@@ -11,33 +11,31 @@
 
   <div class="container">
     <h2 class="guide-section-header">Pages</h2>
-  </div>
 
-  <div class="container">
-  {{#grouped_each 3 collections.examples}}
-  <div class="container-md-height">
-    <div class="row row-md-height">
-      {{#each this }}
-        <div class="col-md-3 col-md-height">
-          <div class="panel panel-summary">
-            <div class="panel-body">
-              {{#if this.title}}
-                <span class="app-icon app-icon-lg app-icon-{{{this.icon}}}">{{this.shortName}}</span>
-                <h3>{{{this.title}}}</h3>
-                <p>
-                  <a class="btn btn-default" href="{{this.path}}">View</a>
-                </p>
+    {{#grouped_each 3 collections.examples}}
+    <div class="container-md-height">
+      <div class="row row-md-height">
+        {{#each this }}
+          <div class="col-md-3 col-md-height">
+            <div class="card">
+              <div class="card-block text-center">
+                {{#if this.title}}
+                  <span class="app-icon app-icon-lg app-icon-{{{this.icon}}}">{{this.shortName}}</span>
+                  <h3>{{{this.title}}}</h3>
+                  <p>
+                    <a class="btn btn-default" href="{{this.path}}">View</a>
+                  </p>
 
-              {{else}}
-                <strong>** Missing YAML Front Matter Title Attribute **</strong>
-              {{/if}}
+                {{else}}
+                  <strong>** Missing YAML Front Matter Title Attribute **</strong>
+                {{/if}}
+              </div>
             </div>
           </div>
-        </div>
-      {{/each}}
+        {{/each}}
+      </div>
     </div>
-  </div>
-  {{/grouped_each}}
+    {{/grouped_each}}
   </div>
 
 </main>
