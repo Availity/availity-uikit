@@ -1,5 +1,475 @@
-@import url('availity-uikit-blessed1.css?z=1441067601830');
+@import url('availity-uikit-blessed1.css?z=1442254558515');
 
+.select2-results .select2-highlighted em {
+  background: transparent;
+}
+.select2-results .select2-highlighted ul {
+  background: #fff;
+  color: #000;
+}
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-ajax-error,
+.select2-results .select2-selection-limit {
+  background: #f4f4f4;
+  display: list-item;
+  padding-left: 5px;
+}
+/*
+disabled look for disabled choices in the results dropdown
+*/
+.select2-results .select2-disabled.select2-highlighted {
+  color: #666;
+  background: #f4f4f4;
+  display: list-item;
+  cursor: default;
+}
+.select2-results .select2-disabled {
+  background: #f4f4f4;
+  display: list-item;
+  cursor: default;
+}
+.select2-results .select2-selected {
+  display: none;
+}
+.select2-more-results.select2-active {
+  background: #f4f4f4 url('../images/vendor/select2-spinner.gif') no-repeat 100%;
+}
+.select2-results .select2-ajax-error {
+  background: rgba(255, 50, 50, 0.2);
+}
+.select2-more-results {
+  background: #f4f4f4;
+  display: list-item;
+}
+/* disabled styles */
+.select2-container.select2-container-disabled .select2-choice {
+  background-color: #f4f4f4;
+  background-image: none;
+  border: 1px solid #ddd;
+  cursor: default;
+}
+.select2-container.select2-container-disabled .select2-choice .select2-arrow {
+  background-color: #f4f4f4;
+  background-image: none;
+  border-left: 0;
+}
+.select2-container.select2-container-disabled .select2-choice abbr {
+  display: none;
+}
+/* multiselect */
+.select2-container-multi .select2-choices {
+  height: auto !important;
+  height: 1%;
+  margin: 0;
+  padding: 0 5px 0 0;
+  position: relative;
+  border: 1px solid #aaa;
+  cursor: text;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
+  background-image: linear-gradient(to bottom, #eeeeee 1%, #ffffff 15%);
+}
+html[dir="rtl"] .select2-container-multi .select2-choices {
+  padding: 0 0 0 5px;
+}
+.select2-locked {
+  padding: 3px 5px 3px 5px !important;
+}
+.select2-container-multi .select2-choices {
+  min-height: 26px;
+}
+.select2-container-multi.select2-container-active .select2-choices {
+  border: 1px solid #5897fb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.select2-container-multi .select2-choices li {
+  float: left;
+  list-style: none;
+}
+html[dir="rtl"] .select2-container-multi .select2-choices li {
+  float: right;
+}
+.select2-container-multi .select2-choices .select2-search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+  padding: 5px;
+  margin: 1px 0;
+  font-family: sans-serif;
+  font-size: 100%;
+  color: #666;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent !important;
+}
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+  background: #ffffff url('../images/vendor/select2-spinner.gif') no-repeat 100% !important;
+}
+.select2-default {
+  color: #999 !important;
+}
+.select2-container-multi .select2-choices .select2-search-choice {
+  padding: 3px 5px 3px 18px;
+  margin: 3px 0 3px 5px;
+  position: relative;
+  line-height: 13px;
+  color: #333;
+  cursor: default;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  background-clip: padding-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #e4e4e4;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+}
+html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 3px 18px 3px 5px;
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
+  cursor: default;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus {
+  background: #d4d4d4;
+}
+.select2-search-choice-close {
+  display: block;
+  width: 12px;
+  height: 13px;
+  position: absolute;
+  right: 3px;
+  top: 4px;
+  font-size: 1px;
+  outline: none;
+  background: url('../images/vendor/select2.png') right top no-repeat;
+}
+html[dir="rtl"] .select2-search-choice-close {
+  right: auto;
+  left: 3px;
+}
+.select2-container-multi .select2-search-choice-close {
+  left: 3px;
+}
+html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
+  left: auto;
+  right: 2px;
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover {
+  background-position: right -11px;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close {
+  background-position: right -11px;
+}
+/* disabled styles */
+.select2-container-multi.select2-container-disabled .select2-choices {
+  background-color: #f4f4f4;
+  background-image: none;
+  border: 1px solid #ddd;
+  cursor: default;
+}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
+  padding: 3px 5px 3px 5px;
+  border: 1px solid #ddd;
+  background-image: none;
+  background-color: #f4f4f4;
+}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {
+  display: none;
+  background: none;
+}
+/* end multiselect */
+.select2-result-selectable .select2-match,
+.select2-result-unselectable .select2-match {
+  text-decoration: underline;
+}
+.select2-offscreen,
+.select2-offscreen:focus {
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  outline: 0 !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+.select2-display-none {
+  display: none;
+}
+.select2-measure-scrollbar {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+  width: 100px;
+  height: 100px;
+  overflow: scroll;
+}
+/* Retina-ize icons */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  .select2-search input,
+  .select2-search-choice-close,
+  .select2-container .select2-choice abbr,
+  .select2-container .select2-choice .select2-arrow b {
+    background-image: url('../images/vendor/select2x2.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 60px 40px !important;
+  }
+  .select2-search input {
+    background-position: 100% -21px !important;
+  }
+}
+/*! Select2 Bootstrap 3 CSS v1.4.6 | MIT License | github.com/t0m/select2-bootstrap-css */
+/**
+ * Reset Bootstrap 3 .form-control styles which - if applied to the
+ * original <select>-element the Select2-plugin may be run against -
+ * are copied to the .select2-container.
+ *
+ * 1. Overwrite .select2-container's original display:inline-block
+ *    with Bootstrap 3's default for .form-control, display:block;
+ *    courtesy of @juristr (@see https://github.com/fk/select2-bootstrap-css/pull/1)
+ */
+.select2-container.form-control {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: block;
+  /* 1 */
+  margin: 0;
+  padding: 0;
+}
+/**
+ * Adjust Select2 inputs to fit Bootstrap 3 default .form-control appearance.
+ */
+.select2-container .select2-choices .select2-search-field input,
+.select2-container .select2-choice,
+.select2-container .select2-choices {
+  background: none;
+  padding: 0;
+  border-color: #cccccc;
+  border-radius: 2px;
+  color: #4d4f53;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.select2-search input {
+  border-color: #cccccc;
+  border-radius: 2px;
+  color: #4d4f53;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.select2-container .select2-choices .select2-search-field input {
+  box-shadow: none;
+}
+/**
+ * Adjust Select2 input heights to match the Bootstrap default.
+ */
+.select2-container .select2-choice {
+  height: 34px;
+  line-height: 1.42857143;
+}
+/**
+ * Address Multi Select2's height which - depending on how many elements have been selected -
+ * may grown higher than their initial size.
+ */
+.select2-container.select2-container-multi.form-control {
+  height: auto;
+}
+/**
+ * Address Bootstrap 3 control sizing classes
+ * @see http://getbootstrap.com/css/#forms-control-sizes
+ */
+.select2-container.input-sm .select2-choice,
+.input-group-sm .select2-container .select2-choice {
+  height: 30px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+.select2-container.input-lg .select2-choice,
+.input-group-lg .select2-container .select2-choice {
+  height: 46px;
+  line-height: 1.3333333;
+  border-radius: 4px;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+  height: 32px;
+}
+.select2-container-multi.input-sm .select2-choices .select2-search-field input,
+.input-group-sm .select2-container-multi .select2-choices .select2-search-field input {
+  height: 28px;
+}
+.select2-container-multi.input-lg .select2-choices .select2-search-field input,
+.input-group-lg .select2-container-multi .select2-choices .select2-search-field input {
+  height: 44px;
+}
+/**
+ * Adjust height and line-height for .select2-search-field amd multi-select Select2 widgets.
+ *
+ * 1. Class repetition to address missing .select2-chosen in Select2 < 3.3.2.
+ */
+.select2-container-multi .select2-choices .select2-search-field input {
+  margin: 0;
+}
+.select2-chosen,
+.select2-choice > span:first-child,
+.select2-container .select2-choices .select2-search-field input {
+  padding: 6px 12px;
+}
+.input-sm .select2-chosen,
+.input-group-sm .select2-chosen,
+.input-sm .select2-choice > span:first-child,
+.input-group-sm .select2-choice > span:first-child,
+.input-sm .select2-choices .select2-search-field input,
+.input-group-sm .select2-choices .select2-search-field input {
+  padding: 5px 10px;
+}
+.input-lg .select2-chosen,
+.input-group-lg .select2-chosen,
+.input-lg .select2-choice > span:first-child,
+.input-group-lg .select2-choice > span:first-child,
+.input-lg .select2-choices .select2-search-field input,
+.input-group-lg .select2-choices .select2-search-field input {
+  padding: 10px 16px;
+}
+.select2-container-multi .select2-choices .select2-search-choice {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.select2-container-multi.input-sm .select2-choices .select2-search-choice,
+.input-group-sm .select2-container-multi .select2-choices .select2-search-choice {
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+.select2-container-multi.input-lg .select2-choices .select2-search-choice,
+.input-group-lg .select2-container-multi .select2-choices .select2-search-choice {
+  line-height: 24px;
+}
+/**
+ * Adjust the single Select2's dropdown arrow button appearance.
+ *
+ * 1. For Select2 v.3.3.2.
+ */
+.select2-container .select2-choice .select2-arrow,
+.select2-container .select2-choice div {
+  border-left: none;
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.select2-dropdown-open .select2-choice .select2-arrow,
+.select2-dropdown-open .select2-choice div {
+  border-left-color: transparent;
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+/**
+ * Adjust the dropdown arrow button icon position for the single-select Select2 elements
+ * to make it line up vertically now that we increased the height of .select2-container.
+ *
+ * 1. Class repetition to address missing .select2-chosen in Select2 v.3.3.2.
+ */
+.select2-container .select2-choice .select2-arrow b,
+.select2-container .select2-choice div b {
+  background-position: 0 3px;
+}
+.select2-dropdown-open .select2-choice .select2-arrow b,
+.select2-dropdown-open .select2-choice div b {
+  background-position: -18px 3px;
+}
+.select2-container.input-sm .select2-choice .select2-arrow b,
+.input-group-sm .select2-container .select2-choice .select2-arrow b,
+.select2-container.input-sm .select2-choice div b,
+.input-group-sm .select2-container .select2-choice div b {
+  background-position: 0 1px;
+}
+.select2-dropdown-open.input-sm .select2-choice .select2-arrow b,
+.input-group-sm .select2-dropdown-open .select2-choice .select2-arrow b,
+.select2-dropdown-open.input-sm .select2-choice div b,
+.input-group-sm .select2-dropdown-open .select2-choice div b {
+  background-position: -18px 1px;
+}
+.select2-container.input-lg .select2-choice .select2-arrow b,
+.input-group-lg .select2-container .select2-choice .select2-arrow b,
+.select2-container.input-lg .select2-choice div b,
+.input-group-lg .select2-container .select2-choice div b {
+  background-position: 0 9px;
+}
+.select2-dropdown-open.input-lg .select2-choice .select2-arrow b,
+.input-group-lg .select2-dropdown-open .select2-choice .select2-arrow b,
+.select2-dropdown-open.input-lg .select2-choice div b,
+.input-group-lg .select2-dropdown-open .select2-choice div b {
+  background-position: -18px 9px;
+}
+/**
+ * Address Bootstrap's validation states and change Select2's border colors and focus states.
+ * Apply .has-warning, .has-danger or .has-succes to #select2-drop to match Bootstraps' colors.
+ */
+.has-warning .select2-choice,
+.has-warning .select2-choices {
+  border-color: #d7a401;
+}
+.has-warning .select2-container-active .select2-choice,
+.has-warning .select2-container-multi.select2-container-active .select2-choices {
+  border-color: #a47d01;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fed040;
+}
+.has-warning.select2-drop-active {
+  border-color: #a47d01;
+}
+.has-warning.select2-drop-active.select2-drop.select2-drop-above {
+  border-top-color: #a47d01;
+}
+.has-error .select2-choice,
+.has-error .select2-choices {
+  border-color: #b21909;
+}
+.has-error .select2-container-active .select2-choice,
+.has-error .select2-container-multi.select2-container-active .select2-choices {
+  border-color: #811207;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f4402d;
+}
+.has-error.select2-drop-active {
+  border-color: #811207;
+}
+.has-error.select2-drop-active.select2-drop.select2-drop-above {
+  border-top-color: #811207;
+}
+.has-success .select2-choice,
+.has-success .select2-choices {
+  border-color: #02a17c;
+}
+.has-success .select2-container-active .select2-choice,
+.has-success .select2-container-multi.select2-container-active .select2-choices {
+  border-color: #016f55;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #0dfcc4;
+}
+.has-success.select2-drop-active {
+  border-color: #016f55;
+}
+.has-success.select2-drop-active.select2-drop.select2-drop-above {
+  border-top-color: #016f55;
+}
 /**
  * Make Select2's active-styles - applied to .select2-container when the widget receives focus -
  * fit Bootstrap 3's .form-element:focus appearance.
@@ -665,12 +1135,33 @@
     display: none !important;
   }
 }
+.billboard {
+  min-height: 100%;
+}
+@media (max-width: 767px) {
+  .billboard {
+    background: none !important;
+  }
+}
+@media (min-width: 767px) {
+  .billboard {
+    display: table;
+    width: 100%;
+  }
+}
 .billboard-featured {
   padding: 24px;
-  font-size: 16px;
+}
+@media (min-width: 767px) {
+  .billboard-featured {
+    display: table-cell;
+  }
+}
+.billboard-featured > .card {
+  margin-bottom: 0;
 }
 .spaces-header {
-  margin-bottom: 1em;
+  margin-bottom: .3rem;
 }
 .spaces-header:before,
 .spaces-header:after {
@@ -687,6 +1178,12 @@
 }
 .spaces-header:after {
   clear: both;
+}
+@media (min-width: 767px) {
+  .spaces-header {
+    display: table;
+    width: 100%;
+  }
 }
 .spaces-logo {
   width: 234px;
@@ -702,10 +1199,8 @@
   .spaces-link {
     display: inline;
   }
-  .spaces-header {
-    display: table;
-    width: 100%;
-  }
+}
+@media (min-width: 767px) {
   .spaces-header-col {
     display: table-cell;
     text-align: center;

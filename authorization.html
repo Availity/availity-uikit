@@ -32,13 +32,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand-availity" href="#">
+      <a class="navbar-brand-availity" href="/index.html">
         <img alt="Availity Logo" src="images/logo-availity.png">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
       <ul class="nav navbar-nav">
-        <li><a href="#"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li><a href="/index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
         <li>
           <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
@@ -288,145 +288,158 @@
 </nav>
 
 <main>
-<div class="container">
-  <h1 class="page-header">
+<div class="container-sm">
+  <h2 class="page-header">
     Authorization Results
     <small><span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">Learn more about Authorizations</span></small>
     <button class="btn btn-default btn-header-link"><span class="icon icon-print"></span> Print</button>
-  </h1>
-  <div class="panel panel-branded panel-card">
-    <div class="panel-heading">
-      <div class="panel-card-title">
-        <strong>Transaction ID:</strong> <span data-mock="memberId:1">896682277</span>
-        <strong>Customer ID:</strong> <span data-mock="customerId:1">8781297613</span>
+  </h2>
+  <div class="card">
+    <div class="card-block">
+      <div class="card-header-secondary">
+        <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1">447942732</span>
+        <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1">9627201012</span>
       </div>
     </div>
-    <div class="panel-body">
+    <div class="card-block">
       <div class="row">
         <div class="col-sm-3 col-ms-6">
-          <h4>Certification Number</h4>
+          <h5 class="text-label">Certification Number</h5>
           <p>123456789</p>
-          <h4>Status</h4>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Name</h5>
+          <p data-mock="fullNameReverse:1">Edwards, Claire</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Date of Birth</h5>
+          <p>03/03/2010</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Gender</h5>
+          <p>Male</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Status</h5>
           <p>Modified</p>
         </div>
         <div class="col-sm-3 col-ms-6">
-          <h4>Patient Name</h4>
-          <p data-mock="fullNameReverse:1">Jones, Gabriel</p>
-          <h4>Diagnosis Version</h4>
+          <h5 class="text-label">Diagnosis Version</h5>
           <p>ICD-9</p>
         </div>
         <div class="col-sm-3 col-ms-6">
-          <h4>Patient Date of Birth</h4>
-          <p>03/03/2010</p>
-          <h4>Request Type</h4>
+          <h5 class="text-label">Request Type</h5>
           <p>Inpatient Authorization</p>
         </div>
         <div class="col-sm-3 col-ms-6">
-          <h4>Patient Gender</h4>
-          <p>Male</p>
-          <h4>Payer</h4>
+          <h5 class="text-label">Payer</h5>
           <p>Aetna</p>
         </div>
       </div>
-      <img src="holder.js/119x29?text=Logo" alt="" class="panel-logo">
     </div>
   </div>
-  <div class="panel panel-card">
-    <div class="panel-body">
-      <h2 class="subheader panel-header">Certification Information</h2>
+  <div class="card">
+      <div class="card-block">
+        <h5 class="card-title-secondary">Certification Information</h5>
+        <h5 class="text-label">Certification Number</h5>
+        <p>123456789</p>
 
-      <h4>Certification Number</h4>
-      <p>123456789</p>
+        <h5 class="text-label">Status</h5>
+        <p>Modified</p>
 
-      <h4>Status</h4>
-      <p>Modified</p>
-
-      <h4>Message</h4>
-      <p data-mock="sentences:2">temporibus ducimus sunt quibusdam
-distinctio facilis aut
-nisi distinctio aut aut omnis</p>
-    </div>
+        <h5 class="text-label">Message</h5>
+        <p data-mock="sentences:2">repellendus cupiditate magnam unde aliquid omnis ex perspiciatis
+sequi commodi dolores
+molestias velit beatae cum ducimus est ratione vel</p>
+      </div>
   </div>
-  <div class="panel panel-card">
-    <div class="panel-body">
-      <h2 class="subheader panel-header">Provider Information</h2>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Provider Information</h5>
       <div class="row">
         <div class="col-sm-3">
-          <h4>Requesting Provider</h4>
-          <p data-mock="fullNameReverse:2">Hernandez, Noah</p>
+          <h5 class="text-label">Requesting Provider</h5>
+          <p data-mock="fullNameReverse:2">Williams, Liam</p>
         </div>
         <div class="col-sm-3">
-          <h4>Referred-To-Provider</h4>
+          <h5 class="text-label">Referred-To-Provider</h5>
           <p>Riviera, Nick</p>
         </div>
       </div>
       <div class="panel panel-default panel-collapsible">
         <div class="panel-heading">
-          <h4 class="panel-title">
-            <a class="collapsed" data-toggle="collapse" href="#exampleCollapse">
+            <a class="collapsed panel-collapsible-link" data-toggle="collapse" href="#exampleCollapse">
               View more data
             </a>
-          </h4>
         </div>
         <div id="exampleCollapse" class="collapse" aria-expanded="false">
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et ligula ut elit mattis sodales. Fusce pharetra magna ut maximus maximus. Praesent vehicula nibh tincidunt elit congue malesuada.</p>
-            <p>semper, ut consectetur turpis sollicitudin. Etiam vel sodales enim. Integer sed varius dolor.</p>
+            <p data-mock="paragraph:3">ut neque aliquid earum
+magnam officia omnis eos maiores delectus
+dolores illo exercitationem id doloribus sed pariatur
+consectetur est voluptas voluptatem id culpa sit ut
+voluptatem dolore fugit placeat eos</p>
+            <p data-mock="paragraph:5">odio dicta reiciendis
+mollitia quia est earum velit
+ad cupiditate eius ratione illo doloremque velit
+optio corporis accusantium tenetur adipisci omnis</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-card">
-    <div class="panel-body">
-      <h2 class="subheader panel-header">Service Information</h2>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Service Information</h5>
       <div class="row">
         <div class="col-sm-3 col-ms-6">
-          <h4>Service Type/Quantity</h4>
+          <h5 class="text-label">Service Type/Quantity</h5>
           <p>3 Days</p>
-          <h4>Admission Type</h4>
+          <h5 class="text-label">Admission Type</h5>
           <p>Elective</p>
         </div>
         <div class="col-sm-3 col-ms-6">
-          <h4>Place of Service</h4>
+          <h5 class="text-label">Place of Service</h5>
           <p>Inpatient Hospital</p>
-          <h4>Type of Service</h4>
+          <h5 class="text-label">Type of Service</h5>
           <p>Cardiac</p>
         </div>
         <div class="col-sm-3 col-ms-6">
-          <h4>Service/Admission Data</h4>
+          <h5 class="text-label">Service/Admission Data</h5>
           <p>12/24/2012</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-card">
-    <div class="panel-body">
-      <h2 class="subheader panel-header">Additional Services Information</h2>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Additional Services Information</h5>
       <div class="row">
         <div class="col-sm-3 col-ms-6">
-          <h4>Procedure Code</h4>
+          <h5 class="text-label">Procedure Code</h5>
           <p>49000</p>
-          <h4>Status</h4>
+          <h5 class="text-label">Status</h5>
           <p>No action required</p>
         </div>
-        <div class="col-sm-3 col-ms-6">
-          <h4>Date of Service</h4>
+        <div class="col-sm-4 col-ms-6">
+          <h5 class="text-label">Date of Service</h5>
           <p>12/24/2012 - 12/24/2012</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-card">
-    <div class="panel-body">
-      <h2 class="subheader panel-header">Payer Contact Information</h2>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Payer Contact Information</h5>
       <div class="row">
         <div class="col-sm-3">
-          <h4>Contact Name</h4>
+          <h5 class="text-label">Contact Name</h5>
           <p>Aetna</p>
         </div>
         <div class="col-sm-3">
-          <h4>Phone Number</h4>
+          <h5 class="text-label">Phone Number</h5>
           <p>(800) 955-5682</p>
         </div>
       </div>

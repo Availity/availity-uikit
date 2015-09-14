@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Remittance Dashboard</title>
+  <title>Availity UIKit Payer Spaces Page</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -288,135 +288,114 @@
 </nav>
 
 <main>
-<div class="container-fluid">
-  <h2 class="page-header">Remittance Processing</h2>
-  <div class="container-md-height">
-    <div class="row row-md-height">
-      <div class="col-md-4 col-md-height">
-        <div class="card">
-          <div class="card-block">
-            <h1 class="metric-value">9 <small>checks</small></h1>
-            <h3 class="metric-value">$28,228 <small>value</small></h3>
-            <hr class="divider"/>
-            <h5 class="card-title">Download Package</h5>
-            <p>These checks are now ready to package.</p>
-            <button class="btn btn-primary">Create Packages</button>
-          </div>
-        </div>
-      </div>
-        <div class="col-md-4 col-md-height">
-          <div class="card">
-            <div class="card-block">
-              <h1 class="metric-value">30 <small>checks</small></h1>
-              <h3 class="metric-value">$119,228 <small>value</small></h3>
-              <hr class="divider"/>
-              <h5 class="card-title">Ready for download</h5>
-              <p>These checks were packaged into files and are ready for download.</p>
-              <button class="btn btn-primary">Download Files</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-md-height">
-          <div class="card">
-            <div class="card-block">
-              <h1 class="metric-value">61 <small>checks</small></h1>
-              <h3 class="metric-value">$241,228 <small>value</small></h3>
-              <hr class="divider"/>
-              <h5 class="card-title">To Mark as Posted</h5>
-              <p>These checks have been downloaded and are ready to be marked as posted. Some really long sentence to tes the equal card height.</p>
-              <button class="btn btn-primary">Check Details</button>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card card-block">
-          <h4 class="card-header-secondary">
-            Top Remit Checks <small>12/04/14</small>
-            <a href="#" class="card-header-link">Change Date</a>
-          </h4>
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Payer</th>
-                <th>Check Amount</th>
-                <th>Dollar Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-left">Blue Cross Blue Shield of Indiana</td>
-                <td>4</td>
-                <td>$13,240.67</td>
-              </tr>
-              <tr>
-                <td class="text-left">Aetna</td>
-                <td>3</td>
-                <td>$12,200.34</td>
-              </tr>
-              <tr>
-                <td class="text-left">Cigna</td>
-                <td>1</td>
-                <td>$5,853.21</td>
-              </tr>
-              <tr>
-                <td class="text-left">Medicare Indiana</td>
-                <td>3</td>
-                <td>$2,204.55</td>
-              </tr>
-              <tr>
-                <td class="text-left">United Healthcare</td>
-                <td>1</td>
-                <td>$700.33</td>
-              </tr>
-            </tbody>
-          </table>
+<main class="container">
 
+  <ul class="breadcrumb">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li class="active">
+      Payer Name
+    </li>
+  </ul>
+
+  <div class="spaces">
+    <div class="spaces-header">
+      <div class="spaces-header-col spaces-header-col-left">
+        <a href="http://www.example.com" class="spaces-logo holderjs">
+        </a>
+      </div>
+      <div class="spaces-header-col spaces-header-col-right">
+        <a href="http://www.example.com" class="spaces-link"> www.example.com</a>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card card-block">
-        <h4 class="card-header-secondary">
-          Missing Checks
-          <a href="#" class="card-header-link">See All</a>
-        </h4>
-        <table class="table table-striped text-left">
-          <thead>
-            <tr>
-              <th>Ticket Number</th>
-              <th class="status-col">Status</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="#">#124456</a></td>
-              <td class="status-col status-col-complete">Remittance Check Located!</td>
-              <td><button type="button" class="close">&times;</button></td>
-            </tr>
-            <tr>
-              <td><a href="#">#123456</a></td>
-              <td class="status-col">Contacted Payer</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><a href="#">#124592</a></td>
-              <td class="status-col">Researching Internally</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><a href="#">#123456</a></td>
-              <td class="status-col">Researching Internally</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="billboard">
+      <div class="col-sm-4 billboard-featured">
+        <div class="card card-block">
+          <h2 class="card-title">Fee Schedule</h2>
+          <h3>This new space is just for you</h3>
+          <p class="card-text">Fee Schedules retrieves your contracted price information for the patient services you perform</p>
+          <p>
+            <a class="btn btn-lg btn-default btn-billboard" href="payer-spaces.html">Access &#xBB;</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <hr>
+
+  <div role="tabpanel">
+      <ul class="nav nav-pills-secondary" role="tablist">
+        <li class="active">
+          <a href="#apps" role="tab" data-toggle="tab">Applications</a>
+        </li>
+        <li>
+          <a href="#resources" role="tab" data-toggle="tab">Resources</a>
+        </li>
+        <li>
+          <a href="#news" role="tab" data-toggle="tab">News and Announcements</a>
+        </li>
+      </ul>
+      <div class="tab-content tab-bump">
+        <div role="tabpanel" class="tab-pane active" id="apps">
+          <div class="container-sm-height">
+            <div class="row row-sm-height">
+              <div class="col-sm-4 col-sm-height">
+                <div class="card">
+                  <div class="card-block">
+                    <h3 class="card-title">835 Registration</h3>
+                    <p class="card-text" data-mock="sentence:1">excepturi dolorum unde enim sunt et tempora</p>
+                    <button type="button" class="btn btn-default">Access &#xBB;</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+              <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Eligibility &amp; Benefits</h3>
+                    <p class="card-text" data-mock="sentence:1">excepturi dolorum unde enim sunt et tempora</p>
+                    <button type="button" class="btn btn-default">Access &#xBB;</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="card">
+                  <div class="card-block">
+                    <h3 class="card-title">Provider Registration &amp; Self-Service</h3>
+                    <p class="card-text" data-mock="sentence:1">excepturi dolorum unde enim sunt et tempora</p>
+                    <button type="button" class="btn btn-default">Access &#xBB;</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="resources">
+          <div class="disclaimer">
+            THESE LINKS MAY RE-DIRECT TO THIRD PARTY SITES AND ARE PROVIDED FOR YOUR CONVENIENCE ONLY. AVAILITY IS NOT RESPONSIBLE FOR THE CONTENT OR SECURITY OF ANY THIRD PARTY SITES AND DOES NOT ENDORSE ANY PRODUCTS OR SERVICES PROVIDED BY THIRD PARTIES.
+          </div>
+          <div class="card card-block">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-result">
+                <h4 class="list-group-item-heading list-group-item-result-heading">Physical Medicine Program (eviCore healthcare)</h4>
+              </a>
+              <a href="#" class="list-group-item list-group-item-result">
+                <h4 class="list-group-item-heading list-group-item-result-heading">AIM Specialty Health &#x2122;</h4>
+                <p class="list-group-item-text text-muted">Radiology Quality Initiative</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="news">
+          <p class="lead">There are no news or announcements available at this time.</p>
+        </div>
+      </div>
+    </div>
+</main>
+
 
 </main>
 <!-- <footer class="footer">

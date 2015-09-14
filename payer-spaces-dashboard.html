@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Payer Spaces Anthem</title>
+  <title>Availity UIKit Payer Spaces Dashboard</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -32,13 +32,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand-availity" href="#">
+      <a class="navbar-brand-availity" href="/index.html">
         <img alt="Availity Logo" src="images/logo-availity.png">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
       <ul class="nav navbar-nav">
-        <li><a href="#"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li><a href="/index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
         <li>
           <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
@@ -288,123 +288,118 @@
 </nav>
 
 <main>
-<main class="container-fluid">
-
-  <ul class="breadcrumb">
-    <li>
-      <a href="#">Home</a>
-    </li>
-    <li class="active">
-      Anthem
-    </li>
-  </ul>
-
-  <div class="spaces-anthem">
-
-    <div class="spaces-header">
-      <div class="spaces-header-col spaces-header-col-left">
-        <a href="http://www.anthem.com" class="spaces-logo holderjs" data-background-src="?holder.js/234x60"></a>
-      </div>
-      <div class="spaces-header-col spaces-header-col-right">
-        <a href="http://www.anthem.com" class="spaces-link"> www.anthem.com</a>
-      </div>
-    </div>
-
-    <div class="billboard holderjs" data-background-src="?holder.js/100px260">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="billboard-featured">
-            <h2>Fee Schedule</h2>
-            <p>Fee Schedules retrieves your contracted price information for the patient services you perform</p>
-            <p>
-              <a class="btn btn-lg btn-default btn-billboard" href="payer-spaces.html">Access &#xBB;</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
+<div class="container-fluid">
+  <h1>Payer Spaces</h1>
+  <section>
   <div role="tabpanel">
-      <ul class="nav nav-pills-secondary" role="tablist">
-        <li class="active">
-          <a href="#apps" role="tab" data-toggle="tab">Applications</a>
-        </li>
-        <li>
-          <a href="#resources" role="tab" data-toggle="tab">Resources</a>
-        </li>
-        <li>
-          <a href="#news" role="tab" data-toggle="tab">News and Announcments</a>
-        </li>
-      </ul>
-      <div class="tab-content tab-bump">
-        <div role="tabpanel" class="tab-pane active" id="apps">
-          <div class="container-sm-height">
-            <div class="row row-sm-height">
-              <div class="col-sm-4 col-sm-height">
-                <div class="panel panel-card">
-                  <div class="panel-body">
-                    <h3>835 Registration</h3>
-                    <p data-mock="sentences:1">quisquam est exercitationem hic expedita rerum molestiae sit
-qui aspernatur in maxime
-accusamus tempora necessitatibus</p>
-                    <p>
-                      <button type="button" class="btn btn-default">
-                        Request Access &#xBB;
-                      </button>
-                    </p>
-                  </div>
+    <ul class="nav nav-pills-secondary nav-header" role="tablist">
+      <li class="active">
+        <a href="#home2" role="tab" data-toggle="tab">All Apps</a>
+      </li>
+      <li>
+        <a href="#profile2" role="tab" data-toggle="tab">My Apps</a>
+      </li>
+      <li>
+        <a href="#messages2" role="tab" data-toggle="tab">Favorite Apps</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home2">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-inverse card-default card-block">
+
+              <h4 class="card-header-secondary">
+                Payer Apps
+                <p class="card-text"><small>Search for apps using the options below</small></p>
+              </h4>
+
+              <form class="form">
+                <div class="form-group">
+                  <label for="search1">Search</label>
+                  <input type="text" id="search1" class="form-control" placeholder="Search">
+                </div>
+                <div class="form-group">
+                  <label for="text1">Category</label>
+                  <select class="select2 form-control">
+                    <option>All</option>
+                    <option>Administrative</option>
+                    <option>Clinical</option>
+                    <option>Free</option>
+                    <option>Utilities</option>
+                  </select>
+                </div>
+                <button class="btn btn-success btn-block">Search</button>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card card-block">
+              <div class="card-caret"></div>
+
+              <h4 class="card-title">Humana</h4>
+              <h3><a href="#">Primary Prior Authorization</a></h3>
+              <div class="row">
+                <div class="col-sm-8">
+                  <p class="card-text">Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quid securi etiam tamquam eu fugiat nulla pariatur. Quae vero auctorem tractata ab fiducia dicuntur. Contra legem facit qui id facit quodprohibet.</p>
+                  <p class="card-text">
+                    <strong class="h7">Revelant Plans in Your Region</strong>
+                    Humana Connect (All), Humana Direct Bronze, Medicare (All)
+                  </p>
+                  <p class="card-text">
+                    <strong class="h7">Category</strong>
+                    <a href="#">Print Access</a>
+                  </p>
+                </div>
+                <div class="col-sm-4">
+                  <p>
+                    <button class="btn btn-lg btn-primary btn-block">Request Access</button>
+                  </p>
+                  <p><small>This tool is not currently enabled for your organization. Request access from your admin to use this tool.</small></p>
                 </div>
               </div>
 
-              <div class="col-sm-4 col-sm-height">
-                <div class="panel panel-card">
-                  <div class="panel-body">
-                    <h3>Eligibility &amp; Benefits</h3>
-                    <p data-mock="sentences:1">quisquam est exercitationem hic expedita rerum molestiae sit
-qui aspernatur in maxime
-accusamus tempora necessitatibus</p>
-                    <p>
-                      <button type="button" class="btn btn-default">
-                        Request Access &#xBB;
-                      </button>
-                    </p><p>
-                  </p></div>
+            </div>
+            <div class="card card-block">
+              <div class="card-caret"></div>
+              <h4 class="card-title">Humana</h4>
+              <h3><a href="#">Credential Lookup</a></h3>
+              <div class="row">
+                <div class="col-sm-8">
+                  <p class="card-text">Sed haec quis possit intrepidus aestimare tellus. Quid securi fugiat nulla pariatur. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quid securi etiam tamquam eu fugiat nulla pariatur. Quae vero auctorem tractata ab fiducia dicuntur. Contra legem facit qui id facit quodprohibet.</p>
+                  <p class="card-text">
+                    <strong class="h7">Revelant Plans in Your Region</strong>
+                    Humana Connect (All), Humana Direct Bronze, Medicare (All)
+                  </p>
+                  <p class="card-text">
+                    <strong class="h7">Category</strong>
+                    <a href="#">Resources</a>
+                  </p>
                 </div>
-              </div>
-
-              <div class="col-sm-4 col-sm-height">
-                <div class="panel panel-card">
-                  <div class="panel-body">
-                    <h3>Provider Registration &amp; Self-Service</h3>
-                    <p data-mock="sentences:1">quisquam est exercitationem hic expedita rerum molestiae sit
-qui aspernatur in maxime
-accusamus tempora necessitatibus</p>
-                    <p>
-                      <button type="button" class="btn btn-default">
-                        Request Access &#xBB;
-                      </button>
-                    </p>
-                  </div>
+                <div class="col-sm-4">
+                  <p>
+                    <button class="btn btn-lg btn-primary btn-block">Request Access</button>
+                  </p>
+                  <p>
+                    <small>This tool is not currently enabled for your organization. Request access from your admin to use this tool.</small>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane" id="resources">
-          <div class="disclaimer">
-            THESE LINKS MAY RE-DIRECT TO THIRD PARTY SITES AND ARE PROVIDED FOR YOUR CONVENIENCE ONLY. AVAILITY IS NOT RESPONSIBLE FOR THE CONTENT OR SECURITY OF ANY THIRD PARTY SITES AND DOES NOT ENDORSE ANY PRODUCTS OR SERVICES PROVIDED BY THIRD PARTIES.
-          </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="news">
-          <p class="lead">News</p>
-        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="profile2">
+        <p class="lead">My Apps</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="messages2">
+        <p class="lead">Favorite Apps</p>
       </div>
     </div>
-</main>
-
+  </div>
+  </section>
+</div>
 
 </main>
 <!-- <footer class="footer">
