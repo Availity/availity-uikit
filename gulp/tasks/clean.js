@@ -3,47 +3,37 @@ var gulp = require('gulp');
 gulp.task('clean', ['clean:docs']);
 gulp.task('clean:dist', ['clean:css', 'clean:js', 'clean:fonts', 'clean:images']);
 
-gulp.task('clean:docs', function(cb) {
+gulp.task('clean:docs', function() {
   var config = require('../config');
   var del = require('del');
 
-  del([config.docs.dest], function() {
-    cb();
-  });
+  return del([config.docs.dest]);
 });
 
-gulp.task('clean:css', function(cb) {
+gulp.task('clean:css', function() {
   var config = require('../config');
   var del = require('del');
 
-  del([config.css.dest], function() {
-    cb();
-  });
+  return del([config.css.dest]);
 });
 
-gulp.task('clean:fonts', function(cb) {
+gulp.task('clean:fonts', function() {
   var config = require('../config');
   var del = require('del');
 
-  del([config.fonts.destDist], function() {
-    cb();
-  });
+  return del([config.fonts.destDist]);
 });
 
-gulp.task('clean:js', function(cb) {
+gulp.task('clean:js', function() {
   var config = require('../config');
   var del = require('del');
 
-  del([config.lib.destDist], function() {
-    cb();
-  });
+  return del([config.lib.destDist]);
 });
 
-gulp.task('clean:images', function(cb) {
+gulp.task('clean:images', function() {
   var config = require('../config');
   var del = require('del');
 
-  del([config.images.destDist], function() {
-    cb();
-  });
+  return del([config.images.destDist]);
 });

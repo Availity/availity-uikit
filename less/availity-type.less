@@ -48,6 +48,32 @@ p {
   word-wrap: break-word;
 }
 
+.text-label {
+  margin: 0;
+  margin-bottom: .1rem;
+  font-weight: 600;
+
+  &.text-label-inline {
+    margin-bottom: 0;
+  }
+}
+
+.bullet {
+  color: @text-muted;
+}
+
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: (@line-height-computed / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+
 .page-header {
   margin: (@line-height-computed * 1) 0 @line-height-computed;
 }
@@ -66,7 +92,7 @@ p {
 
 .metric-value {
   margin-bottom: 0;
-  margin-top: 5px;
+  margin-top: .5em;
 
   &:first-child {
     margin-top: 0;
