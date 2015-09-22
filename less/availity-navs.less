@@ -40,6 +40,13 @@
         border-bottom: 3px solid @blue-darker;
       }
     }
+
+    &.disabled > a {
+      &:hover,
+      &:focus {
+        border-bottom-color: @disabled-text-color;
+      }
+    }
   }
 }
 
