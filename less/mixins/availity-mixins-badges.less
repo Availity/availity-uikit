@@ -1,10 +1,11 @@
-.badge-variant(@color) {
-  background-color: @color;
+.badge-variant(@bgColor; @color: @white) {
+  background-color: @bgColor;
+  color: @color;
 
   &[href] {
     &:hover,
     &:focus {
-      background-color: darken(@color, 10%);
+      background-color: darken(@bgColor, 10%);
     }
   }
 }
