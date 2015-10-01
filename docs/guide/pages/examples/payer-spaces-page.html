@@ -6,7 +6,7 @@ menu: 6
 shortName: PSD
 icon: blue
 ---
-<main class="container">
+<div class="container">
 
   <ul class="breadcrumb">
     <li>
@@ -17,27 +17,34 @@ icon: blue
     </li>
   </ul>
 
-  <div class="spaces">
-    <div class="spaces-header">
-      <div class="spaces-header-col spaces-header-col-left">
-        <a href="http://www.example.com" class="spaces-logo holderjs">
-        </a>
-      </div>
-      <div class="spaces-header-col spaces-header-col-right">
-        <a href="http://www.example.com" class="spaces-link"> www.example.com</a>
-      </div>
+
+  <div class="spaces-header">
+    <div class="spaces-header-col spaces-header-col-left">
+      <a href="http://www.example.com" class="spaces-logo holderjs">
+      </a>
     </div>
-    <div class="billboard">
-      <div class="col-sm-4 billboard-featured">
+    <div class="spaces-header-col spaces-header-col-right">
+      <a href="http://www.example.com" class="spaces-link"> www.example.com</a>
+    </div>
+  </div>
+
+  <div class=" billboard container-sm-height">
+    <div class="row row-sm-height">
+      <div class="billboard-featured col-sm-4 col-sm-height">
         <div class="card card-block">
           <h2 class="card-title">Fee Schedule</h2>
-          <h3>This new space is just for you</h3>
-          <p class="card-text">Fee Schedules retrieves your contracted price information for the patient services you perform</p>
+          <h3 data-mock="sentence:1">This new space is just for you</h3>
+          <p class="card-text" data-mock="paragraph:1">Fee Schedules retrieves your contracted price information for the patient services you perform</p>
           <p>
             <a class="btn btn-lg btn-default btn-billboard" href="payer-spaces.html">Access »</a>
           </p>
         </div>
       </div>
+
+      <div class="billboard-display col-sm-8 col-sm-height">
+
+      </div>
+
     </div>
   </div>
 
@@ -112,5 +119,5 @@ icon: blue
         </div>
       </div>
     </div>
-</main>
+</div>
 

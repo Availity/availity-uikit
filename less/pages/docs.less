@@ -181,9 +181,12 @@ blockquote {
   background: url(?holder.js/234x60?text=Logo) no-repeat
 }
 
-.billboard {
-  background: url(../images/default/love.jpg) no-repeat top right;
-  background-size: cover;
+.billboard-display {
+
+  @media (min-width: @screen-sm-min) {
+    background-image: url(../images/default/love.jpg);
+  }
+
 }
 
 //== Navbar
