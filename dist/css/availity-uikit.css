@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.13.1 -- September-29
+ * availity-uikit v0.13.2 -- September-30
  * Copyright 2015 Availity, LLC 
  */
 
@@ -11749,30 +11749,28 @@ input[type="radio"] .styled:checked + label::after {
     display: none !important;
   }
 }
-.billboard {
-  min-height: 100%;
-}
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .billboard {
-    background: none !important;
-  }
-}
-@media (min-width: 767px) {
-  .billboard {
-    display: table;
-    width: 100%;
+    min-height: 300px;
   }
 }
 .billboard-featured {
-  padding: 24px;
+  padding: 0;
 }
-@media (min-width: 767px) {
-  .billboard-featured {
-    display: table-cell;
+@media (min-width: 768px) {
+  .billboard-featured > .card {
+    min-height: 300px;
   }
 }
-.billboard-featured > .card {
-  margin-bottom: 0;
+.billboard-display {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .billboard-display {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 .spaces-header {
   margin-bottom: .3rem;
