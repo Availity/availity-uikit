@@ -21,9 +21,14 @@
 .billboard-display {
 
   padding: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+
+  @media (min-width: @screen-sm-min) {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+
 
 }
 
