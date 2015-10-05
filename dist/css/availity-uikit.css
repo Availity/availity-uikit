@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.13.2 -- September-30
+ * availity-uikit v0.13.3 -- October-05
  * Copyright 2015 Availity, LLC 
  */
 
@@ -7236,6 +7236,10 @@ a.list-group-item-danger.active:focus {
   margin-top: 0;
   margin-bottom: .5em;
 }
+.card-title + .card-title {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
 .card-title-secondary {
   margin-top: 0;
   margin-bottom: 1em;
@@ -11749,28 +11753,34 @@ input[type="radio"] .styled:checked + label::after {
     display: none !important;
   }
 }
-@media (min-width: 768px) {
+.billboard {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .billboard {
+    background: none !important;
+  }
+}
+@media (min-width: 767px) {
   .billboard {
     min-height: 300px;
   }
 }
 .billboard-featured {
-  padding: 0;
+  margin-bottom: 0;
 }
-@media (min-width: 768px) {
-  .billboard-featured > .card {
-    min-height: 300px;
+@media (min-width: 767px) {
+  .billboard-featured {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
   }
 }
-.billboard-display {
-  padding: 0;
-}
-@media (min-width: 768px) {
-  .billboard-display {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+.featured-title-secondary {
+  font-weight: 500;
 }
 .spaces-header {
   margin-bottom: .3rem;
