@@ -1,35 +1,36 @@
-@billboard-height: 300px;
-
 .billboard {
 
-  @media (min-width: @screen-sm-min) {
-    min-height: @billboard-height;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  @media (max-width: @screen-xs-max) {
+    background: none !important;
+
   }
+
+  @media (min-width: @screen-xs-max) {
+    min-height: 300px;
+  }
+
 }
 
 .billboard-featured {
 
-  padding: 0;
+  margin-bottom:  0;
 
-  > .card {
-    @media (min-width: @screen-sm-min) {
-      min-height: @billboard-height;
-    }
+  @media (min-width: @screen-xs-max) {
+
+    position: absolute;
+    top: @availity-panel-card-padding;
+    left: @availity-panel-card-padding;
+    bottom: @availity-panel-card-padding;
   }
+
 }
 
-.billboard-display {
-
-  padding: 0;
-
-  @media (min-width: @screen-sm-min) {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-
-
+.featured-title-secondary {
+  font-weight: 500;
 }
 
 .spaces-header {
@@ -63,6 +64,7 @@
 
 @media (min-width: @screen-xs-max) {
 
+
   .spaces-header-col {
 
     display: table-cell;
@@ -79,4 +81,3 @@
   }
 
 }
-
