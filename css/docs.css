@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.13.1 -- September-29
+ * availity-uikit v0.13.3 -- October-05
  * Copyright 2015 Availity, LLC 
  */
 
@@ -137,9 +137,10 @@ blockquote,
 .spaces-logo {
   background: url(?holder.js/234x60?text=Logo) no-repeat;
 }
-.billboard {
-  background: url(../images/default/love.jpg) no-repeat top right;
-  background-size: cover;
+@media (min-width: 768px) {
+  .billboard {
+    background-image: url(../images/default/love.jpg);
+  }
 }
 .navbar {
   margin-bottom: 0;

@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.13.1 -- September-29
+ * availity-uikit v0.13.3 -- October-05
  * Copyright 2015 Availity, LLC 
  */
 
@@ -7233,6 +7233,10 @@ a.list-group-item-danger.active:focus {
   border-color: transparent #0b8c6f transparent transparent;
 }
 .card-title {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+.card-title + .card-title {
   margin-top: 0;
   margin-bottom: .5em;
 }

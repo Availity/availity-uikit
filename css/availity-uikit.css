@@ -1,4 +1,4 @@
-@import url('availity-uikit-blessed1.css?z=1443511040684');
+@import url('availity-uikit-blessed1.css?z=1444068809827');
 
 .select2-offscreen,
 .select2-offscreen:focus {
@@ -1181,7 +1181,9 @@ input[type="radio"] .styled:checked + label::after {
   }
 }
 .billboard {
-  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
 }
 @media (max-width: 767px) {
   .billboard {
@@ -1190,20 +1192,22 @@ input[type="radio"] .styled:checked + label::after {
 }
 @media (min-width: 767px) {
   .billboard {
-    display: table;
-    width: 100%;
+    min-height: 300px;
   }
 }
 .billboard-featured {
-  padding: 24px;
+  margin-bottom: 0;
 }
 @media (min-width: 767px) {
   .billboard-featured {
-    display: table-cell;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
   }
 }
-.billboard-featured > .card {
-  margin-bottom: 0;
+.featured-title-secondary {
+  font-weight: 500;
 }
 .spaces-header {
   margin-bottom: .3rem;
