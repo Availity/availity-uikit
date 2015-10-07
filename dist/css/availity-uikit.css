@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.13.3 -- October-05
+ * availity-uikit v0.14.0 -- October-06
  * Copyright 2015 Availity, LLC 
  */
 
@@ -5998,6 +5998,14 @@ a.badge:focus {
 .nav-cards > li > a > .badge {
   margin-left: 3px;
 }
+.badge-default {
+  background-color: #e8ebeb;
+  color: #4d4f53;
+}
+.badge-default[href]:hover,
+.badge-default[href]:focus {
+  background-color: #cdd3d3;
+}
 .badge-primary {
   background-color: #2261b5;
   color: #ffffff;
@@ -8185,6 +8193,7 @@ button.close {
 .main-sidebar {
   height: 100%;
   overflow: auto;
+  *zoom: 1;
 }
 .main-sidebar:before {
   content: "";
@@ -8208,6 +8217,7 @@ button.close {
 .main-content {
   height: 100%;
   overflow: auto;
+  *zoom: 1;
 }
 .main-content:before {
   content: "";
@@ -8224,6 +8234,8 @@ button.close {
   left: 0;
   right: 0;
   margin-top: 0;
+  overflow: hidden;
+  top: 92px;
 }
 .main-container > .container-fluid {
   padding: 0;
@@ -8238,10 +8250,6 @@ button.close {
 .main-container > .container-fluid > .row > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
-}
-.navbar-secondary.navbar-fixed-top + .main-container {
-  padding-top: 0;
-  top: 92px;
 }
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
