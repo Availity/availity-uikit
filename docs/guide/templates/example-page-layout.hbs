@@ -4,13 +4,14 @@
   {{> defaultHeader}}
 </head>
 <body class="body">
-{{> examplesNav}}
 
+{{#if this.nav}}
+{{> examplesNav}}
+{{/if}}
 
 <main>
 {{{this.contents}}}
 </main>
-
 
 {{> defaultFooter}}
 
