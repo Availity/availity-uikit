@@ -29,10 +29,10 @@
     "chartjs": "1.0.2",
     "ExplorerCanvas": "*",
     "jquery": ">=1.9.1 <2.0.0",
-    "moment": "2.9.0",
+    "moment": "~2.10.6",
     "select2": "3.5.2",
     "select2-bootstrap-css": "1.4.6",
-    "velocity": "1.2.2",
+    "velocity": "~1.2.3",
     "yamm3": "1.1.0"
   },
   "devDependencies": {
