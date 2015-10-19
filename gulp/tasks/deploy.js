@@ -14,7 +14,7 @@ var getName = function() {
   return pkg.name;
 };
 
-gulp.task('deploy:github:pages', function () {
+gulp.task('deploy:github:pages', function() {
   return gulp.src('./build/guide/**/*')
     .pipe(ghPages({
       cacheDir: path.join(os.tmpdir(), getName())

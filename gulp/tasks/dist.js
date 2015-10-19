@@ -41,7 +41,7 @@ gulp.task('dist:css', function() {
     }))
     .pipe(insert.prepend(banner() + '\n'))
     .pipe(sourcemaps.write(config.css.destMaps))
-    .pipe(gulpif(config.args.verbose, using({prefix:'dist:css [dest] using'})))
+    .pipe(gulpif(config.args.verbose, using({prefix: 'dist:css [dest] using'})))
     .pipe(gulp.dest(config.css.dest))
     .pipe(filter('**/*.css'))
     .pipe(minifyCSS({
@@ -59,7 +59,7 @@ gulp.task('dist:fonts', function() {
   var flatten = require('gulp-flatten');
 
   return gulp.src(config.fonts.src)
-    .pipe(gulpif(config.args.verbose, using({prefix:'Task [dist:fonts] using'})))
+    .pipe(gulpif(config.args.verbose, using({prefix: 'Task [dist:fonts] using'})))
     .pipe(flatten())
     .pipe(gulp.dest(config.fonts.destDist));
 });
@@ -77,13 +77,13 @@ gulp.task('dist:js', function() {
     }))
     .pipe(rename({ extname: '.min.js' }))
     .pipe(insert.prepend(banner() + '\n'))
-    .pipe(gulpif(config.args.verbose, using({prefix:'Task [dist:js] using'})))
+    .pipe(gulpif(config.args.verbose, using({prefix: 'Task [dist:js] using'})))
     .pipe(gulp.dest(config.lib.destDist));
 
 });
 
 gulp.task('dist:images', function() {
   return gulp.src(config.images.src)
-    .pipe(gulpif(config.args.verbose, using({prefix:'Task [dist:images] using'})))
+    .pipe(gulpif(config.args.verbose, using({prefix: 'Task [dist:images] using'})))
     .pipe(gulp.dest(config.images.destDist));
 });

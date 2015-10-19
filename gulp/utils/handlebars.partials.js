@@ -12,7 +12,7 @@ module.exports = function(target) {
   var partialPaths = glob.sync(path.join(config.project.path, target));
 
   // Fill partials object
-  for(var i = 0; i < partialPaths.length; i++) {
+  for (var i = 0; i < partialPaths.length; i++) {
     var partialName = path.basename(partialPaths[i], config.docs.templates.extension);
     var _partialName = _s.camelize(partialName);
     partials[_partialName] = partialPaths[i];

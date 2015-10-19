@@ -4,5 +4,6 @@
 /bower_components/
 /coverage-reports/
 .DS_Store
+npm-debug.log
 
 /build/

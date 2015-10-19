@@ -43,7 +43,7 @@ function plugin(options) {
 
     _.each(files, function(file, name) {
 
-      if(!isHtmlFile(file.path || name)) {
+      if (!isHtmlFile(file.path || name)) {
         return;
       }
 
@@ -65,13 +65,13 @@ function plugin(options) {
         foundMatches = true;
 
         // remove attr if configured
-        if(opts.removeAttributeAfterwards) {
+        if (opts.removeAttributeAfterwards) {
           $(this).removeAttr('data-markdown');
         }
 
       });
 
-      if(foundMatches) { // only do anything to contents, if matches were found
+      if (foundMatches) { // only do anything to contents, if matches were found
         file.contents = new Buffer($.html());
       }
 

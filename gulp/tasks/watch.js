@@ -29,8 +29,8 @@ gulp.task('watch:partials', function() {
 
 gulp.task('watch:docs', function() {
   gulp.watch([
-  config.docs.all.src,
-  config.docs.templates.targets,
-  config.docs.partials.targets],
-  ['build:docs']);
+    config.docs.all.src,
+    config.docs.templates.targets,
+    config.docs.partials.targets],
+    ['build:docs']);
 });

@@ -33,8 +33,8 @@ gulp.task('release:add', function() {
 gulp.task('release:tag', function() {
 
   var getPkg = function() {
-    var pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
-    return pkg.version;
+    var _pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
+    return _pkg.version;
   };
 
   return gulp.src(['./package.json', './bower.json', './dist/*', 'README.md'])
@@ -57,17 +57,17 @@ gulp.task('release', function() {
       name: 'bump',
       message: 'What type of version bump would you like to do ? (current version is ' + pkg.version + ')',
       choices: [
-        'patch (' + pkg.version +' --> ' + semver.inc(pkg.version, 'patch') + ')',
+        'patch (' + pkg.version + ' --> ' + semver.inc(pkg.version, 'patch') + ')',
         'minor (' + pkg.version + ' --> ' + semver.inc(pkg.version, 'minor') + ')',
         'major (' + pkg.version + ' --> ' + semver.inc(pkg.version, 'major') + ')',
         'none (exit)'
       ]
     }, function(res) {
-      if(res.bump.match(/^patch/)) {
+      if (res.bump.match(/^patch/)) {
         type = 'patch';
-      } else if(res.bump.match(/^minor/)) {
+      } else if (res.bump.match(/^minor/)) {
         type = 'minor';
-      } else if(res.bump.match(/^major/)) {
+      } else if (res.bump.match(/^major/)) {
         type = 'major';
       }
 

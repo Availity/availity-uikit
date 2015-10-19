@@ -38,7 +38,7 @@ gulp.task('less:dev', function() {
     }))
     .pipe(gulp.dest(config.less.dest))
     .pipe(filter('**/*.css')) // Filtering stream to only css files
-    .pipe(gulpif(config.args.verbose, using({prefix:'Task [less:dev] using'})))
-    .pipe(reload({ stream:true }));
+    .pipe(gulpif(config.args.verbose, using({prefix: 'Task [less:dev] using'})))
+    .pipe(reload({ stream: true }));
 });
 

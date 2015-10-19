@@ -9,6 +9,6 @@ var config = require('../config');
 gulp.task('sync:css', function() {
 
   return gulp.src(config.css.src)
-    .pipe(gulpif(config.args.verbose, using({prefix:'Task [sync:css] using'})))
-    .pipe(reload({stream:true}));
+    .pipe(gulpif(config.args.verbose, using({prefix: 'Task [sync:css] using'})))
+    .pipe(reload({stream: true}));
 });

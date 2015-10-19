@@ -14,12 +14,12 @@ module.exports = function() {
   ' * <%= pkg.name %> v<%= pkg.version %> -- <%= today %>\n' +
   ' * Copyright <%= copyright %> Availity, LLC \n' +
   ' */\n',
-  {
-    file: '',
-    pkg: pkg,
-    copyright: utils.date(new Date(), 'yyyy'),
-    today: moment().format('MMMM-DD')
-  });
+    {
+      file: '',
+      pkg: pkg,
+      copyright: utils.date(new Date(), 'yyyy'),
+      today: moment().format('MMMM-DD')
+    });
 
   return banner;
 };

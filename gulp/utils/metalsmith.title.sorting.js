@@ -6,24 +6,24 @@ var Sort = module.exports = function(items) {
 
 var proto = Sort.prototype;
 
-proto.sort = function(a, b) {
+proto.sort = function(_a, _b) {
 
-  a = _.indexOf(this.items, a.title);
-  b = _.indexOf(this.items, b.title);
+  var a = _.indexOf(this.items, _a.title);
+  var b = _.indexOf(this.items, _b.title);
 
-  if(!a && !b) {
+  if (!a && !b) {
     return 0;
   }
-  if(!a) {
+  if (!a) {
     return -1;
   }
-  if(!b) {
+  if (!b) {
     return 1;
   }
-  if(b > a) {
+  if (b > a) {
     return -1;
   }
-  if(a > b) {
+  if (a > b) {
     return 1;
   }
   return 0;

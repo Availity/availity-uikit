@@ -1,3 +1,5 @@
+/* eslint no-console: 0 */
+
 var gulp = require('gulp');
 var metalsmithPrism = require('metalsmith-prism');
 var metalsmithMock = require('metalsmith-mock');
@@ -37,11 +39,11 @@ gulp.task('build:handlebars:partials', function() {
   });
 
   Handlebars.registerHelper('is', function(a, b, opts) {
-    if(a === b) {
+    if (a === b) {
       return opts.fn(this);
-    } else {
-      return opts.inverse(this);
     }
+
+    return opts.inverse(this);
   });
 
   Handlebars.registerHelper('date', function() {
@@ -53,9 +55,9 @@ gulp.task('build:handlebars:partials', function() {
     var out = '';
     var subcontext = [];
     var i;
-    if(context && context.length > 0) {
-      for(i = 0; i < context.length; i++) {
-        if(i > 0 && i % every === 0) {
+    if (context && context.length > 0) {
+      for (i = 0; i < context.length; i++) {
+        if (i > 0 && i % every === 0) {
           out += options.fn(subcontext);
           subcontext = [];
         }
@@ -109,15 +111,15 @@ gulp.task('build:docs', function() {
     )
     // only include full pages and ignore page snippets in dest build folder
     .pipe(filter(['*', '!**/*-component.html', '!**/*-javascript.html']))
-    .pipe(gulpif(config.args.verbose, using({prefix:'`build:docs` [dest] using'})))
+    .pipe(gulpif(config.args.verbose, using({prefix: 'build:docs [dest] using'})))
     .pipe(rename(function(file) {
-      if(!/\.hbs/.test(file.extname)) {
+      if (!/\.hbs/.test(file.extname)) {
         return;
       }
       file.extname = '.html';
     }))
     .pipe(gulp.dest(config.docs.dest))
-    .pipe(reload({stream:true}));
+    .pipe(reload({stream: true}));
 
 });
 
