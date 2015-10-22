@@ -78,6 +78,40 @@ ol {
   margin: (@line-height-computed * 1) 0 @line-height-computed;
 }
 
+.page-header-brand {
+
+  @media (min-width: @screen-xs-max) {
+    display: table;
+    width: 100%;
+  }
+}
+
+.page-header-title, .page-header-logo {
+
+  @media (min-width: @screen-xs-max) {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+}
+
+.page-header-title {
+
+  margin-bottom: 1rem;
+
+  @media (min-width: @screen-xs-max) {
+    text-align: left;
+  }
+
+}
+
+.page-header-logo {
+
+  @media (min-width: @screen-xs-max) {
+    text-align: right;
+  }
+
+}
+
 .section-header {
 
   &:extend(.page-header);
