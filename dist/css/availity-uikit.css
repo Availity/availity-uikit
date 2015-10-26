@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.14.0 -- October-06
+ * availity-uikit v0.15.0 -- October-26
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1239,6 +1239,7 @@ body {
 }
 .body {
   background-color: #f8f8f8;
+  overflow: auto;
 }
 a:hover {
   color: #000000;
@@ -1906,6 +1907,32 @@ ol ol {
 .page-header,
 .section-header {
   margin: 20px 0 20px;
+}
+@media (min-width: 767px) {
+  .page-header-brand {
+    display: table;
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .page-header-title,
+  .page-header-logo {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+}
+.page-header-title {
+  margin-bottom: 1rem;
+}
+@media (min-width: 767px) {
+  .page-header-title {
+    text-align: left;
+  }
+}
+@media (min-width: 767px) {
+  .page-header-logo {
+    text-align: right;
+  }
 }
 .section-header {
   margin: 20px 0 20px;
@@ -6601,6 +6628,9 @@ a.list-group-item-danger.active:focus {
 .list-group-item-result:last-child {
   border: 0;
 }
+.list-group-item-result > p:last-child {
+  margin-bottom: 0;
+}
 .list-group-item-result-heading {
   font-weight: 500;
 }
@@ -8233,9 +8263,9 @@ button.close {
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   margin-top: 0;
   overflow: hidden;
-  top: 92px;
 }
 .main-container > .container-fluid {
   padding: 0;
@@ -8250,6 +8280,10 @@ button.close {
 .main-container > .container-fluid > .row > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.navbar-secondary.navbar-fixed-top + main > .main-container,
+.navbar-secondary.navbar-fixed-top .main > .main-container {
+  top: 92px;
 }
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
@@ -11819,6 +11853,7 @@ input[type="radio"] .styled:checked + label::after {
   width: 234px;
   height: 60px;
   display: inline-block;
+  background-repeat: no-repeat;
 }
 .spaces-link {
   font-weight: bold;
