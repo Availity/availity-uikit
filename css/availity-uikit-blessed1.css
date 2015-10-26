@@ -1,5 +1,5 @@
 /**
- * availity-uikit v0.14.0 -- October-06
+ * availity-uikit v0.15.0 -- October-26
  * Copyright 2015 Availity, LLC 
  */
 
@@ -1239,6 +1239,7 @@ body {
 }
 .body {
   background-color: #f8f8f8;
+  overflow: auto;
 }
 a:hover {
   color: #000000;
@@ -1906,6 +1907,32 @@ ol ol {
 .page-header,
 .section-header {
   margin: 20px 0 20px;
+}
+@media (min-width: 767px) {
+  .page-header-brand {
+    display: table;
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .page-header-title,
+  .page-header-logo {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+}
+.page-header-title {
+  margin-bottom: 1rem;
+}
+@media (min-width: 767px) {
+  .page-header-title {
+    text-align: left;
+  }
+}
+@media (min-width: 767px) {
+  .page-header-logo {
+    text-align: right;
+  }
 }
 .section-header {
   margin: 20px 0 20px;
@@ -6601,6 +6628,9 @@ a.list-group-item-danger.active:focus {
 .list-group-item-result:last-child {
   border: 0;
 }
+.list-group-item-result > p:last-child {
+  margin-bottom: 0;
+}
 .list-group-item-result-heading {
   font-weight: 500;
 }
@@ -8233,9 +8263,9 @@ button.close {
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   margin-top: 0;
   overflow: hidden;
-  top: 92px;
 }
 .main-container > .container-fluid {
   padding: 0;
@@ -8250,6 +8280,10 @@ button.close {
 .main-container > .container-fluid > .row > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.navbar-secondary.navbar-fixed-top + main > .main-container,
+.navbar-secondary.navbar-fixed-top .main > .main-container {
+  top: 92px;
 }
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
@@ -10498,81 +10532,4 @@ html[dir="rtl"] .select2-container-multi .select2-choices li {
 }
 .select2-default {
   color: #999 !important;
-}
-.select2-container-multi .select2-choices .select2-search-choice {
-  padding: 3px 5px 3px 18px;
-  margin: 3px 0 3px 5px;
-  position: relative;
-  line-height: 13px;
-  color: #333;
-  cursor: default;
-  border: 1px solid #aaaaaa;
-  border-radius: 3px;
-  box-shadow: 0 0 2px #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
-  background-clip: padding-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #e4e4e4;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
-}
-html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice {
-  margin: 3px 5px 3px 0;
-  padding: 3px 18px 3px 5px;
-}
-.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
-  cursor: default;
-}
-.select2-container-multi .select2-choices .select2-search-choice-focus {
-  background: #d4d4d4;
-}
-.select2-search-choice-close {
-  display: block;
-  width: 12px;
-  height: 13px;
-  position: absolute;
-  right: 3px;
-  top: 4px;
-  font-size: 1px;
-  outline: none;
-  background: url('../images/vendor/select2.png') right top no-repeat;
-}
-html[dir="rtl"] .select2-search-choice-close {
-  right: auto;
-  left: 3px;
-}
-.select2-container-multi .select2-search-choice-close {
-  left: 3px;
-}
-html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
-  left: auto;
-  right: 2px;
-}
-.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover {
-  background-position: right -11px;
-}
-.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close {
-  background-position: right -11px;
-}
-/* disabled styles */
-.select2-container-multi.select2-container-disabled .select2-choices {
-  background-color: #f4f4f4;
-  background-image: none;
-  border: 1px solid #ddd;
-  cursor: default;
-}
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
-  padding: 3px 5px 3px 5px;
-  border: 1px solid #ddd;
-  background-image: none;
-  background-color: #f4f4f4;
-}
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {
-  display: none;
-  background: none;
 }
