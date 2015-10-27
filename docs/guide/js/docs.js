@@ -65,10 +65,13 @@
   });
 
   // Select2
-  $('#single-select, #multiple-select').select2({
-    placeholder: 'Select a State',
-    allowClear: true
-  }).on('select2-open', function() {
+  $('select').select2({
+    allowClear: true,
+    placeholder: {
+      id: '-1',
+      placeholder: 'Select one'
+    }
+  }).on('select2:open', function() {
 
     var $this = $(this);
     if ($this.parents('[class*="has-"]').length) {
@@ -83,10 +86,6 @@
         }
       }
     }
-  });
-
-  $('select').select2({
-    allowClear: true
   });
 
   // DO NOT USE THIS IN PRODUCTION...DEMO PURPOSES ONLY
