@@ -30,12 +30,13 @@
     "jquery": "~2.1.4",
     "moment": "~2.10.6",
     "select2": "~4.0.0",
-    "select2-bootstrap-css": "~1.4.6",
     "velocity": "~1.2.3",
-    "yamm3": "1.1.0"
+    "yamm3": "1.1.0",
+    "select2-bootstrap-theme": "~0.1.0-beta.4"
   },
   "devDependencies": {
     "holderjs": "~2.8.1",
+    "jquery-ui": "~1.11.4",
     "jquery.tocify.js": "~1.9.0"
   },
   "resolutions": {

@@ -1,10 +1,9 @@
-/* jshint browser:true */
-/* global Chart */
+/* global Chart, jQuery */
 (function($) {
 
   // Popovers and tooltips
   $('[data-toggle="popover"]').popover({
-    html : true
+    html: true
   });
 
   $('[data-toggle="tooltip"]').tooltip();
@@ -29,10 +28,10 @@
 
     var target = $(this).parents('.guide-example').next('.language-markup');
 
-    if(target.is(':visible')) {
-      target.velocity("slideUp", { duration: 200 });
+    if (target.is(':visible')) {
+      target.velocity('slideUp', { duration: 200 });
     }else {
-      target.velocity("fadeIn", {
+      target.velocity('fadeIn', {
         duration: 300,
         display: 'block'
       });
@@ -40,11 +39,11 @@
 
   });
 
-  //filter popover
+  // filter popover
   $('[data-toggle="filter"]').popover({
-    html : true,
-    placement : $(this).attr('data-placement'),
-    trigger : 'click',
+    html: true,
+    placement: $(this).attr('data-placement'),
+    trigger: 'click',
     content: function() {
       var target = $(this).attr('data-target');
       var $target = $(target);
@@ -52,44 +51,45 @@
     }
   });
 
-  $('.dropdown-menu a[data-toggle="tab"]').click(function (e) {
-      e.stopPropagation();
-      $(this).tab('show');
+  $('.dropdown-menu a[data-toggle="tab"]').click(function(e) {
+    e.stopPropagation();
+    $(this).tab('show');
   });
 
   $('#datetimepicker6').datepicker({
-      autoclose: true,
-      clearBtn: true,
-      todayBtn: true,
-      todayHighlight: true,
-      format: 'mm/dd/yyyy'
+    autoclose: true,
+    clearBtn: true,
+    todayBtn: true,
+    todayHighlight: true,
+    format: 'mm/dd/yyyy'
   });
 
   // Select2
   $('#single-select, #multiple-select').select2({
     placeholder: 'Select a State',
     allowClear: true
-  }).on("select2-open", function () {
+  }).on('select2-open', function() {
 
     var $this = $(this);
-    if($this.parents('[class*="has-"]').length) {
+    if ($this.parents('[class*="has-"]').length) {
 
       // get all CSS-classes from the element where we found "has-*" and collect them in an array
       var classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
 
       // go through the class names, find "has-"
-      for(var i = 0; i < classNames.length; ++i) {
-        if(classNames[i].match("has-")) {
+      for (var i = 0; i < classNames.length; ++i) {
+        if (classNames[i].match('has-')) {
           $('#select2-drop').addClass(classNames[i]);
         }
       }
     }
   });
 
-  $('.select2, .select2-multiple').select2({
+  $('select').select2({
     allowClear: true
   });
 
+  // DO NOT USE THIS IN PRODUCTION...DEMO PURPOSES ONLY
   setInterval(function() {
     var indicators = $('.loading-indicator');
     for (var i = 0; i < indicators.length; i++) {
@@ -131,16 +131,18 @@
   };
 
   var $chart1 = $('#guideChart1');
-  if($chart1[0]) {
+  if ($chart1[0]) {
     var ctx = $chart1[0].getContext('2d');
-    new Chart(ctx).Bar(data, {
+    var chart = new Chart(ctx);
+    chart = new chart.Bar(data, {
       responsive: true,
       maintainAspectRatio: false
     });
+    chart();
   }
 
-  $("#nav").tocify({
-    selectors: ".guide-section-header, .guide-subsection-title",
+  $('#nav').tocify({
+    selectors: '.guide-section-header, .guide-subsection-title',
     theme: 'bootstrap',
     scrollTo: 100
   });
