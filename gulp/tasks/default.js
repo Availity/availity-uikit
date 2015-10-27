@@ -7,7 +7,6 @@ gulp.task('default', [
   'copy:images',
   'copy:images:vendor',
   'copy:fonts',
-  'copy:polyfills',
   'copy:js:guide',
   'build',
   'server:sync',

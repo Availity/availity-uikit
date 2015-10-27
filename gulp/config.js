@@ -121,13 +121,14 @@ module.exports = {
   vendor: {
     name: 'vendor.js',
     src: [
+      'bower_components/jquery/dist/jquery.js',
       'bower_components/jquery-ui/jquery-ui.js',
       'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/moment/moment.js',
       'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
       'bower_components/typeahead.js/dist/typeahead.bundle.js',
-      'bower_components/select2/select2.js',
+      'bower_components/select2/dist/js/select2.js',
       'bower_components/velocity/velocity.js',
       'bower_components/velocity/velocity.ui.js',
       'bower_components/chartjs/Chart.js',
@@ -140,11 +141,5 @@ module.exports = {
       'bower_components/select2/*.{png,jpg,jpeg,gif}'
     ],
     dest: 'images/vendor'
-  },
-  polyfills: {
-    src: [
-      'bower_components/ExplorerCanvas/excanvas.js'
-    ],
-    dest: 'build/guide/js'
   }
 };
