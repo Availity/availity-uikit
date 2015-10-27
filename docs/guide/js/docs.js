@@ -133,12 +133,11 @@
   var $chart1 = $('#guideChart1');
   if ($chart1[0]) {
     var ctx = $chart1[0].getContext('2d');
-    var chart = new Chart(ctx);
-    chart = new chart.Bar(data, {
+    /* eslint new-cap: 0 */
+    new Chart(ctx).Bar(data, {
       responsive: true,
       maintainAspectRatio: false
     });
-    chart();
   }
 
   $('#nav').tocify({
