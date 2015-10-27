@@ -121,6 +121,8 @@ module.exports = {
   vendor: {
     name: 'vendor.js',
     src: [
+      'bower_components/jquery-ui/jquery-ui.js',
+      'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/moment/moment.js',
       'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
