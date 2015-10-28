@@ -10,6 +10,9 @@
     "postinstall": "bower install"
   },
   "license": "MIT",
+  "main": "./index.js",
+  "style": "dist/css/availity-uikit.css",
+  "less": "less/availity.less",
   "homepage": "http://availity.github.io/availity-uikit/",
   "repository": {
     "type": "git",
@@ -18,6 +21,15 @@
   "bugs": {
     "url": "https://github.com:Availity/availity-uikit/issues"
   },
+  "files": [
+    "dist",
+    "fonts",
+    "grunt",
+    "js/*.js",
+    "less/**/*.less",
+    "gulpfile.js",
+    "LICENSE"
+  ],
   "contributors": [
     {
       "name": "Robert McGuinness",
