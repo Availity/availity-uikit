@@ -14,7 +14,6 @@ var minifyCSS = require('gulp-minify-css');
 var filter = require('gulp-filter');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
-var replace = require('gulp-replace');
 var uglify = require('gulp-uglify');
 
 var runSequence = require('run-sequence').use(gulp);
@@ -34,7 +33,6 @@ gulp.task('dist:css', function() {
        this.emit('end');
      }))
     .pipe(less())
-    .pipe(replace(config.regex.select[0], config.regex.select[1]))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(prefixer({
       browsers: config.less.browsers
