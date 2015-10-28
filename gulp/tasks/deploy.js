@@ -26,7 +26,6 @@ var tasks = [
   'concat:lib',
   'less:dev',
   'copy:images',
-  'copy:images:vendor',
   'copy:fonts',
   'copy:js:guide',
   'build'

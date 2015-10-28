@@ -15,12 +15,6 @@ gulp.task('copy:images', function() {
     .pipe(gulp.dest(config.images.dest));
 });
 
-gulp.task('copy:images:vendor', function() {
-  gulp.src(config.vendorImages.src)
-    .pipe(gulpif(config.args.verbose, using({prefix: 'Task [copy:vendor:images] using'})))
-    .pipe(gulp.dest(config.vendorImages.dest));
-});
-
 gulp.task('copy:js:guide', function() {
   gulp.src(config.jsGuide.src)
     .pipe(gulpif(config.args.verbose, using({prefix: 'Task [copy:js:guide] using'})))
