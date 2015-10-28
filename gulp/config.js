@@ -8,9 +8,6 @@ module.exports = {
   project: {
     path: path.resolve(__dirname, '..')
   },
-  regex: {
-    select: [/url\('select2/g, "url('../images/vendor/select2"]
-  },
   less: {
     src: ['less/availity-uikit.less', 'less/pages/docs.less'],
     targets: ['**/*.less'],
@@ -135,11 +132,5 @@ module.exports = {
       'bower_components/holderjs/holder.js'
     ],
     dest: 'build/guide/js'
-  },
-  vendorImages: {
-    src: [
-      'bower_components/select2/*.{png,jpg,jpeg,gif}'
-    ],
-    dest: 'images/vendor'
   }
 };
