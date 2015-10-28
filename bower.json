@@ -3,6 +3,7 @@
   "description": "Availity UI Kit powered by Bootstrap 3",
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "http://availity.github.io/availity-uikit/",
   "keywords": [
     "availity",
     "css",
@@ -15,12 +16,7 @@
   "moduleType": "globals",
   "main": [
     "less/availity-uikit.less",
-    "dist/css/availity-uikit.css",
-    "dist/js/availity-uikit.js",
-    "dist/fonts/availity-icon-font.eot",
-    "dist/fonts/availity-icon-font.svg",
-    "dist/fonts/availity-icon-font.ttf",
-    "dist/fonts/availity-icon-font.woff"
+    "dist/js/availity-uikit.js"
   ],
   "dependencies": {
     "awesome-bootstrap-checkbox": "~0.3.5",
@@ -46,6 +42,7 @@
   "ignore": [
     "/.*",
     "docs",
+    "gulp",
     "build"
   ]
 }
