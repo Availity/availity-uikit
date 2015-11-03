@@ -1,5 +1,5 @@
 /**
- * availity-uikit v1.0.0 -- October-27
+ * availity-uikit v1.1.0 -- November-02
  * Copyright 2015 Availity, LLC 
  */
 
@@ -189,12 +189,13 @@ div[title] i {
 code[class*="language-"],
 pre[class*="language-"] {
   color: black;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
+  word-wrap: normal;
   line-height: 1.5;
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -217,6 +218,7 @@ pre[class*="language-"] {
   background-origin: content-box;
   overflow: visible;
   max-height: 30em;
+  padding: 0;
 }
 code[class*="language"] {
   max-height: inherit;
@@ -239,6 +241,7 @@ pre[class*="language-"] {
   border-radius: 0.3em;
   color: #c92c2c;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline;
 }
 pre[class*="language-"]:before,
 pre[class*="language-"]:after {

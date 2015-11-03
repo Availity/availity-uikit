@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Payer Spaces Florida Blue</title>
+  <title>Availity UIKit Authorization Response</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -32,13 +32,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand-availity" href="#">
+      <a class="navbar-brand-availity" href="/index.html">
         <img alt="Availity Logo" src="images/logo-availity.png">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
       <ul class="nav navbar-nav">
-        <li><a href="#"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li><a href="/index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
         <li>
           <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
@@ -288,124 +288,164 @@
 </nav>
 
 <main>
-<main class="container-fluid">
-
-  <ul class="breadcrumb">
-    <li>
-      <a href="#">Home</a>
-    </li>
-    <li class="active">
-      Florida Blue
-    </li>
-  </ul>
-
-  <div class="spaces-florida-blue">
-
-    <div class="spaces-header">
-      <div class="spaces-header-col spaces-header-col-left">
-        <a href="http://www.floridblue.com" class="spaces-logo" data-background-src="?holder.js/234x60"></a>
-      </div>
-      <div class="spaces-header-col spaces-header-col-right">
-        <a href="http://www.floridblue.com" class="spaces-link">www.floridablue.com</a>
+<div class="container-sm">
+  <h2 class="page-header page-header-brand">
+    <div class="page-header-title">
+      <span class="app-icon app-icon-black">ar</span> Authorization Results
+    </div>
+    <div class="page-header-logo">
+      <a href="http://www.example.com" class="spaces-logo holderjs"></a>
+    </div>
+  </h2>
+  <div class="card">
+    <div class="card-block">
+      <div class="card-header-secondary">
+        <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1">051299819</span>
+        <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1">3460350820</span>
       </div>
     </div>
-
-    <div class="billboard holderjs" data-background-src="?holder.js/100px260">
+    <div class="card-block">
       <div class="row">
-        <div class="col-sm-4">
-          <div class="billboard-featured">
-            <h2>Provider Registration &amp; Self-Service</h2>
-            <p>
-              nostrum non laborum at consequuntur hic nisi ex odio facilis quo quam non quia voluptate vero doloribus
-            </p>
-            <p>
-              <a class="btn btn-lg btn-default" href="payer-spaces.html">Access &#xBB;</a>
-            </p>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Certification Number</h5>
+          <p>123456789</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Name</h5>
+          <p data-mock="fullNameReverse:1">Price, Khloe</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Date of Birth</h5>
+          <p>03/03/2010</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Gender</h5>
+          <p>Male</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Status</h5>
+          <p>Modified</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Diagnosis Version</h5>
+          <p>ICD-9</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Request Type</h5>
+          <p>Inpatient Authorization</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Payer</h5>
+          <p>Aetna</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+      <div class="card-block">
+        <h5 class="card-title-secondary">Certification Information</h5>
+        <h5 class="text-label">Certification Number</h5>
+        <p>123456789</p>
+
+        <h5 class="text-label">Status</h5>
+        <p>Modified</p>
+
+        <h5 class="text-label">Message</h5>
+        <p data-mock="sentences:2">sed et provident eaque laudantium
+nisi architecto dolor praesentium
+tempora eum et animi accusantium vel consequatur et voluptates incidunt</p>
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Provider Information</h5>
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 class="text-label">Requesting Provider</h5>
+          <p data-mock="fullNameReverse:2">Perez, Jayden</p>
+        </div>
+        <div class="col-sm-3">
+          <h5 class="text-label">Referred-To-Provider</h5>
+          <p>Riviera, Nick</p>
+        </div>
+      </div>
+      <div class="panel panel-default panel-collapsible">
+        <div class="panel-heading">
+            <a class="collapsed panel-collapsible-link" data-toggle="collapse" href="#exampleCollapse">
+              View more data
+            </a>
+        </div>
+        <div id="exampleCollapse" class="collapse" aria-expanded="false">
+          <div class="panel-body">
+            <p data-mock="paragraph:3">aliquam laborum aut ut eum et doloremque
+ut ducimus saepe aliquam voluptates ut soluta beatae dicta occaecati
+sed doloribus culpa ea repellendus quaerat sunt unde dolores fugit</p>
+            <p data-mock="paragraph:5">et voluptas sapiente odit quas molestias
+itaque quia ducimus quos repudiandae
+enim quis veritatis est</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <hr>
-
-  <div role="tabpanel">
-          <ul class="nav nav-pills-secondary" role="tablist">
-            <li class="active">
-              <a href="#apps" role="tab" data-toggle="tab">Applications</a>
-            </li>
-            <li>
-              <a href="#resources" role="tab" data-toggle="tab">Resources</a>
-            </li>
-            <li>
-              <a href="#news" role="tab" data-toggle="tab">News and Announcments</a>
-            </li>
-          </ul>
-          <div class="tab-content tab-bump">
-            <div role="tabpanel" class="tab-pane active" id="apps">
-              <div class="container-fluid container-sm-height">
-                  <div class="row row-sm-height">
-                    <div class="col-sm-4 col-sm-height">
-                      <div class="panel panel-card">
-                        <div class="panel-body">
-                          <h3>835 Registration</h3>
-                          <p data-mock="sentences:1">est sit et
-expedita cum quaerat perferendis temporibus
-alias error dicta</p>
-                          <p>
-                            <button type="button" class="btn btn-default">
-                              Request Access &#xBB;
-                            </button>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-4 col-sm-height">
-                      <div class="panel panel-card">
-                        <div class="panel-body">
-                          <h3>Eligibility &amp; Benefits</h3>
-                          <p data-mock="sentences:1">est sit et
-expedita cum quaerat perferendis temporibus
-alias error dicta</p>
-                          <p>
-                            <button type="button" class="btn btn-default">
-                              Request Access &#xBB;
-                            </button>
-                          </p><p>
-                        </p></div>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-4 col-sm-height">
-                      <div class="panel panel-card">
-                        <div class="panel-body">
-                          <h3>Provider Registration &amp; Self-Service</h3>
-                          <p data-mock="sentences:1">est sit et
-expedita cum quaerat perferendis temporibus
-alias error dicta</p>
-                          <p>
-                            <button type="button" class="btn btn-default">
-                              Request Access &#xBB;
-                            </button>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="resources">
-              <div class="disclaimer">
-                THESE LINKS MAY RE-DIRECT TO THIRD PARTY SITES AND ARE PROVIDED FOR YOUR CONVENIENCE ONLY. AVAILITY IS NOT RESPONSIBLE FOR THE CONTENT OR SECURITY OF ANY THIRD PARTY SITES AND DOES NOT ENDORSE ANY PRODUCTS OR SERVICES PROVIDED BY THIRD PARTIES.
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="news">
-              <p class="lead">News</p>
-            </div>
-          </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Service Information</h5>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Service Type/Quantity</h5>
+          <p>3 Days</p>
+          <h5 class="text-label">Admission Type</h5>
+          <p>Elective</p>
         </div>
-</main>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Place of Service</h5>
+          <p>Inpatient Hospital</p>
+          <h5 class="text-label">Type of Service</h5>
+          <p>Cardiac</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Service/Admission Data</h5>
+          <p>12/24/2012</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Additional Services Information</h5>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Procedure Code</h5>
+          <p>49000</p>
+          <h5 class="text-label">Status</h5>
+          <p>No action required</p>
+        </div>
+        <div class="col-sm-4 col-ms-6">
+          <h5 class="text-label">Date of Service</h5>
+          <p>12/24/2012 - 12/24/2012</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Payer Contact Information</h5>
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 class="text-label">Contact Name</h5>
+          <p>Aetna</p>
+        </div>
+        <div class="col-sm-3">
+          <h5 class="text-label">Phone Number</h5>
+          <p>(800) 955-5682</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </main>
