@@ -1,4 +1,13 @@
-.checkbox{
+.checkbox {
+  label {
+    &:before {
+      top: 2px
+    }
+
+    &:after {
+      top: 2px;
+    }
+  }
 
   input[type="checkbox"],
   input[type="radio"]{
@@ -16,5 +25,14 @@
     &::after {
       color: @gray;
     }
+  }
+}
+
+.radio label {
+  &:before {
+    top: 2px;
+  }
+  &:after {
+    top: 5px;
   }
 }
