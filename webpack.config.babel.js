@@ -46,6 +46,10 @@ let config = {
         )
       },
       {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
         // test should match the following:
         //
         //  '../fonts/availity-font.eot?18704236'
@@ -59,6 +63,8 @@ let config = {
   plugins: [
 
     new webpack.optimize.OccurenceOrderPlugin(),
+
+    new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
 
     new ExtractTextPlugin('css/[name].css', {
       disable: false,
