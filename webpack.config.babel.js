@@ -8,6 +8,13 @@ const VERSION = require('./package.json').version;
 const nodeEnv = process.env.NODE_ENV || 'development';
 const optimize = (nodeEnv === 'production' ? true : false);
 
+let ENV_VAR = {
+  'process.env': {
+    'NODE_ENV': JSON.stringify(nodeEnv),
+    'VERSION': JSON.stringify(VERSION)
+  }
+};
+
 let config = {
   entry: {
     'availity-uikit': './js/index.js',
@@ -27,11 +34,14 @@ let config = {
       amd: 'jQuery'
     }
   },
+  noParse: [
+    /.*bower_components.*/
+  ],
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loader: 'babel',
         exclude: /(bower_components|node_modules)/
       },
       {
@@ -80,10 +90,8 @@ let config = {
       ]
     }),
 
-    new webpack.DefinePlugin({
-      'process.env': {'NODE_ENV': JSON.stringify(nodeEnv)},
-      '__VERSION__': VERSION
-    })
+    new webpack.DefinePlugin(ENV_VAR)
+
   ],
   resolve: {
     extensions: ['', '.js']
