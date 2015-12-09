@@ -13,7 +13,6 @@
 
 # https://github.com/Availity/eslint-config-availity/browser
 extends: eslint-config-availity/browser
-rules:
-  strict:
-    - 2
-    - function
+globals:
+  __VERSION__: true
+
