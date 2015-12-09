@@ -75,7 +75,8 @@ let config = {
     }),
 
     new webpack.DefinePlugin({
-      'process.env': {'NODE_ENV': JSON.stringify(nodeEnv)}
+      'process.env': {'NODE_ENV': JSON.stringify(nodeEnv)},
+      '__VERSION__': VERSION
     })
   ],
   resolve: {
