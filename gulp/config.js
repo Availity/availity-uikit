@@ -8,27 +8,10 @@ module.exports = {
   project: {
     path: path.resolve(__dirname, '..')
   },
-  less: {
-    src: ['less/availity-uikit.less', 'less/pages/docs.less'],
-    targets: ['**/*.less'],
-    dest: 'build/guide/css',
-    destMaps: './maps', // relative to dest folder
-    browsers: ['> 1%', 'last 3 versions', 'ie 9']
-  },
-  css: {
-    src: 'build/guide/**/*.css',
-    dest: 'dist/css',
-    destMaps: './maps' // relative to dest folder
-  },
   fonts: {
     src: 'fonts/**/*.{ttf,woff,eot,svg}',
     dest: 'build/guide/fonts',
     destDist: 'dist/fonts'
-  },
-  images: {
-    src: 'images/**/*.{png,jpg,jpeg,gif}',
-    dest: 'build/guide/images',
-    destDist: 'dist/images'
   },
   sync: {
     src: 'build/guide'
@@ -87,49 +70,5 @@ module.exports = {
   },
   packages: {
     src: ['./package.json', './bower.json']
-  },
-  js: {
-    src: ['gulpfile.js', 'gulp/**/*.js'],
-    dest: 'build/guide/js'
-  },
-  jsGuide: {
-    src: ['docs/guide/js/docs.js'],
-    dest: 'build/guide/js'
-  },
-  lib: {
-    name: 'availity-uikit.js',
-    src: [
-      'js/*.js'
-    ],
-    targets: 'js/*.js',
-    dest: 'build/guide/js',
-    destDist: 'dist/js'
-  },
-  libBundle: { // combine Bootstrap and availity-uikit.js
-    name: 'availity-uikit-bundle.js',
-    src: [
-      'node_modules/bootstrap/dist/js/bootstrap.js',
-      'js/*.js'
-    ],
-    targets: 'js/*.js',
-    dest: 'build/guide/js',
-    destDist: 'dist/js'
-  },
-  vendor: {
-    name: 'vendor.js',
-    src: [
-      'bower_components/jquery/dist/jquery.js',
-      'bower_components/jquery-ui/jquery-ui.js',
-      'bower_components/jquery.tocify.js/src/javascripts/jquery.tocify.js',
-      'bower_components/bootstrap/dist/js/bootstrap.js',
-      'bower_components/moment/moment.js',
-      'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
-      'bower_components/select2/dist/js/select2.js',
-      'bower_components/velocity/velocity.js',
-      'bower_components/velocity/velocity.ui.js',
-      'bower_components/chartjs/Chart.js',
-      'bower_components/holderjs/holder.js'
-    ],
-    dest: 'build/guide/js'
   }
 };
