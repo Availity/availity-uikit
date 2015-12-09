@@ -1,10 +1,10 @@
 import $ from 'jquery';
+import Chart from 'chartjs';
 import 'bootstrap';
 import 'moment';
 import 'select2';
 import 'bootstrap-datepicker';
 import 'velocity';
-import Chart from 'chartjs';
 
 $('[data-toggle="popover"]').popover({
   html: true
@@ -14,7 +14,7 @@ $('[data-toggle="tooltip"]').tooltip();
 
 $('.guide-example').each(function() {
 
-  var btn = '' +
+  let btn = '' +
     '<hr class="divider-lg"/>' +
     '<div class="btn-toolbar">' +
       '<button class="btn btn-ghost btn-sm" data-toggle="code">' +
@@ -30,7 +30,7 @@ $('[data-toggle="code"]').click(function(e) {
 
   e.preventDefault();
 
-  var target = $(this).parents('.guide-example').next('.language-markup');
+  let target = $(this).parents('.guide-example').next('.language-markup');
 
   if (target.is(':visible')) {
     target.velocity('slideUp', { duration: 200 });
@@ -77,14 +77,14 @@ $('select').select2({
   }
 }).on('select2:open', function() {
 
-  var $this = $(this);
+  let $this = $(this);
   if ($this.parents('[class*="has-"]').length) {
 
     // get all CSS-classes from the element where we found "has-*" and collect them in an array
-    var classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
+    let classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
 
     // go through the class names, find "has-"
-    for (var i = 0; i < classNames.length; ++i) {
+    for (let i = 0; i < classNames.length; ++i) {
       if (classNames[i].match('has-')) {
         $('#select2-drop').addClass(classNames[i]);
       }
@@ -93,9 +93,9 @@ $('select').select2({
 });
 
 // DO NOT USE THIS IN PRODUCTION...DEMO PURPOSES ONLY
-setInterval(function() {
-  var indicators = $('.loading-indicator');
-  for (var i = 0; i < indicators.length; i++) {
+setInterval(() => {
+  let indicators = $('.loading-indicator');
+  for (let i = 0; i < indicators.length; i++) {
     $(indicators[i]).find('.loading-bullet')
       .velocity('transition.slideRightIn', { stagger: 250 })
       .delay(750)
@@ -103,7 +103,7 @@ setInterval(function() {
   }
 }, 2000);
 
-var data = {
+let data = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -133,9 +133,9 @@ var data = {
   ]
 };
 
-var $chart1 = $('#guideChart1');
+let $chart1 = $('#guideChart1');
 if ($chart1[0]) {
-  var ctx = $chart1[0].getContext('2d');
+  let ctx = $chart1[0].getContext('2d');
   /* eslint new-cap: 0 */
   new Chart(ctx).Bar(data, {
     responsive: true,
