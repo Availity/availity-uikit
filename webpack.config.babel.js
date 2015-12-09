@@ -1,3 +1,4 @@
+
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import BowerWebpackPlugin from 'bower-webpack-plugin';
@@ -72,7 +73,6 @@ let config = {
         /.*\.min.*/
       ]
     }),
-
 
     new webpack.DefinePlugin({
       'process.env': {'NODE_ENV': JSON.stringify(nodeEnv)}
