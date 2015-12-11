@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  {{> defaultHeader}}
+  {{> default-header}}
 </head>
 <body>
 
@@ -12,7 +12,7 @@
   <div class="container">
     <h2 class="guide-section-header">Pages</h2>
 
-    {{#grouped_each 3 collections.examples}}
+    {{#grouped 3 collections.examples}}
     <div class="container-md-height">
       <div class="row row-md-height">
         {{#each this }}
@@ -35,12 +35,12 @@
         {{/each}}
       </div>
     </div>
-    {{/grouped_each}}
+    {{/grouped}}
   </div>
 
 </main>
 
-{{> defaultFooter}}
+{{> default-footer}}
 
 </body>
 </html>
