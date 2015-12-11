@@ -12,21 +12,21 @@ $('[data-toggle="popover"]').popover({
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$('.guide-example').each(function() {
+$('.guide-example').each(() => {
 
-  let btn = '' +
-    '<hr class="divider-lg"/>' +
-    '<div class="btn-toolbar">' +
-      '<button class="btn btn-ghost btn-sm" data-toggle="code">' +
-        'View Code <i class="icon icon-code"></i>' +
-      '</button>' +
-    '</div>';
+  let btn = `
+    <hr class="divider-lg"/>' +
+    <div class="btn-toolbar">
+      <button class="btn btn-ghost btn-sm" data-toggle="code">
+        View Code <i class="icon icon-code"></i>
+      </button>' +
+    </div>`;
 
   $(this).append($(btn));
 
 });
 
-$('[data-toggle="code"]').click(function(e) {
+$('[data-toggle="code"]').click( (e) => {
 
   e.preventDefault();
 
@@ -75,7 +75,7 @@ $('select').select2({
     id: '-1',
     placeholder: 'Select one'
   }
-}).on('select2:open', function() {
+}).on('select2:open', () => {
 
   let $this = $(this);
   if ($this.parents('[class*="has-"]').length) {
