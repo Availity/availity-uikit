@@ -9,10 +9,10 @@ var config = require('../config');
 
 gulp.task('deploy', ['deploy:sequence']);
 
-var getName = function() {
+function getName() {
   var pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
   return pkg.name;
-};
+}
 
 gulp.task('deploy:github:pages', function() {
   return gulp.src('./build/guide/**/*')
