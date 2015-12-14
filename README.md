@@ -1,6 +1,6 @@
 # availity-uikit
 
-> Availity UI Kit powered by Bootstrap 3
+> Availity UI Kit powered by Bootstrap 3 and sprinkles of 4
 
 ## Table of Contents
 * [Intro](#intro)
@@ -12,41 +12,47 @@
 * [Disclaimer](#disclaimer)
 * [License](#license)
 
-
 ## Intro
+
 Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
 
 
 ## Demo
+
 [http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
 
 
 ## Supported Browsers
-* Internet Explorer 8 and newer
-* Google Chrome (latest version)
-* Mozilla Firefox (latest version)
 
-> Internet Explorer 9 and below requires a CSS post processor like [gulp-bless](https://github.com/BlessCSS/gulp-bless), [bless.js](https://github.com/BlessCSS/bless) or [grunt-bless](https://github.com/BlessCSS/grunt-bless) in order to get circumvent the 4095 limit on selector on style sheets
+* Internet Explorer 9+
+* Google Chrome > 1% market share
+* Mozilla Firefox > 1% market share
 
+> Internet Explorer 9 and below requires a CSS post processor in order to get circumvent the 4095 limit on selector on style sheets 
+
+* [gulp-bless](https://github.com/BlessCSS/gulp-bless)
+* [bless.js](https://github.com/BlessCSS/bless)
+* [grunt-bless](https://github.com/BlessCSS/grunt-bless) 
 
 ## Quickstart
-+ Install the Availity UIKit with Bower.
+
++ Install the Availity UIKit with Bower
 
 >
 ```bash
 $ bower install availity-uikit --save
 ```
 
-+ Include the required libraries is your `index.html`
+**OR**
+
++ Install the Availity UIKit with npm
 
 >
-```html
-<!-- place in header -->
-<link rel="stylesheet" href="//bower_components/availity-uikit/dist/availity-uikit.min.css"/>
-<!-- place before closing body tag -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-<script src="//bower_components/availity-uikit/dist/js/availity-uikit.min.js"></script>
+```bash
+$ npm install availity-uikit --save
 ```
+
++ Include the required libraries is your `index.html`
 
 #### Directory Layout
 
@@ -90,6 +96,7 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (g
 + [bobby.bennett@availity.com](bobby.bennett@availity.com)
 
 ## Disclaimer
+
 Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
 
 ## License
