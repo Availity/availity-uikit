@@ -1,10 +1,6 @@
 var path = require('path');
-var argv = require('minimist')(process.argv.slice(2));
 
 module.exports = {
-  args: {
-    verbose: !!argv.verbose
-  },
   project: {
     path: path.resolve(__dirname, '..')
   },
