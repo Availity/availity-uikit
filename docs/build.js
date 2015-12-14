@@ -32,7 +32,7 @@ export default function build(done) {
         reverse: false
       },
       components: {
-        pattern: 'content/components/**/*.md',
+        pattern: 'content/components/**/*.html',
         sortBy: 'title',
         reverse: true,
         refer: true
@@ -42,8 +42,8 @@ export default function build(done) {
     .use(prism())
     .use(layouts({
       engine: 'handlebars',
-      pattern: '**/*.md',
-      directory: './templates',
+      pattern: '**/*.html',
+      directory: './layouts',
       partials: './partials',
       helpers: {
         is: require('./helpers/is.js'),
