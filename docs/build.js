@@ -9,6 +9,7 @@ import collections from 'metalsmith-collections';
 import anchorMarkdownHeadings from './plugins/anchor.js';
 
 const renderer = new marked.Renderer();
+
 renderer.heading = anchorMarkdownHeadings;
 const markedOptions = {
   langPrefix: 'language-',
@@ -64,4 +65,3 @@ export default function build(done) {
   });
 
 }
-
