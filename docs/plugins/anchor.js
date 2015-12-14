@@ -11,9 +11,6 @@ export default function anchorMarkdownHeadings(text, level, raw) {
     .replace(/(^-|-$)/g, '')
     .toLowerCase();
 
-
-  // rob
-
   return  `
     <h> ${text}
       <a name="${escapedText}" class="anchor" href="#${escapedText}"></a>
