@@ -38,11 +38,8 @@ export default function build(done) {
         refer: true
       }
     }))
-    .use(markdown(markedOptions))
-    .use(prism())
     .use(layouts({
       engine: 'handlebars',
-      pattern: '**/*.html',
       directory: './layouts',
       partials: './partials',
       helpers: {
@@ -51,6 +48,8 @@ export default function build(done) {
         date: require('./helpers/date.js')
       }
     }))
+    .use(markdown(markedOptions))
+    .use(prism())
     .destination(path.join(process.cwd(), 'build'));
 
   metalsmith.build( (err) => {
