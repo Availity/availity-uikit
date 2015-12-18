@@ -9,7 +9,8 @@
   "scripts": {
     "postinstall": "bower install",
     "lint": "eslint ./",
-    "start": "NODE_ENV=development webpack-dev-server --progress --colors"
+    "start": "NODE_ENV=development webpack-dev-server --progress --colors",
+    "build:docs": "NODE_ENV=development node docs/index.js --harmony"
   },
   "license": "MIT",
   "main": "./index.js",
