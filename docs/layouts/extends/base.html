@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'partials/header.html' %}
+</head>
+<body>
+
+{% if nav %}
+  {% include 'partials/navbar.html' %}
+{% else %}
+  {% include 'partials/nav.html' %}
+{% endif %}
+
+{% block body %}
+{% endblock %}
+
+{% include 'partials/footer.html' %}
+</body>
+</html>

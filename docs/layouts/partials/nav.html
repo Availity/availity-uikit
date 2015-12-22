@@ -36,15 +36,11 @@
       </div>
       <div class="collapse navbar-collapse" id="guide-collapse-navigation">
         <ul class="nav navbar-nav">
-          {{#each collections.pages}}
-            {{#if this.title}}
-            <li{{#is ../../title this.title}} class="active" {{/is}}>
-              <a href="{{this.path}}" title="{{ this.title}}">{{this.title}}</a>
+          {% for page in collections.pages %}
+            <li>
+              <a href="{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
             </li>
-            {{else}}
-            <li><a href="#">{{ERR:TITLE}}</a></li>
-            {{/if}}
-          {{/each}}
+          {% endfor %}
         </ul>
       </div>
     </div>

@@ -4,9 +4,13 @@ import layouts from 'metalsmith-layouts';
 import prism from 'metalsmith-prism';
 import marked from 'marked';
 import markdown from 'metalsmith-markdown';
+import nunjucks from 'nunjucks';
+import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
 import anchorMarkdownHeadings from './plugins/anchor.js';
+
+import pkg from '../package.json';
 
 const renderer = new marked.Renderer();
 
@@ -16,11 +20,24 @@ const markedOptions = {
   renderer: renderer
 };
 
+nunjucks
+  .configure('docs/layouts', {watch: false, noCache: true})
+  .addFilter('date', nunjucksDate);
+
+nunjucksDate
+  .setDefaultFormat('MMMM Do, YYYY');
+
 export default function build(done) {
 
   const metalsmith = new Metalsmith(__dirname);
 
   metalsmith
+    .metadata({
+      site: {
+        title: 'Availity UIKit'
+      },
+      pkg: pkg
+    })
     .source(path.join(process.cwd(), 'docs', 'content'))
     .use(prism())
     .use(permalinks({
@@ -28,25 +45,30 @@ export default function build(done) {
     }))
     .use(collections({
       pages: {
-        sortBy: 'menu',
+        pattern: 'pages/**/*.html',
         reverse: false
       },
       components: {
-        pattern: 'content/components/**/*.html',
+        pattern: 'components/**/*.html',
+        sortBy: 'title',
+        refer: false
+      },
+      examples: {
+        pattern: 'examples/**/*.html',
         sortBy: 'title',
         reverse: true,
-        refer: true
+        refer: false
+      },
+      javascript: {
+        pattern: 'javascript/**/*.html',
+        sortBy: 'title',
+        reverse: true,
+        refer: false
       }
     }))
     .use(layouts({
-      engine: 'handlebars',
-      directory: './layouts',
-      partials: './partials',
-      helpers: {
-        is: require('./helpers/is.js'),
-        grouped: require('./helpers/grouped.js'),
-        date: require('./helpers/date.js')
-      }
+      engine: 'nunjucks',
+      directory: 'layouts'
     }))
     .use(markdown(markedOptions))
     .use(prism())

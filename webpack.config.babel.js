@@ -21,7 +21,7 @@ let config = {
     'vendor': './js/vendor.js'
   },
   output: {
-    path: './dist',
+    path: optimize ? './dist' : './build',
     filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
     library: 'availity',
     libraryTarget: 'umd'
