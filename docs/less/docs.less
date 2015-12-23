@@ -1,15 +1,16 @@
 @bootstrap-less-path: "../../bower_components/bootstrap/less";
-@prism-less-path: "../../node_modules/metalsmith-prism/node_modules/prismjs";
+@availity-less-path: "../../less";
+@prism-less-path: "../../node_modules/prismjs";
 
 @import (reference) "@{bootstrap-less-path}/mixins/clearfix.less";
-
-@import (reference) "../mixins/availity-mixins-type.less";
-@import (reference) "../mixins/availity-mixins-icons.less";
 @import "@{bootstrap-less-path}/variables.less";
 
-@import "../availity-variables.less";
+@import "@{availity-less-path}/availity-variables.less";
+@import (reference) "@{availity-less-path}/mixins/availity-mixins-type.less";
+@import (reference) "@{availity-less-path}/mixins/availity-mixins-icons.less";
+@import (reference) "@{availity-less-path}/availity-type.less";
 
-@import (reference) "../availity-type.less";
+@import (less) "@{prism-less-path}/themes/prism-coy.css";
 
 @guide-padding: 1.5em;
 @guide-color: lighten(@gray, 30%);
@@ -184,7 +185,7 @@ blockquote {
 .billboard{
 
   @media (min-width: @screen-sm-min) {
-    background-image: url(../images/default/love.jpg);
+    background-image: url(../../images/default/love.jpg);
   }
 }
 
@@ -240,8 +241,6 @@ div[title] {
 }
 
 //== Syntax Highlighting
-
-@import (less) "@{prism-less-path}/themes/prism-coy.css";
 
 .codify() {
   font-size: 14px;

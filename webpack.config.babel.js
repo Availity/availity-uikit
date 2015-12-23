@@ -17,8 +17,8 @@ let ENV_VAR = {
 
 let config = {
   entry: {
-    'availity-uikit': './js/index.js',
-    'vendor': './js/vendor.js'
+    'availity-uikit': './index.js',
+    'vendor': './docs/js'
   },
   output: {
     path: optimize ? './dist' : './build',
@@ -58,6 +58,10 @@ let config = {
       {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url'
       },
       {
         // test should match the following:

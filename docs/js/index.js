@@ -6,6 +6,8 @@ import 'select2';
 import 'bootstrap-datepicker';
 import 'velocity';
 
+import '../less/docs.less';
+
 $('[data-toggle="popover"]').popover({
   html: true
 });

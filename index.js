@@ -12,5 +12,5 @@ import './fonts/availity-icon-font.ttf';
 import './fonts/availity-icon-font.woff';
 
 // JS
-import './js/availity-uikit';
+import './js';
 

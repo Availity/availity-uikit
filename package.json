@@ -7,12 +7,13 @@
     "node": ">=4.x"
   },
   "scripts": {
+    "clean:build": "rimraf build",
     "postinstall": "bower install",
     "lint": "eslint ./",
     "start": "NODE_ENV=development webpack-dev-server --progress --colors",
     "build": "npm run build:docs && npm run build:lib",
     "build:docs": "NODE_ENV=development node docs/index.js --harmony",
-    "build:lib": "NODE_ENV=development webpack index.js"
+    "build:lib": "NODE_ENV=development webpack"
   },
   "license": "MIT",
   "main": "./main.js",
@@ -99,6 +100,7 @@
     "metalsmith": "2.1.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-define": "^1.0.0",
+    "metalsmith-flatten": "0.2.0",
     "metalsmith-layouts": "1.4.2",
     "metalsmith-markdown": "0.2.1",
     "metalsmith-mock": "^1.0.0",
