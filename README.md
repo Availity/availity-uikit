@@ -1,9 +1,8 @@
 # availity-uikit
 
-> Availity UI Kit powered by Bootstrap 3 and sprinkles of 4
+> Availity UI Kit powered by [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
 
 ## Table of Contents
-* [Intro](#intro)
 * [Demo](#demo)
 * [Supported Browsers](#supported-browsers)
 * [Quickstart](#quickstart)
@@ -11,12 +10,7 @@
 * [Authors](#authors)
 * [Disclaimer](#disclaimer)
 * [License](#license)
-
-## Intro
-
-Availity UIKit is based on [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
-
-
+ 
 ## Demo
 
 [http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
@@ -54,27 +48,9 @@ $ npm install availity-uikit --save
 
 + Include the required libraries is your `index.html`
 
-#### Directory Layout
-
->
-```
-.
-├── /build/                     # The folder for compiled docs
-├── /dist/                      # CSS style sheets and Javascript ready for distribution
-├── /docs/                      # Raw documentation assets for README.md and style guide
-├── /node_modules/              # npm 3rd-party libraries and utilities
-├── /bower_components/          # bower 3rd-party libraries and utilities
-├── /js/                        # Javascript source files
-├── /fonts/                     # Icon fonts and web text fonts
-├── /less/                      # Less source files
-├── /images/                    # Graphics (.png, .jpg, .svg etc.)
-├── /gulp/                      # Gulp tasks and utility classes
-│── gulpfile.js                 # Configuration file for automated builds
-│── bower.json                  # Bower list of 3rd party libraries
-└── package.json                # NPM list of 3rd party libraries and utilities
-```
 
 ## Icon Fonts
+
 Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (glyphicons).  Our font configuration can be found in the [config.json](./fonts/config.json). The UIKit currently uses icon fonts from the following libraries:
 
 + [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
@@ -100,4 +76,5 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (g
 Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
 
 ## License
+
 Copyright (c) 2015 Availity, LLC
