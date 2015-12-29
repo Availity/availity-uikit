@@ -13,7 +13,7 @@
           <section class="guide-section">
             <h2 class="guide-section-header">{{ item.title }}</h2>
             <p class="lead">{{ item.description }}</p>
-            {{ item.contents }}
+            {{ item.contents | safe }}
           </section>
         {% endfor %}
       </div>

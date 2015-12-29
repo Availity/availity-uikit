@@ -7,7 +7,7 @@
   {% include 'partials/navbar.html' %}
 
   <main>
-  {{ contents }}
+  {{ contents | safe }}
   </main>
 
   {% include 'partials/footer.html' %}
