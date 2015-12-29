@@ -6,7 +6,8 @@ import BowerWebpackPlugin from 'bower-webpack-plugin';
 const VERSION = require('./package.json').version;
 
 const nodeEnv = process.env.NODE_ENV || 'development';
-const optimize = (nodeEnv === 'production' ? true : false);
+const production = (nodeEnv === 'production' ? true : false);
+const development = !production;
 
 let ENV_VAR = {
   'process.env': {
@@ -16,27 +17,38 @@ let ENV_VAR = {
 };
 
 let config = {
+
+  context: process.cwd(),
+
   entry: {
     'availity-uikit': './index.js',
     'vendor': './docs/js'
   },
+
   output: {
-    path: optimize ? './dist' : './build',
-    filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
+    path: production ? '/dist' : '/build',
+    filename: production ? 'js/[name].min.js' : 'js/[name].js',
     library: 'availity',
     libraryTarget: 'umd'
   },
-  externals: {
-    jquery: {
-      root: 'jQuery',
-      commonjs2: 'jQuery',
-      commonjs: 'jQuery',
-      amd: 'jQuery'
-    }
-  },
+
+  // externals: {
+  //   jquery: {
+  //     root: 'jQuery',
+  //     commonjs2: 'jQuery',
+  //     commonjs: 'jQuery',
+  //     amd: 'jQuery'
+  //   }
+  // },
+
+  debug: development,
+  cache: development,
+  watch: development,
+
   noParse: [
     /.*bower_components.*/
   ],
+
   module: {
     loaders: [
       {
@@ -60,8 +72,8 @@ let config = {
         loaders: ['style', 'css', 'sass']
       },
       {
-        test: /\.(png|jpg)$/,
-        loader: 'url'
+        test: /\.(jpe?g|png|gif)$/,
+        loader: 'url?limit=32768?name=images/[name].[ext]?[hash]'
       },
       {
         // test should match the following:
@@ -102,7 +114,7 @@ let config = {
   }
 };
 
-if (optimize) {
+if (production) {
   config.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
