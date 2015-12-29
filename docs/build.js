@@ -1,5 +1,4 @@
 import Metalsmith from 'metalsmith';
-import permalinks from 'metalsmith-permalinks';
 import layouts from 'metalsmith-layouts';
 import prism from 'metalsmith-prism';
 import marked from 'marked';
@@ -39,10 +38,9 @@ export default function build(done) {
       pkg: pkg
     })
     .source(path.join(process.cwd(), 'docs', 'content'))
-    .use(prism())
-    .use(permalinks({
-      relative: false
-    }))
+    // .use(permalinks({
+    //   relative: false
+    // }))
     .use(collections({
       pages: {
         pattern: 'pages/**/*.html',
@@ -71,7 +69,9 @@ export default function build(done) {
       directory: 'layouts'
     }))
     .use(markdown(markedOptions))
-    .use(prism())
+    .use(prism({
+      decode: true
+    }))
     .destination(path.join(process.cwd(), 'build'));
 
   metalsmith.build( (err) => {
