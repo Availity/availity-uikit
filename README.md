@@ -57,6 +57,11 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (g
 + [Typicons](http://typicons.com/)
 + [Elusive Icons](http://elusiveicons.com/)
 
+## Contributing
+
++ npm 3+
++ node 4+
+
 ## Authors
 
 **Robert McGuinness**
