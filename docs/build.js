@@ -2,7 +2,9 @@ import Metalsmith from 'metalsmith';
 import layouts from 'metalsmith-layouts';
 import prism from 'metalsmith-prism';
 import marked from 'marked';
+// import branch from 'metalsmith-branch';
 import markdown from 'metalsmith-markdown';
+import permalinks from 'metalsmith-permalinks';
 import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
 import path from 'path';
@@ -16,7 +18,9 @@ const renderer = new marked.Renderer();
 renderer.heading = anchorMarkdownHeadings;
 const markedOptions = {
   langPrefix: 'language-',
-  renderer: renderer
+  renderer: renderer,
+  gfm: true,
+  tables: true
 };
 
 nunjucks
@@ -38,9 +42,10 @@ export default function build(done) {
       pkg: pkg
     })
     .source(path.join(process.cwd(), 'docs', 'content'))
-    // .use(permalinks({
-    //   relative: false
-    // }))
+    .use(markdown(markedOptions))
+    .use(prism({
+      decode: true
+    }))
     .use(collections({
       pages: {
         pattern: 'pages/**/*.html',
@@ -64,13 +69,16 @@ export default function build(done) {
         refer: false
       }
     }))
+    .use(permalinks({
+      relative: false
+    }))
+    // .use(function(files, metalsmith, done) {
+    //   console.log(files);
+    //   done();
+    // })
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'
-    }))
-    .use(markdown(markedOptions))
-    .use(prism({
-      decode: true
     }))
     .destination(path.join(process.cwd(), 'build'));
 

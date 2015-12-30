@@ -1,4 +1,4 @@
-{
+ {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
   "version": "2.0.0-beta.0",
@@ -8,23 +8,15 @@
   },
   "scripts": {
     "clean:build": "rimraf build",
-
     "postinstall": "bower install",
-
     "lint": "eslint ./",
-
     "start": "npm run dev",
-
     "dev": "npm run dev:docs & npm run dev:lib",
-
     "prod": "npm run prod:docs & npm run prod:lib",
-
     "dev:docs": "NODE_ENV=development node docs/index.js --harmony",
     "prod:docs": "NODE_ENV=production webpack",
-
     "dev:lib": "NODE_ENV=development webpack-dev-server --progress --colors --content-base build/",
     "prod:lib": "NODE_ENV=development webpack"
-
   },
   "license": "MIT",
   "main": "./main.js",
@@ -109,6 +101,7 @@
     "lodash": "^3.10.0",
     "marked": "0.3.5",
     "metalsmith": "2.1.0",
+    "metalsmith-branch": "0.0.4",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-define": "^1.0.0",
     "metalsmith-flatten": "0.2.0",
