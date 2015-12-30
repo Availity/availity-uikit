@@ -5,6 +5,7 @@ import 'moment';
 import 'select2';
 import 'bootstrap-datepicker';
 import 'velocity-animate';
+import 'velocity-animate/velocity.ui';
 
 import '../less/docs.less';
 
