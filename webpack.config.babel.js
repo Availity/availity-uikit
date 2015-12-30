@@ -64,16 +64,8 @@ let config = {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'css!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
+          'raw!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
         )
-      },
-      {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
-      },
-      {
-        test: /\.(jpe?g|png|gif)$/,
-        loader: 'url?limit=32768?name=images/[name].[ext]?[hash]'
       },
       {
         // test should match the following:
@@ -83,6 +75,14 @@ let config = {
         //
         test: /\.(ttf|woff|eot|svg).*/,
         loader: 'file?name=fonts/[name].[ext]'
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/,
+        loader: 'url?limit=32768?name=images/[name].[ext]?[hash]'
       }
     ]
   },

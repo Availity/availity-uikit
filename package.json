@@ -1,4 +1,4 @@
- {
+{
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
   "version": "2.0.0-beta.0",
@@ -115,6 +115,7 @@
     "node-sass": "3.4.2",
     "nunjucks": "2.2.0",
     "nunjucks-date": "1.2.0",
+    "raw-loader": "0.5.1",
     "require-dir": "^0.3.0",
     "rimraf": "2.4.4",
     "run-sequence": "^1.1.1",
