@@ -67,8 +67,10 @@
     "babel-preset-stage-0": "6.3.13",
     "babel-register": "6.3.13",
     "bless-webpack-plugin": "1.0.0",
+    "bootstrap-datepicker": "1.5.1",
     "bower-webpack-plugin": "0.1.9",
     "chalk": "^1.1.1",
+    "chart.js": "1.0.2",
     "cheerio": "^0.19.0",
     "css-loader": "0.23.0",
     "del": "^2.0.2",
@@ -96,6 +98,8 @@
     "gulp-using": "0.0.1",
     "gulp-util": "^3.0.6",
     "he": "^0.5.0",
+    "holderjs": "2.9.0",
+    "imports-loader": "0.6.5",
     "less": "2.5.3",
     "less-loader": "2.2.2",
     "lodash": "^3.10.0",
@@ -120,10 +124,13 @@
     "rimraf": "2.4.4",
     "run-sequence": "^1.1.1",
     "sass-loader": "3.1.2",
+    "select2": "4.0.1",
+    "select2-bootstrap-theme": "0.1.0-beta.4",
     "semver": "^5.0.3",
     "style-loader": "0.13.0",
     "underscore.string": "^3.2.2",
     "url-loader": "0.5.7",
+    "velocity-animate": "1.2.3",
     "webpack": "1.12.9",
     "webpack-dev-server": "1.14.0",
     "yargs": "3.31.0"
@@ -136,5 +143,10 @@
     "uikit",
     "framework",
     "web"
-  ]
+  ],
+  "dependencies": {
+    "Yamm": "git+https://github.com/geedmo/yamm3.git#v1.1.0",
+    "awesome-bootstrap-checkbox": "0.3.6",
+    "bootstrap": "3.3.6"
+  }
 }

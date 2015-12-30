@@ -1,10 +1,10 @@
 import $ from 'jquery';
-import Chart from 'chartjs';
+import Chart from 'chart.js';
 import 'bootstrap';
 import 'moment';
 import 'select2';
 import 'bootstrap-datepicker';
-import 'velocity';
+import 'velocity-animate';
 
 import '../less/docs.less';
 
@@ -144,9 +144,3 @@ if ($chart1[0]) {
     maintainAspectRatio: false
   });
 }
-
-$('#nav').tocify({
-  selectors: '.guide-section-header, .guide-subsection-title',
-  theme: 'bootstrap',
-  scrollTo: 100
-});

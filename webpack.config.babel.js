@@ -1,7 +1,7 @@
 
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import BowerWebpackPlugin from 'bower-webpack-plugin';
+// import BowerWebpackPlugin from 'bower-webpack-plugin';
 
 const VERSION = require('./package.json').version;
 
@@ -45,12 +45,9 @@ let config = {
   cache: development,
   watch: development,
 
-  noParse: [
-    /.*bower_components.*/
-  ],
-
   module: {
     loaders: [
+
       {
         test: /\.js$/,
         loader: 'babel',
@@ -97,13 +94,9 @@ let config = {
       allChunks: true
     }),
 
-    new BowerWebpackPlugin({
-      excludes: [
-        /.*\.(less|map)/,
-        /glyphicons-.*\.(eot|svg|ttf|woff)/,
-        /bootstrap.*\.css/,
-        /.*\.min.*/
-      ]
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     }),
 
     new webpack.DefinePlugin(ENV_VAR)
