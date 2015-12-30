@@ -2,7 +2,6 @@ import Metalsmith from 'metalsmith';
 import layouts from 'metalsmith-layouts';
 import prism from 'metalsmith-prism';
 import marked from 'marked';
-// import branch from 'metalsmith-branch';
 import markdown from 'metalsmith-markdown';
 import permalinks from 'metalsmith-permalinks';
 import nunjucks from 'nunjucks';
