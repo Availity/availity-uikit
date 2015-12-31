@@ -3,6 +3,8 @@ import layouts from 'metalsmith-layouts';
 import prism from 'metalsmith-prism';
 import marked from 'marked';
 import markdown from 'metalsmith-markdown';
+import headings from 'metalsmith-headings';
+import inPlace from 'metalsmith-in-place';
 import permalinks from 'metalsmith-permalinks';
 import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
@@ -68,13 +70,18 @@ export default function build(done) {
         refer: false
       }
     }))
+    .use(headings('.guide-section-header'))
     .use(permalinks({
       relative: false
     }))
-    // .use(function(files, metalsmith, done) {
-    //   console.log(files);
-    //   done();
-    // })
+    .use(inPlace({
+      engine: 'nunjucks',
+      partials: 'layouts/partials'
+    }))
+    //.use(function(files, metalsmith, done) {
+    //  debugger;
+    //  done();
+    //})
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'

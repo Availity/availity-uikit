@@ -12,7 +12,7 @@ export default function anchorMarkdownHeadings(text, level, raw) {
     .toLowerCase();
 
   return  `
-    <h> ${text}
+    <h${level}> ${text}
       <a name="${escapedText}" class="anchor" href="#${escapedText}"></a>
     </h${level}>
     `;
