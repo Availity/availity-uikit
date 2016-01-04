@@ -27,6 +27,7 @@ let config = {
 
   output: {
     path: production ? '/dist' : '/build',
+    publicPath: '/',
     filename: production ? 'js/[name].min.js' : 'js/[name].js',
     library: 'availity',
     libraryTarget: 'umd'
@@ -61,7 +62,7 @@ let config = {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'raw!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
+          'css?limit=32768?name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
         )
       },
       {
@@ -79,7 +80,7 @@ let config = {
       },
       {
         test: /\.(jpe?g|png|gif)$/,
-        loader: 'url?limit=32768?name=images/[name].[ext]?[hash]'
+        loader: 'url?limit=32768?name=images/[name].[ext]'
       }
     ]
   },
