@@ -18,7 +18,7 @@ $('[data-toggle="tooltip"]').tooltip();
 
 $('.guide-example').each(() => {
 
-  let btn = `
+  const btn = `
     <hr class="divider-lg"/>' +
     <div class="btn-toolbar">
       <button class="btn btn-ghost btn-sm" data-toggle="code">
@@ -34,7 +34,7 @@ $('[data-toggle="code"]').click( (e) => {
 
   e.preventDefault();
 
-  let target = $(this).parents('.guide-example').next('.language-markup');
+  const target = $(this).parents('.guide-example').next('.language-markup');
 
   if (target.is(':visible')) {
     target.velocity('slideUp', { duration: 200 });
@@ -96,7 +96,7 @@ $('select').select2({
   }
 });
 
-// DO NOT USE THIS IN PRODUCTION...DEMO PURPOSES ONLY
+// DO NOT USE THIS IN PRODUCTION. DEMO PURPOSES ONLY.
 setInterval(() => {
   let indicators = $('.loading-indicator');
   for (let i = 0; i < indicators.length; i++) {
@@ -107,7 +107,7 @@ setInterval(() => {
   }
 }, 2000);
 
-let data = {
+const data = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -137,9 +137,9 @@ let data = {
   ]
 };
 
-let $chart1 = $('#guideChart1');
+const $chart1 = $('#guideChart1');
 if ($chart1[0]) {
-  let ctx = $chart1[0].getContext('2d');
+  const ctx = $chart1[0].getContext('2d');
   /* eslint new-cap: 0 */
   new Chart(ctx).Bar(data, {
     responsive: true,
