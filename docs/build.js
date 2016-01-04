@@ -11,6 +11,7 @@ import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
 import anchorMarkdownHeadings from './plugins/anchor.js';
+import dataMarkdown from './plugins/data-markdown.js';
 
 import pkg from '../package.json';
 
@@ -44,6 +45,9 @@ export default function build(done) {
     })
     .source(path.join(process.cwd(), 'docs', 'content'))
     .use(markdown(markedOptions))
+    .use(dataMarkdown({
+      selector: '[data-markdown]'
+    }))
     .use(prism({
       decode: true
     }))
@@ -78,10 +82,10 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
-    //.use(function(files, metalsmith, done) {
-    //  debugger;
-    //  done();
-    //})
+    // .use(function(files, metalsmith, done) {
+    //    debugger;
+    //    done();
+    // })
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'
