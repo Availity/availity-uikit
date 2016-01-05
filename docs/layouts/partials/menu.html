@@ -1,7 +1,14 @@
 <nav>
-  <ul>
-    {% for page in collections.pages %}
-      <li><a href="/{{page.path}}" title="{{ page.title}}">{{ page.title }}</a></li>
+  <ul class="nav nav-guide">
+    {% for page in pages %}
+      <li>
+        <a href="/{{page.path}}" title="{{ page.title}}">{{ page.title }}</a>
+        <ul class="nav">
+          {% for heading in page.headings %}
+            <li><a href="#{{ heading.id }}" title="{{ heading.text }}">{{ heading.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
     {% endfor %}
   </ul>
 </nav>
