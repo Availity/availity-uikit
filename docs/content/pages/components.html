@@ -2,16 +2,11 @@
 title: Components
 layout: components.html
 ---
-<div class="col-md-3 col-sm-2">
-  {% include 'partials/menu.html' %}
-</div>
-<div class="col-md-9 col-sm-10">
-  {% for item in collections.components %}
-    <section class="guide-section">
-      <h2 class="guide-section-header">{{ item.title }}</h2>
-      <p class="lead">{{ item.description }}</p>
-      {{ item.contents | safe }}
-    </section>
-  {% endfor %}
-</div>
+{% for item in collections.components %}
+  <section class="guide-section">
+    <h2 class="guide-section-header" id="{{item.title | slug}}">{{ item.title }}</h2>
+    <p class="lead">{{ item.description }}</p>
+    {{ item.contents | safe }}
+  </section>
+{% endfor %}
 
