@@ -3,8 +3,8 @@ title: Components
 layout: components.html
 ---
 {% for item in collections.components %}
-  <section class="guide-section">
-    <h2 class="guide-section-header" id="{{item.title | slug}}">{{ item.title }}</h2>
+  <section class="docs-section">
+    <h2 class="docs-section-header" id="{{item.title | slug}}">{{ item.title }}</h2>
     <p class="lead">{{ item.description }}</p>
     {{ item.contents | safe }}
   </section>

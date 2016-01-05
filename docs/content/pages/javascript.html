@@ -7,8 +7,8 @@ layout: components.html
 </div>
 <div class="col-md-9 col-sm-10">
   {% for item in collections.javascript %}
-    <section class="guide-section">
-      <h2 class="guide-section-header">{{item.title}}</h2>
+    <section class="docs-section">
+      <h2 class="docs-section-header">{{item.title}}</h2>
       <p class="lead">{{item.description}}</p>
       {{item.contents | safe }}
     </section>

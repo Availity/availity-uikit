@@ -25,10 +25,7 @@ const markedOptions = {
 nunjucks
   .configure('docs/layouts', {watch: false, noCache: true})
   .addFilter('date', nunjucksDate)
-  .addFilter('slug', slug)
-  .addFilter('console', function(o) {
-    // console.log(o)
-  });
+  .addFilter('slug', slug);
 
 nunjucksDate
   .setDefaultFormat('MMMM Do, YYYY');
@@ -83,10 +80,7 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
-    .use(headings('.guide-section-header'))
-    .use(function(files, metal, cb) {
-      cb();
-    })
+    .use(headings('.docs-section-header'))
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'
