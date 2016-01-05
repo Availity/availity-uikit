@@ -10,24 +10,25 @@ import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
-import anchorMarkdownHeadings from './plugins/anchor.js';
-import dataMarkdown from './plugins/data-markdown.js';
+import dataMarkdown from './plugins/data-markdown';
+import slug from './plugins/nunjucks-slug';
 
 import pkg from '../package.json';
 
-const renderer = new marked.Renderer();
-
-renderer.heading = anchorMarkdownHeadings;
 const markedOptions = {
   langPrefix: 'language-',
-  renderer: renderer,
+  renderer: new marked.Renderer(),
   gfm: true,
   tables: true
 };
 
 nunjucks
   .configure('docs/layouts', {watch: false, noCache: true})
-  .addFilter('date', nunjucksDate);
+  .addFilter('date', nunjucksDate)
+  .addFilter('slug', slug)
+  .addFilter('console', function(o) {
+    // console.log(o)
+  });
 
 nunjucksDate
   .setDefaultFormat('MMMM Do, YYYY');
@@ -43,6 +44,7 @@ export default function build(done) {
       },
       pkg: pkg
     })
+    .ignore('**/.DS_Store')
     .source(path.join(process.cwd(), 'docs', 'content'))
     .use(markdown(markedOptions))
     .use(dataMarkdown({
@@ -74,7 +76,6 @@ export default function build(done) {
         refer: false
       }
     }))
-    .use(headings('.guide-section-header'))
     .use(permalinks({
       relative: false
     }))
@@ -82,10 +83,10 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
-    // .use(function(files, metalsmith, done) {
-    //    debugger;
-    //    done();
-    // })
+    .use(headings('.guide-section-header'))
+    .use(function(files, metal, cb) {
+      cb();
+    })
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'
