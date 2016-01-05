@@ -16,25 +16,25 @@ $('[data-toggle="popover"]').popover({
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$('.guide-example').each(() => {
+$('.docs-example').each(function() {
 
   const btn = `
-    <hr class="divider-lg"/>' +
+    <hr class="divider-lg"/>
     <div class="btn-toolbar">
       <button class="btn btn-ghost btn-sm" data-toggle="code">
         View Code <i class="icon icon-code"></i>
-      </button>' +
+      </button>
     </div>`;
 
   $(this).append($(btn));
 
 });
 
-$('[data-toggle="code"]').click( (e) => {
+$('[data-toggle="code"]').click(function(e) {
 
   e.preventDefault();
 
-  const target = $(this).parents('.guide-example').next('.language-markup');
+  const target = $(this).parents('.docs-example').next('.language-markup');
 
   if (target.is(':visible')) {
     target.velocity('slideUp', { duration: 200 });
@@ -79,7 +79,7 @@ $('select').select2({
     id: '-1',
     placeholder: 'Select one'
   }
-}).on('select2:open', () => {
+}).on('select2:open', function() {
 
   let $this = $(this);
   if ($this.parents('[class*="has-"]').length) {
