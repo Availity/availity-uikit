@@ -44,6 +44,11 @@ blockquote {
   position: static;
 }
 
+.nav-guide {
+  position: fixed;
+  top: 20px;
+}
+
 .code-label(@label) {
   content: @label;
   position: absolute;
@@ -217,27 +222,6 @@ div[title] {
   padding: 1em;
   font-size: 1.2em;
   text-align: center;
-}
-
-//== Tocify
-//
-.tocify {
-  border: none;
-  font-size: 16px;
-  border-radius: 0;
-}
-.tocify ul, .tocify li {
-  margin: 0;
-  padding: 0;
-  border: none;
-  line-height: .8em;
-}
-
-@media (max-width: @screen-md-min) {
-  // Dropdowns get custom display when collapsed
-  .tocify {
-    display: none;
-  }
 }
 
 //== Syntax Highlighting
