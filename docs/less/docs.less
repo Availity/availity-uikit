@@ -15,6 +15,7 @@
 @docs-padding: 1.5em;
 @docs-color: lighten(@gray, 30%);
 @docs-font-code: 12px;
+@docs-code-border-color: #f7f7f9;
 
 .docs {
   background-color: @body-bg;
@@ -46,6 +47,21 @@
   position: static;
 }
 
+.docs-nav {
+
+  .nav > li {
+    padding-left: 10px;
+    list-style-type: circle;
+    list-style-position: inside;
+    display: list-item;
+
+    > a {
+      padding: 1px 15px;
+    }
+  }
+
+}
+
 .nav-docs {
   position: fixed;
   top: 20px;
@@ -71,7 +87,7 @@
   margin-top: 1rem;
   position: relative;
   padding: (2.5 * @docs-padding) @docs-padding @docs-padding @docs-padding;
-  border: solid #f7f7f9;
+  border: solid @docs-code-border-color;
   border-radius: @border-radius-large @border-radius-large 0 0;
 
   .card {
@@ -101,8 +117,6 @@
 
 .docs-subsection-title {
   margin: 2em 0 1em 0;
-  border-left: 4px solid #0093e8;
-  padding-left: .5em;
 }
 
 // gray bars that simulate text blocks
@@ -236,8 +250,8 @@ div[title] {
   letter-spacing: 0;
   color: @gray;
   font-family: @font-family-monospace;
-  background-color: #f7f7f9;
-  border: solid #f7f7f9;
+  background-color: @docs-code-border-color;
+  border: solid @docs-code-border-color;
   border-radius: @border-radius-base;
   padding: 30px 15px 15px;
   max-height: none !important;
