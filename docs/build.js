@@ -3,14 +3,14 @@ import layouts from 'metalsmith-layouts';
 import prism from 'metalsmith-prism';
 import marked from 'marked';
 import markdown from 'metalsmith-markdown';
-import headings from 'metalsmith-headings';
 import inPlace from 'metalsmith-in-place';
 import permalinks from 'metalsmith-permalinks';
 import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
-import dataMarkdown from './plugins/data-markdown';
+import dataMarkdown from './plugins/metalsmith-data-markdown';
+import slugifyHeadings from './plugins/metalsmith-tocify';
 import slug from './plugins/nunjucks-slug';
 
 import pkg from '../package.json';
@@ -80,7 +80,12 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
-    .use(headings('.docs-section-header'))
+    .use(slugifyHeadings({
+      selectors: '.docs-section-header, .docs-subsection-title'
+    }))
+    .use(function(f, m, c) {
+      c();
+    })
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'
