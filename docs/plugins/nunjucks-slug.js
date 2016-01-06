@@ -1,6 +1,8 @@
 import slug from 'slug';
 
-let options = {};
+let options = {
+  mode: 'rfc3986'
+};
 
 function slugify(name) {
   return slug(name, options);
