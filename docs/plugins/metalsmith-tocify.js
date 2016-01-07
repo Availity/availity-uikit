@@ -57,7 +57,7 @@ function slugify($el) {
 
   let id = $el.attr('id');
   if (!id) {
-    let slugId = slug($el.text(), {'mode': ''});
+    let slugId = slug($el.text(), {'mode': 'rfc3986'});
     id = slugId;
     $el.attr('id', id); // add ID to dom if missing
   }
