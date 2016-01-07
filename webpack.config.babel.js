@@ -1,7 +1,7 @@
 
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-// import BowerWebpackPlugin from 'bower-webpack-plugin';
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 const VERSION = require('./package.json').version;
 
@@ -102,7 +102,12 @@ let config = {
       'window.jQuery': 'jquery'
     }),
 
-    new webpack.DefinePlugin(ENV_VAR)
+    new webpack.DefinePlugin(ENV_VAR),
+
+    new CommonsChunkPlugin({
+      name: ['vendor'],
+      minChunks: Infinity
+    })
 
   ],
   resolve: {
