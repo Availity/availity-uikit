@@ -4,6 +4,7 @@ import prism from 'metalsmith-prism';
 import marked from 'marked';
 import markdown from 'metalsmith-markdown';
 import inPlace from 'metalsmith-in-place';
+import mock from 'metalsmith-mock';
 import permalinks from 'metalsmith-permalinks';
 import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
@@ -80,6 +81,7 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
+    .use(mock())
     .use(tocify({selector: '.docs-section-header, .docs-subsection-title'}))
     .use(layouts({
       engine: 'nunjucks',
