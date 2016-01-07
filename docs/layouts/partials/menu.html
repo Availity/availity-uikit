@@ -1,14 +1,25 @@
 <nav>
-  <ul class="nav nav-docs">
-    {% for page in pages %}
-      <li>
-        <a href="/{{page.path}}" title="{{ page.title}}">{{ page.title }}</a>
-        <ul class="nav">
-          {% for heading in page.headings %}
-            <li><a href="#{{ heading.id }}" title="{{ heading.text }}">{{ heading.text }}</a></li>
+  {% for page in pages %}
+    {% if title == page.title %}
+      <ol class="nav docs-nav">
+        {% for heading in page.toc %}
+          <li>
+            <a href="#{{ heading.id }}" title="{{ heading.text }}">{{ heading.text }}</a>
+            {% for subHeading in heading.children %}
+
+              {% if loop.first %}
+              <ol class="nav docs-nav">
+              {% endif %}
+
+                <li><a href="#{{ subHeading.id }}" title="{{ subHeading.text }}">{{ subHeading.text }}</a></li>
+
+              {% if loop.last %}
+              </ol>
+              {% endif %}
+          </li>
           {% endfor %}
-        </ul>
-      </li>
-    {% endfor %}
-  </ul>
+        {% endfor %}
+      </ol>
+    {% endif %}
+  {% endfor %}
 </nav>
