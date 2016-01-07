@@ -10,8 +10,8 @@ import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
 import dataMarkdown from './plugins/metalsmith-data-markdown';
-import slugifyHeadings from './plugins/metalsmith-tocify';
 import slug from './plugins/nunjucks-slug';
+import tocify from './plugins/metalsmith-tocify';
 
 import pkg from '../package.json';
 
@@ -80,12 +80,7 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
-    .use(slugifyHeadings({
-      selectors: '.docs-section-header, .docs-subsection-title'
-    }))
-    .use(function(f, m, c) {
-      c();
-    })
+    .use(tocify({selector: '.docs-section-header, .docs-subsection-title'}))
     .use(layouts({
       engine: 'nunjucks',
       directory: 'layouts'

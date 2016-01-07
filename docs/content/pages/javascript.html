@@ -1,16 +1,13 @@
 ---
 title: JavaScript
 layout: components.html
+toc: true
 ---
-<div class="col-md-3 col-sm-2">
-  {% include 'partials/menu.html' %}
-</div>
-<div class="col-md-9 col-sm-10">
-  {% for item in collections.javascript %}
-    <section class="docs-section">
-      <h2 class="docs-section-header">{{item.title}}</h2>
-      <p class="lead">{{item.description}}</p>
-      {{item.contents | safe }}
-    </section>
-  {% endfor %}
-</div>
+{% for item in collections.javascript %}
+  <section class="docs-section">
+    <h2 class="docs-section-header">{{item.title}}</h2>
+    <p class="lead">{{item.description}}</p>
+    {{item.contents | safe }}
+  </section>
+{% endfor %}
+
