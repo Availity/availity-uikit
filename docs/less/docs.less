@@ -4,10 +4,12 @@
 
 @import (reference) "@{bootstrap-less-path}/mixins/clearfix.less";
 @import "@{bootstrap-less-path}/variables.less";
+@import (reference) "@{bootstrap-less-path}/mixins/gradients.less";
 
 @import "@{availity-less-path}/availity-variables.less";
 @import (reference) "@{availity-less-path}/mixins/availity-mixins-type.less";
 @import (reference) "@{availity-less-path}/mixins/availity-mixins-icons.less";
+
 @import (reference) "@{availity-less-path}/availity-type.less";
 
 @import (less) "@{prism-less-path}/themes/prism-coy.css";
@@ -27,8 +29,49 @@
 
 }
 
+.docs-intro {
+  color: @white;
+  text-align: center;
+  padding: 8rem 6rem;
+  background-image: url(../images/waves.png);
+  background-repeat: repeat-x;
+  background-color: #4d4f53;
+
+  // #gradient > .horizontal-three-colors(#4d4f53, #5e6064, 30%, #4d4f53);
+
+  h1 {
+    font-size: 4.25rem;
+  }
+
+  a {
+    margin: 0 1rem;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: normal;
+  }
+}
+
+.docs-intro-section {
+
+  padding: 2rem 0;
+
+  p {
+    padding: 1rem 0;
+  }
+}
+
+
 .docs-navbar {
   margin-bottom: 0;
+}
+
+.docs-btn-outline {
+  color: #ccc;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ccc;
 }
 
 .docs-section {
