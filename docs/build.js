@@ -51,6 +51,7 @@ export default function build(done) {
     .use(prism({
       decode: true
     }))
+    .use(mock())
     .use(collections({
       pages: {
         pattern: 'pages/**/*.html',
@@ -81,7 +82,6 @@ export default function build(done) {
       engine: 'nunjucks',
       partials: 'layouts/partials'
     }))
-    .use(mock())
     .use(tocify({selector: '.docs-section-header, .docs-subsection-title'}))
     .use(layouts({
       engine: 'nunjucks',
