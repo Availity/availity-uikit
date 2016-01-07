@@ -1,12 +1,5 @@
 import $ from 'jquery';
 import Chart from 'chart.js';
-import 'bootstrap';
-import 'moment';
-import 'select2';
-import 'holderjs';
-import 'bootstrap-datepicker';
-import 'velocity-animate';
-import 'velocity-animate/velocity.ui';
 
 import '../less/docs.less';
 

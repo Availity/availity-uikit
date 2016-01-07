@@ -22,7 +22,8 @@ let config = {
 
   entry: {
     'availity-uikit': './index.js',
-    'vendor': './docs/js'
+    'vendor': './docs/js/vendor',
+    'docs': './docs/js'
   },
 
   output: {
