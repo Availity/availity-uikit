@@ -21,6 +21,7 @@
 @docs-code-border-color: #f7f7f9;
 
 .docs {
+
   background-color: @body-bg;
 
   blockquote {
@@ -30,14 +31,13 @@
 }
 
 .docs-intro {
+
   color: @white;
   text-align: center;
-  padding: 7rem 6rem;
+  padding: 3rem 6rem;
   background-image: url(../images/waves.png);
   background-repeat: repeat-x;
   background-color: #4d4f53;
-
-  // #gradient > .horizontal-three-colors(#4d4f53, #5e6064, 30%, #4d4f53);
 
   h1 {
     font-size: 4.25rem;
@@ -366,4 +366,109 @@ pre[class*="language-"] {
     color: #a67f59;
   }
 
+}
+
+// dummy-browser from http://tympanus.net/Development/CheckoutConcepts/
+
+.dummy-browser {
+  position: relative;
+  border-top: 30px solid rgba(181, 183, 188, 0.6);
+  border-bottom: 10px solid rgba(181, 183, 188, 0.6);
+  border-radius: 10px 10px 0 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fdb0ad;
+    box-shadow: 20px 0 0 #fdeaa2, 40px 0 0 #d7edb4;
+  }
+}
+
+.dummy-browser-header {
+  display: block;
+  height: 1em;
+  background: rgba(181, 183, 188, 0.3);
+}
+
+.dummy-browser-body {
+  padding: 2.5em 2em;
+  background: rgba(181, 183, 188, 0.1);
+}
+
+// Layout examples from http://v4-alpha.getbootstrap.com/layout/overview/
+.dummy-page-header {
+  height: 5rem;
+  margin-bottom: .5rem;
+  background-color: #daeeff;
+  border-radius: .25rem;
+  animation-delay: .2s;
+}
+
+.dummy-page-sidebar {
+  float: left;
+  width: 10rem;
+  height: 20rem;
+  background-color: #fae3c4;
+  border-radius: .25rem;
+  animation-delay: .2s;
+}
+
+.dummy-page-body {
+  height: 20rem;
+  margin-left: 10.5rem;
+  background-color: #957bbe;
+  border-radius: .25rem;
+  animation-delay: .2s;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: 1s;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
 }
