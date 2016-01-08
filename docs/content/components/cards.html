@@ -10,7 +10,7 @@ description: |
 </div>
 
 <h3 class="docs-subsection-title">Basic</h3>
-<p data-markdown>Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the `.card-block` class on the `.card` element to consolidate your markup.</p>
+<p class="docs-section-description">Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the `.card-block` class on the `.card` element to consolidate your markup.</p>
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" alt="Card image cap">
@@ -33,7 +33,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Content Types</h3>
-<p>Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.</p>
+<p class="docs-section-description">Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.</p>
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" alt="100px180">
@@ -158,7 +158,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Sizing</h3>
-<p>Cards are block-level by default, so they’ll fill the available horizontal space. Constrain their widths via inline styles, our predefined grid classes, or with custom styles using our grid mixins.</p>
+<p class="docs-section-description">Cards are block-level by default, so they’ll fill the available horizontal space. Constrain their widths via inline styles, our predefined grid classes, or with custom styles using our grid mixins.</p>
 <div class="docs-example">
   <div class="row">
     <div class="col-sm-3">
@@ -225,7 +225,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Text Alignment</h3>
-<p>You can quickly change the text alignment of any card—in its entirety or specific parts—with with the text alignment</p>
+<p class="docs-section-description">You can quickly change the text alignment of any card—in its entirety or specific parts—with with the text alignment</p>
 <div class="docs-example">
   <div class="card card-block">
     <h4 class="card-title">Special title treatment</h4>
@@ -266,7 +266,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Header and Footer</h3>
-<p>Add an optional header and/or footer within a card.</p>
+<p class="docs-section-description">Add an optional header and/or footer within a card.</p>
 <div class="docs-example">
 <div class="card">
   <div class="card-header">
@@ -324,7 +324,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Image Caps</h3>
-<p>Similar to headers and footers, cards include top and bottom image caps.</p>
+<p class="docs-section-description">Similar to headers and footers, cards include top and bottom image caps.</p>
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" alt="Card image cap">
@@ -363,7 +363,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Variants</h3>
-<p data-markdown>Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. Darker colors require the use of `.card-inverse.`</p>
+<p class="docs-section-description" data-markdown>Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. Darker colors require the use of `.card-inverse.`</p>
 <div class="docs-example">
   <div class="card card-inverse card-primary text-center">
     <div class="card-block">
@@ -466,7 +466,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Groups</h3>
-<p data-markdown>Use card groups to render cards as a single, attached element with equal width and height columns. By default, card groups use `display: table;` and `table-layout: fixed;` to achieve their uniform sizing.</p>
+<p class="docs-section-description" data-markdown>Use card groups to render cards as a single, attached element with equal width and height columns. By default, card groups use `display: table;` and `table-layout: fixed;` to achieve their uniform sizing.</p>
 <div class="docs-example">
   <div class="card-group">
     <div class="card">
@@ -525,7 +525,7 @@ description: |
 </code>
 
 <h3 class="docs-subsection-title">Decks</h3>
-<p data-markdown>Need a set of equal width and height cards that aren’t attached to one another? Use card decks. By default, card decks require two wrapping elements: `.card-deck-wrapper` and a `.card-deck`. We use table styles for the sizing and the gutters on `.card-deck`. The `.card-deck-wrapper` is used to negative margin out the border-spacing on the `.card-deck.`</p>
+<p class="docs-section-description" data-markdown>Need a set of equal width and height cards that aren’t attached to one another? Use card decks. By default, card decks require two wrapping elements: `.card-deck-wrapper` and a `.card-deck`. We use table styles for the sizing and the gutters on `.card-deck`. The `.card-deck-wrapper` is used to negative margin out the border-spacing on the `.card-deck.`</p>
 <div class="docs-example">
 <div class="card-deck-wrapper">
   <div class="card-deck">
@@ -589,9 +589,10 @@ description: |
 
 <h3 class="docs-subsection-title">Columns</h3>
 
-<div data-markdown>
+<p class="docs-section-description" data-markdown>
 Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns with just CSS by wrapping them in .card-columns.
-
+</p>
+<div data-markdown>
 > This is not available in IE9 and below as they have no support for the column CSS properties.
 </div>
 <div class="docs-example">
