@@ -32,7 +32,7 @@
 .docs-intro {
   color: @white;
   text-align: center;
-  padding: 8rem 6rem;
+  padding: 7rem 6rem;
   background-image: url(../images/waves.png);
   background-repeat: repeat-x;
   background-color: #4d4f53;
@@ -41,6 +41,7 @@
 
   h1 {
     font-size: 4.25rem;
+    font-family: Tahoma, Helvetica, sans-serif;
   }
 
   a {
@@ -50,7 +51,13 @@
   h2 {
     padding-bottom: 2rem;
     font-weight: normal;
+    font-family: Tahoma, Helvetica, sans-serif;
   }
+}
+
+.docs-footer {
+  margin-top: 2rem;
+  padding: 1.5rem;
 }
 
 .docs-intro-section {
@@ -71,7 +78,7 @@
   color: #ccc;
   background-color: transparent;
   background-image: none;
-  border-color: #ccc;
+  border: 2px solid #ccc;
 }
 
 .docs-section {
@@ -109,6 +116,8 @@
       list-style-position: inside;
       display: list-item;
       font-size: 90%;
+
+
       > a {
         color: lighten(@docs-menu-link-color, 30%);
       }

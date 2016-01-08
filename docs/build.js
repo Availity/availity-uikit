@@ -25,11 +25,11 @@ const markedOptions = {
 
 nunjucks
   .configure('docs/layouts', {watch: false, noCache: true})
-  .addFilter('date', nunjucksDate)
+  .addFilter('year', nunjucksDate)
   .addFilter('slug', slug);
 
 nunjucksDate
-  .setDefaultFormat('MMMM Do, YYYY');
+  .setDefaultFormat('YYYY');
 
 export default function build(done) {
 
