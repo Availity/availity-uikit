@@ -55,19 +55,29 @@ export default function plugin(options) {
 
       $(opts.selector || '[data-markdown]').each(function() {
 
+        foundMatches = true;
+
+        let $el = $(this);
+
         // grab the html of the node and
         // decode all html entities
         // decoding fixes problems with smartypants
-        let _html = $(this).html();
+        let _html = $el.html();
+        let _class = $el.attr('class');
+
         const markedText = marked(he.decode(_html));
+        let $$el = $(markedText);
 
         // set compiled markdown content to node
-        $(this).html(markedText);
-        foundMatches = true;
+        if (_class) {
+          $$el.attr('class', _class);
+        }
+
+        $el.replaceWith($$el);
 
         // remove attr if configured
         if (opts.removeAttributeAfterwards) {
-          $(this).removeAttr('data-markdown');
+          $el.removeAttr('data-markdown');
         }
 
       });
