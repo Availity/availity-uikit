@@ -23,13 +23,15 @@ const markedOptions = {
   tables: true
 };
 
+
+nunjucksDate
+  .setDefaultFormat('YYYY');
+
 nunjucks
   .configure('docs/layouts', {watch: false, noCache: true})
   .addFilter('year', nunjucksDate)
   .addFilter('slug', slug);
 
-nunjucksDate
-  .setDefaultFormat('YYYY');
 
 export default function build(done) {
 
@@ -40,6 +42,7 @@ export default function build(done) {
       site: {
         title: 'Availity UIKit'
       },
+      today: new Date(),
       pkg: pkg
     })
     .ignore('**/.DS_Store')
