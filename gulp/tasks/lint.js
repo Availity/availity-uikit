@@ -3,14 +3,14 @@ var eslint = require('gulp-eslint');
 var using = require('gulp-using');
 var gulpif = require('gulp-if');
 
-var config = require('../config');
+var args = require('yargs').argv;
 
-gulp.task('lint', ['lint:js', 'lint:lib']);
+gulp.task('lint', ['lint:web', 'lint:node']);
 
-gulp.task('lint:js', function() {
+gulp.task('lint:web', () => {
 
-  gulp.src(config.js.src)
-    .pipe(gulpif(config.args.verbose, using({
+  gulp.src('*.js')
+    .pipe(gulpif(args.args.verbose, using({
       prefix: 'Task [lint:js] using'
     })))
     .pipe(eslint('.eslintrc'))
@@ -18,24 +18,13 @@ gulp.task('lint:js', function() {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('lint:js:guide', function() {
+gulp.task('lint:node', () => {
 
-  gulp.src(config.jsGuide.src)
-    .pipe(gulpif(config.args.verbose, using({
-      prefix: 'Task [lint:js:guide] using'
+  gulp.src(['*.js', '!./js/**.js'])
+    .pipe(gulpif(args.args.verbose, using({
+      prefix: 'Task [lint:js] using'
     })))
-    .pipe(eslint('./js/.eslintrc'))
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-});
-
-gulp.task('lint:lib', function() {
-
-  gulp.src(config.lib.targets)
-    .pipe(gulpif(config.args.verbose, using({
-      prefix: 'Task [lint:lib] using'
-    })))
-    .pipe(eslint('./js/.eslintrc'))
+    .pipe(eslint('.eslintrc'))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });

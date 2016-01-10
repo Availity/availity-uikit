@@ -9,7 +9,6 @@ var filter = require('gulp-filter');
 var tagVersion = require('gulp-tag-version');
 var runSequence = require('run-sequence').use(gulp);
 
-var config = require('../config');
 var pkg = require('../../package.json');
 
 var type = 'patch';
@@ -33,7 +32,7 @@ gulp.task('release:add', function() {
 gulp.task('release:tag', function() {
 
   var getPkg = function() {
-    var _pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
+    var _pkg = JSON.parse(fs.readFileSync(path.join('./package.json'), 'utf8'));
     return _pkg.version;
   };
 
@@ -44,7 +43,7 @@ gulp.task('release:tag', function() {
 });
 
 gulp.task('release:bump', function() {
-  return gulp.src(config.packages.src)
+  return gulp.src(['./package.json', './bower.json'])
     .pipe(bump({ type: type }))
     .pipe(gulp.dest('./'));
 });

@@ -5,16 +5,14 @@ var os = require('os');
 var path = require('path');
 var fs = require('fs');
 
-var config = require('../config');
-
 gulp.task('deploy', ['deploy:sequence']);
 
 function getName() {
-  var pkg = JSON.parse(fs.readFileSync(path.join(config.project.path, 'package.json'), 'utf8'));
+  var pkg = JSON.parse(fs.readFileSync(path.join('./package.json'), 'utf8'));
   return pkg.name;
 }
 
-gulp.task('deploy:github:pages', function() {
+gulp.task('deploy:github:pages', () => {
   return gulp.src('./build/guide/**/*')
     .pipe(ghPages({
       cacheDir: path.join(os.tmpdir(), getName())
@@ -31,7 +29,7 @@ var tasks = [
   'build'
 ];
 
-gulp.task('deploy:sequence', function() {
+gulp.task('deploy:sequence', () => {
   runSequence(
     'lint',
     ['clean:css', 'clean:js', 'clean:fonts', 'clean:images'],
