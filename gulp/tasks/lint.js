@@ -10,7 +10,7 @@ gulp.task('lint', ['lint:web', 'lint:node']);
 gulp.task('lint:web', () => {
 
   gulp.src('*.js')
-    .pipe(gulpif(args.args.verbose, using({
+    .pipe(gulpif(args.verbose, using({
       prefix: 'Task [lint:js] using'
     })))
     .pipe(eslint('.eslintrc'))
@@ -21,7 +21,7 @@ gulp.task('lint:web', () => {
 gulp.task('lint:node', () => {
 
   gulp.src(['*.js', '!./js/**.js'])
-    .pipe(gulpif(args.args.verbose, using({
+    .pipe(gulpif(args.verbose, using({
       prefix: 'Task [lint:js] using'
     })))
     .pipe(eslint('.eslintrc'))
