@@ -1,6 +1,8 @@
 
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+
+import banner from './dev/banner';
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 const VERSION = require('./package.json').version;
@@ -72,6 +74,10 @@ let config = {
     ]
   },
   plugins: [
+
+    new webpack.BannerPlugin(banner(), {
+      exclude: ['.*vendor.js']
+    }),
 
     new webpack.optimize.OccurenceOrderPlugin(),
 

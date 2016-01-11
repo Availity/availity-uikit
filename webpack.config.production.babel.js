@@ -2,6 +2,7 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
+import banner from './dev/banner';
 const VERSION = require('./package.json').version;
 
 
@@ -70,6 +71,10 @@ let config = {
     ]
   },
   plugins: [
+
+    new webpack.BannerPlugin(banner(), {
+      exclude: ['vendor']
+    }),
 
     new webpack.optimize.OccurenceOrderPlugin(),
 
