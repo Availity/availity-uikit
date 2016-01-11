@@ -5,13 +5,8 @@ const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 const VERSION = require('./package.json').version;
 
-const nodeEnv = process.env.NODE_ENV || 'development';
-const production = (nodeEnv === 'production' ? true : false);
-const development = !production;
-
 let ENV_VAR = {
   'process.env': {
-    'NODE_ENV': JSON.stringify(nodeEnv),
     'VERSION': JSON.stringify(VERSION)
   }
 };
@@ -27,25 +22,16 @@ let config = {
   },
 
   output: {
-    path: production ? '/dist' : '/build',
+    path: '/build',
     publicPath: '/',
-    filename: production ? 'js/[name].min.js' : 'js/[name].js',
+    filename: 'js/[name].js',
     library: 'availity',
     libraryTarget: 'umd'
   },
 
-  // externals: {
-  //   jquery: {
-  //     root: 'jQuery',
-  //     commonjs2: 'jQuery',
-  //     commonjs: 'jQuery',
-  //     amd: 'jQuery'
-  //   }
-  // },
-
-  debug: development,
-  cache: development,
-  watch: development,
+  debug: true,
+  cache: true,
+  watch: true,
 
   module: {
     loaders: [
@@ -114,17 +100,6 @@ let config = {
     extensions: ['', '.js']
   }
 };
-
-if (production) {
-  config.plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        screw_ie8: true,
-        warnings: false
-      }
-    })
-  );
-}
 
 export default config;
 
