@@ -2,12 +2,12 @@ require('babel-register');
 
 var argv = require('yargs').argv;
 
+var run = require('./run').default;
 var start = require('./start').default;
 
 switch (argv.command) {
-
   case 's':
-    start();
+    run(start);
     break;
   default:
     start();

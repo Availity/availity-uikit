@@ -1,3 +1,5 @@
+
+
 /* eslint no-console:0 */
 
 function format(date) {
@@ -9,9 +11,7 @@ function run(promise, options) {
   const start = new Date();
   console.log(`[${format(start)}] Starting '${promise.name}'...`);
 
-  return promise(options).then( () => {
-
-    "use strict";
+  return promise(options).then(function() {
 
     const end = new Date();
     const time = end.getTime() - start.getTime();

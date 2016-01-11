@@ -7,10 +7,9 @@
     "node": ">=4.x"
   },
   "scripts": {
-    "start": "babel-node dev/start",
+    "start": "babel-node dev/index --command=s",
     "lint": "eslint ./",
     "clean:build": "rimraf build",
-    "banner": "babel-node dev/banner",
     "postinstall": "bower install"
   },
   "license": "MIT",
