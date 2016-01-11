@@ -31,6 +31,7 @@ function serv() {
 }
 
 function start() {
+
   return metalsmith()
     .then(serv)
     .catch( (err) => {

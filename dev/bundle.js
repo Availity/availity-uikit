@@ -14,6 +14,7 @@ export default function bundle() {
 
       Logger.log(stats.toString(webpackConfig[0].stats));
       resolve();
+
     });
 
 
