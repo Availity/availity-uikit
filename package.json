@@ -7,9 +7,9 @@
     "node": ">=4.x"
   },
   "scripts": {
-    "start": "babel-node dev/index --command=s",
+    "start": "babel-node dev/index --command=start",
+    "build": "babel-node dev/index --command=build",
     "lint": "eslint ./",
-    "clean:build": "rimraf build",
     "postinstall": "bower install"
   },
   "license": "MIT",
@@ -66,6 +66,7 @@
     "chart.js": "1.0.2",
     "cheerio": "^0.19.0",
     "css-loader": "0.23.1",
+    "del": "2.2.0",
     "eslint": "1.10.3",
     "eslint-config-availity": "2.0.0-beta.0",
     "extract-text-webpack-plugin": "0.9.1",
@@ -102,7 +103,6 @@
     "nunjucks-date": "1.2.0",
     "raw-loader": "0.5.1",
     "require-dir": "^0.3.0",
-    "rimraf": "2.4.4",
     "run-sequence": "^1.1.1",
     "sass-loader": "3.1.2",
     "select2": "4.0.1",
