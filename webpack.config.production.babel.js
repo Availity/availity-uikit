@@ -62,7 +62,7 @@ let config = {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'css?limit=32768?name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
+          'css?limit=32768?sourceMap&minimize&name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
         )
       },
       {
@@ -95,10 +95,13 @@ let config = {
       allChunks: true
     }),
 
+    new webpack.NoErrorsPlugin(),
+
     new webpack.DefinePlugin(ENV_VAR),
 
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
+      mangle: false,
       output: {
         comments: false
       },
