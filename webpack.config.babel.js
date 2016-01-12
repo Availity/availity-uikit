@@ -1,6 +1,7 @@
 
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import WebpackNotifierPlugin from 'webpack-notifier';
 
 import banner from './dev/banner';
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
@@ -22,6 +23,8 @@ let config = {
     'vendor': './docs/js/vendor',
     'docs': './docs/js'
   },
+
+  devtool: 'cheap-module-eval-source-map',
 
   output: {
     path: '/build',
@@ -88,7 +91,7 @@ let config = {
   plugins: [
 
     new webpack.BannerPlugin(banner(), {
-      exclude: ['.*vendor.js']
+      exclude: ['vendor']
     }),
 
     new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
@@ -103,6 +106,8 @@ let config = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     }),
+
+    new WebpackNotifierPlugin({excludeWarnings: true}),
 
     new webpack.DefinePlugin(ENV_VAR),
 

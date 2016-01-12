@@ -114,6 +114,7 @@
     "velocity-animate": "1.2.3",
     "webpack": "1.12.9",
     "webpack-dev-server": "1.14.0",
+    "webpack-notifier": "1.2.1",
     "yargs": "3.31.0"
   },
   "keywords": [
