@@ -35,6 +35,18 @@ let config = {
   cache: true,
   watch: true,
 
+  stats: {
+    colors: true,
+    reasons: true,
+    hash: true,
+    version: true,
+    timings: true,
+    chunks: true,
+    chunkModules: true,
+    cached: true,
+    cachedAssets: true
+  },
+
   module: {
     loaders: [
 
@@ -78,8 +90,6 @@ let config = {
     new webpack.BannerPlugin(banner(), {
       exclude: ['.*vendor.js']
     }),
-
-    new webpack.optimize.OccurenceOrderPlugin(),
 
     new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
 

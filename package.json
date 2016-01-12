@@ -7,8 +7,8 @@
     "node": ">=4.x"
   },
   "scripts": {
-    "start": "babel-node dev/index --command=start",
-    "build": "babel-node dev/index --command=build",
+    "start": "NODE_ENV=development babel-node dev/index --command=start",
+    "build": "NODE_ENV=production babel-node dev/index --command=build",
     "lint": "eslint ./",
     "postinstall": "bower install"
   },

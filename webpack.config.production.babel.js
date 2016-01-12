@@ -1,4 +1,4 @@
-
+import path from 'path';
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
@@ -21,16 +21,30 @@ let config = {
   },
 
   output: {
-    path: '/dist',
+    path: path.join(process.cwd(), 'dist'),
     publicPath: '/',
     filename: 'js/[name].min.js',
     library: 'availity',
     libraryTarget: 'umd'
   },
 
+  devtool: 'source-map',
+
   debug: false,
   cache: false,
   watch: false,
+
+  stats: {
+    colors: true,
+    reasons: true,
+    hash: true,
+    version: true,
+    timings: true,
+    chunks: true,
+    chunkModules: true,
+    cached: true,
+    cachedAssets: true
+  },
 
   module: {
     loaders: [
@@ -72,13 +86,9 @@ let config = {
   },
   plugins: [
 
-    new webpack.BannerPlugin(banner(), {
-      exclude: ['vendor']
-    }),
+    new webpack.BannerPlugin(banner()),
 
-    new webpack.optimize.OccurenceOrderPlugin(),
-
-    new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
+    new webpack.optimize.OccurenceOrderPlugin(true),
 
     new ExtractTextPlugin('css/[name].css', {
       disable: false,
@@ -88,6 +98,10 @@ let config = {
     new webpack.DefinePlugin(ENV_VAR),
 
     new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      output: {
+        comments: false
+      },
       compressor: {
         screw_ie8: true,
         warnings: false

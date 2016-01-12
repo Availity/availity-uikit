@@ -7,8 +7,10 @@ export default function banner() {
 
   const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
-  return `/**
-    * ${pkg.name} v<%= ${pkg.version} %> -- ${today}
-    *  Availity, LLC
-    */`;
+  let elBanner = `
+${pkg.name} v${pkg.version} (${today})
+(c) Availity, LLC`;
+
+
+  return elBanner;
 }

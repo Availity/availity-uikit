@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import webpackConfig from './webpack.config.production.babel';
+import webpackConfig from '../webpack.config.production.babel';
 import Logger from './logger';
 
 export default function bundle() {
@@ -12,7 +12,7 @@ export default function bundle() {
         return reject(err);
       }
 
-      Logger.log(stats.toString(webpackConfig[0].stats));
+      Logger.log(stats.toString(webpackConfig.stats));
       resolve();
 
     });
