@@ -3,6 +3,7 @@ import webpack from 'webpack';
 
 import metalsmith from './metalsmith';
 import Logger from './logger';
+import watch from './watch';
 import webpackConfig from '../webpack.config.babel';
 
 function serv() {
@@ -34,6 +35,7 @@ function start() {
 
   return metalsmith()
     .then(serv)
+    .then(watch)
     .catch( (err) => {
 
       Logger.log(err);
