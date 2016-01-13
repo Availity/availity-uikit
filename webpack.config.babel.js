@@ -1,4 +1,3 @@
-
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackNotifierPlugin from 'webpack-notifier';
@@ -10,13 +9,14 @@ const VERSION = require('./package.json').version;
 
 let ENV_VAR = {
   'process.env': {
-    'VERSION': JSON.stringify(VERSION)
+    'VERSION': JSON.stringify(VERSION),
+    'process.env.NODE_ENV': JSON.stringify('development')
   }
 };
 
 let config = {
 
-  context: process.cwd(),
+  context: __dirname,
 
   entry: {
     'availity-uikit': './index.js',

@@ -1,12 +1,12 @@
 import webpack from 'webpack';
-import webpackConfig from '../webpack.config.production.babel';
 import Logger from './logger';
+import webpackConfig from '../webpack.config.production.babel';
 
 export default function bundle() {
 
   return new Promise((resolve, reject) => {
 
-    webpack(webpackConfig).run((err, stats) => {
+    webpack(webpackConfig()).run((err, stats) => {
 
       if (err) {
         return reject(err);

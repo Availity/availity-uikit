@@ -9,17 +9,12 @@ export default class Logger {
     this.options = options;
   }
 
-  get canLog() {
-    return process.env.NODE_ENV !== 'testing';
-  }
-
   static log(entry) {
 
     let now = dateformat(new Date(), 'HH:MM:ss');
+    let color = entry instanceof Error ? 'red' : 'gray';
 
-    if (this.canLog) {
-      console.log(`[${ chalk.gray(now) } ${ entry }` );
-    }
+    console.log(`[${ chalk.cyan(now) }] ${ chalk[color](entry) }` );
 
   }
 

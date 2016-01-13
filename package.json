@@ -9,6 +9,7 @@
   "scripts": {
     "start": "NODE_ENV=development babel-node dev/index --command=start",
     "build": "NODE_ENV=production babel-node dev/index --command=build",
+    "clean": "babel-node dev/index --command=clean",
     "lint": "eslint ./",
     "postinstall": "bower install"
   },
@@ -98,6 +99,7 @@
     "metalsmith-permalinks": "0.4.0",
     "metalsmith-prism": "^2.0.0",
     "moment": "^2.10.3",
+    "nconf": "0.8.2",
     "node-sass": "3.4.2",
     "nunjucks": "2.2.0",
     "nunjucks-date": "1.2.0",
@@ -114,8 +116,7 @@
     "velocity-animate": "1.2.3",
     "webpack": "1.12.9",
     "webpack-dev-server": "1.14.0",
-    "webpack-notifier": "1.2.1",
-    "yargs": "3.31.0"
+    "webpack-notifier": "1.2.1"
   },
   "keywords": [
     "css",
