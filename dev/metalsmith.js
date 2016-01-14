@@ -10,9 +10,11 @@ import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
+
 import dataMarkdown from './plugins/metalsmith-data-markdown';
 import slug from './plugins/nunjucks-slug';
 import tocify from './plugins/metalsmith-tocify';
+import Logger from './logger';
 
 import pkg from '../package.json';
 
@@ -34,6 +36,8 @@ nunjucks
 function build() {
 
   return new Promise((resolve, reject) => {
+
+    Logger.notice('running metalsmith');
 
     const metalsmith = new Metalsmith(path.join(process.cwd(), 'docs'));
 
@@ -96,9 +100,10 @@ function build() {
 
       if (err) {
         reject(err);
+      }else {
+        Logger.ok('metalsmith');
+        resolve();
       }
-
-      resolve();
 
     });
 

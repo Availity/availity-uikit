@@ -37,9 +37,7 @@ function start() {
     .then(serv)
     .then(watch)
     .catch( (err) => {
-
-      Logger.log(err);
-
+      Logger.error(err);
     });
 }
 
