@@ -6,6 +6,7 @@ var run = require('./run').default;
 var start = require('./start').default;
 var build = require('./build').default;
 var clean = require('./clean').default;
+var lint = require('./lint').default;
 
 nconf.argv().env();
 
@@ -16,6 +17,9 @@ switch (nconf.get('command')) {
     break;
   case 'build':
     run(build);
+    break;
+  case 'lint':
+    run(lint);
     break;
   case 'clean':
     run(clean);
