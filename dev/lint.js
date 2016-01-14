@@ -1,6 +1,5 @@
 import eslint from 'eslint';
 import globby from 'globby';
-import chalk from 'chalk';
 import Logger from './logger';
 
 export default function lint() {
@@ -18,10 +17,11 @@ export default function lint() {
       var formatter = engine.getFormatter();
 
       if (report.errorCount || report.warningCount) {
-        Logger.log(`${chalk.red('Eslint failed')} ${formatter(report.results)}`);
+        Logger.failed(`eslint`);
+        Logger.simple(`${formatter(report.results)}`);
         reject();
       }else {
-        Logger.ok(`Eslint passed`);
+        Logger.ok(`eslint`);
         resolve();
       }
 
