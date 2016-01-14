@@ -24,6 +24,7 @@ function serv() {
     });
 
     server.listen(3000, () => {
+      Logger.ok('webpack server');
       resolve();
     });
 

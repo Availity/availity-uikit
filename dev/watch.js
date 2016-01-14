@@ -1,7 +1,12 @@
 import chokidar from 'chokidar';
-import chalk from 'chalk';
+import debounce from 'debounce-collect';
 import metalsmith from './metalsmith';
 import Logger from './logger';
+
+function run(files) {
+  Logger.log(`${files.length} file(s) changed`);
+  metalsmith();
+}
 
 function watch() {
 
@@ -11,10 +16,8 @@ function watch() {
     persistent: true
   });
 
-  watcher.on('all', (event, path) => {
-    metalsmith();
-    Logger.log(`[${chalk.yellow(event)}] ${path} `);
-  });
+
+  watcher.on('all', debounce(run, 50));
 
   return Promise.resolve(true);
 

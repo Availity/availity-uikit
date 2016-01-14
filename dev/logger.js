@@ -24,10 +24,6 @@ export default class Logger {
 
   // graphics
 
-  static notice(entry) {
-    this._log(`${symbols.info} ${entry}`, 'cyan');
-  }
-
   static failed(entry) {
     this._log(`${symbols.error} ${entry}`, 'red');
   }

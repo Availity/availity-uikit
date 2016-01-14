@@ -37,8 +37,6 @@ function build() {
 
   return new Promise((resolve, reject) => {
 
-    Logger.notice('running metalsmith');
-
     const metalsmith = new Metalsmith(path.join(process.cwd(), 'docs'));
 
     metalsmith

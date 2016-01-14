@@ -11,6 +11,5 @@ export default function banner() {
 ${pkg.name} v${pkg.version} (${today})
 (c) Availity, LLC`;
 
-
   return elBanner;
 }
