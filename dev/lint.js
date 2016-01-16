@@ -10,8 +10,7 @@ export default function lint() {
 
   return new Promise((resolve, reject) => {
 
-    globby(['**/**.js', '!node_modules/**', '!bower_components/**', '!dist/**']).then( paths => {
-    // globby(['*.js']).then( paths => {
+    globby(['**/**.js', '!node_modules/**', '!bower_components/**', '!dist/**', '!build/**']).then( paths => {
 
       var report = engine.executeOnFiles(paths.slice(2));
       var formatter = engine.getFormatter();
