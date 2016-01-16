@@ -3,7 +3,7 @@ import Logger from './logger';
 
 function clean() {
 
-  const directory = process.env.NODE_ENV !== 'production' ? 'dist/*' : 'build/*';
+  const directory = process.env.NODE_ENV !== 'development' ? 'build/*' : 'dist/*';
   del.sync([directory]);
 
   Logger.ok('clean');
