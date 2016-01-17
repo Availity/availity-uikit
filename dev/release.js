@@ -2,38 +2,54 @@ import * as fs from 'fs';
 import path from 'path';
 import semver from 'semver';
 import inquirer from 'inquirer';
-import _ from 'lodash';
+import shell from 'shelljs';
 
 import lint from './lint';
 import clean from './clean';
 import build from './build';
+
+let VERSION = null;
 
 function pkg() {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf8'));
 }
 
 // Preserver new line at the end of a file
-function possibleNewline(json) {
-  let lastChar = (json && json.slice(-1) === '\n') ? '\n' : '';
-  return lastChar;
-}
+// function possibleNewline(json) {
+//   let lastChar = (json && json.slice(-1) === '\n') ? '\n' : '';
+//   return lastChar;
+// }
 
 // https://github.com/stevelacy/gulp-bump/blob/dad1d960e9b1f6b480c909a23ba7d118c436ce6f/index.js#L83
 // Figured out which "space" params to be used for JSON.stringfiy.
-function whitespace(json) {
-  let match = json.match(/^(?:(\t+)|( +))"/m);
-  let result = match[1] ? '\t' : match[2].length;
-  return match ? result : '';
-}
+// function whitespace(json) {
+//   let match = json.match(/^(?:(\t+)|( +))"/m);
+//   let result = match[1] ? '\t' : match[2].length;
+//   return match ? result : '';
+// }
 
-function bump(version) {
+function bump() {
 
-  let json = pkg();
-  json = _.merge({}, json, {version: version});
-  let raw = JSON.stringify(json, null, json ? whitespace(json) : 2) + possibleNewline(json);
+  return new Promise( (resolve, reject) => {
 
-  // update package.json
-  fs.writeFileSync(path.join(process.cwd(), 'package.json'), raw, 'utf8');
+    if (!VERSION) {
+      return reject(false);
+    }
+
+    var command = `npm version ${VERSION} -m "v{{version}}"`;
+    shell.exec(command);
+
+    // let json = pkg();
+    // json = _.merge({}, json, {version: VERSION});
+    // let spacing = whitespace(json);
+    // let raw = JSON.stringify(json, null, spacing) + possibleNewline(json);
+
+    // // update package.json
+    // fs.writeFileSync(path.join(process.cwd(), 'package.json'), raw, 'utf8');
+
+    return resolve(true);
+
+  });
 
 }
 
@@ -112,11 +128,10 @@ export default function prompt() {
 
     inquirer.prompt(questions, function(answers) {
 
-      if (answers.bump !== 'other') {
-        return resolve(answers.bump);
-      }
+      VERSION = answers.bump !== 'other' ? answers.bump : answers.version;
 
-      return resolve(answers.version);
+      return resolve(true);
+
     });
 
   });
