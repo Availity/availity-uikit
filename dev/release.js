@@ -2,12 +2,13 @@ import * as fs from 'fs';
 import path from 'path';
 import semver from 'semver';
 import inquirer from 'inquirer';
+import nconf from 'nconf';
 import {merge} from 'lodash';
-// import shell from 'shelljs';
+import shell from 'shelljs';
 
 import lint from './lint';
 import clean from './clean';
-// import build from './build';
+import build from './build';
 
 let VERSION = null;
 let RAW = null;
@@ -56,15 +57,23 @@ function bump() {
 
 }
 
-function commit() {
-  return new Promise( resolve => {
-    return resolve();
-  });
-}
+function git() {
 
-function tag() {
   return new Promise( resolve => {
-    return resolve();
+
+    shell.exec('git add .');
+    shell.exec(`git commit -m "v${VERSION}"`);
+    shell.exec(`git tag -a v${VERSION} -m "v${VERSION}"`);
+
+    const push = nconf.get('push');
+
+    if (push) {
+      shell.exec('git push', 'Push to remote');
+      shell.exec('git push --tags', `Push new tag v${VERSION} to remote`);
+    }
+
+    resolve();
+
   });
 }
 
@@ -147,8 +156,7 @@ export default function release() {
     .then(lint)
     .then(clean)
     .then(bump)
-    // .then(build)
-    .then(commit)
-    .then(tag);
+    .then(build)
+    .then(git);
 
 }
