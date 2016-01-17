@@ -10,6 +10,8 @@ import nunjucks from 'nunjucks';
 import nunjucksDate from 'nunjucks-date';
 import path from 'path';
 import collections from 'metalsmith-collections';
+import filter from 'metalsmith-filter';
+import relative from 'metalsmith-rootpath';
 
 import dataMarkdown from './plugins/metalsmith-data-markdown';
 import slug from './plugins/nunjucks-slug';
@@ -83,6 +85,7 @@ function build() {
       .use(permalinks({
         relative: false
       }))
+      .use(relative())
       .use(inPlace({
         engine: 'nunjucks',
         partials: 'layouts/partials'
@@ -92,6 +95,7 @@ function build() {
         engine: 'nunjucks',
         directory: 'layouts'
       }))
+      .use(filter(['index.html', 'pages/**/*.html', 'examples/**/*.html']))
       .destination(path.join(process.cwd(), 'build'));
 
     metalsmith.build( (err) => {

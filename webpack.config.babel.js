@@ -27,8 +27,9 @@ let config = {
   devtool: 'cheap-module-eval-source-map',
 
   output: {
+    // if path is not set to '/build' => Error invalid argument in MemoryFileSystem.js
     path: '/build',
-    publicPath: '/',
+    // publicPath: '../',
     filename: 'js/[name].js',
     library: 'availity',
     libraryTarget: 'umd'
@@ -66,7 +67,9 @@ let config = {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'css?limit=32768?name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less'
+          'css?limit=32768?name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less', {
+            publicPath: '../'
+          }
         )
       },
       {

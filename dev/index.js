@@ -8,6 +8,7 @@ var build = require('./build').default;
 var clean = require('./clean').default;
 var lint = require('./lint').default;
 var release = require('./release').default;
+var docs = require('./docs').default;
 
 nconf.argv().env();
 
@@ -21,6 +22,9 @@ switch (nconf.get('command')) {
     break;
   case 'build':
     run(build);
+    break;
+  case 'docs':
+    run(docs);
     break;
   case 'lint':
     run(lint);

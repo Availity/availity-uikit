@@ -37,7 +37,7 @@
       <ul class="nav navbar-nav">
         {% for page in collections.pages %}
           <li>
-            <a href="/{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
+            <a href="{{rootPath}}{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
           </li>
         {% endfor %}
       </ul>
