@@ -30,37 +30,46 @@
 
 ## Quickstart
 
-+ Install the Availity UIKit with Bower
++ Install with Bower
 
 >
 ```bash
 $ bower install availity-uikit --save
 ```
 
-**OR**
-
-+ Install the Availity UIKit with npm
++ Install with npm
 
 >
 ```bash
 $ npm install availity-uikit --save
 ```
 
-+ Include the required libraries is your `index.html`
++ Reference the compiled assets from the `/dist` in `index.html` 
++ If you use a module bundler (Webpack, Browserify), require the dependencies `js/index.js` and `less/availity-uikit.less`
 
 
 ## Icon Fonts
 
-Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts (glyphicons).  Our font configuration can be found in the [config.json](./fonts/config.json). The UIKit currently uses icon fonts from the following libraries:
-
-+ [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
-+ [Typicons](http://typicons.com/)
-+ [Elusive Icons](http://elusiveicons.com/)
+Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  Our [font configuration](./fonts/config.json) can be used on Fontello to edit the font catalog.
 
 ## Contributing
 
-+ npm 3+
-+ node 4+
+#### Dependencies 
+
++ [npm v3+](https://github.com/npm/npm/releases)
++ [node v4+](https://github.com/nodejs/node/releases)
+
+#### CLI
+
++ `npm start` 
+    * runs webpack dev server on `http://localhost:3000`
+    * watches library and docs changes and automatically compiles the assets into the `./build` folder
++ `npm run release`
+    * prompts for version to tag the release
+    * runs linter
+    * clean the `/dist` folder
+    * runs the webpack build task with `NODE_ENV=production`
+    * commits (generated files) and tags (version) the git repository
 
 ## Authors
 
@@ -82,4 +91,4 @@ Open source software components distributed or made available in the Availity Ma
 
 ## License
 
-Copyright (c) 2015 Availity, LLC
+Copyright (c) 2016 Availity, LLC
