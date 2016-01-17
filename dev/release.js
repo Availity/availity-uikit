@@ -36,8 +36,10 @@ function bump() {
       return reject(false);
     }
 
-    var command = `npm version ${VERSION} -m "v{{version}}"`;
-    shell.exec(command);
+    var command = `npm version ${VERSION} -m "v${VERSION}"`;
+    shell.exec(command, {async: true}, () => {
+      return resolve(true);
+    });
 
     // let json = pkg();
     // json = _.merge({}, json, {version: VERSION});
@@ -47,7 +49,6 @@ function bump() {
     // // update package.json
     // fs.writeFileSync(path.join(process.cwd(), 'package.json'), raw, 'utf8');
 
-    return resolve(true);
 
   });
 
