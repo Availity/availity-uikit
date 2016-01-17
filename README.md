@@ -7,6 +7,7 @@
 * [Supported Browsers](#supported-browsers)
 * [Quickstart](#quickstart)
 * [Icon Fonts](#icon-fonts)
+* [Contributing](#contributing)
 * [Authors](#authors)
 * [Disclaimer](#disclaimer)
 * [License](#license)
@@ -90,5 +91,7 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
 
 ## License
+
+[MIT](./LICENSE)
 
 Copyright (c) 2016 Availity, LLC
