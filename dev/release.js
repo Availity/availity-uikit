@@ -2,31 +2,33 @@ import * as fs from 'fs';
 import path from 'path';
 import semver from 'semver';
 import inquirer from 'inquirer';
-import shell from 'shelljs';
+import {merge} from 'lodash';
+// import shell from 'shelljs';
 
 import lint from './lint';
 import clean from './clean';
-import build from './build';
+// import build from './build';
 
 let VERSION = null;
+let RAW = null;
 
-function pkg() {
-  return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf8'));
+function raw() {
+  if (!RAW) {
+    RAW = fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf8');
+  }
+
+  return RAW;
+}
+
+function pkg(contents) {
+  return JSON.parse(contents || raw());
 }
 
 // Preserver new line at the end of a file
-// function possibleNewline(json) {
-//   let lastChar = (json && json.slice(-1) === '\n') ? '\n' : '';
-//   return lastChar;
-// }
-
-// https://github.com/stevelacy/gulp-bump/blob/dad1d960e9b1f6b480c909a23ba7d118c436ce6f/index.js#L83
-// Figured out which "space" params to be used for JSON.stringfiy.
-// function whitespace(json) {
-//   let match = json.match(/^(?:(\t+)|( +))"/m);
-//   let result = match[1] ? '\t' : match[2].length;
-//   return match ? result : '';
-// }
+function newLine(contents) {
+  let lastChar = (contents && contents.slice(-1) === '\n') ? '' : '\n';
+  return contents + lastChar;
+}
 
 function bump() {
 
@@ -36,18 +38,18 @@ function bump() {
       return reject(false);
     }
 
-    var command = `npm version ${VERSION} -m "v${VERSION}"`;
-    shell.exec(command, {async: true}, () => {
-      return resolve(true);
-    });
+    let contents = raw();
+    let json = pkg(contents);
 
-    // let json = pkg();
-    // json = _.merge({}, json, {version: VERSION});
-    // let spacing = whitespace(json);
-    // let raw = JSON.stringify(json, null, spacing) + possibleNewline(json);
+    json = merge({}, json, {version: VERSION});
 
-    // // update package.json
-    // fs.writeFileSync(path.join(process.cwd(), 'package.json'), raw, 'utf8');
+    contents = JSON.stringify(json, null, 2);
+    contents = newLine(contents);
+
+    // update package.json
+    fs.writeFileSync(path.join(process.cwd(), 'package.json'), contents, 'utf8');
+
+    resolve();
 
 
   });
@@ -56,13 +58,13 @@ function bump() {
 
 function commit() {
   return new Promise( resolve => {
-    return resolve(true);
+    return resolve();
   });
 }
 
 function tag() {
   return new Promise( resolve => {
-    return resolve(true);
+    return resolve();
   });
 }
 
@@ -131,7 +133,7 @@ export default function prompt() {
 
       VERSION = answers.bump !== 'other' ? answers.bump : answers.version;
 
-      return resolve(true);
+      return resolve();
 
     });
 
@@ -145,7 +147,7 @@ export default function release() {
     .then(lint)
     .then(clean)
     .then(bump)
-    .then(build)
+    // .then(build)
     .then(commit)
     .then(tag);
 
