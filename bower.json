@@ -14,7 +14,7 @@
   ],
   "moduleType": "globals",
   "main": [
-    "less/availity-uikit.less",
+    "less/availity-bootstrap.less",
     "dist/js/availity-uikit.js"
   ],
   "ignore": [
