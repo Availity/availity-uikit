@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.0 (01/19/2016)
+ * availity-uikit v2.0.0-beta.1 (01/19/2016)
  * (c) Availity, LLC
  */
 (function webpackUniversalModuleDefinition(root, factory) {
