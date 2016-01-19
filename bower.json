@@ -14,11 +14,14 @@
   ],
   "moduleType": "globals",
   "main": [
-    "less/availity-bootstrap.less",
+    "dist/css/availity-uikit.css",
     "dist/js/availity-uikit.js"
   ],
   "ignore": [
     "/.*",
+    "dev",
+    "webpack.config.babel.js",
+    "webpack.config.production.babel.js"
     "docs",
     "gulp",
     "build"
