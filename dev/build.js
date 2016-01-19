@@ -6,6 +6,7 @@ import bundle from './bundle';
 import Logger from './logger';
 
 function build() {
+
   return clean()
     .then( () => {
       nconf.set('optimize', true);
@@ -18,6 +19,7 @@ function build() {
     .catch( (err) => {
       Logger.log(err);
     });
+
 }
 
 export default build;
