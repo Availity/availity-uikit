@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackNotifierPlugin from 'webpack-notifier';
+import autoprefixer from 'autoprefixer';
 
 import banner from './dev/banner';
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
@@ -67,7 +68,8 @@ let config = {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'css?limit=32768?name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less', {
+          'css?limit=32768?name=images/[name].[ext]!postcss!less',
+          {
             publicPath: '../'
           }
         )
@@ -90,6 +92,9 @@ let config = {
         loader: 'url?limit=32768?name=images/[name].[ext]'
       }
     ]
+  },
+  postcss: function() {
+    return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
   },
   plugins: [
 

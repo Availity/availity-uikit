@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import autoprefixer from 'autoprefixer';
 
 const nconf  = require('nconf');
 nconf.use('memory').defaults({
@@ -13,7 +14,7 @@ export default function getConfig() {
 
   const optimize = nconf.get('optimize');
   const minimize = optimize ? 'minimize' : '-minimize';
-  let cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!autoprefixer?{browsers: ["last 3 versions", "ie 9", "> 1%"]}!less`;
+  let cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!less`;
 
   let ENV_VAR = {
     'process.env': {
@@ -32,7 +33,6 @@ export default function getConfig() {
 
     output: {
       path: 'dist',
-      publicPath: '/',
       filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
       library: 'availity',
       libraryTarget: 'umd'
@@ -76,8 +76,10 @@ export default function getConfig() {
           test: /\.less$/,
           loader: ExtractTextPlugin.extract(
             'style',
-            cssQuery
-
+            cssQuery,
+            {
+              publicPath: '../'
+            }
           )
         },
         {
@@ -98,6 +100,9 @@ export default function getConfig() {
           loader: 'url?limit=32768?name=images/[name].[ext]'
         }
       ]
+    },
+    postcss: function() {
+      return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
     },
     plugins: [
 
