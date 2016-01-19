@@ -57,7 +57,6 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 
 #### Dependencies 
 
-+ [npm v3+](https://github.com/npm/npm/releases)
 + [node v4+](https://github.com/nodejs/node/releases)
 
 #### CLI
