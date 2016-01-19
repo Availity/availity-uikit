@@ -17,9 +17,6 @@
     "less/availity-uikit.less",
     "dist/js/availity-uikit.js"
   ],
-  "resolutions": {
-    "bootstrap": "~3.3.6"
-  },
   "ignore": [
     "/.*",
     "docs",
