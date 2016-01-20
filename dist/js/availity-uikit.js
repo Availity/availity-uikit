@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.2 (01/19/2016)
+ * availity-uikit v2.0.0-beta.3 (01/20/2016)
  * (c) Availity, LLC
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -78,7 +78,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__webpack_require__(2);
 	
 	var availity = {
-	  VERSION: ("2.0.0-beta.1")
+	  VERSION: ("2.0.0-beta.2")
 	};
 	
 	exports.default = availity;
