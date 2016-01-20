@@ -21,7 +21,7 @@
     "/.*",
     "dev",
     "webpack.config.babel.js",
-    "webpack.config.production.babel.js"
+    "webpack.config.production.babel.js",
     "docs",
     "gulp",
     "build"
