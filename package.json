@@ -52,8 +52,8 @@
     }
   ],
   "devDependencies": {
+    "animate.css": "3.4.0",
     "autoprefixer": "6.3.1",
-    "babel": "6.3.13",
     "babel-cli": "6.4.0",
     "babel-core": "6.3.21",
     "babel-eslint": "5.0.0-beta4",

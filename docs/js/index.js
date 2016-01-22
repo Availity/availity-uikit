@@ -2,6 +2,7 @@ import $ from 'jquery';
 import Chart from 'chart.js';
 
 import '../less/docs.less';
+import 'animate.css/animate.css';
 
 $('[data-toggle="popover"]').popover({
   html: true
