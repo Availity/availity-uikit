@@ -33,7 +33,8 @@ let config = {
     // publicPath: '../',
     filename: 'js/[name].js',
     library: 'availity',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
 
   debug: true,

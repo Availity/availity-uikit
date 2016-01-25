@@ -35,7 +35,8 @@ export default function getConfig() {
       path: 'dist',
       filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
       library: 'availity',
-      libraryTarget: 'umd'
+      libraryTarget: 'umd',
+      umdNamedDefine: true
     },
 
     externals: {
