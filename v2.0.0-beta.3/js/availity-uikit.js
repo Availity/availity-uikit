@@ -1,13 +1,13 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.3 (01/20/2016)
+ * availity-uikit v2.0.0-beta.3 (01/28/2016)
  * (c) Availity, LLC
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define([], factory);
+		define("availity", [], factory);
 	else if(typeof exports === 'object')
 		exports["availity"] = factory();
 	else

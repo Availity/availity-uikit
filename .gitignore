@@ -1,0 +1,9 @@
+/node_modules/
+.gradle
+.idea
+/bower_components/
+/coverage-reports/
+.DS_Store
+npm-debug.log
+
+/build/
