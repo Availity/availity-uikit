@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import autoprefixer from 'autoprefixer';
+import NpmImportPlugin from 'less-plugin-npm-import';
 
 const nconf  = require('nconf');
 nconf.use('memory').defaults({
@@ -102,9 +103,19 @@ export default function getConfig() {
         }
       ]
     },
+
     postcss: function() {
       return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
     },
+
+    lessLoader: {
+      lessPlugins: [
+        new NpmImportPlugin({
+          prefix: '~'
+        })
+      ]
+    },
+
     plugins: [
 
       new webpack.BannerPlugin(banner()),

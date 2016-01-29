@@ -1,13 +1,13 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.3 (01/20/2016)
+ * availity-uikit v2.0.0-beta.4 (01/29/2016)
  * (c) Availity, LLC
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("jQuery"));
 	else if(typeof define === 'function' && define.amd)
-		define(["jQuery"], factory);
+		define("availity", ["jQuery"], factory);
 	else if(typeof exports === 'object')
 		exports["availity"] = factory(require("jQuery"));
 	else
@@ -78,7 +78,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	__webpack_require__(2);
 	
 	var availity = {
-	  VERSION: ("2.0.0-beta.2")
+	  VERSION: ("2.0.0-beta.3")
 	};
 	
 	exports.default = availity;
