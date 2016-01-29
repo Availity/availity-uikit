@@ -1,18 +1,18 @@
-@bootstrap-less-path: "../../node_modules/bootstrap/less";
 @availity-less-path: "../../less";
-@prism-less-path: "../../node_modules/prismjs";
 
-@import (reference) "@{bootstrap-less-path}/mixins/clearfix.less";
-@import "@{bootstrap-less-path}/variables.less";
-@import (reference) "@{bootstrap-less-path}/mixins/gradients.less";
+@import (reference) "~bootstrap/less/mixins/clearfix.less";
+
+@import "~bootstrap/less/variables.less";
+@import (reference) "~bootstrap/less/mixins/gradients.less";
 
 @import "@{availity-less-path}/availity-variables.less";
 @import (reference) "@{availity-less-path}/mixins/availity-mixins-type.less";
 @import (reference) "@{availity-less-path}/mixins/availity-mixins-icons.less";
 
+
 @import (reference) "@{availity-less-path}/availity-type.less";
 
-@import (less) "@{prism-less-path}/themes/prism-coy.css";
+@import (less) "~prismjs/themes/prism-coy.css";
 
 @docs-padding: 1.5em;
 @docs-color: lighten(@gray, 30%);

@@ -2,6 +2,7 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import WebpackNotifierPlugin from 'webpack-notifier';
 import autoprefixer from 'autoprefixer';
+import NpmImportPlugin from 'less-plugin-npm-import';
 
 import banner from './dev/banner';
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
@@ -94,9 +95,19 @@ let config = {
       }
     ]
   },
+
   postcss: function() {
     return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
   },
+
+  lessLoader: {
+    lessPlugins: [
+      new NpmImportPlugin({
+        prefix: '~'
+      })
+    ]
+  },
+
   plugins: [
 
     new webpack.BannerPlugin(banner(), {
