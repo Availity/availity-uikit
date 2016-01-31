@@ -4,11 +4,14 @@
 // Modifications:
 //  - use https://github.com/cheeriojs/cheerio
 //  - use rfc3986 compliant slugs
+//  - ensure ids are unique
 
 const cheerio = require('cheerio');
 const extname = require('path').extname;
 const slug = require('slug');
 const _ = require('lodash');
+
+const cacheIds = [];
 
 class TocItem {
 
@@ -56,8 +59,16 @@ function getRootLevel(headers) {
 function slugify($el) {
 
   let id = $el.attr('id');
+
   if (!id) {
+
     let slugId = slug($el.text(), {'mode': 'rfc3986'});
+    if (cacheIds[slugId]) {
+      slugId = slugId + _.uniqueId('-');
+    }
+
+    cacheIds[slugId] = slugId;
+
     id = slugId;
     $el.attr('id', id); // add ID to dom if missing
   }
