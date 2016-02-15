@@ -36,3 +36,138 @@
   background-color: @progress-bar-color;
   border-radius: @border-radius-large;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.chevron {
+  display:table;
+  width:100%;
+
+}
+
+.progress-chevron {
+  display: table-row;
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+  margin: 0 -2px;
+  text-align: center;
+
+  li {
+    display: table-cell;
+    float: left;
+    height: 52px;
+    line-height: 1em;
+    padding: 12px 20px 0px 30px;
+    background: @progress-bar-color-disabled;
+    color: @text-color;
+    position: relative;
+    border-top: 1px solid #d5dada;
+    border-bottom: 1px solid #d5dada;
+    width: 16%;
+    margin: 0 2px;
+
+    &:nth-child(1):before {
+      border: none;
+      // Rounded square corners
+    }
+
+    &:nth-last-child(1):after {
+      border: none;
+      // Rounded square corners
+    }
+
+    &:before,&:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height:100%;
+      position: absolute;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      top: 0;
+    }
+
+    &:before {
+      border-left: 16px solid #fff;
+      left: 0;
+    }
+
+    &:after {
+      border-left: 16px solid @progress-bar-color-disabled;
+      left: 100%;
+      z-index: 20;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.active {
+      background: @slate-darker;
+      color: #fff;
+
+      &:after {
+        border-left-color: @slate-darker;
+      }
+    }
+
+    &.viewed {
+      background: tint(@brand-info, 20%);
+      color: #fff;
+      &:after {
+        border-left-color: tint(@brand-info, 20%);
+      }
+    }
+  }
+}
+
+
+// CHEVRON v2
+
+//#chevron {
+//  position: relative;
+//  top: 100px;
+//  text-align: center;
+//  padding: 12px;
+//  margin-bottom: 6px;
+//  height: 60px;
+//  width: 200px;
+//  -webkit-transform: rotate(90deg);
+//  -moz-transform: rotate(90deg);
+//  -ms-transform: rotate(90deg);
+//  -o-transform: rotate(90deg);
+//  transform: rotate(90deg);
+//}
+//
+//#chevron:before {
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  height: 100%;
+//  width: 51%;
+//  background: red;
+//  -webkit-transform: skew(0deg, 6deg);
+//  -moz-transform: skew(0deg, 6deg);
+//  -ms-transform: skew(0deg, 6deg);
+//  -o-transform: skew(0deg, 6deg);
+//  transform: skew(0deg, 6deg);
+//}
+//#chevron:after {
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  right: 0;
+//  height: 100%;
+//  width: 50%;
+//  background: red;
+//  -webkit-transform: skew(0deg, -6deg);
+//  -moz-transform: skew(0deg, -6deg);
+//  -ms-transform: skew(0deg, -6deg);
+//  -o-transform: skew(0deg, -6deg);
+//  transform: skew(0deg, -6deg);
+//}​
