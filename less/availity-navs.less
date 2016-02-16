@@ -108,3 +108,118 @@
   padding: @panel-body-padding;
 }
 
+#chevron-container {
+  margin: 0 -10px;
+}
+
+.progress-chevron {
+  display: table;
+  table-layout: fixed;
+  width:100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+
+  ul {
+    display: table-row;
+    padding: 0;
+    margin: 0;
+
+    li {
+      text-align: center;
+      display: table-cell;
+      list-style: none;
+      height: 52px;
+      line-height: 1em;
+      padding: 12px 20px 0px 30px;
+      background: @progress-bar-color-disabled;
+      color: @text-color;
+      position: relative;
+
+      &:first-child:before, &:last-child:after {
+        display: none;
+      }
+
+      &:first-child {
+        border-spacing: 0;
+        -moz-border-radius: 4px 0 0 4px;
+        -webkit-border-radius: 4px 0 0 4px;
+        border-radius: 4px 0 0 4px; /* future proofing */
+      }
+      &:last-child {
+        border-spacing: 0;
+        -moz-border-radius: 0 4px 4px 0;
+        -webkit-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0; /* future proofing */
+      }
+
+      &:before,&:after {
+        content: '';
+        display: block;
+        vertical-align: middle;
+        height:100%;
+        position: absolute;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        top: 0;
+      }
+
+      &:before {
+        border-left: 16px solid @white;
+        left: 0;
+      }
+
+      &:after {
+        border-left: 16px solid @progress-bar-color-disabled;
+        left: 100%;
+        z-index: 20;
+      }
+
+      span {
+        display: block;
+        vertical-align: middle;
+      }
+
+      //&:hover {
+      //  background: #B5E4FA;
+      //  &:after {
+      //    border-left-color: #B5E4FA;
+      //  }
+      //}
+
+      &.active {
+        cursor: pointer;
+        background: @brand-info;
+        color: #fff;
+
+        &:hover {
+          background: #B5E4FA;
+          color: @text-color;
+          &:after {
+            border-left-color: #B5E4FA;
+            color: @text-color;
+          }
+        }
+
+        &:after {
+          border-left-color: @brand-info;
+        }
+      }
+
+      &.viewed {
+        cursor: pointer;
+        background: #e8ebeb;
+
+        &:hover {
+          background: #B5E4FA;
+          &:after {
+            border-left-color: #B5E4FA;
+          }
+        }
+
+        &:after {
+          border-left-color: #e8ebeb;
+        }
+      }
+    }
+  }
+}
