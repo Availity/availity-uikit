@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.4 (01/29/2016)
+ * availity-uikit v2.0.0-beta.5 (02/22/2016)
  * (c) Availity, LLC
  */
 @font-face {
@@ -9320,7 +9320,8 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
   cursor: pointer;
   border-radius: 4px;
 }
-.datepicker table tr td span:hover {
+.datepicker table tr td span:hover,
+.datepicker table tr td span.focused {
   background: #e8ebeb;
 }
 .datepicker table tr td span.disabled,
@@ -9518,13 +9519,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
   width: auto;
   min-width: 16px;
   padding: 4px 5px;
-  font-weight: normal;
   line-height: 1.42857143;
-  text-align: center;
   text-shadow: 0 1px 0 #fff;
-  vertical-align: middle;
-  background-color: #e8ebeb;
-  border: solid #ccc;
   border-width: 1px 0;
   margin-left: -5px;
   margin-right: -5px;
