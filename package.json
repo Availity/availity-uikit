@@ -12,8 +12,7 @@
     "docs": "NODE_ENV=development babel-node dev/index.js --command=docs",
     "clean": "babel-node dev/index.js --command=clean",
     "release": "babel-node dev/index.js --command=release",
-    "lint": "babel-node dev/index.js --command=lint",
-    "postinstall": "bower install"
+    "lint": "babel-node dev/index.js --command=lint"
   },
   "license": "MIT",
   "main": "./main.js",
