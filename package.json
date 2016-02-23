@@ -28,7 +28,7 @@
   },
   "files": [
     "dist",
-    "docs/less/**/*.less
+    "docs/less/**/*.less",
     "fonts",
     "js/*.js",
     "less/**/*.less"
