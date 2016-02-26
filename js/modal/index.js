@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
-let exists = $.fn.modal && $.fn.modal.Constructor;
+const exists = $.fn.modal && $.fn.modal.Constructor;
 
 function override() {
 
-  let _setScrollBar = $.fn.modal.Constructor.prototype.setScrollbar;
+  const _setScrollBar = $.fn.modal.Constructor.prototype.setScrollbar;
   $.fn.modal.Constructor.prototype.setScrollbar = function() {
 
     _setScrollBar.apply(this);
@@ -14,7 +14,7 @@ function override() {
 
   };
 
-  let _resetScrollbar = $.fn.modal.Constructor.prototype.resetScrollbar;
+  const _resetScrollbar = $.fn.modal.Constructor.prototype.resetScrollbar;
   $.fn.modal.Constructor.prototype.resetScrollbar = function() {
 
     _resetScrollbar.apply(this);

@@ -27,7 +27,7 @@ function pkg(contents) {
 
 // Preserver new line at the end of a file
 function newLine(contents) {
-  let lastChar = (contents && contents.slice(-1) === '\n') ? '' : '\n';
+  const lastChar = (contents && contents.slice(-1) === '\n') ? '' : '\n';
   return contents + lastChar;
 }
 
@@ -79,11 +79,11 @@ function git() {
 
 export default function prompt() {
 
-  let version = pkg().version;
-  let parsed = semver.parse(version);
+  const version = pkg().version;
+  const parsed = semver.parse(version);
 
   // regular release
-  let simpleVersion = `${parsed.major}.${parsed.minor}.${parsed.patch}`;
+  const simpleVersion = `${parsed.major}.${parsed.minor}.${parsed.patch}`;
   let choices = [
     {name: `patch ( ${version} --> ${semver.inc(simpleVersion, 'patch')}`, value: semver.inc(simpleVersion, 'patch')},
     {name: `minor ( ${version} --> ${semver.inc(simpleVersion, 'minor')}`, value: semver.inc(simpleVersion, 'minor')},
@@ -104,11 +104,11 @@ export default function prompt() {
 
   }
 
-  let questions = [
+  const questions = [
     {
       type: 'rawlist',
       name: 'bump',
-      message: `What type of version bump would you like to do?`,
+      message: 'What type of version bump would you like to do?',
       choices: choices
     },
     {
@@ -123,7 +123,7 @@ export default function prompt() {
       },
       validate: function(value) {
 
-        var valid = semver.valid(value);
+        const valid = semver.valid(value);
 
         if (valid) {
           return true;

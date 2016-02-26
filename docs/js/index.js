@@ -32,7 +32,7 @@ $('[data-toggle="code"]').click(function(e) {
 
   if (target.is(':visible')) {
     target.velocity('slideUp', { duration: 200 });
-  }else {
+  } else {
     target.velocity('fadeIn', {
       duration: 300,
       display: 'block'
@@ -47,8 +47,8 @@ $('[data-toggle="filter"]').popover({
   placement: $(this).attr('data-placement'),
   trigger: 'click',
   content: function() {
-    let target = $(this).attr('data-target');
-    let $target = $(target);
+    const target = $(this).attr('data-target');
+    const $target = $(target);
     return $target.html();
   }
 });
@@ -75,11 +75,11 @@ $('select').select2({
   }
 }).on('select2:open', function() {
 
-  let $this = $(this);
+  const $this = $(this);
   if ($this.parents('[class*="has-"]').length) {
 
     // get all CSS-classes from the element where we found "has-*" and collect them in an array
-    let classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
+    const classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
 
     // go through the class names, find "has-"
     for (let i = 0; i < classNames.length; ++i) {
@@ -92,7 +92,7 @@ $('select').select2({
 
 // DO NOT USE THIS IN PRODUCTION. DEMO PURPOSES ONLY.
 setInterval(() => {
-  let indicators = $('.loading-indicator');
+  const indicators = $('.loading-indicator');
   for (let i = 0; i < indicators.length; i++) {
     $(indicators[i]).find('.loading-bullet')
       .velocity('transition.slideRightIn', { stagger: 250 })

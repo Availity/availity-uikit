@@ -10,8 +10,8 @@ function serv() {
 
   return new Promise(resolve => {
 
-    var compiler = webpack(webpackConfig);
-    var server = new WebpackDevServer(compiler, {
+    const compiler = webpack(webpackConfig);
+    const server = new WebpackDevServer(compiler, {
       contentBase: './build',
       noInfo: false, // display no info to console (only warnings and errors)
       quiet: false, // display nothing to the console

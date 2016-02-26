@@ -7,7 +7,7 @@ export default function banner() {
 
   const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
-  let elBanner = `
+  const elBanner = `
 ${pkg.name} v${pkg.version} (${today})
 (c) Availity, LLC`;
 

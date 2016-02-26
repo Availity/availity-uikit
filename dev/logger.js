@@ -34,10 +34,10 @@ export default class Logger {
 
   static _log(entry, _color) {
 
-    let now = dateformat(new Date(), 'HH:MM:ss');
-    let defaultColor = entry instanceof Error ? 'red' : 'gray';
+    const now = dateformat(new Date(), 'HH:MM:ss');
+    const defaultColor = entry instanceof Error ? 'red' : 'gray';
 
-    let color = _color || defaultColor;
+    const color = _color || defaultColor;
 
     console.log(`[${ chalk.cyan(now) }] ${ chalk[color](entry) }` );
 

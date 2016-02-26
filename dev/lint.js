@@ -12,15 +12,15 @@ export default function lint() {
 
     globby(['**/**.js', '!node_modules/**', '!bower_components/**', '!dist/**', '!build/**']).then( paths => {
 
-      var report = engine.executeOnFiles(paths.slice(2));
-      var formatter = engine.getFormatter();
+      const report = engine.executeOnFiles(paths.slice(2));
+      const formatter = engine.getFormatter();
 
       if (report.errorCount || report.warningCount) {
-        Logger.failed(`eslint`);
+        Logger.failed('eslint');
         Logger.simple(`${formatter(report.results)}`);
         reject();
-      }else {
-        Logger.ok(`eslint`);
+      } else {
+        Logger.ok('eslint');
         resolve();
       }
 

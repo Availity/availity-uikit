@@ -14,7 +14,7 @@ const extname = require('path').extname;
  * @return {Boolean}
  */
 
-let isHtmlFile = function(file) {
+const isHtmlFile = function(file) {
   return /\.html?/.test(extname(file));
 };
 
@@ -47,26 +47,26 @@ export default function plugin(options) {
         return;
       }
 
-      let contents = file.contents.toString();
+      const contents = file.contents.toString();
       let foundMatches = false;
 
       // parse html content in cheerio to query it
-      let $ = cheerio.load(contents);
+      const $ = cheerio.load(contents);
 
       $(opts.selector || '[data-markdown]').each(function() {
 
         foundMatches = true;
 
-        let $el = $(this);
+        const $el = $(this);
 
         // grab the html of the node and
         // decode all html entities
         // decoding fixes problems with smartypants
-        let _html = $el.html();
-        let _class = $el.attr('class');
+        const _html = $el.html();
+        const _class = $el.attr('class');
 
         const markedText = marked(he.decode(_html));
-        let $$el = $(markedText);
+        const $$el = $(markedText);
 
         // set compiled markdown content to node
         if (_class) {

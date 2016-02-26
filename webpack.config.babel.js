@@ -9,14 +9,14 @@ const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 const VERSION = require('./package.json').version;
 
-let ENV_VAR = {
+const ENV_VAR = {
   'process.env': {
     'VERSION': JSON.stringify(VERSION),
     'process.env.NODE_ENV': JSON.stringify('development')
   }
 };
 
-let config = {
+const config = {
 
   context: __dirname,
 

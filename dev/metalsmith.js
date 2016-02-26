@@ -102,7 +102,7 @@ function build() {
 
       if (err) {
         reject(err);
-      }else {
+      } else {
         Logger.ok('metalsmith');
         resolve();
       }

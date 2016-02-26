@@ -3,7 +3,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import autoprefixer from 'autoprefixer';
 import NpmImportPlugin from 'less-plugin-npm-import';
 
-const nconf  = require('nconf');
+const nconf = require('nconf');
 nconf.use('memory').defaults({
   'optimize': true
 });
@@ -15,16 +15,16 @@ export default function getConfig() {
 
   const optimize = nconf.get('optimize');
   const minimize = optimize ? 'minimize' : '-minimize';
-  let cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!less`;
+  const cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!less`;
 
-  let ENV_VAR = {
+  const ENV_VAR = {
     'process.env': {
       'VERSION': JSON.stringify(VERSION),
       'process.env.NODE_ENV': JSON.stringify('production')
     }
   };
 
-  let config = {
+  const config = {
 
     context: __dirname,
 

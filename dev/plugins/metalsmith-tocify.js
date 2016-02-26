@@ -21,7 +21,7 @@ class TocItem {
 
   init(params) {
 
-    let parameters = params || {};
+    const parameters = params || {};
     this.id = parameters.id || '';
     this.text = parameters.text || '';
     this.children = [];
@@ -85,14 +85,14 @@ function buildToc($, _headers) {
     return [];
   }
 
-  let root = new TocItem();
+  const root = new TocItem();
   let toc = root;
 
   headers = headers.map(function() {
 
-    let $el = $(this);
+    const $el = $(this);
 
-    let  id = slugify($el);
+    const id = slugify($el);
 
     return {
       id: id,
@@ -106,25 +106,25 @@ function buildToc($, _headers) {
 
   headers.each(function() {
 
-    let header = this;
+    const header = this;
 
-    let id = header.id;
-    let text = header.text;
-    let level = header.level;
+    const id = header.id;
+    const text = header.text;
+    const level = header.level;
 
     while (level !== 1 + lastLevel) {
       if (level < 1 + lastLevel) {
         toc = toc.parent;
         lastLevel--;
       } else if (level > 1 + lastLevel) {
-        let emptyToc = new TocItem();
+        const emptyToc = new TocItem();
         toc.add(emptyToc);
         toc = emptyToc;
         lastLevel++;
       }
     }
 
-    let newToc = new TocItem({
+    const newToc = new TocItem({
       text: text,
       id: id
     });
@@ -139,7 +139,7 @@ function buildToc($, _headers) {
 
 export default function plugin(_options) {
 
-  let options = _options || {};
+  const options = _options || {};
   options.selector = options.selector || 'h2, h3, h4, h5, h6';
 
   return function(files, metalsmith, done) {
@@ -159,10 +159,10 @@ export default function plugin(_options) {
       const contents = file.contents.toString();
       const $ = cheerio.load(contents);
 
-      let selector = file.tocifySelector || options.selector || 'h3, h4';
-      let $headers = $(selector);
+      const selector = file.tocifySelector || options.selector || 'h3, h4';
+      const $headers = $(selector);
 
-      let toc = buildToc($, $headers);
+      const toc = buildToc($, $headers);
 
       file.contents = new Buffer($.html());
       file.toc = toc;
