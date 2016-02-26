@@ -1,38 +1,17 @@
 require('babel-register');
 
-var nconf = require('nconf');
+const nconf = require('nconf');
 
-var run = require('./run');
-var start = require('./start');
-var build = require('./build');
-var clean = require('./clean');
-var lint = require('./lint');
-var release = require('./release');
-var docs = require('./docs');
+const commands = {
+  run: require('./run'),
+  start: require('./start'),
+  build: require('./build'),
+  clean: require('./clean'),
+  lint: require('./lint'),
+  release: require('./release'),
+  docs: require('./docs')
+};
 
 nconf.argv().env();
-
-switch (nconf.get('command')) {
-
-  case 'start':
-    run(start);
-    break;
-  case 'release':
-    run(release);
-    break;
-  case 'build':
-    run(build);
-    break;
-  case 'docs':
-    run(docs);
-    break;
-  case 'lint':
-    run(lint);
-    break;
-  case 'clean':
-    run(clean);
-    break;
-  default:
-    start();
-
-}
+const command = nconf.get('command');
+commands[command]();
