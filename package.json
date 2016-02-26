@@ -28,8 +28,10 @@
   },
   "files": [
     "dist",
+    "docs/images",
     "docs/less/**/*.less",
     "fonts",
+    "images",
     "js/*.js",
     "less/**/*.less"
   ],
