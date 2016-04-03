@@ -1,5 +1,6 @@
 import eslint from 'eslint';
 import globby from 'globby';
+
 import Logger from './logger';
 
 export default function lint() {
