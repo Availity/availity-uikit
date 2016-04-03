@@ -1,17 +1,19 @@
-import webpack from 'webpack';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import autoprefixer from 'autoprefixer';
-import NpmImportPlugin from 'less-plugin-npm-import';
+'use strict';
+
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const NpmImportPlugin = require('less-plugin-npm-import');
 
 const nconf = require('nconf');
 nconf.use('memory').defaults({
   'optimize': true
 });
 
-import banner from './dev/banner';
+const banner = require('./dev/banner');
 const VERSION = require('./package.json').version;
 
-export default function getConfig() {
+function getConfig() {
 
   const optimize = nconf.get('optimize');
   const minimize = optimize ? 'minimize' : '-minimize';
@@ -104,7 +106,7 @@ export default function getConfig() {
       ]
     },
 
-    postcss: function() {
+    postcss() {
       return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
     },
 
@@ -155,5 +157,7 @@ export default function getConfig() {
 
   return config;
 }
+
+module.exports = getConfig;
 
 

@@ -1,9 +1,11 @@
-import eslint from 'eslint';
-import globby from 'globby';
+'use strict';
 
-import Logger from './logger';
+const eslint = require('eslint');
+const globby = require('globby');
 
-export default function lint() {
+const Logger = require('./logger');
+
+function lint() {
 
   const engine = new eslint.CLIEngine({
     useEslintrc: true
@@ -30,5 +32,6 @@ export default function lint() {
 
   });
 
-
 }
+
+module.exports = lint;

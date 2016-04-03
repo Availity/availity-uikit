@@ -1,3 +1,5 @@
+'use strict';
+
 // Inspiration:
 //  - https://github.com/anatoo/metalsmith-autotoc
 //
@@ -95,7 +97,7 @@ function buildToc($, _headers) {
     const id = slugify($el);
 
     return {
-      id: id,
+      id,
       text: $el.text(),
       level: parseInt($el.get(0).tagName.match(/^h([123456])$/i)[1], 10)
     };
@@ -125,8 +127,8 @@ function buildToc($, _headers) {
     }
 
     const newToc = new TocItem({
-      text: text,
-      id: id
+      text,
+      id
     });
 
     toc.add(newToc);
@@ -137,7 +139,7 @@ function buildToc($, _headers) {
   return root.children;
 }
 
-export default function plugin(_options) {
+function plugin(_options) {
 
   const options = _options || {};
   options.selector = options.selector || 'h2, h3, h4, h5, h6';
@@ -170,3 +172,5 @@ export default function plugin(_options) {
     });
   };
 }
+
+module.exports = plugin;

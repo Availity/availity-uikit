@@ -1,8 +1,10 @@
-import webpack from 'webpack';
-import Logger from './logger';
-import webpackConfig from '../webpack.config.production.babel';
+'use strict';
 
-export default function bundle() {
+const webpack = require('webpack');
+const Logger = require('./logger');
+const webpackConfig = require('../webpack.config.production.babel');
+
+function bundle() {
 
   return new Promise((resolve, reject) => {
 
@@ -23,3 +25,5 @@ export default function bundle() {
   });
 
 }
+
+module.exports = bundle;

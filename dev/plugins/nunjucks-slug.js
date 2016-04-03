@@ -1,4 +1,6 @@
-import slug from 'slug';
+'use strict';
+
+const slug = require('slug');
 
 let options = {
   mode: 'rfc3986'
@@ -8,12 +10,18 @@ function slugify(name) {
   return slug(name, options);
 }
 
-export default slugify;
-
-export function setOptions(opts) {
+function setOptions(opts) {
   options = opts;
 }
 
-export function install(env, customName) {
+function install(env, customName) {
   env.addFilter(customName || 'slug', slugify);
 }
+
+
+module.exports = {
+  slugify,
+  setOptions,
+  install
+};
+

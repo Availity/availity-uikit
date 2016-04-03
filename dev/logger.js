@@ -1,10 +1,11 @@
 /* eslint no-console:0 */
+'use strict';
 
-import chalk from 'chalk';
-import dateformat from 'dateformat';
-import symbols from 'log-symbols';
+const chalk = require('chalk');
+const dateformat = require('dateformat');
+const symbols = require('log-symbols');
 
-export default class Logger {
+class Logger {
 
   constructor(options) {
     this.options = options;
@@ -48,3 +49,5 @@ export default class Logger {
   }
 
 }
+
+module.exports = Logger;

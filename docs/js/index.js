@@ -46,7 +46,7 @@ $('[data-toggle="filter"]').popover({
   html: true,
   placement: $(this).attr('data-placement'),
   trigger: 'click',
-  content: function() {
+  content() {
     const target = $(this).attr('data-target');
     const $target = $(target);
     return $target.html();

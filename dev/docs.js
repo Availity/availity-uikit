@@ -1,8 +1,10 @@
-import webpack from 'webpack';
+'use strict';
 
-import Logger from './logger';
-import metalsmith from './metalsmith';
-import wepackConfig from '../webpack.config.babel';
+const webpack = require('webpack');
+
+const Logger = require('./logger');
+const metalsmith = require('./metalsmith');
+const wepackConfig = require('../webpack.config.babel');
 
 function bundle() {
 
@@ -39,4 +41,4 @@ function docs() {
     });
 }
 
-export default docs;
+module.exports = docs;

@@ -1,14 +1,16 @@
-import * as fs from 'fs';
-import path from 'path';
-import semver from 'semver';
-import inquirer from 'inquirer';
-import nconf from 'nconf';
-import {merge} from 'lodash';
-import shell from 'shelljs';
+'use strict';
 
-import lint from './lint';
-import clean from './clean';
-import build from './build';
+const fs = require('fs');
+const path = require('path');
+const semver = require('semver');
+const inquirer = require('inquirer');
+const nconf = require('nconf');
+const _ = require('lodash');
+const shell = require('shelljs');
+
+const lint = require('./lint');
+const clean = require('./clean');
+const build = require('./build');
 
 let VERSION = null;
 let RAW = null;
@@ -42,7 +44,7 @@ function bump() {
     let contents = raw();
     let json = pkg(contents);
 
-    json = merge({}, json, {version: VERSION});
+    json = _.merge({}, json, {version: VERSION});
 
     contents = JSON.stringify(json, null, 2);
     contents = newLine(contents);
@@ -77,7 +79,7 @@ function git() {
   });
 }
 
-export default function prompt() {
+function prompt() {
 
   const version = pkg().version;
   const parsed = semver.parse(version);
@@ -109,19 +111,19 @@ export default function prompt() {
       type: 'rawlist',
       name: 'bump',
       message: 'What type of version bump would you like to do?',
-      choices: choices
+      choices
     },
     {
       type: 'input',
       name: 'version',
       message: `version (current version is ${pkg().version})`,
-      when: function(answer) {
+      when(answer) {
         return answer.bump === 'other';
       },
-      filter: function(value) {
+      filter(value) {
         return semver.clean(value);
       },
-      validate: function(value) {
+      validate(value) {
 
         const valid = semver.valid(value);
 
@@ -150,7 +152,7 @@ export default function prompt() {
 
 }
 
-export default function release() {
+function release() {
 
   return prompt()
     .then(lint)
@@ -160,3 +162,8 @@ export default function release() {
     .then(git);
 
 }
+
+module.exports = {
+  prompt,
+  release
+};

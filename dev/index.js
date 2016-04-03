@@ -1,4 +1,4 @@
-require('babel-register');
+'use strict';
 
 const nconf = require('nconf');
 

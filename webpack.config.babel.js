@@ -1,10 +1,11 @@
-import webpack from 'webpack';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import WebpackNotifierPlugin from 'webpack-notifier';
-import autoprefixer from 'autoprefixer';
-import NpmImportPlugin from 'less-plugin-npm-import';
+'use strict';
 
-import banner from './dev/banner';
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const WebpackNotifierPlugin = require('webpack-notifier');
+const autoprefixer = require('autoprefixer');
+const NpmImportPlugin = require('less-plugin-npm-import');
+const banner = require('./dev/banner');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 const VERSION = require('./package.json').version;
@@ -96,7 +97,7 @@ const config = {
     ]
   },
 
-  postcss: function() {
+  postcss() {
     return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
   },
 
@@ -142,5 +143,5 @@ const config = {
   }
 };
 
-export default config;
+module.exports = config;
 

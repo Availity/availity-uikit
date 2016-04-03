@@ -1,9 +1,11 @@
-import fs from 'fs';
-import moment from 'moment';
+'use strict';
+
+const fs = require('fs');
+const moment = require('moment');
 
 const today = moment().format('MM/DD/YYYY');
 
-export default function banner() {
+function banner() {
 
   const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
@@ -13,3 +15,5 @@ ${pkg.name} v${pkg.version} (${today})
 
   return elBanner;
 }
+
+module.exports = banner;

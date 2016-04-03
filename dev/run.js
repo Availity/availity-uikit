@@ -1,6 +1,8 @@
+'use strict';
+
 /* eslint no-console:0 */
 
-import chalk from 'chalk';
+const chalk = require('chalk');
 
 function format(date) {
   return date.toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, '$1');
@@ -22,4 +24,4 @@ function run(promise, options) {
 
 }
 
-export default run;
+module.exports = run;

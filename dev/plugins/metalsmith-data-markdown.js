@@ -1,3 +1,5 @@
+'use strict';
+
 // Modified from: https://github.com/majodev/metalsmith-data-markdown
 
 const marked = require('marked');
@@ -29,7 +31,7 @@ const isHtmlFile = function(file) {
  * @return {Function}
  */
 
-export default function plugin(options) {
+function plugin(options) {
 
   const opts = options || {};
 
@@ -89,3 +91,6 @@ export default function plugin(options) {
     });
   };
 }
+
+
+module.exports = plugin;

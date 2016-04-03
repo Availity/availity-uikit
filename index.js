@@ -1,5 +1,7 @@
+'use strict';
+
 // LESS
-import './less/availity-bootstrap.less';
+require('./less/availity-bootstrap.less');
 
 // JS
-import './js';
+require('./js');

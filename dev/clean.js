@@ -1,5 +1,7 @@
-import del from 'del';
-import Logger from './logger';
+'use strict';
+
+const del = require('del');
+const Logger = require('./logger');
 
 function clean() {
 
@@ -11,4 +13,4 @@ function clean() {
   return Promise.resolve(true);
 }
 
-export default clean;
+module.exports = clean;

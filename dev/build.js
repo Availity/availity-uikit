@@ -1,9 +1,11 @@
-import nconf from 'nconf';
+'use strict';
+
+const nconf = require('nconf');
 nconf.use('memory');
 
-import clean from './clean';
-import bundle from './bundle';
-import Logger from './logger';
+const clean = require('./clean');
+const bundle = require('./bundle');
+const Logger = require('./logger');
 
 function build() {
 
@@ -22,4 +24,4 @@ function build() {
 
 }
 
-export default build;
+module.exports = build;
