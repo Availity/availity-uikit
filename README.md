@@ -1,6 +1,6 @@
 # availity-uikit
 
-> Availity UI Kit powered by [Bootstrap 3](http://getbootstrap.com/) with overrides to match our style guidelines.
+> Availity UI Kit powered by [Bootstrap 3](http://getbootstrap.com/) and sprinkles of [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with overrides to match our style guidelines.
 
 ## Table of Contents
 * [Demo](#demo)
@@ -55,7 +55,7 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 
 ## Contributing
 
-#### Dependencies 
+### Dependencies 
 
 + [node v4+](https://github.com/nodejs/node/releases)
 
