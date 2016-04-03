@@ -28,8 +28,10 @@
   },
   "files": [
     "dist",
+    "docs/images",
     "docs/less/**/*.less",
     "fonts",
+    "images",
     "js/*.js",
     "less/**/*.less"
   ],
@@ -135,6 +137,8 @@
   "dependencies": {
     "Yamm": "git+https://github.com/geedmo/yamm3.git#v1.1.0",
     "awesome-bootstrap-checkbox": "0.3.7",
-    "bootstrap": "3.3.6"
+    "bootstrap": "3.3.6",
+    "select2": "4.0.1",
+    "select2-bootstrap-theme": "0.1.0-beta.4"
   }
 }
