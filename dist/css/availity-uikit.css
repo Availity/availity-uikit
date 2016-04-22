@@ -1,12 +1,12 @@
 /**
- * availity-uikit v1.1.0 -- November-02
- * Copyright 2015 Availity, LLC 
+ * availity-uikit v1.2.0 -- April-22
+ * Copyright 2016 Availity, LLC 
  */
 
 @font-face {
   font-family: 'availity-icon-font';
-  src: url('../fonts/availity-icon-font.eot?15608592');
-  src: url('../fonts/availity-icon-font.eot?15608592#iefix') format('embedded-opentype'), url('../fonts/availity-icon-font.woff?15608592') format('woff'), url('../fonts/availity-icon-font.ttf?15608592') format('truetype'), url('../fonts/availity-icon-font.svg?15608592') format('svg');
+  src: url('../fonts/availity-icon-font.eot?31534180');
+  src: url('../fonts/availity-icon-font.eot?31534180#iefix') format('embedded-opentype'), url('../fonts/availity-icon-font.woff?31534180') format('woff'), url('../fonts/availity-icon-font.ttf?31534180') format('truetype'), url('../fonts/availity-icon-font.svg?31534180') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -892,6 +892,10 @@
 /* '' */
 .icon-user-plus:before {
   content: '\e8d1';
+}
+/* '' */
+.icon-gripper:before {
+  content: '\e8d2';
 }
 /* '' */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -7251,6 +7255,7 @@ a.list-group-item-danger.active:focus {
 }
 .card {
   position: relative;
+  display: block;
   margin-bottom: 20px;
   border: 1px solid #dddddd;
   border-radius: 2px;
@@ -8244,7 +8249,7 @@ button.close {
   border-right: 1px solid #dadfdf;
 }
 .main-sidebar.right {
-  border-right: 1px solid #dadfdf;
+  border-left: 1px solid #dadfdf;
 }
 .main-sidebar-body {
   background-color: #f8f8f8;

@@ -1,6 +1,6 @@
 /**
- * availity-uikit v1.1.0 -- November-02
- * Copyright 2015 Availity, LLC 
+ * availity-uikit v1.2.0 -- April-22
+ * Copyright 2016 Availity, LLC 
  */
 
 .section-header {
@@ -383,6 +383,8 @@ code[class*=language] {
   padding: 30px 15px 15px;
   max-height: none !important;
   position: relative;
+  display: block;
+  white-space: pre;
 }
 code[class*=language]:before {
   content: "Code";
@@ -407,6 +409,8 @@ pre[class*="language-"] {
   padding: 30px 15px 15px;
   max-height: none !important;
   position: relative;
+  display: block;
+  white-space: pre;
 }
 .language-json {
   color: #1990b8 !important;
