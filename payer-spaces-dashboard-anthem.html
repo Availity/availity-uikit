@@ -2,19 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Availity UIKit - Spaces Page</title>
-<link rel="stylesheet" href="../../css/availity-uikit.css">
-<link rel="stylesheet" href="../../css/docs.css">
-
-
-
-
-
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Availity UIKit Payer Spaces Anthem</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.css">
+  <link rel="stylesheet" href="css/availity-uikit.css">
+  <link rel="stylesheet" href="css/docs.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <!--[if lte IE 8]>
+    <script src="js/excanvas.js"></script>
+  <![endif]-->
+  
+  
+  
 </head>
 <body class="body">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -24,13 +32,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand-availity" href="index.html">
-        <div class="navbar-logo-availity"></div>
+      <a class="navbar-brand-availity" href="#">
+        <img alt="Availity Logo" src="images/logo-availity.png">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
       <ul class="nav navbar-nav">
-        <li><a href="index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li><a href="#"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
         <li>
           <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
@@ -279,159 +287,142 @@
   </div>
 </nav>
 
-
-  <main>
-  <div class="container">
+<main>
+<main class="container-fluid">
 
   <ul class="breadcrumb">
     <li>
       <a href="#">Home</a>
     </li>
     <li class="active">
-      Payer Name
+      Anthem
     </li>
   </ul>
 
-  <div class="spaces-header">
-    <div class="spaces-header-col spaces-header-col-left">
-      <a href="http://www.example.com" class="spaces-logo holderjs"></a>
-    </div>
-    <div class="spaces-header-col spaces-header-col-right">
-      <a href="http://www.example.com" class="spaces-link"> www.example.com</a>
-    </div>
-  </div>
-  <div class="billboard">
+  <div class="spaces-anthem">
 
-    <div class="col-sm-4 billboard-featured card card-block">
-      <h2 class="card-title">Fee Schedule</h2>
-      <h3 class="card-title featured-title-secondary">This new space is just for you</h3>
-      <p class="card-text">Fee Schedules retrieves your contracted price information for the patient services you perform</p>
-      <p>
-        <a class="btn btn-lg btn-default btn-billboard" href="payer-spaces.html">Open &#xBB;</a>
-      </p>
+    <div class="spaces-header">
+      <div class="spaces-header-col spaces-header-col-left">
+        <a href="http://www.anthem.com" class="spaces-logo holderjs" data-background-src="?holder.js/234x60"></a>
+      </div>
+      <div class="spaces-header-col spaces-header-col-right">
+        <a href="http://www.anthem.com" class="spaces-link"> www.anthem.com</a>
+      </div>
     </div>
 
+    <div class="billboard holderjs" data-background-src="?holder.js/100px260">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="billboard-featured">
+            <h2>Fee Schedule</h2>
+            <p>Fee Schedules retrieves your contracted price information for the patient services you perform</p>
+            <p>
+              <a class="btn btn-lg btn-default btn-billboard" href="payer-spaces.html">Access &#xBB;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <hr>
 
   <div role="tabpanel">
-    <ul class="nav nav-pills-secondary" role="tablist">
-      <li class="active">
-        <a href="#apps" role="tab" data-toggle="tab">Applications</a>
-      </li>
-      <li>
-        <a href="#resources" role="tab" data-toggle="tab">Resources</a>
-      </li>
-      <li>
-        <a href="#news" role="tab" data-toggle="tab">News and Announcements</a>
-      </li>
+      <ul class="nav nav-pills-secondary" role="tablist">
+        <li class="active">
+          <a href="#apps" role="tab" data-toggle="tab">Applications</a>
+        </li>
+        <li>
+          <a href="#resources" role="tab" data-toggle="tab">Resources</a>
+        </li>
+        <li>
+          <a href="#news" role="tab" data-toggle="tab">News and Announcments</a>
+        </li>
+      </ul>
+      <div class="tab-content tab-bump">
+        <div role="tabpanel" class="tab-pane active" id="apps">
+          <div class="container-sm-height">
+            <div class="row row-sm-height">
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>835 Registration</h3>
+                    <p data-mock="sentences:1">est sit et
+expedita cum quaerat perferendis temporibus
+alias error dicta</p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access &#xBB;
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>Eligibility &amp; Benefits</h3>
+                    <p data-mock="sentences:1">est sit et
+expedita cum quaerat perferendis temporibus
+alias error dicta</p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access &#xBB;
+                      </button>
+                    </p><p>
+                  </p></div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-sm-height">
+                <div class="panel panel-card">
+                  <div class="panel-body">
+                    <h3>Provider Registration &amp; Self-Service</h3>
+                    <p data-mock="sentences:1">est sit et
+expedita cum quaerat perferendis temporibus
+alias error dicta</p>
+                    <p>
+                      <button type="button" class="btn btn-default">
+                        Request Access &#xBB;
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="resources">
+          <div class="disclaimer">
+            THESE LINKS MAY RE-DIRECT TO THIRD PARTY SITES AND ARE PROVIDED FOR YOUR CONVENIENCE ONLY. AVAILITY IS NOT RESPONSIBLE FOR THE CONTENT OR SECURITY OF ANY THIRD PARTY SITES AND DOES NOT ENDORSE ANY PRODUCTS OR SERVICES PROVIDED BY THIRD PARTIES.
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="news">
+          <p class="lead">News</p>
+        </div>
+      </div>
+    </div>
+</main>
+
+
+</main>
+<!-- <footer class="footer">
+  <div class="footer-body container-fluid">
+    <span class="footer-copy">&copy; 2015 Availity, LLC.</span>
+    <ul class="footer-links">
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms of Use</a></li>
     </ul>
-    <div class="tab-content tab-bump">
-      <div role="tabpanel" class="tab-pane active" id="apps">
-        <div class="container-sm-height">
-          <div class="row row-sm-height">
-            <div class="col-sm-4 col-sm-height">
-              <div class="card">
-                <div class="card-block">
-                  <h3 class="card-title">835 Registration</h3>
-                  <p class="card-text" data-mock="sentences:1">delectus eaque recusandae aliquam sunt rerum sed quasi
-dolor voluptas quisquam sunt quia nemo enim ipsam est exercitationem
-natus amet officia rem</p>
-                  <button type="button" class="btn btn-default">Open &#xBB;</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 col-sm-height">
-            <div class="card">
-              <div class="card-block">
-                  <h3 class="card-title">Eligibility &amp; Benefits</h3>
-                  <p class="card-text" data-mock="sentences:4">est ea nobis temporibus
-sit id sed earum
-dolorem est porro aut qui omnis optio sed libero molestias</p>
-                  <button type="button" class="btn btn-default">Open &#xBB;</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 col-sm-height">
-              <div class="card">
-                <div class="card-block">
-                  <h3 class="card-title">Provider Registration &amp; Self-Service</h3>
-                  <p class="card-text" data-mock="sentences:5">iure provident officia doloribus nobis in voluptatem sit sint iste
-dolor expedita voluptas dolores earum numquam eum
-porro voluptatum libero ipsa sit</p>
-                  <button type="button" class="btn btn-default">Open &#xBB;</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-sm-height">
-          <div class="row row-sm-height">
-            <div class="col-sm-4 col-sm-height">
-              <div class="card">
-                <div class="card-block">
-                  <h3 class="card-title">Fee Schedule</h3>
-                  <p class="card-text" data-mock="sentences:2">doloribus aut a vel facere veniam ut vero
-sit ipsum placeat
-ea recusandae et</p>
-                  <button type="button" class="btn btn-default">Open &#xBB;</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 col-sm-height">
-            <div class="card">
-              <div class="card-block">
-                  <h3 class="card-title">Remits</h3>
-                  <p class="card-text" data-mock="sentences:3">ut fugit tempore doloribus
-quidem voluptatem facilis deleniti veritatis
-esse velit suscipit itaque rem autem</p>
-                  <button type="button" class="btn btn-default">Open &#xBB;</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4 col-sm-height">
-              &#xA0;
-            </div>
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" class="tab-pane" id="resources">
-        <div class="disclaimer">
-          THESE LINKS MAY RE-DIRECT TO THIRD PARTY SITES AND ARE PROVIDED FOR YOUR CONVENIENCE ONLY. AVAILITY IS NOT RESPONSIBLE FOR THE CONTENT OR SECURITY OF ANY THIRD PARTY SITES AND DOES NOT ENDORSE ANY PRODUCTS OR SERVICES PROVIDED BY THIRD PARTIES.
-        </div>
-        <div class="card card-block">
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-result">
-              <h4 class="list-group-item-heading list-group-item-result-heading">Physical Medicine Program (eviCore healthcare)</h4>
-            </a>
-            <a href="#" class="list-group-item list-group-item-result">
-              <h4 class="list-group-item-heading list-group-item-result-heading">AIM Specialty Health &#x2122;</h4>
-              <p class="list-group-item-text text-muted">Radiology Quality Initiative</p>
-            </a>
-
-          </div>
-        </div>
-      </div>
-      <div role="tabpanel" class="tab-pane" id="news">
-        <p class="lead">There are no news or announcements available at this time.</p>
-      </div>
-    </div>
-    </div>
-</div>
-
-
-  </main>
-
-  <script src="../../js/vendor.js"></script>
-<script src="../../js/availity-uikit.js"></script>
-<script src="../../js/docs.js"></script>
+  </div>
+</footer> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/availity-uikit.js"></script>
+<script src="js/docs.js"></script>
 
 </body>
 </html>
-
-

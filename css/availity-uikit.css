@@ -1,5 +1,8 @@
-@import url('availity-uikit-blessed1.css?z=1446532012039');
+@import url('availity-uikit-blessed1.css?z=1461349760744');
 
+.select2-container-multi .select2-search-choice-close {
+  left: 3px;
+}
 html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   left: auto;
   right: 2px;
@@ -98,20 +101,20 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-container .select2-choices {
   background: none;
   padding: 0;
-  border-color: #ccc;
+  border-color: #cccccc;
   border-radius: 2px;
   color: #4d4f53;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .select2-search input {
-  border-color: #ccc;
+  border-color: #cccccc;
   border-radius: 2px;
   color: #4d4f53;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -387,7 +390,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
  * Adjust Select2's choices hover and selected styles to match Bootstrap 3's default dropdown styles.
  */
 .select2-results .select2-highlighted {
-  color: #fff;
+  color: #ffffff;
   background-color: #2261b5;
 }
 /**
@@ -409,14 +412,14 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-container-multi .select2-choices .select2-search-choice {
   color: #4d4f53;
   background: #e8ebeb;
-  border-color: #ccc;
+  border-color: #cccccc;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   box-shadow: none;
 }
 .select2-container-multi .select2-choices .select2-search-choice-focus {
   background: #d2d8d8;
   border-color: #adadad;
-  color: #333;
+  color: #333333;
   box-shadow: none;
 }
 /**
@@ -457,7 +460,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-container.select2-container-disabled .select2-choices {
   cursor: not-allowed;
   background-color: #e8ebeb;
-  border-color: #ccc;
+  border-color: #cccccc;
 }
 .select2-container.select2-container-disabled .select2-choice .select2-arrow,
 .select2-container.select2-container-disabled .select2-choices .select2-arrow,
@@ -529,7 +532,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   height: 17px;
   left: 0;
   margin-left: -20px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 3px;
   background-color: #fff;
   -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
@@ -641,7 +644,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   height: 17px;
   left: 0;
   margin-left: -20px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 50%;
   background-color: #fff;
   -webkit-transition: border 0.15s ease-in-out;
@@ -888,21 +891,21 @@ input[type="radio"] .styled:checked + label::after {
 }
 .has-warning .select2-choice,
 .has-warning .select2-choices {
-  border-color: #FEC40D;
+  border-color: #fec40d;
   background-color: #fffad2 !important;
 }
 .has-warning .select2-container-active .select2-choice,
 .has-warning .select2-container-multi.select2-container-active .select2-choices {
-  border-color: #FEC40D;
+  border-color: #fec40d;
   background-color: #fffad2 !important;
   box-shadow: none;
 }
 .has-warning.select2-drop-active {
-  border-color: #FEC40D;
+  border-color: #fec40d;
   background-color: #fffad2 !important;
 }
 .has-warning.select2-drop-active.select2-drop.select2-drop-above {
-  border-top-color: #FEC40D;
+  border-top-color: #fec40d;
 }
 .has-warning .select2-search input {
   background-color: #ffffff;
