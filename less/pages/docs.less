@@ -254,6 +254,11 @@ div[title] {
   padding: 30px 15px 15px;
   max-height: none !important;
   position: relative;
+
+  // these two properties undo the fix for <code> blocks in prism.js 1.3
+  // <code> blocks should be surrouned in <pre> blocks for the effect
+  display: block;
+  white-space: pre;
 }
 
 [data-toggle="code"] {
