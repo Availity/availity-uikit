@@ -1,0 +1,794 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Availity UIKit - Inbox</title>
+<link rel="stylesheet" href="../../css/availity-uikit.css">
+<link rel="stylesheet" href="../../css/docs.css">
+
+
+
+
+
+</head>
+<body class="body">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#availity-example-navbar-collapse-3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand-availity" href="index.html">
+        <div class="navbar-logo-availity"></div>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li>
+          <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
+            <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
+            <span class="badge badge-success">3</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
+            <li>
+              <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
+                <li class="active">
+                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(2)</span></a>
+                </li>
+                <li>
+                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(1)</span></a>
+                </li>
+                <li>
+                  <a data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="all1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6 class="subheader">FLORIDA BLUE | HEALTH RISK ASSESSMENTS <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">You have risk assessments to complete</h5>
+                      <p>Complete your risk assessments to maximize your revenue from Florida Blue.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="alerts1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">Pharmacy Authorization Approved</h5>
+                      <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages1">
+                  <div class="notifications-menu-body">
+                    <div class="list-group-item">
+                      <h6 class="subheader">FLORIDA BLUE | HEALTH RISK ASSESSMENTS <a href="#"><i class="icon icon-cancel"></i></a></h6>
+                      <h5 class="condensed">You have risk assessments to complete</h5>
+                      <p>Complete your risk assessments to maximize your revenue from Florida Blue.</p>
+                      <a href="#" class="notification-menu-link">View Request</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="notifications-menu-footer">
+                <a href="#">Show All Notifications</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+            <i class="icon icon-help-circle"></i> Help
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Find Help</a></li>
+            <li><a href="#">Get Trained</a></li>
+            <li><a href="#">Search Knowledge</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+            John's Account
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Who controls my access?</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-default navbar-secondary navbar-fixed-top mega-menu" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#availity-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Registration</a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">EB</span> Eligibility and Benefits Inquiry</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">R</span> Referral</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">A</span> Authorization</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">ARS</span> Auth/Referral Status</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">PCS</span> Patient Care Summary</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims</a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CSI</span> Claim Status Inquiry</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CRT</span> Claim Reconciliation Tool</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CR</span> Claim Research Tool (BCBSTX)</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">PC</span> Professional Claim</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">FC</span> Facility Claim</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">EDI</span> Send and Receive EDI Files</a></li>
+            <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">MA</span> Medical Attachments</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Payments</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><span class="app-icon app-icon-green">RV</span> Remittance Viewer</a></li>
+            <li><a href="#"><span class="app-icon app-icon-green">CP</span> Collect Payment</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">More...</a>
+          <ul class="dropdown-menu dropdown-menu-scrollable" role="menu">
+            <li><a href="#"><strong>Auths and Referrals</strong></a></li>
+            <li><a href="#"> Drug Authorization (CCStpa)</a></li>
+            <li><a href="#"> Current Admissions Report (Humana)</a></li>
+            <li><a href="#"> Current Admissions Report (Humana)</a></li>
+            <li><a href="#"> Claims Missing Referrals (Humana)</a></li>
+            <li><a href="#"> Referral Report (Humana)</a></li>
+            <li><a href="#"> Radiology Referral Submission (Humana)</a></li>
+            <li><a href="#"> Health Choice Authorization (Prestige)</a></li>
+            <li class="divider"></li>
+            <li><a href="#"> <strong>Availity Payer List</strong></a></li>
+            <li><a href="#"> Payer List</a></li>
+            <li class="divider"></li>
+            <li><a href="#"> <strong>Enrollments</strong></a></li>
+            <li><a href="#"> ERA Enrollment - Electronic</a></li>
+            <li class="divider"></li>
+            <li><a href="#"> <strong>My Account</strong></a></li>
+            <li><a href="#"> EFT Enrollment</a></li>
+            <li><a href="#"> Manage My Code List</a></li>
+            <li><a href="#"> My Favorite Codes</a></li>
+            <li><a href="#"> View My Code List</a></li>
+            <li class="divider"></li>
+            <li><a href="#"> <strong>My Payer Portals</strong></a></li>
+            <li><a href="#"> Amerigroup Provider Self Service</a></li>
+            <li class="divider"></li>
+            <li><a href="#"> <strong>Reporting</strong></a></li>
+            <li><a href="#"> My Organization Reports</a></li>
+            <li><a href="#"> Health Choice Reports (Prestige)</a></li>
+            <li><a href="#"> Web Transaction Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown dropdown-favorites">
+          <button class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+          <ul class="dropdown-menu favorites-menu" role="menu">
+            <li>
+              <h5 class="favorites-menu-title">Favorites</h5>
+
+              <div class="favorites-menu-body">
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-blue">ar</span> Authorizations &amp; Referrals
+                </a>
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-orange">eb</span> Eligibility &amp; Benefits
+                </a>
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-branded-black">cr<span class="caret"></span></span>
+                  Humana Credentialing Status
+                </a>
+
+                <a href="#" class="list-group-item">
+                  <span class="app-icon app-icon-branded-neon">pr<span class="caret"></span></span>
+                  Provider Management
+                </a>
+              </div>
+              <div class="favorites-menu-footer">
+                <a href="#">Manage Favorites</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Payer Spaces</a>
+          <ul class="dropdown-menu mega-menu-default mega-menu-md" role="menu">
+            <li>
+              <div class="mega-menu-content">
+                <h5 class="mega-menu-title">My Patient Access Apps</h5>
+
+                <div class="list-group list-group-unstyled">
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Eligibility &amp; Benefits
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Care Reminders
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Patient Care Summary
+                  </a>
+
+                  <hr>
+
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">ai</span> Authorizations &amp; Referrals
+                  </a>
+                </div>
+              </div>
+              <div class="mega-menu-content mega-menu-feature">
+                <h4>Availity Premium Apps</h4>
+
+                <p>
+                </p>
+
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis
+                      parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block">Upgrade Today</button>
+                  </div>
+                </div>
+                <p></p>
+
+                <p><a href="#">Learn More</a></p>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main>
+  
+<div class="main-container">
+  <div class="container-fluid">
+    <dic class="row">
+      <div class="col-xs-6 col-sm-4 col-md-3 main-sidebar left">
+        <div class="main-sidebar-body">
+          <h4>
+            Recent Requests
+          </h4>
+          <div class="form-group">
+            <label class="sr-only" for="search">Search</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="search" placeholder="Search...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Search</button>
+              </span>
+            </div>
+          </div>
+          <div class="list-group list-group-cards">
+            <a class="list-group-item success" href="#">
+              <span class="label label-unstyled pull-right">10:33 PM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:1">Jayden Patterson</h4>
+              <h6 data-mock="company:1">A. Datum Corporation</h6>
+              <p class="list-group-item-text" data-mock="sentences:1">perspiciatis vel inventore quas delectus ut dicta
+eveniet et quae voluptatem autem id molestias
+tempora est doloribus provident aut iste molestiae</p>
+            </a>
+            <a class="list-group-item pending" href="#">
+              <span class="label label-unstyled pull-right">09:21 PM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:2">Nicholas Wood</h4>
+              <h6 data-mock="company:2">Humongous Insurance</h6>
+              <p class="list-group-item-text" data-mock="sentences:2">nihil dolor doloribus illum
+sit voluptas cum est blanditiis sit dicta
+assumenda in natus voluptas quasi quis</p>
+            </a>
+            <a class="list-group-item error" href="#">
+              <span class="label label-unstyled pull-right">06:01 PM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:3">Sophia Gonzalez</h4>
+              <h6 data-mock="company:3">Graphic Design Institute</h6>
+              <p class="list-group-item-text" data-mock="sentences:3">ut quis sit dolorem aperiam
+aut voluptas incidunt nihil aut asperiores accusamus maxime quis suscipit
+enim quo nihil maxime</p>
+            </a>
+            <a class="list-group-item canceled" href="#">
+              <span class="label label-unstyled pull-right">04:47 PM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:4">Wyatt Butler</h4>
+              <h6 data-mock="company:4">School of Fine Art</h6>
+              <p class="list-group-item-text" data-mock="sentences:4">veritatis eos qui
+est sint quis
+beatae similique adipisci laudantium quo eos doloribus temporibus et nam</p>
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="label label-unstyled pull-right">01:47 PM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:5">Avery Brooks</h4>
+              <h6 data-mock="company:5">Coho Vineyard &amp; Winery</h6>
+              <p class="list-group-item-text" data-mock="sentences:5">nobis cum non perferendis autem doloribus aperiam velit consectetur
+quia veniam voluptate et nihil eos
+accusamus est distinctio</p>
+            </a>
+            <a class="list-group-item success" href="#">
+              <span class="label label-unstyled pull-right">12:47 PM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:6">Caleb Peterson</h4>
+              <h6 data-mock="company:6">Northwind Traders</h6>
+              <p class="list-group-item-text" data-mock="sentences:6">et molestias non et nulla doloribus reiciendis
+accusantium est sint perferendis totam adipisci ut aut qui aut
+et quos qui</p>
+            </a>
+            <a class="list-group-item pending" href="#">
+              <span class="label label-unstyled pull-right">11:30 AM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:7">Aaliyah Washington</h4>
+              <h6 data-mock="company:7">Itexamworld</h6>
+              <p class="list-group-item-text" data-mock="sentences:7">ut corporis laborum at nostrum fugit
+quia atque qui facere nesciunt rem numquam explicabo optio
+provident nesciunt sunt illum</p>
+            </a>
+            <a class="list-group-item error" href="#">
+              <span class="label label-unstyled pull-right">10:31 AM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:8">Emily Clark</h4>
+              <h6 data-mock="company:8">Parnell Aerospace</h6>
+              <p class="list-group-item-text" data-mock="sentences:8">ut qui reprehenderit nemo corrupti totam qui ut
+quo rerum accusantium
+reprehenderit odio ut voluptatem qui id asperiores autem</p>
+            </a>
+            <a class="list-group-item canceled" href="#">
+              <span class="label label-unstyled pull-right">08:30 AM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:9">Aaliyah Williams</h4>
+              <h6 data-mock="company:9">School of Fine Art</h6>
+              <p class="list-group-item-text" data-mock="sentences:9">quae quam fuga autem adipisci quis aut
+culpa ut et voluptatem aperiam tempore et error aut
+quae praesentium voluptatem</p>
+            </a>
+            <a class="list-group-item" href="#">
+              <span class="label label-unstyled pull-right">7:59 AM</span>
+              <h4 class="list-group-item-heading" data-mock="fullName:10">Nathan Sanchez</h4>
+              <h6 data-mock="company:10">Electronic, Inc.</h6>
+              <p class="list-group-item-text" data-mock="sentences:10">qui iusto qui quos sed et atque
+eum dicta quos et rerum aliquid et fugit error
+aspernatur aut officia praesentium architecto</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-8 col-md-9 main-content">
+        <div class="card card-block">
+          <div class="table-responsive">
+            <table class="table table-list">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Gender</th>
+                  <th>DOB</th>
+                  <th>Member ID</th>
+                  <th>Address</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#" data-mock="fullName:1">Jayden Patterson</a></td>
+                  <td data-mock="sexShort:1">M</td>
+                  <td data-mock="dob:1">01/08/1973</td>
+                  <td data-mock="memberId:1">137656982</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:1">3087 Pennsylvania Avenue</div>
+                      <div data-mock="addressLine2:1">Riverside LA, LA 70058</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:1">(555) 555-4753</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:2">Nicholas Wood</a></td>
+                  <td data-mock="sexShort:2">M</td>
+                  <td data-mock="dob:2">04/02/1987</td>
+                  <td data-mock="memberId:2">698933248</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:2">4001 Oak Lane</div>
+                      <div data-mock="addressLine2:2">Pleasant Valley GA, GA 30341</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:2">(555) 555-4451</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:3">Sophia Gonzalez</a></td>
+                  <td data-mock="sexShort:3">F</td>
+                  <td data-mock="dob:3">06/06/1973</td>
+                  <td data-mock="memberId:3">468423765</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:3">1037 Front Street</div>
+                      <div data-mock="addressLine2:3">Greenwood AL, AL 35209</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:3">(555) 555-1279</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:4">Wyatt Butler</a></td>
+                  <td data-mock="sexShort:4">M</td>
+                  <td data-mock="dob:4">01/01/1983</td>
+                  <td data-mock="memberId:4">379138593</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:4">2261 Water Street</div>
+                      <div data-mock="addressLine2:4">Cedar Grove NC, NC 27024</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:4">(555) 555-4298</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:5">Avery Brooks</a></td>
+                  <td data-mock="sexShort:5">F</td>
+                  <td data-mock="dob:5">25/06/1986</td>
+                  <td data-mock="memberId:5">385125540</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:5">570 West Street</div>
+                      <div data-mock="addressLine2:5">Washington AL, AL 35593</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:5">(555) 555-2342</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:6">Caleb Peterson</a></td>
+                  <td data-mock="sexShort:6">M</td>
+                  <td data-mock="dob:6">13/07/1980</td>
+                  <td data-mock="memberId:6">345775037</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:6">534 Locust Street</div>
+                      <div data-mock="addressLine2:6">Auburn WI, WI 53804</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:6">(555) 555-5357</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:7">Aaliyah Washington</a></td>
+                  <td data-mock="sexShort:7">F</td>
+                  <td data-mock="dob:7">16/10/1983</td>
+                  <td data-mock="memberId:7">101102752</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:7">5979 Spruce Street</div>
+                      <div data-mock="addressLine2:7">Glendale CA, CA 92526</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:7">(555) 555-9993</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:8">Emily Clark</a></td>
+                  <td data-mock="sexShort:8">F</td>
+                  <td data-mock="dob:8">10/02/1983</td>
+                  <td data-mock="memberId:8">838380798</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:8">5042 Church Road</div>
+                      <div data-mock="addressLine2:8">Manchester TX, TX 78850</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:8">(555) 555-5970</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:9">Aaliyah Williams</a></td>
+                  <td data-mock="sexShort:9">F</td>
+                  <td data-mock="dob:9">13/03/1995</td>
+                  <td data-mock="memberId:9">619961671</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:9">1628 Locust Street</div>
+                      <div data-mock="addressLine2:9">Greenwood SC, SC 29634</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:9">(555) 555-4145</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:10">Nathan Sanchez</a></td>
+                  <td data-mock="sexShort:10">M</td>
+                  <td data-mock="dob:10">12/02/1982</td>
+                  <td data-mock="memberId:10">335271872</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:10">8287 Lincoln Avenue</div>
+                      <div data-mock="addressLine2:10">Kingston IL, IL 61983</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:10">(555) 555-3697</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:11">Wyatt Washington</a></td>
+                  <td data-mock="sexShort:11">M</td>
+                  <td data-mock="dob:11">06/01/1978</td>
+                  <td data-mock="memberId:11">044603929</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:11">8725 Court Street</div>
+                      <div data-mock="addressLine2:11">Shady Grove VA, VA 22485</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:11">(555) 555-5649</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:12">Ashley Rogers</a></td>
+                  <td data-mock="sexShort:12">F</td>
+                  <td data-mock="dob:12">18/10/1996</td>
+                  <td data-mock="memberId:12">846788282</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:12">2600 2nd Street</div>
+                      <div data-mock="addressLine2:12">Arlington NJ, NJ 07057</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:12">(555) 555-6513</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:13">Zoe Thompson</a></td>
+                  <td data-mock="sexShort:13">F</td>
+                  <td data-mock="dob:13">21/06/1970</td>
+                  <td data-mock="memberId:13">102870900</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:13">1401 Ridge Road</div>
+                      <div data-mock="addressLine2:13">Jackson MI, MI 49171</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:13">(555) 555-7665</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:14">Alexis Gonzales</a></td>
+                  <td data-mock="sexShort:14">F</td>
+                  <td data-mock="dob:14">21/03/1992</td>
+                  <td data-mock="memberId:14">526902739</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:14">422 4th Street West</div>
+                      <div data-mock="addressLine2:14">Lexington IN, IN 47584</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:14">(555) 555-2616</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-mock="fullName:15">Elijah Campbell</a></td>
+                  <td data-mock="sexShort:15">M</td>
+                  <td data-mock="dob:15">12/11/1975</td>
+                  <td data-mock="memberId:15">437891585</td>
+                  <td>
+                    <address>
+                      <div data-mock="addressLine1:15">7623 Adams Street</div>
+                      <div data-mock="addressLine2:15">Greenwood CA, CA 91065</div>
+                      <abbr title="Phone">P:</abbr> <span data-mock="phoneNumber:15">(555) 555-3321</span>
+                    </address>
+                  </td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon icon-menu"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Save</a></li>
+                        <li><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </dic>
+  </div>
+</div>
+
+  </main>
+
+  <script src="../../js/vendor.js"></script>
+<script src="../../js/availity-uikit.js"></script>
+<script src="../../js/docs.js"></script>
+
+</body>
+</html>
+
+
