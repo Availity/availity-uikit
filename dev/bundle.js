@@ -2,7 +2,7 @@
 
 const webpack = require('webpack');
 const Logger = require('./logger');
-const webpackConfig = require('../webpack.config.production.babel');
+const webpackConfig = require('../webpack.config.production');
 
 function bundle() {
 

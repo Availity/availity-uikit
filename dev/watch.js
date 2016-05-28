@@ -18,7 +18,6 @@ function watch() {
     persistent: true
   });
 
-
   watcher.on('all', debounce(run, 50));
 
   return Promise.resolve(true);
