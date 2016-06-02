@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const Logger = require('./logger');
 const metalsmith = require('./metalsmith');
-const wepackConfig = require('../webpack.config.babel');
+const wepackConfig = require('../webpack.config');
 
 function bundle() {
 

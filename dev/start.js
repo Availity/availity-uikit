@@ -6,7 +6,7 @@ const webpack = require('webpack');
 const metalsmith = require('./metalsmith');
 const Logger = require('./logger');
 const watch = require('./watch');
-const webpackConfig = require('../webpack.config.babel');
+const webpackConfig = require('../webpack.config');
 
 function serv() {
 
