@@ -98,19 +98,24 @@
 .stepwizard-progress {
 
   .stepwizard-badge {
-    &:after {
+    &:empty:after {
       content: '\0000a0';
+    }
+    .badge {
+      position: relative;
+      top: 70%;
+      left: 60%;
+      min-width: 25px;
     }
   }
 
   .stepwizard-step {
     &.complete {
       > .stepwizard-badge {
-        &:after {
+        &:empty:after {
           .iconify(@availity-icon-ok);
         }
       }
     }
   }
 }
-
