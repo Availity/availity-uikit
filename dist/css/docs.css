@@ -1,18 +1,13 @@
 /**
- * availity-uikit v1.2.0 -- April-22
+ * availity-uikit v1.2.1 -- June-09
  * Copyright 2016 Availity, LLC 
  */
 
-.section-header {
-  margin: 20px 0 20px;
-}
-blockquote,
-.disclaimer,
-.disclaimer-unstyled {
+blockquote {
   margin-top: 10px;
 }
 .guide {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .guide-section {
   margin-top: 4em;
@@ -189,18 +184,19 @@ div[title] i {
 code[class*="language-"],
 pre[class*="language-"] {
   color: black;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
+  word-wrap: normal;
   line-height: 1.5;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
 }
@@ -216,7 +212,7 @@ pre[class*="language-"] {
   background-size: 3em 3em;
   background-origin: content-box;
   overflow: visible;
-  max-height: 30em;
+  padding: 0;
 }
 code[class*="language"] {
   max-height: inherit;
@@ -239,6 +235,8 @@ pre[class*="language-"] {
   border-radius: 0.3em;
   color: #c92c2c;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline;
+  white-space: normal;
 }
 pre[class*="language-"]:before,
 pre[class*="language-"]:after {
@@ -250,6 +248,7 @@ pre[class*="language-"]:after {
   left: 0.18em;
   width: 40%;
   height: 20%;
+  max-height: 13em;
   box-shadow: 0px 13px 8px #979797;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
