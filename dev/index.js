@@ -13,5 +13,5 @@ const commands = {
 };
 
 nconf.argv().env();
-const command = nconf.get('command');
+const command = nconf.get('c');
 commands[command]();

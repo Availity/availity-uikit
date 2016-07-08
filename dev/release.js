@@ -138,16 +138,8 @@ function prompt() {
     }
   ];
 
-  return new Promise( resolve => {
-
-    inquirer.prompt(questions, function(answers) {
-
-      VERSION = answers.bump !== 'other' ? answers.bump : answers.version;
-
-      return resolve();
-
-    });
-
+  return inquirer.prompt(questions, function(answers) {
+    VERSION = answers.bump !== 'other' ? answers.bump : answers.version;
   });
 
 }
