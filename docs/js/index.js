@@ -67,13 +67,11 @@ $('#datetimepicker6').datepicker({
 });
 
 // Select2
-$('select').select2({
-  allowClear: true,
-  placeholder: {
-    id: '-1',
-    placeholder: 'Select one'
-  }
-}).on('select2:open', function() {
+
+$('#single-select, #multiple-select').select2({
+  placeholder: 'Select a State',
+  allowClear: true
+}).on('select2-open', function() {
 
   const $this = $(this);
   if ($this.parents('[class*="has-"]').length) {
@@ -88,6 +86,10 @@ $('select').select2({
       }
     }
   }
+});
+
+$('.select2, .select2-multiple').select2({
+  allowClear: true
 });
 
 // DO NOT USE THIS IN PRODUCTION. DEMO PURPOSES ONLY.
