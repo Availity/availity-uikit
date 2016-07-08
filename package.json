@@ -29,11 +29,10 @@
   "files": [
     "dist",
     "docs/images",
-    "docs/less/**/*.less",
-    "fonts",
+    "docs/less",
     "images",
-    "js/*.js",
-    "less/**/*.less"
+    "js",
+    "less"
   ],
   "contributors": [
     {
