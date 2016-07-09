@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.4 (01/29/2016)
+ * availity-uikit v2.0.0-beta.5 (07/09/2016)
  * (c) Availity, LLC
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -60,9 +60,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
+	// LESS
+	
 	__webpack_require__(3);
-
+	
+	// JS
 	__webpack_require__(1);
 
 /***/ },
@@ -71,17 +74,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
 	__webpack_require__(2);
-	
-	var availity = {
-	  VERSION: ("2.0.0-beta.3")
-	};
-	
-	exports.default = availity;
 
 /***/ },
 /* 2 */
