@@ -138,7 +138,7 @@ function prompt() {
     }
   ];
 
-  return inquirer.prompt(questions, function(answers) {
+  return inquirer.prompt(questions).then( answers => {
     VERSION = answers.bump !== 'other' ? answers.bump : answers.version;
   });
 
