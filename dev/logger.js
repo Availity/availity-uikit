@@ -19,7 +19,7 @@ class Logger {
     this._log(entry, 'red');
   }
 
-  static simple(entry) {
+  static info(entry) {
     console.log(entry);
   }
 

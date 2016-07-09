@@ -30,7 +30,7 @@ function lint() {
 
       if (report.errorCount || report.warningCount) {
         Logger.failed('eslint');
-        Logger.simple(`${formatter(report.results)}`);
+        Logger.info(`${formatter(report.results)}`);
         reject();
       } else {
         Logger.ok('eslint');
