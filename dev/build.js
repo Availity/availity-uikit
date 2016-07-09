@@ -19,7 +19,7 @@ function build() {
       return bundle();
     })
     .catch( (err) => {
-      Logger.log(err);
+      Logger.error(err);
     });
 
 }
