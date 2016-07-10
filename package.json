@@ -27,12 +27,14 @@
     "url": "https://github.com:Availity/availity-uikit/issues"
   },
   "files": [
-    "dist",
-    "docs/images",
-    "docs/less",
-    "images",
-    "js",
-    "less"
+    "dist/",
+    "docs/images/",
+    "docs/less/",
+    "images/",
+    "js/",
+    "less/",
+    "main.js",
+    "README.md"
   ],
   "contributors": [
     {
