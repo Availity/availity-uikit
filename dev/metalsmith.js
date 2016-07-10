@@ -38,6 +38,8 @@ env.addFilter('slug', slug.slugify);
 
 function build() {
 
+  Logger.info('Started metalsmith');
+
   return new Promise((resolve, reject) => {
 
     const metalsmith = new Metalsmith(path.join(process.cwd(), 'docs'));
@@ -104,7 +106,7 @@ function build() {
       if (err) {
         reject(err);
       } else {
-        Logger.ok('metalsmith');
+        Logger.ok('Finished metalsmith');
         resolve();
       }
 
