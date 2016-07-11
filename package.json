@@ -1,21 +1,25 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
-  "version": "2.0.0-beta.6",
+  "version": "2.0.0-beta.7",
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
-    "node": ">=4.x"
+    "node": ">= 5.0.0",
+    "npm": "^3.0.0"
   },
   "scripts": {
-    "start": "NODE_ENV=development node dev/index.js -c start",
-    "build": "NODE_ENV=production node dev/index.js -c build",
-    "docs": "NODE_ENV=development node dev/index.js -c docs",
+    "start": "cross-env NODE_ENV=development node dev/index.js -c start",
+    "build:lib": "copyup 'src/less/**' 'src/images/**' 'src/fonts/**' lib && babel src --out-dir lib --quiet --ignore spec.js",
+    "build:umd": "cross-env NODE_ENV=production node dev/index.js -c build",
+    "build": "npm run build:umd && npm run build:lib",
+    "docs": "cross-env NODE_ENV=development node dev/index.js -c docs",
     "clean": "node dev/index.js -c clean",
+    "prepublish": "npm run build",
     "release": "node dev/index.js -c release",
     "lint": "node dev/index.js -c lint"
   },
   "license": "MIT",
-  "main": "./main.js",
+  "main": "./lib/index.js",
   "style": "dist/css/availity-uikit.css",
   "less": "less/availity-bootstrap.less",
   "homepage": "http://availity.github.io/availity-uikit/",
@@ -30,10 +34,7 @@
     "dist/",
     "docs/images/",
     "docs/less/",
-    "images/",
-    "js/",
-    "less/",
-    "main.js",
+    "lib/",
     "README.md"
   ],
   "contributors": [
@@ -73,6 +74,8 @@
     "chart.js": "2.1.6",
     "cheerio": "0.20.0",
     "chokidar": "1.6.0",
+    "copyfiles": "^1.0.0",
+    "cross-env": "^1.0.8",
     "css-loader": "0.23.1",
     "dateformat": "1.0.12",
     "debounce-collect": "1.0.2",
@@ -109,6 +112,7 @@
     "node-sass": "3.8.0",
     "nunjucks": "2.4.2",
     "nunjucks-date": "1.2.0",
+    "ora": "^0.2.3",
     "postcss-loader": "0.9.1",
     "prismjs": "1.5.1",
     "raw-loader": "0.5.1",

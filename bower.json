@@ -2,6 +2,7 @@
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
   "license": "MIT",
+  "version": "2.0.0-beta.7",
   "homepage": "http://availity.github.io/availity-uikit/",
   "keywords": [
     "availity",

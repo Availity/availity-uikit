@@ -34,7 +34,7 @@ const config = {
     path: '/build',
     // publicPath: '../',
     filename: 'js/[name].js',
-    library: 'availity',
+    library: 'availity-uikit',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

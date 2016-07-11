@@ -37,7 +37,7 @@ function getConfig() {
     output: {
       path: 'dist',
       filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
-      library: 'availity',
+      library: 'availity-uikit',
       libraryTarget: 'umd',
       umdNamedDefine: true
     },

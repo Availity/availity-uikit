@@ -1,18 +1,18 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.6 (07/10/2016)
+ * availity-uikit v2.0.0-beta.6 (07/11/2016)
  * (c) Availity, LLC
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("jQuery"));
 	else if(typeof define === 'function' && define.amd)
-		define("availity", ["jQuery"], factory);
+		define("availity-uikit", ["jQuery"], factory);
 	else if(typeof exports === 'object')
-		exports["availity"] = factory(require("jQuery"));
+		exports["availity-uikit"] = factory(require("jQuery"));
 	else
-		root["availity"] = factory(root["jQuery"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_4__) {
+		root["availity-uikit"] = factory(root["jQuery"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_3__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -61,11 +61,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	
-	// LESS
-	
-	__webpack_require__(3);
-	
-	// JS
 	__webpack_require__(1);
 
 /***/ },
@@ -82,7 +77,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	
-	var _jquery = __webpack_require__(4);
+	var _jquery = __webpack_require__(3);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -117,13 +112,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 3 */
 /***/ function(module, exports) {
 
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_4__;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
 
 /***/ }
 /******/ ])
