@@ -21,7 +21,7 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "style": "dist/css/availity-uikit.css",
-  "less": "less/availity-bootstrap.less",
+  "less": "lib/less/bootstrap.less",
   "homepage": "http://availity.github.io/availity-uikit/",
   "repository": {
     "type": "git",
