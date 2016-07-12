@@ -20,7 +20,7 @@ class Logger {
   }
 
   static info(entry) {
-    console.log(entry);
+    this._log(entry);
   }
 
   // graphics
