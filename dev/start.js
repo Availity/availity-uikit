@@ -10,6 +10,8 @@ const webpackConfig = require('../webpack.config');
 
 function serv() {
 
+  Logger.info('Starting webpack development server');
+
   return new Promise(resolve => {
 
     const compiler = webpack(webpackConfig);
@@ -26,7 +28,7 @@ function serv() {
     });
 
     server.listen(3000, () => {
-      Logger.ok('webpack server');
+      Logger.ok('Finished webpack development server');
       resolve();
     });
 
