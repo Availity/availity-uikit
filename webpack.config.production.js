@@ -31,7 +31,7 @@ function getConfig() {
     context: __dirname,
 
     entry: {
-      'availity-uikit': './index.js'
+      'availity-uikit': './src/index.js'
     },
 
     output: {

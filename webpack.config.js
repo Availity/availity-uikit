@@ -22,7 +22,7 @@ const config = {
   context: __dirname,
 
   entry: {
-    'availity-uikit': './index.js',
+    'availity-uikit': './src/index.js',
     'vendor': './docs/js/vendor',
     'docs': './docs/js'
   },
