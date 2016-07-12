@@ -26,9 +26,10 @@ function lint() {
       '!build/**',
       '!dist/**',
       '!docs/**',
-      '!fonts/**',
-      '!images/**',
-      '!less/**'
+      '!lib/**',
+      '!src/fonts/**',
+      '!src/images/**',
+      '!src/less/**'
     ]).then( paths => {
 
       const report = engine.executeOnFiles(paths.slice(2));
