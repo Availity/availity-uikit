@@ -14,7 +14,7 @@
     "build": "npm run build:umd && npm run build:lib",
     "docs": "cross-env NODE_ENV=development node dev/index.js -c docs",
     "clean": "node dev/index.js -c clean",
-    "prepublish": "npm run build",
+    "prepublish": "in-publish && npm run build || true",
     "release": "node dev/index.js -c release",
     "lint": "node dev/index.js -c lint"
   },
@@ -89,6 +89,7 @@
     "globby": "5.0.0",
     "he": "1.1.0",
     "holderjs": "2.9.3",
+    "in-publish": "2.0.0",
     "inquirer": "1.1.2",
     "jquery": "3.1.0",
     "less": "2.7.1",
