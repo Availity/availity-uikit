@@ -32,6 +32,8 @@ function lint() {
       '!src/less/**'
     ]).then( paths => {
 
+      spinner.stop();
+
       const report = engine.executeOnFiles(paths.slice(2));
       const formatter = engine.getFormatter();
 
