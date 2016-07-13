@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development node dev/index.js -c start",
-    "build:lib": "copyup 'src/less/**' 'src/images/**' 'src/fonts/**' lib && babel src --out-dir lib --quiet --ignore spec.js",
+    "build:lib": "babel js --out-dir lib --quiet --ignore spec.js",
     "build:umd": "cross-env NODE_ENV=production node dev/index.js -c build",
     "build": "npm run build:umd && npm run build:lib",
     "docs": "cross-env NODE_ENV=development node dev/index.js -c docs",
@@ -35,6 +35,9 @@
     "docs/images/",
     "docs/less/",
     "lib/",
+    "images/",
+    "fonts/",
+    "less/",
     "README.md"
   ],
   "contributors": [
