@@ -1,6 +1,9 @@
 {
-  "presets": ["es2015"],
+  "presets": ["es2015", "stage-0"],
   "plugins": [
-    "add-module-exports"
-  ]
+    "transform-runtime",
+    "transform-class-properties",
+    "transform-object-assign"
+  ],
+  "compact": true
 }
