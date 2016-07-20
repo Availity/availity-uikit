@@ -80,6 +80,29 @@
   border: 2px solid #ccc;
 }
 
+.docs-headings-anchor {
+
+  text-decoration: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: @text-color;
+
+  &:hover {
+
+    text-decoration: none;
+
+    &:before {
+      content: "¶";
+      position: absolute;;
+      left: -1em;
+      color: @headings-small-color;
+    }
+
+  }
+
+}
+
 .docs-section {
 
   margin-top: 4em;
