@@ -14,7 +14,7 @@
  
 ## Demo
 
-[http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
+[http://availity.github.io/availity-uikit](http://availity.github.io/availity-uikit/v2.0.0-beta.7)
 
 
 ## Supported Browsers
