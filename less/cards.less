@@ -77,6 +77,36 @@
   right: @panel-body-padding;
 }
 
+.card-collapsible {
+
+  border: @availity-panel-collapse-border;
+  margin-bottom: 0;
+
+  .panel-heading {
+    border:none;
+  }
+
+  .collapsed {
+    .iconify-before(@availity-icon-angle-collapsed);
+  }
+
+  .collapse, .collapsing {
+    border: @availity-panel-collapse-border;
+    border-top: none;
+  }
+
+}
+
+.card-collapsible-link {
+  color: @link-color;
+  text-decoration: none;
+  .iconify-before(@availity-icon-angle-non-collapsed);
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
 .card {
 
   > .list-group:first-child {
