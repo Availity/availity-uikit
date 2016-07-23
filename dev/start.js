@@ -27,7 +27,7 @@ function serv() {
       }
     });
 
-    server.listen(3000, () => {
+    server.listen(4000, () => {
       Logger.ok('Finished webpack development server');
       resolve();
     });
