@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.7 (07/19/2016)
+ * availity-uikit v2.0.0-beta.7 (07/22/2016)
  * (c) Availity, LLC
  */
 /**
@@ -297,11 +297,8 @@ pre .line-highlight {
   margin-top: 1rem;
   position: relative;
   padding: 3.75em 1.5em 1.5em 1.5em;
-  border: solid #f7f7f9;
+  border: solid #f8f8f8;
   border-radius: 4px 4px 0 0;
-}
-.docs-example .card {
-  max-width: 40rem;
 }
 .docs-example:before {
   content: "Example";
@@ -438,8 +435,8 @@ code[class*=language] {
   letter-spacing: 0;
   color: #4d4f53;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: #f7f7f9;
-  border: solid #f7f7f9;
+  background-color: #f8f8f8;
+  border: solid #f8f8f8;
   border-radius: 2px;
   padding: 30px 15px 15px;
   max-height: none !important;
@@ -464,8 +461,8 @@ pre[class*="language-"] {
   letter-spacing: 0;
   color: #4d4f53;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  background-color: #f7f7f9;
-  border: solid #f7f7f9;
+  background-color: #f8f8f8;
+  border: solid #f8f8f8;
   border-radius: 2px;
   padding: 30px 15px 15px;
   max-height: none !important;
@@ -3935,3 +3932,5 @@ pre[class*="language-"] {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+/*# sourceMappingURL=docs.css.map*/
