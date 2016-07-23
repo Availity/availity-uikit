@@ -27,7 +27,7 @@ const config = {
     'docs': './docs/js'
   },
 
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'source-map',
 
   output: {
     // if path is not set to '/build' => Error invalid argument in MemoryFileSystem.js
