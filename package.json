@@ -125,7 +125,6 @@
     "raw-loader": "0.5.1",
     "require-dir": "^0.3.0",
     "sass-loader": "4.0.0",
-    "select2": "git+https://github.com/select2/select2.git#3.5.4",
     "semver": "5.2.0",
     "shelljs": "0.7.0",
     "slug": "0.9.1",
@@ -149,7 +148,7 @@
     "Yamm": "git+https://github.com/geedmo/yamm3.git#v1.1.0",
     "awesome-bootstrap-checkbox": "0.3.7",
     "bootstrap": "3.3.6",
-    "select2": "git+https://github.com/select2/select2.git#3.5.4",
+    "select2": "3.5.2-browserify",
     "select2-bootstrap-css": "1.4.6"
   }
 }
