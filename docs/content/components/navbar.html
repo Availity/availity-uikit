@@ -17,22 +17,18 @@ notes: |
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand-availity" href="#">
-          <div class="navbar-logo-availity"></div>
-        </a>
-      </div>
+      <a class="navbar-brand-availity" href="#">
+        <div class="navbar-logo-availity"></div>
+      </a>
     </div>
   </nav>
 </div>
 <code class="language-markup">
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand-availity" href="#">
-        <div class="navbar-logo-availity"></div>
-      </a>
-    </div>
+    <a class="navbar-brand-availity" href="#">
+      <div class="navbar-logo-availity"></div>
+    </a>
   </div>
 </nav>
 </code>
@@ -50,57 +46,62 @@ notes: |
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand-availity" href="#">
-          <div class="navbar-logo-availity"></div>
-        </a>
-      </div>
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
+        &#9776;
+      </button>
+      <a class="navbar-brand-availity" href="#">
+        <div class="navbar-logo-availity"></div>
+      </a>
 
-      <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-10">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-10">
+        <ul class="nav navbar-nav pull-md-left">
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
             </ul>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+        <form class="navbar-form pull-md-left" role="search">
+          <div class="form-search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-default"><i class="icon icon-search"></i></button>
+              </span>
+            </div>
+          </div>
+        </form>
+        <ul class="nav navbar-nav pull-md-right">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
               <i class="icon icon-help-circle"></i> Help
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
               Hello, John Doe
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Settings</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -109,75 +110,70 @@ notes: |
   </nav>
 </div>
 <code class="language-markup">
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
+        &#9776;
       </button>
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
-    </div>
 
-    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-10">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-search">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-default"><i class="icon icon-search"></i></button>
-            </span>
+      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-10">
+        <ul class="nav navbar-nav pull-md-left">
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form pull-md-left" role="search">
+          <div class="form-search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-default"><i class="icon icon-search"></i></button>
+              </span>
+            </div>
           </div>
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
-            <i class="icon icon-help-circle"></i> Help
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
-            Hello, John Doe
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
+        </form>
+        <ul class="nav navbar-nav pull-md-right">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+              <i class="icon icon-help-circle"></i> Help
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+              Hello, John Doe
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </code>
 
 
@@ -185,52 +181,57 @@ notes: |
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand-availity" href="#">
-          <div class="navbar-logo-availity"></div>
-        </a>
-      </div>
+      <a class="navbar-brand-availity" href="#">
+        <div class="navbar-logo-availity"></div>
+      </a>
     </div>
   </nav>
   <nav class="navbar navbar-default navbar-secondary" role="navigation">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
+        &#9776;
+      </button>
 
-      <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
+      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims Management</a>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Claims Management</a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance Payments</a>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Insurance Payments</a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
             </ul>
           </li>
-          <li class="dropdown dropdown-favorites">
-            <button class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">PatientPayments</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-favorites">
+            <button class="nav-btn btn-favorites" data-toggle="dropdown">Favorites</button>
             <ul class="dropdown-menu favorites-menu" role="menu">
               <li>
                 <h5 class="favorites-menu-title">Favorites</h5>
@@ -269,138 +270,126 @@ notes: |
   </nav>
 </div>
 <code class="language-markup">
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
     </div>
-  </div>
-</nav>
-<nav class="navbar navbar-default navbar-secondary" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  </nav>
+  <nav class="navbar navbar-default navbar-secondary" role="navigation">
+    <div class="container-fluid">
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
+        &#9776;
       </button>
-    </div>
 
-    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims Management</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance Payments</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Payments</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown dropdown-favorites">
-          <button href="#" class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
-          <ul class="dropdown-menu favorites-menu" role="menu">
-            <li>
-              <h5 class="favorites-menu-title">Favorites</h5>
-              <div class="favorites-menu-body">
-                <a href="#" class="list-group-item">
-                  <span class="app-icon app-icon-blue">ar</span> Authorizations &amp; Referrals
-                </a>
-                <a href="#" class="list-group-item">
-                  <span class="app-icon app-icon-orange">eb</span> Eligibility &amp; Benefits
-                </a>
-                <a href="#" class="list-group-item">
-                  <span class="app-icon app-icon-is-branded">
-                    cr
-                    <span class="caret"></span>
-                  </span>
-                  Humana Credentialing Status
-                </a>
+      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-2">
+        <ul class="nav navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Claims Management</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Insurance Payments</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">PatientPayments</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown dropdown-favorites">
+            <button class="nav-btn btn-favorites" data-toggle="dropdown">Favorites</button>
+            <ul class="dropdown-menu favorites-menu" role="menu">
+              <li>
+                <h5 class="favorites-menu-title">Favorites</h5>
+                <div class="favorites-menu-body">
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-blue">ar</span> Authorizations &amp; Referrals
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-orange">eb</span> Eligibility &amp; Benefits
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-is-branded">
+                      cr
+                      <span class="caret"></span>
+                    </span>
+                    Humana Credentialing Status
+                  </a>
 
-                <a href="#" class="list-group-item">
-                  <span class="app-icon app-icon-is-branded-alt">
-                    pr
-                    <span class="caret"></span>
-                  </span>
-                  Provider Management
-                </a>
-              </div>
-              <div class="favorites-menu-footer">
-                <a href="#">Manage Favorites</a>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
+                  <a href="#" class="list-group-item">
+                    <span class="app-icon app-icon-is-branded-alt">
+                      pr
+                      <span class="caret"></span>
+                    </span>
+                    Provider Management
+                  </a>
+                </div>
+                <div class="favorites-menu-footer">
+                  <a href="#">Manage Favorites</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </code>
 
 <h3 class="docs-subsection-title">Navbar Notifications</h3>
 <div class="docs-example">
 <nav class="navbar mega-menu navbar-default" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand-availity" href="#">
-        <div class="navbar-logo-availity"></div>
-      </a>
-    </div>
+    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
+      &#9776;
+    </button>
+    <a class="navbar-brand-availity" href="#">
+      <div class="navbar-logo-availity"></div>
+    </a>
 
-    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-4">
+    <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-4">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
-            <span class="badge badge-success">3</span>
+            <span class="label label-pill label-success">3</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
             <li>
               <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
-                <li class="active">
-                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link active" data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
                 </li>
-                <li>
-                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
                 </li>
-                <li>
-                  <a data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
                 </li>
               </ul>
               <div class="tab-content">
@@ -468,36 +457,31 @@ notes: |
 
 <nav class="navbar mega-menu navbar-default" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand-availity" href="#">
-        <div class="navbar-logo-availity"></div>
-      </a>
-    </div>
+    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
+      &#9776;
+    </button>
+    <a class="navbar-brand-availity" href="#">
+      <div class="navbar-logo-availity"></div>
+    </a>
 
-    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-4">
+    <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-4">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
-            <span class="badge badge-success">3</span>
+            <span class="label label-pill label-success">3</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
             <li>
               <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
-                <li class="active">
-                  <a data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link active" data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
                 </li>
-                <li>
-                  <a data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
                 </li>
-                <li>
-                  <a data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
                 </li>
               </ul>
               <div class="tab-content">

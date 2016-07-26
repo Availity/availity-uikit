@@ -5,10 +5,6 @@ description: |
   A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
 ---
 
-<div data-markdown>
-> Cards were ported over from a pre-release version of [Bootstrap 4](http://v4-alpha.getbootstrap.com/components/card/)
-</div>
-
 <h3 class="docs-subsection-title">Basic</h3>
 <p class="docs-section-description">Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the `.card-block` class on the `.card` element to consolidate your markup.</p>
 <div class="docs-example">
@@ -233,13 +229,13 @@ description: |
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 
-  <div class="card card-block text-center">
+  <div class="card card-block text-xs-center">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 
-  <div class="card card-block text-right">
+  <div class="card card-block text-xs-right">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -252,13 +248,13 @@ description: |
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 
-<div class="card card-block text-center">
+<div class="card card-block text-xs-center">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 
-<div class="card card-block text-right">
+<div class="card card-block text-xs-right">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -293,7 +289,7 @@ description: |
 </code>
 
 <div class="docs-example">
-  <div class="card text-center">
+  <div class="card text-xs-center">
     <div class="card-header">
       Featured
     </div>
@@ -308,7 +304,7 @@ description: |
   </div>
 </div>
 <code class="language-markup">
-<div class="card text-center">
+<div class="card text-xs-center">
   <div class="card-header">
     Featured
   </div>
@@ -365,7 +361,7 @@ description: |
 <h3 class="docs-subsection-title">Variants</h3>
 <p class="docs-section-description" data-markdown>Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. Darker colors require the use of `.card-inverse.`</p>
 <div class="docs-example">
-  <div class="card card-inverse card-primary text-center">
+  <div class="card card-inverse card-primary text-xs-center">
     <div class="card-block">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -373,7 +369,7 @@ description: |
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse card-success text-center">
+  <div class="card card-inverse card-success text-xs-center">
     <div class="card-block">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -381,7 +377,7 @@ description: |
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse card-info text-center">
+  <div class="card card-inverse card-info text-xs-center">
     <div class="card-block">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -389,7 +385,7 @@ description: |
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse card-warning text-center">
+  <div class="card card-inverse card-warning text-xs-center">
     <div class="card-block">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -397,7 +393,7 @@ description: |
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse card-danger text-center">
+  <div class="card card-inverse card-danger text-xs-center">
     <div class="card-block">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -405,7 +401,7 @@ description: |
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse card-default text-center">
+  <div class="card card-inverse card-default text-xs-center">
     <div class="card-block">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -415,7 +411,7 @@ description: |
   </div>
 </div>
 <code class="language-markup">
-<div class="card card-inverse card-primary text-center">
+<div class="card card-inverse card-primary text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -423,7 +419,7 @@ description: |
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-success text-center">
+<div class="card card-inverse card-success text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -431,7 +427,7 @@ description: |
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-info text-center">
+<div class="card card-inverse card-info text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -439,7 +435,7 @@ description: |
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-warning text-center">
+<div class="card card-inverse card-warning text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -447,7 +443,7 @@ description: |
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-danger text-center">
+<div class="card card-inverse card-danger text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -455,7 +451,7 @@ description: |
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-default text-center">
+<div class="card card-inverse card-default text-xs-center">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
@@ -622,7 +618,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
-    <div class="card card-block card-inverse card-primary text-center">
+    <div class="card card-block card-inverse card-primary text-xs-center">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
         <footer>
@@ -632,7 +628,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
         </footer>
       </blockquote>
     </div>
-    <div class="card card-block text-center">
+    <div class="card card-block text-xs-center">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -640,7 +636,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
     <div class="card">
       <img class="card-img" data-src="holder.js/100px260?text=Image" alt="Card image">
     </div>
-    <div class="card card-block text-right">
+    <div class="card card-block text-xs-right">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <footer>
@@ -684,7 +680,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card card-block card-inverse card-primary text-center">
+  <div class="card card-block card-inverse card-primary text-xs-center">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
       <footer>
@@ -694,7 +690,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
       </footer>
     </blockquote>
   </div>
-  <div class="card card-block text-center">
+  <div class="card card-block text-xs-center">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -702,7 +698,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com/)-like columns
   <div class="card">
     <img class="card-img" data-src="holder.js/100px260?text=Image" alt="Card image">
   </div>
-  <div class="card card-block text-right">
+  <div class="card card-block text-xs-right">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer>

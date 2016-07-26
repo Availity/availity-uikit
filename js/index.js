@@ -1,2 +1,2 @@
 import './modal';
-import '../less/bootstrap.less';
+import '../scss/_bootstrap.scss';

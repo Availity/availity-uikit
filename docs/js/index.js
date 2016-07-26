@@ -1,7 +1,8 @@
 import $ from 'jquery';
 import Chart from 'chart.js';
+import 'holderjs';
 
-import '../less/docs.less';
+import '../scss/docs.scss';
 import 'animate.css/animate.css';
 
 $('[data-toggle="popover"]').popover({

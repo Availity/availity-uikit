@@ -1,0 +1,18 @@
+.dropdown-menu {
+  @include box-shadow(0 0 5px rgba(54, 63, 69, 0.21));
+}
+
+.dropdown-menu-md {
+  min-width: 400px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 550px;
+  }
+}
+
+.dropdown-menu-scrollable {
+  height: auto;
+  max-height: $availity-height-sm;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

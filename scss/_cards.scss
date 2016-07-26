@@ -1,0 +1,39 @@
+.card-default {
+  background-color: $gray-lighter;
+  border-color: #d5dada;
+}
+
+.card-inverse {
+
+  &.card-warning, &.card-default {
+    .card-header,
+    .card-footer,
+    .card-title,
+    .card-blockquote {
+      color: $gray;
+    }
+    .card-link,
+    .card-text,
+    .card-blockquote > footer {
+      color: rgba(0,0,0,.65);
+    }
+    .card-link {
+      &:hover,
+      &:focus {
+        color: rgba(0,0,0,.90);
+      }
+    }
+  }
+  .card-link {
+     border-bottom: 1px dotted;
+     &:hover,
+     &:focus {
+       border-bottom: 1px solid;
+     }
+   }
+}
+
+.card-link {
+  text-decoration: none;
+  cursor: pointer;
+}

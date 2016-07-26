@@ -1,21 +1,16 @@
 <nav class="navbar navbar-default docs-navbar" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
       <a class="navbar-brand-availity" href="index.html">
         <div class="navbar-logo-availity"></div>
       </a>
-      <p class="navbar-text">UI Kit and Pattern Library <small>v{{pkg.version}}</small></p>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-header">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <p class="navbar-text pull-md-left">UI Kit and Pattern Library <small>v{{pkg.version}}</small></p>
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#guide-collapse-header">
+        &#9776;
       </button>
-    </div>
-    <div class="collapse navbar-collapse" id="guide-collapse-header">
-      <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="https://github.com/availity/availity-uikit">
+    <div class="collapse navbar-toggleable-sm" id="guide-collapse-header">
+      <ul class="nav navbar-nav pull-md-right">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/availity/availity-uikit">
           <i class="icon icon-github-circled"></i> Github
         </a>
       </li>
@@ -25,19 +20,14 @@
 </nav>
 <nav class="navbar navbar-default navbar-secondary docs-navbar" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-navigation">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="guide-collapse-navigation">
+    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#guide-collapse-navigation">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-sm" id="guide-collapse-navigation">
       <ul class="nav navbar-nav">
         {% for page in collections.pages %}
-          <li>
-            <a href="{{rootPath}}{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{rootPath}}{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
           </li>
         {% endfor %}
       </ul>

@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const autoprefixer = require('autoprefixer');
-const NpmImportPlugin = require('less-plugin-npm-import');
 const banner = require('./dev/banner');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
@@ -68,10 +67,10 @@ const config = {
         loader: ExtractTextPlugin.extract('style', 'css')
       },
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
           'style',
-          'css?limit=32768?name=images/[name].[ext]!postcss!less',
+          'css?limit=32768?name=images/[name].[ext]!postcss!sass?sourceMap',
           {
             publicPath: '../'
           }
@@ -87,10 +86,6 @@ const config = {
         loader: 'file?name=fonts/[name].[ext]'
       },
       {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
-      },
-      {
         test: /\.(jpe?g|png|gif)$/,
         loader: 'url?limit=32768?name=images/[name].[ext]'
       }
@@ -99,14 +94,6 @@ const config = {
 
   postcss() {
     return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
-  },
-
-  lessLoader: {
-    lessPlugins: [
-      new NpmImportPlugin({
-        prefix: '~'
-      })
-    ]
   },
 
   plugins: [

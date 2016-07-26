@@ -1,0 +1,20 @@
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: $gray-light;
+  &::before {
+    content: '\2014 \00A0';
+  }
+}
+
+blockquote,
+.disclaimer,
+.disclaimer-unstyled {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid $gray-lighter;
+}

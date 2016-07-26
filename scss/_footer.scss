@@ -1,0 +1,57 @@
+.main-page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -($availity-footer-height+$availity-footer-padding);
+}
+
+.footer {
+
+  color: $availity-footer-color;
+  background-color: $availity-footer-bg;
+  width: 100%;
+  min-height: $availity-footer-height;
+  font-weight: 400;
+
+  a {
+    color: $availity-footer-link-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $white;
+  }
+
+  @include media-breakpoint-down(md) {
+   text-align: center;
+  }
+
+}
+
+.footer-body {
+  padding: $availity-footer-padding;
+  @include clearfix();
+}
+
+.footer-copy {
+  float: left;
+
+  @include media-breakpoint-down(md) {
+   float: none;
+   display: block;
+  }
+}
+
+.footer-links {
+
+  float: right;
+  @extend .list-inline;
+  display: inline-block;
+  margin: 0;
+
+  @include media-breakpoint-down(md) {
+   float: none;
+   display: block;
+  }
+
+}

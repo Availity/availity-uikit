@@ -1,0 +1,160 @@
+@import "~bootstrap/scss/mixins/text-truncate";
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+
+  font-weight: 600;
+
+  &.subheader,
+  .small,
+  small{
+    color: $secondary-text-color;
+  }
+
+  &.condensed {
+    margin-bottom: 0;
+  }
+
+  .header-link {
+    line-height: 2em;
+    @include header-link-right();
+  }
+
+  .btn-header-link {
+    @include header-link-right(inherit);
+  }
+}
+
+h1,
+.h1 {
+  & + section {
+    margin-top: 0;
+  }
+}
+
+.h7 {
+  display: block;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.text-normal { text-transform: none; }
+.text-truncate { @include text-truncate(); }
+.text-break {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.text-label {
+  margin: 0;
+  margin-bottom: .1rem;
+  font-weight: 600;
+
+  &.text-label-inline {
+    margin-bottom: 0;
+  }
+}
+
+.bullet {
+  color: $text-muted;
+}
+
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+.page-header, .section-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #dadfdf;
+}
+.page-header {
+  margin: ($line-height * 1) 0 $line-height;
+}
+
+.page-header-brand {
+
+  @include media-breakpoint-up(md) {
+    display: table;
+    width: 100%;
+  }
+}
+
+.page-header-title, .page-header-logo {
+
+  @include media-breakpoint-up(md) {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+}
+
+.page-header-title {
+
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+}
+
+.page-header-logo {
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+
+}
+
+.section-header {
+
+  @extend .page-header;
+  @include clearfix();
+  margin: ($line-height * 1) 0 $line-height;
+
+  .section-header-link {
+    @include header-link-right();
+    line-height: 1.5em;
+  }
+}
+
+.metric-value {
+  margin-bottom: 0;
+  margin-top: .5em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.metric-heading {
+  margin-bottom: 0;
+}
+
+.disclaimer {
+ font-size: $font-size-base;
+  border-left: 5px solid $availity-disclaimer-warning-border;
+}
+
+.disclaimer-unstyled {
+ font-size: $font-size-base;
+  border-left: none;
+}
+
+.agreement {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: .2em;
+  font-size: $font-size-sm;
+}

@@ -1,0 +1,44 @@
+@mixin header-link($color: lighten($gray, 20%)) {
+  font-size: $font-size-sm;
+  font-weight: normal;
+  color: $color;
+  text-decoration: none;
+
+  &::after {
+    @include iconify-right($availity-icon-angle-right);
+    line-height: inherit;
+  }
+
+  &:hover {
+    color: $gray-darker;
+  }
+}
+
+@mixin header-link-right($color: lighten($gray, 20%)) {
+  @include header-link($color);
+
+  @include media-breakpoint-up(md) {
+    float: right;
+  }
+}
+
+@mixin header-icon-link($color: lighten($gray, 20%)) {
+  font-size: $font-size-sm;
+  font-weight: normal;
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: $gray-darker;
+  }
+}
+
+@mixin header-icon-link-right($color: lighten($gray, 20%)) {
+  @include header-icon-link($color);
+
+  @include media-breakpoint-up(md) {
+    float: right;
+  }
+}
+
+

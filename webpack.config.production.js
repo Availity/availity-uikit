@@ -3,7 +3,6 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
-const NpmImportPlugin = require('less-plugin-npm-import');
 
 const nconf = require('nconf');
 nconf.use('memory').defaults({
@@ -17,7 +16,7 @@ function getConfig() {
 
   const optimize = nconf.get('optimize');
   const minimize = optimize ? 'minimize' : '-minimize';
-  const cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!less`;
+  const cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!sass`;
 
   const ENV_VAR = {
     'process.env': {
@@ -77,7 +76,7 @@ function getConfig() {
           loader: ExtractTextPlugin.extract('style', 'css')
         },
         {
-          test: /\.less$/,
+          test: /\.scss$/,
           loader: ExtractTextPlugin.extract(
             'style',
             cssQuery,
@@ -96,10 +95,6 @@ function getConfig() {
           loader: 'file?name=fonts/[name].[ext]'
         },
         {
-          test: /\.scss$/,
-          loaders: ['style', 'css', 'sass']
-        },
-        {
           test: /\.(jpe?g|png|gif)$/,
           loader: 'url?limit=32768?name=images/[name].[ext]'
         }
@@ -108,14 +103,6 @@ function getConfig() {
 
     postcss() {
       return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
-    },
-
-    lessLoader: {
-      lessPlugins: [
-        new NpmImportPlugin({
-          prefix: '~'
-        })
-      ]
     },
 
     plugins: [

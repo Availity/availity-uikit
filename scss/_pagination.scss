@@ -1,0 +1,59 @@
+.pagination {
+  > .page-item > .page-link {
+    font-weight: $availity-pagination-font-weight;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.pagination-container {
+  @include clearfix();
+
+  .pagination {
+    float: left;
+    margin: 0 14px 0 0;
+  }
+
+  .pagination-text {
+    float: left;
+    margin-right: 7px;
+    line-height: 34px;
+  }
+
+  .form-control {
+    float: left;
+    margin: 0 14px 0 0;
+    width: auto;
+  }
+}
+
+.pagination.pagination-unstyled {
+  > .page-item > .page-link {
+	  padding: $padding-base-vertical;
+	  background-color: transparent;
+	  border-width: 0;
+
+    &:hover,
+    &:focus {
+      background-color: $pagination-hover-bg;
+    }
+  }
+
+  > .active > .page-link {
+    &,
+    &:hover,
+    &:focus {
+      background-color: $pagination-active-bg;
+    }
+  }
+
+  > .disabled {
+	> .page-link,
+	> .page-link:hover,
+	> .page-link:focus {
+	  background-color: transparent;
+	}
+  }
+}

@@ -1,5 +1,6 @@
 import 'jquery';
 import 'chart.js';
+import 'expose?Tether!tether';
 import 'bootstrap';
 import 'moment';
 import 'select2';

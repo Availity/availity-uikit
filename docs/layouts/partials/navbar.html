@@ -1,22 +1,16 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#availity-example-navbar-collapse-3">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand-availity" href="index.html">
-        <div class="navbar-logo-availity"></div>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-3">
+    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-3">
+      &#9776;
+    </button>
+    <a class="navbar-brand-availity" href="index.html">
+      <div class="navbar-logo-availity"></div>
+    </a>
+    <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-3">
       <ul class="nav navbar-nav">
-        <li><a href="index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
-        <li>
-          <a href="#" class="dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="icon icon-home navbar-default-icon"></i> Home</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link dropdown-toggle dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
             <span class="badge badge-success">3</span>
           </a>
@@ -78,27 +72,27 @@
           </ul>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+      <ul class="nav navbar-nav pull-md-right">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
             <i class="icon icon-help-circle"></i> Help
           </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Find Help</a></li>
-            <li><a href="#">Get Trained</a></li>
-            <li><a href="#">Search Knowledge</a></li>
-            <li><a href="#">Contact Support</a></li>
+            <li><a class="dropdown-item" href="#">Find Help</a></li>
+            <li><a class="dropdown-item" href="#">Get Trained</a></li>
+            <li><a class="dropdown-item" href="#">Search Knowledge</a></li>
+            <li><a class="dropdown-item" href="#">Contact Support</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
             John's Account
           </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#">Who controls my access?</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Log Out</a></li>
+            <li><a class="dropdown-item" href="#">My Profile</a></li>
+            <li><a class="dropdown-item" href="#">Who controls my access?</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
           </ul>
         </li>
       </ul>
@@ -108,18 +102,14 @@
 <nav class="navbar navbar-default navbar-secondary navbar-fixed-top mega-menu" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#availity-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
+        &#9776;
       </button>
     </div>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Registration</a>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient Registration</a>
           <ul class="dropdown-menu" role="menu">
             <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">EB</span> Eligibility and Benefits Inquiry</a></li>
             <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">R</span> Referral</a></li>
@@ -128,8 +118,8 @@
             <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-orange">PCS</span> Patient Care Summary</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Claims</a>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Claims</a>
           <ul class="dropdown-menu" role="menu">
             <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CSI</span> Claim Status Inquiry</a></li>
             <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">CRT</span> Claim Reconciliation Tool</a></li>
@@ -140,48 +130,48 @@
             <li class="app-menu-item"><a href="#"><span class="app-icon app-icon-blue">MA</span> Medical Attachments</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Payments</a>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Payments</a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#"><span class="app-icon app-icon-green">RV</span> Remittance Viewer</a></li>
             <li><a href="#"><span class="app-icon app-icon-green">CP</span> Collect Payment</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">More...</a>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More...</a>
           <ul class="dropdown-menu dropdown-menu-scrollable" role="menu">
-            <li><a href="#"><strong>Auths and Referrals</strong></a></li>
-            <li><a href="#"> Drug Authorization (CCStpa)</a></li>
-            <li><a href="#"> Current Admissions Report (Humana)</a></li>
-            <li><a href="#"> Current Admissions Report (Humana)</a></li>
-            <li><a href="#"> Claims Missing Referrals (Humana)</a></li>
-            <li><a href="#"> Referral Report (Humana)</a></li>
-            <li><a href="#"> Radiology Referral Submission (Humana)</a></li>
-            <li><a href="#"> Health Choice Authorization (Prestige)</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>Availity Payer List</strong></a></li>
-            <li><a href="#"> Payer List</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>Enrollments</strong></a></li>
-            <li><a href="#"> ERA Enrollment - Electronic</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>My Account</strong></a></li>
-            <li><a href="#"> EFT Enrollment</a></li>
-            <li><a href="#"> Manage My Code List</a></li>
-            <li><a href="#"> My Favorite Codes</a></li>
-            <li><a href="#"> View My Code List</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>My Payer Portals</strong></a></li>
-            <li><a href="#"> Amerigroup Provider Self Service</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> <strong>Reporting</strong></a></li>
-            <li><a href="#"> My Organization Reports</a></li>
-            <li><a href="#"> Health Choice Reports (Prestige)</a></li>
-            <li><a href="#"> Web Transaction Report</a></li>
+            <li><a class="dropdown-item" href="#"><strong>Auths and Referrals</strong></a></li>
+            <li><a class="dropdown-item" href="#"> Drug Authorization (CCStpa)</a></li>
+            <li><a class="dropdown-item" href="#"> Current Admissions Report (Humana)</a></li>
+            <li><a class="dropdown-item" href="#"> Current Admissions Report (Humana)</a></li>
+            <li><a class="dropdown-item" href="#"> Claims Missing Referrals (Humana)</a></li>
+            <li><a class="dropdown-item" href="#"> Referral Report (Humana)</a></li>
+            <li><a class="dropdown-item" href="#"> Radiology Referral Submission (Humana)</a></li>
+            <li><a class="dropdown-item" href="#"> Health Choice Authorization (Prestige)</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> <strong>Availity Payer List</strong></a></li>
+            <li><a class="dropdown-item" href="#"> Payer List</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> <strong>Enrollments</strong></a></li>
+            <li><a class="dropdown-item" href="#"> ERA Enrollment - Electronic</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> <strong>My Account</strong></a></li>
+            <li><a class="dropdown-item" href="#"> EFT Enrollment</a></li>
+            <li><a class="dropdown-item" href="#"> Manage My Code List</a></li>
+            <li><a class="dropdown-item" href="#"> My Favorite Codes</a></li>
+            <li><a class="dropdown-item" href="#"> View My Code List</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> <strong>My Payer Portals</strong></a></li>
+            <li><a class="dropdown-item" href="#"> Amerigroup Provider Self Service</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"> <strong>Reporting</strong></a></li>
+            <li><a class="dropdown-item" href="#"> My Organization Reports</a></li>
+            <li><a class="dropdown-item" href="#"> Health Choice Reports (Prestige)</a></li>
+            <li><a class="dropdown-item" href="#"> Web Transaction Report</a></li>
           </ul>
         </li>
-        <li class="dropdown dropdown-favorites">
-          <button class="dropdown-toggle btn-favorites" data-toggle="dropdown">Favorites</button>
+        <li class="nav-item dropdown dropdown-favorites">
+          <button class="nav-btn btn-favorites" data-toggle="dropdown">Favorites</button>
           <ul class="dropdown-menu favorites-menu" role="menu">
             <li>
               <h5 class="favorites-menu-title">Favorites</h5>
@@ -210,10 +200,10 @@
           </ul>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Payer Spaces</a>
-          <ul class="dropdown-menu mega-menu-default mega-menu-md" role="menu">
+      <ul class="nav navbar-nav pull-md-right">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Payer Spaces</a>
+          <ul class="dropdown-menu mega-menu-default mega-menu-right mega-menu-md" role="menu">
             <li>
               <div class="mega-menu-content">
                 <h5 class="mega-menu-title">My Patient Access Apps</h5>
