@@ -454,11 +454,11 @@ $input-padding-y-lg:             .75rem !default;
 $padding-large-vertical:         $input-padding-y-lg;
 
 $input-height:                   (($font-size-base * $line-height) + ($input-padding-y * 2)) !default;
-$input-height-base:              ($input-height)px;
+$input-height-base:              31.5px;
 $input-height-lg:                (($font-size-lg * $line-height-lg) + ($input-padding-y-lg * 2)) !default;
-$input-height-large:             ($input-height-lg)px;
+$input-height-large:             26.075px;
 $input-height-sm:                (($font-size-sm * $line-height-sm) + ($input-padding-y-sm * 2)) !default;
-$input-height-small:             ($input-height-sm)px;
+$input-height-small:             26.075px;
 
 $form-group-margin-bottom:       $spacer-y !default;
 
