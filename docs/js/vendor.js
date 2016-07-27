@@ -1,7 +1,7 @@
 import 'jquery';
 import 'chart.js';
 import 'expose?Tether!tether';
-import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import 'moment';
 import 'select2';
 import 'holderjs';

@@ -1,6 +1,7 @@
 @mixin availity-form-control-validation($text-color: #555, $border-color: #ccc, $background-color: #f5f5f5) {
 
-  label {
+  label,
+  .form-control-feedback{
     color: $text-color;
   }
 

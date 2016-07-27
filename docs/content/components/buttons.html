@@ -23,7 +23,7 @@ notes: |
 ---
 <h3 class="docs-subsection-title">Options</h3>
 <div class="docs-example">
-  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-secondary">Secondary</button>
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-success">Success</button>
   <button type="button" class="btn btn-info">Info</button>
@@ -34,18 +34,19 @@ notes: |
 
 </div>
 <code class="language-markup">
-<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-ghost">Ghost</button>
 <button type="button" class="btn btn-link">Link</button>
 </code>
 
 <h3 class="docs-subsection-title">Disabled</h3>
 <div class="docs-example">
-  <button type="button" disabled="disabled" class="btn btn-default">Default</button>
+  <button type="button" disabled="disabled" class="btn btn-secondary">Secondary</button>
   <button type="button" disabled="disabled" class="btn btn-primary">Primary</button>
   <button type="button" disabled="disabled" class="btn btn-success">Success</button>
   <button type="button" disabled="disabled" class="btn btn-info">Info</button>
@@ -55,13 +56,32 @@ notes: |
   <button type="button" disabled="disabled" class="btn btn-link">Link</button>
 </div>
 <code class="language-markup">
-<button type="button" disabled="disabled" class="btn btn-default">Default</button>
+<button type="button" disabled="disabled" class="btn btn-secondary">Secondary</button>
 <button type="button" disabled="disabled" class="btn btn-primary">Primary</button>
 <button type="button" disabled="disabled" class="btn btn-success">Success</button>
 <button type="button" disabled="disabled" class="btn btn-info">Info</button>
 <button type="button" disabled="disabled" class="btn btn-warning">Warning</button>
 <button type="button" disabled="disabled" class="btn btn-danger">Danger</button>
+<button type="button" disabled="disabled" class="btn btn-ghost">Ghost</button>
 <button type="button" disabled="disabled" class="btn btn-link">Link</button>
+</code>
+
+<h3 class="docs-subsection-title">Outline</h3>
+<div class="docs-example">
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+</div>
+<code class="language-markup">
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
 </code>
 
 <h3 class="docs-subsection-title">Large Button</h3>
@@ -85,60 +105,63 @@ notes: |
 </code>
 
 <h3 class="docs-subsection-title">Secondary Button</h3>
+<p>Previously `.btn-default`. For backwards compatibility `.btn-default` is the same as `.btn-secondary`. `.btn-secondary` is preferred.</p>
 <div class="docs-example">
-  <button type="button" class="btn btn-default">Secondary button</button>
+  <button type="button" class="btn btn-secondary">Secondary button</button>
+  <button type="button" class="btn btn-default">Default button</button>
 </div>
 <code class="language-markup">
-<button type="button" class="btn btn-default">Secondary button</button>
+<button type="button" class="btn btn-secondary">Secondary button</button>
+<button type="button" class="btn btn-default">Default button</button>
 </code>
 
 
 <h3 class="docs-subsection-title">Button Group</h3>
 <div class="docs-example">
   <div class="btn-group">
-    <button type="button" class="btn btn-default">Left</button>
-    <button type="button" class="btn btn-default">Middle</button>
-    <button type="button" class="btn btn-default">Right</button>
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
   </div>
 </div>
 <code class="language-markup">
   <div class="btn-group">
-    <button type="button" class="btn btn-default">Left</button>
-    <button type="button" class="btn btn-default">Middle</button>
-    <button type="button" class="btn btn-default">Right</button>
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
   </div>
 </code>
 
 <h3 class="docs-subsection-title">Combo Button</h3>
 <div class="docs-example">
   <div class="btn-group">
-    <button type="button" class="btn btn-default">Action</button>
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <button type="button" class="btn btn-secondary">Action</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
       <span class="caret"></span>
       <span class="sr-only">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
       <li class="divider"></li>
-      <li><a href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </div>
 </div>
 <code class="language-markup">
 <div class="btn-group">
-  <button type="button" class="btn btn-default">Action</button>
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <button type="button" class="btn btn-secondary">Action</button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
     <span class="caret"></span>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
     <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>
 </code>
@@ -159,7 +182,7 @@ notes: |
 
 <h3 class="docs-subsection-title">File Upload</h3>
 <div class="docs-example">
-  <span class="btn btn-default btn-file">
+  <span class="btn btn-secondary btn-file">
     <i class="icon icon-plus-circle"></i>
     <span>Add files...</span>
     <input type="file" name="files[]" multiple>
@@ -194,9 +217,14 @@ notes: |
     <span>Add files...</span>
     <input type="file" name="files[]" multiple>
   </span>
+  <span class="btn btn-ghost btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
 </div>
 <code class="language-markup">
-<span class="btn btn-default btn-file">
+<span class="btn btn-secondary btn-file">
   <i class="icon icon-plus-circle"></i>
   <span>Add files...</span>
   <input type="file" name="files[]" multiple>
@@ -208,4 +236,5 @@ notes: |
 <span class="btn btn-warning btn-file">...</span>
 <span class="btn btn-danger btn-file">...</span>
 <span class="btn btn-link btn-file">...</span>
+<span class="btn btn-ghost btn-file">...</span>
 </code>

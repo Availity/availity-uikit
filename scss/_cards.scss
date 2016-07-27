@@ -1,39 +1,47 @@
-.card-default {
+.card-default,
+.card-secondary {
   background-color: $gray-lighter;
   border-color: #d5dada;
 }
 
-.card-inverse {
+.card-outline-default{
+  @extend .card-outline-secondary;
+}
 
-  &.card-warning, &.card-default {
-    .card-header,
-    .card-footer,
-    .card-title,
-    .card-blockquote {
-      color: $gray;
-    }
-    .card-link,
-    .card-text,
-    .card-blockquote > footer {
-      color: rgba(0,0,0,.65);
-    }
-    .card-link {
-      &:hover,
-      &:focus {
-        color: rgba(0,0,0,.90);
-      }
+.card {
+  blockquote footer,
+  blockquote small,
+  blockquote .small {
+    color: inherit;
+  }
+}
+
+.card-inverse .card-link {
+  border-bottom: 1px dotted;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid;
+  }
+}
+
+.card-warning,
+.card-default,
+.card-secondary {
+  .card-link,
+  .card-text,
+  .card-blockquote > footer {
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .card-link{
+    border-bottom: 1px dotted;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+      color: $body-color;
     }
   }
-  .card-link {
-     border-bottom: 1px dotted;
-     &:hover,
-     &:focus {
-       border-bottom: 1px solid;
-     }
-   }
 }
 
 .card-link {
-  text-decoration: none;
   cursor: pointer;
 }

@@ -1,23 +1,23 @@
-.label {
+.tag {
   text-transform: uppercase;
   line-height: 1;
   padding: .25em .6em;
   display: inline;
 }
 
-.label-unstyled, .label-default, .label-warning {
+.tag-unstyled, .tag-default, .tag-warning {
   color: $text-color;
 }
 
-.label-brand {
+.tag-brand {
   background-color:  $orange;
 }
 
-.label-extra {
+.tag-extra {
   background-color:  $secondary-blue;
 }
 
-.label-block {
+.tag-block {
   display: block;
   text-align: left;
   padding: .3em;
@@ -25,48 +25,48 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  &.label-block {
+  &.tag-block {
     margin: 0;
   }
 }
 
 h1, .h1 {
-  &.label-block {
+  &.tag-block {
     font-size: $font-size-h1;
   }
 }
 
 h2, .h2 {
-  &.label-block {
+  &.tag-block {
     font-size: $font-size-h2;
   }
 }
 
 h3, .h3 {
-  &.label-block {
+  &.tag-block {
     font-size: $font-size-h3;
   }
 }
 
 h4, .h4 {
-  &.label-block {
+  &.tag-block {
     font-size: $font-size-h4;
   }
 }
 
 h5, .h5 {
-  &.label-block {
+  &.tag-block {
     font-size: $font-size-h5;
   }
 }
 
 h6, .h6 {
-  &.label-block {
+  &.tag-block {
     font-size: $font-size-h6;
   }
 }
 
-.label-remove {
+.tag-remove {
 
   display: inline-block; // https://github.com/twbs/bootstrap/issues/13219
   vertical-align: middle;
@@ -99,38 +99,38 @@ h6, .h6 {
   }
 }
 
-.label-pill {
+.tag-pill {
   font-size: 85%;
   background-color: $gray;
   color: $white;
   padding: .35em .6em;
 }
 
-.label-default {
+.tag-default {
   @include badge-variant($gray-lighter, $gray);
 }
 
-.label-primary {
+.tag-primary {
   @include badge-variant($brand-primary);
 }
 
-.label-success {
+.tag-success {
   @include badge-variant($brand-success);
 }
 
-.label-info {
+.tag-info {
   @include badge-variant($brand-info);
 }
 
-.label-warning {
+.tag-warning {
   @include badge-variant($brand-warning, $gray);
 }
 
-.label-danger {
+.tag-danger {
   @include badge-variant($brand-danger);
 }
 
-.btn-primary .label-pill {
+.btn-primary .tag-pill {
   color: $brand-primary;
   background-color: $white;
 }

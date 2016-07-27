@@ -55,9 +55,6 @@
   width: 100%;
   height: $progress-bar-height;
   margin-bottom: $progress-bar-height;
-}
-
-.progress[value] {
   // Set overall background
   background-color: $progress-bg;
   // Remove Firefox and Opera border

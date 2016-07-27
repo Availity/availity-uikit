@@ -101,7 +101,16 @@
 }
 
 .btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  @extend .btn-secondary;
+}
+.btn-outline-default {
+  @extend .btn-outline-secondary;
+}
+.btn-outline-warning,
+.btn-outline-secondary {
+  @include hover-focus-active {
+    color: $btn-warning-color;
+  }
 }
 
 .btn-ghost {

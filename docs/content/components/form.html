@@ -96,40 +96,46 @@ notes: |
   <div class="form-group has-danger">
     <label for="text5">Label for text input</label>
     <input type="text" class="form-control" id="text5" placeholder="has error">
-    <p class="text-help">Example block-level help text here.</p>
+    <p class="form-control-feedback">Example block-level help text here.</p>
+    <small class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
   <div class="form-group has-success">
     <label for="text6">Label for text input</label>
     <input type="text" class="form-control" id="text6" placeholder="has suscess">
-    <p class="text-help">Example block-level help text here.</p>
+    <p class="form-control-feedback">Example block-level help text here.</p>
+    <small class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
   <div class="form-group has-warning">
     <label for="text7">Label for text input</label>
     <input type="text" class="form-control" id="text7" placeholder="has warning">
-    <p class="text-help">Example block-level help text here.</p>
+    <p class="form-control-feedback">Example block-level help text here.</p>
+    <small class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
 </div>
 <code class="language-markup">
 <div class="form-group has-danger">
-  <label for="text8">Label for text input</label>
-  <input type="text" class="form-control" id="text8" placeholder="" value="This is error text">
-  <p class="text-help">Example block-level help text here.</p>
+  <label for="text5">Label for text input</label>
+  <input type="text" class="form-control" id="text5" placeholder="has error">
+  <p class="form-control-feedback">Example block-level help text here.</p>
+  <small class="form-text text-muted">Example help text that remains unchanged.</small>
 </div>
 <div class="form-group has-success">
-  <label for="text9">Label for text input</label>
-  <input type="text" class="form-control" id="text9" placeholder="" value="this is success text">
-  <p class="text-help">Example block-level help text here.</p>
+  <label for="text6">Label for text input</label>
+  <input type="text" class="form-control" id="text6" placeholder="has suscess">
+  <p class="form-control-feedback">Example block-level help text here.</p>
+  <small class="form-text text-muted">Example help text that remains unchanged.</small>
 </div>
 <div class="form-group has-warning">
-  <label for="text10">Label for text input</label>
-  <input type="text" class="form-control" id="text10" placeholder="" value="this is warning text">
-  <p class="text-help">Example block-level help text here.</p>
+  <label for="text7">Label for text input</label>
+  <input type="text" class="form-control" id="text7" placeholder="has warning">
+  <p class="form-control-feedback">Example block-level help text here.</p>
+  <small class="form-text text-muted">Example help text that remains unchanged.</small>
 </div>
 </code>
 
 <h3 class="docs-subsection-title">Checkboxes and Radios</h3>
 <p class="docs-section-description" data-markdown>
-Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many. A checkbox or radio with the `disabled` attribute will be styled appropriately. To have the `label` for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the `.disabled` class to your `.radio`, `.radio-inline`, `.checkbox`, `.checkbox-inline`, or `fieldset`.
+Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many. A checkbox or radio with the `disabled` attribute will be styled appropriately. To have the `label` for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the `.disabled` class to your `.radio`, `.form-check-inline`, `.checkbox`, `.form-check-inline`, or `fieldset`.
 </p>
 <div class="docs-example">
   <div class="checkbox">
@@ -190,60 +196,60 @@ Checkboxes are for selecting one or several options in a list, while radios are 
 
 <h4 class="docs-subsection-title">Inline Checkboxes and Radios</h4>
 <p class="docs-section-description" data-markdown>
-Use the `.checkbox-inline` or `.radio-inline` classes on a series of checkboxes or radios for controls that appear on the same line.
+Use the `.form-check-inline` classes on a series of checkboxes or radios for controls that appear on the same line.
 </p>
 <div class="docs-example">
-  <div class="checkbox checkbox-inline">
+  <div class="checkbox form-check-inline">
     <input id="checkbox4" type="checkbox" checked="">
     <label for="checkbox4">1</label>
   </div>
-  <div class="checkbox checkbox-inline">
+  <div class="checkbox form-check-inline">
     <input id="checkbox5" type="checkbox" value="">
     <label for="checkbox5">2</label>
   </div>
-  <div class="checkbox checkbox-inline">
+  <div class="checkbox form-check-inline">
     <input id="checkbox6" type="checkbox" value="">
     <label for="checkbox6">3</label>
   </div>
   <br><br>
-  <div class="radio radio-inline">
+  <div class="radio form-check-inline">
     <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option1" checked="">
     <label for="optionsRadios4">1</label>
   </div>
-  <div class="radio radio-inline">
+  <div class="radio form-check-inline">
     <input type="radio" name="optionsRadios2" id="optionsRadios5" value="option2">
     <label for="optionsRadios5">2</label>
   </div>
-  <div class="radio radio-inline">
+  <div class="radio form-check-inline">
     <input type="radio" name="optionsRadios2" id="optionsRadios6" value="option3">
     <label for="optionsRadios6">3</label>
   </div>
 </div>
 <code class="language-markup">
 <!--Checkboxes-->
-<div class="checkbox checkbox-inline">
+<div class="checkbox form-check-inline">
   <input id="checkbox4" type="checkbox" checked="">
   <label for="checkbox4">1</label>
 </div>
-<div class="checkbox checkbox-inline">
+<div class="checkbox form-check-inline">
   <input id="checkbox5" type="checkbox" value="">
   <label for="checkbox5">2</label>
 </div>
-<div class="checkbox checkbox-inline">
+<div class="checkbox form-check-inline">
   <input id="checkbox6" type="checkbox" value="">
   <label for="checkbox6">3</label>
 </div>
 
 <!--Radios-->
-<div class="radio radio-inline">
+<div class="radio form-check-inline">
   <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option1" checked="">
   <label for="optionsRadios4">1</label>
 </div>
-<div class="radio radio-inline">
+<div class="radio form-check-inline">
   <input type="radio" name="optionsRadios2" id="optionsRadios5" value="option2">
   <label for="optionsRadios5">2</label>
 </div>
-<div class="radio radio-inline">
+<div class="radio form-check-inline">
   <input type="radio" name="optionsRadios2" id="optionsRadios6" value="option3">
   <label for="optionsRadios6">3</label>
 </div>
@@ -279,89 +285,89 @@ Should you have no text within the `label`, the input is positioned as you'd exp
 
 <h4 class="docs-subsection-title">Checkbox and Radio Variants</h4>
 <div class="docs-example">
-  <div class="checkbox checkbox-inline checkbox-primary">
+  <div class="checkbox form-check-inline checkbox-primary">
     <input id="checkbox8" type="checkbox" checked="">
     <label for="checkbox8">Primary</label>
   </div>
-  <div class="checkbox checkbox-inline checkbox-success">
+  <div class="checkbox form-check-inline checkbox-success">
     <input id="checkbox9" type="checkbox" checked="">
     <label for="checkbox9">Success</label>
   </div>
-  <div class="checkbox checkbox-inline checkbox-info">
+  <div class="checkbox form-check-inline checkbox-info">
     <input id="checkbox10" type="checkbox" checked="">
     <label for="checkbox10">Info</label>
   </div>
-  <div class="checkbox checkbox-inline checkbox-warning">
+  <div class="checkbox form-check-inline checkbox-warning">
     <input id="checkbox11" type="checkbox" checked="">
     <label for="checkbox11">Warning</label>
   </div>
-  <div class="checkbox checkbox-inline checkbox-danger">
+  <div class="checkbox form-check-inline checkbox-danger">
     <input id="checkbox12" type="checkbox" checked="">
     <label for="checkbox12">Danger</label>
   </div>
   <br><br>
-  <div class="radio radio-inline radio-primary">
+  <div class="radio form-check-inline radio-primary">
     <input type="radio" id="optionsRadios8" value="option1" checked="">
     <label for="optionsRadios8">Primary</label>
   </div>
-  <div class="radio radio-inline radio-success">
+  <div class="radio form-check-inline radio-success">
     <input type="radio" id="optionsRadios9" value="option1" checked="">
     <label for="optionsRadios9">Success</label>
   </div>
-  <div class="radio radio-inline radio-info">
+  <div class="radio form-check-inline radio-info">
     <input type="radio" d="optionsRadios10" value="option1" checked="">
     <label for="optionsRadios10">Info</label>
   </div>
-  <div class="radio radio-inline radio-warning">
+  <div class="radio form-check-inline radio-warning">
     <input type="radio" id="optionsRadios11" value="option1" checked="">
     <label for="optionsRadios11">Warning</label>
   </div>
-  <div class="radio radio-inline radio-danger">
+  <div class="radio form-check-inline radio-danger">
     <input type="radio" id="optionsRadios12" value="option1" checked="">
     <label for="optionsRadios12">Danger</label>
   </div>
 </div>
 <code class="language-markup">
 <!--Checkboxes-->
-<div class="checkbox checkbox-inline checkbox-primary">
+<div class="checkbox form-check-inline checkbox-primary">
   <input id="checkbox8" type="checkbox" checked="">
   <label for="checkbox8">Primary</label>
 </div>
-<div class="checkbox checkbox-inline checkbox-success">
+<div class="checkbox form-check-inline checkbox-success">
   <input id="checkbox9" type="checkbox">
   <label for="checkbox9">Success</label>
 </div>
-<div class="checkbox checkbox-inline checkbox-info">
+<div class="checkbox form-check-inline checkbox-info">
   <input id="checkbox10" type="checkbox">
   <label for="checkbox10">Info</label>
 </div>
-<div class="checkbox checkbox-inline checkbox-warning">
+<div class="checkbox form-check-inline checkbox-warning">
   <input id="checkbox11" type="checkbox">
   <label for="checkbox11">Warning</label>
 </div>
-<div class="checkbox checkbox-inline checkbox-danger">
+<div class="checkbox form-check-inline checkbox-danger">
   <input id="checkbox12" type="checkbox">
   <label for="checkbox12">Danger</label>
 </div>
 
 <!--Radios-->
-<div class="radio radio-inline radio-primary">
+<div class="radio form-check-inline radio-primary">
   <input type="radio" name="optionsRadios4" id="optionsRadios8" value="option1">
   <label for="optionsRadios8">Primary</label>
 </div>
-<div class="radio radio-inline radio-success">
+<div class="radio form-check-inline radio-success">
   <input type="radio" name="optionsRadios4" id="optionsRadios9" value="option1">
   <label for="optionsRadios9">Success</label>
 </div>
-<div class="radio radio-inline radio-info">
+<div class="radio form-check-inline radio-info">
   <input type="radio" name="optionsRadios4" id="optionsRadios10" value="option1">
   <label for="optionsRadios10">Info</label>
 </div>
-<div class="radio radio-inline radio-warning">
+<div class="radio form-check-inline radio-warning">
   <input type="radio" name="optionsRadios4" id="optionsRadios11" value="option1">
   <label for="optionsRadios11">Warning</label>
 </div>
-<div class="radio radio-inline radio-danger">
+<div class="radio form-check-inline radio-danger">
   <input type="radio" name="optionsRadios4" id="optionsRadios12" value="option1">
   <label for="optionsRadios12">Danger</label>
 </div>
