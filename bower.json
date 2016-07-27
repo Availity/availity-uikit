@@ -1,14 +1,14 @@
 {
   "name": "availity-uikit",
-  "description": "Availity UI Kit powered by Bootstrap 3",
+  "description": "Availity UI Kit powered by Bootstrap 4",
   "license": "MIT",
-  "version": "2.0.0-beta.7",
+  "version": "3.0.0-beta.0",
   "homepage": "http://availity.github.io/availity-uikit/",
   "keywords": [
     "availity",
     "css",
     "js",
-    "less",
+    "scss",
     "front-end",
     "framework",
     "web"

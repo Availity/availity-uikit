@@ -1,7 +1,7 @@
 {
   "name": "availity-uikit",
-  "description": "Availity UI Kit powered by Bootstrap 3",
-  "version": "2.0.0-beta.7",
+  "description": "Availity UI Kit powered by Bootstrap 4",
+  "version": "3.0.0-beta.0",
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
     "node": ">= 5.0.0",
@@ -33,11 +33,11 @@
   "files": [
     "dist/",
     "docs/images/",
-    "docs/less/",
+    "docs/scss/",
     "lib/",
     "images/",
     "fonts/",
-    "less/",
+    "scss/",
     "README.md"
   ],
   "contributors": [
@@ -136,7 +136,7 @@
     "css",
     "html",
     "bootstrap",
-    "less",
+    "scss",
     "uikit",
     "framework",
     "web"

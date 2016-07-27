@@ -1,6 +1,6 @@
 # availity-uikit
 
-> Availity UI Kit powered by [Bootstrap 3](http://getbootstrap.com/) and sprinkles of [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with overrides to match our style guidelines.
+> Availity UI Kit powered by [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with overrides to match our style guidelines.
 
 ## Table of Contents
 * [Demo](#demo)
@@ -46,7 +46,7 @@ $ npm install availity-uikit --save
 ```
 
 + Reference the compiled assets from the `/dist` in `index.html` 
-+ If you use a module bundler (Webpack, Browserify), require the dependencies `js/index.js` and `less/availity-uikit.less`
++ If you use a module bundler (Webpack, Browserify), require the dependencies `js/index.js` and `scss/availity-uikit.scss`
 
 
 ## Icon Fonts
