@@ -33,20 +33,22 @@
 
 + Install with Bower
 
->
 ```bash
 $ bower install availity-uikit --save
 ```
 
 + Install with npm
 
->
 ```bash
 $ npm install availity-uikit --save
 ```
 
 + Reference the compiled assets from the `/dist` in `index.html` 
-+ If you use a module bundler (Webpack, Browserify), require the dependencies `js/index.js` and `less/availity-uikit.less`
++ If you use a module bundler like Webpack:
+
+```js
+import 'availity-uikit';
+```
 
 
 ## Icon Fonts
@@ -57,7 +59,7 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 
 ### Dependencies 
 
-+ [node v4+](https://github.com/nodejs/node/releases)
++ [node v5+](https://github.com/nodejs/node/releases)
 
 #### CLI
 
