@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const semver = require('semver');
 const inquirer = require('inquirer');
-const nconf = require('nconf');
 const _ = require('lodash');
 const shell = require('shelljs');
 
@@ -66,12 +65,10 @@ function git() {
     shell.exec(`git commit -m "v${VERSION}"`);
     shell.exec(`git tag -a v${VERSION} -m "v${VERSION}"`);
 
-    const push = nconf.get('push');
-
-    if (push) {
-      shell.exec('git push', 'Push to remote');
-      shell.exec('git push --tags', `Push new tag v${VERSION} to remote`);
-    }
+    // if (push) {
+    //   shell.exec('git push', 'Push to remote');
+    //   shell.exec('git push --tags', `Push new tag v${VERSION} to remote`);
+    // }
 
     resolve();
 

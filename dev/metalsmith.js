@@ -38,7 +38,7 @@ env.addFilter('slug', slug.slugify);
 
 function build() {
 
-  Logger.info('Started metalsmith');
+  Logger.info('Started docs');
 
   return new Promise((resolve, reject) => {
 
@@ -106,7 +106,7 @@ function build() {
       if (err) {
         reject(err);
       } else {
-        Logger.ok('Finished metalsmith');
+        Logger.ok('Finished docs');
         resolve();
       }
 

@@ -1,19 +1,18 @@
 'use strict';
 
 const webpack = require('webpack');
-const nconf = require('nconf');
 const ora = require('ora');
 
 const Logger = require('./logger');
 const webpackConfig = require('../webpack.config.production');
 
-function bundle() {
+function bundle(options) {
 
   return new Promise((resolve, reject) => {
 
-    const optimized = nconf.get('optimize') ? 'minified' : 'regular';
+    const optimized = options.optimize ? 'minified' : 'unminified';
 
-    Logger.info(`Started ${optimized} bundling`);
+    Logger.info(`Started ${optimized} webpack compiling`);
     const spinner = ora('Running webpack');
     spinner.color = 'yellow';
     spinner.start();
@@ -23,12 +22,21 @@ function bundle() {
       spinner.stop();
 
       if (err) {
-        Logger.failed('webpack bundle');
-        return reject(err);
+        Logger.failed('Failed compiling');
+        reject(err);
       }
 
-      Logger.log(stats.toString(webpackConfig.stats));
-      Logger.ok('Finished bundling');
+      const statistics = stats.toString({
+        colors: true,
+        cached: true,
+        reasons: false,
+        source: false,
+        chunks: false,
+        children: false
+      });
+
+      Logger.info(statistics);
+      Logger.ok(`Finished ${optimized} webpack compiling`);
       resolve();
 
     });
