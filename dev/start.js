@@ -11,7 +11,7 @@ const Logger = require('./logger');
 const watch = require('./watch');
 const webpackConfig = require('../webpack.config');
 
-const PORT = 3000;
+const PORT = 9100;
 
 function serv() {
 

@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const NpmImportPlugin = require('less-plugin-npm-import');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const banner = require('./dev/banner');
 const VERSION = require('./package.json').version;
@@ -123,11 +122,6 @@ function getConfig(options) {
       new ExtractTextPlugin(optimize ? 'css/[name].min.css' : 'css/[name].css', {
         disable: false,
         allChunks: true
-      }),
-
-      new CleanWebpackPlugin(['build', 'lib'], {
-        root: process.cwd(),
-        verbose: false
       }),
 
       new webpack.NoErrorsPlugin(),

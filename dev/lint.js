@@ -32,16 +32,16 @@ function lint() {
       '!src/less/**'
     ]).then( paths => {
 
-      spinner.stop();
-
       const report = engine.executeOnFiles(paths.slice(2));
       const formatter = engine.getFormatter();
 
       if (report.errorCount || report.warningCount) {
-        Logger.failed('Failed linting');
+        spinner.failed();
         Logger.info(`${formatter(report.results)}`);
+        Logger.failed('Failed linting');
         reject();
       } else {
+        spinner.stop();
         Logger.ok('Finished linting');
         resolve();
       }
