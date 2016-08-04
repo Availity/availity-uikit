@@ -34,72 +34,72 @@ $black: #000;
 
 $white: #ffffff;
 
-$gray-base:                 $black;
-$gray-darkest:              #30383f;
-$gray-darker:               #363f45;
-$gray-dark:                 #48535c;
-$gray:                      #4d4f53;
-$gray-light:                #f8f8f8;
-$gray-lighter:              #e8ebeb;
-$gray-lightest:             #e8ebeb;
+$gray-base:                 $black !default;
+$gray-darkest:              #30383f !default;
+$gray-darker:               #363f45 !default;
+$gray-dark:                 #48535c !default;
+$gray:                      #4d4f53 !default;
+$gray-light:                #f8f8f8 !default;
+$gray-lighter:              #e8ebeb !default;
+$gray-lightest:             #e8ebeb !default;
 
-$slate-darkest:             #2f5263;
-$slate-darker:              #2f5263;
-$slate:                     #3e6887;
-$slate-lighter:             #ccdee2;
-$slate-lightest:            #ccdee2;
+$slate-darkest:             #2f5263 !default;
+$slate-darker:              #2f5263 !default;
+$slate:                     #3e6887 !default;
+$slate-lighter:             #ccdee2 !default;
+$slate-lightest:            #ccdee2 !default;
 
-$blue-darkest:              #2a62ae;
-$blue-darker:               #2a62ae;
-$blue:                      #2261b5;
-$blue-lighter:              #2a62ae;
-$blue-lightest:             #2a62ae;
+$blue-darkest:              #2a62ae !default;
+$blue-darker:               #2a62ae !default;
+$blue:                      #2261b5 !default;
+$blue-lighter:              #2a62ae !default;
+$blue-lightest:             #2a62ae !default;
 
-$green-darkest:             #0b8c6f;
-$green-darker:              #0b8c6f;
-$green:                     #02a17c;
-$green-lighter:             #b4e0da;
-$green-lightest:            #b4e0da;
+$green-darkest:             #0b8c6f !default;
+$green-darker:              #0b8c6f !default;
+$green:                     #02a17c !default;
+$green-lighter:             #b4e0da !default;
+$green-lightest:            #b4e0da !default;
 
-$red-darkest:               #931b1d;
-$red-darker:                #931b1d;
-$red:                       #b21909;
-$red-lighter:               #F58981;
-$red-lightest:              #F58981;
+$red-darkest:               #931b1d !default;
+$red-darker:                #931b1d !default;
+$red:                       #b21909 !default;
+$red-lighter:               #F58981 !default;
+$red-lightest:              #F58981 !default;
 
-$yellow-darkest:            #fec40d;
-$yellow-darker:             #fec40d;
-$yellow:                    #ffda00;
-$yellow-lighter:            #fef5a0;
-$yellow-lightest:           #fef5a0;
+$yellow-darkest:            #fec40d !default;
+$yellow-darker:             #fec40d !default;
+$yellow:                    #ffda00 !default;
+$yellow-lighter:            #fef5a0 !default;
+$yellow-lightest:           #fef5a0 !default;
 
-$orange-darkest:            #da5027;
-$orange-darker:             #da5027;
-$orange:                    #ed5624;
-$orange-lighter:            #f9cdaf;
-$orange-lightest:           #f9cdaf;
+$orange-darkest:            #da5027 !default;
+$orange-darker:             #da5027 !default;
+$orange:                    #ed5624 !default;
+$orange-lighter:            #f9cdaf !default;
+$orange-lightest:           #f9cdaf !default;
 
-$secondary-blue-darkest:    #0476b0;
-$secondary-blue:            #0093e8;
-$secondary-text-color:      #7e8188;
+$secondary-blue-darkest:    #0476b0 !default;
+$secondary-blue:            #0093e8 !default;
+$secondary-text-color:      #7e8188 !default;
 
-$secondary-green:           #02a17c;
+$secondary-green:           #02a17c !default;
 
-$brand-primary:             $blue;
-$brand-success:             $green;
-$brand-info:                $slate;
-$brand-warning:             $yellow;
-$brand-danger:              $red;
+$brand-primary:             $blue !default;
+$brand-success:             $green !default;
+$brand-info:                $slate !default;
+$brand-warning:             $yellow !default;
+$brand-danger:              $red !default;
 
-$text-color:                $gray;
-$text-darker:               #30383f;
-$text-darkest:              $black;
-$text-lighter:              $secondary-text-color;
-$text-link:                 $brand-primary;
+$text-color:                $gray !default;
+$text-darker:               #30383f !default;
+$text-darkest:              $black !default;
+$text-lighter:              $secondary-text-color !default;
+$text-link:                 $brand-primary !default;
 
-$disabled-text-color:       #cccccc;
+$disabled-text-color:       #cccccc !default;
 
-$text-muted:                lighten($gray, 20%);
+$text-muted:                lighten($gray, 20%) !default;
 
 // Options
 //
@@ -147,7 +147,7 @@ $text-muted:                lighten($gray, 20%);
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    $gray-light;
+$body-bg:                    $gray-light !default;
 //$body-color:                 $gray-dark !default;
 
 
@@ -191,8 +191,8 @@ $body-bg:                    $gray-light;
 //  xl: 1140px
 //) !default;
 
-$grid-float-breakpoint: map-get($grid-breakpoints, sm);
-$grid-float-breakpoint-max: $grid-float-breakpoint - 1;
+$grid-float-breakpoint: map-get($grid-breakpoints, sm) !default;
+$grid-float-breakpoint-max: $grid-float-breakpoint - 1 !default;
 
 // Grid columns
 //
@@ -212,20 +212,20 @@ $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             14px;
+$font-size-root:             14px !default;
 
-$font-size-base:             1rem;
-$font-size-lg:               1.25rem;
-$font-size-md:               1.15rem;
-$font-size-sm:               .875rem;
-$font-size-xs:               .75rem;
+$font-size-base:             1rem !default;
+$font-size-lg:               1.25rem !default;
+$font-size-md:               1.15rem !default;
+$font-size-sm:               .875rem !default;
+$font-size-xs:               .75rem !default;
 
-$font-size-h1:               30px;
-$font-size-h2:               20px;
-$font-size-h3:               18px;
-$font-size-h4:               16px;
-$font-size-h5:               14px;
-$font-size-h6:               12px;
+$font-size-h1:               30px !default;
+$font-size-h2:               20px !default;
+$font-size-h3:               18px !default;
+$font-size-h4:               16px !default;
+$font-size-h5:               14px !default;
+$font-size-h6:               12px !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -246,8 +246,8 @@ $headings-font-weight:       500 !default;
 $headings-line-height:       1.1 !default;
 $headings-color:             inherit !default;
 
-$headings-small-color:       $text-muted;
-$page-header-border-color:   darken($gray-lighter, 5%);
+$headings-small-color:       $text-muted !default;
+$page-header-border-color:   darken($gray-lighter, 5%) !default;
 
 $lead-font-size:             1.25rem !default;
 $lead-font-weight:           300 !default;
@@ -267,42 +267,42 @@ $nested-kbd-font-weight:      bold !default;
 
 $list-inline-padding:         5px !default;
 
-$availity-disclaimer-warning-border: $yellow-darkest;
+$availity-disclaimer-warning-border: $yellow-darkest !default;
 
 // Fonts
 
-$availity-font-path: "../fonts";
-$availity-font-weight-normal: 300;
-$availity-font-weight-bold: bold;
-$availity-css-prefix: icon;
-$availity-icon-font: "availity-icon-font";
-$availity-icon-angle-right: '\e84d';
-$availity-icon-angle-non-collapsed: '\e802';
-$availity-icon-angle-collapsed: '\e806';
-$availity-icon-link-ext: '\e80a';
-$availity-icon-cancel: '\e862';
-$availity-icon-filter: '\e81a';
-$availity-icon-down: '\e802';
-$availity-icon-angle-down: '\e84b';
-$availity-icon-up: '\e804';
-$availity-icon-search: '\e84f';
-$availity-icon-ok: '\e85c';
+$availity-font-path: "../fonts" !default;
+$availity-font-weight-normal: 300 !default;
+$availity-font-weight-bold: bold !default;
+$availity-css-prefix: icon !default;
+$availity-icon-font: "availity-icon-font" !default;
+$availity-icon-angle-right: '\e84d' !default;
+$availity-icon-angle-non-collapsed: '\e802' !default;
+$availity-icon-angle-collapsed: '\e806' !default;
+$availity-icon-link-ext: '\e80a' !default;
+$availity-icon-cancel: '\e862' !default;
+$availity-icon-filter: '\e81a' !default;
+$availity-icon-down: '\e802' !default;
+$availity-icon-angle-down: '\e84b' !default;
+$availity-icon-up: '\e804' !default;
+$availity-icon-search: '\e84f' !default;
+$availity-icon-ok: '\e85c' !default;
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
 $line-height-lg:         (4 / 3) !default;
-$line-height-large:      $line-height-lg;
+$line-height-large:      $line-height-lg !default;
 $line-height-sm:         1.5 !default;
-$line-height-small:      $line-height-sm;
+$line-height-small:      $line-height-sm !default;
 
 $border-radius:          2px;
-$border-radius-base:     $border-radius;
+$border-radius-base:     $border-radius !default;
 $border-radius-lg:       4px;
-$border-radius-large:    $border-radius-lg;
+$border-radius-large:    $border-radius-lg !default;
 $border-radius-sm:       2px;
-$border-radius-small:    $border-radius-sm;
+$border-radius-small:    $border-radius-sm !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -312,39 +312,39 @@ $caret-width-lg:         $caret-width !default;
 
 // App Icons
 
-$availity-app-icon-border-radius:                   $border-radius-sm;
-$availity-app-icon-md-width:                        35px;
-$availity-app-icon-md-height:                       35px;
-$availity-app-icon-lg-width:                        70px;
-$availity-app-icon-lg-height:                       70px;
-$availity-app-icon-xl-width:                        90px;
-$availity-app-icon-xl-height:                       90px;
-$availity-app-icon-color:                           $white;
-$availity-app-icon-md-font-size:                    12px;
-$availity-app-icon-lg-font-size:                    24px;
-$availity-app-icon-xl-font-size:                    32px;
-$availity-app-icon-font-weight:                     $availity-font-weight-normal;
-$availity-app-icon-md-line-height:                  35px;
-$availity-app-icon-lg-line-height:                  70px;
-$availity-app-icon-xl-line-height:                  90px;
-$availity-app-icon-black-gradient-color-start:      $gray;
-$availity-app-icon-black-gradient-color-end:        $gray-darkest;
-$availity-app-icon-blue-gradient-color-start:       $secondary-blue;
-$availity-app-icon-blue-gradient-color-end:         $secondary-blue-darkest;
-$availity-app-icon-green-gradient-color-start:      $green;
-$availity-app-icon-green-gradient-color-end:        $green-darkest;
-$availity-app-icon-orange-gradient-color-start:     $orange;
-$availity-app-icon-orange-gradient-color-end:       $orange-darkest;
-$availity-app-icon-neon-gradient-color-start:       $green;
-$availity-app-icon-neon-gradient-color-end:         $green-darkest;
-$availity-app-icon-branded-color:                   $text-color;
-$availity-app-icon-branded-border-color:            $gray-lighter;
-$availity-app-icon-branded-border-bg:               $white;
-$availity-app-icon-branded-black-caret-color:       $availity-app-icon-black-gradient-color-end;
-$availity-app-icon-branded-blue-caret-color:        $availity-app-icon-blue-gradient-color-end;
-$availity-app-icon-branded-green-caret-color:       $availity-app-icon-green-gradient-color-end;
-$availity-app-icon-branded-neon-caret-color:        $availity-app-icon-neon-gradient-color-end;
-$availity-app-icon-branded-orange-caret-color:      $availity-app-icon-orange-gradient-color-end;
+$availity-app-icon-border-radius:                   $border-radius-sm !default;
+$availity-app-icon-md-width:                        35px !default;
+$availity-app-icon-md-height:                       35px !default;
+$availity-app-icon-lg-width:                        70px !default;
+$availity-app-icon-lg-height:                       70px !default;
+$availity-app-icon-xl-width:                        90px !default;
+$availity-app-icon-xl-height:                       90px !default;
+$availity-app-icon-color:                           $white !default;
+$availity-app-icon-md-font-size:                    12px !default;
+$availity-app-icon-lg-font-size:                    24px !default;
+$availity-app-icon-xl-font-size:                    32px !default;
+$availity-app-icon-font-weight:                     $availity-font-weight-normal !default;
+$availity-app-icon-md-line-height:                  35px !default;
+$availity-app-icon-lg-line-height:                  70px !default;
+$availity-app-icon-xl-line-height:                  90px !default;
+$availity-app-icon-black-gradient-color-start:      $gray !default;
+$availity-app-icon-black-gradient-color-end:        $gray-darkest !default;
+$availity-app-icon-blue-gradient-color-start:       $secondary-blue !default;
+$availity-app-icon-blue-gradient-color-end:         $secondary-blue-darkest !default;
+$availity-app-icon-green-gradient-color-start:      $green !default;
+$availity-app-icon-green-gradient-color-end:        $green-darkest !default;
+$availity-app-icon-orange-gradient-color-start:     $orange !default;
+$availity-app-icon-orange-gradient-color-end:       $orange-darkest !default;
+$availity-app-icon-neon-gradient-color-start:       $green !default;
+$availity-app-icon-neon-gradient-color-end:         $green-darkest !default;
+$availity-app-icon-branded-color:                   $text-color !default;
+$availity-app-icon-branded-border-color:            $gray-lighter !default;
+$availity-app-icon-branded-border-bg:               $white !default;
+$availity-app-icon-branded-black-caret-color:       $availity-app-icon-black-gradient-color-end !default;
+$availity-app-icon-branded-blue-caret-color:        $availity-app-icon-blue-gradient-color-end !default;
+$availity-app-icon-branded-green-caret-color:       $availity-app-icon-green-gradient-color-end !default;
+$availity-app-icon-branded-neon-caret-color:        $availity-app-icon-neon-gradient-color-end !default;
+$availity-app-icon-branded-orange-caret-color:      $availity-app-icon-orange-gradient-color-end !default;
 
 
 
@@ -363,7 +363,7 @@ $table-bg-active:               $table-bg-hover !default;
 $table-border-width:            $border-width !default;
 $table-border-color:            $gray-lighter !default;
 
-$availity-table-border-color: $disabled-text-color;
+$availity-table-border-color: $disabled-text-color !default;
 
 
 // Buttons
@@ -373,6 +373,8 @@ $availity-table-border-color: $disabled-text-color;
 //$btn-padding-x:                  1rem !default;
 //$btn-padding-y:                  .375rem !default;
 $btn-font-weight:                400;
+
+// These apparently cannot be set to !default as bootstrap itself will override them?
 
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
@@ -495,15 +497,15 @@ $dropdown-header-color:          $gray-light !default;
 
 $dropdown-notification-bg:       $gray-lighter;
 
-$availity-menu-max-width: 550px;
-$availity-menu-min-width: 400px;
-$availity-menu-max-height:$availity-height-sm;
-$vaility-menu-link-color: $link-color;
+$availity-menu-max-width: 550px !default;
+$availity-menu-min-width: 400px !default;
+$availity-menu-max-height:$availity-height-sm !default;
+$vaility-menu-link-color: $link-color !default;
 
-$availity-menu-padding-vertical: 15px;
-$availity-menu-padding-horizontal: 5px;
+$availity-menu-padding-vertical: 15px !default;
+$availity-menu-padding-horizontal: 5px !default;
 
-$availity-notifications-menu-bg: $gray-lighter;
+$availity-notifications-menu-bg: $gray-lighter !default;
 
 
 // Z-index master list
@@ -519,8 +521,8 @@ $availity-notifications-menu-bg: $gray-lighter;
 //$zindex-navbar-sticky:     1030 !default;
 //$zindex-modal-bg:          1040 !default;
 //$zindex-modal:             1050 !default;
-$availity-zindex-secondary: ($zindex-navbar - 10);
-$availity-zindex-secondary-fixed: ($zindex-navbar-fixed - 10);
+$availity-zindex-secondary: ($zindex-navbar - 10) !default;
+$availity-zindex-secondary-fixed: ($zindex-navbar-fixed - 10) !default;
 
 
 // Navbar
@@ -528,34 +530,34 @@ $availity-zindex-secondary-fixed: ($zindex-navbar-fixed - 10);
 $navbar-height: 46px;
 
 $navbar-border-radius:              $border-radius !default;
-$navbar-padding-horizontal:         0;
-$navbar-padding-vertical:           0;
+$navbar-padding-horizontal:         0 !default;
+$navbar-padding-vertical:           0 !default;
 
-$navbar-dark-color:                         $gray-lighter;
-$navbar-dark-hover-color:                   $white;
-$navbar-dark-active-color:                  $navbar-dark-hover-color;
+$navbar-dark-color:                         $gray-lighter !default;
+$navbar-dark-hover-color:                   $white !default;
+$navbar-dark-active-color:                  $navbar-dark-hover-color !default;
 $navbar-dark-disabled-color:                rgba(255,255,255,.25) !default;
 
-$navbar-default-color:                      lighten($gray-light, 15%);
-$navbar-default-bg:                         $gray-darker;
-$navbar-default-border:                     $text-darker;
+$navbar-default-color:                      lighten($gray-light, 15%) !default;
+$navbar-default-bg:                         $gray-darker !default;
+$navbar-default-border:                     $text-darker !default;
 
-$navbar-default-link-color:                 $navbar-dark-color;
-$navbar-default-link-hover-color:           $navbar-dark-active-color;
-$availity-navbar-default-icon-opacity:      .5;
-$navbar-default-link-hover-bg:              transparent;
-$navbar-default-link-active-color:          $navbar-default-link-hover-color;
-$navbar-default-link-active-bg:             darken($navbar-default-bg, 10%);
-$navbar-default-link-disabled-color:        $secondary-text-color;
-$navbar-default-link-disabled-bg:           transparent;
+$navbar-default-link-color:                 $navbar-dark-color !default;
+$navbar-default-link-hover-color:           $navbar-dark-active-color !default;
+$availity-navbar-default-icon-opacity:      .5 !default;
+$navbar-default-link-hover-bg:              transparent !default;
+$navbar-default-link-active-color:          $navbar-default-link-hover-color !default;
+$navbar-default-link-active-bg:             darken($navbar-default-bg, 10%) !default;
+$navbar-default-link-disabled-color:        $secondary-text-color !default;
+$navbar-default-link-disabled-bg:           transparent !default;
 
-$navbar-default-brand-color:                $navbar-default-link-color;
-$navbar-default-brand-hover-color:          $white;
-$navbar-default-brand-hover-bg:             transparent;
+$navbar-default-brand-color:                $navbar-default-link-color !default;
+$navbar-default-brand-hover-color:          $white !default;
+$navbar-default-brand-hover-bg:             transparent !default;
 
-$navbar-default-toggle-hover-bg:            $black;
-$navbar-default-toggle-icon-bar-bg:         $white;
-$navbar-default-toggle-border-color:        $black;
+$navbar-default-toggle-hover-bg:            $black !default;
+$navbar-default-toggle-icon-bar-bg:         $white !default;
+$navbar-default-toggle-border-color:        $black !default;
 
 
 $navbar-light-color:                rgba(0,0,0,.3) !default;
@@ -564,63 +566,63 @@ $navbar-light-active-color:         rgba(0,0,0,.8) !default;
 $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
 
 // Secondary navbar
-$availity-navbar-secondary-color:                      lighten($gray-light, 15%);
-$availity-navbar-secondary-bg:                         $gray-dark;
-$availity-navbar-secondary-border:                     $gray-dark;
+$availity-navbar-secondary-color:                      lighten($gray-light, 15%) !default;
+$availity-navbar-secondary-bg:                         $gray-dark !default;
+$availity-navbar-secondary-border:                     $gray-dark !default;
 
 // Navbar links
-$availity-navbar-secondary-link-color:                 $gray-lighter;
-$availity-navbar-secondary-link-hover-color:           $white;
-$availity-navbar-secondary-link-hover-bg:              transparent;
-$availity-navbar-secondary-link-active-color:          $availity-navbar-secondary-link-hover-color;
-$availity-navbar-secondary-link-active-bg:             darken($availity-navbar-secondary-bg, 10%);
-$availity-navbar-secondary-link-disabled-color:        $secondary-text-color;
-$availity-navbar-secondary-link-disabled-bg:           transparent;
+$availity-navbar-secondary-link-color:                 $gray-lighter !default;
+$availity-navbar-secondary-link-hover-color:           $white !default;
+$availity-navbar-secondary-link-hover-bg:              transparent !default;
+$availity-navbar-secondary-link-active-color:          $availity-navbar-secondary-link-hover-color !default;
+$availity-navbar-secondary-link-active-bg:             darken($availity-navbar-secondary-bg, 10%) !default;
+$availity-navbar-secondary-link-disabled-color:        $secondary-text-color !default;
+$availity-navbar-secondary-link-disabled-bg:           transparent !default;
 
 // Navbar brand label
-$availity-navbar-secondary-brand-color:                $availity-navbar-secondary-link-color;
-$availity-navbar-secondary-brand-hover-color:          $white;
-$availity-navbar-secondary-brand-hover-bg:             transparent;
+$availity-navbar-secondary-brand-color:                $availity-navbar-secondary-link-color !default;
+$availity-navbar-secondary-brand-hover-color:          $white !default;
+$availity-navbar-secondary-brand-hover-bg:             transparent !default;
 
 // Navbar toggle
-$availity-navbar-secondary-toggle-hover-bg:            $black;
-$availity-navbar-secondary-toggle-icon-bar-bg:         $white;
-$availity-navbar-secondary-toggle-border-color:        $black;
+$availity-navbar-secondary-toggle-hover-bg:            $black !default;
+$availity-navbar-secondary-toggle-icon-bar-bg:         $white !default;
+$availity-navbar-secondary-toggle-border-color:        $black !default;
 
 // Inverted navbar - Reset inverted navbar basics
-$navbar-inverse-bg:                         $gray-light;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 6.5%);
+$navbar-inverse-bg:                         $gray-light !default;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 6.5%) !default;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                $secondary-text-color;
-$navbar-inverse-link-hover-color:          $text-color;
-$navbar-inverse-link-hover-bg:             transparent;
-$navbar-inverse-link-active-color:         $text-color;
-$navbar-inverse-link-active-bg:            darken($navbar-inverse-bg, 6.5%);
-$navbar-inverse-link-disabled-color:       $disabled-text-color;
-$navbar-inverse-link-disabled-bg:          transparent;
+$navbar-inverse-link-color:                $secondary-text-color !default;
+$navbar-inverse-link-hover-color:          $text-color !default;
+$navbar-inverse-link-hover-bg:             transparent !default;
+$navbar-inverse-link-active-color:         $text-color !default;
+$navbar-inverse-link-active-bg:            darken($navbar-inverse-bg, 6.5%) !default;
+$navbar-inverse-link-disabled-color:       $disabled-text-color !default;
+$navbar-inverse-link-disabled-bg:          transparent !default;
 
 // Inverted navbar brand label
-$navbar-inverse-brand-color:               $navbar-inverse-link-color;
-$navbar-inverse-brand-hover-color:         darken($navbar-inverse-brand-color, 10%);
-$navbar-inverse-brand-hover-bg:            transparent;
+$navbar-inverse-brand-color:               $navbar-inverse-link-color !default;
+$navbar-inverse-brand-hover-color:         darken($navbar-inverse-brand-color, 10%) !default;
+$navbar-inverse-brand-hover-bg:            transparent !default;
 
 // Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg:           $disabled-text-color;
-$navbar-inverse-toggle-icon-bar-bg:        $secondary-text-color;
-$navbar-inverse-toggle-border-color:       $disabled-text-color;
+$navbar-inverse-toggle-hover-bg:           $disabled-text-color !default;
+$navbar-inverse-toggle-icon-bar-bg:        $secondary-text-color !default;
+$navbar-inverse-toggle-border-color:       $disabled-text-color !default;
 
 // Navbar + Main
-$availity-navbar-main-padding: ($navbar-height + 10);
+$availity-navbar-main-padding: ($navbar-height + 10) !default;
 
 // Navbar Availity Logo
 $availity-logo-height: 27px;
-$availity-navbar-padding-vertical: (($navbar-height - $availity-logo-height) / 2 );
+$availity-navbar-padding-vertical: (($navbar-height - $availity-logo-height) / 2 ) !default;
 
-$availity-nav-button-margin: 15px;
+$availity-nav-button-margin: 15px !default;
 
 // Mega menu tiles
-$mega-menu-tiles-max-height:	280px;
+$mega-menu-tiles-max-height:	280px !default;
 
 
 // Navs
@@ -628,8 +630,8 @@ $mega-menu-tiles-max-height:	280px;
 $nav-link-padding:                          .5em 1em !default;
 $nav-link-hover-bg:                         $gray-lighter;
 
-$nav-disabled-link-color:                   $disabled-text-color;
-$nav-disabled-link-hover-color:             $disabled-text-color;
+$nav-disabled-link-color:                   $disabled-text-color !default;
+$nav-disabled-link-hover-color:             $disabled-text-color !default;
 
 $nav-tabs-border-color:                     #ddd !default;
 
@@ -644,18 +646,18 @@ $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 $nav-pills-border-radius:                   $border-radius !default;
-$nav-pills-active-link-hover-bg:            $gray-lighter;
-$nav-pills-active-link-hover-color:         $gray-darkest;
+$nav-pills-active-link-hover-bg:            $gray-lighter !default;
+$nav-pills-active-link-hover-color:         $gray-darkest !default;
 
 // Navbar Availity Logo
 
 $availity-logo-height: 27px;
-$availity-navbar-padding-vertical: (($navbar-height - $availity-logo-height) / 2 );
+$availity-navbar-padding-vertical: (($navbar-height - $availity-logo-height) / 2 ) !default;
 
-$availity-nav-button-margin: 15px;
+$availity-nav-button-margin: 15px !default;
 
 // Mega menu tiles
-$mega-menu-tiles-max-height:	280px;
+$mega-menu-tiles-max-height:	280px !default;
 
 // Pagination
 
@@ -667,24 +669,24 @@ $pagination-padding-x-lg:             1.5rem !default;
 $pagination-padding-y-lg:             .75rem !default;
 
 
-$pagination-color:                     $text-link;
-$pagination-bg:                        $gray-light;
+$pagination-color:                     $text-link !default;
+$pagination-bg:                        $gray-light !default;
 $pagination-border-width:              $border-width !default;
-$pagination-border-color:              $disabled-text-color;
+$pagination-border-color:              $disabled-text-color !default;
 
-$pagination-hover-color:               $text-link;
+$pagination-hover-color:               $text-link !default;
 $pagination-hover-bg:                  $gray-lighter !default;
 $pagination-hover-border:              #ddd !default;
 
-$pagination-active-color:              $white;
-$pagination-active-bg:                 $blue;
-$pagination-active-border:             $blue-darkest;
+$pagination-active-color:              $white !default;
+$pagination-active-bg:                 $blue !default;
+$pagination-active-border:             $blue-darkest !default;
 
-$pagination-disabled-color:            $text-color;
-$pagination-disabled-bg:               $gray-light;
-$pagination-disabled-border:           $disabled-text-color;
+$pagination-disabled-color:            $text-color !default;
+$pagination-disabled-bg:               $gray-light !default;
+$pagination-disabled-border:           $disabled-text-color !default;
 
-$availity-pagination-font-weight: 400;
+$availity-pagination-font-weight: 400 !default;
 
 // Pager
 
@@ -708,11 +710,11 @@ $jumbotron-bg:                   $gray-lighter !default;
 
 // Footer
 
-$availity-footer-color: $gray-lighter;
-$availity-footer-bg: $gray-dark;
-$availity-footer-height: 40px;
-$availity-footer-link-color: $navbar-default-link-color;
-$availity-footer-padding: 10px;
+$availity-footer-color: $gray-lighter !default;
+$availity-footer-bg: $gray-dark !default;
+$availity-footer-height: 40px !default;
+$availity-footer-link-color: $navbar-default-link-color !default;
+$availity-footer-padding: 10px !default;
 
 
 // Form states and alerts
@@ -740,9 +742,9 @@ $card-spacer-x:            1.25rem !default;
 $card-spacer-y:            .75rem !default;
 $card-border-width:        1px !default;
 $card-border-radius:       $border-radius !default;
-$card-border-color:        $gray-lighter;
+$card-border-color:        $gray-lighter !default;
 $card-border-radius-inner: $card-border-radius !default;
-$card-cap-bg:              $gray-lighter;
+$card-cap-bg:              $gray-lighter !default;
 $card-bg:                  #fff !default;
 
 $card-link-hover-color:    #fff !default;
@@ -750,13 +752,13 @@ $card-link-hover-color:    #fff !default;
 
 // Tooltips
 
-$tooltip-max-width:           320px;
-$tooltip-color:               $white;
-$tooltip-bg:                  $gray-darkest;
-$tooltip-opacity:             .9;
+$tooltip-max-width:           320px !default;
+$tooltip-color:               $white !default;
+$tooltip-bg:                  $gray-darkest !default;
+$tooltip-opacity:             .9 !default;
 
-$tooltip-arrow-width:         5px;
-$tooltip-arrow-color:         $tooltip-bg;
+$tooltip-arrow-width:         5px !default;
+$tooltip-arrow-color:         $tooltip-bg !default;
 
 
 // Popovers
@@ -774,8 +776,8 @@ $popover-arrow-color:                 $popover-bg !default;
 $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
 $popover-arrow-outer-color:           fade-in($popover-border-color, 0.05) !default;
 
-$availity-popover-title-color:        $text-darker;
-$availity-popover-title-font-weight:  $availity-font-weight-bold;
+$availity-popover-title-color:        $text-darker !default;
+$availity-popover-title-font-weight:  $availity-font-weight-bold !default;
 
 // Labels
 
@@ -794,8 +796,8 @@ $label-font-weight:           bold !default;
 // Modals
 
 // Padding applied to the modal body
-$availity-modal-padding:      24px;
-$modal-inner-padding:         $availity-modal-padding;
+$availity-modal-padding:      24px !default;
+$modal-inner-padding:         $availity-modal-padding !default;
 
 $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height !default;
@@ -805,12 +807,12 @@ $modal-content-border-color:  rgba(0,0,0,.2) !default;
 
 $modal-backdrop-bg:           #000 !default;
 $modal-backdrop-opacity:      .5 !default;
-$modal-header-border-color:   $gray-lighter;
+$modal-header-border-color:   $gray-lighter !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 
-$availity-modal-input-border-radius: $border-radius-lg;
-$availity-modal-header-bg-color: $modal-header-border-color;
-$availity-modal-footer-bg-color: $modal-footer-border-color;
+$availity-modal-input-border-radius: $border-radius-lg !default;
+$availity-modal-header-bg-color: $modal-header-border-color !default;
+$availity-modal-footer-bg-color: $modal-footer-border-color !default;
 
 $modal-lg:                    900px !default;
 $modal-md:                    600px !default;
@@ -845,12 +847,12 @@ $alert-danger-bg:             $brand-danger;
 
 // Progress bars
 
-$progress-bg:                 $disabled-text-color;
-$progress-bar-color:          $green;
+$progress-bg:                 $disabled-text-color !default;
+$progress-bar-color:          $green !default;
 $progress-border-radius:      $border-radius !default;
-$progress-bar-height:         10px;
-$progress-box-shadow:         none;
-$progress-bar-stripe-size:    $progress-bar-height * 4;
+$progress-bar-height:         10px !default;
+$progress-box-shadow:         none !default;
+$progress-bar-stripe-size:    $progress-bar-height * 4 !default;
 
 $progress-bar-bg:             $brand-primary !default;
 $progress-bar-success-bg:     $brand-success !default;
@@ -858,13 +860,13 @@ $progress-bar-warning-bg:     $brand-warning !default;
 $progress-bar-danger-bg:      $brand-danger !default;
 $progress-bar-info-bg:        $brand-info !default;
 
-$availity-progress-bar-icon-complete-color:           $white;
-$availity-progress-bar-height:                        $progress-bar-height;
-$availity-progress-bar-icon-complete-top:             -6px;
-$availity-progress-bar-icon-complete-height:          ($availity-progress-bar-height - $availity-progress-bar-icon-complete-top);
-$availity-progress-bar-icon-complete-right:           -1px;
-$availity-progress-bar-icon-complete-content:         "\e853";
-$availity-progress-bar-icon-complete-content-overlay: "\e85c";
+$availity-progress-bar-icon-complete-color:           $white !default;
+$availity-progress-bar-height:                        $progress-bar-height !default;
+$availity-progress-bar-icon-complete-top:             -6px !default;
+$availity-progress-bar-icon-complete-height:          ($availity-progress-bar-height - $availity-progress-bar-icon-complete-top) !default;
+$availity-progress-bar-icon-complete-right:           -1px !default;
+$availity-progress-bar-icon-complete-content:         "\e853" !default;
+$availity-progress-bar-icon-complete-content-overlay: "\e85c" !default;
 
 
 // List group
@@ -900,18 +902,18 @@ $thumbnail-border-radius:     $border-radius !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-vertical:   15px;
-$breadcrumb-padding-horizontal: 15px;
+$breadcrumb-padding-vertical:   15px !default;
+$breadcrumb-padding-horizontal: 15px !default;
 
-$breadcrumb-bg:                 transparent;
-$breadcrumb-divider-color:      $text-lighter;
-$breadcrumb-color:              $text-lighter;
-$breadcrumb-active-color:       $text-color;
-$breadcrumb-divider:            $availity-icon-angle-right;
+$breadcrumb-bg:                 transparent !default;
+$breadcrumb-divider-color:      $text-lighter !default;
+$breadcrumb-color:              $text-lighter !default;
+$breadcrumb-active-color:       $text-color !default;
+$breadcrumb-divider:            $availity-icon-angle-right !default;
 
-$availity-breadcrumb-font-weight:         $availity-font-weight-bold;
-$availity-breadcrumb-font-weight-active:  $availity-font-weight-normal;
-$availity-breadcrumb-border-color:        $gray-light;
+$availity-breadcrumb-font-weight:         $availity-font-weight-bold !default;
+$availity-breadcrumb-font-weight-active:  $availity-font-weight-normal !default;
+$availity-breadcrumb-border-color:        $gray-light !default;
 
 
 // Carousel
