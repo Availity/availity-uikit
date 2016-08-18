@@ -31,7 +31,7 @@ function bundle(options) {
 
     }));
 
-    webpack(webpackConfig(options)).run((err, stats) => {
+    webpack(config).run((err, stats) => {
 
       if (err) {
         spinner.fail();

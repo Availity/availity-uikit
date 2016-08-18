@@ -22,7 +22,7 @@ function serv() {
     const compiler = webpack(webpackConfig);
 
     compiler.plugin('compile', () => {
-      Logger.info('Started webpack compiling');
+      Logger.info('Started compiling');
     });
 
     const message = _.once(stats => {
@@ -44,7 +44,7 @@ function serv() {
         const uri = `http://localhost:${PORT}/`;
 
         Logger.info(statistics);
-        Logger.ok('Finished webpack compiling');
+        Logger.ok('Finished compiling');
         Logger.log(`The app is running at ${chalk.magenta(uri)}`);
 
         return;
@@ -52,8 +52,9 @@ function serv() {
       }
 
       if (hasErrors) {
-        Logger.failed('Failed webpack compiling');
-        reject('Failed webpack compiling');
+        Logger.failed('Failed compiling');
+        Logger.info(stats.compilation.errors);
+        reject('Failed compiling');
       }
 
     });
@@ -82,7 +83,13 @@ function serv() {
       }
     });
 
-    server.listen(PORT, () => {
+    server.listen(PORT, (err) => {
+
+      if (err) {
+        Logger.failed(err);
+        reject(err);
+      }
+
       Logger.ok('Finished development server');
       resolve();
     });
