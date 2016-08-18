@@ -49,6 +49,10 @@
   vertical-align: middle;
   text-transform: uppercase;
 
+  + .app-icon-title {
+    margin-left: 5px;
+  }
+
   // caret for branded labels
   .caret {
     position: absolute;
