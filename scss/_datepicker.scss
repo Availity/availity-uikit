@@ -252,3 +252,11 @@
     margin-right: -5px;
   }
 }
+
+.has-datepicker[type="date"]::-webkit-calendar-picker-indicator,
+.has-datepicker[type="date"]::-webkit-inner-spin-button{
+  display: none;
+}
+.has-datepicker[type="date"]::-webkit-input-placeholder{
+  visibility: hidden !important;
+}
