@@ -142,7 +142,7 @@
     "web"
   ],
   "dependencies": {
-    "select2": "github:select2/select2.git#3.5.4",
+    "select2": "git+https://github.com/select2/select2.git#3.5.4",
     "awesome-bootstrap-checkbox": "0.3.7",
     "bootstrap": "^4.0.0-alpha.3",
     "expose-loader": "^0.7.1",
