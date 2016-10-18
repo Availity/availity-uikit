@@ -22,7 +22,7 @@ title: Wizard
         <span class="stepwizard-title">Third</span>
       </a>
       <a class="stepwizard-step disabled">
-        <span href="#step-3" class="stepwizard-badge">4</span>
+        <span class="stepwizard-badge">4</span>
         <span class="stepwizard-title">Fourth with some really really really long text</span>
         <p>(Disabled)</p>
       </a>
@@ -44,7 +44,7 @@ title: Wizard
       <span class="stepwizard-badge">3</span>
       <span class="stepwizard-title">Third</span>
     </a>
-    <a class="stepwizard-step disabled" href="#step-4">
+    <a class="stepwizard-step disabled">
       <span class="stepwizard-badge">4</span>
       <span class="stepwizard-title">Fourth with some really really really long text</span>
     </a>
@@ -68,7 +68,7 @@ title: Wizard
         <span class="stepwizard-badge">3</span>
         <span class="stepwizard-title">Third</span>
       </a>
-      <a class="stepwizard-step disabled" href="#step-4">
+      <a class="stepwizard-step disabled">
         <span class="stepwizard-badge">4</span>
         <span class="stepwizard-title">Fourth with longest text ever written in a wizard</span>
       </a>
@@ -90,7 +90,7 @@ title: Wizard
       <span class="stepwizard-badge">3</span>
       <span class="stepwizard-title">Third</span>
     </a>
-    <a class="stepwizard-step disabled" href="#step-4">
+    <a class="stepwizard-step disabled">
       <span class="stepwizard-badge">4</span>
       <span class="stepwizard-title">Fourth with longest text ever written in a wizard (Disabled)</span>
     </a>
@@ -117,7 +117,7 @@ title: Wizard
           <span class="stepwizard-badge"></span>
           <span class="stepwizard-title">Third</span>
         </a>
-        <a class="stepwizard-step disabled" href="#step-4">
+        <a class="stepwizard-step disabled">
           <span class="stepwizard-badge"></span>
           <span class="stepwizard-title">Fourth with some really really really long text</span>
           <p>(Disabled)</p>
@@ -140,7 +140,7 @@ title: Wizard
       <span class="stepwizard-badge"></span>
       <span class="stepwizard-title">Third</span>
     </a>
-    <a class="stepwizard-step disabled" href="#step-4">
+    <a class="stepwizard-step disabled">
       <span class="stepwizard-badge"></span>
       <span class="stepwizard-title">Fourth with some really really really long text</span>
     </a>
@@ -164,7 +164,7 @@ title: Wizard
           <span class="stepwizard-badge"></span>
           <span class="stepwizard-title">Normal</span>
         </a>
-        <a class="stepwizard-step disabled" href="#step-4">
+        <a class="stepwizard-step disabled">
           <span class="stepwizard-badge"></span>
           <span class="stepwizard-title">Disabled</span>
         </a>
@@ -186,10 +186,15 @@ title: Wizard
       <span class="stepwizard-badge"></span>
       <span class="stepwizard-title">Normal</span>
     </a>
-    <a class="stepwizard-step disabled" href="#step-4">
+    <a class="stepwizard-step disabled">
       <span class="stepwizard-badge"></span>
       <span class="stepwizard-title">Disabled</span>
     </a>
   </div>
 </div>
 </code>
+<p>
+<div class="disclaimer">
+  Please note that disabled elements will still respond to clicks, so be sure to remove the href attribute when disabling.
+</div>
+</p>
