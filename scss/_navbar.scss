@@ -178,8 +178,8 @@
     clear: both;
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    margin-left: -($gird-gutter-width-base / 2);
-    margin-right: -($gird-gutter-width-base / 2);
+    margin-left: -($grid-gutter-width-base / 2);
+    margin-right: -($grid-gutter-width-base / 2);
 
     .navbar-nav .nav-item{
       float: none;
@@ -190,8 +190,8 @@
 
     .nav-link,
     .navbar-form{
-      padding-left: ($gird-gutter-width-base / 2);
-      padding-right: ($gird-gutter-width-base / 2);
+      padding-left: ($grid-gutter-width-base / 2);
+      padding-right: ($grid-gutter-width-base / 2);
     }
     .navbar-form .input-group .input-group-btn{
       width: 1%;
