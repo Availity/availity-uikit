@@ -2,6 +2,7 @@
 @import "mixins";
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
+@import "type";
 @import "external-libs";
 @import "animate";
 @import "app-icons";
@@ -37,5 +38,4 @@
 @import "spaces";
 @import "tables";
 @import "tooltip";
-@import "type";
 @import "wizard";
