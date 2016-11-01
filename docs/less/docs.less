@@ -141,18 +141,23 @@
   .nav.docs-nav {
 
     margin-top: 0;
+    margin-left: 1.5rem;
 
     > li {
-      padding-left: 15px;
-      list-style-type: circle;
-      list-style-position: inside;
-      display: list-item;
+
       font-size: 90%;
 
 
       > a {
         color: lighten(@docs-menu-link-color, 30%);
+
+        &:before {
+          content: "\2022";
+          padding-right: .5rem;
+        }
+
       }
+
     }
   }
 
