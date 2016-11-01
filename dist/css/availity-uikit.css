@@ -1,12 +1,12 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.9 (08/04/2016)
+ * availity-uikit v2.0.0-beta.10 (11/01/2016)
  * (c) Availity, LLC
  */
 @font-face {
   font-family: 'availity-icon-font';
   src: url(../fonts/availity-icon-font.eot);
-  src: url(../fonts/availity-icon-font.eot#iefix) format('embedded-opentype'), url(../fonts/availity-icon-font.woff) format('woff'), url(../fonts/availity-icon-font.ttf) format('truetype'), url(../fonts/availity-icon-font.svg) format('svg');
+  src: url(../fonts/availity-icon-font.eot#iefix) format('embedded-opentype'), url(../fonts/availity-icon-font.woff2) format('woff2'), url(../fonts/availity-icon-font.woff) format('woff'), url(../fonts/availity-icon-font.ttf) format('truetype'), url(../fonts/availity-icon-font.svg#availity-icon-font) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -894,6 +894,18 @@
   content: '\E8D1';
 }
 /* '' */
+.icon-smile:before {
+  content: '\F118';
+}
+/* '' */
+.icon-frown:before {
+  content: '\F119';
+}
+/* '' */
+.icon-meh:before {
+  content: '\F11A';
+}
+/* '' */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -9830,8 +9842,7 @@ html[dir="rtl"] .select2-search input {
 .select2-dropdown-open .select2-choice .select2-arrow {
   background: transparent;
   border-left: none;
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow {
   border-right: none;
@@ -10438,8 +10449,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   border-bottom-right-radius: 2px !important;
   border-bottom-left-radius: 2px !important;
   background: #e8ebeb;
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .input-group.select2-bootstrap-prepend .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
   border-bottom-left-radius: 0 !important;
