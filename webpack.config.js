@@ -30,7 +30,8 @@ const config = {
   devtool: 'source-map',
 
   output: {
-    // if path is not set to '/build' => Error invalid argument in MemoryFileSystem.js
+    // if path is not set to '/build' => Error invalid argument in MemoryFileSystem.js.  Also,
+    // `output.path` needs to be an absolute path or `/` else error
     path: '/build',
     // publicPath: '../',
     filename: 'js/[name].js',

@@ -32,7 +32,10 @@ const markedOptions = {
 nunjucksDate
   .setDefaultFormat('YYYY');
 
-const env = nunjucks.configure('docs/layouts', {watch: false, noCache: true});
+const env = nunjucks.configure('docs/layouts', {
+  watch: false,
+  noCache: true
+});
 env.addFilter('year', nunjucksDate);
 env.addFilter('slug', slug.slugify);
 
@@ -52,7 +55,7 @@ function build() {
         today: new Date(),
         pkg
       })
-      .ignore('**/.DS_Store')
+      .ignore(['!**/*.html', 'node_modules', '_book', 'dev', 'dist', 'less', 'reports'])
       .source(path.join(process.cwd(), 'docs', 'content'))
       .use(markdown(markedOptions))
       .use(dataMarkdown({
