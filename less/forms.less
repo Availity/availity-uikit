@@ -13,6 +13,16 @@ label {
 
 }
 
+legend {
+  border-bottom: none;
+  margin-bottom: 1rem;
+  font-size: @font-size-h3;
+}
+
+fieldset + fieldset {
+  margin-top: @panel-body-padding;
+}
+
 select.form-control {
   background-color: @gray-lightest;
 }
@@ -46,14 +56,28 @@ select.form-control {
   > .input-group {
     margin-left: 5px;
   }
+
+  > .btn:first {
+    margin-left: 0;
+  }
+
+  > .btn:last {
+    margin-right: 0;
+  }
+
 }
 
 .form-controls-right {
 
-
   @media (min-width: @grid-float-breakpoint) {
     float: right;
   }
+}
+
+.form-controls-card {
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .has-error {
