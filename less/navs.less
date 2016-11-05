@@ -59,45 +59,6 @@
   }
 }
 
-@nav-cards-bg-color: darken(@gray-lighter, 10%);
-
-.nav-cards {
-
-  &:extend(.nav-pills all);
-
-  > li {
-
-    > a {
-      padding: 20px;
-      border: 1px solid @nav-cards-bg-color;
-      background-color: @gray-lighter;
-      font-weight: normal;
-      text-align: left;
-      margin-left: 2px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      > .subheader {
-        text-transform: uppercase;
-      }
-
-      &:hover {
-        background-color: @nav-cards-bg-color;
-      }
-    }
-
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: @white;
-      }
-    }
-  }
-}
-
 .tab-pane {
   & > .panel {
     margin-bottom: 0;
