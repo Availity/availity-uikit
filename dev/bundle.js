@@ -5,7 +5,7 @@ const ora = require('ora');
 
 const Logger = require('./logger');
 const webpackConfig = require('../webpack.config.production');
-const webpackConfigDev = require('../webpack.config.docs');
+const webpackDocsConfig = require('../webpack.config.docs');
 
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');
 
@@ -20,7 +20,7 @@ function bundle(options) {
     spinner.color = 'yellow';
     spinner.start();
 
-    const config = options.production ? webpackConfig(options) : webpackConfigDev;
+    const config = options.production ? webpackConfig(options) : webpackDocsConfig;
 
     config.plugins.push(new ProgressPlugin( (percentage, msg) => {
 

@@ -8,6 +8,7 @@ const _ = require('lodash');
 const shell = require('shelljs');
 
 const lint = require('./lint');
+const clean = require('./clean');
 const build = require('./build');
 
 let VERSION = null;
@@ -144,6 +145,7 @@ function release() {
 
   return prompt()
     .then(lint)
+    .then(clean)
     .then(bump)
     .then(build)
     .then(git);

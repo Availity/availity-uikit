@@ -1,17 +1,13 @@
 'use strict';
 
-const clean = require('./clean');
 const bundle = require('./bundle');
 const Logger = require('./logger');
 
 function build() {
 
-  return clean()
+  return bundle({optimize: true, production: true})
     .then( () => {
-      return bundle({optimize: true});
-    })
-    .then( () => {
-      return bundle({optimize: false});
+      return bundle({optimize: false, production: true});
     })
     .catch( (err) => {
       Logger.error(err);
