@@ -104,41 +104,69 @@ setInterval(() => {
 }, 2000);
 
 const data = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['January', 'February', 'March'],
   datasets: [
     {
-      label: 'My First dataset',
-      fillColor: 'rgba(0,154,87,0.5)',
-      strokeColor: 'rgba(0,154,87,0.8)',
-      highlightFill: 'rgba(0,154,87,0.75)',
-      highlightStroke: 'rgba(0,154,87,1)',
-      data: [65, 59, 80, 81, 56, 55, 40]
+      label: 'First',
+      backgroundColor: [
+        'rgba(0,147,232,0.5)',
+        'rgba(0,147,232,0.5)',
+        'rgba(0,147,232,0.5)'
+      ],
+      borderColor: [
+        'rgba(0,147,232,0.8)',
+        'rgba(0,147,232,0.8)',
+        'rgba(0,147,232,0.8)'
+      ],
+      borderWidth: 1,
+      data: [65, 70, 80]
     },
     {
-      label: 'My Second dataset',
-      fillColor: 'rgba(0,147,232,0.5)',
-      strokeColor: 'rgba(0,147,232,0.8)',
-      highlightFill: 'rgba(0,147,232,0.75)',
-      highlightStroke: 'rgba(0,147,232,1)',
-      data: [28, 48, 40, 19, 86, 27, 90]
+      label: 'Second',
+      backgroundColor: [
+        'rgba(0,154,87,0.5)',
+        'rgba(0,154,87,0.5)',
+        'rgba(0,154,87,0.5)'
+      ],
+      borderColor: [
+        'rgba(0,154,87,0.8)',
+        'rgba(0,154,87,0.8)',
+        'rgba(0,154,87,0.8)'
+      ],
+      borderWidth: 1,
+      data: [85, 80, 75]
     },
     {
-      label: 'My Third dataset',
-      fillColor: 'rgba(212,208,8,0.5)',
-      strokeColor: 'rgba(212,208,8,0.8)',
-      highlightFill: 'rgba(212,208,8,0.75)',
-      highlightStroke: 'rgba(212,208,8,1)',
-      data: [18, 98, 19, 55, 20, 34, 70]
+      label: 'Third',
+      backgroundColor: [
+        'rgba(212,208,8,0.5)',
+        'rgba(212,208,8,0.5)',
+        'rgba(212,208,8,0.5)'
+      ],
+      borderColor: [
+        'rgba(212,208,8,0.8)',
+        'rgba(212,208,8,0.8)',
+        'rgba(212,208,8,0.8)'
+      ],
+      borderWidth: 1,
+      data: [74, 88, 64]
     }
   ]
 };
 
 const $chart1 = $('#guideChart1');
 if ($chart1[0]) {
+
   const ctx = $chart1[0].getContext('2d');
-  /* eslint new-cap: 0 */
-  new Chart(ctx).Bar(data, {
-    responsive: true,
-    maintainAspectRatio: false
+
+  /* eslint no-new: 0 */
+  new Chart(ctx, {
+    type: 'bar',
+    data,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
   });
+
 }
