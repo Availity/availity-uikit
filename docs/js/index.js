@@ -68,7 +68,7 @@ $('#datetimepicker6').datepicker({
 
 // Select2
 
-$('#single-select, #multiple-select').select2({
+$('#single, #multiple-select').select2({
   placeholder: 'Select a State',
   allowClear: true
 }).on('select2-open', function() {
@@ -86,10 +86,6 @@ $('#single-select, #multiple-select').select2({
       }
     }
   }
-});
-
-$('.select2, .select2-multiple').select2({
-  allowClear: true
 });
 
 // DO NOT USE THIS IN PRODUCTION. DEMO PURPOSES ONLY.
