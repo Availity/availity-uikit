@@ -2,114 +2,72 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Availity UIKit Introduction</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Availity UIKit - Home</title>
+<link rel="stylesheet" href="css/availity-uikit.css">
+<link rel="stylesheet" href="css/docs.css">
 
-  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/stylesheets/jquery.tocify.css">
-  <link rel="stylesheet" href="css/availity-uikit.css">
-  <link rel="stylesheet" href="css/docs.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <!--[if lte IE 8]>
-    <script src="js/excanvas.js"></script>
-  <![endif]-->
 
 
 
 </head>
-<body>
+<body class="body">
 
+  <main>
+  <section class="docs-intro docs-section">
+  <h1>Availity UIKit</h1>
+  <h2 class="project-tagline">Beautiful Healthcare Apps</h2>
+  <a class="btn btn-default docs-btn-outline btn-lg" href="pages/components">Documentation</a>
+  <a class="btn btn-default docs-btn-outline btn-lg" href="https://github.com/Availity/availity-uikit">Github</a>
+  <a class="btn btn-default docs-btn-outline btn-lg" href="https://github.com/Availity/availity-uikit/releases/tag/v2.0.0">Changelog</a>
+  <hr class="divider"/>
+  <h4>v2.0.0</h4>
+</section>
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand-availity" href="index.html">
-          <img alt="Availity Logo Alt" src="images/logo-availity.png">
-        </a>
-        <p class="navbar-text">UI Kit and Pattern Library <small>v1.2.0</small></p>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-header">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+<section class="container-sm docs-intro-section">
+  <div class="dummy-browser">
+    <div class="dummy-browser-body">
+      <div class="dummy-page-header animated bounceIn">
+        <div class="dummy-page-logo animated bounceIn"></div>
       </div>
-      <div class="collapse navbar-collapse" id="guide-collapse-header">
-        <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="https://github.com/availity/availity-uikit">
-            <i class="icon icon-github-circled"></i> Github
-          </a>
-        </li>
-        </ul>
-      </div>
+      <div class="dummy-page-sidebar animated bounceIn"></div>
+      <div class="dummy-page-article-top animated bounceIn"></div>
+      <div class="dummy-page-article-bottom animated bounceIn"></div>
     </div>
-  </nav>
-  <nav class="navbar navbar-default navbar-secondary navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="guide-collapse-navigation">
-        <ul class="nav navbar-nav">
-            <li>
-              <a href="index.html" title="Introduction">Introduction</a>
-            </li>
-            <li>
-              <a href="icons.html" title="Icons">Icons</a>
-            </li>
-            <li>
-              <a href="components.html" title="Components">Components</a>
-            </li>
-            <li>
-              <a href="javascript.html" title="JavaScript">JavaScript</a>
-            </li>
-            <li>
-              <a href="examples.html" title="Pages">Pages</a>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  </div>
+</section>
+
+<section class="container-sm docs-intro-section">
+
+  <p class="docs-lead">The Availity UIKit is derived from <a href="//getbootstrap.com">Bootstrap 3</a> and allows developers to create stunning web applications for the Availity Spaces platform.
+  </p>
+
+  <p class="docs-p">This guide will document any modifications done to the Bootstrap framework. Original Bootstrap conventions were preserved as much as possible.
+  </p>
+
+  <p class="docs-p">The Availity UIKit is available through <a href="//github.com/Availity/availity-uikit">Github</a>, <a href="http://bower.io/search/?q=availity">Bower</a> and <a href="https://www.npmjs.com/package/availity-uikit">NPM</a>.
+  </p>
+
+</section>
 
 
-<main class="guide">
+
+
+  <footer class="footer docs-footer">
   <div class="container">
-
-  <h2 class="guide-section-header">UIKit</h2>
-
-  <p class="guide-lead">The Availity UIKit is derived from <a href="//getbootstrap.com">Bootstrap 3</a> and allows developers to create beautiful web applications for the <a href="//developer.availity.com/">Availity Spaces</a> platform.</p>
-
-  <p class="guide-p">This guide will document any modifications done to the Bootstrap framework. Original Bootstrap conventions were preserved as much as possible.  The Availity UIKit is available on <a href="//github.com/Availity/availity-uikit">Github</a> and <a href="http://bower.io/search/?q=availity">Bower</a>.</p>
-
-  <div class="alert alert-info" role="alert" style="margin-top: 5em;font-size: 1.2em;">
-    <span class="icon icon-info-circle"></span>
-     <code>availity-uikit v2.0.0</code> is coming! <a href="http://availity.github.io/availity-uikit/v2.0.0-beta.10" class="alert-link">Check out the documentation</a>.
+    <p class="docs-shoutout">
+    Made with <i class="icon icon-heart"></i> by <a href="http://www.availity.com">Availity</a>
+    </p>
   </div>
-  <div class="alert alert-info" role="alert" style="margin-top: 1em;font-size: 1.2em;">
-    <span class="icon icon-info-circle"></span>
-    <code>availity-uikit v3.0.0</code> is coming with Bootstrap 4 support! <a href="http://availity.github.io/availity-uikit/v3.0.0-beta.2" class="alert-link">Check out the documentation</a>.
-  </div>
+</footer>
 
+  </main>
 
-</div>
-
-</main>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
-<script src="js/vendor.js"></script>
+  <script src="js/vendor.js"></script>
 <script src="js/availity-uikit.js"></script>
 <script src="js/docs.js"></script>
+
 </body>
 </html>
