@@ -27,7 +27,7 @@
 * [gulp-bless](https://github.com/BlessCSS/gulp-bless)
 * [bless.js](https://github.com/BlessCSS/bless)
 * [grunt-bless](https://github.com/BlessCSS/grunt-bless) 
-* [bless-webpack-plugin(https://github.com/BlessCSS/bless-webpack-plugin)
+* [bless-webpack-plugin](https://github.com/BlessCSS/bless-webpack-plugin)
 
 ## Quickstart
 
