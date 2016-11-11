@@ -14,8 +14,7 @@
  
 ## Demo
 
-[http://availity.github.io/availity-uikit](http://availity.github.io/availity-uikit/v2.0.0-beta.7)
-
+[http://availity.github.io/availity-uikit](http://availity.github.io/availity-uikit)
 
 ## Supported Browsers
 
@@ -28,6 +27,7 @@
 * [gulp-bless](https://github.com/BlessCSS/gulp-bless)
 * [bless.js](https://github.com/BlessCSS/bless)
 * [grunt-bless](https://github.com/BlessCSS/grunt-bless) 
+* [bless-webpack-plugin(https://github.com/BlessCSS/bless-webpack-plugin)
 
 ## Quickstart
 
@@ -49,7 +49,6 @@ $ npm install availity-uikit --save
 ```js
 import 'availity-uikit';
 ```
-
 
 ## Icon Fonts
 
