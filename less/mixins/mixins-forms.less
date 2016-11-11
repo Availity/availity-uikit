@@ -1,0 +1,20 @@
+.availity-form-control-validation(@text-color: #555; @border-color: #ccc; @background-color: #f5f5f5) {
+
+  label {
+    color: @text-color;
+  }
+
+  // Set the border and box shadow on specific inputs to match
+  .form-control {
+    border-color: @border-color;
+    background-color: @background-color !important;
+  }
+
+  .input-group-btn {
+    > .btn {
+      border-color: @border-color;
+      background-color: @background-color !important;
+    }
+  }
+
+}

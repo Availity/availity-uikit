@@ -1,0 +1,744 @@
+---
+title: Forms
+description: |
+  Form elements and interactive components for inputting data into the
+  system.
+usage: |
+  Use input fields in any case where the user will be entering or defining
+  information, such as short text, a password, or choosing a spefic item
+  from a list of options. Input fields labels should be used for all forms.
+  Labels are important not only to ensure that each field is clearly
+  identified, but also to ensure accessibility as labels are crucial for
+  screen readers and other accessibility tools.
+notes: |
+  Input fields should be sized based on the length of entry, rather than
+  trying to make each input the same length. A ZIP code field, for
+  instance, should be smaller than a street address field, as one is known
+  to be 5 characters while the other could be much longer.
+---
+<h3 class="docs-subsection-title">Label <small>with placeholder text</small></h3>
+<div class="docs-example">
+  <div class="form-group">
+    <label for="text1">State</label>
+    <input type="text" class="form-control" id="text1" placeholder="Enter a State">
+  </div>
+</div>
+<code class="language-markup">
+<div class="form-group">
+  <label for="text2">My cool input box</label>
+  <input type="text" class="form-control" id="text2" placeholder="Text input">
+</div>
+</code>
+
+<h3 class="docs-subsection-title">Inline Help</h3>
+<div class="docs-example">
+  <div class="form-group">
+    <label for="text3">Label for text input <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">What’s this?</span></label>
+    <input type="text" class="form-control" id="text3" placeholder="Type what you want here">
+  </div>
+</div>
+<code class="language-markup">
+<div class="form-group">
+  <label for="text4">Label for text input <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">What’s this?</span></label>
+  <input type="text" class="form-control" id="text4" placeholder="Type what you want here">
+</div>
+</code>
+
+<h3 class="docs-subsection-title">Optional Form Inputs</h3>
+<div class="docs-example">
+<fieldset>
+  <h2>Contact Information</h2>
+  <p>All fields <strong>required</strong> unless noted.</p>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="form-group">
+        <label for="firstName10">First Name</label>
+        <input type="email" class="form-control" id="firstName10" placeholder="Text input">
+      </div>
+      <div class="form-group">
+        <label for="lastName10">Last Name</label>
+        <input type="email" class="form-control" id="lastName10" placeholder="Text input">
+      </div>
+      <div class="form-group">
+        <label for="phonenNumber10">Phone <small>(Optional)</small></label>
+        <input type="email" class="form-control" id="phonenNumber10" placeholder="Text input">
+      </div>
+    </div>
+  </div>
+</fieldset>
+</div>
+<code class="language-markup">
+<div class="card">
+  <fieldset class="card-block">
+    <h2 class="lighter">Contact Information</h2>
+    <p>All fields <strong>required</strong> unless noted.</p>
+    <div class="row">
+      <div class="col-xs-5">
+        <div class="form-group">
+          <label for="firstName11">First Name</label>
+          <input type="email" class="form-control" id="firstName11" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <label for="lastName11">Last Name</label>
+          <input type="email" class="form-control" id="lastName11" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <label for="phonenNumber11">Phone <small>(Optional)</small></label>
+          <input type="email" class="form-control" id="phonenNumber11" placeholder="Text input">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+</code>
+
+
+<h3 class="docs-subsection-title">Validation states</h3>
+<div class="docs-example">
+  <div class="form-group has-error">
+    <label for="text5">Label for text input</label>
+    <input type="text" class="form-control" id="text5" placeholder="has error">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group has-success">
+    <label for="text6">Label for text input</label>
+    <input type="text" class="form-control" id="text6" placeholder="has success">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group has-warning">
+    <label for="text7">Label for text input</label>
+    <input type="text" class="form-control" id="text7" placeholder="has warning">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+</div>
+<code class="language-markup">
+<div class="form-group has-error">
+  <label for="text8">Label for text input</label>
+  <input type="text" class="form-control" id="text8" placeholder="" value="This is error text">
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+<div class="form-group has-success">
+  <label for="text9">Label for text input</label>
+  <input type="text" class="form-control" id="text9" placeholder="" value="this is success text">
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+<div class="form-group has-warning">
+  <label for="text10">Label for text input</label>
+  <input type="text" class="form-control" id="text10" placeholder="" value="this is warning text">
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+</code>
+
+<h3 class="docs-subsection-title">Checkboxes and Radios</h3>
+<p class="docs-section-description" data-markdown>
+Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many. A checkbox or radio with the `disabled` attribute will be styled appropriately. To have the `label` for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the `.disabled` class to your `.radio`, `.radio-inline`, `.checkbox`, `.checkbox-inline`, or `fieldset`.
+</p>
+<div class="docs-example">
+  <div class="checkbox">
+    <input id="checkbox1" type="checkbox" checked="">
+    <label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
+  </div>
+  <div class="checkbox">
+    <input id="checkbox2" type="checkbox" value="">
+    <label for="checkbox2">Option two is this and wow</label>
+  </div>
+  <div class="checkbox disabled">
+    <input id="checkbox3" type="checkbox" value="" disabled="">
+    <label for="checkbox3">Option two is disabled</label>
+  </div>
+  <br>
+  <div class="radio">
+    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked="">
+    <label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
+  </div>
+  <div class="radio">
+    <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+    <label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
+  </div>
+  <div class="radio disabled">
+    <input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3" disabled="">
+    <label for="optionsRadios3">Option three is disabled</label>
+  </div>
+</div>
+<code class="language-markup">
+<!--Checkboxes-->
+<div class="checkbox">
+  <input id="checkbox1" type="checkbox" checked="">
+  <label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
+</div>
+<div class="checkbox">
+  <input id="checkbox2" type="checkbox" value="">
+  <label for="checkbox2">Option two is this and wow</label>
+</div>
+<div class="checkbox disabled">
+  <input id="checkbox3" type="checkbox" value="" disabled="">
+  <label for="checkbox3">Option two is disabled</label>
+</div>
+
+<!--Radios-->
+<div class="radio">
+  <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked="">
+  <label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
+</div>
+<div class="radio">
+  <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+  <label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
+</div>
+<div class="radio disabled">
+  <input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3" disabled="">
+  <label for="optionsRadios3">Option three is disabled</label>
+</div>
+</code>
+
+<h4 class="docs-subsection-title">Inline Checkboxes and Radios</h4>
+<p class="docs-section-description" data-markdown>
+Use the `.checkbox-inline` or `.radio-inline` classes on a series of checkboxes or radios for controls that appear on the same line.
+</p>
+<div class="docs-example">
+  <div class="checkbox checkbox-inline">
+    <input id="checkbox4" type="checkbox" checked="">
+    <label for="checkbox4">1</label>
+  </div>
+  <div class="checkbox checkbox-inline">
+    <input id="checkbox5" type="checkbox" value="">
+    <label for="checkbox5">2</label>
+  </div>
+  <div class="checkbox checkbox-inline">
+    <input id="checkbox6" type="checkbox" value="">
+    <label for="checkbox6">3</label>
+  </div>
+  <br><br>
+  <div class="radio radio-inline">
+    <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option1" checked="">
+    <label for="optionsRadios4">1</label>
+  </div>
+  <div class="radio radio-inline">
+    <input type="radio" name="optionsRadios2" id="optionsRadios5" value="option2">
+    <label for="optionsRadios5">2</label>
+  </div>
+  <div class="radio radio-inline">
+    <input type="radio" name="optionsRadios2" id="optionsRadios6" value="option3">
+    <label for="optionsRadios6">3</label>
+  </div>
+</div>
+<code class="language-markup">
+<!--Checkboxes-->
+<div class="checkbox checkbox-inline">
+  <input id="checkbox4" type="checkbox" checked="">
+  <label for="checkbox4">1</label>
+</div>
+<div class="checkbox checkbox-inline">
+  <input id="checkbox5" type="checkbox" value="">
+  <label for="checkbox5">2</label>
+</div>
+<div class="checkbox checkbox-inline">
+  <input id="checkbox6" type="checkbox" value="">
+  <label for="checkbox6">3</label>
+</div>
+
+<!--Radios-->
+<div class="radio radio-inline">
+  <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option1" checked="">
+  <label for="optionsRadios4">1</label>
+</div>
+<div class="radio radio-inline">
+  <input type="radio" name="optionsRadios2" id="optionsRadios5" value="option2">
+  <label for="optionsRadios5">2</label>
+</div>
+<div class="radio radio-inline">
+  <input type="radio" name="optionsRadios2" id="optionsRadios6" value="option3">
+  <label for="optionsRadios6">3</label>
+</div>
+</code>
+
+<h4 class="docs-subsection-title">Checkboxes and Radios without label text</h4>
+<p class="docs-section-description" data-markdown>
+Should you have no text within the `label`, the input is positioned as you'd expect. Currently only works on non-inline checkboxes and radios.
+</p>
+<div class="docs-example">
+  <div class="checkbox">
+    <input id="checkbox7" type="checkbox">
+    <label for="checkbox7"></label>
+  </div>
+  <div class="radio">
+    <input type="radio" name="optionsRadios3" id="optionsRadios7" value="option1">
+    <label for="optionsRadios7"></label>
+  </div>
+</div>
+<code class="language-markup">
+<!--Checkboxes-->
+<div class="checkbox">
+  <input id="checkbox7" type="checkbox">
+  <label for="checkbox7"></label>
+</div>
+
+<!--Radios-->
+<div class="radio">
+  <input type="radio" name="optionsRadios3" id="optionsRadios7" value="option1">
+  <label for="optionsRadios7"></label>
+</div>
+</code>
+
+<h4 class="docs-subsection-title">Checkbox and Radio Variants</h4>
+<div class="docs-example">
+  <div class="checkbox checkbox-inline checkbox-primary">
+    <input id="checkbox8" type="checkbox" checked="">
+    <label for="checkbox8">Primary</label>
+  </div>
+  <div class="checkbox checkbox-inline checkbox-success">
+    <input id="checkbox9" type="checkbox" checked="">
+    <label for="checkbox9">Success</label>
+  </div>
+  <div class="checkbox checkbox-inline checkbox-info">
+    <input id="checkbox10" type="checkbox" checked="">
+    <label for="checkbox10">Info</label>
+  </div>
+  <div class="checkbox checkbox-inline checkbox-warning">
+    <input id="checkbox11" type="checkbox" checked="">
+    <label for="checkbox11">Warning</label>
+  </div>
+  <div class="checkbox checkbox-inline checkbox-danger">
+    <input id="checkbox12" type="checkbox" checked="">
+    <label for="checkbox12">Danger</label>
+  </div>
+  <br><br>
+  <div class="radio radio-inline radio-primary">
+    <input type="radio" id="optionsRadios8" value="option1" checked="">
+    <label for="optionsRadios8">Primary</label>
+  </div>
+  <div class="radio radio-inline radio-success">
+    <input type="radio" id="optionsRadios9" value="option1" checked="">
+    <label for="optionsRadios9">Success</label>
+  </div>
+  <div class="radio radio-inline radio-info">
+    <input type="radio" d="optionsRadios10" value="option1" checked="">
+    <label for="optionsRadios10">Info</label>
+  </div>
+  <div class="radio radio-inline radio-warning">
+    <input type="radio" id="optionsRadios11" value="option1" checked="">
+    <label for="optionsRadios11">Warning</label>
+  </div>
+  <div class="radio radio-inline radio-danger">
+    <input type="radio" id="optionsRadios12" value="option1" checked="">
+    <label for="optionsRadios12">Danger</label>
+  </div>
+</div>
+<code class="language-markup">
+<!--Checkboxes-->
+<div class="checkbox checkbox-inline checkbox-primary">
+  <input id="checkbox8" type="checkbox" checked="">
+  <label for="checkbox8">Primary</label>
+</div>
+<div class="checkbox checkbox-inline checkbox-success">
+  <input id="checkbox9" type="checkbox">
+  <label for="checkbox9">Success</label>
+</div>
+<div class="checkbox checkbox-inline checkbox-info">
+  <input id="checkbox10" type="checkbox">
+  <label for="checkbox10">Info</label>
+</div>
+<div class="checkbox checkbox-inline checkbox-warning">
+  <input id="checkbox11" type="checkbox">
+  <label for="checkbox11">Warning</label>
+</div>
+<div class="checkbox checkbox-inline checkbox-danger">
+  <input id="checkbox12" type="checkbox">
+  <label for="checkbox12">Danger</label>
+</div>
+
+<!--Radios-->
+<div class="radio radio-inline radio-primary">
+  <input type="radio" name="optionsRadios4" id="optionsRadios8" value="option1">
+  <label for="optionsRadios8">Primary</label>
+</div>
+<div class="radio radio-inline radio-success">
+  <input type="radio" name="optionsRadios4" id="optionsRadios9" value="option1">
+  <label for="optionsRadios9">Success</label>
+</div>
+<div class="radio radio-inline radio-info">
+  <input type="radio" name="optionsRadios4" id="optionsRadios10" value="option1">
+  <label for="optionsRadios10">Info</label>
+</div>
+<div class="radio radio-inline radio-warning">
+  <input type="radio" name="optionsRadios4" id="optionsRadios11" value="option1">
+  <label for="optionsRadios11">Warning</label>
+</div>
+<div class="radio radio-inline radio-danger">
+  <input type="radio" name="optionsRadios4" id="optionsRadios12" value="option1">
+  <label for="optionsRadios12">Danger</label>
+</div>
+</code>
+
+<h3 class="docs-subsection-title">Select</h3>
+<p class="docs-section-description" data-markdown>Do not use HTML's `select` tag. Instead, see the [Select2 section](/pages/javascript/#select2) on the [JavaScript examples](/pages/javascript) page.</p>
+
+<h3 class="docs-subsection-title">Basic Form</h3>
+<div class="docs-example">
+  <div class="card">
+    <div class="card-block">
+      <form>
+        <h5 class="card-title-secondary">Request Information</h5>
+        <div class="form-group">
+          <label for="memberID">
+            Member ID
+            <span class="inline-help"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </label>
+          <input type="text" class="form-control" id="memberID" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="relationshipToSubscriber">
+            Relationship to Subscriber
+            <span class="inline-help"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </label>
+          <select class="form-control select2" id="relationshipToSubscriber">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="datetimepicker7">
+            Date of Birth
+          </label>
+          <input type="text" class="form-control" id="datetimepicker7" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="form-group">
+          <label for="serviceQuantityType">
+            Service Quantity/Type
+          </label>
+          <div class="row">
+            <div class="col-xs-4">
+              <input type="text" id="serviceQuantityType" class="form-control">
+            </div>
+            <div class="col-xs-8">
+              <select class="form-control select2" id="rts">
+                <option>Select one</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-controls form-controls-card">
+          <input type="submit" class="btn btn-default" value="Cancel" >
+          <input type="submit" class="btn btn-default" value="Ok" >
+          <input type="submit" class="btn btn-default" value="Maybe" >
+          <input type="submit" class="btn btn-primary form-controls-right" value="Save" >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<code class="language-markup">
+  <form>
+    <h5 class="card-title-secondary">Request Information</h5>
+    <div class="form-group">
+      <label for="memberID">
+        Member ID
+        <span class="inline-help"
+              data-toggle="tooltip"
+              data-placement="top"
+              title=""
+              data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+          What's this
+        </span>
+      </label>
+      <input type="text" class="form-control" id="memberID" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="relationshipToSubscriber">
+        Relationship to Subscriber
+        <span class="inline-help"
+            data-toggle="tooltip"
+            data-placement="top"
+            data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+          What's this
+        </span>
+      </label>
+      <select class="form-control select2" id="relationshipToSubscriber">
+        <option>Select one</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="datetimepicker7">
+        Date of Birth
+      </label>
+      <input type="text" class="form-control" id="datetimepicker7" placeholder="mm/dd/yyyy">
+    </div>
+    <div class="form-group">
+      <label for="serviceQuantityType">
+        Service Quantity/Type
+      </label>
+      <div class="row">
+        <div class="col-xs-4">
+          <input type="text" id="serviceQuantityType" class="form-control">
+        </div>
+        <div class="col-xs-8">
+          <select class="form-control select2" id="rts">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-controls form-controls-card">
+      <input type="submit" class="btn btn-default" value="Cancel" >
+      <input type="submit" class="btn btn-default" value="Ok" >
+      <input type="submit" class="btn btn-default" value="Maybe" >
+      <input type="submit" class="btn btn-primary form-controls-right" value="Save" >
+    </div>
+  </form>
+</code>
+
+<h3 class="docs-subsection-title">Read Only Form</h3>
+<div class="docs-example">
+<div class="card">
+  <div class="card-block">
+    <div class="card-header-secondary">
+      <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1">236316981</span>
+      <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1">7843703252</span>
+    </div>
+  </div>
+  <div class="card-block">
+    <div class="row">
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Certification Number</h5>
+        <p>123456789</p>
+      </div>
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Patient Name</h5>
+        <p data-mock="fullNameReverse:1">Phillips, Nevaeh</p>
+      </div>
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Patient Date of Birth</h5>
+        <p>03/03/2010</p>
+      </div>
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Patient Gender</h5>
+        <p>Male</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Status</h5>
+        <p>Modified</p>
+      </div>
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Diagnosis Version</h5>
+        <p>ICD-9</p>
+      </div>
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Request Type</h5>
+        <p>Inpatient Authorization</p>
+      </div>
+      <div class="col-sm-3 col-ms-6">
+        <h5 class="text-label">Payer</h5>
+        <p>Aetna</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<code class="language-markup">
+  <div class="card">
+    <div class="card-block">
+      <div class="card-header-secondary">
+        <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1">236316981</span>
+        <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1">7843703252</span>
+      </div>
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Certification Number</h5>
+          <p>123456789</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Name</h5>
+          <p data-mock="fullNameReverse:1">Phillips, Nevaeh</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Date of Birth</h5>
+          <p>03/03/2010</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Gender</h5>
+          <p>Male</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Status</h5>
+          <p>Modified</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Diagnosis Version</h5>
+          <p>ICD-9</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Request Type</h5>
+          <p>Inpatient Authorization</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Payer</h5>
+          <p>Aetna</p>
+        </div>
+      </div>
+    </div>
+    </div>
+</code>
+
+<h3 class="docs-subsection-title">Fieldsets and Legends</h3>
+<div class="docs-example">
+  <form class="form">
+    <div class="card">
+      <div class="card-block">
+        <fieldset>
+
+          <legend>Provider Information</legend>
+
+          <div class="form-group">
+            <label for="organizations">Organization</label>
+            <select id="organizations" class="form-control select2">
+              <option selected="selected"></option>
+              <option label="Acme Medical Center" value="15">Acme Medical Center</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="providers">Provider</label>
+            <select id="providers" class="form-control select2">
+              <option label="Acme Provider LLC" value="16">Acme Provider LLC</option>
+            </select>
+          </div>
+
+          <label for="npi">
+            NPI
+            <span class="inline-help" placement="top" trigger="hover" title="" data-original-title="National Provider Index">
+              What's this
+            </span>
+          </label>
+          <input type="text" class="form-control" id="npi">
+        </fieldset>
+        <fieldset>
+
+          <legend>Member Information</legend>
+
+          <div class="form-group">
+            <label for="memberID">
+              Member ID
+              <span class="inline-help" placement="top" trigger="hover" title="" data-original-title="Also known as subscriber ID or member number">
+                What's this
+              </span>
+            </label>
+            <input type="text" class="form-control" id="memberID">
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <div class="input-group date">
+              <input type="text" class="form-control" id="dob">
+              <span class="input-group-btn" data-toggle="datepicker">
+                <button class="btn btn-default" type="button"><span class="icon icon-calendar"></span></button>
+              </span>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-controls form-controls-card">
+          <input type="submit" class="btn btn-primary form-controls-right" value="Submit">
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
+<code class="language-markup">
+  <form class="form">
+    <div class="card">
+      <div class="card-block">
+        <fieldset>
+
+          <legend>Provider Information</legend>
+
+          <div class="form-group">
+            <label for="organizations">Organization</label>
+            <select id="organizations" class="form-control select2">
+              <option selected="selected"></option>
+              <option label="Acme Medical Center" value="15">Acme Medical Center</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="providers">Provider</label>
+            <select id="providers" class="form-control select2">
+              <option label="Acme Provider LLC" value="16">Acme Provider LLC</option>
+            </select>
+          </div>
+
+          <label for="npi">
+            NPI
+            <span class="inline-help" placement="top" trigger="hover" title="" data-original-title="National Provider Index">
+              What's this
+            </span>
+          </label>
+          <input type="text" class="form-control" id="npi">
+        </fieldset>
+        <fieldset>
+
+          <legend>Member Information</legend>
+
+          <div class="form-group">
+            <label for="memberID">
+              Member ID
+              <span class="inline-help" placement="top" trigger="hover" title="" data-original-title="Also known as subscriber ID or member number">
+                What's this
+              </span>
+            </label>
+            <input type="text" class="form-control" id="memberID">
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <div class="input-group date">
+              <input type="text" class="form-control" id="dob">
+              <span class="input-group-btn" data-toggle="datepicker">
+                <button class="btn btn-default" type="button"><span class="icon icon-calendar"></span></button>
+              </span>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-controls form-controls-card">
+          <input type="submit" class="btn btn-primary form-controls-right" value="Submit">
+        </div>
+
+      </div>
+    </div>
+  </form>
+</code>
+
+
+

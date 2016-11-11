@@ -1,0 +1,132 @@
+---
+title: Pagination
+description: |
+  When a list contains more elements than will ideally fit within the
+  current page, pagination allows for this data to be chunked into more
+  manageable 'pages.' The pagination pattern shows the inner-navigation for
+  traversing these pages.
+usage: |
+  Pagination should be used every time a list is broken up into smaller sets
+  of data, or pages.
+notes: |
+  Generally, a page should contain no fewer than 10 items. The maximum
+  number of items that should exist per page should be determined based on
+  server performance/load time as well as visual appearance of the list and
+  how users interact with the list. For lists used primarily for 'scanning'
+  information, a larger item-per-page may be better to allow users as much
+  context as possible at a time.
+---
+<h3 class="docs-subsection-title">Default Pagination</h3>
+<div class="docs-example">
+  <ul class="pagination">
+    <li class="disabled"><a href="#">&laquo; Prev</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">Next &raquo;</a></li>
+  </ul>
+  <div class="pagination-container">
+    <ul class="pagination">
+      <li class="disabled"><a href="#">&laquo; Prev</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">Next &raquo;</a></li>
+    </ul>
+    <div class="pagination-text">
+      Show
+    </div>
+    <select class="form-control select2">
+      <option>10 results</option>
+      <option>20 results</option>
+      <option>30 results</option>
+    </select>
+    <div class="pagination-text">
+      Showing batches 1-10 of 12
+    </div>
+  </div>
+</div>
+<code class="language-markup">
+<ul class="pagination">
+  <li class="disabled"><a href="#">&laquo; Prev</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">Next &raquo;</a></li>
+</ul>
+<div class="pagination-container">
+  <ul class="pagination">
+    <li class="disabled"><a href="#">&laquo; Prev</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">Next &raquo;</a></li>
+  </ul>
+  <div class="pagination-text">
+    Show
+  </div>
+  <select class="form-control select2">
+    <option>10 results</option>
+    <option>20 results</option>
+    <option>30 results</option>
+  </select>
+  <div class="pagination-text">
+    Showing batches 1-10 of 12
+  </div>
+</div>
+</code>
+
+<h3 class="docs-subsection-title">Unstyled Pagination</h3>
+<div class="docs-example">
+  <ul class="pagination pagination-unstyled">
+	<li class="disabled"><a href="#">&laquo; Prev</a></li>
+	<li class="active"><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">Next &raquo;</a></li>
+  </ul>
+  <div class="pagination-container">
+	<ul class="pagination pagination-unstyled">
+	  <li class="disabled"><a href="#">&laquo; Prev</a></li>
+	  <li class="active"><a href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">Next &raquo;</a></li>
+	</ul>
+	<div class="pagination-text">
+	  Show
+	</div>
+	<select class="form-control select2">
+	  <option>10 results</option>
+	  <option>20 results</option>
+	  <option>30 results</option>
+	</select>
+	<div class="pagination-text">
+	  Showing batches 1-10 of 12
+	</div>
+  </div>
+</div>
+<code class="language-markup">
+  <ul class="pagination pagination-unstyled">
+	...
+  </ul>
+  <div class="pagination-container">
+	<ul class="pagination pagination-unstyled">
+	  ...
+	</ul>
+	<div class="pagination-text">
+	  Show
+	</div>
+	<select class="form-control select2">
+	  <option>10 results</option>
+	  <option>20 results</option>
+	  <option>30 results</option>
+	</select>
+	<div class="pagination-text">
+	  Showing batches 1-10 of 12
+	</div>
+  </div>
+</code>

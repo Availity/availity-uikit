@@ -1,0 +1,382 @@
+// https://github.com/martinbean/bootstrap-3-card/blob/master/less/card.less
+// http://v4-alpha.getbootstrap.com/components/card/
+
+.card {
+  position: relative;
+  display: block;
+  margin-bottom: @line-height-computed;
+  border: 1px solid @panel-default-border;
+  border-radius: @border-radius-base;
+  background-color: #fff;
+
+  & > :first-child {
+      margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card-block {
+  .clearfix;
+  padding: @panel-body-padding;
+}
+
+.card-caret {
+  position: absolute;
+  top: @panel-body-padding;
+  right: @panel-body-padding;
+  width: 0;
+  height: 0;
+  border-right: 4px;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent @availity-app-icon-branded-neon-caret-color transparent transparent;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: .5em;
+
+  + .card-title {
+    margin-top: 0;
+    margin-bottom: .5em;
+  }
+}
+
+.card-title-secondary {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: @text-muted;
+}
+
+.card-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  text-decoration: none;
+  cursor: pointer;
+
+  + .card-link {
+    margin-left: (@grid-gutter-width / 2);
+  }
+}
+
+.card-logo {
+  position: absolute;
+  bottom: @panel-body-padding;
+  right: @panel-body-padding;
+}
+
+.card-collapsible {
+
+  border: @availity-panel-collapse-border;
+  margin-bottom: 0;
+
+  .panel-heading {
+    border:none;
+  }
+
+  .collapsed {
+    .iconify-before(@availity-icon-angle-collapsed);
+  }
+
+  .collapse, .collapsing {
+    border: @availity-panel-collapse-border;
+    border-top: none;
+  }
+
+}
+
+.card-collapsible-link {
+  color: @link-color;
+  text-decoration: none;
+  .iconify-before(@availity-icon-angle-non-collapsed);
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.card {
+
+  > .list-group:first-child {
+    .list-group-item:first-child {
+      border-radius: @border-radius-base @border-radius-base 0 0;
+    }
+  }
+
+  > .list-group:last-child {
+    .list-group-item:last-child {
+      border-radius: 0 0 @border-radius-base @border-radius-base;
+    }
+  }
+}
+
+
+//
+// Optional textual caps
+//
+
+.card-header {
+  padding: @panel-heading-padding;
+  background-color: @panel-default-heading-bg;
+  border-bottom: 1px solid @panel-default-border;
+
+  &:first-child {
+    border-radius: (@border-radius-base - 1) (@border-radius-base - 1) 0 0;
+  }
+}
+
+h1, h2, h2, h3, h4, h5 {
+  &.card-header {
+    margin-bottom: 0;
+  }
+}
+
+.card-header-link, .card-title-link {
+
+  .header-link-right;
+
+  line-height: 1em;
+  font-weight: bold;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+.card-header-secondary {
+  border-bottom: 1px solid @panel-default-border;
+  padding-bottom: .8em;
+}
+
+.card-footer {
+  padding: @panel-footer-padding;
+  background-color: @panel-footer-bg;
+  border-top: 1px solid @panel-default-border;
+
+  &:last-child {
+    border-radius: 0 0 (@panel-border-radius - 1) (@panel-border-radius - 1);
+  }
+}
+
+
+//
+// Background variations
+//
+
+.card-primary {
+  background-color: @brand-primary;
+  border-color: @brand-primary;
+}
+.card-success {
+  background-color: @brand-success;
+  border-color: @brand-success;
+}
+.card-info {
+  background-color: @brand-info;
+  border-color: @brand-info;
+}
+.card-warning {
+  background-color: @brand-warning;
+  border-color: @brand-warning;
+}
+.card-danger {
+  background-color: @brand-danger;
+  border-color: @brand-danger;
+}
+.card-default {
+  background-color: @well-bg;
+  border-color: @well-border;
+}
+
+
+//
+// Inverse text within a card for use with dark backgrounds
+//
+
+.card-inverse {
+
+  .card-header,
+  .card-footer {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+
+
+  // The warning background is too light to make effective use of the inverse colors.
+  &.card-primary, &.card-success, &.card-warning, &.card-danger, &.card-info {
+
+    .card-header,
+    .card-footer,
+    .card-title,
+    .card-blockquote {
+      color: #fff;
+    }
+    .card-link,
+    .card-text,
+    .card-blockquote > footer {
+      color: rgba(255,255,255,.80);
+    }
+    .card-link {
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255,255,255,.80);
+      &:hover,
+      &:focus {
+        color: rgba(255,255,255,.90);
+        border-bottom: 1px solid rgba(255,255,255,.90);
+        color: #fff;
+      }
+    }
+  }
+
+  &.card-warning, &.card-default {
+    .card-header,
+    .card-footer,
+    .card-title,
+    .card-blockquote {
+      color: @gray;
+    }
+    .card-link,
+    .card-text,
+    .card-blockquote > footer {
+      color: rgba(0,0,0,.65);
+    }
+    .card-link {
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(0,0,0,.65);
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid rgba(0,0,0,.90);
+        color: rgba(0,0,0,.90);
+        color: @gray-darker;
+      }
+    }
+  }
+}
+
+
+//
+// Blockquote
+//
+
+.card-blockquote {
+  padding: 0;
+  margin-bottom: 0;
+  border-left: 0;
+}
+
+// Card image
+.card-img {
+  border-radius: @panel-border-radius;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: @panel-body-padding;
+}
+
+
+
+// Card image caps
+.card-img-top {
+  border-radius: @panel-border-radius @panel-border-radius 0 0;
+}
+.card-img-bottom {
+  border-radius: 0 0 @panel-border-radius @panel-border-radius;
+}
+
+
+//
+// Card set
+//
+
+.card-deck {
+  display: table;
+  table-layout: fixed;
+  border-spacing: (@grid-gutter-width / 2) 0;
+
+  .card {
+    display: table-cell;
+    width: 1%;
+    vertical-align: top;
+  }
+}
+.card-deck-wrapper {
+  margin-right: -(@grid-gutter-width / 2);
+  margin-left: -(@grid-gutter-width / 2);
+}
+
+//
+// Card groups
+//
+
+.card-group {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  .card {
+    display: table-cell;
+    vertical-align: top;
+
+    + .card {
+      margin-left: 0;
+      border-left: 0;
+    }
+
+    // Handle rounded corners
+    &:first-child {
+      .card-img-top {
+        border-top-right-radius: 0;
+      }
+      .card-img-bottom {
+        border-bottom-right-radius: 0;
+      }
+    }
+    &:last-child {
+      .card-img-top {
+        border-top-left-radius: 0;
+      }
+      .card-img-bottom {
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+
+      .card-img-top,
+      .card-img-bottom {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+
+//
+// Card
+//
+
+.card-columns {
+  column-count: 3;
+  column-gap: (@grid-gutter-width / 2);
+
+  .card {
+    display: inline-block;
+    width: 100%; // Don't let them exceed the column width
+  }
+}

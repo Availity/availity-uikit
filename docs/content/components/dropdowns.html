@@ -1,0 +1,128 @@
+---
+title: Dropdowns
+description: |
+  An inline menu which can be used to provide additional actions and links
+  related to an object on the page.
+usage: |
+  Use contextual menus when you need to relate a set of actions or links to
+  an object on the page, and when space does not afford explicit links.
+  Contextual actions are by nature 'hidden' and thus should be avoided for
+  any critical actions.
+notes: |
+  Where possible, avoid nesting contextual menus as these can be difficult
+  to use. Creating multiple menu launchers - each with a specific goal and
+  related set of actions - can be an effective alternative. Limiting the
+  number of actions on an object, and pushing less important actions to a
+  'detail' page, can also be effective.
+---
+<h3 class="docs-subsection-title">Contextual Menu</h3>
+<div class="docs-example">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Actions <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <span class="icon icon-menu"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+      <span class="icon icon-menu"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+    </ul>
+  </div>
+</div>
+<code class="language-markup">
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Actions <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="icon icon-cog"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-ghost dropdown-toggle" data-toggle="dropdown">
+    <span class="icon icon-cog"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+  </ul>
+</div>
+</code>
+
+<h3 class="docs-subsection-title">Scrollable Menu</h3>
+<div class="docs-example">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Actions <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-scrollable" role="menu">
+      <li><a href="#">Action 1</a></li>
+      <li><a href="#">Action 2</a></li>
+      <li><a href="#">Action 3</a></li>
+      <li><a href="#">Action 4</a></li>
+      <li><a href="#">Action 5</a></li>
+      <li><a href="#">Action 6</a></li>
+      <li><a href="#">Action 7</a></li>
+      <li><a href="#">Action 8</a></li>
+      <li><a href="#">Action 9</a></li>
+      <li><a href="#">Action 10</a></li>
+      <li><a href="#">Action 11</a></li>
+      <li><a href="#">Action 12</a></li>
+      <li><a href="#">Action 13</a></li>
+    </ul>
+  </div>
+</div>
+<code class="language-markup">
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Actions <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-scrollable" role="menu">
+    <li><a href="#">Action 1</a></li>
+    <li><a href="#">Action 2</a></li>
+    <li><a href="#">Action 3</a></li>
+    <li><a href="#">Action 4</a></li>
+    <li><a href="#">Action 5</a></li>
+    <li><a href="#">Action 6</a></li>
+    <li><a href="#">Action 7</a></li>
+    <li><a href="#">Action 8</a></li>
+    <li><a href="#">Action 9</a></li>
+    <li><a href="#">Action 10</a></li>
+    <li><a href="#">Action 11</a></li>
+    <li><a href="#">Action 12</a></li>
+    <li><a href="#">Action 13</a></li>
+  </ul>
+</div>
+</code>

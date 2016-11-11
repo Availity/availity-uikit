@@ -1,0 +1,13 @@
+---
+title: Components
+layout: components.html
+toc: true
+---
+{% for item in collections.components %}
+  <section class="docs-section">
+    <h2 class="docs-section-header" id="{{item.title | slug}}">{{ item.title }}</h2>
+    <p class="docs-section-description">{{ item.description }}</p>
+    {{ item.contents | safe }}
+  </section>
+{% endfor %}
+

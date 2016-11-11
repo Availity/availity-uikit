@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default docs-navbar" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand-availity" href="index.html">
+        <div class="navbar-logo-availity"></div>
+      </a>
+      <p class="navbar-text">UI Kit and Pattern Library <small>v{{pkg.version}}</small></p>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-header">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="guide-collapse-header">
+      <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="https://github.com/availity/availity-uikit">
+          <i class="icon icon-github-circled"></i> Github
+        </a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-default navbar-secondary docs-navbar" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="guide-collapse-navigation">
+      <ul class="nav navbar-nav">
+        {% for page in collections.pages %}
+          <li>
+            <a href="{{rootPath}}{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
+

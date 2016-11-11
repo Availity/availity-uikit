@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  {% include 'partials/header.html' %}
+</head>
+<body class="body">
+
+  <main>
+  {{ contents | safe }}
+  {% include 'partials/footer-text.html' %}
+  </main>
+
+  {% include 'partials/footer.html' %}
+</body>
+</html>

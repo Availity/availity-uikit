@@ -1,0 +1,291 @@
+---
+title: Dashboard
+layout: example-page.html
+shortName: DB
+icon: orange
+---
+<div class="container-fluid">
+
+  <h2 class="page-header">PAA Dashboard</h2>
+
+  <div class="row">
+
+    <div class="col-md-8">
+
+      <!-- At A Glance Bar Chart -->
+      <div class="card card-block">
+        <h4>
+          At A Glance
+          <a href="#" class="card-header-link">View All Reports</a>
+        </h4>
+        <p>
+          <canvas id="guideChart1" width="730" height="310"></canvas>
+        </p>
+      </div>
+
+      <!-- Recently Used Apps Section -->
+      <section>
+        <h4 class="section-header">
+          Apps
+        </h4>
+
+        <div class="row">
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <div class="card-block">
+                <p>
+                  <span class="app-icon app-icon-lg app-icon-orange">
+                    PCS
+                  </span>
+                </p>
+
+                <h3>Patient Care Summary</h3>
+
+                <p>
+                  Lorem Ipsum this app is really cool.
+                </p>
+                <button class="btn btn-primary">
+                  Open App
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <div class="card-block">
+                <p>
+                  <span class="app-icon app-icon-lg app-icon-green">
+                    av
+                  </span>
+                </p>
+
+                <h3>Accounts Verifiable</h3>
+
+                <p>
+                  Lorem Ipsum this app is really cool.
+                </p>
+                <button class="btn btn-primary">
+                  Open App
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <div class="card-block">
+                <p>
+                  <span class="app-icon app-icon-lg app-icon-blue">
+                    ar
+                  </span>
+                </p>
+
+                <h3>Accounts Receivable</h3>
+
+                <p>
+                  Lorem Ipsum this app is really cool.
+                </p>
+                <button class="btn btn-primary">
+                  Open App
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <div class="card-block">
+                <p>
+                  <span class="app-icon app-icon-lg app-icon-neon">
+                    PCP
+                  </span>
+                </p>
+
+                <h3>Patient Care Practice</h3>
+
+                <p>
+                  Lorem Ipsum this app is really cool.
+                </p>
+                <button class="btn btn-primary">
+                  Open App
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-block card-default">
+              <h4 class="card-header-secondary">
+                Value-Added Services
+                <a href="#" class="card-header-link">See More</a>
+              </h4>
+
+              <h5>Patient Payments</h5>
+              <p>
+                You don't want to spend time and money chasing down payments. So collect payments upfront - before
+                patients leave the office - with Availity patient payments.
+                <a href="#">Learn More</a>
+              </p>
+
+              <hr>
+
+              <h5>Electronic Remittance Advice Delivery</h5>
+              <p>
+                You can enroll with various payers to receive your electronic remittance advice (ERA or 835) files
+                delivered to the Availity Web Portal. Access the
+                <a href="#">Availity Health Plan Partners list</a> for a list of participating payers and enrollment
+                instructions.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-block card-default">
+              <h4 class="card-header-secondary">
+                Knowledge Base
+                <a href="#" class="card-header-link">Read More</a>
+              </h4>
+
+              <ul class="card-block">
+                <li>
+                  <a href="#">HIPAA Compliance</a>
+                </li>
+                <li>
+                  <a href="#">How to register and organization</a>
+                </li>
+                <li>
+                  <a href="#">Web Portal and Basic Clearinghouse Basics</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-block card-default">
+              <h4 class="card-header-secondary">
+                Availity Training
+                <a href="#" class="card-header-link">Open Training</a>
+              </h4>
+
+              <p>
+                Availity offers a wide variety of free learning options and resources on Availity products and services.
+                As a Primary Access Administrator (PAA), Availity gives you the tools to set up your organization's users
+                and maintain demographic information about your organization. You'll have access to:
+              </p>
+              <ul>
+                <li>Webinars</li>
+                <li>Training Documents</li>
+                <li>Best Practices</li>
+                <li>Important Information</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="col-md-4">
+
+      <!-- News & Announcements -->
+      <div class="card card-block">
+        <h4 class="card-header-secondary">
+          News &amp; Announcements
+          <a href="#" class="card-header-link">See All</a>
+        </h4>
+
+        <div class="news-item">
+          <h6 class="subheader">Friday, 28 January {{today | year}}</h6>
+
+          <p>
+            <strong>Nulla vitae elit libero, a pharetra augue – nullam id dolor id nibh ultricies</strong>
+          </p>
+
+          <p>Ivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a
+            pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
+            bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Sed
+            posuere consectetur est at.
+          </p>
+        </div>
+
+        <hr/>
+
+        <div class="news-item">
+          <h6 class="subheader">Monday, 1 January {{today | year}}</h6>
+
+          <p>
+            <strong>Nulla vitae elit libero, a pharetra augue – nullam id dolor id nibh ultricies</strong>
+          </p>
+
+          <p>Ivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a
+            pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
+            bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Sed
+            posuere consectetur est at.
+          </p>
+        </div>
+      </div>
+
+      <!-- Availity Resources -->
+      <div class="card card-block">
+        <h4 class="card-header-secondary">
+          Availity Resources
+          <a href="#" class="card-header-link">See More</a>
+        </h4>
+
+        <div class="media">
+          <div class="media-left">
+            <img data-src="holder.js/50x50" height="50">
+          </div>
+          <div class="media-body">
+            <h5 class="media-heading">
+              <a href="#">Business Associate/Trading Partner</a>
+            </h5>
+            Lorem Ipsum Dolor Galore
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <img data-src="holder.js/50x50" height="50">
+          </div>
+          <div class="media-body">
+            <h5 class="media-heading">
+              <a href="#">EDI Guidelines</a>
+            </h5>
+            Lorem Ipsum Dolor Galore
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <img data-src="holder.js/50x50" height="50">
+          </div>
+          <div class="media-body">
+            <h5 class="media-heading">
+              <a href="#">Availity Technology Company</a>
+            </h5>
+            Lorem Ipsum Dolor Galore
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <img data-src="holder.js/50x50" height="50">
+          </div>
+          <div class="media-body">
+            <h5 class="media-heading">
+              <a href="#">Patient Payments ACH</a>
+            </h5>
+            Lorem Ipsum Dolor Galore
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

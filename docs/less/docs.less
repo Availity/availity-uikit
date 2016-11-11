@@ -1,0 +1,529 @@
+@availity-less-path: "../../less";
+
+@import (reference) "~bootstrap/less/mixins/clearfix.less";
+
+@import "~bootstrap/less/variables.less";
+@import (reference) "~bootstrap/less/mixins/gradients.less";
+
+@import "@{availity-less-path}/variables.less";
+@import (reference) "@{availity-less-path}/mixins/mixins-type.less";
+@import (reference) "@{availity-less-path}/mixins/mixins-icons.less";
+
+
+@import (reference) "@{availity-less-path}/type.less";
+
+@import (less) "~prismjs/themes/prism-coy.css";
+
+@docs-padding: 1.5em;
+@docs-color: lighten(@gray, 30%);
+@docs-font-code: 12px;
+@docs-menu-link-color: #373a3c;
+@docs-code-border-color: #f8f8f8;
+
+.docs {
+
+  background-color: @body-bg;
+
+  blockquote {
+    margin-top: 10px;
+  }
+
+}
+
+.docs-intro {
+
+  color: @white;
+  text-align: center;
+  padding: 3rem 6rem;
+  background-image: url(../images/waves.png);
+  background-repeat: repeat-x;
+  background-color: #4d4f53;
+
+  h1 {
+    font-size: 4.25rem;
+    font-family: Tahoma, Helvetica, sans-serif;
+  }
+
+  a {
+    margin: 0 1rem;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: normal;
+    font-family: Tahoma, Helvetica, sans-serif;
+  }
+}
+
+.docs-footer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+
+.docs-intro-section {
+
+  padding: 2rem 0;
+
+  p {
+    padding: 1rem 0;
+  }
+}
+
+.docs-navbar {
+  margin-bottom: 0;
+}
+
+.docs-btn-outline {
+  color: #ccc;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #ccc;
+}
+
+.docs-headings-anchor {
+
+  text-decoration: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: @text-color;
+
+  &:hover {
+
+    text-decoration: none;
+
+    &:before {
+      content: "¶";
+      position: absolute;;
+      left: -1em;
+      color: @headings-small-color;
+    }
+
+  }
+
+}
+
+.docs-section {
+
+  margin-top: 4em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.docs-lead {
+  font-size: 24px
+}
+
+.docs-p {
+  font-size: 20px;
+}
+
+.docs-section-description {
+  font-size: 16px;
+  line-height: 1.6em;
+  margin-bottom: 3rem;
+}
+
+.docs-footer {
+  position: static;
+}
+
+.docs-shoutout {
+  text-align: center;
+}
+
+.nav.docs-nav {
+
+  margin-top: 3rem;
+
+  .nav.docs-nav {
+
+    margin-top: 0;
+    margin-left: 1.5rem;
+
+    > li {
+
+      font-size: 90%;
+
+
+      > a {
+        color: lighten(@docs-menu-link-color, 30%);
+
+        &:before {
+          content: "\2022";
+          padding-right: .5rem;
+        }
+
+      }
+
+    }
+  }
+
+  > li {
+
+    font-size: @font-size-large;
+
+    > a {
+      padding: 1px 15px;
+      color: @docs-menu-link-color
+    }
+  }
+
+}
+
+.code-label(@label) {
+  content: @label;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: @docs-font-code;
+  font-weight: bold;
+  color: @docs-color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.docs-example {
+  margin-top: 1rem;
+  position: relative;
+  padding: (2.5 * @docs-padding) @docs-padding @docs-padding @docs-padding;
+  border: solid @docs-code-border-color;
+  border-radius: @border-radius-large @border-radius-large 0 0;
+}
+
+.docs-example:before {
+  .code-label("Example");
+}
+
+.docs-example + code[class*=language] {
+  border-radius: 0 !important;
+  border-top: 0 !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: none;
+}
+
+//== Layout
+
+.docs-section-header {
+  padding-bottom: 9px;
+  margin: 1em 0 1em;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+.docs-subsection-title {
+  margin: 2em 0 1em 0;
+}
+
+// gray bars that simulate text blocks
+
+.docs-block-text {
+  min-height: .8em;
+  background-color: darken(@gray-lighter, 5%);
+  margin: .8em 0;
+  width: 100%;
+  text-align: left;
+}
+
+.docs-block-text-medium {
+  &:extend(.docs-block-text);
+  width: 80%;
+}
+
+.docs-block-text-small {
+  &:extend(.docs-block-text);
+  width: 60%;
+}
+
+//== Colors
+
+@color-item-height: 100px;
+
+.colors-container {
+  margin-bottom: 30px;
+  text-align: center;
+  .clearfix;
+}
+
+.color-item {
+  margin-bottom: 4px;
+  border: 1px solid darken(@gray-lighter, 10%);
+}
+
+.color-item-header {
+  height: @color-item-height;
+  line-height: @color-item-height;
+
+  .icon {
+    vertical-align: middle;
+    font-size: 4em;
+    color: @white;
+  }
+
+}
+
+.color-item-footer {
+  display: block;
+  border-top: 1px solid darken(@gray-lighter, 10%);
+  background-color: lighten(@gray-lightest, 6%);
+  line-height: 2;
+  text-align: center;
+  padding: 1.5em;
+  font-weight: bold;
+}
+
+.color-1 {
+  background-color: @orange;
+}
+
+.color-2 {
+  background-color: @blue;
+}
+
+.color-3 {
+  background-color: @secondary-blue;
+}
+
+.color-4 {
+  background-color: @gray;
+}
+
+.color-5 {
+  background-color: @gray-lighter;
+}
+
+.color-6 {
+  background-color: @white;
+}
+
+//== Fake Backgrounds
+
+.spaces-logo {
+  background: url(?holder.js/234x60?text=Logo) no-repeat
+}
+
+.billboard{
+
+  @media (min-width: @screen-sm-min) {
+    background-image: url(../../images/default/love.jpg);
+  }
+}
+
+//== Navbar
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+//== Icons
+//
+.i-name, i-code {
+  display: block;
+}
+.i-code {
+  font-size: 90%;
+  color: #999;
+  margin-left: .2em;
+  display: block;
+}
+
+div[title] {
+
+  i {
+    font-size: 1.5em;
+  }
+
+  padding: 1em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+//== Syntax Highlighting
+
+.codify() {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: @gray;
+  font-family: @font-family-monospace;
+  background-color: @docs-code-border-color;
+  border: solid @docs-code-border-color;
+  border-radius: @border-radius-base;
+  padding: 30px 15px 15px;
+  max-height: none !important;
+  position: relative;
+
+  // these two properties undo the fix for <code> blocks in prism.js 1.3
+  // <code> blocks should be surrouned in <pre> blocks for the effect
+  display: block;
+  white-space: pre;
+}
+
+[data-toggle="code"] {
+  font-weight: bold;
+  text-decoration: underline;
+
+  .icon {
+    text-decoration: none;
+  }
+}
+
+code[class*=language] {
+  .codify();
+}
+
+code[class*=language]:before {
+  .code-label("Code");
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+ .codify();
+}
+
+.language-json {
+
+  color: #1990b8 !important;
+
+  .token.boolean {
+    color: #2f9c0a;
+  }
+
+  .token.keys {
+    color: #c92c2c;
+  }
+
+  .token.keyword {
+    color: #a67f59;
+  }
+
+}
+
+// dummy-browser from http://tympanus.net/Development/CheckoutConcepts/
+
+.dummy-browser {
+  position: relative;
+  border-top: 30px solid rgba(181, 183, 188, 0.6);
+  border-bottom: 10px solid rgba(181, 183, 188, 0.6);
+  border-radius: 10px 10px 0 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fdb0ad;
+    box-shadow: 20px 0 0 #fdeaa2, 40px 0 0 #d7edb4;
+  }
+}
+
+.dummy-browser-header {
+  display: block;
+  height: 1em;
+  background: rgba(181, 183, 188, 0.3);
+}
+
+.dummy-browser-body {
+  padding: 2.5em 2em;
+  background: rgba(181, 183, 188, 0.1);
+}
+
+// Layout examples from http://v4-alpha.getbootstrap.com/layout/overview/
+.dummy-page-header {
+  height: 5rem;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  background-color: rgba(0,147,232,.4);
+  border-radius: .25rem;
+  animation-delay: .1s;
+}
+
+.dummy-page-logo {
+  background-image: url(../images/availity-logo-alt.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 3rem;
+  width: 3rem;
+  opacity: 0.7;
+  background-size: cover;
+  animation-delay: .4s;
+  border-radius: 4px;
+}
+
+.dummy-page-sidebar {
+  float: left;
+  width: 30rem;
+  height: 30rem;
+  background-color: rgba(237,86,36,.4);
+  border-radius: .25rem;
+  animation-delay: .2s;
+}
+
+.dummy-page-article-top {
+  height: 15rem;
+  margin-left: 30.5rem;
+  background-color: rgba(2,161,124,.4);
+  border-radius: .25rem;
+  animation-delay: .3s;
+  margin-bottom: .5rem;
+}
+
+.dummy-page-article-bottom {
+  height: 14.5rem;
+  margin-left: 30.5rem;
+  background-color: rgba(2,161,124,.4);
+  border-radius: .25rem;
+  animation-delay: .4s;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: 1s;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}

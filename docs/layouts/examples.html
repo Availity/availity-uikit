@@ -1,0 +1,27 @@
+{% extends 'extends/base.html' %}
+{% block body %}
+<main  class="body">
+  <div class="container">
+
+    <h2 class="docs-section-header">Pages</h2>
+
+      {% for example in collections.examples %}
+      <div class="col-xs-6 col-md-4">
+        <div class="card">
+          <div class="card-block text-center">
+              <span class="app-icon app-icon-lg app-icon-{{example.icon}}">{{example.shortName}}</span>
+              <h3>{{example.title}}</h3>
+              <p>
+                <a class="btn btn-default" href="{{rootPath}}{{example.path}}">View</a>
+              </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+
+  </div>
+  {% include 'partials/footer-text.html' %}
+</main>
+{% endblock %}
+

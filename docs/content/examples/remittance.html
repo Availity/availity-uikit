@@ -1,0 +1,135 @@
+---
+title: Remittance Dashboard
+layout: example-page.html
+shortName: RD
+icon: neon
+---
+<div class="container-fluid">
+  <h2 class="page-header">Remittance Processing</h2>
+  <div class="container-md-height">
+    <div class="row row-md-height">
+      <div class="col-md-4 col-md-height">
+        <div class="card">
+          <div class="card-block">
+            <h1 class="metric-value">9 <small>checks</small></h1>
+            <h3 class="metric-value">$28,228 <small>value</small></h3>
+            <hr class="divider"/>
+            <h5 class="card-title">Download Package</h5>
+            <p>These checks are now ready to package.</p>
+            <button class="btn btn-primary">Create Packages</button>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4 col-md-height">
+          <div class="card">
+            <div class="card-block">
+              <h1 class="metric-value">30 <small>checks</small></h1>
+              <h3 class="metric-value">$119,228 <small>value</small></h3>
+              <hr class="divider"/>
+              <h5 class="card-title">Ready for download</h5>
+              <p>These checks were packaged into files and are ready for download.</p>
+              <button class="btn btn-primary">Download Files</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-height">
+          <div class="card">
+            <div class="card-block">
+              <h1 class="metric-value">61 <small>checks</small></h1>
+              <h3 class="metric-value">$241,228 <small>value</small></h3>
+              <hr class="divider"/>
+              <h5 class="card-title">To Mark as Posted</h5>
+              <p>These checks have been downloaded and are ready to be marked as posted. Some really long sentence to tes the equal card height.</p>
+              <button class="btn btn-primary">Check Details</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-block">
+          <h4 class="card-header-secondary">
+            Top Remit Checks <small>12/04/14</small>
+            <a href="#" class="card-header-link">Change Date</a>
+          </h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Payer</th>
+                <th>Check Amount</th>
+                <th>Dollar Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left">Blue Cross Blue Shield of Indiana</td>
+                <td>4</td>
+                <td>$13,240.67</td>
+              </tr>
+              <tr>
+                <td class="text-left">Aetna</td>
+                <td>3</td>
+                <td>$12,200.34</td>
+              </tr>
+              <tr>
+                <td class="text-left">Cigna</td>
+                <td>1</td>
+                <td>$5,853.21</td>
+              </tr>
+              <tr>
+                <td class="text-left">Medicare Indiana</td>
+                <td>3</td>
+                <td>$2,204.55</td>
+              </tr>
+              <tr>
+                <td class="text-left">United Healthcare</td>
+                <td>1</td>
+                <td>$700.33</td>
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-block">
+        <h4 class="card-header-secondary">
+          Missing Checks
+          <a href="#" class="card-header-link">See All</a>
+        </h4>
+        <table class="table table-striped text-left">
+          <thead>
+            <tr>
+              <th>Ticket Number</th>
+              <th class="status-col">Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">#124456</a></td>
+              <td class="status-col status-col-complete">Remittance Check Located!</td>
+              <td><button type="button" class="close">&times;</button></td>
+            </tr>
+            <tr>
+              <td><a href="#">#123456</a></td>
+              <td class="status-col">Contacted Payer</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="#">#124592</a></td>
+              <td class="status-col">Researching Internally</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="#">#123456</a></td>
+              <td class="status-col">Researching Internally</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

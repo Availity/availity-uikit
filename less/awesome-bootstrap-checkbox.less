@@ -1,0 +1,43 @@
+.checkbox {
+
+  label {
+
+    &:before {
+      top: 2px
+    }
+
+    &:after {
+      top: 2px;
+    }
+  }
+
+
+  input[type="checkbox"],
+  input[type="radio"]{
+
+    &:checked + label::after {
+      font-family: @availity-icon-font;
+      content: @availity-icon-ok;
+    }
+  }
+}
+
+.checkbox-warning {
+  input[type="checkbox"]:checked + label,
+  input[type="radio"]:checked + label {
+    &::after {
+      color: @gray;
+    }
+  }
+}
+
+.radio label {
+
+  &:before {
+    top: 2px;
+  }
+
+  &:after {
+    top: 5px;
+  }
+}

@@ -1,8 +1,9 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 3",
-  "version": "1.2.1",
   "license": "MIT",
+  "version": "2.0.0-beta.7",
+  "homepage": "http://availity.github.io/availity-uikit/",
   "keywords": [
     "availity",
     "css",
@@ -14,37 +15,16 @@
   ],
   "moduleType": "globals",
   "main": [
-    "less/availity-uikit.less",
     "dist/css/availity-uikit.css",
-    "dist/js/availity-uikit.js",
-    "dist/fonts/availity-icon-font.eot",
-    "dist/fonts/availity-icon-font.svg",
-    "dist/fonts/availity-icon-font.ttf",
-    "dist/fonts/availity-icon-font.woff"
+    "dist/js/availity-uikit.js"
   ],
-  "dependencies": {
-    "awesome-bootstrap-checkbox": "~0.3.5",
-    "bootstrap": "3.3.4",
-    "bootstrap-datepicker": "1.4.0",
-    "chartjs": "1.0.2",
-    "ExplorerCanvas": "*",
-    "jquery": ">=1.9.1 <2.0.0",
-    "moment": "~2.10.6",
-    "select2": "3.5.2",
-    "select2-bootstrap-css": "1.4.6",
-    "velocity": "~1.2.3",
-    "yamm3": "1.1.0"
-  },
-  "devDependencies": {
-    "holderjs": "~2.8.1"
-  },
-  "resolutions": {
-    "jquery": "1.11.2",
-    "bootstrap": "~3.3.4"
-  },
   "ignore": [
     "/.*",
+    "dev",
+    "webpack.config.babel.js",
+    "webpack.config.production.babel.js",
     "docs",
+    "gulp",
     "build"
   ]
 }

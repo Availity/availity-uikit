@@ -1,0 +1,196 @@
+---
+title: Authorization Request
+layout: example-page.html
+shortName: FA
+icon: neon
+---
+<div class="container-sm">
+  <h2 class="page-header page-header-brand">
+    <div class="page-header-title">
+      <span class="app-icon app-icon-blue">ar</span> Authorization Request
+    </div>
+    <div class="page-header-logo">
+      <a href="http://www.example.com" class="spaces-logo holderjs"></a>
+    </div>
+  </h2>
+
+  <form class="form">
+    <div class="card">
+      <div class="card-block">
+        <h5 class="card-title-secondary">Basic Information</h5>
+        <div class="form-group">
+          <label for="payer">Payer
+            <span class="inline-help"data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </label>
+          <select class="form-control select2" id="payer">
+            <option value="-1" selected="selected">Select one</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transactionType">Transaction Type</label>
+          <select class="form-control select2" id="transactionType">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="organization">Organization</label>
+          <select class="form-control select2" id="organization">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h5 class="card-title-secondary">Request Information</h5>
+        <div class="form-group">
+          <label for="memberID">
+            Member ID
+            <span class="inline-help"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </label>
+          <input type="text" class="form-control" id="memberID" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="relationshipToSubscriber">
+            Relationship to Subscriber
+            <span class="inline-help"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </label>
+          <select class="form-control select2" id="relationshipToSubscriber">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="datetimepicker7">
+            Date of Birth
+          </label>
+          <input type="text" class="form-control" id="datetimepicker7" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="form-group">
+          <label for="serviceQuantityType">
+            Service Quantity/Type
+          </label>
+          <div class="row">
+            <div class="col-xs-4">
+              <input type="text" id="serviceQuantityType" class="form-control">
+            </div>
+            <div class="col-xs-8">
+              <select class="form-control select2" id="rts">
+                <option>Select one</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h5 class="card-title-secondary">Requesting Provider Information</h3>
+        <div class="form-group">
+          <label>Requesting Provider Type</label>
+          <div class="radio-group-vertical">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              Provider
+            </label>
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Front Office (5 users)
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="requestProvider">
+            Express Entry - Requesting Provider
+            <span class="inline-help"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </label>
+          <select class="form-control select2" id="requestProvider">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="zip">Zipcode (optional)</label>
+          <div class="row">
+            <div class="col-xs-7">
+              <input type="text" class="form-control" id="zip" placeholder="">
+            </div>
+            <div class="col-xs-5">
+              <input type="text" class="form-control" id="zipext" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="card card-inverse card-default card-block">
+
+          <p>
+            <strong>Diagnosis Code(s)</strong>
+            <span class="inline-help"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
+          </p>
+
+          <div class="row">
+            <div class="col-xs-12 col-ms-6 col-sm-6 form-group">
+              <label for="code">Code</label>
+              <input type="text" class="form-control" id="code" placeholder="">
+            </div>
+            <div class="col-xs-12 col-ms-6 col-sm-6 form-group">
+              <label for="datetimepicker8">Date</label>
+              <input type="text" class="form-control" id="datetimepicker8" placeholder="mm/dd/yyyy">
+            </div>
+          </div>
+        </div>
+        <a href="#"><span class="icon icon-plus-circle"></span> Add another code</a>
+      </div>
+    </div>
+    <div class="form-controls">
+      <input type="submit" class="btn btn-default" value="Clear">
+      <input type="submit" class="btn btn-default" value="Add to Batch">
+      <input type="submit" class="btn btn-primary form-controls-right" value="Submit">
+    </div>
+  </form>
+</div>

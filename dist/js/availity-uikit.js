@@ -1,35 +1,86 @@
-/**
- * availity-uikit v1.2.1 -- June-09
- * Copyright 2016 Availity, LLC 
+/*!
+ * 
+ * availity-uikit v2.0.0-beta.12 (11/09/2016)
+ * (c) Availity, LLC
  */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("jQuery"));
+	else if(typeof define === 'function' && define.amd)
+		define("availity-uikit", ["jQuery"], factory);
+	else if(typeof exports === 'object')
+		exports["availity-uikit"] = factory(require("jQuery"));
+	else
+		root["availity-uikit"] = factory(root["jQuery"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_3__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ function(module, exports, __webpack_require__) {
 
-/* global jQuery */
-/**
- * Monkey patch Bootstrap Modal and prevent shifting of a fixed top navbar when the modal
- * window is shown.
- */
-(function($) {
+	'use strict';__webpack_require__(1);__webpack_require__(2);
 
-  'use strict';
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
 
-  var exists = $.fn.modal && $.fn.modal.Constructor;
-  if (!exists) {
-    return;
-  }
+	'use strict';var _jquery=__webpack_require__(3);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var exists=_jquery2.default.fn.modal&&_jquery2.default.fn.modal.Constructor;function override(){var _setScrollBar=_jquery2.default.fn.modal.Constructor.prototype.setScrollbar;_jquery2.default.fn.modal.Constructor.prototype.setScrollbar=function(){_setScrollBar.apply(this);if(this.bodyIsOverflowing){(0,_jquery2.default)('.navbar-fixed-top').css('padding-right',this.scrollbarWidth);}};var _resetScrollbar=_jquery2.default.fn.modal.Constructor.prototype.resetScrollbar;_jquery2.default.fn.modal.Constructor.prototype.resetScrollbar=function(){_resetScrollbar.apply(this);(0,_jquery2.default)('.navbar-fixed-top').css('padding-right','');};}if(exists){override();}
 
-  var _setScrollBar = $.fn.modal.Constructor.prototype.setScrollbar;
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
 
-  $.fn.modal.Constructor.prototype.setScrollbar = function() {
-    _setScrollBar.apply(this);
-    if (this.bodyIsOverflowing) {
-      $('.navbar-fixed-top').css('padding-right', this.scrollbarWidth);
-    }
-  };
+	// removed by extract-text-webpack-plugin
 
-  var _resetScrollbar = $.fn.modal.Constructor.prototype.resetScrollbar;
-  $.fn.modal.Constructor.prototype.resetScrollbar = function() {
-    _resetScrollbar.apply(this);
-    $('.navbar-fixed-top').css('padding-right', '');
-  };
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
 
-})(jQuery);
+	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
+
+/***/ }
+/******/ ])
+});
+;
+//# sourceMappingURL=availity-uikit.js.map

@@ -1,0 +1,42 @@
+---
+title: Breadcrumbs
+description: |
+  Breadcrumbs are links at the top of a page which indicate the relationship
+  of the current page to the larger system page structure. While many
+  browsers include 'Back' functionality to support a similar traversal, this
+  functionality is not reliable as a result of form submissions or 'deep
+  linking' - when users get to a lower-level page directly, without having
+  visited it's parent pages. Breadcrumbs avoid these pitfalls by providing
+  discrete links representing the intended hierarchy.
+usage: |
+  Typically, a breadcrumb should be used when viewing a page which is more
+  than 1 level deep in a page hierarchy, and will then provide links back to
+  each level of the hierarchy above it (e.g. Plants > Vegetables > Carrots).
+  Top level pages (e.g. Plants) do not require breadcrumbs.
+---
+<div class="docs-example">
+  <ul class="breadcrumb">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Spaces</a>
+    </li>
+    <li class="active">
+      My Application
+    </li>
+  </ul>
+</div>
+<code class="language-markup">
+<ul class="breadcrumb">
+  <li>
+    <a href="#">Home</a>
+  </li>
+  <li>
+    <a href="#">Spaces</a>
+  </li>
+  <li class="active">
+    My Application
+  </li>
+</ul>
+</code>

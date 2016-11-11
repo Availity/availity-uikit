@@ -1,0 +1,71 @@
+//
+// Navs
+// --------------------------------------------------
+.nav-tabs, .nav-pills {
+  & > li {
+
+    > a {
+      color: @text-lighter;
+    }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @text-darker;
+      }
+    }
+  }
+}
+
+.nav-pills-secondary {
+
+  &:extend(.nav-pills all);
+
+  > li {
+
+    > a {
+      &:hover {
+        background-color: transparent;
+        border-bottom: 3px solid @blue-darker;
+      }
+    }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: @blue-darker;
+        border-bottom: 3px solid @blue-darker;
+      }
+    }
+
+    &.disabled > a {
+      &:hover,
+      &:focus {
+        border-bottom-color: @disabled-text-color;
+      }
+    }
+  }
+}
+
+.nav-header {
+  border-bottom: 2px solid @page-header-border-color;
+  margin-bottom: 2em;
+
+  & > li {
+    margin-bottom: -2px;
+  }
+}
+
+.tab-pane {
+  & > .panel {
+    margin-bottom: 0;
+  }
+}
+
+.tab-bump {
+  padding: @panel-body-padding;
+}
+

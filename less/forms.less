@@ -1,0 +1,128 @@
+label {
+
+  font-size: @font-size-medium;
+  font-weight: @availity-font-weight-normal;
+  color: @gray-base;
+  cursor: pointer;
+
+  small {
+    font-size: 65%;
+    color: @headings-small-color;
+    font-weight: @availity-font-weight-bold;
+  }
+
+}
+
+legend {
+  border-bottom: none;
+  margin-bottom: 1rem;
+  font-size: @font-size-h3;
+}
+
+fieldset + fieldset {
+  margin-top: @panel-body-padding;
+}
+
+select.form-control {
+  background-color: @gray-lightest;
+}
+
+// Form groups
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-block {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: @well-bg;
+  border: 1px solid @well-border;
+  border-radius: @border-radius-base;
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
+  padding: @panel-body-padding;
+}
+
+.form-controls {
+  padding: 1em @panel-body-padding;
+  .clearfix;
+  > .btn,
+  > .btn-group,
+  > .input-group {
+    margin-left: 5px;
+  }
+
+  > .btn:first {
+    margin-left: 0;
+  }
+
+  > .btn:last {
+    margin-right: 0;
+  }
+
+}
+
+.form-controls-right {
+
+  @media (min-width: @grid-float-breakpoint) {
+    float: right;
+  }
+}
+
+.form-controls-card {
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.has-error {
+  .availity-form-control-validation(@state-danger-text; @state-danger-border; @state-danger-bg);
+}
+
+.has-success {
+  .availity-form-control-validation(@state-success-text; @state-success-border; @state-success-bg);
+}
+
+.has-warning {
+  .availity-form-control-validation(@state-warning-text; @state-warning-border; @state-warning-bg);
+}
+
+// Checkboxes and radios
+
+.radio-group-vertical {
+
+  label {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    padding: 5px;
+    font-size: @font-size-base;
+
+    &:hover {
+     background-color: @gray-lightest;
+    }
+
+  }
+
+  input[type="radio"] {
+    margin-left: 7px;
+    margin-right: .3em;
+  }
+
+  input:checked {
+    background-color: #e8ebeb;
+  }
+}
+
+// http://stackoverflow.com/questions/14007655/remove-ie10s-clear-field-x-button-on-certain-inputs
+input[type=text] {
+  &::-ms-clear {
+    display: none;
+  }
+}
+

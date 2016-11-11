@@ -1,0 +1,56 @@
+---
+title: Popovers
+description: |
+  Popovers are small modular windows, which appear on top of other content.
+  While tooltips provide a small amount of information on hover, popovers
+  provide space for greater amounts of information and should be triggered
+  on click. Because they're triggered by click, and don't rely on mouse
+  position (as they would on hover), popovers may contain links and other
+  small interactive content.
+usage: |
+  Use popovers wherever you want to provide contextual information that goes
+  beyond the scope of a tooltip, or which needs to appear even when a user
+  is not hovered over the content. Popovers can be shown without a user's
+  direct action, such as to highlight a new feature, but should be used
+  sparingly in this manner.
+---
+<div class="docs-example">
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" title="Popover title" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on left
+  </button>
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" title="Popover title" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on top
+  </button>
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on bottom
+  </button>
+  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" title="Popover title" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on right
+  </button>
+</div>
+
+<code class="language-markup">
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on left
+</button>
+
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on bottom
+</button>
+
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on right
+</button>
+
+<!-- Javascript -->
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+</code>

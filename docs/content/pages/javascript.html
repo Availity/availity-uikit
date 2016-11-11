@@ -1,0 +1,13 @@
+---
+title: JavaScript
+layout: components.html
+toc: true
+---
+{% for item in collections.javascript %}
+  <section class="docs-section">
+    <h2 class="docs-section-header">{{item.title}}</h2>
+    <p class="docs-section-description">{{item.description}}</p>
+    {{item.contents | safe }}
+  </section>
+{% endfor %}
+

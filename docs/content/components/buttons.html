@@ -1,0 +1,197 @@
+---
+title: Buttons
+description: |
+  Primary buttons allow for users to take action within the application or
+  site and generally correspond to the main call to action on the page.
+  Secondary or alternate buttons allow for action to be taken by the user,
+  but generally correspond to lower priority actions outside of the main
+  call to action.
+usage: |
+  Use primary buttons when users need to take an action such as submitting
+  a form, or to signify a main call to action where a simple text link will
+  not be clear enough. Use secondary buttons to signify lower priority
+  actions users can take.
+notes: |
+  Wherever possible, limit button groups to only one Primary button, with
+  the rest being secondary buttons. The 'Primary' action should be whatever
+  action is most used by users, and/or the action which Availity feels is
+  most important for a user to see. Generally, secondary buttons should be
+  used for actions that affect the current page, rather than for navigation.
+  For navigating users to a new page, without an action taking place, use a
+  Link. If an action occurs, AND the user goes to a new page as a result
+  (e.g. 'Save and Close'), a button is preferred.
+---
+<h3 class="docs-subsection-title">Options</h3>
+<div class="docs-example">
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-ghost">Ghost</button>
+  <button type="button" class="btn btn-link">Link</button>
+
+</div>
+<code class="language-markup">
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+</code>
+
+<h3 class="docs-subsection-title">Disabled</h3>
+<div class="docs-example">
+  <button type="button" disabled="disabled" class="btn btn-default">Default</button>
+  <button type="button" disabled="disabled" class="btn btn-primary">Primary</button>
+  <button type="button" disabled="disabled" class="btn btn-success">Success</button>
+  <button type="button" disabled="disabled" class="btn btn-info">Info</button>
+  <button type="button" disabled="disabled" class="btn btn-warning">Warning</button>
+  <button type="button" disabled="disabled" class="btn btn-danger">Danger</button>
+  <button type="button" disabled="disabled" class="btn btn-ghost">Ghost</button>
+  <button type="button" disabled="disabled" class="btn btn-link">Link</button>
+</div>
+<code class="language-markup">
+<button type="button" disabled="disabled" class="btn btn-default">Default</button>
+<button type="button" disabled="disabled" class="btn btn-primary">Primary</button>
+<button type="button" disabled="disabled" class="btn btn-success">Success</button>
+<button type="button" disabled="disabled" class="btn btn-info">Info</button>
+<button type="button" disabled="disabled" class="btn btn-warning">Warning</button>
+<button type="button" disabled="disabled" class="btn btn-danger">Danger</button>
+<button type="button" disabled="disabled" class="btn btn-link">Link</button>
+</code>
+
+<h3 class="docs-subsection-title">Large Button</h3>
+<div class="docs-example">
+  <button class="btn btn-primary btn-lg">
+    Large Primary Button
+  </button>
+</div>
+<code class="language-markup">
+<button class="btn btn-primary btn-lg">
+  Large Primary Button
+</button>
+</code>
+
+<h3 class="docs-subsection-title">Primary Button</h3>
+<div class="docs-example">
+  <button type="button" class="btn btn-primary">Primary button</button>
+</div>
+<code class="language-markup">
+  <button type="button" class="btn btn-primary">Primary button</button>
+</code>
+
+<h3 class="docs-subsection-title">Secondary Button</h3>
+<div class="docs-example">
+  <button type="button" class="btn btn-default">Secondary button</button>
+</div>
+<code class="language-markup">
+<button type="button" class="btn btn-default">Secondary button</button>
+</code>
+
+
+<h3 class="docs-subsection-title">Button Group</h3>
+<div class="docs-example">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+</div>
+<code class="language-markup">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+</code>
+
+<h3 class="docs-subsection-title">Combo Button</h3>
+<div class="docs-example">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Action</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <span class="caret"></span>
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+<code class="language-markup">
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Action</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+</code>
+
+<h3 class="docs-subsection-title">File Upload</h3>
+<div class="docs-example">
+  <span class="btn btn-default btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+  <span class="btn btn-primary btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+  <span class="btn btn-success btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+  <span class="btn btn-info btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+  <span class="btn btn-warning btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+  <span class="btn btn-danger btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+  <span class="btn btn-link btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple>
+  </span>
+</div>
+<code class="language-markup">
+<span class="btn btn-default btn-file">
+  <i class="icon icon-plus-circle"></i>
+  <span>Add files...</span>
+  <input type="file" name="files[]" multiple>
+</span>
+
+<span class="btn btn-primary btn-file">...</span>
+<span class="btn btn-success btn-file">...</span>
+<span class="btn btn-info btn-file">...</span>
+<span class="btn btn-warning btn-file">...</span>
+<span class="btn btn-danger btn-file">...</span>
+<span class="btn btn-link btn-file">...</span>
+</code>

@@ -1,0 +1,159 @@
+---
+title: Authorization Response
+layout: example-page.html
+shortName: AR
+icon: green
+---
+<div class="container-sm">
+  <h2 class="page-header page-header-brand">
+    <div class="page-header-title">
+      <span class="app-icon app-icon-black">ar</span> Authorization Results
+    </div>
+    <div class="page-header-logo">
+      <a href="http://www.example.com" class="spaces-logo holderjs"></a>
+    </div>
+  </h2>
+  <div class="card">
+    <div class="card-block">
+      <div class="card-header-secondary">
+        <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1"></span>
+        <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1"></span>
+      </div>
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Certification Number</h5>
+          <p>123456789</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Name</h5>
+          <p data-mock="fullNameReverse:1"></p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Date of Birth</h5>
+          <p>03/03/2010</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Patient Gender</h5>
+          <p>Male</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Status</h5>
+          <p>Modified</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Diagnosis Version</h5>
+          <p>ICD-9</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Request Type</h5>
+          <p>Inpatient Authorization</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Payer</h5>
+          <p>Aetna</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+      <div class="card-block">
+        <h5 class="card-title-secondary">Certification Information</h5>
+        <h5 class="text-label">Certification Number</h5>
+        <p>123456789</p>
+
+        <h5 class="text-label">Status</h5>
+        <p>Modified</p>
+
+        <h5 class="text-label">Message</h5>
+        <p data-mock="sentences:2"></p>
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Provider Information</h5>
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 class="text-label">Requesting Provider</h5>
+          <p data-mock="fullNameReverse:2"></p>
+        </div>
+        <div class="col-sm-3">
+          <h5 class="text-label">Referred-To-Provider</h5>
+          <p>Riviera, Nick</p>
+        </div>
+      </div>
+      <div class="card card-collapsible">
+        <h5 class="card-header">
+          <a class="collapsed card-collapsible-link" data-toggle="collapse" href="#exampleCollapse">
+            View more data
+          </a>
+        </h5>
+        <div id="exampleCollapse" class="collapse" aria-expanded="false">
+          <div class="card-block">
+            <p data-mock="paragraph:3"></p>
+            <p data-mock="paragraph:5"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Service Information</h5>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Service Type/Quantity</h5>
+          <p>3 Days</p>
+          <h5 class="text-label">Admission Type</h5>
+          <p>Elective</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Place of Service</h5>
+          <p>Inpatient Hospital</p>
+          <h5 class="text-label">Type of Service</h5>
+          <p>Cardiac</p>
+        </div>
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Service/Admission Data</h5>
+          <p>12/24/2012</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Additional Services Information</h5>
+      <div class="row">
+        <div class="col-sm-3 col-ms-6">
+          <h5 class="text-label">Procedure Code</h5>
+          <p>49000</p>
+          <h5 class="text-label">Status</h5>
+          <p>No action required</p>
+        </div>
+        <div class="col-sm-4 col-ms-6">
+          <h5 class="text-label">Date of Service</h5>
+          <p>12/24/2012 - 12/24/2012</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h5 class="card-title-secondary">Payer Contact Information</h5>
+      <div class="row">
+        <div class="col-sm-3">
+          <h5 class="text-label">Contact Name</h5>
+          <p>Aetna</p>
+        </div>
+        <div class="col-sm-3">
+          <h5 class="text-label">Phone Number</h5>
+          <p>(800) 955-5682</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
