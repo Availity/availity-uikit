@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v2.0.0-beta.12 (11/09/2016)
+ * availity-uikit v2.0.0 (11/10/2016)
  * (c) Availity, LLC
  */
 @font-face {
@@ -4523,6 +4523,141 @@ tbody.collapse.in {
   overflow-x: hidden;
   overflow-y: auto;
 }
+.favorites-menu,
+.notifications-menu {
+  padding: 0;
+  min-width: 300px;
+}
+.notifications-menu {
+  min-width: 400px;
+}
+.favorites-menu-title {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #02a17c;
+  margin: 0;
+}
+.favorites-menu-body,
+.notifications-menu-body {
+  padding: 15px 5px;
+  margin-bottom: 0;
+}
+.favorites-menu-body .list-group-item,
+.notifications-menu-body .list-group-item {
+  border: none;
+}
+.favorites-menu-body .subheader,
+.notifications-menu-body .subheader {
+  text-transform: uppercase;
+}
+.favorites-menu-body .subheader a,
+.notifications-menu-body .subheader a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #7e8188;
+  text-decoration: none;
+}
+.favorites-menu-body .subheader a:hover,
+.notifications-menu-body .subheader a:hover {
+  color: #363f45;
+}
+@media (min-width: 768px) {
+  .favorites-menu-body .subheader a,
+  .notifications-menu-body .subheader a {
+    float: right;
+  }
+}
+.favorites-menu-body > .list-group-item,
+.notifications-menu-body > .list-group-item {
+  margin-bottom: 0;
+}
+.favorites-menu-body > .list-group-item > .app-icon,
+.notifications-menu-body > .list-group-item > .app-icon {
+  margin-right: .5em;
+}
+.favorites-menu-body p,
+.notifications-menu-body p {
+  font-size: 13px;
+}
+.notifications-menu-body {
+  padding-top: 0;
+}
+.notification-menu-link {
+  font-size: 12px;
+  font-weight: normal;
+  color: #2261b5;
+  text-decoration: none;
+}
+.notification-menu-link:after {
+  font-family: "availity-icon-font";
+  content: '\E84D';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  padding-left: 0.3em;
+  line-height: inherit;
+}
+.notification-menu-link:hover {
+  color: #363f45;
+}
+.notifications-menu-body > .list-group-item {
+  border-bottom: 1px solid #e8ebeb;
+}
+.notifications-menu-body > .list-group-item:last-child {
+  border: none;
+}
+.favorites-menu-footer,
+.notifications-menu-footer {
+  padding: 15px 20px;
+  background-color: #f2f5f5;
+}
+.favorites-menu-footer a,
+.notifications-menu-footer a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #7e8188;
+  text-decoration: none;
+}
+.favorites-menu-footer a:after,
+.notifications-menu-footer a:after {
+  font-family: "availity-icon-font";
+  content: '\E84D';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  padding-left: 0.3em;
+  line-height: inherit;
+}
+.favorites-menu-footer a:hover,
+.notifications-menu-footer a:hover {
+  color: #363f45;
+}
+.notifications-menu-header {
+  font-weight: 500;
+  background-color: #e8ebeb;
+  border-bottom: 1px solid #cccccc;
+}
+.notifications-menu-header > li > [data-toggle="tab"] {
+  cursor: pointer;
+}
+.notifications-menu-count {
+  color: #7e8188;
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -6495,7 +6630,9 @@ a.badge:focus {
   display: block;
   height: 0;
 }
-.list-group {
+.list-group,
+.favorites-menu-body,
+.notifications-menu-body {
   margin-bottom: 20px;
   padding-left: 0;
 }
