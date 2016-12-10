@@ -2,6 +2,9 @@
 
 > Availity UI Kit powered by [Bootstrap 3](http://getbootstrap.com/) and sprinkles of [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with overrides to match our style guidelines.
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&label=license)](http://opensource.org/licenses/MIT)
+[![NPM](http://img.shields.io/npm/v/availity-uikit.svg?style=flat-square&label=npm)](https://npmjs.org/package/availity-uikit)
+
 ## Table of Contents
 * [Demo](#demo)
 * [Supported Browsers](#supported-browsers)
@@ -31,19 +34,12 @@
 
 ## Quickstart
 
-+ Install with Bower
-
-```bash
-$ bower install availity-uikit --save
-```
-
 + Install with npm
 
 ```bash
 $ npm install availity-uikit --save
 ```
 
-+ Reference the compiled assets from the `/dist` in `index.html` 
 + If you use a module bundler like Webpack:
 
 ```js
@@ -64,14 +60,8 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 #### CLI
 
 + `npm start` 
-    * runs webpack dev server on `http://localhost:3000`
+    * runs webpack dev server on `http://localhost:9100`
     * watches library and docs changes and automatically compiles the assets into `./build`
-+ `npm run release`
-    * prompts for version to tag the release
-    * runs linter
-    * clean `/dist`
-    * runs the webpack build task with `NODE_ENV=production`
-    * commits (generated files) and tags (version) the git repository
 + `npm run build`
     * cleans `/dist`
     * runs the webpack module bundler
