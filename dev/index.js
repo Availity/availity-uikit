@@ -6,7 +6,6 @@ const chalk = require('chalk');
 
 const lint = require('./lint');
 const start = require('./start');
-const release = require('./release');
 const docs = require('./docs');
 const build = require('./build');
 
@@ -15,7 +14,6 @@ yargs
 
   .command('start', `${chalk.dim('Start the development server')}`, () => { start() })
   .command('lint', `${chalk.dim('Lint you source files using ESLint')}`, () => { lint() })
-  .command('release', `${chalk.dim('Create UMD compatible production bundle and tag version in git')}`, () => { release() })
   .command('docs', `${chalk.dim('Builds documentation examples')}`, () => { docs() })
   .command('build', `${chalk.dim('Builds UMD and NPM versions of the library')}`, () => { build() })
 

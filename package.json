@@ -5,7 +5,7 @@
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
     "node": ">= 5.0.0",
-    "npm": "^3.0.0"
+    "npm": ">= 4.0.0"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development node cli.js start",
@@ -16,7 +16,8 @@
     "docs": "npm run docs:publish",
     "docs:pages": "cross-env NODE_ENV=development node cli.js docs",
     "docs:publish": "npm run clean && npm run docs:pages && gh-pages -d build",
-    "prepublish": "in-publish && npm run build || true",
+    "preversion": "npm run lint",
+    "prepublishOnly": "npm run build",
     "release": "node cli.js release",
     "lint": "node cli.js lint"
   },
@@ -94,7 +95,6 @@
     "globby": "6.1.0",
     "he": "1.1.0",
     "holderjs": "2.9.4",
-    "in-publish": "2.0.0",
     "inquirer": "1.2.2",
     "jquery": "^2.0.0",
     "less": "2.7.1",
