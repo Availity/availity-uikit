@@ -144,7 +144,7 @@
   "dependencies": {
     "select2": "git+https://github.com/select2/select2.git#3.5.4",
     "awesome-bootstrap-checkbox": "0.3.7",
-    "bootstrap": "^4.0.0-alpha.5",
+    "bootstrap": "4.0.0-alpha.5",
     "expose-loader": "^0.7.1",
     "select2-bootstrap-css": "1.4.6",
     "tether": "^1.3.3"
