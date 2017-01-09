@@ -16,7 +16,7 @@ notes: |
 
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
@@ -25,7 +25,7 @@ notes: |
 </div>
 <code class="language-markup">
 <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand-availity" href="#">
       <div class="navbar-logo-availity"></div>
     </a>
@@ -44,17 +44,17 @@ notes: |
 
 <h3 class="docs-subsection-title">Forms in navbar</h3>
 <div class="docs-example">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
-        &#9776;
+  <nav class="navbar navbar-default navbar-toggleable-sm" role="navigation">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
 
-      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-10">
-        <ul class="nav navbar-nav pull-md-left">
+      <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-10">
+        <ul class="nav navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
           <li class="nav-item dropdown">
@@ -70,7 +70,7 @@ notes: |
             </ul>
           </li>
         </ul>
-        <form class="navbar-form pull-md-left" role="search">
+        <form class="navbar-form form-inline mr-auto" role="search">
           <div class="form-search">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search">
@@ -80,7 +80,7 @@ notes: |
             </div>
           </div>
         </form>
-        <ul class="nav navbar-nav pull-md-right">
+        <ul class="nav navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
               <i class="icon icon-help-circle"></i> Help
@@ -110,17 +110,17 @@ notes: |
   </nav>
 </div>
 <code class="language-markup">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
-        &#9776;
+  <nav class="navbar navbar-default navbar-toggleable-sm" role="navigation">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-10">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
 
-      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-10">
-        <ul class="nav navbar-nav pull-md-left">
+      <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-10-2">
+        <ul class="nav navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
           <li class="nav-item dropdown">
@@ -136,7 +136,7 @@ notes: |
             </ul>
           </li>
         </ul>
-        <form class="navbar-form pull-md-left" role="search">
+        <form class="navbar-form form-inline mr-auto" role="search">
           <div class="form-search">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search">
@@ -146,7 +146,7 @@ notes: |
             </div>
           </div>
         </form>
-        <ul class="nav navbar-nav pull-md-right">
+        <ul class="nav navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
               <i class="icon icon-help-circle"></i> Help
@@ -180,20 +180,22 @@ notes: |
 <h3 class="docs-subsection-title">Secondary Navbar</h3>
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
     </div>
   </nav>
-  <nav class="navbar navbar-default navbar-secondary" role="navigation">
-    <div class="container-fluid">
-      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
-        &#9776;
-      </button>
+  <nav class="navbar navbar-default navbar-toggleable-sm navbar-secondary" role="navigation">
+    <div class="container">
+      <div class="clearfix">
+        <button class="navbar-toggler float-right mr-3" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-2">
-        <ul class="nav navbar-nav">
+      <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
+        <ul class="nav navbar-nav mr-auto">
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Claims Management</a>
             <ul class="dropdown-menu" role="menu">
@@ -271,20 +273,22 @@ notes: |
 </div>
 <code class="language-markup">
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand-availity" href="#">
         <div class="navbar-logo-availity"></div>
       </a>
     </div>
   </nav>
-  <nav class="navbar navbar-default navbar-secondary" role="navigation">
-    <div class="container-fluid">
-      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
-        &#9776;
-      </button>
+  <nav class="navbar navbar-default navbar-toggleable-sm navbar-secondary" role="navigation">
+    <div class="container">
+      <div class="clearfix">
+        <button class="navbar-toggler float-right mr-3" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-      <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-2">
-        <ul class="nav navbar-nav">
+      <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">
+        <ul class="nav navbar-nav mr-auto">
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Claims Management</a>
             <ul class="dropdown-menu" role="menu">
@@ -363,21 +367,21 @@ notes: |
 
 <h3 class="docs-subsection-title">Navbar Notifications</h3>
 <div class="docs-example">
-<nav class="navbar mega-menu navbar-default" role="navigation">
-  <div class="container-fluid">
-    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
-      &#9776;
-    </button>
-    <a class="navbar-brand-availity" href="#">
-      <div class="navbar-logo-availity"></div>
-    </a>
+  <nav class="navbar navbar-default navbar-toggleable-sm mega-menu" role="navigation">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand-availity" href="#">
+        <div class="navbar-logo-availity"></div>
+      </a>
 
-    <div class="collapse navbar-toggleable-sm" id="availity-example-navbar-collapse-4">
-      <ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-4">
+      <ul class="nav navbar-nav mr-auto">
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle-notifications" data-toggle="dropdown">
             <i class="icon icon-bell-alt navbar-default-icon"></i> Notifications
-            <span class="tag tag-pill tag-success">3</span>
+            <span class="badge badge-pill badge-success">3</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
             <li>
@@ -456,8 +460,8 @@ notes: |
 <code class="language-markup">
 
 <nav class="navbar mega-menu navbar-default" role="navigation">
-  <div class="container-fluid">
-    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
+  <div class="container">
+    <button class="navbar-toggler hidden-md-up float-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
       &#9776;
     </button>
     <a class="navbar-brand-availity" href="#">

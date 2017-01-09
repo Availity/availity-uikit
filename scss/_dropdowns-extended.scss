@@ -74,6 +74,10 @@
   > li > [data-toggle="tab"] {
     cursor: pointer;
   }
+  @include media-breakpoint-down(sm) {
+    // Dropdowns get custom display when collapsed
+    flex-direction: column;
+  }
 }
 
 .notifications-menu-count {

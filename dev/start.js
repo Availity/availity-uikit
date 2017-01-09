@@ -28,7 +28,7 @@ function serv() {
     });
 
     server.listen(process.env.PORT || 3000, () => {
-      Logger.ok('Finished webpack development server');
+      Logger.ok('Finished webpack development server on port ' + (process.env.PORT || 3000));
       resolve();
     });
 

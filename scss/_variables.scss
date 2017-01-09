@@ -213,7 +213,7 @@ $font-family-base:           $font-family-sans-serif;
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             14px;
 
-$font-size-base:             1rem;
+$font-size-base:             $font-size-root;
 $font-size-lg:               1.25rem;
 $font-size-md:               1.15rem;
 $font-size-sm:               .875rem;
@@ -257,7 +257,7 @@ $blockquote-small-color:      $gray-light !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
 $blockquote-border-color:     $gray-lighter !default;
 
-$hr-border-color:             rgba(0,0,0,.1) !default;
+$hr-border-color:             $gray-lighter;
 $hr-border-width:             $border-width !default;
 
 $dt-font-weight:              bold !default;
@@ -514,12 +514,12 @@ $availity-notifications-menu-bg: $gray-lighter !default;
 //$zindex-dropdown:          1000 !default;
 //$zindex-popover:           1060 !default;
 //$zindex-tooltip:           1070 !default;
-//$zindex-navbar-fixed:      1030 !default;
-//$zindex-navbar-sticky:     1030 !default;
+//$zindex-fixed:             1030 !default;
+//$zindex-sticky:            1030 !default;
 //$zindex-modal-bg:          1040 !default;
 //$zindex-modal:             1050 !default;
 $availity-zindex-secondary: ($zindex-navbar - 10) !default;
-$availity-zindex-secondary-fixed: ($zindex-navbar-fixed - 10) !default;
+$availity-zindex-secondary-fixed: ($zindex-fixed - 10) !default;
 
 
 // Navbar
@@ -535,7 +535,7 @@ $navbar-dark-hover-color:                   $white;
 $navbar-dark-active-color:                  $navbar-dark-hover-color;
 $navbar-dark-disabled-color:                rgba(255,255,255,.25) !default;
 
-$navbar-default-color:                      lighten($gray-light, 15%);
+$navbar-default-color:                      $white;
 $navbar-default-bg:                         $gray-darker;
 $navbar-default-border:                     $text-darker;
 
@@ -553,8 +553,9 @@ $navbar-default-brand-hover-color:          $white;
 $navbar-default-brand-hover-bg:             transparent;
 
 $navbar-default-toggle-hover-bg:            $black;
-$navbar-default-toggle-icon-bar-bg:         $white;
-$navbar-default-toggle-border-color:        $black;
+$navbar-default-toggle-icon-color:          $white;
+$navbar-default-toggler-bg:                 str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-default-toggle-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-default-toggler-border:             rgba($white,.1) !default;
 
 
 $navbar-light-color:                rgba(0,0,0,.3) !default;

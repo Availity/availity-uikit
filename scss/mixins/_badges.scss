@@ -1,4 +1,4 @@
-@mixin badge-variant($bgColor, $color: $white) {
+@mixin av-badge-variant($bgColor, $color: $white) {
   background-color: $bgColor;
   color: $color;
 

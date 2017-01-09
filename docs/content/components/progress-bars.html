@@ -15,54 +15,40 @@ notes: |
 ---
 <div class="docs-example">
   <p>0% Complete</p>
-  <progress class="progress" value="0" max="100">
     <div class="progress">
       <span class="progress-bar" style="width: 0%;"></span>
     </div>
-  </progress>
 
   <p>80% Complete</p>
-  <progress class="progress" value="80" max="100">
     <div class="progress">
       <span class="progress-bar" style="width: 80%;"></span>
     </div>
-  </progress>
 
   <p>100% Complete</p>
-  <progress class="progress progress-complete" value="100" max="100">
     <div class="progress progress-complete">
       <span class="progress-bar" style="width: 100%;"></span>
     </div>
-  </progress>
 
   <p>Processing</p>
-  <div class="progress progress-animated">
-    <span class="progress-bar progress-bar-striped" style="width: 50%;"></span>
+  <div class="progress">
+    <span class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;"></span>
   </div>
 
 </div>
 <code class="language-markup">
-<progress class="progress" value="0" max="100">
-  <div class="progress">
-    <span class="progress-bar" role="progressbar" style="width: 0%;"></span>
-  </div>
-</progress>
+<div class="progress">
+  <span class="progress-bar" role="progressbar" style="width: 0%;"></span>
+</div>
 
-<progress class="progress" value="80" max="100">
-  <div class="progress">
-    <span class="progress-bar" style="width: 80%;"></span>
-  </div>
-</progress>
+<div class="progress">
+  <span class="progress-bar" style="width: 80%;"></span>
+</div>
 
-<progress class="progress progress-complete" value="100" max="100">
-  <div class="progress progress-complete">
-    <span class="progress-bar" style="width: 100%;"></span>
-  </div>
-</progress>
+<div class="progress progress-complete">
+  <span class="progress-bar" style="width: 100%;"></span>
+</div>
 
-<progress class="progress progress-striped progress-animated" value="50" max="100">
-  <div class="progress progress-animated">
-    <span class="progress-bar progress-bar-striped" style="width: 50%;"></span>
-  </div>
-</progress>
+<div class="progress">
+  <span class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;"></span>
+</div>
 </code>

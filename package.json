@@ -1,7 +1,7 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 4",
-  "version": "3.0.0-beta.3",
+  "version": "3.0.0-beta.4",
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
     "node": ">= 5.0.0",
@@ -122,6 +122,8 @@
     "raw-loader": "0.5.1",
     "require-dir": "^0.3.0",
     "sass-loader": "^4.0.0",
+    "select2": "git+https://github.com/select2/select2.git#3.5.4",
+    "select2-bootstrap-css": "1.4.6",
     "semver": "5.2.0",
     "shelljs": "0.7.0",
     "slug": "0.9.1",
@@ -142,11 +144,9 @@
     "web"
   ],
   "dependencies": {
-    "select2": "git+https://github.com/select2/select2.git#3.5.4",
     "awesome-bootstrap-checkbox": "0.3.7",
-    "bootstrap": "4.0.0-alpha.5",
+    "bootstrap": "4.0.0-alpha.6",
     "expose-loader": "^0.7.1",
-    "select2-bootstrap-css": "1.4.6",
     "tether": "^1.3.3"
   }
 }

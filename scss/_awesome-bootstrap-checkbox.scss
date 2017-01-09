@@ -3,11 +3,11 @@
   label {
 
     &::before {
-      top: 2px
+      top: 4px
     }
 
     &::after {
-      top: 3px;
+      top: 5px;
     }
   }
 
@@ -34,10 +34,10 @@
 .radio label {
 
   &::before {
-    top: 2px;
+    top: 4px;
   }
 
   &::after {
-    top: 5px;
+    top: 7px;
   }
 }

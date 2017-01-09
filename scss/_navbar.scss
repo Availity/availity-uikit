@@ -18,18 +18,32 @@
 }
 
 .navbar-logo-availity {
-  background-image: image-url('../images/logo-availity.png');
+  background-image: url('../images/logo-availity.png');
   background-repeat: no-repeat;
   width: 85px;
   height: 27px;
 }
 
 .navbar-default {
-  @extend .navbar-dark;
+  @extend .navbar-inverse;
   background-color: $navbar-default-bg;
   border-bottom: 1px solid $navbar-default-border;
+  padding: 0;
+  .container{
+    width: 100%;
+  }
+  .navbar-text {
+    color: $navbar-default-color;
+  }
+  .navbar-nav .nav-link {
+    color: $navbar-default-link-color;
 
-  .open > .nav-link {
+    &:hover{
+      color: $navbar-default-link-hover-color;
+    }
+  }
+
+  .show > .nav-link {
     &,
     &:hover,
     &:focus {
@@ -38,41 +52,30 @@
     }
   }
   .navbar-toggler {
-    border-color: #000000;
-    color: $white;
+    border-color: $navbar-default-toggler-border;
+    color: $navbar-default-toggle-icon-color;
     margin: 6px 0;
+    border-radius: 0;
+    .navbar-toggler-icon {
+      background-image: $navbar-default-toggler-bg;
+    }
   }
   .navbar-toggler:hover,
   .navbar-toggler:focus {
-    background-color: #000000;
+    background-color: $navbar-default-toggle-hover-bg;
     outline: 0;
   }
-  .navbar-form {
+
+  .nav-btn {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .navbar-form,
+  .navbar-collapse {
     border-color: #30383f;
   }
 
-}
-
-.navbar-form,
-.nav-btn {
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.navbar-form{
-  padding-left: 1.4em;
-  padding-right: 1.4em;
-  .input-group{
-    display: inline-table;
-    vertical-align: middle;
-    .input-group-btn{
-      width: auto;
-    }
-  }
-  .form-control{
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
 
 .navbar-default-icon {
@@ -142,7 +145,7 @@
     }
   }
 
-  > .open > .dropdown-toggle {
+  > .show > .dropdown-toggle {
     &:hover,
     &:focus {
       &::after {
@@ -151,13 +154,18 @@
     }
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     // Dropdowns get custom display when collapsed
-    .open .mega-menu-default {
+    .show .mega-menu-default {
       background-color: $white;
     }
   }
 
+}
+
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .navbar-text {
@@ -166,20 +174,18 @@
   padding: 1em;
   color: $navbar-dark-hover-color;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     float: left;
     margin-left: $availity-navbar-padding-vertical;
     margin-right: $availity-navbar-padding-vertical;
   }
 }
 
-.navbar-default .navbar-toggleable-sm {
+.navbar-default.navbar-toggleable-sm {
   @include media-breakpoint-down(sm) {
     clear: both;
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    margin-left: -($grid-gutter-width-base / 2);
-    margin-right: -($grid-gutter-width-base / 2);
 
     .navbar-nav .nav-item{
       float: none;
@@ -197,7 +203,7 @@
       width: 1%;
     }
 
-    .navbar-nav .open .dropdown-menu {
+    .navbar-nav .show .dropdown-menu {
       position: static;
       float: none;
       width: auto;
@@ -205,6 +211,10 @@
       background-color: transparent;
       border: 0;
       box-shadow: none;
+
+      &.mega-menu-default {
+        background-color: $white;
+      }
     }
     .dropdown-item{
       color: $navbar-default-link-color;

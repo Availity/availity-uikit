@@ -40,7 +40,7 @@
 .mega-menu-sm {
   min-width: 300px;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     max-width: 400px;
   }
 }
@@ -48,7 +48,7 @@
 .mega-menu-md {
   min-width: 300px;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     max-width: 550px;
   }
 
@@ -67,7 +67,7 @@
   padding: 0;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .mega-menu-default {
     background-color: $white;
   }
