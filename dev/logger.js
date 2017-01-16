@@ -40,7 +40,7 @@ class Logger {
 
     const color = _color || defaultColor;
 
-    console.log(`[${ chalk.cyan(now) }] ${ chalk[color](entry) }` );
+    console.log(`[${chalk.cyan(now)}] ${chalk[color](entry)}`);
 
   }
 

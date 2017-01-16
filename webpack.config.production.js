@@ -4,17 +4,12 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
-const nconf = require('nconf');
-nconf.use('memory').defaults({
-  'optimize': true
-});
-
 const banner = require('./dev/banner');
 const VERSION = require('./package.json').version;
 
-function getConfig() {
+function getConfig(options) {
 
-  const optimize = nconf.get('optimize');
+  const optimize = options.optimize || false;
   const minimize = optimize ? 'minimize' : '-minimize';
   const cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!sass`;
 
@@ -102,7 +97,7 @@ function getConfig() {
     },
 
     postcss() {
-      return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
+      return [autoprefixer({ browsers: ['last 2 versions', 'ie >= 10'] })];
     },
 
     plugins: [

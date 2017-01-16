@@ -11,7 +11,7 @@ $('[data-toggle="popover"]').popover({
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$('.docs-example').each(function() {
+$('.docs-example').each(function () {
 
   const btn = `
     <hr class="divider-lg"/>
@@ -25,7 +25,7 @@ $('.docs-example').each(function() {
 
 });
 
-$('[data-toggle="code"]').click(function(e) {
+$('[data-toggle="code"]').click(function (e) {
 
   e.preventDefault();
 
@@ -54,7 +54,7 @@ $('[data-toggle="filter"]').popover({
   }
 });
 
-$('.dropdown-menu a[data-toggle="tab"]').click(function(e) {
+$('.dropdown-menu a[data-toggle="tab"]').click(function (e) {
   e.stopPropagation();
   $(this).tab('show');
 });
@@ -69,10 +69,10 @@ $('#datetimepicker6').datepicker({
 
 // Select2
 
-$('#single-select, #multiple-select').select2({
+$('#single, #select-multiple').select2({
   placeholder: 'Select a State',
   allowClear: true
-}).on('select2-open', function() {
+}).on('select2-open', function () {
 
   const $this = $(this);
   if ($this.parents('[class*="has-"]').length) {
@@ -105,53 +105,69 @@ setInterval(() => {
 }, 2000);
 
 const data = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['January', 'February', 'March'],
   datasets: [
     {
-      label: 'My First dataset',
-      backgroundColor: 'rgba(0,154,87,0.5)',
-      borderColor: 'rgba(0,154,87,0.8)',
-      borderWidth: 2,
-      hoverBackgroundColor: 'rgba(0,154,87,0.75)',
-      hoverBorderColor: 'rgba(0,154,87,1)',
-      hoverBrderWidth: 2,
-      data: [65, 59, 80, 81, 56, 55, 40]
+      label: 'First',
+      backgroundColor: [
+        'rgba(0,147,232,0.5)',
+        'rgba(0,147,232,0.5)',
+        'rgba(0,147,232,0.5)'
+      ],
+      borderColor: [
+        'rgba(0,147,232,0.8)',
+        'rgba(0,147,232,0.8)',
+        'rgba(0,147,232,0.8)'
+      ],
+      borderWidth: 1,
+      data: [65, 70, 80]
     },
     {
-      label: 'My Second dataset',
-      backgroundColor: 'rgba(0,147,232,0.5)',
-      borderColor: 'rgba(0,147,232,0.8)',
-      borderWidth: 2,
-      hoverBackgroundColor: 'rgba(0,147,232,0.75)',
-      hoverBorderColor: 'rgba(0,147,232,1)',
-      hoverBrderWidth: 2,
-      data: [28, 48, 40, 19, 86, 27, 90]
+      label: 'Second',
+      backgroundColor: [
+        'rgba(0,154,87,0.5)',
+        'rgba(0,154,87,0.5)',
+        'rgba(0,154,87,0.5)'
+      ],
+      borderColor: [
+        'rgba(0,154,87,0.8)',
+        'rgba(0,154,87,0.8)',
+        'rgba(0,154,87,0.8)'
+      ],
+      borderWidth: 1,
+      data: [85, 80, 75]
     },
     {
-      label: 'My Third dataset',
-      backgroundColor: 'rgba(212,208,8,0.5)',
-      borderColor: 'rgba(212,208,8,0.8)',
-      borderWidth: 2,
-      hoverBackgroundColor: 'rgba(212,208,8,0.75)',
-      hoverBorderColor: 'rgba(212,208,8,1)',
-      hoverBrderWidth: 2,
-      data: [18, 98, 19, 55, 20, 34, 70]
+      label: 'Third',
+      backgroundColor: [
+        'rgba(212,208,8,0.5)',
+        'rgba(212,208,8,0.5)',
+        'rgba(212,208,8,0.5)'
+      ],
+      borderColor: [
+        'rgba(212,208,8,0.8)',
+        'rgba(212,208,8,0.8)',
+        'rgba(212,208,8,0.8)'
+      ],
+      borderWidth: 1,
+      data: [74, 88, 64]
     }
   ]
 };
 
 const $chart1 = $('#guideChart1');
-if ($chart1.length) {
-  /* eslint new-cap: 0 */
-  new Chart($chart1, {type: 'bar', data, options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    tooltips: {
-      mode: 'label',
-      caretSize: 0,
-    },
-    legend: {
-      display: false,
-    },
-  }});
+if ($chart1[0]) {
+
+  const ctx = $chart1[0].getContext('2d');
+
+  /* eslint no-new: 0 */
+  new Chart(ctx, {
+    type: 'bar',
+    data,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+
 }

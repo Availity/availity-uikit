@@ -32,13 +32,16 @@ const markedOptions = {
 nunjucksDate
   .setDefaultFormat('YYYY');
 
-const env = nunjucks.configure('docs/layouts', {watch: false, noCache: true});
+const env = nunjucks.configure('docs/layouts', {
+  watch: false,
+  noCache: true
+});
 env.addFilter('year', nunjucksDate);
 env.addFilter('slug', slug.slugify);
 
 function build() {
 
-  Logger.info('Started metalsmith');
+  Logger.info('Started docs');
 
   return new Promise((resolve, reject) => {
 
@@ -52,7 +55,7 @@ function build() {
         today: new Date(),
         pkg
       })
-      .ignore('**/.DS_Store')
+      .ignore(['!**/*.html', 'node_modules', '_book', 'dev', 'dist', 'less', 'reports'])
       .source(path.join(process.cwd(), 'docs', 'content'))
       .use(markdown(markedOptions))
       .use(dataMarkdown({
@@ -93,7 +96,7 @@ function build() {
         engine: 'nunjucks',
         partials: 'layouts/partials'
       }))
-      .use(tocify({selector: '.docs-section-header, .docs-subsection-title'}))
+      .use(tocify({ selector: '.docs-section-header, .docs-subsection-title' }))
       .use(layouts({
         engine: 'nunjucks',
         directory: 'layouts'
@@ -101,12 +104,12 @@ function build() {
       .use(filter(['index.html', 'pages/**/*.html', 'examples/**/*.html']))
       .destination(path.join(process.cwd(), 'build'));
 
-    metalsmith.build( (err) => {
+    metalsmith.build((err) => {
 
       if (err) {
         reject(err);
       } else {
-        Logger.ok('Finished metalsmith');
+        Logger.ok('Finished docs');
         resolve();
       }
 

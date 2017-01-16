@@ -73,7 +73,10 @@ function slugify($el) {
 
     id = slugId;
     $el.attr('id', id); // add ID to dom if missing
+
   }
+
+  $el.wrap(`<a class="docs-headings-anchor" href="#${id}"></a>`);
 
   return id;
 
@@ -161,7 +164,7 @@ function plugin(_options) {
       const contents = file.contents.toString();
       const $ = cheerio.load(contents);
 
-      const selector = file.tocifySelector || options.selector || 'h3, h4';
+      const selector = file.tocifySelector || options.selector || 'h2, h3, h4';
       const $headers = $(selector);
 
       const toc = buildToc($, $headers);

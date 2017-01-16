@@ -1,12 +1,11 @@
 ---
 title: Select2
 ---
-
 <h3 class="docs-subsection-title">Single Select</h3>
 <div class="docs-example">
-    <div class="form-group">
-        <label for="single" class="control-label">State</label>
-        <select id="single" class="form-control select2">
+  <div class="form-group">
+    <label for="single" class="control-label">State</label>
+    <select id="single" class="form-control select2">
             <optgroup label="Alaskan/Hawaiian Time Zone">
                 <option value="AK">Alaska</option>
                 <option value="HI">Hawaii</option>
@@ -68,7 +67,7 @@ title: Select2
                 <option value="WV">West Virginia</option>
             </optgroup>
         </select>
-    </div>
+  </div>
 </div>
 <code class="language-markup">
 <div class="form-group">
@@ -84,50 +83,50 @@ title: Select2
 
 <!-- Javascript -->
 <script type="text/javascript">
-import $ from 'jquery';
+  import $ from 'jquery';
 
-$('select').select2({
-  placeholder: 'Select a State',
-  allowClear: true
-});
+  $('select').select2({
+    placeholder: 'Select a State',
+    allowClear: true
+  });
 </script>
 </code>
 
 <h3 class="docs-subsection-title">Multiple Select</h3>
 <div class="docs-example">
-    <div class="form-group">
-        <label for="multiple-select" class="control-label">States</label>
-        <select id="multiple-select" class="form-control select2-multiple"" multiple>
-            <optgroup label="Alaskan/Hawaiian Time Zone">
-                <option value="AK">Alaska</option>
-                <option value="HI">Hawaii</option>
+  <div class="form-group">
+    <label for="select-multiple" class="control-label">States</label>
+    <select id="select-multiple" class="form-control select2-multiple" " multiple>
+            <optgroup label="Alaskan/Hawaiian Time Zone ">
+                <option value="AK ">Alaska</option>
+                <option value="HI ">Hawaii</option>
             </optgroup>
-            <optgroup label="Pacific Time Zone">
-                <option value="CA">California</option>
-                <option value="NV">Nevada</option>
-                <option value="OR">Oregon</option>
-                <option value="WA">Washington</option>
+            <optgroup label="Pacific Time Zone ">
+                <option value="CA ">California</option>
+                <option value="NV ">Nevada</option>
+                <option value="OR ">Oregon</option>
+                <option value="WA ">Washington</option>
             </optgroup>
         </select>
     </div>
 </div>
 <code class="language-markup">
-<div class="form-group">
-  <label for="multiple" class="control-label">States</label>
-  <select id="multiple" class="form-control select2-multiple"" multiple>
+<div class="form-group ">
+  <label for="multiple " class="control-label ">States</label>
+  <select id="multiple " class="form-control select2-multiple "" multiple>
     <optgroup label="Alaskan/Hawaiian Time Zone">
       <option value="AK">Alaska</option>
       <option value="HI">Hawaii</option>
     </optgroup>
-  </select>
-</div>
+    </select>
+  </div>
 
-<!-- Javascript -->
-<script type="text/javascript">
-import $ from 'jquery';
+  <!-- Javascript -->
+  <script type="text/javascript">
+  import $ from 'jquery';
 
-$('select').select2({
-  placeholder: "Select a State"
-});
+  $('select').select2({
+    placeholder: "Select a State"
+  });
 </script>
 </code>

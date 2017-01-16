@@ -18,17 +18,18 @@ usage: |
 
 <!-- Javascript -->
 <script>
-
-// IE8
-//
-// var el = document.getElementById("myChart");
-// G_vmlCanvasManager.initElement(el);
-// var ctx = el.getContext('2d');
-
-var ctx = document.getElementById("guideChart1").getContext("2d");
-var myBarChart = new Chart(ctx).Bar(data, {
-  responsive : true
-});
-
+  const $chart1 = $('#guideChart1');
+  if ($chart1[0]) {
+    const ctx = $chart1[0].getContext('2d');
+    /* eslint no-new: 0 */
+    new Chart(ctx, {
+      type: 'bar',
+      data,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+  }
 </script>
 </code>

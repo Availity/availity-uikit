@@ -1,14 +1,14 @@
 <nav>
   {% for page in pages %}
     {% if title == page.title %}
-      <ol class="nav docs-nav">
+      <ol class="nav docs-nav flex-column">
         {% for heading in page.toc %}
           <li>
             <a href="#{{ heading.id }}" title="{{ heading.text }}">{{ heading.text }}</a>
             {% for subHeading in heading.children %}
 
               {% if loop.first %}
-              <ol class="nav docs-nav">
+              <ol class="nav docs-nav flex-column">
               {% endif %}
 
                 <li><a href="#{{ subHeading.id }}" title="{{ subHeading.text }}">{{ subHeading.text }}</a></li>

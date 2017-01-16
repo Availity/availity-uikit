@@ -1,64 +1,64 @@
-.card-default,
-.card-secondary {
-  background-color: $gray-lighter;
-  border-color: #d5dada;
-}
+// .card-default,
+// .card-secondary {
+//   background-color: $gray-lighter;
+//   border-color: #d5dada;
+// }
 
-.card-outline-default{
-  @extend .card-outline-secondary;
-}
+// .card-outline-default{
+//   @extend .card-outline-secondary;
+// }
 
-.card {
-  blockquote footer,
-  blockquote small,
-  blockquote .small {
-    color: inherit;
-  }
-}
+// .card {
+//   blockquote footer,
+//   blockquote small,
+//   blockquote .small {
+//     color: inherit;
+//   }
+// }
 
-.card-inverse .card-link {
-  border-bottom: 1px dotted;
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid;
-  }
-}
+// .card-inverse .card-link {
+//   border-bottom: 1px dotted;
+//   &:hover,
+//   &:focus {
+//     border-bottom: 1px solid;
+//   }
+// }
 
-.card-warning,
-.card-default,
-.card-secondary {
-  .card-link,
-  .card-text,
-  .card-blockquote > footer {
-    color: rgba(0, 0, 0, 0.65);
-  }
-  .card-link{
-    border-bottom: 1px dotted;
-    &:hover,
-    &:focus {
-      border-bottom: 1px solid;
-      color: $body-color;
-    }
-  }
-}
+// .card-warning,
+// .card-default,
+// .card-secondary {
+//   .card-link,
+//   .card-text,
+//   .card-blockquote > footer {
+//     color: rgba(0, 0, 0, 0.65);
+//   }
+//   .card-link{
+//     border-bottom: 1px dotted;
+//     &:hover,
+//     &:focus {
+//       border-bottom: 1px solid;
+//       color: $body-color;
+//     }
+//   }
+// }
 
-.card-link {
-  cursor: pointer;
-}
+// .card-link {
+//   cursor: pointer;
+// }
 
-.card-title {
-  margin-bottom: .5em;
-}
+// .card-title {
+//   margin-bottom: .5em;
+// }
 
-.card-title-secondary {
-  margin-top: 0;
-  margin-bottom: 1em;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: $text-muted;
-}
+// .card-title-secondary {
+//   margin-top: 0;
+//   margin-bottom: 1em;
+//   text-transform: uppercase;
+//   font-weight: 300;
+//   color: $text-muted;
+// }
 
-.card-subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+// .card-subtitle {
+//   margin-top: 0;
+//   margin-bottom: 0;
+// }

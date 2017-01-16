@@ -19,24 +19,11 @@
 
 ## Supported Browsers
 
-* Internet Explorer 9+
+* Internet Explorer 10+
 * Google Chrome > 1% market share
 * Mozilla Firefox > 1% market share
 
-> Internet Explorer 9 and below requires a CSS post processor in order to get circumvent the 4095 limit on selector on style sheets 
-
-* [gulp-bless](https://github.com/BlessCSS/gulp-bless)
-* [bless.js](https://github.com/BlessCSS/bless)
-* [grunt-bless](https://github.com/BlessCSS/grunt-bless) 
-
 ## Quickstart
-
-+ Install with Bower
-
->
-```bash
-$ bower install availity-uikit --save
-```
 
 + Install with npm
 
