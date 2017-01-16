@@ -124,21 +124,10 @@ $docs-code-border-color: #f7f7f9;
 
   margin-top: 3rem;
 
-  > li {
-
-    a {
-      &:hover, &:focus {
-        text-decoration: none;
-        background-color: #e8ebeb;
-      }
-    }
-
-  }
-
   .nav.docs-nav {
 
     margin-top: 0;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 
     > li {
 
@@ -159,11 +148,23 @@ $docs-code-border-color: #f7f7f9;
 
   > li {
 
-    font-size: $font-size-lg;
+    font-size: 1rem;
+
+    a {
+
+      display: block;
+
+      &:hover, &:focus {
+
+        text-decoration: none;
+        background-color: #e8ebeb;
+      }
+    }
 
     > a {
       padding: 1px 15px;
       color: $docs-menu-link-color
+
     }
   }
 
