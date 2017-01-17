@@ -3,7 +3,6 @@ import 'chart.js';
 import 'expose?Tether!tether';
 import 'bootstrap/dist/js/bootstrap';
 import 'moment';
-import 'select2';
 import 'holderjs';
 import 'bootstrap-datepicker';
 import 'velocity-animate';
