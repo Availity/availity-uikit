@@ -67,32 +67,6 @@ $('#datetimepicker6').datepicker({
   format: 'mm/dd/yyyy'
 });
 
-// Select2
-
-$('#single, #select-multiple').select2({
-  placeholder: 'Select a State',
-  allowClear: true
-}).on('select2-open', function () {
-
-  const $this = $(this);
-  if ($this.parents('[class*="has-"]').length) {
-
-    // get all CSS-classes from the element where we found "has-*" and collect them in an array
-    const classNames = $this.parents('[class*="has-"]')[0].className.split(/\s+/);
-
-    // go through the class names, find "has-"
-    for (let i = 0; i < classNames.length; ++i) {
-      if (classNames[i].match('has-')) {
-        $('#select2-drop').addClass(classNames[i]);
-      }
-    }
-  }
-});
-
-$('.select2, .select2-multiple').select2({
-  allowClear: true
-});
-
 // DO NOT USE THIS IN PRODUCTION. DEMO PURPOSES ONLY.
 setInterval(() => {
   const indicators = $('.loading-indicator');
