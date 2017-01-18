@@ -76,7 +76,8 @@ function slugify($el) {
 
   }
 
-  $el.wrap(`<a class="docs-headings-anchor" href="#${id}"></a>`);
+  // target the anchor element around the heading
+  $el.parent().attr('href', `#${id}`);
 
   return id;
 
