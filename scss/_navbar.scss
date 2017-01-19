@@ -8,15 +8,6 @@
 
 }
 
-.navbar-default .nav-link {
-  padding: 1em;
-}
-
-.navbar-brand-availity {
-  @extend .navbar-brand;
-  padding: $availity-navbar-padding-vertical;
-}
-
 .navbar-logo-availity {
   background-image: url('../images/logo-availity.png');
   background-repeat: no-repeat;
@@ -25,10 +16,11 @@
 }
 
 .navbar-default {
+
   @extend .navbar-inverse;
   background-color: $navbar-default-bg;
   border-bottom: 1px solid $navbar-default-border;
-  padding: 0;
+
   .container{
     width: 100%;
   }
@@ -74,6 +66,7 @@
   .navbar-form,
   .navbar-collapse {
     border-color: #30383f;
+    box-shadow: none;
   }
 
 }
@@ -87,6 +80,13 @@
 .navbar-secondary {
   border-bottom: 1px solid $availity-navbar-secondary-border;
   background-color: $availity-navbar-secondary-bg;
+
+  .navbar-form,
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+
 }
 
 .navbar-secondary.navbar-fixed-top {
