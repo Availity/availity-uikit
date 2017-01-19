@@ -1,9 +1,9 @@
 import 'jquery';
-import 'chart.js';
 import 'expose?Tether!tether';
 import 'bootstrap/dist/js/bootstrap';
 import 'moment';
 import 'holderjs';
-import 'bootstrap-datepicker';
+
+// docs only
 import 'velocity-animate';
 import 'velocity-animate/velocity.ui';
