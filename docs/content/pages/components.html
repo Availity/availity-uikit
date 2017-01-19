@@ -10,8 +10,8 @@ toc: true
         {{ item.title }}
       </h2>
     </a>
-    {% if item.ref %}<p><mark><a href="{{item.ref}}"> Bootstrap 4 Reference</a></mark></p>{% endif %}
     <p class="docs-section-description">{{ item.description }}</p>
+    {% if item.ref %}<p class="docs-section-ref"><mark><a href="{{item.ref}}"> Bootstrap 4 Reference</a></mark></p>{% endif %}
     {{ item.contents | safe }}
   </section>
 {% endfor %}
