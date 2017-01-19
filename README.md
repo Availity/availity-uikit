@@ -11,7 +11,7 @@
 * [Authors](#authors)
 * [Disclaimer](#disclaimer)
 * [License](#license)
- 
+
 ## Demo
 
 [http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
@@ -32,7 +32,7 @@
 $ npm install availity-uikit --save
 ```
 
-+ Reference the compiled assets from the `/dist` in `index.html` 
++ Reference the compiled assets from the `/dist` in `index.html`
 + If you use a module bundler (Webpack, Browserify), require the dependencies `js/index.js` and `scss/availity-uikit.scss`
 
 
@@ -42,21 +42,15 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 
 ## Contributing
 
-### Dependencies 
+### Dependencies
 
 + [node v4+](https://github.com/nodejs/node/releases)
 
 #### CLI
 
-+ `npm start` 
++ `npm start`
     * runs webpack dev server on `http://localhost:3000`
     * watches library and docs changes and automatically compiles the assets into `./build`
-+ `npm run release`
-    * prompts for version to tag the release
-    * runs linter
-    * clean `/dist`
-    * runs the webpack build task with `NODE_ENV=production`
-    * commits (generated files) and tags (version) the git repository
 + `npm run build`
     * cleans `/dist`
     * runs the webpack module bundler
