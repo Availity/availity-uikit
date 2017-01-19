@@ -171,7 +171,6 @@
 .navbar-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1em;
   color: $navbar-dark-hover-color;
 
   @include media-breakpoint-down(sm) {
