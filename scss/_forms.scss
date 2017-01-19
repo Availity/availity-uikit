@@ -40,7 +40,7 @@ select.form-control {
 }
 
 .form-controls {
-  padding: 1em $card-spacer-x;
+  padding: 1em 0;
   @include clearfix();
   > .btn,
   > .btn-group,
@@ -109,3 +109,7 @@ input[type=text] {
   }
 }
 
+.custom-block {
+  display: block;
+  width: 100%;
+}
