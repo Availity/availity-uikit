@@ -24,6 +24,10 @@ $docs-code-border-color: #f7f7f9;
 
 }
 
+.sticky {
+  flex: 1;
+}
+
 .docs-intro {
 
   color: $white;
@@ -493,6 +497,17 @@ pre[class*="language-"] {
 .animated.bounceIn,
 .animated.bounceOut {
   animation-duration: 1s;
+}
+
+.card-link {
+
+  display:block;
+  color: $gray;
+
+  &:hover {
+    text-decoration: none;
+  }
+
 }
 
 @keyframes bounceIn {
