@@ -24,8 +24,6 @@
   }
 }
 
-$card-blockquote-color:rgba(0, 0, 0, 0.65);
-
 .card-warning,
 .card-default,
 .card-secondary {
@@ -47,13 +45,6 @@ $card-blockquote-color:rgba(0, 0, 0, 0.65);
 .card-warning, .card-default {
   .card-blockquote {
     color: $card-blockquote-color;
-  }
-}
-
-.card-block {
-  > .card-block {
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 }
 
