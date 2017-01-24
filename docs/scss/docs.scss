@@ -49,11 +49,6 @@ $docs-code-border-color: #f7f7f9;
   }
 }
 
-.docs-footer {
-  margin-top: 2rem;
-  padding: 1.5rem;
-}
-
 .docs-intro-section {
   padding: 2rem 0;
 }
@@ -100,6 +95,8 @@ $docs-code-border-color: #f7f7f9;
 
 .docs-footer {
   position: static;
+  margin-top: 1rem;
+  padding: 1rem 0 .5rem 0;
 }
 
 .docs-shoutout {
