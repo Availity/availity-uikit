@@ -52,6 +52,18 @@
   cursor: pointer;
 }
 
+.card-header-link, .card-title-link {
+
+  @include header-link-right();
+
+  line-height: 1em;
+  font-weight: bold;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
 .card-title {
   margin-bottom: .5em;
 }
