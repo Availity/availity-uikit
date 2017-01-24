@@ -267,105 +267,70 @@ notes: |
   </div>
 </div>
 <code class="language-markup">
-<form>
-  <div class="panel">
-    <fieldset class="panel-body">
-      <h2 class="subheader">Requesting Provider Information</h2>
-      <div class="form-group">
-        <label>Requesting Provider Type</label>
-        <div class="radio-group-vertical">
-          <label>
-            <input type="radio" name="group1" value="option1">Provider
+  <div class="card">
+    <div class="card-block">
+      <form>
+        <h5 class="card-title-secondary">Request Information</h5>
+        <div class="form-group">
+          <label for="memberID">
+            Member ID
+            <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
           </label>
-          <label>
-            <input type="radio" name="group1" value="option2">Payer
+          <input type="text" class="form-control" id="memberID" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="relationshipToSubscriber">
+            Relationship to Subscriber
+            <span class="inline-help" data-toggle="tooltip" data-placement="top" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
+              What's this
+            </span>
           </label>
+          <select class="custom-select custom-block" id="relationshipToSubscriber">
+            <option>Select one</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="input5">Express Entry - Requesting Provider
-          <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip stuff goes here">What’s this?</span>
-        </label>
-        <select class="form-control" id="input5">
-          <option>Select one</option>
-          <option>Option</option>
-          <option>Option</option>
-          <option>Option</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="input7">Zipcode (Optional)</label>
-        <div class="row">
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="input7" placeholder="">
-          </div>
-          <div class="col-sm-5">
-            <input type="text" class="form-control" id="input8" placeholder="">
-          </div>
+        <div class="form-group">
+          <label for="datetimepicker7">
+            Date of Birth
+          </label>
+          <input type="text" class="form-control" id="datetimepicker7" placeholder="mm/dd/yyyy">
         </div>
-      </div>
-      <div class="form-group">
-        <label for="input10">Service Quantity/Type</label>
-        <div class="row">
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="input10" placeholder="">
-          </div>
-          <div class="col-sm-8">
-            <select class="form-control" id="input11">
-              <option>Select one</option>
-              <option>Option</option>
-              <option>Option</option>
-              <option>Option</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="">Diagnosis Code(s)
-          <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip stuff goes here">What’s this?</span>
-        </label>
-        <div class="form-group-block">
+        <div class="form-group">
+          <label for="serviceQuantityType">
+            Service Quantity/Type
+          </label>
           <div class="row">
-            <div class="col-sm-2">
-              <div class="form-group">
-                <label for="input9">Code</label>
-                <input type="text" class="form-control" id="input9" placeholder="">
-              </div>
+            <div class="col-sm-4">
+              <input type="text" id="serviceQuantityType" class="form-control">
             </div>
-            <div class="col-sm-2">
-              <div class="form-group">
-                <label for="date">Date</label>
-                <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="form-group">
-                <label for="input14">Code</label>
-                <input type="text" class="form-control" id="input14" placeholder="">
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="form-group">
-                <label for="date2">Date</label>
-                <input type="text" class="form-control" id="date2" placeholder="mm/dd/yyyy">
-              </div>
+            <div class="col-sm-8">
+              <select class="custom-select custom-block" id="rts">
+                <option>Select one</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
             </div>
           </div>
         </div>
-        <a href="#">+ Add another code</a>
-      </div>
-    </fieldset>
+        <div class="form-controls">
+          <input type="submit" class="btn btn-default" value="Cancel">
+          <input type="submit" class="btn btn-default" value="Ok">
+          <input type="submit" class="btn btn-default" value="Maybe">
+          <input type="submit" class="btn btn-primary form-controls-right" value="Save">
+        </div>
+      </form>
+    </div>
   </div>
-  <div class="form-controls">
-    <input type="submit" class="btn btn-default" value="Cancel" >
-    <input type="submit" class="btn btn-default" value="Ok" >
-    <input type="submit" class="btn btn-default" value="Maybe" >
-    <input type="submit" class="btn btn-primary form-controls-right" value="Save" >
-  </div>
-</form>
 </code>
+
 <h3 class="docs-subsection-title">Inline Form</h3>
 <div class="docs-example">
   <form class="form-inline">
