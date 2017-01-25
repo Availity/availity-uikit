@@ -1,7 +1,5 @@
 .main-sidebar {
 
-  @include column();
-
   &.left {
     border-right: 1px solid darken($gray-lighter, 5%);
   }
@@ -14,10 +12,6 @@
 .main-sidebar-body {
   background-color: $gray-light;
   padding: $card-spacer-y $card-spacer-x;
-}
-
-.main-content {
-  @include column();
 }
 
 .main-container {
