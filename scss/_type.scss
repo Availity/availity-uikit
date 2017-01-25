@@ -41,6 +41,10 @@ p {
   margin: 0 0 1rem;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .text-normal { text-transform: none; }
 .text-truncate { @include text-truncate(); }
 .text-break {

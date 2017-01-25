@@ -30,7 +30,7 @@
   .card-link,
   .card-text,
   .card-blockquote > footer {
-    color: rgba(0, 0, 0, 0.65);
+    color: $card-blockquote-color;
   }
   .card-link{
     border-bottom: 1px dotted;
@@ -42,8 +42,26 @@
   }
 }
 
+.card-warning, .card-default {
+  .card-blockquote {
+    color: $card-blockquote-color;
+  }
+}
+
 .card-link {
   cursor: pointer;
+}
+
+.card-header-link, .card-title-link {
+
+  @include header-link-right();
+
+  line-height: 1em;
+  font-weight: bold;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
 }
 
 .card-title {

@@ -8,15 +8,6 @@
 
 }
 
-.navbar-default .nav-link {
-  padding: 1em;
-}
-
-.navbar-brand-availity {
-  @extend .navbar-brand;
-  padding: $availity-navbar-padding-vertical;
-}
-
 .navbar-logo-availity {
   background-image: url('../images/logo-availity.png');
   background-repeat: no-repeat;
@@ -25,10 +16,11 @@
 }
 
 .navbar-default {
+
   @extend .navbar-inverse;
   background-color: $navbar-default-bg;
   border-bottom: 1px solid $navbar-default-border;
-  padding: 0;
+
   .container{
     width: 100%;
   }
@@ -54,7 +46,6 @@
   .navbar-toggler {
     border-color: $navbar-default-toggler-border;
     color: $navbar-default-toggle-icon-color;
-    margin: 6px 0;
     border-radius: 0;
     .navbar-toggler-icon {
       background-image: $navbar-default-toggler-bg;
@@ -74,6 +65,7 @@
   .navbar-form,
   .navbar-collapse {
     border-color: #30383f;
+    box-shadow: none;
   }
 
 }
@@ -87,6 +79,13 @@
 .navbar-secondary {
   border-bottom: 1px solid $availity-navbar-secondary-border;
   background-color: $availity-navbar-secondary-bg;
+
+  .navbar-form,
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+
 }
 
 .navbar-secondary.navbar-fixed-top {
@@ -163,15 +162,9 @@
 
 }
 
-.navbar-collapse {
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-
 .navbar-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1em;
   color: $navbar-dark-hover-color;
 
   @include media-breakpoint-down(sm) {

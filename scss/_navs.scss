@@ -122,12 +122,6 @@ $nav-cards-bg-color: darken($gray-lighter, 10%);
   }
 }
 
-.tab-pane {
-  & > .panel {
-    margin-bottom: 0;
-  }
-}
-
 .tab-bump {
   padding: $card-spacer-y $card-spacer-x;
 }

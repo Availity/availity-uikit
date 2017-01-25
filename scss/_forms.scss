@@ -1,9 +1,10 @@
 label {
 
-  font-size: $font-size-md;
+  font-size: 1rem;
   font-weight: $availity-font-weight-normal;
   color: $gray-base;
   cursor: pointer;
+  margin-bottom: .1rem;
 
   small {
     font-size: 65%;
@@ -39,7 +40,7 @@ select.form-control {
 }
 
 .form-controls {
-  padding: 1em $card-spacer-x;
+  padding: 1em 0;
   @include clearfix();
   > .btn,
   > .btn-group,
@@ -108,3 +109,7 @@ input[type=text] {
   }
 }
 
+.custom-block {
+  display: block;
+  width: 100%;
+}

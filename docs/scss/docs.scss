@@ -24,6 +24,10 @@ $docs-code-border-color: #f7f7f9;
 
 }
 
+.sticky {
+  flex: 1;
+}
+
 .docs-intro {
 
   color: $white;
@@ -34,12 +38,8 @@ $docs-code-border-color: #f7f7f9;
   background-color: #4d4f53;
 
   h1 {
-    font-size: 4.25rem;
+    font-size: 2.5rem;
     font-family: Tahoma, Helvetica, sans-serif;
-  }
-
-  a {
-    margin: 0 1rem;
   }
 
   h2 {
@@ -49,18 +49,8 @@ $docs-code-border-color: #f7f7f9;
   }
 }
 
-.docs-footer {
-  margin-top: 2rem;
-  padding: 1.5rem;
-}
-
 .docs-intro-section {
-
   padding: 2rem 0;
-
-  p {
-    padding: 1rem 0;
-  }
 }
 
 .docs-navbar {
@@ -97,44 +87,91 @@ $docs-code-border-color: #f7f7f9;
   margin-bottom: 3rem;
 }
 
+.docs-section-ref {
+  font-size: 16px;
+  line-height: 1.6em;
+  margin-top: -2rem;
+}
+
 .docs-footer {
   position: static;
+  margin-top: 1rem;
+  padding: 1rem 0 .5rem 0;
 }
 
 .docs-shoutout {
   text-align: center;
 }
 
+.docs-headings-anchor {
+
+  text-decoration: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: $text-color;
+
+  &:hover {
+
+    text-decoration: none;
+
+    &:before {
+      content: "¶";
+      position: absolute;;
+      left: -1em;
+      color: $headings-small-color;
+    }
+
+  }
+
+}
+
+
 .nav.docs-nav {
 
-  display: block;
   margin-top: 3rem;
 
   .nav.docs-nav {
 
     margin-top: 0;
+    margin-left: 1rem;
 
     > li {
-      padding-left: 15px;
-      list-style-type: circle;
-      list-style-position: inside;
-      display: list-item;
+
       font-size: 90%;
 
-
       > a {
+
         color: lighten($docs-menu-link-color, 30%);
+
+        &:before {
+          content: "\2022";
+          padding-right: .5rem;
+        }
+
       }
     }
   }
 
   > li {
 
-    font-size: $font-size-lg;
+    font-size: 1rem;
+
+    a {
+
+      display: block;
+
+      &:hover, &:focus {
+
+        text-decoration: none;
+        background-color: #e8ebeb;
+      }
+    }
 
     > a {
       padding: 1px 15px;
       color: $docs-menu-link-color
+
     }
   }
 
@@ -159,9 +196,6 @@ $docs-code-border-color: #f7f7f9;
   border: solid $docs-code-border-color;
   border-radius: $border-radius-lg $border-radius-lg 0 0;
 
-  .card {
-    max-width: 30rem;
-  }
 }
 
 .docs-example:before {
@@ -429,14 +463,14 @@ pre[class*="language-"] {
 .dummy-page-sidebar {
   float: left;
   width: 30rem;
-  height: 30rem;
+  height: 15rem;
   background-color: rgba(237,86,36,.4);
   border-radius: .25rem;
   animation-delay: .2s;
 }
 
 .dummy-page-article-top {
-  height: 15rem;
+  height: 7.5rem;
   margin-left: 30.5rem;
   background-color: rgba(2,161,124,.4);
   border-radius: .25rem;
@@ -445,7 +479,7 @@ pre[class*="language-"] {
 }
 
 .dummy-page-article-bottom {
-  height: 14.5rem;
+  height: 7rem;
   margin-left: 30.5rem;
   background-color: rgba(2,161,124,.4);
   border-radius: .25rem;
@@ -460,6 +494,17 @@ pre[class*="language-"] {
 .animated.bounceIn,
 .animated.bounceOut {
   animation-duration: 1s;
+}
+
+.card-link {
+
+  display:block;
+  color: $gray;
+
+  &:hover {
+    text-decoration: none;
+  }
+
 }
 
 @keyframes bounceIn {

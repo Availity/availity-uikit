@@ -1,27 +1,24 @@
 .breadcrumb {
-  margin: 0;
-  border-radius: 0;
+
+  background-color: transparent;
+  // We dont' use the background color so padding left is not necessary
   padding-left: 0;
 
-  > li {
+  .breadcrumb-item {
+
     font-weight: $availity-breadcrumb-font-weight;
-    float: none;
-    display: inline-block;
 
-    a {
-      text-decoration: none;
-    }
-
-    + li:before {
-      padding: 0 3px 0 2px;
+    + .breadcrumb-item::before {
       font-family: $availity-icon-font;
       font-weight: $availity-breadcrumb-font-weight;
+      content: $availity-icon-angle-right;
     }
   }
 
   > .active {
     font-weight: $availity-breadcrumb-font-weight-active;
   }
+
 }
 
 .breadcrumb {

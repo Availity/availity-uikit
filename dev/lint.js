@@ -30,16 +30,16 @@ function lint() {
       '!src/fonts/**',
       '!src/images/**',
       '!src/less/**'
-    ]).then( paths => {
-
-      spinner.stop();
+    ]).then(paths => {
 
       const report = engine.executeOnFiles(paths.slice(2));
       const formatter = engine.getFormatter();
 
+      spinner.stop();
+
       if (report.errorCount || report.warningCount) {
-        Logger.failed('Failed linting');
         Logger.info(`${formatter(report.results)}`);
+        Logger.failed('Failed linting');
         reject();
       } else {
         Logger.ok('Finished linting');

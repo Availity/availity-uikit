@@ -93,7 +93,7 @@ const config = {
   },
 
   postcss() {
-    return [autoprefixer({browsers: ['last 2 versions', 'ie 9-11']})];
+    return [autoprefixer({ browsers: ['last 2 versions', 'ie >= 10'] })];
   },
 
   plugins: [
@@ -101,6 +101,8 @@ const config = {
     new webpack.BannerPlugin(banner(), {
       exclude: ['vendor']
     }),
+
+    new webpack.optimize.OccurenceOrderPlugin(true),
 
     new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
 
@@ -115,7 +117,7 @@ const config = {
       'window.jQuery': 'jquery'
     }),
 
-    new WebpackNotifierPlugin({excludeWarnings: true}),
+    new WebpackNotifierPlugin({ excludeWarnings: true }),
 
     new webpack.DefinePlugin(ENV_VAR),
 
