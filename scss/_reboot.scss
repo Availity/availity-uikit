@@ -10,10 +10,6 @@ body {
 
 a {
 
-  &:hover {
-    color: $text-darkest;
-  }
-
   &.external {
     &::after {
       @include iconify($availity-icon-link-ext);
