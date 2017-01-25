@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default docs-navbar navbar-toggleable-md" role="navigation">
+<nav class="navbar navbar-toggleable-md navbar-default" role="navigation">
 
-  <a class="navbar" href="index.html">
+  <a class="navbar-brand" href="index.html">
     <div class="navbar-logo-availity"></div>
   </a>
 
@@ -25,7 +25,8 @@
   </div>
 
 </nav>
-<nav class="navbar navbar-default navbar-secondary docs-navbar navbar-toggleable-md" role="navigation">
+
+<nav class="navbar navbar-toggleable-md navbar-default navbar-secondary">
 
   <button class="navbar-toggler navbar-toggler-right"
     type="button"
@@ -34,8 +35,9 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+  <span class="navbar-brand" href="#">&nbsp;</span>
   <div class="collapse navbar-collapse" id="guide-collapse-navigation">
-    <ul class="nav navbar-nav">
+    <ul class="navbar-nav">
       {% for page in collections.pages %}
       <li class="nav-item">
         <a class="nav-link" href="{{rootPath}}{{page.path}}" title="{{ page.title}}">{{page.title}}</a>
@@ -44,4 +46,5 @@
     </ul>
   </div>
 </nav>
+
 
