@@ -1,6 +1,8 @@
 .breadcrumb {
 
-  background-color: none;
+  background-color: transparent;
+  // We dont' use the background color so padding left is not necessary
+  padding-left: 0;
 
   .breadcrumb-item {
 
