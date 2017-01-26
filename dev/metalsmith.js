@@ -14,13 +14,18 @@ const path = require('path');
 const collections = require('metalsmith-collections');
 const filter = require('metalsmith-filter');
 const relative = require('metalsmith-rootpath');
+const _slugify = require('slugify');
 
 const dataMarkdown = require('./plugins/metalsmith-data-markdown');
-const slug = require('./plugins/nunjucks-slug');
 const tocify = require('./plugins/metalsmith-tocify');
 const Logger = require('./logger');
 
 const pkg = require('../package.json');
+
+function slugify(tokens) {
+  const slugged = _slugify(tokens).toLowerCase();
+  return slugged;
+}
 
 const markedOptions = {
   langPrefix: 'language-',
@@ -37,7 +42,7 @@ const env = nunjucks.configure('docs/layouts', {
   noCache: true
 });
 env.addFilter('year', nunjucksDate);
-env.addFilter('slug', slug.slugify);
+env.addFilter('slug', slugify);
 
 function build() {
 
