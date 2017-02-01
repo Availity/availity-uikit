@@ -106,4 +106,4 @@ Open source software components distributed or made available in the Availity Ma
 
 [MIT](./LICENSE)
 
-Copyright (c) 2016 Availity, LLC
+Copyright (c) 2017 Availity, LLC
