@@ -77,11 +77,11 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 + Navigate to [Fontello](http://fontello.com/) and click on the wrench and import the config.json file located in /fonts/
 + Use the Fontello browser page to drag and drop and new svg icon fonts to the pre-populated list
 + Select any icon you want to be included in your updated icon font
-+ Click the red "Download Webfont" button in the upper right hand corner
-+ Extract the .zip file and overwrite the config.json in /fonts/ with the new config.json file within the .zip file
-+ Replace the fonts in /fonts/ with those from the /font/ folder in your extracted .zip file
-+ Locate the availity-icon-font.css (With the appended version number) and add the new icons css style to `/less/availity-icon-fonts.less` file
-+ Add the new icons to the documentation page located at /docs/guide/pages/icons.html using the given formatting
++ Click the red **Download Webfont** button in the upper right hand corner
++ Extract the .zip file and overwrite the config.json in `/fonts` with the new config.json file within the `.zip` file
++ Replace the fonts in /fonts/ with those from the `/font` folder in your extracted `.zip` file
++ Add the new icons css style to `/less/availity-icon-fonts.less` file
++ Add the new icons to the documentation page located at `/docs/guide/pages/icons.html` using the given formatting
 + Finally push your changes to the develop branch
 
 ## Authors
