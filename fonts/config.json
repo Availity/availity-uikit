@@ -1309,6 +1309,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
+      "css": "play",
+      "code": 59602,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0b28050bac9d3facf2f0226db643ece0",
+      "css": "pause",
+      "code": 59603,
+      "src": "fontawesome"
+    },
+    {
       "uid": "d6768a46d9172bbf55bcd274bdf0968b",
       "css": "icon-user-new",
       "code": 59395,
