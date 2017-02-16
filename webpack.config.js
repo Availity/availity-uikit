@@ -38,9 +38,9 @@ const config = {
     umdNamedDefine: true
   },
 
-  debug: true,
-  cache: true,
-  watch: true,
+  resolve: {
+    extensions: ['.js']
+  },
 
   stats: {
     colors: true,
@@ -55,26 +55,35 @@ const config = {
   },
 
   module: {
-    loaders: [
+    rules: [
 
       {
         test: /\.js$/,
-        loader: 'babel',
+        use: 'babel-loader',
         exclude: /(bower_components|node_modules)/
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css')
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader?limit=32768?name=images/[name].[ext]',
+            'postcss-loader'
+          ],
+          publicPath: '../'
+        })
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          'style',
-          'css?limit=32768?name=images/[name].[ext]!postcss!sass?sourceMap',
-          {
-            publicPath: '../'
-          }
-        )
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader?limit=32768?name=images/[name].[ext]',
+            'postcss-loader',
+            'sass-loader?sourceMap'
+          ],
+          publicPath: '../'
+        })
       },
       {
         // test should match the following:
@@ -82,34 +91,52 @@ const config = {
         //  '../fonts/availity-font.eot?18704236'
         //  '../fonts/availity-font.eot'
         //
-        test: /\.(ttf|woff|eot|svg).*/,
-        loader: 'file?name=fonts/[name].[ext]'
+        test: /\.(otf|ttf|woff2?|eot|svg)(\?.*)?$/,
+        use: [
+          'file-loader?name=fonts/[name].[ext]'
+        ]
       },
       {
-        test: /\.(jpe?g|png|gif)$/,
-        loader: 'url?limit=32768?name=images/[name].[ext]'
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          'url-loader?name=images/[name].[ext]&limit=10000'
+        ]
       }
     ]
   },
 
-  postcss() {
-    return [autoprefixer({ browsers: ['last 2 versions', 'ie >= 10'] })];
-  },
-
   plugins: [
 
-    new webpack.BannerPlugin(banner(), {
+    new webpack.BannerPlugin({
+      banner: banner(),
       exclude: ['vendor']
     }),
 
-    new webpack.optimize.OccurenceOrderPlugin(true),
-
     new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
 
-    new ExtractTextPlugin('css/[name].css', {
-      disable: false,
-      allChunks: true
-    }),
+    new ExtractTextPlugin('css/[name].css'),
+
+    new webpack.LoaderOptionsPlugin(
+      {
+        test: /\.s?css$/,
+        debug: false,
+        options: {
+          postcss: [
+            autoprefixer(
+              {
+                browsers: [
+                  'last 5 versions',
+                  'Firefox ESR',
+                  'not ie < 9'
+                ]
+              }
+            )
+          ],
+          context: __dirname,
+          output: { path: '/build' }
+        }
+      }
+    ),
 
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -126,10 +153,7 @@ const config = {
       minChunks: Infinity
     })
 
-  ],
-  resolve: {
-    extensions: ['', '.js']
-  }
+  ]
 };
 
 module.exports = config;

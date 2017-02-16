@@ -10,8 +10,45 @@ const Logger = require('./logger');
 
 const watch = require('./watch');
 const webpackConfig = require('../webpack.config');
+const ProgressPlugin = require('webpack/lib/ProgressPlugin');
+
+const friendlySyntaxErrorLabel = 'Syntax error:';
+
+function isLikelyASyntaxError(message) {
+  return message.indexOf(friendlySyntaxErrorLabel) !== -1;
+}
 
 const PORT = 9100;
+
+const startupMessage = _.once(() => {
+  const uri = `http://localhost:${PORT}/`;
+  Logger.box(`The app is running at ${chalk.green(uri)}`);
+});
+
+function formatMessage(message) {
+  return message
+    .replace(
+      'Module build failed: SyntaxError:',
+      friendlySyntaxErrorLabel
+    )
+    .replace(
+      /Module not found: Error: Cannot resolve 'file' or 'directory'/,
+      'Module not found:'
+    )
+    // Internal stacks are generally useless so we strip them
+    .replace(/^\s*at\s((?!webpack:).)*:\d+:\d+[\s\)]*(\n|$)/gm, '') // at ... ...:x:y
+    // Webpack loader names obscure CSS filenames
+    .replace('./~/css-loader!./~/postcss-loader!', '')
+    .replace(/\s@ multi .+/, '');
+}
+
+function compileMessage(stats) {
+
+  const statistics = stats.toJson();
+  Logger.success(`${chalk.gray('Compiled')} in ${chalk.magenta(statistics.time)} ms
+`);
+  startupMessage();
+}
 
 function serv() {
 
@@ -19,56 +56,64 @@ function serv() {
 
   return new Promise((resolve, reject) => {
 
+    webpackConfig.plugins.push(new ProgressPlugin( (percentage, msg) => {
+
+      const percent = percentage * 100;
+
+      if (percent % 20 === 0 && msg !== null && msg !== undefined && msg.trim() !== '') {
+        Logger.info(`${chalk.dim('Webpack')} ${Math.round(percent)}% ${msg}`);
+      }
+
+    }));
+
     const compiler = webpack(webpackConfig);
 
     compiler.plugin('compile', () => {
       Logger.info('Started compiling');
     });
 
-    const message = _.once(stats => {
+    const message = _.debounce(compileMessage, 500);
+
+    compiler.plugin('done', stats => {
 
       const hasErrors = stats.hasErrors();
       const hasWarnings = stats.hasWarnings();
 
       if (!hasErrors && !hasWarnings) {
-
-        const statistics = stats.toString({
-          colors: true,
-          cached: true,
-          reasons: false,
-          source: false,
-          chunks: false,
-          children: false
-        });
-
-        const uri = `http://localhost:${PORT}/`;
-
-        Logger.info(statistics);
-        Logger.ok('Finished compiling');
-        Logger.log(`The app is running at ${chalk.magenta(uri)}`);
-
-        return;
-
+        message(stats);
       }
 
       if (hasErrors) {
+
+        // https://webpack.js.org/configuration/stats/
+        const json = stats.toJson({
+          assets: false,
+          colors: true,
+          version: false,
+          hash: false,
+          timings: false,
+          chunks: false,
+          chunkModules: false,
+          errorDetails: true
+        });
+
+        let formattedErrors = json.errors.map(msg => {
+          return 'Error in ' + formatMessage(msg);
+        });
+
+        if (formattedErrors.some(isLikelyASyntaxError)) {
+          formattedErrors = formattedErrors.filter(isLikelyASyntaxError);
+        }
+
+        formattedErrors.forEach(error => {
+          Logger.empty();
+          Logger.simple(`${chalk.red(error)}`);
+          Logger.empty();
+        });
+
         Logger.failed('Failed compiling');
-        Logger.info(stats.compilation.errors);
         reject('Failed compiling');
       }
-
-    });
-
-    compiler.plugin('done', stats => {
-
-      // The bless-webpack-plugin listens on the "optimize-assets" and triggers an "emit" event if changes are
-      // made to any css chunks.  This makes it appear that Webpack is bundling everything twice in the logs.
-      // Removing the bless-webpack-plugin resolves the issue but then we run the risk of creating css bundles
-      // great than the IE9 limit.
-      //
-      // https://blogs.msdn.microsoft.com/ieinternals/2011/05/14/stylesheet-limits-in-internet-explorer
-      //
-      message(stats);
 
     });
 
@@ -90,7 +135,7 @@ function serv() {
         reject(err);
       }
 
-      Logger.ok('Finished development server');
+      Logger.success('Finished development server');
       resolve();
     });
 

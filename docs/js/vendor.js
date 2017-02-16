@@ -1,5 +1,5 @@
 import 'jquery';
-import 'expose?Tether!tether';
+import 'expose-loader?Tether!tether';
 import 'bootstrap/dist/js/bootstrap';
 import 'moment';
 import 'holderjs';

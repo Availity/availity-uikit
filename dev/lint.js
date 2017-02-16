@@ -42,7 +42,7 @@ function lint() {
         Logger.failed('Failed linting');
         reject();
       } else {
-        Logger.ok('Finished linting');
+        Logger.success('Finished linting');
         resolve();
       }
 

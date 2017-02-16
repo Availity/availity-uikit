@@ -6,14 +6,13 @@ const ora = require('ora');
 const Logger = require('./logger');
 const webpackConfig = require('../webpack.config.production');
 const webpackDocsConfig = require('../webpack.config.docs');
-
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');
 
 function bundle(options) {
 
   return new Promise((resolve, reject) => {
 
-    const optimized = options.optimize ? 'with optimizations' : 'with no optimizations';
+    const optimized = options.optimize ? 'availity-uikit.js availity-uikit.css' : 'availity-uikit.min.js availity-uikit.min.css';
 
     Logger.info(`Started compiling ${optimized}`);
     const spinner = ora('Running webpack');
@@ -53,7 +52,8 @@ function bundle(options) {
       });
 
       Logger.info(statistics);
-      Logger.ok(`Finished compiling ${optimized}`);
+      Logger.success(`Finished compiling ${optimized}
+`);
       resolve();
 
     });

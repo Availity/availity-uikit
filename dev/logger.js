@@ -1,9 +1,7 @@
 /* eslint no-console:0 */
-'use strict';
-
 const chalk = require('chalk');
-const dateformat = require('dateformat');
-const symbols = require('log-symbols');
+const figures = require('figures');
+const boxen = require('boxen');
 
 class Logger {
 
@@ -11,41 +9,65 @@ class Logger {
     this.options = options;
   }
 
-  static warning(entry) {
-    this._log(entry, 'yellow');
+  static warn(entry) {
+    this.record(entry, 'yellow');
   }
 
   static error(entry) {
-    this._log(entry, 'red');
+    this.record(entry, 'red');
   }
 
   static info(entry) {
-    this._log(entry);
+    this.record(entry);
   }
 
-  // graphics
-
-  static failed(entry) {
-    this._log(`${symbols.error} ${entry}`, 'red');
-  }
-
-  static ok(entry) {
-    this._log(`${symbols.success} ${entry}`, 'green');
-  }
-
-  static _log(entry, _color) {
-
-    const now = dateformat(new Date(), 'HH:MM:ss');
-    const defaultColor = entry instanceof Error ? 'red' : 'gray';
-
-    const color = _color || defaultColor;
-
-    console.log(`[${chalk.cyan(now)}] ${chalk[color](entry)}`);
-
+  static debug(entry) {
+    this.record(entry);
   }
 
   static log(entry) {
-    this._log(entry);
+    this.record(entry);
+  }
+
+  // › Started dev server
+  static record(entry, color) {
+
+    const defaultColor = entry instanceof Error ? 'red' : 'gray';
+    const crayoloa = color || defaultColor;
+
+    // Determine color of prefix log
+    let delimeter = chalk.bold[crayoloa](figures.pointerSmall);
+    delimeter = `${delimeter}`;
+
+    console.log(`${delimeter} ${chalk[crayoloa](entry) }` );
+
+  }
+
+  static simple(entry) {
+    console.log(entry);
+  }
+
+  static empty() {
+    console.log('');
+  }
+
+  // ✖ [ ERROR] Failed linting
+  static failed(entry) {
+    const prefix = chalk.red(figures.cross);
+    const label = chalk.white.bold(' ERROR ');
+    console.log(`${prefix} ${chalk.bgRed(label)} ${chalk.red(entry)}`);
+  }
+
+  // ✔︎ Finished linting
+  static success(entry) {
+
+    const prefix = chalk.green.bold(figures.tick);
+    console.log(`${prefix} ${chalk.gray(entry)}` );
+
+  }
+
+  static box(entry) {
+    console.log(boxen(`${chalk.gray(entry)}`, {padding: 1, borderColor: 'yellow', borderStyle: 'classic', dimBorder: true}));
   }
 
 }

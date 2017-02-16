@@ -114,7 +114,7 @@ function build() {
       if (err) {
         reject(err);
       } else {
-        Logger.ok('Finished docs');
+        Logger.success('Finished docs');
         resolve();
       }
 

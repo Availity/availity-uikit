@@ -7,11 +7,12 @@ const autoprefixer = require('autoprefixer');
 const banner = require('./dev/banner');
 const VERSION = require('./package.json').version;
 
+
+
 function getConfig(options) {
 
   const optimize = options.optimize || false;
   const minimize = optimize ? 'minimize' : '-minimize';
-  const cssQuery = `css?limit=32768?sourceMap&${minimize}&name=images/[name].[ext]!postcss!sass`;
 
   const ENV_VAR = {
     'process.env': {
@@ -28,6 +29,10 @@ function getConfig(options) {
       'availity-uikit': './js/index.js'
     },
 
+    resolve: {
+      extensions: ['.js']
+    },
+
     output: {
       path: 'dist',
       filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
@@ -41,10 +46,6 @@ function getConfig(options) {
     },
 
     devtool: 'source-map',
-
-    debug: false,
-    cache: false,
-    watch: false,
 
     stats: {
       colors: true,
@@ -63,22 +64,31 @@ function getConfig(options) {
 
         {
           test: /\.js$/,
-          loader: 'babel',
+          use: 'babel-loader',
           exclude: /(bower_components|node_modules)/
         },
         {
           test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css')
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: [
+              `css-loader?sourceMap&${minimize}?limit=32768?name=images/[name].[ext]`,
+              'postcss-loader'
+            ],
+            publicPath: '../'
+          })
         },
         {
           test: /\.scss$/,
-          loader: ExtractTextPlugin.extract(
-            'style',
-            cssQuery,
-            {
-              publicPath: '../'
-            }
-          )
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: [
+              `css-loader?sourceMap&${minimize}?limit=32768?name=images/[name].[ext]`,
+              'postcss-loader',
+              'sass-loader?sourceMap'
+            ],
+            publicPath: '../'
+          })
         },
         {
           // test should match the following:
@@ -86,39 +96,58 @@ function getConfig(options) {
           //  '../fonts/availity-font.eot?18704236'
           //  '../fonts/availity-font.eot'
           //
-          test: /\.(ttf|woff|eot|svg).*/,
-          loader: 'file?name=fonts/[name].[ext]'
+          test: /\.(otf|ttf|woff2?|eot|svg)(\?.*)?$/,
+          use: [
+            'file-loader?name=fonts/[name].[ext]'
+          ]
         },
         {
-          test: /\.(jpe?g|png|gif)$/,
-          loader: 'url?limit=32768?name=images/[name].[ext]'
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          use: [
+            'url-loader?name=images/[name].[ext]&limit=10000'
+          ]
         }
       ]
     },
 
-    postcss() {
-      return [autoprefixer({ browsers: ['last 2 versions', 'ie >= 10'] })];
-    },
 
     plugins: [
 
-      new webpack.BannerPlugin(banner()),
-
-      new webpack.optimize.OccurenceOrderPlugin(true),
-
-      new ExtractTextPlugin(optimize ? 'css/[name].min.css' : 'css/[name].css', {
-        disable: false,
-        allChunks: true
+      new webpack.BannerPlugin({
+        banner: banner(),
+        exclude: ['vendor']
       }),
 
-      new webpack.NoErrorsPlugin(),
+      new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
 
-      new webpack.DefinePlugin(ENV_VAR)
+      new ExtractTextPlugin('css/[name].css'),
 
-    ],
-    resolve: {
-      extensions: ['', '.js']
-    }
+      new webpack.DefinePlugin(ENV_VAR),
+
+      new webpack.LoaderOptionsPlugin(
+        {
+          test: /\.s?css$/,
+          debug: false,
+          options: {
+            postcss: [
+              autoprefixer(
+                {
+                  browsers: [
+                    'last 5 versions',
+                    'Firefox ESR',
+                    'not ie < 9'
+                  ]
+                }
+              )
+            ],
+            context: __dirname,
+            output: { path: '/build' }
+          }
+        }
+      )
+
+    ]
+
   };
 
   if (optimize) {
