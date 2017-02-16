@@ -7,8 +7,6 @@ const autoprefixer = require('autoprefixer');
 const banner = require('./dev/banner');
 const VERSION = require('./package.json').version;
 
-
-
 function getConfig(options) {
 
   const optimize = options.optimize || false;
