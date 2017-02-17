@@ -10,7 +10,7 @@ $('[data-toggle="popover"]').popover({
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$('.docs-example').each(function () {
+$('.docs-example').each(function() {
 
   const btn = `
     <hr class="divider-lg"/>
@@ -24,7 +24,7 @@ $('.docs-example').each(function () {
 
 });
 
-$('[data-toggle="code"]').click(function (e) {
+$('[data-toggle="code"]').click(function(e) {
 
   e.preventDefault();
 
@@ -53,7 +53,18 @@ $('[data-toggle="filter"]').popover({
   }
 });
 
-$('.dropdown-menu a[data-toggle="tab"]').click(function (e) {
+$('.dropdown-menu a[data-toggle="tab"]').click(function(e) {
   e.stopPropagation();
   $(this).tab('show');
 });
+
+// DO NOT USE THIS IN PRODUCTION. DEMO PURPOSES ONLY.
+setInterval(() => {
+  const indicators = $('.loading-indicator');
+  for (let i = 0; i < indicators.length; i++) {
+    $(indicators[i]).find('.loading-bullet')
+      .velocity('transition.slideRightIn', { stagger: 250 })
+      .delay(750)
+      .velocity({ opacity: 0 }, 500);
+  }
+}, 2000);
