@@ -58,9 +58,12 @@ button.list-group-item {
     display: block;
     margin-bottom: 10px;
     border: 1px solid $disabled-text-color;
-    border-left: 10px solid $disabled-text-color;
 
     border-radius: 4px;
+
+    &.primary, &.info, &.success, &.danger, &.warning, &.secondary {
+      border-left-width: 10px;
+    }
 
     &.primary, &.active.primary {
       border-left-color: $brand-primary;
@@ -80,6 +83,10 @@ button.list-group-item {
 
     &.warning, &.active.warning {
       border-left-color: $brand-warning;
+    }
+
+    &.secondary, &.active.secondary {
+      border-left-color: $disabled-text-color;
     }
 
     .list-group-item-text{
