@@ -10,8 +10,14 @@
 
 const cheerio = require('cheerio');
 const extname = require('path').extname;
-const slug = require('slug');
+const _slugify = require('slugify');
 const _ = require('lodash');
+
+function slugify(tokens) {
+  const slugged = _slugify(tokens).toLowerCase();
+  return slugged;
+}
+
 
 const cacheIds = [];
 
@@ -58,13 +64,13 @@ function getRootLevel(headers) {
     .sort()[0] - 1 || 1;
 }
 
-function slugify($el) {
+function slugifi($el) {
 
   let id = $el.attr('id');
 
   if (!id) {
 
-    let slugId = slug($el.text(), {'mode': 'rfc3986'});
+    let slugId = slugify($el.text());
     if (cacheIds[slugId]) {
       slugId = slugId + _.uniqueId('-');
     }
@@ -97,7 +103,7 @@ function buildToc($, _headers) {
 
     const $el = $(this);
 
-    const id = slugify($el);
+    const id = slugifi($el);
 
     return {
       id,
