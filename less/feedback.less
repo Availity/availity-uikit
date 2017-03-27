@@ -1,0 +1,56 @@
+feedback-survey {
+  .button {
+    color: #4d4f53 !important;
+    background-color: #e8ebeb !important;
+    border-color: #cccccc !important;
+
+    &:hover, &[disabled], &[active], &.active {
+      color: #fff !important;
+      background-color: #1a4a8a !important;
+      border-color: #143a6c !important;
+    }
+    &.smile-button-inverse {
+      color: #fff !important;
+      background-color: #2261b5 !important;
+      border-color: #1e55a0 !important;
+      &:hover {
+        background-color: #1a4a8a !important;
+        border-color: #143a6c !important;
+      }
+      &[disabled], &[active], &.active {
+        color: #4d4f53 !important;
+        background-color: #e8ebeb !important;
+        border-color: #cccccc !important;
+      }
+    }
+  }
+  .input-group {
+    width: 100%;
+  }
+  .input-group-spacer {
+    border: 0;
+  }
+  .icon-xl {
+    font-size: 2em;
+    margin: 0;
+  }
+  .survey-form {
+    transition: max-height 0.3s linear;
+    overflow: hidden;
+    //max-width: 380px;
+    &.expanded {
+      max-height: 100px;
+    }
+
+    &.collapsed {
+      max-height: 0;
+    }
+    .select2 {
+      float: none;
+    }
+    textarea {
+      resize: none;
+    }
+  }
+
+}
