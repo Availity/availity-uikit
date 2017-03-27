@@ -9,7 +9,7 @@
       background-color: #1a4a8a !important;
       border-color: #143a6c !important;
     }
-    &.smile-button-inverse {
+    &.btn-inverse {
       color: #fff !important;
       background-color: #2261b5 !important;
       border-color: #1e55a0 !important;
@@ -41,16 +41,24 @@
     &.expanded {
       max-height: 100px;
     }
-
     &.collapsed {
       max-height: 0;
     }
-    .select2 {
-      float: none;
-    }
-    textarea {
-      resize: none;
+    .survey-group {
+      display: table;
+      select {
+        -webkit-appearance: none;
+      }
+      .select2 {
+        float: none;
+      }
+      select, .select2-container, .select2-choice {
+        border-radius: 2px 0px 0px;
+      }
+      textarea {
+        resize: none;
+        border-radius: 0px 0px 0px 2px;
+      }
     }
   }
-
 }
