@@ -1,26 +1,65 @@
-<div>
-  <h5>Feedback Prompt</h5>
-  <div class="text-center">
-    <span class="input-group-addon btn smile-button"><i class="icon icon-xl icon-smile"/></span>
-    <span class="input-group-addon btn smile-button"><i class="icon icon-xl icon-meh"/></span>
-    <span class="input-group-addon btn smile-button"><i class="icon icon-xl icon-frown"/></span>
-    <p></p>
-  </div>
-  <form>
-    <div class="survey-form expanded">
-      <div class="input-group">
-        <select class="form-control full-width smile-app-dropdown">
-        <option></option>
-        </select>
-        <textarea
-          class="form-control"
-          rows="2"
-          placeholder="Tell us why.">
-        </textarea>
-        <label class="input-group-addon btn smile-button smile-button-inverse">
-          Send
-        </label>
-      </div>
+---
+title: Feedback Survey
+description: |
+  Styles for implimenting feedback surveys.
+usage: |
+  Survey to collect feedback on the page. Can collapse and expand the bottom area to force a selection first.
+notes: |
+  Logic to validate and submit survey need to be implimented seperate from the styles.
+---
+<div class="docs-example">
+  <div class="feedback-survey">
+    <h5>Feedback Prompt</h5>
+    <div class="text-center">
+      <span class="input-group-addon btn smile-button"><i class="icon icon-xl icon-smile"/></span>
+      <span class="input-group-addon btn smile-button"><i class="icon icon-xl icon-meh"/></span>
+      <span class="input-group-addon btn smile-button"><i class="icon icon-xl icon-frown"/></span>
+      <p></p>
     </div>
-  </form>
+    <form>
+      <div class="survey-form expanded">
+        <div class="input-group">
+          <select class="form-control full-width smile-app-dropdown">
+          <option></option>
+          </select>
+          <textarea
+            class="form-control"
+            rows="2"
+            placeholder="Tell us why.">
+          </textarea>
+          <label class="input-group-addon btn smile-button smile-button-inverse">
+            Send
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
+<code class="language-markup">
+  <div class="feedback-survey">
+    <h5>Feedback Prompt</h5>
+    <div class="text-center">
+      <span class="input-group-addon btn"><i class="icon icon-xl icon-smile"/></span>
+      <span class="input-group-addon btn"><i class="icon icon-xl icon-meh"/></span>
+      <span class="input-group-addon btn"><i class="icon icon-xl icon-frown"/></span>
+      <p></p>
+    </div>
+    <form>
+      <div class="survey-form expanded">
+        <div class="input-group">
+          <select class="form-control full-width select2 smile-app-dropdown">
+          <option></option>
+          </select>
+          <textarea
+            class="form-control"
+            rows="2"
+            placeholder="Tell us why.">
+          </textarea>
+          <label class="input-group-addon btn smile-button smile-button-inverse">
+            Send
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+</code>
