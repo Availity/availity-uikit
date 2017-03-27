@@ -46,8 +46,23 @@
     }
     .survey-group {
       display: table;
-      select {
-        -webkit-appearance: none;
+
+      .select-wrapper {
+        position: relative;
+        select {
+          -webkit-appearance: none;
+          -ms-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        &:after {
+          content: '\e8b0';
+          font-family: "availity-icon-font";
+          margin-top: -1rem;
+          position: absolute;
+          top: 50%;
+          right: 10px;
+        }
       }
       .select2 {
         float: none;
