@@ -113,3 +113,7 @@ input[type=text] {
   display: block;
   width: 100%;
 }
+
+.input-group .form-control {
+  flex-direction: row;
+}
