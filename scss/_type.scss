@@ -1,13 +1,23 @@
-@import "~bootstrap/scss/mixins/text-truncate";
+@import '~bootstrap/scss/mixins/text-truncate';
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
 
   font-weight: 600;
 
   &.subheader,
   .small,
-  small{
+  small {
     color: $secondary-text-color;
   }
 
@@ -16,8 +26,8 @@ h1, h2, h3, h4, h5, h6,
   }
 
   .header-link {
+    @include header-link-right;
     line-height: 2em;
-    @include header-link-right();
   }
 
   .btn-header-link {
@@ -46,16 +56,18 @@ strong {
 }
 
 .text-normal { text-transform: none; }
+
 .text-truncate { @include text-truncate(); }
+
 .text-break {
-  -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
 
 .text-label {
+
+  font-weight: 600;
   margin: 0;
   margin-bottom: .1rem;
-  font-weight: 600;
 
   &.text-label-inline {
     margin-bottom: 0;
@@ -69,19 +81,24 @@ strong {
 
 ul,
 ol {
-  margin-top: 0;
+
   margin-bottom: ($line-height / 2);
+  margin-top: 0;
+
   ul,
   ol {
     margin-bottom: 0;
   }
 }
 
-.page-header, .section-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+.page-header,
+.section-header {
   border-bottom: 1px solid #dadfdf;
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
+
 }
+
 .page-header {
   margin: ($line-height * 1) 0 $line-height;
 }
@@ -94,7 +111,8 @@ ol {
   }
 }
 
-.page-header-title, .page-header-logo {
+.page-header-title,
+.page-header-logo {
 
   @include media-breakpoint-up(md) {
     display: table-cell;
@@ -104,11 +122,11 @@ ol {
 
 .page-header-title {
 
-  margin-bottom: 1rem;
-
   @include media-breakpoint-up(md) {
     text-align: left;
   }
+
+  margin-bottom: 1rem;
 
 }
 
@@ -123,7 +141,7 @@ ol {
 .section-header {
 
   @extend .page-header;
-  @include clearfix();
+  @include clearfix;
   margin: ($line-height * 1) 0 $line-height;
 
   .section-header-link {
@@ -151,8 +169,8 @@ ol {
 }
 
 .disclaimer-unstyled {
- font-size: $font-size-base;
-  border-left: none;
+  border-left: 0;
+  font-size: $font-size-base;
 }
 
 .agreement {

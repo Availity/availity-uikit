@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/variables";
+@import '~bootstrap/scss/_variables';
 
 // Variables
 //
@@ -187,7 +187,7 @@ $availity-disclaimer-warning-border: $yellow-darkest !default;
 
 // Fonts
 
-$availity-font-path: "../fonts" !default !default;
+$availity-font-path: '../fonts' !default;
 $availity-font-weight-normal: 300 !default;
 $availity-font-weight-bold: bold !default;
 $availity-css-prefix: icon !default;
@@ -462,8 +462,8 @@ $navbar-default-brand-hover-bg:             transparent;
 
 $navbar-default-toggle-hover-bg:            $black;
 $navbar-default-toggle-icon-color:          $white;
-$navbar-default-toggler-bg:                 str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-default-toggle-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-default-toggler-border:             rgba($white,.1) !default;
+$navbar-default-toggler-bg:                 str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-default-toggle-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), '#', '%23') !default;
+$navbar-default-toggler-border:             rgba($white, .1) !default;
 
 
 $navbar-light-color:                rgba(0,0,0,.3) !default;
