@@ -1,6 +1,7 @@
 'use strict';
 
 const webpack = require('webpack');
+const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const autoprefixer = require('autoprefixer');
@@ -30,7 +31,7 @@ const config = {
 
   output: {
     // if path is not set to '/build' => Error invalid argument in MemoryFileSystem.js
-    path: '/build',
+    path: path.join(__dirname, 'build'),
     // publicPath: '../',
     filename: 'js/[name].js',
     library: 'availity-uikit',
