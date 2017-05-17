@@ -121,6 +121,7 @@
     "postcss-loader": "^2.0.5",
     "prismjs": "1.6.0",
     "raw-loader": "0.5.1",
+    "react-dev-utils": "^0.5.2",
     "require-dir": "^0.3.0",
     "sass-loader": "^6.0.5",
     "semver": "5.3.0",

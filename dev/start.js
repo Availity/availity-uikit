@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const _ = require('lodash');
 const chalk = require('chalk');
 const Logger = require('availity-workflow-logger');
+const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 
 const metalsmith = require('./metalsmith');
 
@@ -10,35 +11,12 @@ const watch = require('./watch');
 const webpackConfig = require('../webpack.config');
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');
 
-const friendlySyntaxErrorLabel = 'Syntax error:';
-
-function isLikelyASyntaxError(message) {
-  return message.indexOf(friendlySyntaxErrorLabel) !== -1;
-}
-
 const PORT = 9100;
 
 const startupMessage = _.once(() => {
   const uri = `http://localhost:${PORT}/`;
   Logger.box(`The app is running at ${chalk.green(uri)}`);
 });
-
-function formatMessage(message) {
-  return message
-    .replace(
-      'Module build failed: SyntaxError:',
-      friendlySyntaxErrorLabel
-    )
-    .replace(
-      /Module not found: Error: Cannot resolve 'file' or 'directory'/,
-      'Module not found:'
-    )
-    // Internal stacks are generally useless so we strip them
-    .replace(/^\s*at\s((?!webpack:).)*:\d+:\d+[\s\)]*(\n|$)/gm, '') // at ... ...:x:y
-    // Webpack loader names obscure CSS filenames
-    .replace('./~/css-loader!./~/postcss-loader!', '')
-    .replace(/\s@ multi .+/, '');
-}
 
 function compileMessage(stats) {
 
@@ -54,19 +32,22 @@ function serv() {
 
   return new Promise((resolve, reject) => {
 
+    let previousPercent;
+
     webpackConfig.plugins.push(new ProgressPlugin( (percentage, msg) => {
 
-      const percent = percentage * 100;
+      const percent = Math.round(percentage * 100);
 
-      if (percent % 20 === 0 && msg !== null && msg !== undefined && msg.trim() !== '') {
-        Logger.info(`${chalk.dim('Webpack')} ${Math.round(percent)}% ${msg}`);
+      if (previousPercent !== percent && percent % 10 === 0 && msg !== null && msg !== undefined && msg.trim() !== '') {
+        Logger.info(`${chalk.dim('Webpack')} ${percent}% ${msg}`);
+        previousPercent = percent;
       }
 
     }));
 
     const compiler = webpack(webpackConfig);
 
-    compiler.plugin('compile', () => {
+    compiler.plugin('invalid', () => {
       Logger.info('Started compiling');
     });
 
@@ -95,22 +76,17 @@ function serv() {
           errorDetails: true
         });
 
-        let formattedErrors = json.errors.map(msg => {
-          return 'Error in ' + formatMessage(msg);
-        });
+        const messages = formatWebpackMessages(json);
 
-        if (formattedErrors.some(isLikelyASyntaxError)) {
-          formattedErrors = formattedErrors.filter(isLikelyASyntaxError);
-        }
-
-        formattedErrors.forEach(error => {
+        messages.errors.forEach(error => {
           Logger.empty();
           Logger.simple(`${chalk.red(error)}`);
           Logger.empty();
         });
 
         Logger.failed('Failed compiling');
-        reject('Failed compiling');
+        Logger.empty();
+        reject(json.errors);
       }
 
     });
