@@ -1,7 +1,5 @@
-'use strict';
-
+const Logger = require('availity-workflow-logger');
 const del = require('del');
-const Logger = require('./logger');
 
 function clean() {
 

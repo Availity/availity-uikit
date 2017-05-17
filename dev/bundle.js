@@ -1,9 +1,7 @@
-'use strict';
-
 const webpack = require('webpack');
 const ora = require('ora');
+const Logger = require('availity-workflow-logger');
 
-const Logger = require('./logger');
 const webpackConfig = require('../webpack.config.production');
 const webpackDocsConfig = require('../webpack.config.docs');
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');

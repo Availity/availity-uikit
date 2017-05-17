@@ -1,12 +1,10 @@
-'use strict';
-
 const WebpackDevServer = require('webpack-dev-server');
 const webpack = require('webpack');
 const _ = require('lodash');
 const chalk = require('chalk');
+const Logger = require('availity-workflow-logger');
 
 const metalsmith = require('./metalsmith');
-const Logger = require('./logger');
 
 const watch = require('./watch');
 const webpackConfig = require('../webpack.config');

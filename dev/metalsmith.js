@@ -1,5 +1,3 @@
-'use strict';
-
 const Metalsmith = require('metalsmith');
 const layouts = require('metalsmith-layouts');
 const prism = require('metalsmith-prism');
@@ -15,10 +13,10 @@ const collections = require('metalsmith-collections');
 const filter = require('metalsmith-filter');
 const relative = require('metalsmith-rootpath');
 const _slugify = require('slugify');
+const Logger = require('availity-workflow-logger');
 
 const dataMarkdown = require('./plugins/metalsmith-data-markdown');
 const tocify = require('./plugins/metalsmith-tocify');
-const Logger = require('./logger');
 
 const pkg = require('../package.json');
 

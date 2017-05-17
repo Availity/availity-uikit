@@ -1,9 +1,7 @@
-'use strict';
-
+const Logger = require('availity-workflow-logger');
 const chokidar = require('chokidar');
 const debounce = require('debounce-collect');
 const metalsmith = require('./metalsmith');
-const Logger = require('./logger');
 
 function run(files) {
   Logger.log(`${files.length} file(s) changed`);

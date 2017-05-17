@@ -1,5 +1,6 @@
+const Logger = require('availity-workflow-logger');
 const bundle = require('./bundle');
-const Logger = require('./logger');
+
 
 function build() {
 

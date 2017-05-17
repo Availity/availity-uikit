@@ -1,8 +1,7 @@
-'use strict';
+const Logger = require('availity-workflow-logger');
 
 const clean = require('./clean');
 const bundle = require('./bundle');
-const Logger = require('./logger');
 const metalsmith = require('./metalsmith');
 
 function docs() {

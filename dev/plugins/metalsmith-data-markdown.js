@@ -1,5 +1,3 @@
-'use strict';
-
 // Modified from: https://github.com/majodev/metalsmith-data-markdown
 
 const marked = require('marked');

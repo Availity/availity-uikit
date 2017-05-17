@@ -1,5 +1,3 @@
-'use strict';
-
 // Inspiration:
 //  - https://github.com/anatoo/metalsmith-autotoc
 //
