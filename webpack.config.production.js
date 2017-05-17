@@ -114,7 +114,7 @@ function getConfig(options) {
                   ]
                 }
               },
-              'sass-loader?sourceMap'
+              { loader: 'sass-loader', options: { sourceMap: true } }
             ],
             publicPath: '../'
           })

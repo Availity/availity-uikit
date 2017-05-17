@@ -97,7 +97,7 @@ const config = {
             {
               loader: 'postcss-loader',
               options: {
-                sourceMap: false,
+                sourceMap: true,
                 plugins: [
                   autoprefixer(
                     {
@@ -111,7 +111,7 @@ const config = {
                 ]
               }
             },
-            'sass-loader?sourceMap'
+            { loader: 'sass-loader', options: { sourceMap: true } }
           ],
           publicPath: '../'
         })

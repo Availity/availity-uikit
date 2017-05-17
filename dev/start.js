@@ -19,7 +19,6 @@ const startupMessage = _.once(() => {
 });
 
 function compileMessage(stats) {
-
   const statistics = stats.toJson();
   Logger.success(`${chalk.gray('Compiled')} in ${chalk.magenta(statistics.time)} ms
 `);
@@ -38,7 +37,7 @@ function serv() {
 
       const percent = Math.round(percentage * 100);
 
-      if (previousPercent !== percent && percent % 10 === 0 && msg !== null && msg !== undefined && msg.trim() !== '') {
+      if (previousPercent !== percent && percent % 10 === 0) {
         Logger.info(`${chalk.dim('Webpack')} ${percent}% ${msg}`);
         previousPercent = percent;
       }
@@ -60,23 +59,36 @@ function serv() {
 
       if (!hasErrors && !hasWarnings) {
         message(stats);
+        resolve(true);
+      }
+
+      // https://webpack.js.org/configuration/stats/
+      const json = stats.toJson({
+        assets: false,
+        colors: true,
+        version: false,
+        hash: false,
+        timings: false,
+        chunks: false,
+        chunkModules: false,
+        errorDetails: true
+      });
+
+      const messages = formatWebpackMessages(json);
+
+      if (hasWarnings) {
+
+        messages.warnings.forEach(error => {
+          Logger.empty();
+          Logger.simple(`${chalk.red(error)}`);
+          Logger.empty();
+        });
+
+        Logger.failed('Compiled with warnings');
+        Logger.empty();
       }
 
       if (hasErrors) {
-
-        // https://webpack.js.org/configuration/stats/
-        const json = stats.toJson({
-          assets: false,
-          colors: true,
-          version: false,
-          hash: false,
-          timings: false,
-          chunks: false,
-          chunkModules: false,
-          errorDetails: true
-        });
-
-        const messages = formatWebpackMessages(json);
 
         messages.errors.forEach(error => {
           Logger.empty();
@@ -87,7 +99,10 @@ function serv() {
         Logger.failed('Failed compiling');
         Logger.empty();
         reject(json.errors);
+        return;
       }
+
+      resolve();
 
     });
 
