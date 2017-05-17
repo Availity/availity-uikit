@@ -1,5 +1,3 @@
-'use strict';
-
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -72,7 +70,23 @@ function getConfig(options) {
             fallback: 'style-loader',
             use: [
               `css-loader?sourceMap&${minimize}?limit=32768?name=images/[name].[ext]`,
-              'postcss-loader'
+              {
+                loader: 'postcss-loader',
+                options: {
+                  sourceMap: true,
+                  plugins: [
+                    autoprefixer(
+                      {
+                        browsers: [
+                          'last 5 versions',
+                          'Firefox ESR',
+                          'not ie < 9'
+                        ]
+                      }
+                    )
+                  ]
+                }
+              }
             ],
             publicPath: '../'
           })
@@ -83,7 +97,23 @@ function getConfig(options) {
             fallback: 'style-loader',
             use: [
               `css-loader?sourceMap&${minimize}?limit=32768?name=images/[name].[ext]`,
-              'postcss-loader',
+              {
+                loader: 'postcss-loader',
+                options: {
+                  sourceMap: true,
+                  plugins: [
+                    autoprefixer(
+                      {
+                        browsers: [
+                          'last 5 versions',
+                          'Firefox ESR',
+                          'not ie < 9'
+                        ]
+                      }
+                    )
+                  ]
+                }
+              },
               'sass-loader?sourceMap'
             ],
             publicPath: '../'
@@ -117,33 +147,11 @@ function getConfig(options) {
         exclude: ['vendor']
       }),
 
-      new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
+      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
       new ExtractTextPlugin('css/[name].css'),
 
-      new webpack.DefinePlugin(ENV_VAR),
-
-      new webpack.LoaderOptionsPlugin(
-        {
-          test: /\.s?css$/,
-          debug: false,
-          options: {
-            postcss: [
-              autoprefixer(
-                {
-                  browsers: [
-                    'last 5 versions',
-                    'Firefox ESR',
-                    'not ie < 9'
-                  ]
-                }
-              )
-            ],
-            context: __dirname,
-            output: { path: '/build' }
-          }
-        }
-      )
+      new webpack.DefinePlugin(ENV_VAR)
 
     ]
 

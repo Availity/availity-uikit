@@ -1,5 +1,3 @@
-'use strict';
-
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -69,7 +67,23 @@ const config = {
           fallback: 'style-loader',
           use: [
             'css-loader?limit=32768?name=images/[name].[ext]',
-            'postcss-loader'
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                plugins: [
+                  autoprefixer(
+                    {
+                      browsers: [
+                        'last 5 versions',
+                        'Firefox ESR',
+                        'not ie < 9'
+                      ]
+                    }
+                  )
+                ]
+              }
+            }
           ],
           publicPath: '../'
         })
@@ -80,7 +94,23 @@ const config = {
           fallback: 'style-loader',
           use: [
             'css-loader?limit=32768?name=images/[name].[ext]',
-            'postcss-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: false,
+                plugins: [
+                  autoprefixer(
+                    {
+                      browsers: [
+                        'last 5 versions',
+                        'Firefox ESR',
+                        'not ie < 9'
+                      ]
+                    }
+                  )
+                ]
+              }
+            },
             'sass-loader?sourceMap'
           ],
           publicPath: '../'
@@ -113,31 +143,9 @@ const config = {
       exclude: ['vendor']
     }),
 
-    new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
     new ExtractTextPlugin('css/[name].css'),
-
-    new webpack.LoaderOptionsPlugin(
-      {
-        test: /\.s?css$/,
-        debug: false,
-        options: {
-          postcss: [
-            autoprefixer(
-              {
-                browsers: [
-                  'last 5 versions',
-                  'Firefox ESR',
-                  'not ie < 9'
-                ]
-              }
-            )
-          ],
-          context: __dirname,
-          output: { path: '/build' }
-        }
-      }
-    ),
 
     new webpack.ProvidePlugin({
       $: 'jquery',
