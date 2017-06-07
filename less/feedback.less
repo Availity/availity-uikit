@@ -1,26 +1,31 @@
+@feedback-button-bg-main: @btn-primary-bg;
+@feedback-button-bg-hover: darken(@feedback-button-bg-main, 10%);
+@feedback-button-border-main: @btn-primary-border;
+@feedback-button-border-hover: darken(@feedback-button-border-main, 15%);
+
 .feedback-survey {
   .btn {
-    color: #4d4f53;
-    background-color: #e8ebeb;
-    border-color: #cccccc;
+    color: @gray;
+    background-color: @gray-lighter;
+    border-color: @disabled-text-color;
 
     &:hover, &[disabled], &[active], &.active {
-      color: #fff;
-      background-color: #1a4a8a;
-      border-color: #143a6c;
+      color: @white;
+      background-color: @feedback-button-bg-hover;
+      border-color: @feedback-button-border-hover;
     }
     &.btn-inverse {
-      color: #fff;
-      background-color: #2261b5;
-      border-color: #1e55a0;
+      color: @white;
+      background-color: @feedback-button-bg-main;
+      border-color: @feedback-button-border-main;
       &:hover {
-        background-color: #1a4a8a;
-        border-color: #143a6c;
+        background-color: @feedback-button-bg-hover;
+        border-color: @feedback-button-border-hover;
       }
       &[disabled], &[active], &.active {
-        color: #4d4f53;
-        background-color: #e8ebeb;
-        border-color: #cccccc;
+        color: @gray;
+        background-color: @gray-lighter;
+        border-color: @disabled-text-color;
       }
     }
   }
