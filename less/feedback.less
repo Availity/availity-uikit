@@ -1,0 +1,84 @@
+@feedback-button-bg-main: @btn-primary-bg;
+@feedback-button-bg-hover: darken(@feedback-button-bg-main, 10%);
+@feedback-button-border-main: @btn-primary-border;
+@feedback-button-border-hover: darken(@feedback-button-border-main, 15%);
+
+.feedback-survey {
+  .btn {
+    color: @gray;
+    background-color: @gray-lighter;
+    border-color: @disabled-text-color;
+
+    &:hover, &[disabled], &[active], &.active {
+      color: @white;
+      background-color: @feedback-button-bg-hover;
+      border-color: @feedback-button-border-hover;
+    }
+    &.btn-inverse {
+      color: @white;
+      background-color: @feedback-button-bg-main;
+      border-color: @feedback-button-border-main;
+      &:hover {
+        background-color: @feedback-button-bg-hover;
+        border-color: @feedback-button-border-hover;
+      }
+      &[disabled], &[active], &.active {
+        color: @gray;
+        background-color: @gray-lighter;
+        border-color: @disabled-text-color;
+      }
+    }
+  }
+  .input-group {
+    width: 100%;
+  }
+  .input-group-spacer {
+    border: 0;
+  }
+  .icon-xl {
+    font-size: 2em;
+    margin: 0;
+  }
+  .survey-form {
+    transition: max-height 0.3s linear;
+    overflow: hidden;
+    //max-width: 380px;
+    &.expanded {
+      max-height: 100px;
+    }
+    &.collapsed {
+      max-height: 0;
+    }
+    .survey-group {
+      display: table;
+
+      .select-wrapper {
+        position: relative;
+        select {
+          -webkit-appearance: none;
+          -ms-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        &:after {
+          content: '\e8b0';
+          font-family: "availity-icon-font";
+          margin-top: -1rem;
+          position: absolute;
+          top: 50%;
+          right: 10px;
+        }
+      }
+      .select2 {
+        float: none;
+      }
+      select, .select2-container, .select2-choice {
+        border-radius: 2px 0px 0px;
+      }
+      textarea {
+        resize: none;
+        border-radius: 0px 0px 0px 2px;
+      }
+    }
+  }
+}
