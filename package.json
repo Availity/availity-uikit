@@ -63,8 +63,7 @@
   "devDependencies": {
     "animate.css": "3.5.2",
     "autoprefixer": "^6.5.3",
-    "babel": "6.5.2",
-    "babel-cli": "6.18.0",
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.20.0",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.9",
@@ -146,5 +145,6 @@
     "bootstrap-datepicker": "^1.6.4",
     "select2": "3.5.2-browserify",
     "select2-bootstrap-css": "^1.4.6"
-  }
+  },
+  "false": {}
 }
