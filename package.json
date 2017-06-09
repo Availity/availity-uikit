@@ -18,7 +18,6 @@
     "docs:publish": "npm run clean && npm run docs:pages && gh-pages -d build",
     "preversion": "npm run lint",
     "prepublishOnly": "npm run build",
-    "release": "node cli.js release",
     "lint": "node cli.js lint"
   },
   "license": "MIT",
