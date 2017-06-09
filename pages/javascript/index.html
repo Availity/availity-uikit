@@ -22,7 +22,7 @@
       <a class="navbar-brand-availity" href="index.html">
         <div class="navbar-logo-availity"></div>
       </a>
-      <p class="navbar-text">UI Kit and Pattern Library <small>v2.0.0</small></p>
+      <p class="navbar-text">UI Kit and Pattern Library <small>v2.1.0</small></p>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-header">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -67,11 +67,11 @@
           </li>
         
           <li>
-            <a href="../../pages/javascript" title="JavaScript">JavaScript</a>
+            <a href="../../pages/icons" title="Icons">Icons</a>
           </li>
         
           <li>
-            <a href="../../pages/icons" title="Icons">Icons</a>
+            <a href="../../pages/javascript" title="JavaScript">JavaScript</a>
           </li>
         
       </ul>
@@ -392,11 +392,13 @@ ESC press.
     
 <div class="docs-example">
   <div id="av-loading" class="loading-indicator">
+    <p class="loading-text">loading</p>
     <span class="loading-bullet">&#x2022;</span><span class="loading-bullet">&#x2022;</span><span class="loading-bullet">&#x2022;</span>
   </div>
 </div>
 <code class="language-markup">
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loading-indicator<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loading-text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>loading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loading-bullet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x2022;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loading-bullet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x2022;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>loading-bullet<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x2022;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code>
@@ -436,9 +438,7 @@ receives focus.
 
 <span class="token comment" spellcheck="true">&lt;!-- Javascript --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
-  <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#datetimepicker6&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">datetimepicker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#datetimepicker6&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">datetimepicker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code>
 
@@ -461,16 +461,22 @@ vertically or horizontally.
 <span class="token comment" spellcheck="true">&lt;!-- Javascript --&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
 
-<span class="token comment" spellcheck="true">// IE8</span>
-<span class="token comment" spellcheck="true">//</span>
-<span class="token comment" spellcheck="true">// var el = document.getElementById(&quot;myChart&quot;);</span>
-<span class="token comment" spellcheck="true">// G_vmlCanvasManager.initElement(el);</span>
-<span class="token comment" spellcheck="true">// var ctx = el.getContext(&apos;2d&apos;);</span>
+<span class="token keyword">const</span> $chart1 <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#guideChart1&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>$chart1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-<span class="token keyword">var</span> ctx <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;guideChart1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">&quot;2d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> myBarChart <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Chart</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Bar</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-  responsive <span class="token punctuation">:</span> <span class="token boolean">true</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> ctx <span class="token operator">=</span> $chart1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">&apos;2d&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">/* eslint no-new: 0 */</span>
+  <span class="token keyword">new</span> <span class="token class-name">Chart</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">,</span>
+    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      responsive<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      maintainAspectRatio<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
 
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code>
@@ -482,6 +488,8 @@ vertically or horizontally.
       </div>
       <div class="col-md-4 col-sm-3">
         <nav>
+  
+    
   
     
   
@@ -548,8 +556,6 @@ vertically or horizontally.
           </li>
         
       </ol>
-    
-  
     
   
 </nav>

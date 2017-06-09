@@ -22,7 +22,7 @@
       <a class="navbar-brand-availity" href="index.html">
         <div class="navbar-logo-availity"></div>
       </a>
-      <p class="navbar-text">UI Kit and Pattern Library <small>v2.0.0</small></p>
+      <p class="navbar-text">UI Kit and Pattern Library <small>v2.1.0</small></p>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#guide-collapse-header">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -67,11 +67,11 @@
           </li>
         
           <li>
-            <a href="../../pages/javascript" title="JavaScript">JavaScript</a>
+            <a href="../../pages/icons" title="Icons">Icons</a>
           </li>
         
           <li>
-            <a href="../../pages/icons" title="Icons">Icons</a>
+            <a href="../../pages/javascript" title="JavaScript">JavaScript</a>
           </li>
         
       </ul>
@@ -584,7 +584,7 @@ call to action.
 
 
 <a class="docs-headings-anchor" href="#basic"><h3 class="docs-subsection-title" id="basic">Basic</h3></a>
-<p class="docs-section-description">Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the `.card-block` class on the `.card` element to consolidate your markup.</p>
+<p class="docs-section-description">Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the <code>.card-block</code> class on the <code>.card</code> element to consolidate your markup.</p>
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" height="180" alt="Card image cap">
@@ -849,15 +849,8 @@ call to action.
     </h5>
     <div id="exampleCollapse" class="collapse" aria-expanded="false">
       <div class="card-block">
-        <p data-mock="paragraph:3">ratione necessitatibus porro quod distinctio aliquam iure sunt fuga in
-dolores nisi illo et rerum maxime quis quisquam qui voluptatibus
-non tempora dolor qui reiciendis molestiae voluptates ipsum consequatur
-illo ut ut culpa iusto consectetur nihil esse aut
-officiis sed eum ab iure
-numquam dolore possimus ullam quia et</p>
-        <p data-mock="paragraph:5">et similique voluptatum quos qui voluptatem dolorum quidem laborum expedita
-dicta reprehenderit eos
-quisquam consequatur dolor laborum</p>
+        <p data-mock="paragraph:3">Sunt et rerum delectus voluptate consequatur quidem quibusdam. Quibusdam qui modi qui nisi consequatur est voluptatem et. Corrupti veniam ea labore nulla sapiente. Architecto eligendi eos. Est quia quidem ut modi.</p>
+        <p data-mock="paragraph:5">Et corporis vitae. Est ipsum accusamus ea ea. Voluptatibus tempore est id vero. Culpa omnis sunt aut libero nam. Sed quidem dignissimos dolorum quis molestiae nihil.</p>
       </div>
     </div>
   </div>
@@ -1570,6 +1563,75 @@ related to an object on the page.
   </section>
 
   <section class="docs-section">
+    <a class="docs-headings-anchor" href="#feedback-survey"><h2 class="docs-section-header" id="feedback-survey">Feedback Survey</h2></a>
+    <p class="docs-section-description">Styles for implimenting feedback surveys.
+</p>
+    <div class="docs-example">
+  <div class="feedback-survey">
+    <h5>Feedback Prompt</h5>
+    <div class="text-center">
+      <span class="input-group-addon btn"><i class="icon icon-xl icon-smile"></i></span>
+      <span class="input-group-addon btn"><i class="icon icon-xl icon-meh"></i></span>
+      <span class="input-group-addon btn"><i class="icon icon-xl icon-frown"></i></span>
+    </div>
+    <p></p>
+    <form>
+      <div class="survey-form expanded">
+        <div class="survey-group">
+          <div class="select-wrapper">
+            <select class="form-control">
+              <option>Select one</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+              <option>Option 5</option>
+            </select>
+          </div>
+          <textarea class="form-control" rows="2" placeholder="Tell us why.">
+          </textarea>
+          <label class="input-group-addon btn btn-inverse">
+            Send
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<code class="language-markup">
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>feedback-survey<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>Feedback Prompt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text-center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>input-group-addon btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon icon-xl icon-smile<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>input-group-addon btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon icon-xl icon-meh<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>input-group-addon btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>icon icon-xl icon-frown<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>survey-form expanded<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>survey-group<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>select-wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>form-control<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Select one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Option 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Option 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Option 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Option 5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>form-control<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Tell us why.<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>input-group-addon btn btn-inverse<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            Send
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code>
+
+  </section>
+
+  <section class="docs-section">
     <a class="docs-headings-anchor" href="#footer"><h2 class="docs-section-header" id="footer">Footer</h2></a>
     <p class="docs-section-description">The footer is the last, bottom-most section on a page and provides space
 for both non-essential navigation (such as Terms of Use) and redundant
@@ -2094,8 +2156,8 @@ system.
 <div class="card">
   <div class="card-block">
     <div class="card-header-secondary">
-      <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1">386494049</span>
-      <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1">5579464938</span>
+      <small class="text-label text-label-inline">Transaction ID</small> <span class="label label-info" data-mock="memberId:1">195997786</span>
+      <small class="text-label text-label-inline">Customer ID</small> <span class="label label-info" data-mock="customerId:1">1300447069</span>
     </div>
   </div>
   <div class="card-block">
@@ -2106,7 +2168,7 @@ system.
       </div>
       <div class="col-sm-3 col-ms-6">
         <h5 class="text-label">Patient Name</h5>
-        <p data-mock="fullNameReverse:1">Bryant, Nevaeh</p>
+        <p data-mock="fullNameReverse:1">Williams, Savannah</p>
       </div>
       <div class="col-sm-3 col-ms-6">
         <h5 class="text-label">Patient Date of Birth</h5>
@@ -4975,6 +5037,11 @@ embedded within larger information displays.
               
 
           
+          </li>
+        
+          <li>
+            <a href="#feedback-survey" title="Feedback Survey">Feedback Survey</a>
+            
           </li>
         
           <li>
