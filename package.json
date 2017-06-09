@@ -142,7 +142,6 @@
     "web"
   ],
   "dependencies": {
-    "Yamm": "git+https://github.com/geedmo/yamm3.git#v1.1.0",
     "awesome-bootstrap-checkbox": "^0.3.7",
     "bootstrap": "^3.3.7",
     "bootstrap-datepicker": "^1.6.4",
