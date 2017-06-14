@@ -1,6 +1,6 @@
 /**
- * availity-uikit v1.2.1 -- June-09
- * Copyright 2016 Availity, LLC 
+ * availity-uikit v1.2.2 -- June-14
+ * Copyright 2017 Availity, LLC 
  */
 
 /* global jQuery */
