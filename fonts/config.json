@@ -1305,6 +1305,24 @@
       ]
     },
     {
+      "uid": "38575a803c4da31ce20d77e1e1236bcb",
+      "css": "paper-plane",
+      "code": 59603,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4b2321afcbe0505a70b80abd5c25e09b",
+      "css": "paper-plane-empty",
+      "code": 59604,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f70af5dd0ecd154b007d980cd011a7f7",
+      "css": "hourglass-2",
+      "code": 59605,
+      "src": "fontawesome"
+    },
+    {
       "uid": "d6768a46d9172bbf55bcd274bdf0968b",
       "css": "icon-user-new",
       "code": 59395,
