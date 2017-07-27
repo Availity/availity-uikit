@@ -1,6 +1,6 @@
 /*!
  * 
- * availity-uikit v3.0.0-beta.13 (06/09/2017)
+ * availity-uikit v3.0.0-beta.13 (07/27/2017)
  * (c) Availity, LLC
  */
 /**
@@ -274,7 +274,7 @@ h6,
   .h6.subheader,
   .h6 .small,
   .h6 small {
-    color: #7e8188; }
+    color: #676971; }
   h1.condensed,
   h2.condensed,
   h3.condensed,
@@ -302,7 +302,7 @@ h6,
   .h6 .header-link {
     font-size: 0.875rem;
     font-weight: normal;
-    color: #9b9ca3;
+    color: #7e8188;
     text-decoration: none;
     line-height: 2em; }
     h1 .header-link::after,
@@ -462,7 +462,7 @@ strong {
     margin-bottom: 0; }
 
 .bullet {
-  color: #9b9ca3; }
+  color: #7e8188; }
 
 ul,
 ol {
@@ -513,7 +513,7 @@ ol {
   .section-header .section-header-link {
     font-size: 0.875rem;
     font-weight: normal;
-    color: #9b9ca3;
+    color: #7e8188;
     text-decoration: none;
     line-height: 1.5em; }
     .section-header .section-header-link::after {
@@ -639,14 +639,14 @@ ol {
   display: block;
   position: relative;
   cursor: pointer;
-  color: #676971; }
+  color: #4D4F53; }
   .docs-headings-anchor:hover {
     text-decoration: none; }
     .docs-headings-anchor:hover:before {
       content: "\B6";
       position: absolute;
       left: -1em;
-      color: #9b9ca3; }
+      color: #7e8188; }
 
 .nav.docs-nav {
   margin-top: 3rem; }
@@ -685,7 +685,7 @@ ol {
   left: 15px;
   font-size: 12px;
   font-weight: bold;
-  color: #b5b7bc;
+  color: #999ba0;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -756,7 +756,7 @@ ol {
   background-color: #0093e8; }
 
 .color-4 {
-  background-color: #676971; }
+  background-color: #4D4F53; }
 
 .color-5 {
   background-color: #e8ebeb; }
@@ -800,7 +800,7 @@ div[title] {
 code[class*=language] {
   font-size: 14px;
   letter-spacing: 0;
-  color: #676971;
+  color: #4D4F53;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #f7f7f9;
   border: solid #f7f7f9;
@@ -818,7 +818,7 @@ code[class*=language]:before {
   left: 15px;
   font-size: 12px;
   font-weight: bold;
-  color: #b5b7bc;
+  color: #999ba0;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
@@ -826,7 +826,7 @@ code[class*=language]:before {
 pre[class*="language-"] {
   font-size: 14px;
   letter-spacing: 0;
-  color: #676971;
+  color: #4D4F53;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #f7f7f9;
   border: solid #f7f7f9;
@@ -932,7 +932,7 @@ pre[class*="language-"] {
 
 .card-link {
   display: block;
-  color: #676971; }
+  color: #4D4F53; }
   .card-link:hover {
     text-decoration: none; }
 
