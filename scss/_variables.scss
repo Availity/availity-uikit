@@ -39,7 +39,7 @@ $gray-base:                 $black;
 $gray-darkest:              #30383f;
 $gray-darker:               #363f45;
 $gray-dark:                 #48535c;
-$gray:                      #4d4f53;
+$gray:                      #4D4F53;
 $gray-light:                #f8f8f8;
 $gray-lighter:              #e8ebeb;
 $gray-lightest:             #e8ebeb;
@@ -58,7 +58,7 @@ $blue-lightest:             #2a62ae;
 
 $green-darkest:             #0b8c6f;
 $green-darker:              #0b8c6f;
-$green:                     #02a17c;
+$green:                     #157461;
 $green-lighter:             #b4e0da;
 $green-lightest:            #b4e0da;
 
@@ -82,7 +82,7 @@ $orange-lightest:           #f9cdaf;
 
 $secondary-blue-darkest:    #0476b0;
 $secondary-blue:            #0093e8;
-$secondary-text-color:      #7e8188;
+$secondary-text-color:      #676971;
 
 $secondary-green:           #02a17c;
 
@@ -188,7 +188,7 @@ $availity-disclaimer-warning-border: $yellow-darkest !default;
 // Fonts
 
 $availity-font-path: '../fonts' !default;
-$availity-font-weight-normal: 300 !default;
+$availity-font-weight-normal: normal !default;
 $availity-font-weight-bold: bold !default;
 $availity-css-prefix: icon !default;
 $availity-icon-font: "availity-icon-font" !default;
