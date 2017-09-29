@@ -1,4 +1,6 @@
+@import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables';
+
 
 // Variables
 //
@@ -426,7 +428,7 @@ $availity-notifications-menu-bg: $gray-lighter !default;
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
-$availity-zindex-secondary: ($zindex-navbar - 10) !default;
+$availity-zindex-secondary: ($zindex-dropdown - 10) !default;
 $availity-zindex-secondary-fixed: ($zindex-fixed - 10) !default;
 
 
