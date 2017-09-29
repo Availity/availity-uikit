@@ -181,11 +181,11 @@
     }
 
     .nav-link,
-    .navbar-form{
-      padding-left: ($grid-gutter-width-base / 2);
-      padding-right: ($grid-gutter-width-base / 2);
+    .navbar-form {
+      // padding-left: ($grid-gutter-width-base / 2);
+      // padding-right: ($grid-gutter-width-base / 2);
     }
-    .navbar-form .input-group .input-group-btn{
+    .navbar-form .input-group .input-group-btn {
       width: 1%;
     }
 
