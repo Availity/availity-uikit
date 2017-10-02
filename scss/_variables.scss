@@ -100,7 +100,7 @@ $text-link:                 $brand-primary;
 
 $disabled-text-color:       #cccccc;
 
-$text-muted:                lighten($gray, 20%);
+$text-muted:                $secondary-text-color;
 
 $link-color:            $brand-primary;
 
