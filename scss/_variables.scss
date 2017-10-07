@@ -106,6 +106,41 @@ $text-muted:                lighten($gray, 20%);
 
 $link-color:            $brand-primary;
 
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$teal:    $secondary-green;
+$cyan:    $secondary-blue;
+
+$colors: ();
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray,
+  "gray-dark":  $gray-darkest
+), $colors);
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $brand-primary,
+  "secondary":  $secondary-text-color,
+  "success":    $brand-success,
+  "info":       $brand-info,
+  "warning":    $brand-warning,
+  "danger":     $brand-danger,
+  "light":      $gray-lightest,
+  "dark":       $gray-darkest
+), $theme-colors);
+
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.

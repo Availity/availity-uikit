@@ -5,18 +5,33 @@
 }
 
 .card-outline-default {
-  // @extend .card-outline-secondary;
+  @extend .border-secondary;
 }
 
 .card {
-  blockquote footer,
-  blockquote small,
-  blockquote .small {
-    color: inherit;
+  .card-blockquote {
+    border-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    footer,
+    small,
+    .small {
+      color: inherit;
+    }
   }
 }
 
-.card-inverse .card-link {
+.card.text-white a:not(.card-link) {
   border-bottom: 1px dotted;
   &:hover,
   &:focus {
@@ -27,12 +42,12 @@
 .card-warning,
 .card-default,
 .card-secondary {
-  .card-link,
+  a:not(.card-link),
   .card-text,
   .card-blockquote > footer {
     color: $card-blockquote-color;
   }
-  .card-link{
+  a:not(.card-link){
     border-bottom: 1px dotted;
     &:hover,
     &:focus {
@@ -48,7 +63,7 @@
   }
 }
 
-.card-link {
+a, .card-link {
   cursor: pointer;
 }
 

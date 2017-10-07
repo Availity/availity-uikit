@@ -3,16 +3,16 @@ title: Cards
 ref: https://v4-alpha.getbootstrap.com/components/card/`
 frag: elCardo
 description: |
-  A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+  A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors (via util classes), and powerful display options.
 ---
 
 <h3 class="docs-subsection-title">Basic</h3>
-<p class="docs-section-description">Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the <code>.card-block</code> class on the </code>.card</code> element to consolidate your markup.</p>
+<p class="docs-section-description">Cards require a small amount of markup and classes to provide you with as much control as possible. These classes and markup are flexible though and can typically be remixed and extended with ease. For example, if your card has no flush content like images, feel free to put the <code>.card-body</code> class on the </code>.card</code> element to consolidate your markup.</p>
 
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" height="180" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" class="btn btn-primary">Button</a>
@@ -22,7 +22,7 @@ description: |
 <code class="language-markup">
 <div class="card">
   <img class="card-img-top" alt="Card image cap">
-  <div class="card-block">
+  <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Button</a>
@@ -34,7 +34,7 @@ description: |
 <p class="docs-section-description">Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.</p>
 <div class="docs-example">
   <div class="card">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -45,7 +45,7 @@ description: |
 </div>
 <code class="language-markup">
 <div class="card">
-  <div class="card-block">
+  <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -58,7 +58,7 @@ description: |
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" height="180" alt="100px180">
-    <div class="card-block">
+    <div class="card-body">
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
@@ -66,7 +66,7 @@ description: |
 <code class="language-markup">
 <div class="card">
   <img class="card-img-top" alt="100px180">
-  <div class="card-block">
+  <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
@@ -74,12 +74,12 @@ description: |
 
 <div class="docs-example">
   <div class="card">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <h6 class="card-subtitle text-muted">Support card subtitle</h6>
     </div>
     <img data-src="holder.js/100px180/?text=Image" height="180" alt="Card image">
-    <div class="card-block">
+    <div class="card-body">
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" class="card-link">Card link</a>
       <a href="#" class="card-link">Another link</a>
@@ -88,12 +88,12 @@ description: |
 </div>
 <code class="language-markup">
 <div class="card">
-  <div class="card-block">
+  <div class="card-body">
     <h3 class="card-title">Card title</h3>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>
   </div>
   <img data-src="" alt="Card image">
-  <div class="card-block">
+  <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -102,10 +102,10 @@ description: |
 </code>
 
 <div class="docs-example">
-  <div class="card card-block">
+  <div class="card card-body">
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-    <ul class="card-block">
+    <ul class="card-body">
       <li>one</li>
       <li>two</li>
       <li>three</li>
@@ -113,10 +113,10 @@ description: |
   </div>
 </div>
 <code class="language-markup">
-<div class="card card-block">
+<div class="card card-body">
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-    <ul class="card-block">
+    <ul class="card-body">
       <li>one</li>
       <li>two</li>
       <li>three</li>
@@ -130,7 +130,7 @@ description: |
   <div class="row">
     <div class="col-sm-6">
       <div class="card">
-        <div class="card-block">
+        <div class="card-body">
           <h3 class="card-title">Special title treatment</h3>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -139,7 +139,7 @@ description: |
     </div>
     <div class="col-sm-6">
       <div class="card">
-        <div class="card-block">
+        <div class="card-body">
           <h3 class="card-title">Special title treatment</h3>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -151,28 +151,28 @@ description: |
 <code class="language-markup">
 <div class="row">
   <div class="col-sm-3">
-    <div class="card card-block">
+    <div class="card card-body">
       <h3 class="card-title">One</h3>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-block btn-primary">Go somewhere</a>
     </div>
   </div>
   <div class="col-sm-3">
-    <div class="card card-block">
+    <div class="card card-body">
       <h3 class="card-title">Two</h3>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-block btn-primary">Go somewhere</a>
     </div>
   </div>
   <div class="col-sm-3">
-    <div class="card card-block">
+    <div class="card card-body">
       <h3 class="card-title">Three</h3>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-block btn-primary">Go somewhere</a>
     </div>
   </div>
   <div class="col-sm-3">
-    <div class="card card-block">
+    <div class="card card-body">
       <h3 class="card-title">Four</h3>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-block btn-primary">Go somewhere</a>
@@ -184,38 +184,38 @@ description: |
 <h3 class="docs-subsection-title">Text Alignment</h3>
 <p class="docs-section-description">You can quickly change the text alignment of any card—in its entirety or specific parts—with with the text alignment</p>
 <div class="docs-example">
-  <div class="card card-block mb-3">
+  <div class="card card-body mb-3">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 
-  <div class="card card-block mb-3 text-center">
+  <div class="card card-body mb-3 text-center">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 
-  <div class="card card-block mb-3 text-right">
+  <div class="card card-body mb-3 text-right">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 <code class="language-markup">
-<div class="card card-block">
+<div class="card card-body">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 
-<div class="card card-block text-center">
+<div class="card card-body text-center">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 
-<div class="card card-block text-right">
+<div class="card card-body text-right">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -231,7 +231,7 @@ description: |
       </a>
     </h5>
     <div id="exampleCollapse" class="collapse" aria-expanded="false">
-      <div class="card-block">
+      <div class="card-body">
         <p data-mock="paragraph:3"></p>
         <p data-mock="paragraph:5"></p>
       </div>
@@ -246,7 +246,7 @@ description: |
       </a>
     </h5>
     <div id="exampleCollapse" class="collapse" aria-expanded="false">
-      <div class="card-block">
+      <div class="card-body">
         <p data-mock="paragraph:3"></p>
         <p data-mock="paragraph:5"></p>
       </div>
@@ -261,7 +261,7 @@ description: |
   <div class="card-header">
     Featured
   </div>
-  <div class="card-block">
+  <div class="card-body">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -273,7 +273,7 @@ description: |
   <div class="card-header">
     Featured
   </div>
-  <div class="card-block">
+  <div class="card-body">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -286,7 +286,7 @@ description: |
     <div class="card-header">
       Featured
     </div>
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Special title treatment</h4>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -301,7 +301,7 @@ description: |
   <div class="card-header">
     Featured
   </div>
-  <div class="card-block">
+  <div class="card-body">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -317,7 +317,7 @@ description: |
 <div class="docs-example">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180?text=Image" height="180" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -327,7 +327,7 @@ description: |
 <code class="language-markup">
 <div class="card">
   <img class="card-img-top" data-src="" alt="Card image cap">
-  <div class="card-block">
+  <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -338,100 +338,132 @@ description: |
 <h3 class="docs-subsection-title">Variants</h3>
 <p class="docs-section-description" data-markdown>Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. Darker colors require the use of `.card-inverse.`</p>
 <div class="docs-example">
-  <div class="card card-inverse mb-3 card-primary text-center">
-    <div class="card-block">
+  <div class="card text-white bg-primary mb-3 text-center">
+    <div class="card-body">
       <blockquote class="card-blockquote">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse mb-3 card-success text-center">
-    <div class="card-block">
+  <div class="card text-white bg-success mb-3 text-center">
+    <div class="card-body">
       <blockquote class="card-blockquote">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse mb-3 card-info text-center">
-    <div class="card-block">
+  <div class="card text-white bg-info mb-3 text-center">
+    <div class="card-body">
       <blockquote class="card-blockquote">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse mb-3 card-warning text-center">
-    <div class="card-block">
+  <div class="card bg-warning mb-3 text-center">
+    <div class="card-body">
       <blockquote class="card-blockquote">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse mb-3 card-danger text-center">
-    <div class="card-block">
+  <div class="card text-white bg-danger mb-3 text-center">
+    <div class="card-body">
       <blockquote class="card-blockquote">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     </div>
   </div>
-  <div class="card card-inverse mb-3 card-default text-center">
-    <div class="card-block">
+  <div class="card text-white bg-secondary mb-3 text-center">
+    <div class="card-body">
       <blockquote class="card-blockquote">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="card bg-light mb-3 text-center">
+    <div class="card-body">
+      <blockquote class="card-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="card text-white bg-dark mb-3 text-center">
+    <div class="card-body">
+      <blockquote class="card-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
       </blockquote>
     </div>
   </div>
 </div>
 <code class="language-markup">
-<div class="card card-inverse card-primary text-center">
-  <div class="card-block">
+<div class="card text-white bg-primary mb-3 text-center">
+  <div class="card-body">
     <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-success text-center">
-  <div class="card-block">
+<div class="card text-white bg-success mb-3 text-center">
+  <div class="card-body">
     <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-info text-center">
-  <div class="card-block">
+<div class="card text-white bg-info mb-3 text-center">
+  <div class="card-body">
     <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-warning text-center">
-  <div class="card-block">
+<div class="card bg-warning mb-3 text-center">
+  <div class="card-body">
     <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-danger text-center">
-  <div class="card-block">
+<div class="card text-white bg-danger mb-3 text-center">
+  <div class="card-body">
     <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-default text-center">
-  <div class="card-block">
+<div class="card text-white bg-secondary mb-3 text-center">
+  <div class="card-body">
     <blockquote class="card-blockquote">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="card-link">Integer</a> posuere erat a ante.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+<div class="card bg-light mb-3 text-center">
+  <div class="card-body">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+<div class="card text-white bg-dark mb-3 text-center">
+  <div class="card-body">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a>Integer</a> posuere erat a ante.</p>
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </div>
@@ -444,7 +476,7 @@ description: |
   <div class="card-group">
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px180?text=Image&theme=sky" height="180" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -452,7 +484,7 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px180?text=Image&theme=vine" height="180" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -460,7 +492,7 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px180?text=Image&theme=sky" height="180" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -472,7 +504,7 @@ description: |
 <div class="card-group">
   <div class="card">
     <img class="card-img-top" data-src="" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -480,7 +512,7 @@ description: |
   </div>
   <div class="card">
     <img class="card-img-top" data-src="" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -488,7 +520,7 @@ description: |
   </div>
   <div class="card">
     <img class="card-img-top" data-src="" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -504,7 +536,7 @@ description: |
   <div class="card-deck">
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px200?text=Image" height="200" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -512,7 +544,7 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px200?text=Image" height="200" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -520,7 +552,7 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px200?text=Image" height="200" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -534,7 +566,7 @@ description: |
   <div class="card-deck">
     <div class="card">
       <img class="card-img-top" data-src="" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -542,7 +574,7 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -550,7 +582,7 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -567,12 +599,12 @@ description: |
   <div class="card-columns">
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px160?text=Image" height="160" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title that wraps to a new line</h4>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
-    <div class="card card-block">
+    <div class="card card-body">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <footer>
@@ -584,13 +616,13 @@ description: |
     </div>
     <div class="card">
       <img class="card-img-top" data-src="holder.js/100px160?text=Image" height="160" alt="Card image cap">
-      <div class="card-block">
+      <div class="card-body">
         <h4 class="card-title">Card title</h4>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
-    <div class="card card-block card-inverse card-primary text-center">
+    <div class="card card-body card-inverse card-primary text-center">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
         <footer>
@@ -600,7 +632,7 @@ description: |
         </footer>
       </blockquote>
     </div>
-    <div class="card card-block text-center">
+    <div class="card card-body text-center">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -608,7 +640,7 @@ description: |
     <div class="card">
       <img class="card-img" data-src="holder.js/100px260?text=Image" alt="Card image">
     </div>
-    <div class="card card-block text-right">
+    <div class="card card-body text-right">
       <blockquote class="card-blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <footer>
@@ -618,7 +650,7 @@ description: |
         </footer>
       </blockquote>
     </div>
-    <div class="card card-block">
+    <div class="card card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -629,12 +661,12 @@ description: |
 <div class="card-columns">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px160?text=Image" height="160" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title that wraps to a new line</h4>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
   </div>
-  <div class="card card-block">
+  <div class="card card-body">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer>
@@ -646,13 +678,13 @@ description: |
   </div>
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px160?text=Image" height="160" alt="Card image cap">
-    <div class="card-block">
+    <div class="card-body">
       <h4 class="card-title">Card title</h4>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card card-block card-inverse card-primary text-center">
+  <div class="card card-body card-inverse card-primary text-center">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
       <footer>
@@ -662,7 +694,7 @@ description: |
       </footer>
     </blockquote>
   </div>
-  <div class="card card-block text-center">
+  <div class="card card-body text-center">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -670,7 +702,7 @@ description: |
   <div class="card">
     <img class="card-img" data-src="holder.js/100px260?text=Image" alt="Card image">
   </div>
-  <div class="card card-block text-right">
+  <div class="card card-body text-right">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer>
@@ -680,7 +712,7 @@ description: |
       </footer>
     </blockquote>
   </div>
-  <div class="card card-block">
+  <div class="card card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
