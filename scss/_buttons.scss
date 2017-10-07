@@ -43,8 +43,7 @@
 .btn-outline-default {
   @extend .btn-outline-secondary;
 }
-.btn-outline-warning,
-.btn-outline-secondary {
+.btn-outline-warning {
   @include hover-focus-active {
     color: $btn-warning-color;
   }
