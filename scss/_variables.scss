@@ -1,7 +1,3 @@
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-
-
 // Variables
 //
 // Copy settings from this file into the provided `_custom.scss` to override
@@ -141,6 +137,8 @@ $theme-colors: map-merge((
   "dark":       $gray-darkest
 ), $theme-colors);
 
+$theme-color-interval:      10%;
+
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -151,6 +149,14 @@ $theme-colors: map-merge((
 //  lg: 940px,
 //  xl: 1140px
 //) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
 $grid-float-breakpoint: map-get($grid-breakpoints, sm);
 $grid-float-breakpoint-max: $grid-float-breakpoint - 1;
