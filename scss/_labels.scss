@@ -1,69 +1,19 @@
-.badge {
-  text-transform: uppercase;
-  line-height: 1;
-  padding: .25em .6em;
-  display: inline;
-}
-
-.badge-unstyled, .badge-default, .badge-warning {
+.badge-unstyled {
   color: $text-color;
 }
 
 .badge-brand {
-  background-color:  $orange;
+  @include badge-variant($orange);
 }
 
 .badge-extra {
-  background-color:  $secondary-blue;
+  @include badge-variant($secondary-blue);
 }
 
 .badge-block {
   display: block;
   text-align: left;
   padding: .3em;
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  &.badge-block {
-    margin: 0;
-  }
-}
-
-h1, .h1 {
-  &.badge-block {
-    font-size: $font-size-h1;
-  }
-}
-
-h2, .h2 {
-  &.badge-block {
-    font-size: $font-size-h2;
-  }
-}
-
-h3, .h3 {
-  &.badge-block {
-    font-size: $font-size-h3;
-  }
-}
-
-h4, .h4 {
-  &.badge-block {
-    font-size: $font-size-h4;
-  }
-}
-
-h5, .h5 {
-  &.badge-block {
-    font-size: $font-size-h5;
-  }
-}
-
-h6, .h6 {
-  &.badge-block {
-    font-size: $font-size-h6;
-  }
 }
 
 .badge-remove {
@@ -99,38 +49,7 @@ h6, .h6 {
   }
 }
 
-.badge-pill {
-  font-size: 85%;
-  background-color: $gray;
-  color: $white;
-  padding: .35em .6em;
-}
-
-.badge-default {
-  @include av-badge-variant($gray-lighter, $gray);
-}
-
-.badge-primary {
-  @include av-badge-variant($brand-primary);
-}
-
-.badge-success {
-  @include av-badge-variant($brand-success);
-}
-
-.badge-info {
-  @include av-badge-variant($brand-info);
-}
-
-.badge-warning {
-  @include av-badge-variant($brand-warning, $gray);
-}
-
-.badge-danger {
-  @include av-badge-variant($brand-danger);
-}
-
-.btn-primary .badge-pill {
+.btn-primary .badge {
   color: $brand-primary;
   background-color: $white;
 }
