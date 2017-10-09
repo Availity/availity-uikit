@@ -171,9 +171,6 @@ $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:           $font-family-sans-serif;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             14px;
-
-$font-size-base:             $font-size-root;
 $font-size-lg:               1.25rem;
 $font-size-md:               1.15rem;
 $font-size-sm:               .875rem;
