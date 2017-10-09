@@ -17,7 +17,7 @@
   border-color: darken($gray-light, 10%);
   background-color: $gray-light;
   color: $text-darker;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   width: 125px;
 
  @include iconify-before($availity-icon-filter);
