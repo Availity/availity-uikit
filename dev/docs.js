@@ -5,16 +5,13 @@ const bundle = require('./bundle');
 const metalsmith = require('./metalsmith');
 
 function docs() {
-
   return clean()
     .then(metalsmith)
-    .then(() => {
-      return bundle({
-        optimize: false,
-        production: false
-      });
-    })
-    .catch((err) => {
+    .then(() => bundle({
+      optimize: false,
+      production: false,
+    }))
+    .catch(err => {
       Logger.error(err);
     });
 }

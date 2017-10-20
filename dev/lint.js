@@ -4,13 +4,11 @@ const ora = require('ora');
 const Logger = require('availity-workflow-logger');
 
 function lint() {
-
   const engine = new eslint.CLIEngine({
-    useEslintrc: true
+    useEslintrc: true,
   });
 
   return new Promise((resolve, reject) => {
-
     Logger.info('Started linting');
     const spinner = ora('running linter rules');
     spinner.color = 'yellow';
@@ -26,9 +24,8 @@ function lint() {
       '!lib/**',
       '!src/fonts/**',
       '!src/images/**',
-      '!src/less/**'
+      '!src/less/**',
     ]).then(paths => {
-
       const report = engine.executeOnFiles(paths.slice(2));
       const formatter = engine.getFormatter();
 
@@ -42,12 +39,8 @@ function lint() {
         Logger.success('Finished linting');
         resolve();
       }
-
-
     });
-
   });
-
 }
 
 module.exports = lint;

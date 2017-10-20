@@ -26,22 +26,18 @@ function compileMessage(stats) {
 }
 
 function serv() {
-
   Logger.info('Starting development server');
 
   return new Promise((resolve, reject) => {
-
     let previousPercent;
 
-    webpackConfig.plugins.push(new ProgressPlugin( (percentage, msg) => {
-
+    webpackConfig.plugins.push(new ProgressPlugin((percentage, msg) => {
       const percent = Math.round(percentage * 100);
 
       if (previousPercent !== percent && percent % 10 === 0) {
         Logger.info(`${chalk.dim('Webpack')} ${percent}% ${msg}`);
         previousPercent = percent;
       }
-
     }));
 
     const compiler = webpack(webpackConfig);
@@ -53,7 +49,6 @@ function serv() {
     const message = _.debounce(compileMessage, 500);
 
     compiler.plugin('done', stats => {
-
       const hasErrors = stats.hasErrors();
       const hasWarnings = stats.hasWarnings();
 
@@ -71,13 +66,12 @@ function serv() {
         timings: false,
         chunks: false,
         chunkModules: false,
-        errorDetails: true
+        errorDetails: true,
       });
 
       const messages = formatWebpackMessages(json);
 
       if (hasWarnings) {
-
         messages.warnings.forEach(error => {
           Logger.empty();
           Logger.simple(`${chalk.red(error)}`);
@@ -89,7 +83,6 @@ function serv() {
       }
 
       if (hasErrors) {
-
         messages.errors.forEach(error => {
           Logger.empty();
           Logger.simple(`${chalk.red(error)}`);
@@ -103,7 +96,6 @@ function serv() {
       }
 
       resolve();
-
     });
 
     const server = new WebpackDevServer(compiler, {
@@ -113,12 +105,11 @@ function serv() {
       compress: true,
       hot: true,
       watchOptions: {
-        ignored: /node_modules/
-      }
+        ignored: /node_modules/,
+      },
     });
 
-    server.listen(PORT, (err) => {
-
+    server.listen(PORT, err => {
       if (err) {
         Logger.failed(err);
         reject(err);
@@ -127,17 +118,14 @@ function serv() {
       Logger.success('Finished development server');
       resolve();
     });
-
   });
-
 }
 
 function start() {
-
   return metalsmith()
     .then(serv)
     .then(watch)
-    .catch((err) => {
+    .catch(err => {
       Logger.error(err);
     });
 }

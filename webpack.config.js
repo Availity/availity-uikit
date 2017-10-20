@@ -10,9 +10,9 @@ const VERSION = require('./package.json').version;
 
 const ENV_VAR = {
   'process.env': {
-    'VERSION': JSON.stringify(VERSION),
-    'process.env.NODE_ENV': JSON.stringify('development')
-  }
+    VERSION: JSON.stringify(VERSION),
+    'process.env.NODE_ENV': JSON.stringify('development'),
+  },
 };
 
 const config = {
@@ -21,8 +21,8 @@ const config = {
 
   entry: {
     'availity-uikit': './js/index.js',
-    'vendor': './docs/js/vendor',
-    'docs': './docs/js'
+    vendor: './docs/js/vendor',
+    docs: './docs/js',
   },
 
   devtool: 'cheap-module-eval-source-map',
@@ -34,11 +34,11 @@ const config = {
     filename: 'js/[name].js',
     library: 'availity-uikit',
     libraryTarget: 'umd',
-    umdNamedDefine: true
+    umdNamedDefine: true,
   },
 
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js'],
   },
 
   stats: {
@@ -50,7 +50,7 @@ const config = {
     chunks: true,
     chunkModules: true,
     cached: true,
-    cachedAssets: true
+    cachedAssets: true,
   },
 
   module: {
@@ -59,7 +59,7 @@ const config = {
       {
         test: /\.js$/,
         use: 'babel-loader',
-        exclude: /(bower_components|node_modules)/
+        exclude: /(bower_components|node_modules)/,
       },
       {
         test: /\.css$/,
@@ -72,21 +72,19 @@ const config = {
               options: {
                 sourceMap: true,
                 plugins: [
-                  autoprefixer(
-                    {
-                      browsers: [
-                        'last 5 versions',
-                        'Firefox ESR',
-                        'not ie < 9'
-                      ]
-                    }
-                  )
-                ]
-              }
-            }
+                  autoprefixer({
+                    browsers: [
+                      'last 5 versions',
+                      'Firefox ESR',
+                      'not ie < 9',
+                    ],
+                  }),
+                ],
+              },
+            },
           ],
-          publicPath: '../'
-        })
+          publicPath: '../',
+        }),
       },
       {
         test: /\.scss$/,
@@ -99,22 +97,20 @@ const config = {
               options: {
                 sourceMap: true,
                 plugins: [
-                  autoprefixer(
-                    {
-                      browsers: [
-                        'last 5 versions',
-                        'Firefox ESR',
-                        'not ie < 9'
-                      ]
-                    }
-                  )
-                ]
-              }
+                  autoprefixer({
+                    browsers: [
+                      'last 5 versions',
+                      'Firefox ESR',
+                      'not ie < 9',
+                    ],
+                  }),
+                ],
+              },
             },
-            { loader: 'sass-loader', options: { sourceMap: true } }
+            { loader: 'sass-loader', options: { sourceMap: true } },
           ],
-          publicPath: '../'
-        })
+          publicPath: '../',
+        }),
       },
       {
         // test should match the following:
@@ -124,23 +120,23 @@ const config = {
         //
         test: /\.(otf|ttf|woff2?|eot|svg)(\?.*)?$/,
         use: [
-          'file-loader?name=fonts/[name].[ext]'
-        ]
+          'file-loader?name=fonts/[name].[ext]',
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          'url-loader?name=images/[name].[ext]&limit=10000'
-        ]
-      }
-    ]
+          'url-loader?name=images/[name].[ext]&limit=10000',
+        ],
+      },
+    ],
   },
 
   plugins: [
 
     new webpack.BannerPlugin({
       banner: banner(),
-      exclude: ['vendor']
+      exclude: ['vendor'],
     }),
 
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
@@ -150,7 +146,7 @@ const config = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
     }),
 
     new WebpackNotifierPlugin({ excludeWarnings: true }),
@@ -159,10 +155,10 @@ const config = {
 
     new CommonsChunkPlugin({
       name: ['vendor'],
-      minChunks: Infinity
-    })
+      minChunks: Infinity,
+    }),
 
-  ]
+  ],
 };
 
 module.exports = config;

@@ -4,7 +4,6 @@ const moment = require('moment');
 const today = moment().format('MM/DD/YYYY');
 
 function banner() {
-
   const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
   const elBanner = `

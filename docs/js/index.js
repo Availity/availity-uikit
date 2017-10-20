@@ -5,13 +5,12 @@ import '../scss/docs.scss';
 import 'animate.css/animate.css';
 
 $('[data-toggle="popover"]').popover({
-  html: true
+  html: true,
 });
 
 $('[data-toggle="tooltip"]').tooltip();
 
-$('.docs-example').each(function() {
-
+$('.docs-example').each(function () {
   const btn = `
     <hr class="divider-lg"/>
     <div class="btn-toolbar">
@@ -21,11 +20,9 @@ $('.docs-example').each(function() {
     </div>`;
 
   $(this).append($(btn));
-
 });
 
-$('[data-toggle="code"]').click(function(e) {
-
+$('[data-toggle="code"]').click(function (e) {
   e.preventDefault();
 
   const target = $(this).parents('.docs-example').next('.language-markup');
@@ -35,10 +32,9 @@ $('[data-toggle="code"]').click(function(e) {
   } else {
     target.velocity('fadeIn', {
       duration: 300,
-      display: 'block'
+      display: 'block',
     });
   }
-
 });
 
 // filter popover
@@ -50,10 +46,10 @@ $('[data-toggle="filter"]').popover({
     const target = $(this).attr('data-target');
     const $target = $(target);
     return $target.html();
-  }
+  },
 });
 
-$('.dropdown-menu a[data-toggle="tab"]').click(function(e) {
+$('.dropdown-menu a[data-toggle="tab"]').click(function (e) {
   e.stopPropagation();
   $(this).tab('show');
 });

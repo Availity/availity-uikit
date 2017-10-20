@@ -7,15 +7,14 @@ const banner = require('./dev/banner');
 const VERSION = require('./package.json').version;
 
 function getConfig(options) {
-
   const optimize = options.optimize || false;
   const minimize = optimize ? 'minimize' : '-minimize';
 
   const ENV_VAR = {
     'process.env': {
-      'VERSION': JSON.stringify(VERSION),
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }
+      VERSION: JSON.stringify(VERSION),
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    },
   };
 
   const config = {
@@ -23,11 +22,11 @@ function getConfig(options) {
     context: __dirname,
 
     entry: {
-      'availity-uikit': './js/index.js'
+      'availity-uikit': './js/index.js',
     },
 
     resolve: {
-      extensions: ['.js']
+      extensions: ['.js'],
     },
 
     output: {
@@ -35,11 +34,11 @@ function getConfig(options) {
       filename: optimize ? 'js/[name].min.js' : 'js/[name].js',
       library: 'availity-uikit',
       libraryTarget: 'umd',
-      umdNamedDefine: true
+      umdNamedDefine: true,
     },
 
     externals: {
-      'jquery': 'jQuery'
+      jquery: 'jQuery',
     },
 
     devtool: 'source-map',
@@ -53,7 +52,7 @@ function getConfig(options) {
       chunks: true,
       chunkModules: true,
       cached: true,
-      cachedAssets: true
+      cachedAssets: true,
     },
 
     module: {
@@ -62,7 +61,7 @@ function getConfig(options) {
         {
           test: /\.js$/,
           use: 'babel-loader',
-          exclude: /(bower_components|node_modules)/
+          exclude: /(bower_components|node_modules)/,
         },
         {
           test: /\.css$/,
@@ -75,21 +74,19 @@ function getConfig(options) {
                 options: {
                   sourceMap: true,
                   plugins: [
-                    autoprefixer(
-                      {
-                        browsers: [
-                          'last 5 versions',
-                          'Firefox ESR',
-                          'not ie < 9'
-                        ]
-                      }
-                    )
-                  ]
-                }
-              }
+                    autoprefixer({
+                      browsers: [
+                        'last 5 versions',
+                        'Firefox ESR',
+                        'not ie < 9',
+                      ],
+                    }),
+                  ],
+                },
+              },
             ],
-            publicPath: '../'
-          })
+            publicPath: '../',
+          }),
         },
         {
           test: /\.scss$/,
@@ -102,22 +99,20 @@ function getConfig(options) {
                 options: {
                   sourceMap: true,
                   plugins: [
-                    autoprefixer(
-                      {
-                        browsers: [
-                          'last 5 versions',
-                          'Firefox ESR',
-                          'not ie < 9'
-                        ]
-                      }
-                    )
-                  ]
-                }
+                    autoprefixer({
+                      browsers: [
+                        'last 5 versions',
+                        'Firefox ESR',
+                        'not ie < 9',
+                      ],
+                    }),
+                  ],
+                },
               },
-              { loader: 'sass-loader', options: { sourceMap: true } }
+              { loader: 'sass-loader', options: { sourceMap: true } },
             ],
-            publicPath: '../'
-          })
+            publicPath: '../',
+          }),
         },
         {
           // test should match the following:
@@ -127,16 +122,16 @@ function getConfig(options) {
           //
           test: /\.(otf|ttf|woff2?|eot|svg)(\?.*)?$/,
           use: [
-            'file-loader?name=fonts/[name].[ext]'
-          ]
+            'file-loader?name=fonts/[name].[ext]',
+          ],
         },
         {
           test: /\.(jpe?g|png|gif|svg)$/i,
           use: [
-            'url-loader?name=images/[name].[ext]&limit=10000'
-          ]
-        }
-      ]
+            'url-loader?name=images/[name].[ext]&limit=10000',
+          ],
+        },
+      ],
     },
 
 
@@ -144,38 +139,35 @@ function getConfig(options) {
 
       new webpack.BannerPlugin({
         banner: banner(),
-        exclude: ['vendor']
+        exclude: ['vendor'],
       }),
 
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
       new ExtractTextPlugin('css/[name].css'),
 
-      new webpack.DefinePlugin(ENV_VAR)
+      new webpack.DefinePlugin(ENV_VAR),
 
-    ]
+    ],
 
   };
 
   if (optimize) {
-    config.plugins.push(
-      new webpack.optimize.UglifyJsPlugin({
-        minimize: true,
-        mangle: false,
-        output: {
-          comments: false
-        },
-        compressor: {
-          screw_ie8: true,
-          warnings: false
-        }
-      })
-    );
+    config.plugins.push(new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      mangle: false,
+      output: {
+        comments: false,
+      },
+      compressor: {
+        screw_ie8: true,
+        warnings: false,
+      },
+    }));
   }
 
   return config;
 }
 
 module.exports = getConfig;
-
 

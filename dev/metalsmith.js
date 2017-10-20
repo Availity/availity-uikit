@@ -29,7 +29,7 @@ const markedOptions = {
   langPrefix: 'language-',
   renderer: new marked.Renderer(),
   gfm: true,
-  tables: true
+  tables: true,
 };
 
 nunjucksDate
@@ -37,89 +37,83 @@ nunjucksDate
 
 const env = nunjucks.configure('docs/layouts', {
   watch: false,
-  noCache: true
+  noCache: true,
 });
 env.addFilter('year', nunjucksDate);
 env.addFilter('slug', slugify);
 
 function build() {
-
   Logger.info('Started docs');
 
   return new Promise((resolve, reject) => {
-
     const metalsmith = new Metalsmith(path.join(process.cwd(), 'docs'));
 
     metalsmith
       .metadata({
         site: {
-          title: 'Availity UIKit'
+          title: 'Availity UIKit',
         },
         today: new Date(),
-        pkg
+        pkg,
       })
       .ignore(['!**/*.html', 'node_modules', '_book', 'dev', 'dist', 'less', 'reports'])
       .source(path.join(process.cwd(), 'docs', 'content'))
       .use(markdown(markedOptions))
       .use(dataMarkdown({
-        selector: '[data-markdown]'
+        selector: '[data-markdown]',
       }))
       .use(prism({
-        decode: true
+        decode: true,
       }))
       .use(mock())
       .use(collections({
         pages: {
           pattern: 'pages/**/*.html',
-          reverse: false
+          reverse: false,
         },
         components: {
           pattern: 'components/**/*.html',
           sortBy: 'title',
-          refer: false
+          refer: false,
         },
         examples: {
           pattern: 'examples/**/*.html',
           sortBy: 'title',
           reverse: true,
-          refer: false
+          refer: false,
         },
         javascript: {
           pattern: 'javascript/**/*.html',
           sortBy: 'title',
           reverse: true,
-          refer: false
-        }
+          refer: false,
+        },
       }))
       .use(permalinks({
-        relative: false
+        relative: false,
       }))
       .use(relative())
       .use(inPlace({
         engine: 'nunjucks',
-        partials: 'layouts/partials'
+        partials: 'layouts/partials',
       }))
       .use(tocify({ selector: '.docs-section-header, .docs-subsection-title' }))
       .use(layouts({
         engine: 'nunjucks',
-        directory: 'layouts'
+        directory: 'layouts',
       }))
       .use(filter(['index.html', 'pages/**/*.html', 'examples/**/*.html']))
       .destination(path.join(process.cwd(), 'build'));
 
-    metalsmith.build((err) => {
-
+    metalsmith.build(err => {
       if (err) {
         reject(err);
       } else {
         Logger.success('Finished docs');
         resolve();
       }
-
     });
-
   });
-
 }
 
 module.exports = build;

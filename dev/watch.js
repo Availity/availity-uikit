@@ -9,17 +9,15 @@ function run(files) {
 }
 
 function watch() {
-
   const watcher = chokidar.watch('docs', {
     ignored: /[\/\\]\./,
     ignoreInitial: true,
-    persistent: true
+    persistent: true,
   });
 
   watcher.on('all', debounce(run, 50));
 
   return Promise.resolve(true);
-
 }
 
 module.exports = watch;

@@ -19,19 +19,16 @@ function slugify(tokens) {
 const cacheIds = [];
 
 class TocItem {
-
   constructor(args) {
     this.init(args);
   }
 
   init(params) {
-
     const parameters = params || {};
     this.id = parameters.id || '';
     this.text = parameters.text || '';
     this.children = [];
     this.parent = null;
-
   }
 
   add(tocItem) {
@@ -46,15 +43,13 @@ class TocItem {
     return {
       id: this.id,
       text: this.text,
-      children: this.children
+      children: this.children,
     };
   }
-
 }
 
 function getRootLevel(headers) {
-
-  return headers.map(function() {
+  return headers.map(function () {
     return this.level;
   })
     .toArray()
@@ -62,32 +57,27 @@ function getRootLevel(headers) {
 }
 
 function slugifi($el) {
-
   let id = $el.attr('id');
 
   if (!id) {
-
     let slugId = slugify($el.text());
     if (cacheIds[slugId]) {
-      slugId = slugId + _.uniqueId('-');
+      slugId += _.uniqueId('-');
     }
 
     cacheIds[slugId] = slugId;
 
     id = slugId;
     $el.attr('id', id); // add ID to dom if missing
-
   }
 
   // target the anchor element around the heading
   $el.parent().attr('href', `#${id}`);
 
   return id;
-
 }
 
 function buildToc($, _headers) {
-
   let headers = _headers;
 
   if (headers.length === 0) {
@@ -97,8 +87,7 @@ function buildToc($, _headers) {
   const root = new TocItem();
   let toc = root;
 
-  headers = headers.map(function() {
-
+  headers = headers.map(function () {
     const $el = $(this);
 
     const id = slugifi($el);
@@ -106,15 +95,13 @@ function buildToc($, _headers) {
     return {
       id,
       text: $el.text(),
-      level: parseInt($el.get(0).tagName.match(/^h([123456])$/i)[1], 10)
+      level: parseInt($el.get(0).tagName.match(/^h([123456])$/i)[1], 10),
     };
-
   });
 
   let lastLevel = getRootLevel(headers);
 
-  headers.each(function() {
-
+  headers.each(function () {
     const header = this;
 
     const id = header.id;
@@ -135,7 +122,7 @@ function buildToc($, _headers) {
 
     const newToc = new TocItem({
       text,
-      id
+      id,
     });
 
     toc.add(newToc);
@@ -147,16 +134,13 @@ function buildToc($, _headers) {
 }
 
 function plugin(_options) {
-
   const options = _options || {};
   options.selector = options.selector || 'h2, h3, h4, h5, h6';
 
-  return function(files, metalsmith, done) {
-
+  return function (files, metalsmith, done) {
     setImmediate(done);
 
-    _.each(files, function(file, key) {
-
+    _.each(files, (file, key) => {
       if (!file.toc) {
         return;
       }
@@ -175,7 +159,6 @@ function plugin(_options) {
 
       file.contents = new Buffer($.html());
       file.toc = toc;
-
     });
   };
 }

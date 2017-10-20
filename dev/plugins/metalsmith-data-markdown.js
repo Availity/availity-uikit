@@ -14,7 +14,7 @@ const extname = require('path').extname;
  * @return {Boolean}
  */
 
-const isHtmlFile = function(file) {
+const isHtmlFile = function (file) {
   return /\.html?/.test(extname(file));
 };
 
@@ -30,19 +30,16 @@ const isHtmlFile = function(file) {
  */
 
 function plugin(options) {
-
   const opts = options || {};
 
   opts.removeAttributeAfterwards = opts.removeAttributeAfterwards || false;
 
   // hand opts to marked
 
-  return function(files, metalsmith, done) {
-
+  return function (files, metalsmith, done) {
     setImmediate(done);
 
-    _.each(files, function(file, name) {
-
+    _.each(files, (file, name) => {
       if (!isHtmlFile(file.path || name)) {
         return;
       }
@@ -53,8 +50,7 @@ function plugin(options) {
       // parse html content in cheerio to query it
       const $ = cheerio.load(contents);
 
-      $(opts.selector || '[data-markdown]').each(function() {
-
+      $(opts.selector || '[data-markdown]').each(function () {
         foundMatches = true;
 
         const $el = $(this);
@@ -79,13 +75,11 @@ function plugin(options) {
         if (opts.removeAttributeAfterwards) {
           $el.removeAttr('data-markdown');
         }
-
       });
 
       if (foundMatches) { // only do anything to contents, if matches were found
         file.contents = new Buffer($.html());
       }
-
     });
   };
 }

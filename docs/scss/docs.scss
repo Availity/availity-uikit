@@ -9,7 +9,7 @@
 
 @import "~prismjs/themes/prism-coy.css";
 
-$docs-padding: 1.5em;
+$docs-padding: 1.5rem;
 $docs-color: lighten($gray, 30%);
 $docs-font-code: 12px;
 $docs-menu-link-color: #373a3c;
@@ -504,16 +504,16 @@ pre[class*="language-"] {
   animation-duration: 1s;
 }
 
-.card-link {
+// .card-link {
 
-  display:block;
-  color: $gray;
+//   display:block;
+//   color: $gray;
 
-  &:hover {
-    text-decoration: none;
-  }
+//   &:hover {
+//     text-decoration: none;
+//   }
 
-}
+// }
 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
