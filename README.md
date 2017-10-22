@@ -82,5 +82,3 @@ Open source software components distributed or made available in the Availity Ma
 ## License
 
 [MIT](./LICENSE)
-
-Copyright (c) 2016 Availity, LLC
