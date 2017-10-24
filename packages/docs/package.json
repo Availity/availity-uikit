@@ -1,0 +1,28 @@
+{
+  "name": "@availity/uikit-docs",
+  "description": "Availity UI Kit Documentation",
+  "version": "3.0.0-beta.14",
+  "author": "Robert McGuinness <rob.mcguiness@availity.com>",
+  "dependencies": {
+    "availity-uikit": "^3.0.0-beta.14",
+    "gatsby": "^1.9.73",
+    "gatsby-link": "^1.6.22",
+    "gatsby-plugin-react-helmet": "^1.0.8"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-sass": "^1.0.12",
+    "prettier": "^1.7.4"
+  }
+}
