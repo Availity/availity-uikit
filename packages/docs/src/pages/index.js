@@ -1,6 +1,5 @@
 import React from 'react';
-import Alerts from '../components/Alerts';
 
-const IndexPage = () => <Alerts />;
+const IndexPage = () => <div>Home Page</div>;
 
 export default IndexPage;

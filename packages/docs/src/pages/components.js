@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Alerts from '../components/Alerts';
-
 const ComponentsPage = () => (
-  <Alerts />
+  <div>Components Page</div>
 );
 
 export default ComponentsPage;

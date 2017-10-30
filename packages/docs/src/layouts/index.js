@@ -3,24 +3,20 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import 'availity-uikit';
 
-import NavBar from '../components/Navbar';
+import Navigation from '../components/Navigation';
+import meta from './meta';
+
 import './index.scss';
 
-
-const Header = () => <NavBar />;
-
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = props => (
   <div>
     <Helmet
       title="Availity UIKit"
-      meta={[
-        { name: 'description', content: 'Availity UIKit powered by Bootstrap 4' },
-        { name: 'keywords', content: 'css, bootstrap, uikit' },
-      ]}
+      meta={meta}
     />
-    <Header />
+    <Navigation {...props} />
     <div>
-      {children()}
+      {props.children()}
     </div>
   </div>
 );

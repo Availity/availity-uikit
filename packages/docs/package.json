@@ -7,7 +7,8 @@
     "availity-uikit": "^3.0.0-beta.14",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
-    "gatsby-plugin-react-helmet": "^1.0.8"
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-react-next": "^1.0.4"
   },
   "keywords": [
     "gatsby"
