@@ -20,7 +20,7 @@ const ComponentsPage = ({ data }) => {
 
   return (
     <div>
-      <h1>Components Page</h1>
+      <h1 className="sr-only">Components Page</h1>
       { componentsList }
     </div>
   );

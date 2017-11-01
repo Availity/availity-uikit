@@ -1,5 +1,6 @@
 ---
-title: "Alerts"
+title: Alerts
+category: Alerts
 ---
 <div>
   <div class="alert alert-success" role="alert">
