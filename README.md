@@ -16,7 +16,6 @@
 
 [http://availity.github.io/availity-uikit/v3]( http://availity.github.io/availity-uikit/v3)
 
-
 ## Supported Browsers
 
 * Internet Explorer 11+
@@ -31,16 +30,13 @@
 ```bash
 $ npm install availity-uikit@next --save
 ```
-
-
 ## Icon Fonts
 
 Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  Our [font configuration](./fonts/config.json) can be used on Fontello to edit the font catalog.
 
 ## Contributing
 
-#### CLI
-
++ `npm install`
 + `npm start`
     * Runs Gatsby develop server on `http://localhost:8000`    
 
