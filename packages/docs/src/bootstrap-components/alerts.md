@@ -1,5 +1,5 @@
 ---
-title: Alerts
+title: Default
 category: Alerts
 ---
 <div>
