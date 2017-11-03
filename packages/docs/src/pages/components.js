@@ -15,8 +15,14 @@ const Component = ({ html, title }) =>
 const ComponentsPage = ({ data }) => {
   const components = data.allMarkdownRemark.edges;
 
-  const componentsList = components.map(component =>
-    <Component title={component.node.frontmatter.title} html={component.node.html} />);
+  /* eslint-disable react/no-array-index-key */
+  const componentsList = components.map((component, i) => (
+    <Component
+      key={i}
+      title={component.node.frontmatter.title}
+      html={component.node.html}
+    />
+  ));
 
   return (
     <div>
@@ -34,6 +40,7 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
+            category
             title
           }
           html
