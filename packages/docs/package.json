@@ -5,6 +5,7 @@
   "author": "Robert McGuinness <rob.mcguiness@availity.com>",
   "dependencies": {
     "availity-uikit": "^3.0.0-beta.14",
+    "bootstrap": "^4.0.0-beta.2",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-react-helmet": "^1.0.8",

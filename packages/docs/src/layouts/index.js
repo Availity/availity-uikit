@@ -15,9 +15,7 @@ const TemplateWrapper = props => (
       meta={meta}
     />
     <Navigation {...props} />
-    <div className="container-fluid">
-      {props.children()}
-    </div>
+    {props.children()}
   </div>
 );
 
