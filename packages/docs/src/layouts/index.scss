@@ -1,0 +1,6 @@
+@import '~bootstrap/scss/_functions';
+@import "~bootstrap/scss/_variables.scss";
+
+.docs-masthead {
+  padding: 3rem ($grid-gutter-width / 2);
+}
