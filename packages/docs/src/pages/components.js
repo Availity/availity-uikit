@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
+import 'holderjs';
 
 
 const Component = ({ html, title }) =>
@@ -25,27 +26,34 @@ const ComponentsPage = ({ data }) => {
   ));
 
   return (
-    <div>
+    <main className="docs-masthead">
       <h1 className="sr-only">Components Page</h1>
-      { componentsList }
-    </div>
+      <div className="container">
+        { componentsList }
+      </div>
+    </main>
   );
 };
 
 export default ComponentsPage;
 
 export const pageQuery = graphql`
-  query ComponentsQuery {
-    allMarkdownRemark {
-      edges {
+  query BootstrapComponents {
+    allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___category, frontmatter___title] }
+    ) {
+      edges{
         node {
-          frontmatter {
-            category
-            title
-          }
           html
+          frontmatter {
+            title
+            category
+          }
         }
       }
+    }
+    file {
+        relativePath
     }
   }
 `;

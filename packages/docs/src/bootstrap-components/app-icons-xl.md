@@ -3,7 +3,6 @@ category: App Icons
 title: Extra Large Icons
 
 ---
-
 <div class="docs-example">
   <div>
     <span class="app-icon app-icon-xl app-icon-black">ai</span>

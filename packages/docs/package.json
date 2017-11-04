@@ -12,6 +12,7 @@
     "gatsby-plugin-react-next": "^1.0.4",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.18",
+    "holderjs": "^2.9.4",
     "react-html-parser": "^2.0.1"
   },
   "keywords": [
