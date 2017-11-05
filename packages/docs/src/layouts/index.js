@@ -13,7 +13,9 @@ const TemplateWrapper = props => (
     <Helmet
       title="Availity UIKit"
       meta={meta}
-    />
+    >
+      <html lang="en" amp />
+    </Helmet>
     <Navigation {...props} />
     {props.children()}
   </div>
