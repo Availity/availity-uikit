@@ -40,17 +40,6 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 + `npm start`
     * Runs Gatsby develop server on `http://localhost:8000`    
 
-## Authors
-
-**Robert McGuinness**
-+ [rob.mcguinness@availity.com](rob.mcguinness@availity.com)
-
-**Robert Warner**
-+ [rob.warner@availity.com](rob.warner@availity.com)
-
-**Bobby Bennett**
-+ [bobby.bennett@availity.com](bobby.bennett@availity.com)
-
 ## Disclaimer
 
 Open source software components distributed or made available in the Availity Materials are licensed to Company under the terms of the applicable open source license agreements, which may be found in text files included in the Availity Materials.
