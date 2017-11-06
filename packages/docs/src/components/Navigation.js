@@ -25,17 +25,17 @@ const Navigation = ({ location }) => (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className={location.pathname === '/' ? 'nav-item active' : 'nav-item'}>
-            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link docs-nav-link" to="/">Home</Link>
           </li>
           <li className={location.pathname === '/components' ? 'nav-item active' : 'nav-item'}>
-            <Link className="nav-link" to="/components">Components</Link>
+            <Link className="nav-link docs-nav-link" to="/components">Components</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://github.com/availity/availity-uikit">Github</a>
+            <a className="nav-link docs-nav-link" href="https://github.com/availity/availity-uikit">Github</a>
           </li>
         </ul>
       </div>
-      </div>
+    </div>
   </nav>
 );
 
