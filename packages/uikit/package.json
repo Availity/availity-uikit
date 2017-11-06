@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "node-sass-chokidar --recursive --importer=node_modules/node-sass-tilde-importer scss --output css",
-    "watch": "npm run build && node-sass-chokidar scss/ -o css/ --watch --recursive"
+    "watch:scss": "node-sass-chokidar scss/ -o css/ --watch --recursive --importer=node_modules/node-sass-tilde-importer",
+    "watch": "npm-run-all build watch:scss"
   },
   "license": "MIT",
   "homepage": "http://availity.github.io/availity-uikit/",
