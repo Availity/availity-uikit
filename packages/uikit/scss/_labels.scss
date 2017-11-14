@@ -1,0 +1,55 @@
+.badge-unstyled {
+  color: $text-color;
+}
+
+.badge-brand {
+  @include badge-variant($orange);
+}
+
+.badge-extra {
+  @include badge-variant($secondary-blue);
+}
+
+.badge-block {
+  display: block;
+  text-align: left;
+  padding: .3rem;
+}
+
+.badge-remove {
+
+  display: inline-block; // https://github.com/twbs/bootstrap/issues/13219
+  vertical-align: middle;
+
+  a {
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+  }
+
+  .icon {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  &[disabled="disabled"] {
+    opacity: 0.65;
+
+    a {
+      &:hover {
+        opacity: 0.5;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.btn-primary .badge {
+  color: $brand-primary;
+  background-color: $white;
+}

@@ -14,14 +14,13 @@
 
 ## Demo
 
-[http://availity.github.io/availity-uikit]( http://availity.github.io/availity-uikit)
-
+[http://availity.github.io/availity-uikit/v3]( http://availity.github.io/availity-uikit/v3)
 
 ## Supported Browsers
 
-* Internet Explorer 10+
-* Google Chrome > 1% market share
-* Mozilla Firefox > 1% market share
+* Internet Explorer 11+
+* Google Chrome > 2% market share
+* Mozilla Firefox > 2% market share
 
 ## Quickstart
 
@@ -29,51 +28,17 @@
 
 >
 ```bash
-$ npm install availity-uikit --save
+$ npm install availity-uikit@next --save
 ```
-
-+ Reference the compiled assets from the `/dist` in `index.html`
-+ If you use a module bundler (Webpack, Browserify), require the dependencies `js/index.js` and `scss/availity-uikit.scss`
-
-
 ## Icon Fonts
 
 Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  Our [font configuration](./fonts/config.json) can be used on Fontello to edit the font catalog.
 
 ## Contributing
 
-### Dependencies
-
-+ [node v4+](https://github.com/nodejs/node/releases)
-
-#### CLI
-
++ `npm install`
 + `npm start`
-    * runs webpack dev server on `http://localhost:3000`
-    * watches library and docs changes and automatically compiles the assets into `./build`
-+ `npm run build`
-    * cleans `/dist`
-    * runs the webpack module bundler
-    * produces regular and minified assets in `/dist
-+ `npm run docs`
-    * runs metalsmith and outputs to `/build`
-    * runs webpack module bundler and outputs to `/dist`
-+ `npm run lint`
-    * runs Eslint across dev and lib files
-
-## Authors
-
-**Robert McGuinness**
-+ [rob.mcguinness@availity.com](rob.mcguinness@availity.com)
-
-**Robert Ventrone**
-+ [robert.ventrone@availity.com](robert.ventrone@availity.com)
-
-**Robert Warner**
-+ [rob.warner@availity.com](rob.warner@availity.com)
-
-**Bobby Bennett**
-+ [bobby.bennett@availity.com](bobby.bennett@availity.com)
+    * Runs Gatsby develop server on `http://localhost:8000`    
 
 ## Disclaimer
 
@@ -82,5 +47,3 @@ Open source software components distributed or made available in the Availity Ma
 ## License
 
 [MIT](./LICENSE)
-
-Copyright (c) 2016 Availity, LLC

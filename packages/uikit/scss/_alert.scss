@@ -1,0 +1,5 @@
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(theme-color-level($color, 1), theme-color-level($color, -1), color-yiq-fn($value));
+  }
+}
