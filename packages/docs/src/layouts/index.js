@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap';
 import 'availity-uikit';
 
 import Navigation from '../components/Navigation';
@@ -10,10 +12,7 @@ import './index.scss';
 
 const TemplateWrapper = props => (
   <div>
-    <Helmet
-      title="Availity UIKit"
-      meta={meta}
-    >
+    <Helmet title="Availity UIKit" meta={meta}>
       <html lang="en" amp />
     </Helmet>
     <Navigation {...props} />

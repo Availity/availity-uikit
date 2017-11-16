@@ -7,9 +7,11 @@
     "clean": "lerna clean",
     "lint": "eslint .",
     "postinstall": "lerna bootstrap",
-    "release": "npm run lint && sh ./scripts/release.sh",
     "start": "npm start --prefix packages/docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write 'packages/*/*.js' 'packages/*/!(node_modules|dist|public)/**/*.js'",
+    "precommit": "lint-staged",
+    "release": "npm run lint && sh ./scripts/release.sh"
   },
   "repository": {
     "type": "git",
@@ -27,18 +29,24 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.4.0",
-    "lerna": "^2.4.0"
+    "husky": "^0.14.3",
+    "lerna": "^2.4.0",
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.8.2"
   },
-  "keywords": [
-    "uikit",
-    "availity",
-    "ux",
-    "bootstrap"
-  ],
+  "keywords": ["uikit", "availity", "ux", "bootstrap"],
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Availity/availity-uikit/issues"
   },
-  "homepage": "https://github.com/Availity/availity-uikit#readme"
+  "homepage": "https://github.com/Availity/availity-uikit#readme",
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "*.js": ["prettier", "git add"]
+  }
 }
