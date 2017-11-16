@@ -38,15 +38,18 @@ title: Default
           <input type="text" class="form-control" id="datetimepicker7" placeholder="mm/dd/yyyy">
         </div>
         <div class="form-group">
-          <label for="serviceQuantityType">
-            Service Quantity/Type
-          </label>
           <div class="row">
             <div class="col-sm-4">
-              <input type="text" id="serviceQuantityType" class="form-control">
+              <label for="serviceQuantity">
+                Service Quantity
+              </label>
+              <input type="text" id="serviceQuantity" class="form-control">
             </div>
             <div class="col-sm-8">
-              <select class="custom-select custom-block" id="rts">
+              <label for="serviceType">
+                Service Type
+              </label>
+              <select class="custom-select custom-block" id="serviceType">
                 <option>Select one</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
