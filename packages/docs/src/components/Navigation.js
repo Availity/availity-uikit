@@ -15,14 +15,14 @@ const Navigation = ({ location }) => (
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-target="#navbarSupportedContentTop"
+        aria-controls="navbarSupportedContentTop"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon" />
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div className="collapse navbar-collapse" id="navbarSupportedContentTop">
         <ul className="navbar-nav ml-auto">
           <li className={location.pathname === '/' ? 'nav-item active' : 'nav-item'}>
             <Link className="nav-link docs-nav-link" to="/">Home</Link>
