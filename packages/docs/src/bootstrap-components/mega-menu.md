@@ -7,7 +7,7 @@ title: Mega Menu
     <a class="navbar-brand navbar-brand-availity" href="#">
       <div class="navbar-logo-availity"></div>
     </a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-12">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-12" aria-label="navbar toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-12">
@@ -53,7 +53,7 @@ title: Mega Menu
     </div>
   </nav>
   <nav class="navbar navbar-secondary navbar-toggleable-sm mega-menu navbar-default" role="navigation">
-    <button class="navbar-toggler float-right mr-3" type="button" data-toggle="collapse" data-target="#availity-navbar-secondary">
+    <button class="navbar-toggler float-right mr-3" type="button" data-toggle="collapse" data-target="#availity-navbar-secondary" aria-label="navbar toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="availity-navbar-secondary">

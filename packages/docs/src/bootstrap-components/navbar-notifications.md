@@ -4,7 +4,7 @@ title: Notifications
 ---
 <div class="docs-example">
   <nav class="navbar navbar-default navbar-toggleable-sm mega-menu" role="navigation">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4" aria-label="navbar toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
