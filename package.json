@@ -4,6 +4,7 @@
   "description": "Monorepo for availity-uikit and documentation",
   "scripts": {
     "link": "lerna link",
+    "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "lint": "eslint .",
     "postinstall": "lerna bootstrap",
