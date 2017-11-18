@@ -5,7 +5,7 @@ title: Mega Menu
 <div class="docs-example">
   <nav class="navbar navbar-toggleable-sm mega-menu navbar-default" role="navigation">
     <a class="navbar-brand navbar-brand-availity" href="#">
-      <div class="navbar-logo-availity"></div>
+      <div class="navbar-logo-availity" aria-label="availity logo"></div>
     </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-12" aria-label="navbar toggler">
       <span class="navbar-toggler-icon"></span>

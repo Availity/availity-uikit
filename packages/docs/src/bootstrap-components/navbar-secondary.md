@@ -5,7 +5,7 @@ title: Secondary
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
     <a class="navbar-brand" href="#">
-      <div class="navbar-logo-availity"></div>
+      <div class="navbar-logo-availity" aria-label="availity logo"></div>
     </a>
   </nav>
   <nav class="navbar navbar-default navbar-toggleable-sm navbar-secondary" role="navigation">
