@@ -8,7 +8,7 @@ title: Notifications
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-      <div class="navbar-logo-availity"></div>
+      <div class="navbar-logo-availity" aria-label="availity logo"></div>
     </a>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-4">
       <ul class="nav navbar-nav mr-auto">
