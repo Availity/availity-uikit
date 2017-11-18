@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/availity-uikit',
   siteMetadata: {
     title: 'UIkit',
     description: 'Availity UIKit powered by Bootstrap 4',
