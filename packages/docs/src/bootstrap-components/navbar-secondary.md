@@ -5,11 +5,11 @@ title: Secondary
 <div class="docs-example">
   <nav class="navbar navbar-default" role="navigation">
     <a class="navbar-brand" href="#">
-      <div class="navbar-logo-availity"></div>
+      <div class="navbar-logo-availity" aria-label="availity logo"></div>
     </a>
   </nav>
   <nav class="navbar navbar-default navbar-toggleable-sm navbar-secondary" role="navigation">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-2" aria-label="navbar toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-2">

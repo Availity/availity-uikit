@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/availity-uikit/v3/',
   siteMetadata: {
     title: 'UIkit',
     description: 'Availity UIKit powered by Bootstrap 4',
@@ -18,4 +19,3 @@ module.exports = {
     'gatsby-transformer-remark',
   ],
 };
-

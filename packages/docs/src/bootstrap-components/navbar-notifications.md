@@ -4,11 +4,11 @@ title: Notifications
 ---
 <div class="docs-example">
   <nav class="navbar navbar-default navbar-toggleable-sm mega-menu" role="navigation">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#availity-example-navbar-collapse-4" aria-label="navbar toggler">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-      <div class="navbar-logo-availity"></div>
+      <div class="navbar-logo-availity" aria-label="availity logo"></div>
     </a>
     <div class="collapse navbar-collapse" id="availity-example-navbar-collapse-4">
       <ul class="nav navbar-nav mr-auto">

@@ -2,10 +2,11 @@
 category: Navbar
 title: Forms
 ---
+
 <div class="docs-example">
   <nav class="navbar navbar-default navbar-toggleable-md" role="navigation">
     <a class="navbar-brand navbar-brand" href="#">
-      <div class="navbar-logo-availity"></div>
+      <div class="navbar-logo-availity" aria-label="availity logo"></div>
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">

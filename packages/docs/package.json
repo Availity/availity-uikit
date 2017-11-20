@@ -6,6 +6,7 @@
   "dependencies": {
     "availity-uikit": "^3.0.0-beta.14",
     "bootstrap": "^4.0.0-beta.2",
+    "expose-loader": "^0.7.4",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -13,22 +14,23 @@
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.18",
     "holderjs": "^2.9.4",
-    "react-html-parser": "^2.0.1"
+    "jquery": "^3.2.1",
+    "lodash.groupby": "^4.6.0",
+    "lodash.map": "^4.6.0",
+    "popper.js": "^1.12.9",
+    "react-html-parser": "^2.0.1",
+    "slugify": "^1.2.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "gatsby build --prefix-paths",
+    "develop": "npm run start",
     "start": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gatsby-plugin-sass": "^1.0.12",
-    "prettier": "^1.7.4"
+    "gatsby-plugin-sass": "^1.0.12"
   }
 }
