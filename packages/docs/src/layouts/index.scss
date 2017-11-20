@@ -1,6 +1,17 @@
 @import '~bootstrap/scss/_functions';
-@import "~bootstrap/scss/_variables.scss";
-
+@import '~bootstrap/scss/_variables.scss';
 .docs-masthead {
   padding: 3rem ($grid-gutter-width / 2);
+}
+
+.docs-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.docs-category {
+}
+
+.docs-example {
+  padding: 1rem 0;
 }
