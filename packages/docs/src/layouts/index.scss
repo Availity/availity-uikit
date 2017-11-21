@@ -1,17 +1,26 @@
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables.scss';
 .docs-masthead {
-  padding: 3rem ($grid-gutter-width / 2);
+    padding: 3rem ($grid-gutter-width / 2);
 }
 
 .docs-title {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-
-.docs-category {
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .docs-example {
-  padding: 1rem 0;
+    padding: 1rem 0;
+}
+
+.docs-example {
+    .btn+.btn {
+        margin: 0 .1rem;
+    }
+    .badge+.badge {
+        margin: .1rem;
+    }
+    .badge-block+.badge-block {
+        margin-bottom: .3rem;
+    }
 }

@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "postinstall": "lerna bootstrap",
     "start": "npm start --prefix packages/docs",
+    "build:preview": "npm run build:preview --prefix packages/docs",
     "build": "npm run build --prefix packages/docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'packages/*/*.js' 'packages/*/!(node_modules|dist|public)/**/*.js'",

@@ -47,6 +47,10 @@
   @include hover-focus-active {
     color: $btn-warning-color;
   }
+  color: $state-warning-text;
+}
+.btn-outline-light {
+  color: $secondary-text-color;
 }
 
 .btn-ghost {
