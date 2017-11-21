@@ -1,4 +1,4 @@
-@mixin header-link($color: lighten($gray, 20%)) {
+@mixin header-link($color: lighten($gray, 15%)) {
   font-size: $font-size-sm;
   font-weight: normal;
   color: $color;
@@ -14,7 +14,7 @@
   }
 }
 
-@mixin header-link-right($color: lighten($gray, 20%)) {
+@mixin header-link-right($color: lighten($gray, 15%)) {
   @include header-link($color);
 
   @include media-breakpoint-up(md) {
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin header-icon-link($color: lighten($gray, 20%)) {
+@mixin header-icon-link($color: lighten($gray, 15%)) {
   font-size: $font-size-sm;
   font-weight: normal;
   color: $color;
@@ -33,7 +33,7 @@
   }
 }
 
-@mixin header-icon-link-right($color: lighten($gray, 20%)) {
+@mixin header-icon-link-right($color: lighten($gray, 15%)) {
   @include header-icon-link($color);
 
   @include media-breakpoint-up(md) {
