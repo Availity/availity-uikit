@@ -14,13 +14,16 @@
 }
 
 .docs-example {
-    .btn+.btn {
-        margin: 0 .1rem;
-    }
-    .badge+.badge {
+    .btn {
         margin: .1rem;
     }
-    .badge-block+.badge-block {
+    .badge {
+        margin: .1rem;
+    }
+    .badge-block {
         margin-bottom: .3rem;
+    }
+    .btn-group .btn {
+      margin: 0;
     }
 }
