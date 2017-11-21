@@ -22,7 +22,7 @@ title: Unstyled
 	<div class="pagination-text">
 	  Show
 	</div>
-	<select class="custom-select">
+	<select class="custom-select" aria-label="Showing results">
 	  <option>10 results</option>
 	  <option>20 results</option>
 	  <option>30 results</option>
