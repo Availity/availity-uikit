@@ -18,37 +18,37 @@ title: Secondary
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Claims Management</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
             <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
             <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">One more separated link</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Insurance Payments</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
             <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
             <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">One more separated link</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient Payments</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
             <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
             <li class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">One more separated link</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>

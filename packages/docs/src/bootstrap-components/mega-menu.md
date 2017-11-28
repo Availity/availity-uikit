@@ -19,17 +19,17 @@ title: Mega Menu
               <div class="mega-menu-content">
                 <h5 class="mega-menu-title">My Patient Access Apps</h5>
                 <div class="list-group list-group-unstyled">
-                  <a href="#" class="list-group-item">
+                  <a href="#" class="list-group-item" role="menuitem">
                     <span class="app-icon app-icon-orange">ai</span> Eligibility &amp; Benefits
                   </a>
-                  <a href="#" class="list-group-item">
+                  <a href="#" class="list-group-item" role="menuitem">
                     <span class="app-icon app-icon-orange">ai</span> Care Reminders
                   </a>
-                  <a href="#" class="list-group-item">
+                  <a href="#" class="list-group-item" role="menuitem">
                     <span class="app-icon app-icon-orange">ai</span> Patient Care Summary
                   </a>
                   <hr>
-                  <a href="#" class="list-group-item">
+                  <a href="#" class="list-group-item" role="menuitem">
                     <span class="app-icon app-icon-orange">ai</span> Authorizations &amp; Referrals
                   </a>
                 </div>
@@ -65,7 +65,7 @@ title: Mega Menu
             <li>
               <div class="mega-menu-content mega-menu-tiles">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-4" role="menuitem">
                     <a href="availity.com" target="_blank">
                       <div class="mega-menu-tile">
                         <img data-src="holder.js/75x75" height="75" alt="Anthem" class="img-responsive img-thumbnail">
@@ -73,7 +73,7 @@ title: Mega Menu
                         </div>
                     </a>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4" role="menuitem">
                     <a href="availity.com" target="_blank">
                       <div class="mega-menu-tile">
                         <img data-src="holder.js/75x75" height="75" alt="Florida Blue" class="img-responsive img-thumbnail">
@@ -81,7 +81,7 @@ title: Mega Menu
                         </div>
                     </a>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4" role="menuitem">
                     <a href="availity.com" target="_blank">
                       <div class="mega-menu-tile">
                         <img data-src="holder.js/75x75" height="75" alt="Humana" class="img-responsive img-thumbnail">
@@ -91,7 +91,7 @@ title: Mega Menu
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-4" role="menuitem">
                     <a href="availity.com" target="_blank">
                       <div class="mega-menu-tile">
                         <img data-src="holder.js/75x75" height="75" alt="Anthem" class="img-responsive img-thumbnail">
@@ -99,7 +99,7 @@ title: Mega Menu
                         </div>
                     </a>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4" role="menuitem">
                     <a href="availity.com" target="_blank">
                       <div class="mega-menu-tile">
                         <img data-src="holder.js/75x75" height="75" alt="Florida Blue" class="img-responsive img-thumbnail">
@@ -107,7 +107,7 @@ title: Mega Menu
                         </div>
                     </a>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4" role="menuitem">
                     <a href="availity.com" target="_blank">
                       <div class="mega-menu-tile">
                         <img data-src="holder.js/75x75" height="75" alt="Humana" class="img-responsive img-thumbnail">
