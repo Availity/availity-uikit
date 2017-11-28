@@ -20,19 +20,8 @@ title: Notifications
           </a>
           <ul class="dropdown-menu dropdown-menu-md notifications-menu" role="menu">
             <li>
-              <ul class="nav nav-pills-secondary nav-justified notifications-menu-header" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-target="#all1" role="tab" data-toggle="tab">All <span class="notifications-menu-count">(3)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-target="#alerts1" role="tab" data-toggle="tab">Alerts <span class="notifications-menu-count">(2)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-target="#messages1" role="tab" data-toggle="tab">Messages <span class="notifications-menu-count">(1)</span></a>
-                </li>
-              </ul>
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="all1">
+                <div role="tabpanel" class="tab-pane active" id="all1">
                   <div class="notifications-menu-body">
                     <div class="list-group-item">
                       <h6 class="subheader">Humana | Pharmacy Prior Authorization <a><i class="icon icon-cancel"></i></a></h6>
@@ -82,7 +71,7 @@ title: Notifications
                 </div>
               </div>
               <div class="notifications-menu-footer">
-                <a href="#">Show All Notifications</a>
+                <a href="#">View All</a>
               </div>
             </li>
           </ul>
