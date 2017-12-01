@@ -18,6 +18,10 @@ select.form-control {
   background-color: $gray-lightest;
 }
 
+.custom-select {
+  -webkit-appearance: none;
+}
+
 // Form groups
 
 .form-group {
