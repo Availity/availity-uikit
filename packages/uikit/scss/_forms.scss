@@ -118,6 +118,14 @@ input[type=text] {
   width: 100%;
 }
 
+.custom-control.disabled {
+  cursor: not-allowed;
+}
+
+.custom-control-input:disabled ~ .custom-control-description {
+  color: lighten($text-muted, 5%);
+}
+
 .input-group .form-control {
   flex-direction: row;
 }
