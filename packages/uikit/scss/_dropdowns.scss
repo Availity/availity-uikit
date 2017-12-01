@@ -16,3 +16,52 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+.notifications-menu {
+  padding: 0;
+  min-width: 300px;
+}
+
+.notifications-menu {
+  min-width: $availity-menu-min-width;
+}
+
+.notifications-menu-body {
+  @extend .list-group;
+  padding: $availity-menu-padding-vertical $availity-menu-padding-horizontal;
+  margin-bottom: 0; // remove from list-group
+
+  .subheader {
+    text-transform: uppercase;
+    a {
+      float: right;
+    }
+    a:hover {
+      color: $black;
+    }
+  }
+
+  > .list-group-item {
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 1px solid #e8ebeb;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  p {
+    font-size: $font-size-sm;
+  }
+}
+
+.notification-menu-link {
+  font-size: $font-size-sm;
+}
+
+.notifications-menu-footer {
+  padding: $availity-menu-padding-vertical ($availity-menu-padding-vertical + $availity-menu-padding-horizontal);
+  background-color: #f2f5f5;
+  text-align: right;
+}
