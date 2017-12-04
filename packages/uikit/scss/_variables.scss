@@ -561,15 +561,11 @@ $navbar-inverse-toggle-border-color:       $disabled-text-color;
 // Navbar + Main
 $availity-navbar-main-padding: ($navbar-height + 10) !default;
 
-// Navbar Availity Logo
-$availity-logo-height: 27px !default;
-$availity-navbar-padding-vertical: (($navbar-height - $availity-logo-height) / 2 ) !default;
-
-$availity-nav-button-margin: 15px !default;
-
 // Mega menu tiles
-$mega-menu-tiles-max-height:	280px;
+$mega-menu-tiles-max-height:	290px;
 
+// Navbar Notifications
+$availity-menu-min-width: 400px;
 
 // Navs
 
@@ -601,9 +597,6 @@ $availity-logo-height: 27px !default;
 $availity-navbar-padding-vertical: (($navbar-height - $availity-logo-height) / 2 ) !default;
 
 $availity-nav-button-margin: 15px !default;
-
-// Mega menu tiles
-$mega-menu-tiles-max-height:	280px;
 
 // Pagination
 

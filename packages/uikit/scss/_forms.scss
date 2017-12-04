@@ -18,6 +18,10 @@ select.form-control {
   background-color: $gray-lightest;
 }
 
+.custom-select {
+  -webkit-appearance: none;
+}
+
 // Form groups
 
 .form-group {
@@ -112,6 +116,14 @@ input[type=text] {
 .custom-block {
   display: block;
   width: 100%;
+}
+
+.custom-control.disabled {
+  cursor: not-allowed;
+}
+
+.custom-control-input:disabled ~ .custom-control-description {
+  color: lighten($text-muted, 5%);
 }
 
 .input-group .form-control {
