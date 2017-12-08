@@ -1,6 +1,7 @@
 {
   "name": "@availity/uikit-docs",
-  "description": "Availity UI Kit Documentation",
+  "private": true,
+  "description": "Documentation for availity-uikit",
   "version": "3.0.0-beta.14",
   "author": "Robert McGuinness <rob.mcguiness@availity.com>",
   "dependencies": {

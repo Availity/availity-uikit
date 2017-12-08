@@ -3,6 +3,5 @@
 ## Getting Started
 
 + `npm install`
-+ `npm start`
-    * Runs Gatsby develop server on `http://localhost:8000`    
++ `npm start` runs Gatsby develop server on `http://localhost:8000`
 
