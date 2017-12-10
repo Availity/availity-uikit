@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import Link, { withPrefix } from 'gatsby-link';
 
 import './Navigation.scss';
 import logo from './logo.jpg';
@@ -24,13 +24,13 @@ const Navigation = ({ location }) => (
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContentTop">
         <ul className="navbar-nav ml-auto">
-          <li className={location.pathname === '/' ? 'nav-item active' : 'nav-item'}>
-            <Link className="nav-link docs-nav-link" to="/">
+          <li className={location.pathname === withPrefix('/') ? 'nav-item active' : 'nav-item'}>
+            <Link className="nav-link docs-nav-link" to={withPrefix('/')}>
               Home
             </Link>
           </li>
-          <li className={location.pathname === '/components' ? 'nav-item active' : 'nav-item'}>
-            <Link className="nav-link docs-nav-link" to="/components">
+          <li className={location.pathname === withPrefix('/components') ? 'nav-item active' : 'nav-item'}>
+            <Link className="nav-link docs-nav-link" to={withPrefix('/components')}>
               Components
             </Link>
           </li>
