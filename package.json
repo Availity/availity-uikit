@@ -21,23 +21,29 @@
     "url": "git+https://github.com/Availity/availity-uikit.git"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "^8.0.3",
     "conventional-changelog": "^1.1.6",
     "conventional-recommended-bump": "^1.0.2",
-    "eslint": "^4.9.0",
+    "eslint": "^4.13.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-availity": "^3.0.0-beta.8",
+    "eslint-config-availity": "^3.0.0-beta.10",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-react": "^7.5.1",
     "husky": "^0.14.3",
     "lerna": "^2.4.0",
     "lint-staged": "^5.0.0",
     "prettier": "^1.8.2"
   },
-  "keywords": ["uikit", "availity", "ux", "bootstrap"],
+  "keywords": [
+    "uikit",
+    "availity",
+    "ux",
+    "bootstrap"
+  ],
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "license": "MIT",
   "bugs": {
@@ -50,6 +56,9 @@
     "trailingComma": "es5"
   },
   "lint-staged": {
-    "*.js": ["prettier", "git add"]
+    "*.js": [
+      "prettier",
+      "git add"
+    ]
   }
 }
