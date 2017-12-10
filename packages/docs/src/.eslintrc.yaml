@@ -1,8 +1,10 @@
 extends: availity/browser
 settings:
   import/core-modules:
-    - react
-    - config
+    - react # from gatsby
+    - config # from gatsby
+    - prop-types # from gatsby
+    - react-helmet # from gatsby
 rules:
   jsx-a11y/anchor-is-valid:
     - error
