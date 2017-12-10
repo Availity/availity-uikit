@@ -37,7 +37,7 @@ Availity uses [Fontello](http://fontello.com/) to manage icon fonts.  Our [font 
 + `npm install`
 + `npm start` runs Gatsby develop server on `http://localhost:8000`
 + Make changes to `*.scss` files in  `packages/uikit`
-+ Update the documentation in `packages/uikit`
++ Update the documentation in `packages/docs`
 + Run `npm run release`. This command does the following:
     + Parses `angular` style commits using `conventional-changelog` to determine the next version for the packages
     + Publishes `availity-uikit` to **npm** using Lerna.
