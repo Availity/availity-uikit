@@ -16,6 +16,7 @@ rules:
       - noHref
       - invalidHref
       - preferButton
+  react/forbid-prop-types: 0
 globals:
   graphql: false
 

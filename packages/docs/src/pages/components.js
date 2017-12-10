@@ -13,6 +13,11 @@ const Component = ({ html, title }) => (
   </div>
 );
 
+Component.propTypes = {
+  html: PropTypes.string,
+  title: PropTypes.string,
+};
+
 const ComponentGroup = ({ groupName, components }) => {
   const componentsList = map(components, component => (
     <Component
@@ -28,6 +33,11 @@ const ComponentGroup = ({ groupName, components }) => {
       {componentsList}
     </div>
   );
+};
+
+ComponentGroup.propTypes = {
+  groupName: PropTypes.string,
+  components: PropTypes.object,
 };
 
 const ComponentsPage = ({ data }) => {
