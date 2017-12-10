@@ -2,10 +2,10 @@
   "name": "@availity/uikit-docs",
   "private": true,
   "description": "Documentation for availity-uikit",
-  "version": "3.0.0-beta.14",
+  "version": "3.0.0-beta.15",
   "author": "Robert McGuinness <rob.mcguiness@availity.com>",
   "dependencies": {
-    "availity-uikit": "^3.0.0-beta.14",
+    "availity-uikit": "^3.0.0-beta.15",
     "bootstrap": "^4.0.0-beta.2",
     "expose-loader": "^0.7.4",
     "gatsby": "^1.9.73",
@@ -22,7 +22,9 @@
     "react-html-parser": "^2.0.1",
     "slugify": "^1.2.4"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
