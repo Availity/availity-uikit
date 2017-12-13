@@ -3,7 +3,7 @@ category: Buttons
 title: File Upload
 ---
 <div class="docs-example">
-  <span class="btn btn-secondary btn-file">
+  <span class="btn btn-default btn-file">
     <i class="icon icon-plus-circle"></i>
     <span>Add files...</span>
     <input type="file" name="files[]" multiple aria-label="upload files">
@@ -29,11 +29,6 @@ title: File Upload
     <input type="file" name="files[]" multiple aria-label="upload files">
   </span>
   <span class="btn btn-danger btn-file">
-    <i class="icon icon-plus-circle"></i>
-    <span>Add files...</span>
-    <input type="file" name="files[]" multiple aria-label="upload files">
-  </span>
-  <span class="btn btn-light btn-file">
     <i class="icon icon-plus-circle"></i>
     <span>Add files...</span>
     <input type="file" name="files[]" multiple aria-label="upload files">
