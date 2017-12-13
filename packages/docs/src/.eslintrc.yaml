@@ -1,7 +1,11 @@
 extends: availity/browser
+settings:
+  import/core-modules:
+    - react # from gatsby
+    - config # from gatsby
+    - prop-types # from gatsby
+    - react-helmet # from gatsby
 rules:
-  import/no-extraneous-dependencies: 0
-  react/prop-types: 0
   jsx-a11y/anchor-is-valid:
     - error
     - components:
@@ -12,6 +16,7 @@ rules:
       - noHref
       - invalidHref
       - preferButton
+  react/forbid-prop-types: 0
 globals:
   graphql: false
 

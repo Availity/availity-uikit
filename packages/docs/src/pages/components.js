@@ -3,6 +3,7 @@ import ReactHtmlParser from 'react-html-parser';
 import groupBy from 'lodash.groupby';
 import map from 'lodash.map';
 import slugify from 'slugify';
+import PropTypes from 'prop-types';
 import 'holderjs';
 
 const Component = ({ html, title }) => (
@@ -11,6 +12,11 @@ const Component = ({ html, title }) => (
     <div className="docs-example"> {ReactHtmlParser(html)}</div>
   </div>
 );
+
+Component.propTypes = {
+  html: PropTypes.string,
+  title: PropTypes.string,
+};
 
 const ComponentGroup = ({ groupName, components }) => {
   const componentsList = map(components, component => (
@@ -27,6 +33,11 @@ const ComponentGroup = ({ groupName, components }) => {
       {componentsList}
     </div>
   );
+};
+
+ComponentGroup.propTypes = {
+  groupName: PropTypes.string,
+  components: PropTypes.object,
 };
 
 const ComponentsPage = ({ data }) => {
@@ -47,6 +58,12 @@ const ComponentsPage = ({ data }) => {
       </div>
     </main>
   );
+};
+
+ComponentsPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.string,
+  }),
 };
 
 export default ComponentsPage;

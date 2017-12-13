@@ -1,6 +1,6 @@
 # availity-uikit
 
-> Availity UI Kit powered by [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with overrides to match our style guidelines.
+> Availity UI Kit powered by [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with modifications to match Availity style guidelines
 
 ## Table of Contents
 * [Demo](#demo)
@@ -22,9 +22,7 @@
 * Google Chrome > 2% market share
 * Mozilla Firefox > 2% market share
 
-## Quickstart
-
-+ Install with npm
+## Installation
 
 >
 ```bash
@@ -32,13 +30,19 @@ $ npm install availity-uikit@next --save
 ```
 ## Icon Fonts
 
-Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  Our [font configuration](./fonts/config.json) can be used on Fontello to edit the font catalog.
+Availity uses [Fontello](http://fontello.com/) to manage icon fonts.  Our [font configuration](./packages/uikit/fonts/config.json) can be used on Fontello to edit the font catalog.
 
 ## Contributing
 
 + `npm install`
-+ `npm start`
-    * Runs Gatsby develop server on `http://localhost:8000`    
++ `npm start` runs Gatsby develop server on `http://localhost:8000`
++ Make changes to `*.scss` files in  `packages/uikit`
++ Update the documentation in `packages/docs`
++ Run `npm run release`. This command does the following:
+    + Parses `angular` style commits using `conventional-changelog` to determine the next version for the packages
+    + Publishes `availity-uikit` to **npm** using Lerna.
++ Alternatively, run `npm run release ${VERSION}` and the release script will use `${VERSION}` as the version number for all packages.
++ `npm run deploy` will deploy the docs to the `gh-pages` branch inside the `./v3` folder
 
 ## Disclaimer
 

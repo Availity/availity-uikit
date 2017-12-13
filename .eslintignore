@@ -1,7 +1,5 @@
-node_modules/
-build/
-dist/
-images/
-fonts/
-lib/
+**/node_modules
+**/images
+**/fonts
+**/public
 
