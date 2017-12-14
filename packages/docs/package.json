@@ -33,7 +33,7 @@
     "build:preview": "gatsby build",
     "build": "gatsby build --prefix-paths",
     "develop": "npm run start",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -dest v3",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public --dest v3",
     "start": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

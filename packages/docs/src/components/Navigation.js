@@ -25,12 +25,12 @@ const Navigation = ({ location }) => (
       <div className="collapse navbar-collapse" id="navbarSupportedContentTop">
         <ul className="navbar-nav ml-auto">
           <li className={location.pathname === withPrefix('/') ? 'nav-item active' : 'nav-item'}>
-            <Link className="nav-link docs-nav-link" to={withPrefix('/')}>
+            <Link className="nav-link docs-nav-link" to="/">
               Home
             </Link>
           </li>
           <li className={location.pathname === withPrefix('/components') ? 'nav-item active' : 'nav-item'}>
-            <Link className="nav-link docs-nav-link" to={withPrefix('/components')}>
+            <Link className="nav-link docs-nav-link" to="/components">
               Components
             </Link>
           </li>
