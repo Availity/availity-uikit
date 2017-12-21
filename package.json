@@ -15,13 +15,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'packages/*/*.js' 'packages/*/!(node_modules|dist|public)/**/*.js'",
     "precommit": "lint-staged",
-    "release": "npm run lint && sh ./scripts/release.sh"
+    "release": "npm run lint && sh ./scripts/release.sh",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Availity/availity-uikit.git"
   },
   "devDependencies": {
+    "@commitlint/cli": "^5.2.5",
+    "@commitlint/config-conventional": "^5.2.3",
+    "@commitlint/config-lerna-scopes": "^5.2.0",
     "babel-eslint": "^8.0.3",
     "conventional-changelog": "^1.1.6",
     "conventional-recommended-bump": "^1.0.2",
@@ -60,6 +64,12 @@
     "*.js": [
       "prettier",
       "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
     ]
   }
 }
