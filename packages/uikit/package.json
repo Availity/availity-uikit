@@ -1,7 +1,7 @@
 {
   "name": "availity-uikit",
   "description": "Availity UI Kit powered by Bootstrap 4",
-  "version": "3.0.0-beta.15",
+  "version": "3.0.0-beta.16",
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "style": "css/availity-uikit.css",
   "sass": "scss/availity-uikit.scss",
