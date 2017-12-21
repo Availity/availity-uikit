@@ -1,0 +1,8 @@
+# Enforce Unix newlines
+* text eol=lf
+*.otf binary
+*.eot binary
+*.svg binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
