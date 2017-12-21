@@ -1,3 +1,13 @@
+<a name="3.0.0-beta.17"></a>
+# [3.0.0-beta.17](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.16...v3.0.0-beta.17) (2017-12-21)
+
+
+### Bug Fixes
+
+* **availity-uikit:** woff integretiy issue ([feaaab3](https://github.com/Availity/availity-uikit/commit/feaaab3))
+
+
+
 <a name="3.0.0-beta.16"></a>
 # [3.0.0-beta.16](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.15...v3.0.0-beta.16) (2017-12-21)
 

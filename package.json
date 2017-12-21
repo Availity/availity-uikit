@@ -1,6 +1,6 @@
 {
   "name": "@availity/uikit-monorepo",
-  "version": "3.0.0-beta.16",
+  "version": "3.0.0-beta.17",
   "description": "Monorepo for availity-uikit and documentation",
   "scripts": {
     "link": "lerna link",
