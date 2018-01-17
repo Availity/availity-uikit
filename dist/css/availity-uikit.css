@@ -1,12 +1,12 @@
 /**
- * availity-uikit v1.2.5 -- November-15
- * Copyright 2017 Availity, LLC 
+ * availity-uikit v1.2.6 -- January-17
+ * Copyright 2018 Availity, LLC 
  */
 
 @font-face {
   font-family: 'availity-icon-font';
-  src: url('../fonts/availity-icon-font.eot?65428904');
-  src: url('../fonts/availity-icon-font.eot?65428904#iefix') format('embedded-opentype'), url('../fonts/availity-icon-font.woff?65428904') format('woff'), url('../fonts/availity-icon-font.ttf?65428904') format('truetype'), url('../fonts/availity-icon-font.svg?65428904') format('svg');
+  src: url('../fonts/availity-icon-font.eot?61597349');
+  src: url('../fonts/availity-icon-font.eot?61597349#iefix') format('embedded-opentype'), url('../fonts/availity-icon-font.woff?61597349') format('woff'), url('../fonts/availity-icon-font.ttf?61597349') format('truetype'), url('../fonts/availity-icon-font.svg?61597349#availity-icon-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -922,6 +922,18 @@
   content: '\e8d8';
 }
 /* '' */
+.icon-floppy:before {
+  content: '\e8d9';
+}
+/* '' */
+.icon-megaphone:before {
+  content: '\e8da';
+}
+/* '' */
+.icon-book:before {
+  content: '\e8db';
+}
+/* '' */
 .icon-smile:before {
   content: '\f118';
 }
@@ -934,6 +946,46 @@
   content: '\f11a';
 }
 /* '' */
+.icon-sort-name-up:before {
+  content: '\f15d';
+}
+/* '' */
+.icon-sort-name-down:before {
+  content: '\f15e';
+}
+/* '' */
+.icon-sort-number-up:before {
+  content: '\f162';
+}
+/* '' */
+.icon-sort-number-down:before {
+  content: '\f163';
+}
+/* '' */
+.icon-play-circled:before {
+  content: '\f144';
+}
+/* '' */
+.icon-dollar:before {
+  content: '\f155';
+}
+/* '' */
+.icon-id-card:before {
+  content: '\f2c2';
+}
+/* '' */
+.icon-id-card-o:before {
+  content: '\f2c3';
+}
+/* '' */
+.icon-commenting:before {
+  content: '\f27a';
+}
+/* '' */
+.icon-commenting-o:before {
+  content: '\f27b';
+}
+/* '' */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
