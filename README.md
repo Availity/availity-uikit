@@ -89,9 +89,6 @@ Availity uses [Fontello](http://fontello.com/) to manage the UIKit icon fonts.  
 **Robert McGuinness**
 + [rob.mcguinness@availity.com](rob.mcguinness@availity.com)
 
-**Robert Ventrone**
-+ [robert.ventrone@availity.com](robert.ventrone@availity.com)
-
 **Robert Warner**
 + [rob.warner@availity.com](rob.warner@availity.com)
 
@@ -106,4 +103,4 @@ Open source software components distributed or made available in the Availity Ma
 
 [MIT](./LICENSE)
 
-Copyright (c) 2017 Availity, LLC
+Copyright (c) 2017-present Availity, LLC
