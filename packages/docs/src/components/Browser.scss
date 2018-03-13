@@ -1,4 +1,5 @@
 .docs-browser {
+  width: 700px;
   position: relative;
   border-top: 30px solid rgba(181, 183, 188, 0.6);
   border-bottom: 10px solid rgba(181, 183, 188, 0.6);
@@ -51,9 +52,23 @@
 }
 
 .docs-browser-page-body {
-  width: 30rem;
+  width: 100%;
   height: 15rem;
+}
+
+.docs-browser-page-column1 {
+  width: calc(70% - .5rem);
+  height: 100%;
   background-color: rgba(2, 161, 124, 0.4);
   border-radius: .25rem;
-  animation-delay: .2s;
+  display: inline-block;
+}
+
+.docs-browser-page-column2 {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(237, 86, 36, 0.4);
+  float: right;
+  border-radius: .25rem;
+  display: inline-block;
 }
