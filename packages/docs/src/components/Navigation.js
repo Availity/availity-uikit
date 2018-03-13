@@ -6,10 +6,10 @@ import './Navigation.scss';
 import logo from './logo.jpg';
 
 const Navigation = ({ location }) => (
-  <nav className="navbar navbar-expand-md navbar-light">
-    <div className="container">
+  <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+    <div className="container-fluid">
       <span className="navbar-brand mb-0 h1">
-        <img src={logo} alt="Logo" width="30" height="30" className="logo d-inline-block align-top" /> UIKit
+        <img src={logo} alt="Logo" width="30" height="30" className="logo d-inline-block align-top" /> Availity UIKit
       </span>
       <button
         className="navbar-toggler"

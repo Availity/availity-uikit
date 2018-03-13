@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap';
 import 'availity-uikit';
 
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import meta from './meta';
 
 import './index.scss';
@@ -18,6 +19,7 @@ const TemplateWrapper = props => (
     </Helmet>
     <Navigation {...props} />
     {props.children()}
+    <Footer />
   </div>
 );
 
