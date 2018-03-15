@@ -67,11 +67,7 @@ a, .card-link {
   cursor: pointer;
 }
 
-.card-header-link, .card-title-link {
-
-  @include header-link-right();
-
-  line-height: 1em;
+.card-header, .card-title {
   font-weight: bold;
 
   &:hover, &:active, &:focus {
@@ -98,4 +94,16 @@ a, .card-link {
 
 ul.card-body {
   margin-bottom: 0;
+}
+
+.card-collapsible-link:hover {
+    text-decoration: none;
+}
+
+.card-collapsible-link {
+  @include iconify-before("\e802", $text-color, .2em);
+}
+
+.card-collapsible-link.collapsed {
+  @include iconify-before("\e806", $text-color, .2em);
 }
