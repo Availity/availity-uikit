@@ -11,8 +11,8 @@ title: Collapsible
     </h5>
     <div id="exampleCollapse" class="collapse" aria-expanded="false">
       <div class="card-body">
-        <p data-mock="paragraph:3"></p>
-        <p data-mock="paragraph:5"></p>
+        <p>Some extra data to view</p>
+        <p>Even more data</p>
       </div>
     </div>
   </div>

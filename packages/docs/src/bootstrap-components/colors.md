@@ -1,77 +1,43 @@
 ---
 category: Colors
-title: Default
+title: Standard
 ---
 <div class="colors-container">
   <div class="row">
     <div class="col-sm-2">
-      <div class="color-item">
-        <div class="color-item-header color-1"></div>
-        <span class="color-item-footer">#ed5624</span>
+      <div class="docs-color-item">
+        <div class="docs-color-item-header" style="background-color:#d93d11;"></div>
+        <span class="docs-color-item-footer">#d93d11</span>
       </div>
     </div>
     <div class="col-sm-2">
-      <div class="color-item">
-        <div class="color-item-header color-2"></div>
-        <span class="color-item-footer">#2261b5</span>
+      <div class="docs-color-item">
+        <div class="docs-color-item-header" style="background-color:#2261b5;"></div>
+        <span class="docs-color-item-footer">#2261b5</span>
       </div>
     </div>
     <div class="col-sm-2">
-      <div class="color-item">
-        <div class="color-item-header color-3"></div>
-        <span class="color-item-footer">#0093e8</span>
+      <div class="docs-color-item">
+        <div class="docs-color-item-header" style="background-color:#007cc2;"></div>
+        <span class="docs-color-item-footer">#007cc2</span>
       </div>
     </div>
     <div class="col-sm-2">
-      <div class="color-item">
-        <div class="color-item-header color-4"></div>
-        <span class="color-item-footer">#4d4f53</span>
+      <div class="docs-color-item">
+        <div class="docs-color-item-header" style="background-color:#4D4F53;"></div>
+        <span class="docs-color-item-footer">#4D4F53</span>
       </div>
     </div>
     <div class="col-sm-2">
-      <div class="color-item">
-        <div class="color-item-header color-5"></div>
-        <span class="color-item-footer">#e8ebeb</span>
+      <div class="docs-color-item">
+        <div class="docs-color-item-header" style="background-color:#e8ebeb;"></div>
+        <span class="docs-color-item-footer">#e8ebeb</span>
       </div>
     </div>
     <div class="col-sm-2">
-      <div class="color-item">
-        <div class="color-item-header color-6"></div>
-        <span class="color-item-footer">#ffffff</span>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="color-item">
-        <div class="color-item-header" style="background-color:#02a17c;">
-          <i class="icon icon-happy-smiley"></i>
-        </div>
-        <span class="color-item-footer">#02a17c</span>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="color-item">
-        <div class="color-item-header" style="background-color:#3e6887;">
-          <i class="icon icon-blink-smiley"></i>
-        </div>
-        <span class="color-item-footer">#3e6887</span>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="color-item">
-        <div class="color-item-header" style="background-color:#ffda00;">
-          <i class="icon icon-omg-smiley"></i>
-        </div>
-        <span class="color-item-footer">#ffda00</span>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="color-item">
-        <div class="color-item-header" style="background-color:#b21909;">
-          <i class="icon icon-angry-smiley"></i>
-        </div>
-        <span class="color-item-footer">#b21909</span>
+      <div class="docs-color-item">
+        <div class="docs-color-item-header" style="background-color:#ffffff;"></div>
+        <span class="docs-color-item-footer">#ffffff</span>
       </div>
     </div>
   </div>

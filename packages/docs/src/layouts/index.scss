@@ -43,3 +43,23 @@
 .docs-btn {
   margin: 1rem;
 }
+
+.docs-color-item {
+  margin-bottom: 4px;
+  border: 1px solid #cdd3d3;
+}
+
+.docs-color-item-header {
+  height: 100px;
+  line-height: 100px;
+}
+
+.docs-color-item-footer {
+  display: block;
+  border-top: 1px solid #cdd3d3;
+  background-color: #f8f9f9;
+  line-height: 2;
+  text-align: center;
+  padding: 1.5em;
+  font-weight: bold;
+}
