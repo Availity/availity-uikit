@@ -6,7 +6,7 @@
   }
 
   // Set the border and box shadow on specific inputs to match
-  .form-control {
+  .form-control, .custom-select {
     border-color: $border-color;
     background-color: $background-color !important;
   }
