@@ -5,12 +5,12 @@ import Link, { withPrefix } from 'gatsby-link';
 import './Navigation.scss';
 import logo from './logo.jpg';
 
-const Navigation = ({ location }) => (
+const Navigation = ({ location, data }) => (
   <nav className="navbar navbar-expand-md navbar-light">
     <div className="container-fluid">
       <span className="navbar-brand mb-0">
         <img src={logo} alt="Logo" width="30" height="30" className="logo d-inline-block align-top" /> Availity UIKit{' '}
-        <small>Beautiful Healthcare Apps</small>
+        <small className="text-muted">v{data.site.siteMetadata.version}</small>
       </span>
       <button
         className="navbar-toggler"
@@ -49,6 +49,13 @@ const Navigation = ({ location }) => (
 Navigation.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string,
+  }),
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        version: PropTypes.string,
+      }),
+    }),
   }),
 };
 

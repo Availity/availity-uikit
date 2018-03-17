@@ -28,3 +28,18 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
+
+export const pageQuery = graphql`
+  query TemplateQuery {
+    site {
+      siteMetadata {
+        v1
+        v2
+        title
+        description
+        keywords
+        version
+      }
+    }
+  }
+`;

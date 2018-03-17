@@ -69,7 +69,17 @@ ComponentsPage.propTypes = {
 export default ComponentsPage;
 
 export const pageQuery = graphql`
-  query BootstrapComponents {
+  query ComponentsQuery {
+    site {
+      siteMetadata {
+        v1
+        v2
+        title
+        description
+        keywords
+        version
+      }
+    }
     allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___category, frontmatter___title] }) {
       edges {
         node {

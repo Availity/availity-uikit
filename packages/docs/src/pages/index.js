@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Browser from '../components/Browser';
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <main className="docs-masthead">
     <div className="container-sm">
       <div className="row justify-content-sm-center">
@@ -19,10 +19,10 @@ const IndexPage = () => (
           >
             Changelog
           </a>
-          <a className="btn btn-outline-secondary mr-2" href="/v1">
+          <a className="btn btn-outline-secondary mr-2" href={`${data.site.siteMetadata.v1}`}>
             v1
           </a>
-          <a className="btn btn-outline-secondary" href="/v2">
+          <a className="btn btn-outline-secondary" href={`${data.site.siteMetadata.v2}`}>
             v2
           </a>
         </div>
@@ -47,3 +47,18 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query LandingPageQuery {
+    site {
+      siteMetadata {
+        v1
+        v2
+        title
+        description
+        keywords
+        version
+      }
+    }
+  }
+`;
