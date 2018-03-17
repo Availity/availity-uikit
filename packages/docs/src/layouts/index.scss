@@ -24,42 +24,30 @@
         margin-bottom: .3rem;
     }
     .btn-group .btn {
-      margin: 0;
+        margin: 0;
     }
 }
 
-.docs-intro > h5 {
-  margin-top: 2rem;
-}
-
-.docs-home-title {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: $white;
-  margin: -4rem -15px 3rem -15px;
-  padding: 1rem;
-}
-
 .docs-btn {
-  margin: 1rem;
+    margin: 1rem;
 }
 
 .docs-color-item {
-  margin-bottom: 4px;
-  border: 1px solid #cdd3d3;
+    margin-bottom: 4px;
+    border: 1px solid #cdd3d3;
 }
 
 .docs-color-item-header {
-  height: 100px;
-  line-height: 100px;
+    height: 100px;
+    line-height: 100px;
 }
 
 .docs-color-item-footer {
-  display: block;
-  border-top: 1px solid #cdd3d3;
-  background-color: #f8f9f9;
-  line-height: 2;
-  text-align: center;
-  padding: 1.5em;
-  font-weight: bold;
+    display: block;
+    border-top: 1px solid #cdd3d3;
+    background-color: #f8f9f9;
+    line-height: 2;
+    text-align: center;
+    padding: 1.5em;
+    font-weight: bold;
 }
