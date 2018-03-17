@@ -19,10 +19,10 @@ const IndexPage = () => (
           >
             Changelog
           </a>
-          <a className="btn btn-outline-secondary mr-2" href="v1">
+          <a className="btn btn-outline-secondary mr-2" href="/v1">
             v1
           </a>
-          <a className="btn btn-outline-secondary" href="v2">
+          <a className="btn btn-outline-secondary" href="/v2">
             v2
           </a>
         </div>
