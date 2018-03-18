@@ -1,31 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Browser from '../components/Browser';
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <main className="docs-masthead">
     <div className="container-sm">
       <div className="row justify-content-sm-center">
-        <div className="mb-4">
-          <Link class="btn btn-outline-secondary mr-2" to="/components">
-            Documentation
-          </Link>
-          <a className="btn btn-outline-secondary mr-2" href="https://github.com/Availity/availity-uikit">
-            Github
-          </a>
-          <a
-            className="btn btn-outline-secondary mr-2"
-            href="https://github.com/Availity/availity-uikit/releases/tag/v3.0.0"
-          >
-            Changelog
-          </a>
-          <a className="btn btn-outline-secondary mr-2" href={`${data.site.siteMetadata.v1}`}>
-            v1
-          </a>
-          <a className="btn btn-outline-secondary" href={`${data.site.siteMetadata.v2}`}>
-            v2
-          </a>
-        </div>
         <Browser />
         <div className="mt-4">
           <p className="lead text-center">

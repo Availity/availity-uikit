@@ -40,6 +40,16 @@ const Navigation = ({ location, data }) => (
               Github
             </a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link docs-nav-link" href={`${data.site.siteMetadata.v1}`}>
+              <code>v1</code>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link docs-nav-link" href={`${data.site.siteMetadata.v2}`}>
+              <code>v2</code>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
