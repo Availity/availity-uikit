@@ -1,3 +1,14 @@
+<a name="3.0.0-beta.18"></a>
+# [3.0.0-beta.18](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.17...v3.0.0-beta.18) (2018-03-22)
+
+
+### Bug Fixes
+
+* **availity-uikit:** v2 differences fixed ([#221](https://github.com/Availity/availity-uikit/issues/221)) ([b52c389](https://github.com/Availity/availity-uikit/commit/b52c389)), closes [#220](https://github.com/Availity/availity-uikit/issues/220)
+* **validation:** add custom-select ([#222](https://github.com/Availity/availity-uikit/issues/222)) ([ac56e48](https://github.com/Availity/availity-uikit/commit/ac56e48))
+
+
+
 <a name="3.0.0-beta.17"></a>
 # [3.0.0-beta.17](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.16...v3.0.0-beta.17) (2017-12-21)
 
