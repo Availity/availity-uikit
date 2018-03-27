@@ -51,3 +51,26 @@
     padding: 1.5em;
     font-weight: bold;
 }
+
+.docs-nav li:hover, a:hover {
+  background-color: #e8ebeb;
+  text-decoration: none;
+}
+
+.docs-nav a {
+  color: #48535c;
+}
+
+.docs-nav li {
+  text-decoration: none;
+}
+
+.docs-nav-title {
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.docs-nav-item {
+  font-size: 18px;
+  margin-left: -10px;
+}
