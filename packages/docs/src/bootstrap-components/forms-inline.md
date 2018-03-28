@@ -2,7 +2,6 @@
 category: Forms
 title: Inline
 ---
-<div class="docs-example">
   <form class="form-inline">
     <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
@@ -17,4 +16,3 @@ title: Inline
     </label>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-</div>

@@ -2,7 +2,6 @@
 category: Nav
 title: Secondary Pills
 ---
-<div class="docs-example">
   <div role="tabpanel">
     <ul class="nav nav-pills-secondary" role="tablist">
       <li class="nav-item">
@@ -33,4 +32,3 @@ title: Secondary Pills
       </div>
     </div>
   </div>
-</div>

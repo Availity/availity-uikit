@@ -2,7 +2,6 @@
 category: Buttons
 title: File Upload
 ---
-<div class="docs-example">
   <span class="btn btn-default btn-file">
     <i class="icon icon-plus-circle"></i>
     <span>Add files...</span>
@@ -48,4 +47,3 @@ title: File Upload
     <span>Add files...</span>
     <input type="file" name="files[]" multiple aria-label="upload files">
   </span>
-</div>

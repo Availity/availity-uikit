@@ -2,7 +2,6 @@
 category: Forms
 title: Optional
 ---
-<div class="docs-example">
     <fieldset>
         <legend>Contact Information</legend>
         <p>All fields <strong>required</strong> unless noted.</p>
@@ -23,4 +22,3 @@ title: Optional
             </div>
         </div>
     </fieldset>
-</div>

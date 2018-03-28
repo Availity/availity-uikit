@@ -2,8 +2,6 @@
 category: Cards
 title: Content Types
 ---
-<div class="docs-example">
-
   <div class="card">
     <div class="card-body">
       <h4 class="card-title">Card title</h4>
@@ -43,5 +41,3 @@ title: Content Types
       <li>three</li>
     </ul>
   </div>
-  
-</div>

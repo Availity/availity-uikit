@@ -2,7 +2,6 @@
 category: Navs
 title: Default
 ---
-<div class="docs-example">
   <div role="tabpanel">
     <ul class="nav nav-tabs" role="tablist">
       <li class="nav-item">
@@ -33,4 +32,3 @@ title: Default
       </div>
     </div>
   </div>
-</div>

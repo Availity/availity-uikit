@@ -2,7 +2,6 @@
 category: Tables
 title: Default
 ---
-<div class="docs-example">
   <table class="table">
     <caption>Optional table caption.</caption>
     <thead>
@@ -34,4 +33,3 @@ title: Default
       </tr>
     </tbody>
   </table>
-</div>

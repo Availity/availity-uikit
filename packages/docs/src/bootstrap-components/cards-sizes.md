@@ -3,7 +3,6 @@ category: Cards
 title: Sizes
 description: Cards are block-level by default, so they’ll fill the available horizontal space. Constrain their widths via inline styles, our predefined grid classes, or with custom styles using our grid mixins.
 ---
-<div class="docs-example">
   <div class="row">
     <div class="col-sm-6">
       <div class="card">
@@ -24,4 +23,3 @@ description: Cards are block-level by default, so they’ll fill the available h
       </div>
     </div>
   </div>
-</div>

@@ -5,11 +5,19 @@ import map from 'lodash.map';
 import slugify from 'slugify';
 import PropTypes from 'prop-types';
 import 'holderjs';
+import PrismCode from 'react-prism';
+
+require('prismjs');
+require('prismjs/themes/prism.css');
 
 const Component = ({ html, title, id }) => (
   <div>
     <h3 id={id}>{title}</h3>
     <div className="docs-example"> {ReactHtmlParser(html)}</div>
+    <button className="btn btn-default mb-4"><a href={`#${id}-code`} data-toggle="collapse">View Code </a><i className="icon icon-code" /></button>
+    <div id={`${id}-code`} className="collapse">
+      <PrismCode component="pre" className="language-markup">{html}</PrismCode>
+    </div>
   </div>
 );
 
@@ -25,7 +33,7 @@ const ComponentGroup = ({ groupName, components }) => {
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
       html={component.node.html}
-      id={groupName.replace(' ', '-') + '-' + component.node.frontmatter.title.replace(' ', '-')}
+      id={`${groupName.replace(' ', '-')}-${component.node.frontmatter.title.replace(' ', '-')}`}
     />
   ));
 
@@ -59,7 +67,7 @@ const ComponentSideMenu = ({ groupName, components }) => {
     <SideMenu
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
-      id={'#' + groupName.replace(' ', '-') + '-' + component.node.frontmatter.title.replace(' ', '-')}
+      id={`#${groupName.replace(' ', '-')}-${component.node.frontmatter.title.replace(' ', '-')}`}
     />
   ));
 
@@ -67,7 +75,7 @@ const ComponentSideMenu = ({ groupName, components }) => {
     <nav>
       <ul className="docs-nav">
         <li className="docs-nav-title">
-          <a href={'#' + groupName.replace(' ', '-')}>{groupName}</a>
+          <a href={`#${groupName.replace(' ', '-')}`}>{groupName}</a>
         </li>
         <ul>
           {componentsList}

@@ -2,7 +2,6 @@
 category: Forms
 title: Default
 ---
-<div class="docs-example">
   <div class="card">
     <div class="card-body">
       <form>
@@ -68,4 +67,3 @@ title: Default
       </form>
     </div>
   </div>
-</div>

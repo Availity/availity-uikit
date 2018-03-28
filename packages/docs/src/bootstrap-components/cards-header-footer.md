@@ -2,7 +2,6 @@
 category: Cards
 title: Header and Footer
 ---
-<div class="docs-example">
     <div class="card">
         <div class="card-header">
             Featured
@@ -26,4 +25,3 @@ title: Header and Footer
         2 days ago
       </div>
     </div>
-</div>
