@@ -2,7 +2,6 @@
 category: Tables
 title: Contextual
 ---
-<div class="docs-example">
   <table class="table">
     <thead>
       <tr>
@@ -63,4 +62,3 @@ title: Contextual
       </tr>
     </tbody>
   </table>
-</div>

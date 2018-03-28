@@ -5,17 +5,26 @@ import map from 'lodash.map';
 import slugify from 'slugify';
 import PropTypes from 'prop-types';
 import 'holderjs';
+import PrismCode from 'react-prism';
 
-const Component = ({ html, title }) => (
+require('prismjs');
+require('prismjs/themes/prism.css');
+
+const Component = ({ html, title, id }) => (
   <div>
-    <h3>{title}</h3>
+    <h3 id={id}>{title}</h3>
     <div className="docs-example"> {ReactHtmlParser(html)}</div>
+    <a className="btn btn-default mb-4" href={`#${id}-code`} data-toggle="collapse">View Code <i className="icon icon-code" /></a>
+    <div id={`${id}-code`} className="collapse">
+      <PrismCode component="pre" className="language-markup">{html}</PrismCode>
+    </div>
   </div>
 );
 
 Component.propTypes = {
   html: PropTypes.string,
   title: PropTypes.string,
+  id: PropTypes.string,
 };
 
 const ComponentGroup = ({ groupName, components }) => {
@@ -24,12 +33,13 @@ const ComponentGroup = ({ groupName, components }) => {
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
       html={component.node.html}
+      id={`${slugify(groupName, '-')}-${slugify(component.node.frontmatter.title, '-')}`}
     />
   ));
 
   return (
     <div>
-      <h2 className="docs-title">{groupName}</h2>
+      <h2 id={slugify(groupName, '-')} className="docs-title">{groupName}</h2>
       {componentsList}
     </div>
   );
@@ -40,6 +50,47 @@ ComponentGroup.propTypes = {
   components: PropTypes.object,
 };
 
+
+const SideMenu = ({ title, id }) => (
+  <li className="docs-nav-item">
+    <a href={id}>{title}</a>
+  </li>
+);
+
+SideMenu.propTypes = {
+  title: PropTypes.string,
+  id: PropTypes.string
+};
+
+const ComponentSideMenu = ({ groupName, components }) => {
+  const componentsList = map(components, component => (
+    <SideMenu
+      key={slugify(component.node.frontmatter.title)}
+      title={component.node.frontmatter.title}
+      id={`#${slugify(groupName, '-')}-${slugify(component.node.frontmatter.title, '-')}`}
+    />
+  ));
+
+  return (
+    <nav>
+      <ul className="docs-nav">
+        <li className="docs-nav-title">
+          <a href={`#${slugify(groupName, '-')}`}>{groupName}</a>
+        </li>
+        <ul>
+          {componentsList}
+        </ul>
+
+      </ul>
+    </nav>
+  );
+};
+
+ComponentSideMenu.propTypes = {
+  groupName: PropTypes.string,
+  components: PropTypes.object,
+}
+
 const ComponentsPage = ({ data }) => {
   const components = data.allMarkdownRemark.edges;
 
@@ -49,12 +100,19 @@ const ComponentsPage = ({ data }) => {
   const componntsGroupList = map(componentsGrouped, (components, componentGroupName) => (
     <ComponentGroup key={slugify(componentGroupName)} groupName={componentGroupName} components={components} />
   ));
+  // Generate side menu using component-group-component-name
+  const componentSideMenuItems = map(componentsGrouped, (components, componentGroupName) => (
+    <ComponentSideMenu key={slugify(componentGroupName)} groupName={componentGroupName} components={components} />
+  ));
 
   return (
     <main className="docs-masthead">
       <h1 className="sr-only">Components Page</h1>
-      <div className="container">
-        <div>{componntsGroupList}</div>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-8 col-sm-9">{componntsGroupList}</div>
+          <div className="col-md-4 col-sm-3">{componentSideMenuItems}</div>
+        </div>
       </div>
     </main>
   );

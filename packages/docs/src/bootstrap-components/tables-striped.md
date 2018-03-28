@@ -2,7 +2,6 @@
 category: Tables
 title: Striped
 ---
-<div class="docs-example">
   <table class="table table-striped">
     <thead>
     <tr>
@@ -39,4 +38,3 @@ title: Striped
     </tr>
     </tbody>
   </table>
-</div>

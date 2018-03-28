@@ -71,5 +71,9 @@
       "@commitlint/config-conventional",
       "@commitlint/config-lerna-scopes"
     ]
+  },
+  "dependencies": {
+    "prismjs": "^1.13.0",
+    "react-prism": "^4.3.2"
   }
 }

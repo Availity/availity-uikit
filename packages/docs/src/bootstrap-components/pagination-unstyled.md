@@ -2,7 +2,6 @@
 category: Pagination
 title: Unstyled
 ---
-<div class="docs-example">
   <ul class="pagination pagination-unstyled">
 	<li class="page-item disabled"><a class="page-link" href="#">&laquo; Prev</a></li>
 	<li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -31,4 +30,3 @@ title: Unstyled
 	  Showing batches 1-10 of 12
 	</div>
   </div>
-</div>

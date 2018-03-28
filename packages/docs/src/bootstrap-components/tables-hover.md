@@ -2,7 +2,6 @@
 category: Tables
 title: Hover
 ---
-<div class="docs-example">
   <table class="table table-hover">
     <thead>
       <tr>
@@ -32,4 +31,3 @@ title: Hover
       </tr>
     </tbody>
   </table>
-</div>

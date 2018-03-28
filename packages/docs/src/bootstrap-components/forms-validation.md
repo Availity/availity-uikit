@@ -2,7 +2,6 @@
 category: Forms
 title: Validation
 ---
-<div class="docs-example">
   <div class="form-group has-danger">
     <label for="text5">Label for text input</label>
     <input type="text" class="form-control" id="text5" placeholder="has error">
@@ -21,4 +20,3 @@ title: Validation
     <p class="form-control-feedback">Example block-level help text here.</p>
     <small class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
-</div>

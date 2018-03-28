@@ -3,7 +3,6 @@ category: Cards
 title: Variants
 description: Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. Darker colors require the use of `.card-inverse.`
 ---
-<div class="docs-example">
   <div class="card text-white bg-primary mb-3 text-center">
     <div class="card-body">
       <blockquote class="card-blockquote">
@@ -68,4 +67,3 @@ description: Cards include their own variant classes for quickly changing the `b
       </blockquote>
     </div>
   </div>
-</div>

@@ -3,7 +3,6 @@ category: Tables
 title: Fixed
 description: Fixed table layouts are required for `.text-truncation`
 ---
-<div class="docs-example">
   <table class="table table-fixed">
     <thead>
     <tr>
@@ -34,4 +33,3 @@ description: Fixed table layouts are required for `.text-truncation`
     </tr>
     </tbody>
   </table>
-</div>
