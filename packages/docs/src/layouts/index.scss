@@ -1,7 +1,18 @@
 @import '~bootstrap/scss/_functions';
 @import '~bootstrap/scss/_variables.scss';
+
+#___gatsby {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+  max-width: 1700px;
+}
+
 .docs-masthead {
     padding: 3rem ($grid-gutter-width / 2);
+    padding-bottom: 75px;
 }
 
 .docs-title {

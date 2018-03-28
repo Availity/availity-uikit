@@ -33,13 +33,13 @@ const ComponentGroup = ({ groupName, components }) => {
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
       html={component.node.html}
-      id={`${groupName.replace(/\s/g, '-')}-${component.node.frontmatter.title.replace(/\s/g, '-')}`}
+      id={`${slugify(groupName, '-')}-${slugify(component.node.frontmatter.title, '-')}`}
     />
   ));
 
   return (
     <div>
-      <h2 id={groupName.replace(/\s/g, '-')} className="docs-title">{groupName}</h2>
+      <h2 id={slugify(groupName, '-')} className="docs-title">{groupName}</h2>
       {componentsList}
     </div>
   );
@@ -67,7 +67,7 @@ const ComponentSideMenu = ({ groupName, components }) => {
     <SideMenu
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
-      id={`#${groupName.replace(/\s/g, '-')}-${component.node.frontmatter.title.replace(/\s/g, '-')}`}
+      id={`#${slugify(groupName, '-')}-${slugify(component.node.frontmatter.title, '-')}`}
     />
   ));
 
@@ -75,7 +75,7 @@ const ComponentSideMenu = ({ groupName, components }) => {
     <nav>
       <ul className="docs-nav">
         <li className="docs-nav-title">
-          <a href={`#${groupName.replace(/\s/g, '-')}`}>{groupName}</a>
+          <a href={`#${slugify(groupName, '-')}`}>{groupName}</a>
         </li>
         <ul>
           {componentsList}
@@ -108,7 +108,7 @@ const ComponentsPage = ({ data }) => {
   return (
     <main className="docs-masthead">
       <h1 className="sr-only">Components Page</h1>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-md-8 col-sm-9">{componntsGroupList}</div>
           <div className="col-md-4 col-sm-3">{componentSideMenuItems}</div>
