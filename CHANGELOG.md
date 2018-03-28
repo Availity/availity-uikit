@@ -1,3 +1,21 @@
+<a name="3.0.0-beta.19"></a>
+# [3.0.0-beta.19](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.18...v3.0.0-beta.19) (2018-03-28)
+
+
+### Bug Fixes
+
+* **availity-uikit:** fix view code and replace ([b18c03f](https://github.com/Availity/availity-uikit/commit/b18c03f))
+* **availity-uikit:** side menu css fix ([9da10c5](https://github.com/Availity/availity-uikit/commit/9da10c5))
+* **availity-uikit:** slugify + footer fix + max-width container ([dd1ab2c](https://github.com/Availity/availity-uikit/commit/dd1ab2c))
+
+
+### Features
+
+* **availity-uikit:** add side menu ([b9f845f](https://github.com/Availity/availity-uikit/commit/b9f845f))
+* **availity-uikit:** add view code ([86e05d4](https://github.com/Availity/availity-uikit/commit/86e05d4))
+
+
+
 <a name="3.0.0-beta.18"></a>
 # [3.0.0-beta.18](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.17...v3.0.0-beta.18) (2018-03-22)
 
