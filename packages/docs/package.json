@@ -21,7 +21,9 @@
     "lodash.groupby": "^4.6.0",
     "lodash.map": "^4.6.0",
     "popper.js": "^1.12.9",
+    "prismjs": "^1.13.0",
     "react-html-parser": "^2.0.1",
+    "react-prism": "^4.3.2",
     "slugify": "^1.2.4"
   },
   "keywords": [
