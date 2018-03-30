@@ -22,7 +22,9 @@
     "lodash.map": "^4.6.0",
     "popper.js": "^1.12.9",
     "react-html-parser": "^2.0.1",
-    "slugify": "^1.2.4"
+    "slugify": "^1.2.4",
+	"prismjs": "^1.13.0",
+    "react-prism": "^4.3.2"
   },
   "keywords": [
     "gatsby"
