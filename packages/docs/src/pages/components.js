@@ -8,7 +8,6 @@ import 'holderjs';
 import PrismCode from 'react-prism';
 
 require('prismjs');
-require('prismjs/themes/prism.css');
 
 const Component = ({ html, title, id }) => (
   <div>
