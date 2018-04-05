@@ -8,7 +8,6 @@ import 'holderjs';
 import PrismCode from 'react-prism';
 
 require('prismjs');
-require('prismjs/themes/prism.css');
 
 const Component = ({ html, title, id }) => (
   <div>
@@ -47,7 +46,7 @@ const ComponentGroup = ({ groupName, components }) => {
 
 ComponentGroup.propTypes = {
   groupName: PropTypes.string,
-  components: PropTypes.object,
+  components: PropTypes.array,
 };
 
 
@@ -88,7 +87,7 @@ const ComponentSideMenu = ({ groupName, components }) => {
 
 ComponentSideMenu.propTypes = {
   groupName: PropTypes.string,
-  components: PropTypes.object,
+  components: PropTypes.array,
 }
 
 const ComponentsPage = ({ data }) => {
@@ -120,7 +119,7 @@ const ComponentsPage = ({ data }) => {
 
 ComponentsPage.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.string,
+    allMarkdownRemark: PropTypes.object,
   }),
 };
 
