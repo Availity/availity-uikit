@@ -23,19 +23,19 @@ title: Notifications
                 <div role="tabpanel" class="tab-pane active">
                   <div class="notifications-menu-body">
                     <div class="list-group-item" role="menuitem">
-                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a><i class="icon icon-cancel"></i></a></h6>
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a role="button" aria-label="close"><i class="icon icon-cancel"></i></a></h6>
                       <h5 class="condensed">Pharmacy Authorization Approved</h5>
                       <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
                       <a href="#" class="notification-menu-link">View Request</a>
                     </div>
                     <div class="list-group-item" role="menuitem">
-                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a><i class="icon icon-cancel"></i></a></h6>
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a role="button" aria-label="close"><i class="icon icon-cancel"></i></a></h6>
                       <h5 class="condensed">Pharmacy Authorization Approved</h5>
                       <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
                       <a href="#" class="notification-menu-link">View Request</a>
                     </div>
                     <div class="list-group-item" role="menuitem">
-                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a><i class="icon icon-cancel"></i></a></h6>
+                      <h6 class="subheader">Humana | Pharmacy Prior Authorization <a role="button" aria-label="close"><i class="icon icon-cancel"></i></a></h6>
                       <h5 class="condensed">Pharmacy Authorization Approved</h5>
                       <p>Authorization for Arnold, Clifford (HUMIRA 40 MG/0.8 ML) was approved.</p>
                       <a href="#" class="notification-menu-link">View Request</a>

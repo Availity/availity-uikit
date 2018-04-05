@@ -10,6 +10,7 @@
     "expose-loader": "^0.7.4",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
+    "gatsby-plugin-accessibilityjs": "^1.0.3",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-react-next": "^1.0.4",
     "gatsby-plugin-sass": "^1.0.12",
