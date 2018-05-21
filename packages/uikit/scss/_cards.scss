@@ -59,7 +59,7 @@
   .card-blockquote > footer {
     color: $card-blockquote-color;
   }
-  a:not(.card-link){
+  a:not(.card-link) {
     border-bottom: 1px dotted;
     &:hover,
     &:focus {
@@ -69,26 +69,29 @@
   }
 }
 
-.card-warning, .card-default {
+.card-warning,
+.card-default {
   .card-blockquote {
     color: $card-blockquote-color;
   }
 }
 
-a, .card-link {
+a,
+.card-link {
   cursor: pointer;
 }
 
-.card-header, .card-title {
-  font-weight: bold;
-
-  &:hover, &:active, &:focus {
+.card-header,
+.card-title {
+  &:hover,
+  &:active,
+  &:focus {
     text-decoration: none;
   }
 }
 
 .card-title {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .card-title-secondary {
@@ -109,13 +112,13 @@ ul.card-body {
 }
 
 .card-collapsible-link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-collapsible-link {
-  @include iconify-before("\e802", $text-color, .2em);
+  @include iconify-before('\e802', $text-color, 0.2em);
 }
 
 .card-collapsible-link.collapsed {
-  @include iconify-before("\e806", $text-color, .2em);
+  @include iconify-before('\e806', $text-color, 0.2em);
 }
