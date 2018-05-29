@@ -1,6 +1,6 @@
 {
   "name": "@availity/uikit-monorepo",
-  "version": "3.0.0-beta.19",
+  "version": "3.0.0-beta.20",
   "description": "Monorepo for availity-uikit and documentation",
   "scripts": {
     "link": "lerna link",
@@ -42,7 +42,12 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.8.2"
   },
-  "keywords": ["uikit", "availity", "ux", "bootstrap"],
+  "keywords": [
+    "uikit",
+    "availity",
+    "ux",
+    "bootstrap"
+  ],
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "license": "MIT",
   "bugs": {
@@ -55,9 +60,14 @@
     "trailingComma": "es5"
   },
   "lint-staged": {
-    "*.js": ["prettier", "git add"]
+    "*.js": [
+      "prettier",
+      "git add"
+    ]
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

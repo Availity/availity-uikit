@@ -1,3 +1,32 @@
+<a name="3.0.0-beta.20"></a>
+# [3.0.0-beta.20](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.19...v3.0.0-beta.20) (2018-05-29)
+
+
+### Bug Fixes
+
+* **availity-uikit:** build styles dependency ([#225](https://github.com/Availity/availity-uikit/issues/225)) ([8718f12](https://github.com/Availity/availity-uikit/commit/8718f12))
+* **availity-uikit:** fix view code feature ([aea9641](https://github.com/Availity/availity-uikit/commit/aea9641))
+* missing color variants ([4382e56](https://github.com/Availity/availity-uikit/commit/4382e56))
+* **icons:** css prefix ([8c63703](https://github.com/Availity/availity-uikit/commit/8c63703))
+* **icons:** incorrect src paths ([443bfc1](https://github.com/Availity/availity-uikit/commit/443bfc1))
+
+
+### Features
+
+* **availity-uikit:** add accessibility checks ([1e86984](https://github.com/Availity/availity-uikit/commit/1e86984))
+
+
+### Performance Improvements
+
+* clean up social icon fonts ([f7f6686](https://github.com/Availity/availity-uikit/commit/f7f6686))
+
+
+### BREAKING CHANGES
+
+* social icons removed to reduce font bundle size
+
+
+
 <a name="3.0.0-beta.19"></a>
 # [3.0.0-beta.19](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.18...v3.0.0-beta.19) (2018-03-28)
 
