@@ -1,0 +1,9 @@
+// List Groups
+
+@mixin list-group-item-status-variant($state, $background, $color) {
+  &.#{$state},
+  &.active.#{$state} {
+    border-left-color: $background;
+    border-left-width: $list-group-card-border-width;
+  }
+}

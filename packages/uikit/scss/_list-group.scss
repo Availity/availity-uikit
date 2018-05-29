@@ -5,7 +5,6 @@
 }
 
 .list-group-selectable {
-
   .list-group-item {
     cursor: pointer;
 
@@ -32,8 +31,8 @@ a.list-group-item,
 button.list-group-item {
   color: #555;
 
-  .app-icon{
-    margin-right: .5em;
+  .app-icon {
+    margin-right: 0.5em;
   }
 
   &:hover,
@@ -50,7 +49,6 @@ button.list-group-item {
   text-align: left;
 }
 
-
 .list-group-cards {
   display: block;
 
@@ -61,43 +59,17 @@ button.list-group-item {
 
     border-radius: 4px;
 
-    &.primary, &.info, &.success, &.danger, &.warning, &.secondary {
-      border-left-width: 10px;
+    @each $color, $value in $theme-colors {
+      @include list-group-item-status-variant($color, theme-color-level($color), theme-color-level($color));
     }
 
-    &.primary, &.active.primary {
-      border-left-color: $brand-primary;
-    }
-
-    &.info, &.active.info {
-      border-left-color: $brand-info;
-    }
-
-    &.success, &.active.success {
-      border-left-color: $brand-success;
-    }
-
-    &.danger, &.active.danger {
-      border-left-color: $brand-danger;
-    }
-
-    &.warning, &.active.warning {
-      border-left-color: $brand-warning;
-    }
-
-    &.secondary, &.active.secondary {
-      border-left-color: $disabled-text-color;
-    }
-
-    .list-group-item-text{
+    .list-group-item-text {
       margin-bottom: 0;
     }
-
   }
 }
 
 .list-group-item-result {
-
   border-radius: 0;
   margin-bottom: 0;
   border: 0;
@@ -118,7 +90,6 @@ button.list-group-item {
 }
 
 .list-group-flush {
-
   padding-left: 0;
   margin-bottom: 0;
 
