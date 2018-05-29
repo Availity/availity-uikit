@@ -25,7 +25,6 @@
   "devDependencies": {
     "@commitlint/cli": "^6.1.3",
     "@commitlint/config-conventional": "^6.1.3",
-    "@commitlint/config-lerna-scopes": "^6.1.3",
     "babel-eslint": "^8.0.3",
     "conventional-changelog": "^1.1.6",
     "conventional-recommended-bump": "^2.0.6",
@@ -43,12 +42,7 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.8.2"
   },
-  "keywords": [
-    "uikit",
-    "availity",
-    "ux",
-    "bootstrap"
-  ],
+  "keywords": ["uikit", "availity", "ux", "bootstrap"],
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "license": "MIT",
   "bugs": {
@@ -61,15 +55,9 @@
     "trailingComma": "es5"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier",
-      "git add"
-    ]
+    "*.js": ["prettier", "git add"]
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional",
-      "@commitlint/config-lerna-scopes"
-    ]
+    "extends": ["@commitlint/config-conventional"]
   }
 }
