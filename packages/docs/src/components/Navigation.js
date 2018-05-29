@@ -35,6 +35,11 @@ const Navigation = ({ location, data }) => (
               Components
             </Link>
           </li>
+          <li className={location.pathname === withPrefix('/icons') ? 'nav-item active' : 'nav-item'}>
+            <Link className="nav-link docs-nav-link" to="/icons">
+              Icons
+            </Link>
+          </li>
           <li className="nav-item">
             <a className="nav-link docs-nav-link" href="https://github.com/availity/availity-uikit">
               Github
