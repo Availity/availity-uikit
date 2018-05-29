@@ -9,7 +9,6 @@
   }
 
   .nav-link {
-    //margin-bottom: $nav-tabs-justified-link-margin-bottom;
     text-align: center;
   }
 
@@ -35,27 +34,8 @@
 @mixin nav-tabs-justified {
   border-bottom: 0;
 
-  .nav-link { // Override margin from .nav-tabs
+  .nav-link {
+    // Override margin from .nav-tabs
     margin-right: 0;
   }
-
-  //.nav-link.active {
-  //  @include plain-hover-focus {
-  //    border: $nav-tabs-justified-link-border-width solid $nav-tabs-justified-link-border-color;
-  //  }
-  //}
-  //
-  //@include media-breakpoint-up(md) {
-  //  .nav-link,
-  //  .nav-link.disabled,
-  //  .nav-link.disabled:hover {
-  //    border-bottom: $nav-tabs-justified-link-border-width solid $nav-tabs-justified-link-border-color;
-  //    @include border-top-radius($nav-tabs-justified-link-border-radius);
-  //  }
-  //  .nav-link.active {
-  //    @include plain-hover-focus {
-  //      border-bottom-color: $nav-tabs-justified-active-link-border-color;
-  //    }
-  //  }
-  //}
 }
