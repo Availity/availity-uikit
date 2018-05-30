@@ -1,3 +1,13 @@
+<a name="3.0.0-beta.21"></a>
+# [3.0.0-beta.21](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.20...v3.0.0-beta.21) (2018-05-30)
+
+
+### Bug Fixes
+
+* **icons:** missing angle fonts ([77b3856](https://github.com/Availity/availity-uikit/commit/77b3856))
+
+
+
 <a name="3.0.0-beta.20"></a>
 # [3.0.0-beta.20](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.19...v3.0.0-beta.20) (2018-05-29)
 
