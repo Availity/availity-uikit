@@ -38,9 +38,10 @@ const IconsPage = () => (
           <i className="icon icon-terminal icon-2x" /> <span className="d-block text-center">icon-terminal</span>
           <span className="d-block text-center">0xe801</span>
         </div>
-        <div className="col-sm text-center" title="Code: 0xe802">
-          <i className="icon icon-down-dir icon-2x" /> <span className="d-block text-center">icon-down-dir</span>
-          <span className="d-block text-center">0xe802</span>
+        <div className="col-sm text-center" title="Code: 0xf104">
+          <i className="icon icon-angle-left icon-2x">&#xf104;</i>{' '}
+          <span className="d-block text-center">icon-angle-left</span>
+          <span className="d-block text-center">0xf104</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe803">
           <i className="icon icon-bell-alt icon-2x" /> <span className="d-block text-center">icon-bell-alt</span>
@@ -48,17 +49,20 @@ const IconsPage = () => (
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe804">
-          <i className="icon icon-up-dir icon-2x" /> <span className="d-block text-center">icon-up-dir</span>
-          <span className="d-block text-center">0xe804</span>
+        <div className="col-sm text-center" title="Code: 0xf105">
+          <i className="icon icon-angle-right icon-2x">&#xf105;</i>
+          <span className="d-block text-center">icon-angle-right</span>
+          <span className="d-block text-center">0xf105</span>
         </div>
-        <div className="col-sm text-center" title="Code: 0xe805">
-          <i className="icon icon-left-dir icon-2x" /> <span className="d-block text-center">icon-left-dir</span>
-          <span className="d-block text-center">0xe805</span>
+        <div className="col-sm text-center" title="Code: 0xf106">
+          <i className="icon icon-angle-up icon-2x">&#xf106;</i>
+          <span className="d-block text-center">icon-angle-up</span>
+          <span className="d-block text-center">0xf106</span>
         </div>
-        <div className="col-sm text-center" title="Code: 0xe806">
-          <i className="icon icon-right-dir icon-2x" /> <span className="d-block text-center">icon-right-dir</span>
-          <span className="d-block text-center">0xe806</span>
+        <div className="col-sm text-center" title="Code: 0xf107">
+          <i className="icon icon-angle-down icon-2x">&#xf107;</i>
+          <span className="d-block text-center">icon-angle-down</span>
+          <span className="d-block text-center">0xf107</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe807">
           <i className="icon icon-info-circle icon-2x" /> <span className="d-block text-center">icon-info-circle</span>
@@ -843,6 +847,11 @@ const IconsPage = () => (
           <i className="icon icon-sort-number-down icon-2x" />
           <span className="d-block text-center">icon-sort-number-down</span>
           <span className="d-block text-center">0xf163</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe802">
+          <i className="icon icon-clipboard icon-2x" />
+          <span className="d-block text-center">icon-clipboard</span>
+          <span className="d-block text-center">0xe802</span>
         </div>
       </div>
     </div>

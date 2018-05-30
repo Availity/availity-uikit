@@ -61,27 +61,30 @@
   margin-left: 0.2em;
 }
 
+.#{$availity-css-prefix}-clipboard:before {
+  content: '\e802';
+} /* '' */
 .#{$availity-css-prefix}-home:before {
   content: '\e800';
 } /* '' */
 .#{$availity-css-prefix}-terminal:before {
   content: '\e801';
 } /* '' */
-.#{$availity-css-prefix}-down-dir:before {
-  content: '\e802';
-} /* '' */
+#{$availity-css-prefix}-angle-left:before {
+  content: '\f104';
+} /* '' */
+#{$availity-css-prefix}-angle-right:before {
+  content: '\f105';
+} /* '' */
+#{$availity-css-prefix}-angle-up:before {
+  content: '\f106';
+} /* '' */
+#{$availity-css-prefix}-angle-down:before {
+  content: '\f107';
+} /* '' */
 .#{$availity-css-prefix}-bell-alt:before {
   content: '\e803';
 } /* '' */
-.#{$availity-css-prefix}-up-dir:before {
-  content: '\e804';
-} /* '' */
-.#{$availity-css-prefix}-left-dir:before {
-  content: '\e805';
-} /* '' */
-.#{$availity-css-prefix}-right-dir:before {
-  content: '\e806';
-} /* '' */
 .#{$availity-css-prefix}-info-circle:before {
   content: '\e807';
 } /* '' */
