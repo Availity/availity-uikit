@@ -5,24 +5,28 @@
       "component---src-pages-index-js-a9891008ed2663ce3d91.js.map"
     ],
     "component---src-pages-components-js": [
-      "component---src-pages-components-js-5270bbf66edefca4656a.js",
-      "component---src-pages-components-js-5270bbf66edefca4656a.js.map"
+      "component---src-pages-components-js-3417e0952e4fc8f32e98.js",
+      "component---src-pages-components-js-3417e0952e4fc8f32e98.js.map"
     ],
     "path---": [
-      "path----2bbb82fef946252b5daf.js",
-      "path----2bbb82fef946252b5daf.js.map"
+      "path----d14e599894ebb5c44a65.js",
+      "path----d14e599894ebb5c44a65.js.map"
     ],
     "path---components": [
-      "path---components-eeeabb65a8195e0bacfd.js",
-      "path---components-eeeabb65a8195e0bacfd.js.map"
+      "path---components-137acb8f6314157a061e.js",
+      "path---components-137acb8f6314157a061e.js.map"
+    ],
+    "path---icons": [
+      "path---icons-a0e39f21c11f6a62c5ab.js",
+      "path---icons-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-bc95e3216f2b65fbd5d0.js",
-      "component---src-layouts-index-js-bc95e3216f2b65fbd5d0.js.map"
+      "component---src-layouts-index-js-b29b51e2176f10ae2ff8.js",
+      "component---src-layouts-index-js-b29b51e2176f10ae2ff8.js.map"
     ],
     "path---index": [
-      "path---index-17b8d572d1da3d3c12f5.js",
-      "path---index-17b8d572d1da3d3c12f5.js.map"
+      "path---index-c0af13a1ae3264f3f051.js",
+      "path---index-c0af13a1ae3264f3f051.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -30,19 +34,19 @@
     ],
     "commons": [
       "commons-d67fb716d28809034db0.js",
-      "build-js-styles.css",
-      "commons-d67fb716d28809034db0.js.map",
-      "build-js-styles.css.map"
+      "commons-d67fb716d28809034db0.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-icons-js": [
+      "component---src-pages-icons-js-74561fc73ae4c13fe5ec.js",
+      "component---src-pages-icons-js-74561fc73ae4c13fe5ec.js.map"
+    ],
     "app": [
-      "app-591ad9e192728d29bd7f.js",
-      "build-js-styles.css",
-      "app-591ad9e192728d29bd7f.js.map",
-      "build-js-styles.css.map"
+      "app-9a03b25f398bb15c001a.js",
+      "app-9a03b25f398bb15c001a.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
