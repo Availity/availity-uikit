@@ -1,3 +1,13 @@
+<a name="3.0.0-beta.22"></a>
+# [3.0.0-beta.22](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.21...v3.0.0-beta.22) (2018-05-30)
+
+
+### Bug Fixes
+
+* **fonts:** restore arrow fonts ([09a1d99](https://github.com/Availity/availity-uikit/commit/09a1d99))
+
+
+
 <a name="3.0.0-beta.21"></a>
 # [3.0.0-beta.21](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.20...v3.0.0-beta.21) (2018-05-30)
 
