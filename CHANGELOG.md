@@ -1,3 +1,13 @@
+<a name="3.0.0-beta.23"></a>
+# [3.0.0-beta.23](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.22...v3.0.0-beta.23) (2018-06-05)
+
+
+### Features
+
+* **icons:** add red icon ([eaea425](https://github.com/Availity/availity-uikit/commit/eaea425))
+
+
+
 <a name="3.0.0-beta.22"></a>
 # [3.0.0-beta.22](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.21...v3.0.0-beta.22) (2018-05-30)
 
