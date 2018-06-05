@@ -18,6 +18,10 @@ title: App Icons with Title
   <span class="app-icon app-icon-orange">ai</span>
   <span class="app-icon-title">h4. Application Title</span>
 </h4>
+<h4>
+    <span class="app-icon app-icon-red">ai</span>
+    <span class="app-icon-title">h4. Application Title</span>
+</h4>
 <h5>
   <span class="app-icon app-icon-branded-black">ai<span class="caret"></span></span>
   <span class="app-icon-title">h5. Application Title</span>
