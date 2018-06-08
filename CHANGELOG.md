@@ -1,3 +1,13 @@
+<a name="3.0.0-beta.24"></a>
+# [3.0.0-beta.24](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.23...v3.0.0-beta.24) (2018-06-08)
+
+
+### Bug Fixes
+
+* **icons:** clean up and add to docs ([b9ffe64](https://github.com/Availity/availity-uikit/commit/b9ffe64))
+
+
+
 <a name="3.0.0-beta.23"></a>
 # [3.0.0-beta.23](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.22...v3.0.0-beta.23) (2018-06-05)
 
