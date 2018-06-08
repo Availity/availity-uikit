@@ -74,240 +74,240 @@ const IconsPage = () => (
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe808">
+        <div className="col-sm text-center" title="Code: 0xe809">
           <i className="icon icon-key icon-2x" />
           <span className="d-block text-center">icon-key</span>
-          <span className="d-block text-center">0xe808</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe809">
-          <i className="icon icon-ok-circle icon-2x" />
-          <span className="d-block text-center">icon-ok-circle</span>
           <span className="d-block text-center">0xe809</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe80a">
-          <i className="icon icon-link-ext icon-2x" />
-          <span className="d-block text-center">icon-link-ext</span>
+          <i className="icon icon-ok-circle icon-2x" />
+          <span className="d-block text-center">icon-ok-circle</span>
           <span className="d-block text-center">0xe80a</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe80b">
+          <i className="icon icon-link-ext icon-2x" />
+          <span className="d-block text-center">icon-link-ext</span>
+          <span className="d-block text-center">0xe80b</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe80c">
           <i className="icon icon-cc-visa icon-2x" />
           <span className="d-block text-center">icon-cc-visa</span>
-          <span className="d-block text-center">0xe80b</span>
+          <span className="d-block text-center">0xe80c</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe80c">
+        <div className="col-sm text-center" title="Code: 0xe80d">
           <i className="icon icon-cc-mastercard icon-2x" />
           <span className="d-block text-center">icon-cc-mastercard</span>
-          <span className="d-block text-center">0xe80c</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe80d">
-          <i className="icon icon-cc-discover icon-2x" />
-          <span className="d-block text-center">icon-cc-discover</span>
           <span className="d-block text-center">0xe80d</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe80e">
-          <i className="icon icon-cc-amex icon-2x" />
-          <span className="d-block text-center">icon-cc-amex</span>
+          <i className="icon icon-cc-discover icon-2x" />
+          <span className="d-block text-center">icon-cc-discover</span>
           <span className="d-block text-center">0xe80e</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe80f">
+          <i className="icon icon-cc-amex icon-2x" />
+          <span className="d-block text-center">icon-cc-amex</span>
+          <span className="d-block text-center">0xe80f</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe810">
           <i className="icon icon-cc-paypal icon-2x" />
           <span className="d-block text-center">icon-cc-paypal</span>
-          <span className="d-block text-center">0xe80f</span>
+          <span className="d-block text-center">0xe810</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe810">
+        <div className="col-sm text-center" title="Code: 0xe811">
           <i className="icon icon-cc-stripe icon-2x" />
           <span className="d-block text-center">icon-cc-stripe</span>
-          <span className="d-block text-center">0xe810</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe811">
-          <i className="icon icon-location icon-2x" />
-          <span className="d-block text-center">icon-location</span>
           <span className="d-block text-center">0xe811</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe812">
-          <i className="icon icon-credit-card icon-2x" />
-          <span className="d-block text-center">icon-credit-card</span>
+          <i className="icon icon-location icon-2x" />
+          <span className="d-block text-center">icon-location</span>
           <span className="d-block text-center">0xe812</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe813">
+          <i className="icon icon-credit-card icon-2x" />
+          <span className="d-block text-center">icon-credit-card</span>
+          <span className="d-block text-center">0xe813</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe814">
           <i className="icon icon-user-md icon-2x" />
           <span className="d-block text-center">icon-user-md</span>
-          <span className="d-block text-center">0xe813</span>
+          <span className="d-block text-center">0xe814</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe814">
+        <div className="col-sm text-center" title="Code: 0xe815">
           <i className="icon icon-stethoscope icon-2x" />
           <span className="d-block text-center">icon-stethoscope</span>
-          <span className="d-block text-center">0xe814</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe815">
-          <i className="icon icon-ambulance icon-2x" />
-          <span className="d-block text-center">icon-ambulance</span>
           <span className="d-block text-center">0xe815</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe816">
-          <i className="icon icon-medkit icon-2x" />
-          <span className="d-block text-center">icon-medkit</span>
+          <i className="icon icon-ambulance icon-2x" />
+          <span className="d-block text-center">icon-ambulance</span>
           <span className="d-block text-center">0xe816</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe817">
+          <i className="icon icon-medkit icon-2x" />
+          <span className="d-block text-center">icon-medkit</span>
+          <span className="d-block text-center">0xe817</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe818">
           <i className="icon icon-h-sigh icon-2x" />
           <span className="d-block text-center">icon-h-sigh</span>
-          <span className="d-block text-center">0xe817</span>
+          <span className="d-block text-center">0xe818</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe818">
+        <div className="col-sm text-center" title="Code: 0xe819">
           <i className="icon icon-hospital icon-2x" />
           <span className="d-block text-center">icon-hospital</span>
-          <span className="d-block text-center">0xe818</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe819">
-          <i className="icon icon-building icon-2x" />
-          <span className="d-block text-center">icon-building</span>
           <span className="d-block text-center">0xe819</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe81a">
-          <i className="icon icon-filter icon-2x" />
-          <span className="d-block text-center">icon-filter</span>
+          <i className="icon icon-building icon-2x" />
+          <span className="d-block text-center">icon-building</span>
           <span className="d-block text-center">0xe81a</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe81b">
+          <i className="icon icon-filter icon-2x" />
+          <span className="d-block text-center">icon-filter</span>
+          <span className="d-block text-center">0xe81b</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe81c">
           <i className="icon icon-help-circle icon-2x" />
           <span className="d-block text-center">icon-help-circle</span>
-          <span className="d-block text-center">0xe81b</span>
+          <span className="d-block text-center">0xe81c</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe81c">
+        <div className="col-sm text-center" title="Code: 0xe81d">
           <i className="icon icon-heart icon-2x" />
           <span className="d-block text-center">icon-heart</span>
-          <span className="d-block text-center">0xe81c</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe81d">
-          <i className="icon icon-file-image icon-2x" />
-          <span className="d-block text-center">icon-file-image</span>
           <span className="d-block text-center">0xe81d</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe81e">
-          <i className="icon icon-file-powerpoint icon-2x" />
-          <span className="d-block text-center">icon-file-powerpoint</span>
+          <i className="icon icon-file-image icon-2x" />
+          <span className="d-block text-center">icon-file-image</span>
           <span className="d-block text-center">0xe81e</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe81f">
+          <i className="icon icon-file-powerpoint icon-2x" />
+          <span className="d-block text-center">icon-file-powerpoint</span>
+          <span className="d-block text-center">0xe81f</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe820">
           <i className="icon icon-file-excel icon-2x" />
           <span className="d-block text-center">icon-file-excel</span>
-          <span className="d-block text-center">0xe81f</span>
+          <span className="d-block text-center">0xe820</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe820">
+        <div className="col-sm text-center" title="Code: 0xe821">
           <i className="icon icon-file-word icon-2x" />
           <span className="d-block text-center">icon-file-word</span>
-          <span className="d-block text-center">0xe820</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe821">
-          <i className="icon icon-file-pdf icon-2x" />
-          <span className="d-block text-center">icon-file-pdf</span>
           <span className="d-block text-center">0xe821</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe822">
-          <i className="icon icon-file-archive icon-2x" />
-          <span className="d-block text-center">icon-file-archive</span>
+          <i className="icon icon-file-pdf icon-2x" />
+          <span className="d-block text-center">icon-file-pdf</span>
           <span className="d-block text-center">0xe822</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe823">
+          <i className="icon icon-file-archive icon-2x" />
+          <span className="d-block text-center">icon-file-archive</span>
+          <span className="d-block text-center">0xe823</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe824">
           <i className="icon icon-file-code icon-2x" />
           <span className="d-block text-center">icon-file-code</span>
-          <span className="d-block text-center">0xe823</span>
+          <span className="d-block text-center">0xe824</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe824">
+        <div className="col-sm text-center" title="Code: 0xe825">
           <i className="icon icon-doc-alt icon-2x" />
           <span className="d-block text-center">icon-doc-alt</span>
-          <span className="d-block text-center">0xe824</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe825">
-          <i className="icon icon-doc-text-inv icon-2x" />
-          <span className="d-block text-center">icon-doc-text-inv</span>
           <span className="d-block text-center">0xe825</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe826">
-          <i className="icon icon-doc-inv icon-2x" />
-          <span className="d-block text-center">icon-doc-inv</span>
+          <i className="icon icon-doc-text-inv icon-2x" />
+          <span className="d-block text-center">icon-doc-text-inv</span>
           <span className="d-block text-center">0xe826</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe827">
+          <i className="icon icon-doc-inv icon-2x" />
+          <span className="d-block text-center">icon-doc-inv</span>
+          <span className="d-block text-center">0xe827</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe828">
           <i className="icon icon-trash-empty icon-2x" />
           <span className="d-block text-center">icon-trash-empty</span>
-          <span className="d-block text-center">0xe827</span>
+          <span className="d-block text-center">0xe828</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe828">
+        <div className="col-sm text-center" title="Code: 0xe829">
           <i className="icon icon-newspaper icon-2x" />
           <span className="d-block text-center">icon-newspaper</span>
-          <span className="d-block text-center">0xe828</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe829">
-          <i className="icon icon-graduation-cap icon-2x" />
-          <span className="d-block text-center">icon-graduation-cap</span>
           <span className="d-block text-center">0xe829</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe82a">
-          <i className="icon icon-clipboard icon-2x" />
-          <span className="d-block text-center">icon-clipboard</span>
+          <i className="icon icon-graduation-cap icon-2x" />
+          <span className="d-block text-center">icon-graduation-cap</span>
           <span className="d-block text-center">0xe82a</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe82b">
+          <i className="icon icon-clipboard icon-2x" />
+          <span className="d-block text-center">icon-clipboard</span>
+          <span className="d-block text-center">0xe82b</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe82c">
           <i className="icon icon-css3 icon-2x" />
           <span className="d-block text-center">icon-css3</span>
-          <span className="d-block text-center">0xe82b</span>
+          <span className="d-block text-center">0xe82c</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe82c">
+        <div className="col-sm text-center" title="Code: 0xe82d">
           <i className="icon icon-chat icon-2x" />
           <span className="d-block text-center">icon-chat</span>
-          <span className="d-block text-center">0xe82c</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe82d">
-          <i className="icon icon-chat-empty icon-2x" />
-          <span className="d-block text-center">icon-chat-empty</span>
           <span className="d-block text-center">0xe82d</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe82e">
-          <i className="icon icon-edit icon-2x" />
-          <span className="d-block text-center">icon-edit</span>
+          <i className="icon icon-chat-empty icon-2x" />
+          <span className="d-block text-center">icon-chat-empty</span>
           <span className="d-block text-center">0xe82e</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe82f">
+          <i className="icon icon-edit icon-2x" />
+          <span className="d-block text-center">icon-edit</span>
+          <span className="d-block text-center">0xe82f</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe830">
           <i className="icon icon-attention-circle icon-2x" />
           <span className="d-block text-center">icon-attention-circle</span>
-          <span className="d-block text-center">0xe82f</span>
+          <span className="d-block text-center">0xe830</span>
         </div>
       </div>
       <div className="row mb-4">
-        <div className="col-sm text-center" title="Code: 0xe830">
+        <div className="col-sm text-center" title="Code: 0xe831">
           <i className="icon icon-cancel-circle icon-2x" />
           <span className="d-block text-center">icon-cancel-circle</span>
-          <span className="d-block text-center">0xe830</span>
-        </div>
-        <div className="col-sm text-center" title="Code: 0xe831">
-          <i className="icon icon-minus-circle icon-2x" />
-          <span className="d-block text-center">icon-minus-circle</span>
           <span className="d-block text-center">0xe831</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe832">
+          <i className="icon icon-minus-circle icon-2x" />
+          <span className="d-block text-center">icon-minus-circle</span>
+          <span className="d-block text-center">0xe832</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xe833">
           <i className="icon icon-plus-circle icon-2x" />
           <span className="d-block text-center">icon-plus-circle</span>
-          <span className="d-block text-center">0xe832</span>
+          <span className="d-block text-center">0xe833</span>
         </div>
         <div className="col-sm text-center" title="Code: 0xe834">
           <i className="icon icon-chart-line icon-2x" />
@@ -1008,7 +1008,7 @@ const IconsPage = () => (
           <span className="d-block text-center">icon-user-plus</span>
           <span className="d-block text-center">0xe8d1</span>
         </div>
-        <div className="col-sm text-center" title="Code: 0xe8d2">
+        <div className="col-sm text-center" title="Code: 0xe8d3">
           <i className="icon icon-play icon-2x" />
           <span className="d-block text-center">icon-play</span>
           <span className="d-block text-center">0xe8d2</span>
@@ -1056,6 +1056,18 @@ const IconsPage = () => (
           <i className="icon icon-bed icon-2x" />
           <span className="d-block text-center">icon-bed</span>
           <span className="d-block text-center">0xf236</span>
+        </div>
+        <div className="col-sm text-center" title="Code: 0xf108">
+          <i className="icon icon-desktop icon-2x" />
+          <span className="d-block text-center">icon-desktop</span>
+          <span className="d-block text-center">0xf108</span>
+        </div>
+      </div>
+      <div className="row mb-4">
+        <div className="col-sm text-center" title="Code: 0xe808">
+          <i className="icon icon-eye icon-2x" />
+          <span className="d-block text-center">icon-eye</span>
+          <span className="d-block text-center">0xe808</span>
         </div>
       </div>
     </div>
