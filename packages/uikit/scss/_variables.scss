@@ -136,7 +136,8 @@ $theme-colors: map-merge(
     'warning': $brand-warning,
     'danger': $brand-danger,
     'light': $gray-lightest,
-    'dark': $gray-darkest
+    'dark': $gray-darkest,
+    'faded': $gray-light
   ),
   $theme-colors
 );
