@@ -1069,6 +1069,11 @@ const IconsPage = () => (
           <span className="d-block text-center">icon-eye</span>
           <span className="d-block text-center">0xe808</span>
         </div>
+        <div className="col-sm text-center" title="Code: 0xe835">
+          <i className="icon icon-eye-off icon-2x" />
+          <span className="d-block text-center">icon-eye-off</span>
+          <span className="d-block text-center">0xe835</span>
+        </div>
       </div>
     </div>
   </main>

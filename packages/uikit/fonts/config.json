@@ -2643,6 +2643,12 @@
       "search": [
         "bed"
       ]
+    },
+    {
+      "uid": "7fd683b2c518ceb9e5fa6757f2276faa",
+      "css": "eye-off",
+      "code": 59445,
+      "src": "fontawesome"
     }
   ]
 }
