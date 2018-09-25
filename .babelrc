@@ -1,9 +1,0 @@
-{
-  "presets": ["env", "stage-0"],
-  "plugins": [
-    "transform-runtime",
-    "transform-class-properties",
-    "transform-object-assign"
-  ],
-  "compact": true
-}

@@ -1,0 +1,11 @@
+@mixin av-badge-variant($bgColor, $color: $white) {
+  background-color: $bgColor;
+  color: $color;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: darken($bgColor, 10%);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/js/bootstrap';
+import 'availity-uikit';
+
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import meta from './meta';
+
+import './index.scss';
+
+const TemplateWrapper = props => (
+  <div>
+    <Helmet title="Availity UIKit" meta={meta}>
+      <html lang="en" amp />
+    </Helmet>
+    <Navigation {...props} />
+    {props.children()}
+    <Footer />
+  </div>
+);
+
+TemplateWrapper.propTypes = {
+  children: PropTypes.func,
+};
+
+export default TemplateWrapper;
+
+export const pageQuery = graphql`
+  query TemplateQuery {
+    site {
+      siteMetadata {
+        v1
+        v2
+        title
+        description
+        keywords
+        version
+      }
+    }
+  }
+`;

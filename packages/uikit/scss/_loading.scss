@@ -1,0 +1,97 @@
+.loading-indicator {
+  text-align: center;
+}
+
+.loading-bullet {
+  display: inline-block;
+  opacity: 0;
+  font-size: 2em;
+  color: $secondary-green;
+}
+
+.loading-text {
+  margin: 0 0 0;
+  height: 10px;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@include keyframes(fadeInRTL1) {
+  0% { 
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  30% { 
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60% { 
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@include keyframes(fadeInRTL2) {
+  0% { 
+    opacity: 0;
+  }
+  10% { 
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  40% { 
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60% { 
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@include keyframes(fadeInRTL3) {
+  0% { 
+    opacity: 0;
+  }
+  20% { 
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  50% { 
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60% { 
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.loading-bullet {
+  display: inline-block;
+  opacity: 0;
+  animation: 3s ease .5s infinite fadeInRTL1;
+  & + .loading-bullet {
+    animation-name: fadeInRTL2;
+    & + .loading-bullet {
+      animation-name: fadeInRTL3;
+    }
+  }
+}

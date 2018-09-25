@@ -1,0 +1,40 @@
+.table > thead > tr > th {
+  border-width: 1px;
+  font-weight: bold;
+}
+
+.table > tbody > tr > td {
+  &.status-col {
+    padding-left: 1.3em;
+    position: relative;
+  }
+}
+
+.table > thead > tr > th {
+  &.status-col {
+    padding-left: 1.3em;
+    position: relative;
+  }
+}
+
+.status-col-complete {
+
+  &::before {
+    @include iconify('\e809');
+    @extend .text-success;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+  }
+
+}
+
+table.table-fixed {
+  table-layout: fixed;
+}
+
+table td[class*="col-"], table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}

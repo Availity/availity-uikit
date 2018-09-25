@@ -1,0 +1,10 @@
+.inline-help {
+  margin-left: .5em;
+  color: $gray;
+  font-size: 12px;
+  @include iconify-before("\e81b", $text-color, .2em);
+}
+
+.has-warning .text-help{
+  color: $state-warning-text;
+}

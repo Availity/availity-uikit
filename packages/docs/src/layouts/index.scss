@@ -1,0 +1,88 @@
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables.scss';
+@import '~prismjs/themes/prism.css';
+
+#___gatsby {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+  max-width: 1700px;
+}
+
+.docs-masthead {
+    padding: 3rem ($grid-gutter-width / 2);
+    padding-bottom: 75px;
+}
+
+.docs-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.docs-example {
+    padding: 1rem 0;
+}
+
+.docs-example {
+    .btn {
+        margin: .1rem;
+    }
+    .badge {
+        margin: .1rem;
+    }
+    .badge-block {
+        margin-bottom: .3rem;
+    }
+    .btn-group .btn {
+        margin: 0;
+    }
+}
+
+.docs-btn {
+    margin: 1rem;
+}
+
+.docs-color-item {
+    margin-bottom: 4px;
+    border: 1px solid #cdd3d3;
+}
+
+.docs-color-item-header {
+    height: 100px;
+    line-height: 100px;
+}
+
+.docs-color-item-footer {
+    display: block;
+    border-top: 1px solid #cdd3d3;
+    background-color: #f8f9f9;
+    line-height: 2;
+    text-align: center;
+    padding: 1.5em;
+    font-weight: bold;
+}
+
+.docs-nav li:hover, .docs-nav a:hover {
+  background-color: #e8ebeb;
+  text-decoration: none;
+}
+
+.docs-nav a {
+  color: #48535c;
+}
+
+.docs-nav li {
+  text-decoration: none;
+}
+
+.docs-nav-title {
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.docs-nav-item {
+  font-size: 18px;
+  margin-left: -10px;
+}

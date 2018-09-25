@@ -1,0 +1,44 @@
+{
+  "name": "@availity/availity-uikit-docs",
+  "private": true,
+  "description": "Documentation for availity-uikit",
+  "version": "3.0.0-beta.25",
+  "author": "Robert McGuinness <rob.mcguiness@availity.com>",
+  "dependencies": {
+    "availity-uikit": "^3.0.0-beta.25",
+    "bootstrap": "^4.0.0",
+    "expose-loader": "^0.7.4",
+    "gatsby": "^1.9.73",
+    "gatsby-link": "^1.6.22",
+    "gatsby-plugin-accessibilityjs": "^1.0.3",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-react-next": "^1.0.4",
+    "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-remark-prismjs": "^1.2.23",
+    "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-remark": "^1.7.18",
+    "gh-pages": "^1.1.0",
+    "holderjs": "^2.9.4",
+    "jquery": "^3.2.1",
+    "lodash.groupby": "^4.6.0",
+    "lodash.map": "^4.6.0",
+    "popper.js": "^1.12.9",
+    "prismjs": "^1.13.0",
+    "react-html-parser": "^2.0.1",
+    "react-prism": "^4.3.2",
+    "slugify": "^1.2.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build:preview": "gatsby build",
+    "build": "gatsby build --prefix-paths",
+    "develop": "npm run start",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public --dest v3",
+    "start": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

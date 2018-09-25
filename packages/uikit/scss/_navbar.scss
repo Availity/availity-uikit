@@ -1,0 +1,215 @@
+// Default navbar
+
+.navbar.navbar-fixed-top {
+
+  & + main, & + .main {
+    padding-top: $navbar-height;
+  }
+
+}
+
+.navbar-default {
+
+  @extend .navbar-inverse !optional;
+  background-color: $navbar-default-bg;
+  border-bottom: 1px solid $navbar-default-border;
+
+  .container{
+    width: 100%;
+  }
+  .navbar-text {
+    color: $navbar-default-color;
+  }
+  .navbar-nav .nav-link {
+    color: $navbar-default-link-color;
+
+    &:hover{
+      color: $navbar-default-link-hover-color;
+    }
+  }
+
+  .show > .nav-link {
+    &,
+    &:hover,
+    &:focus {
+      background-color: #202528;
+      color: #ffffff;
+      margin: -.5rem 0;
+      padding: 1rem .5rem;
+    }
+  }
+  .navbar-toggler {
+    border-color: $navbar-default-toggler-border;
+    color: $navbar-default-toggle-icon-color;
+    .navbar-toggler-icon {
+      background-image: $navbar-default-toggler-bg;
+    }
+  }
+  .navbar-toggler:hover,
+  .navbar-toggler:focus {
+    background-color: $navbar-default-toggle-hover-bg;
+    outline: 0;
+  }
+
+  .nav-btn {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .navbar-form,
+  .navbar-collapse {
+    border-color: #30383f;
+    box-shadow: none;
+  }
+
+}
+
+.navbar-default-icon {
+  opacity: $availity-navbar-default-icon-opacity;
+}
+
+// Secondary navbar
+
+.navbar-secondary {
+  border-bottom: 1px solid $availity-navbar-secondary-border;
+  background-color: $availity-navbar-secondary-bg;
+
+  .navbar-form,
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+
+}
+
+.navbar-secondary.navbar-fixed-top {
+  z-index: $availity-zindex-secondary-fixed;
+
+  .navbar-collapse {
+    max-height: none;
+  }
+}
+
+.navbar + .navbar-secondary.navbar-fixed-top {
+  top: $navbar-height;
+}
+
+.navbar-secondary.navbar-fixed-top {
+  & + main, & + .main {
+    padding-top: ($navbar-height * 2);
+  }
+}
+
+// Navbar nav links
+
+.navbar-nav {
+
+  > .nav-item > .nav-link {
+    text-decoration: none;
+  }
+
+  > .nav-item > .dropdown-toggle {
+
+    // icon arrow after a dropdown-toggle
+    &::after {
+      @include iconify-right($availity-icon-down);
+      opacity: 0.5;
+      top: 1px;
+      border: none;
+      vertical-align: baseline;
+    }
+
+  }
+
+  > .nav-item > .dropdown-toggle-secondary {
+    &::after {
+      @include iconify-right($availity-icon-angle-down);
+      opacity: 0.5;
+      top: 1px;
+      border: none;
+    }
+  }
+
+  > .nav-item > .dropdown-toggle-notifications {
+    &::after {
+      // clear the dropdown icon font from notifications since it already uses a counter bubble
+      content: " ";
+      border: none;
+    }
+  }
+
+  > .show > .dropdown-toggle {
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    // Dropdowns get custom display when collapsed
+    .show .mega-menu-default {
+      background-color: $white;
+    }
+  }
+
+}
+
+.navbar-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $navbar-dark-hover-color;
+
+  @include media-breakpoint-down(sm) {
+    float: left;
+    margin-left: $availity-navbar-padding-vertical;
+    margin-right: $availity-navbar-padding-vertical;
+  }
+}
+
+.navbar-default.navbar-toggleable-sm {
+  @include media-breakpoint-down(sm) {
+    clear: both;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+    .navbar-nav .nav-item{
+      float: none;
+      & + .nav-item {
+        margin-left: 0;
+      }
+    }
+
+    .nav-link,
+    .navbar-form {
+      // padding-left: ($grid-gutter-width-base / 2);
+      // padding-right: ($grid-gutter-width-base / 2);
+    }
+    .navbar-form .input-group .input-group-btn {
+      width: 1%;
+    }
+
+    .navbar-nav .show .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+
+      &.mega-menu-default {
+        background-color: $white;
+      }
+    }
+    .dropdown-item{
+      color: $navbar-default-link-color;
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
+      }
+    }
+  }
+}

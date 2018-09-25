@@ -1,9 +1,6 @@
-/node_modules/
-/dist/
-/build/
-/lib/
-
+node_modules/
 .idea
+.vscode
 .DS_Store
 npm-debug.log
-package-lock.json
+css/

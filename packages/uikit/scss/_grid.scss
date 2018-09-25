@@ -1,0 +1,10 @@
+.container-sm {
+  max-width: 100%;
+  @include make-container();
+}
+
+@include media-breakpoint-up(sm) {
+  .container-sm {
+    width: 700px;
+  }
+}
