@@ -2,6 +2,9 @@
 
 > Availity UI Kit powered by [Bootstrap 4](http://v4-alpha.getbootstrap.com/) with modifications to match Availity style guidelines
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&label=license)](http://opensource.org/licenses/MIT)
+[![NPM](http://img.shields.io/npm/v/availity-uikit.svg?style=flat-square&label=npm)](https://npmjs.org/package/availity-uikit)
+
 ## Table of Contents
 * [Demo](#demo)
 * [Supported Browsers](#supported-browsers)
@@ -26,7 +29,7 @@
 
 >
 ```bash
-$ npm install availity-uikit@next --save
+$ npm install availity-uikit --save
 ```
 ## Icon Fonts
 

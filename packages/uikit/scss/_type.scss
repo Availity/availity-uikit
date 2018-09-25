@@ -162,7 +162,7 @@ ol {
 }
 
 .disclaimer {
- font-size: $font-size-base;
+  font-size: $font-size-base;
   border-left: 5px solid $availity-disclaimer-warning-border;
 }
 
@@ -172,8 +172,8 @@ ol {
 }
 
 .agreement {
-  height: 300px;
-  overflow-y: scroll;
+  max-height: 300px;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: .2em;
   font-size: $font-size-sm;
