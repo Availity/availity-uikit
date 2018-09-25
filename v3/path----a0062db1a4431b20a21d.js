@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{89:function(t,i){t.exports={data:{site:{siteMetadata:{v1:"/availity-uikit/v1/",v2:"/availity-uikit/",title:"UIkit",description:"Availity UIKit powered by Bootstrap 4",keywords:"css, bootstrap, uikit",version:"3.0.0-beta.25"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----a0062db1a4431b20a21d.js.map
