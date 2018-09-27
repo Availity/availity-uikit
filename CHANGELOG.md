@@ -1,3 +1,88 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.25...v3.0.0) (2018-09-27)
+
+
+### Bug Fixes
+
+* **uikit:** correct invalid merge ([c1aa3a9](https://github.com/Availity/availity-uikit/commit/c1aa3a9))
+
+
+
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.17...v2.2.0) (2018-01-17)
+
+
+### Bug Fixes
+
+* **progress-bars:** remove green default background color ([ea96020](https://github.com/Availity/availity-uikit/commit/ea96020))
+
+
+
+<a name="2.1.1"></a>
+## [2.1.1](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.14...v2.1.1) (2017-09-24)
+
+
+
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.13...v2.1.0) (2017-06-09)
+
+
+
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/Availity/availity-uikit/compare/v2.0.1...v2.0.2) (2016-12-10)
+
+
+
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/Availity/availity-uikit/compare/v2.0.0...v2.0.1) (2016-12-10)
+
+
+
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.12...v2.0.0) (2016-11-11)
+
+
+
+<a name="2.0.0-beta.12"></a>
+# [2.0.0-beta.12](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2016-11-09)
+
+
+
+<a name="2.0.0-beta.11"></a>
+# [2.0.0-beta.11](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.10...v2.0.0-beta.11) (2016-11-04)
+
+
+
+<a name="2.0.0-beta.10"></a>
+# [2.0.0-beta.10](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2016-11-01)
+
+
+### Features
+
+* **icons:** add face icons ([7aebc0d](https://github.com/Availity/availity-uikit/commit/7aebc0d))
+
+
+
+<a name="2.0.0-beta.9"></a>
+# [2.0.0-beta.9](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.7...v2.0.0-beta.9) (2016-08-05)
+
+
+
+<a name="2.0.0-beta.7"></a>
+# [2.0.0-beta.7](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.6...v2.0.0-beta.7) (2016-07-20)
+
+
+
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/Availity/availity-uikit/compare/v1.2.0...v1.2.1) (2016-06-09)
+
+
+
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Availity/availity-uikit/compare/v2.0.0-beta.4...v1.2.0) (2016-04-22)
+
+
+
 <a name="3.0.0-beta.25"></a>
 # [3.0.0-beta.25](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.24...v3.0.0-beta.25) (2018-07-18)
 

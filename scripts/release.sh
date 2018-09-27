@@ -23,4 +23,4 @@ git add .
 git commit -m "chore: release v${VERSION}"
 
 echo "==> Bumping lerna version"
-node_modules/.bin/lerna publish --repo-version ${VERSION} --yes --npm-tag=next
+node_modules/.bin/lerna publish --repo-version ${VERSION} --yes
