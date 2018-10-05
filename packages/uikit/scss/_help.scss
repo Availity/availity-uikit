@@ -2,7 +2,7 @@
   margin-left: .5em;
   color: $gray;
   font-size: 12px;
-  @include iconify-before("\e81b", $text-color, .2em);
+  @include iconify-before("\e81c", $text-color, .2em);
 }
 
 .has-warning .text-help{
