@@ -1,3 +1,4 @@
+$stepwizard-badge-size: 30px;
 .stepwizard {
     display: table;
     width: 100%;
@@ -12,8 +13,8 @@
 }
 
 .stepwizard-badge {
-    width: 30px;
-    height: 30px;
+    width: $stepwizard-badge-size;
+    height: $stepwizard-badge-size;
     display: inline-block;
     text-align: center;
     padding: 5px;
@@ -80,9 +81,14 @@ a.stepwizard-step,
         display: block;
     }
     .stepwizard-step {
-        display: block;
         width: 100%;
         text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .stepwizard-badge {
+            min-width: $stepwizard-badge-size;
+        }
     }
     .stepwizard-title {
         display: inline;
