@@ -96,7 +96,7 @@ a.stepwizard-step,
     }
 }
 
-.stepwizard-icons {
+.stepwizard-progress {
     .stepwizard-badge {
         &::after {
             content: '\a0';
@@ -113,7 +113,7 @@ a.stepwizard-step,
     }
 }
 
-.stepwizard-progress {
+.stepwizard-bar {
     .stepwizard-step {
         position: relative;
         z-index: 0;
