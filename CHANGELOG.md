@@ -1,3 +1,18 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/Availity/availity-uikit/compare/v3.0.0...v3.1.0) (2018-11-02)
+
+
+### Bug Fixes
+
+* **inline-help:** fix icon value ([729245a](https://github.com/Availity/availity-uikit/commit/729245a)), closes [#242](https://github.com/Availity/availity-uikit/issues/242)
+
+
+### Features
+
+* **wizard:** new wizard-progress and docs ([4f41fb0](https://github.com/Availity/availity-uikit/commit/4f41fb0))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/Availity/availity-uikit/compare/v3.0.0-beta.25...v3.0.0) (2018-09-27)
 
