@@ -1,28 +1,33 @@
 // loosely copied from fontello output@mixin
 @mixin iconify($icon) {
-  font-family: $availity-icon-font;
-  content: $icon;
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
+    font-family: $availity-icon-font;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    @if map-has-key($availity-icons, $icon) {
+        content: map-get($availity-icons, $icon);
+    }
+    @else {
+        content: $icon;
+    }
 }
 
 @mixin iconify-right($icon, $padding: .3em) {
-  @include iconify($icon);
-  padding-left: $padding;
+    @include iconify($icon);
+    padding-left: $padding;
 }
 
 @mixin iconify-before($icon, $color: $text-color, $padding: 5px) {
-  &::before {
-    @include iconify($icon);
-    color: $color;
-    margin-right: $padding;
-  }
+    &::before {
+        @include iconify($icon);
+        color: $color;
+        margin-right: $padding;
+    }
 }
