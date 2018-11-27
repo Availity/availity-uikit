@@ -5,3 +5,4 @@ node_modules/
 npm-debug.log
 css/
 /.history
+lerna-debug.log
