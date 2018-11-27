@@ -1,28 +1,32 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import Browser from '../components/Browser';
+import Layout from '../components/Layout';
 
-const IndexPage = () => (
-  <main className="docs-masthead">
-    <div className="container-sm">
-      <div className="row justify-content-sm-center">
-        <Browser />
-        <div className="mt-4">
-          <p className="lead text-center">
-            The Availity UIKit is derived from <a href="https://getbootstrap.com/">Bootstrap 4</a> and allows developers
-            to create stunning web applications for the Availity Spaces platform.{' '}
-          </p>
-          <p className="lead text-center">
-            This guide will document any modifications done to the Bootstrap framework. Original Bootstrap conventions
-            were preserved as much as possible.
-          </p>
-          <p className="lead text-center">
-            The Availity UIKit is available through <a href="https://github.com/Availity/availity-uikit">Github</a>,{' '}
-            <a href="https://www.npmjs.com/package/availity-uikit">NPM</a>.{' '}
-          </p>
+const IndexPage = ({ ...props }) => (
+  <Layout {...props}>
+    <main className="docs-masthead">
+      <div className="container-sm">
+        <div className="row justify-content-sm-center">
+          <Browser />
+          <div className="mt-4">
+            <p className="lead text-center">
+              The Availity UIKit is derived from <a href="https://getbootstrap.com/">Bootstrap 4</a> and allows
+              developers to create stunning web applications for the Availity Spaces platform.{' '}
+            </p>
+            <p className="lead text-center">
+              This guide will document any modifications done to the Bootstrap framework. Original Bootstrap conventions
+              were preserved as much as possible.
+            </p>
+            <p className="lead text-center">
+              The Availity UIKit is available through <a href="https://github.com/Availity/availity-uikit">Github</a>,{' '}
+              <a href="https://www.npmjs.com/package/availity-uikit">NPM</a>.{' '}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </Layout>
 );
 
 export default IndexPage;

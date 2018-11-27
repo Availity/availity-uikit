@@ -3,21 +3,27 @@ import ReactHtmlParser from 'react-html-parser';
 import groupBy from 'lodash.groupby';
 import map from 'lodash.map';
 import slugify from 'slugify';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import 'holderjs';
 import PrismCode from 'react-prism';
+import Layout from '../components/Layout';
 
 require('prismjs');
 
 const Component = ({ html, title, id }) => (
-  <div>
+  <>
     <h3 id={id}>{title}</h3>
     <div className="docs-example"> {ReactHtmlParser(html)}</div>
-    <a className="btn btn-default mb-4" href={`#${id}-code`} data-toggle="collapse">View Code <i className="icon icon-code" /></a>
+    <a className="btn btn-default mb-4" href={`#${id}-code`} data-toggle="collapse">
+      View Code <i className="icon icon-code" />
+    </a>
     <div id={`${id}-code`} className="collapse">
-      <PrismCode component="pre" className="language-markup">{html}</PrismCode>
+      <PrismCode component="pre" className="language-markup">
+        {html}
+      </PrismCode>
     </div>
-  </div>
+  </>
 );
 
 Component.propTypes = {
@@ -37,10 +43,12 @@ const ComponentGroup = ({ groupName, components }) => {
   ));
 
   return (
-    <div>
-      <h2 id={slugify(groupName, '-')} className="docs-title">{groupName}</h2>
+    <>
+      <h2 id={slugify(groupName, '-')} className="docs-title">
+        {groupName}
+      </h2>
       {componentsList}
-    </div>
+    </>
   );
 };
 
@@ -48,7 +56,6 @@ ComponentGroup.propTypes = {
   groupName: PropTypes.string,
   components: PropTypes.array,
 };
-
 
 const SideMenu = ({ title, id }) => (
   <li className="docs-nav-item">
@@ -58,7 +65,7 @@ const SideMenu = ({ title, id }) => (
 
 SideMenu.propTypes = {
   title: PropTypes.string,
-  id: PropTypes.string
+  id: PropTypes.string,
 };
 
 const ComponentSideMenu = ({ groupName, components }) => {
@@ -76,10 +83,7 @@ const ComponentSideMenu = ({ groupName, components }) => {
         <li className="docs-nav-title">
           <a href={`#${slugify(groupName, '-')}`}>{groupName}</a>
         </li>
-        <ul>
-          {componentsList}
-        </ul>
-
+        <ul>{componentsList}</ul>
       </ul>
     </nav>
   );
@@ -88,9 +92,9 @@ const ComponentSideMenu = ({ groupName, components }) => {
 ComponentSideMenu.propTypes = {
   groupName: PropTypes.string,
   components: PropTypes.array,
-}
+};
 
-const ComponentsPage = ({ data }) => {
+const ComponentsPage = ({ data, ...props }) => {
   const components = data.allMarkdownRemark.edges;
 
   // Group by frontmatter category property
@@ -105,15 +109,17 @@ const ComponentsPage = ({ data }) => {
   ));
 
   return (
-    <main className="docs-masthead">
-      <h1 className="sr-only">Components Page</h1>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-8 col-sm-9">{componntsGroupList}</div>
-          <div className="col-md-4 col-sm-3">{componentSideMenuItems}</div>
+    <Layout {...props}>
+      <main className="docs-masthead">
+        <h1 className="sr-only">Components Page</h1>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-8 col-sm-9">{componntsGroupList}</div>
+            <div className="col-md-4 col-sm-3">{componentSideMenuItems}</div>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </Layout>
   );
 };
 
