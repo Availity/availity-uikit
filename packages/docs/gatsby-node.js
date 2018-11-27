@@ -1,25 +1,23 @@
-exports.modifyWebpackConfig = ({ config, stage }) => {
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  const buildHtmlRules = [];
   if (stage === 'build-html') {
-    config.loader('null', {
-      test: /holder|bootstrap/,
-      loader: 'null-loader',
-    });
+    buildHtmlRules.push({ test: /holder|bootstrap/, use: [`null-loader`] });
   }
 
-  config.loader('jquery', {
-    test: require.resolve('jquery'),
-    loader: 'expose-loader?$!expose-loader?jQuery',
-  });
+  const allRules = [
+    {
+      test: require.resolve('jquery'),
+      loader: 'expose-loader?$!expose-loader?jQuery',
+    },
+    {
+      test: require.resolve('holderjs'),
+      loader: 'expose-loader?holder.js',
+    },
+    {
+      test: require.resolve('popper.js'),
+      loader: 'expose-loader?Popper',
+    },
+  ];
 
-  config.loader('holder', {
-    test: require.resolve('holderjs'),
-    loader: 'expose-loader?holder.js',
-  });
-
-  config.loader('popper', {
-    test: require.resolve('popper.js'),
-    loader: 'expose-loader?Popper',
-  });
-
-  return config;
+  actions.setWebpackConfig({ module: { rules: [...buildHtmlRules, ...allRules] } });
 };

@@ -13,7 +13,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -24,17 +23,15 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          'gatsby-remark-prismjs'
-        ]
-      }
+        plugins: ['gatsby-remark-prismjs'],
+      },
     },
     {
       resolve: `gatsby-plugin-accessibilityjs`,
       options: {
         injectStyles: false,
-        errorClassName: false
-      }
-    }
-  ]
+        errorClassName: false,
+      },
+    },
+  ],
 };

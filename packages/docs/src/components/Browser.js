@@ -15,4 +15,4 @@ const Browser = () => (
   </div>
 );
 
-module.exports = Browser;
+export default Browser;
