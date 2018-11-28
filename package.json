@@ -15,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'packages/*/*.js' 'packages/*/!(node_modules|dist|public)/**/*.js'",
     "release": "npm run lint && sh ./scripts/release.sh",
-    "remove-locks": "find . -type f -name 'package-lock.json' -delete"
+    "remove-locks": "find . -type f -name 'package-lock.json' -delete",
+    "updateFonts": "node scripts/updateFont.js"
   },
   "repository": {
     "type": "git",

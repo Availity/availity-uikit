@@ -35,6 +35,13 @@ $ npm install availity-uikit --save
 
 Availity uses [Fontello](http://fontello.com/) to manage icon fonts.  Our [font configuration](./packages/uikit/fonts/config.json) can be used on Fontello to edit the font catalog.
 
+### Updating Fonts
+
++ Upload configuration to [Fontello](http://fontello.com/)
++ After making changes, download zip and extract `font` folder into the uikit [font](./packages/uikit/fonts/)
++ Replace the [font configuration](./packages/uikit/fonts/config.json) with the new one
++ `npm run updateFonts` and commit changes
+
 ## Contributing
 
 + `npm install`
