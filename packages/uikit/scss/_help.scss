@@ -1,10 +1,10 @@
 .inline-help {
-  margin-left: .5em;
-  color: $gray;
-  font-size: 12px;
-  @include iconify-before("\e81c", $text-color, .2em);
+    margin-left: .5em;
+    color: $gray;
+    font-size: 12px;
+    @include iconify-before("help-circle", $text-color, .2em);
 }
 
-.has-warning .text-help{
-  color: $state-warning-text;
+.has-warning .text-help {
+    color: $state-warning-text;
 }

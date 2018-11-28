@@ -106,7 +106,7 @@ a.stepwizard-step,
         &.complete {
             >.stepwizard-badge {
                 &::after {
-                    @include iconify($availity-icon-ok);
+                    @include iconify("ok");
                 }
             }
         }
