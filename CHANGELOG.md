@@ -1,3 +1,19 @@
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/Availity/availity-uikit/compare/v3.1.0...v3.2.0) (2018-11-28)
+
+
+### Bug Fixes
+
+* **uikit:** update npm-run-all ([b607ac9](https://github.com/Availity/availity-uikit/commit/b607ac9))
+
+
+### Features
+
+* **docs:** use font config for icon page in docs ([54d5d45](https://github.com/Availity/availity-uikit/commit/54d5d45))
+* **uikit:** updating how fonts are built out using fonts config.json ([0cd3148](https://github.com/Availity/availity-uikit/commit/0cd3148))
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/Availity/availity-uikit/compare/v3.0.0...v3.1.0) (2018-11-02)
 
