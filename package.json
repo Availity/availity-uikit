@@ -5,7 +5,7 @@
   "scripts": {
     "link": "lerna link",
     "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean",
+    "clean": "lerna clean --yes",
     "lint": "eslint .",
     "postinstall": "lerna bootstrap",
     "start": "npm start --prefix packages/docs",
@@ -17,6 +17,7 @@
     "release": "npm run lint && sh ./scripts/release.sh",
     "check": "npm-check -u && lerna exec --bail false --concurrency 1 -- npm-check -u",
     "remove-locks": "find . -type f -name 'package-lock.json' -delete",
+    "nuke": "npm run remove-locks && npm run clean && rm -rf ./node_modules",
     "updateFonts": "node scripts/updateFont.js"
   },
   "repository": {
