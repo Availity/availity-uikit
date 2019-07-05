@@ -2649,6 +2649,18 @@
       "css": "eye-off",
       "code": 59445,
       "src": "fontawesome"
+    },
+    {
+      "uid": "b08cfe8039de2ce815686aced2caef06",
+      "css": "download",
+      "code": 59448,
+      "src": "entypo"
+    },
+    {
+      "uid": "18be7ed7a4baf5713f2de51bf83b12f2",
+      "css": "newspaper-1",
+      "code": 62704,
+      "src": "mfglabs"
     }
   ]
 }
