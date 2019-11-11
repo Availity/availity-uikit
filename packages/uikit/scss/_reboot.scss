@@ -1,55 +1,56 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-weight: $availity-font-weight-normal;
-    min-height: 100% !important;
-    height: 100%;
+  font-weight: $availity-font-weight-normal;
+  min-height: 100% !important;
+  height: 100%;
+  background-color: $gray-light;
 }
 
 a {
-    &.external {
-        &::after {
-            @include iconify("link-ext");
-            opacity: 0.5;
-            margin-left: .5em;
-            font-size: 80%;
-        }
+  &.external {
+    &::after {
+      @include iconify('link-ext');
+      opacity: 0.5;
+      margin-left: 0.5em;
+      font-size: 80%;
     }
-    small {
-        font-size: 12px;
-    }
+  }
+  small {
+    font-size: 12px;
+  }
 }
 
-$section-padding: .5em;
+$section-padding: 0.5em;
 main,
 .main {
-    height: 100%;
+  height: 100%;
 }
 
 .section,
 section {
+  margin: ($section-padding * 2) 0;
+  &:first-child {
+    margin: 0;
+  }
+}
+
+hr {
+  border-top: 1px solid darken($hr-border-color, 10%);
+  width: 100%;
+}
+
+hr {
+  &.divider {
+    @include clearfix();
+    border: 0;
+    margin: $section-padding 0;
+  }
+  &.divider-lg {
+    @include clearfix();
+    border: 0;
     margin: ($section-padding * 2) 0;
-    &:first-child {
-        margin: 0;
-    }
-}
-
-hr {
-    border-top: 1px solid darken($hr-border-color, 10%);
-    width: 100%;
-}
-
-hr {
-    &.divider {
-        @include clearfix();
-        border: 0;
-        margin: $section-padding 0;
-    }
-    &.divider-lg {
-        @include clearfix();
-        border: 0;
-        margin: ($section-padding * 2) 0;
-    }
+  }
 }
