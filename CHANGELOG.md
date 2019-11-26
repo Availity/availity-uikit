@@ -1,3 +1,13 @@
+<a name="3.2.1"></a>
+## [3.2.1](https://github.com/Availity/availity-uikit/compare/v3.2.0...v3.2.1) (2019-11-26)
+
+
+### Bug Fixes
+
+* **uikit:** CVE-2019-8331 ([5b5ce1d](https://github.com/Availity/availity-uikit/commit/5b5ce1d))
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/Availity/availity-uikit/compare/v3.1.0...v3.2.0) (2018-11-28)
 
