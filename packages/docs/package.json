@@ -21,7 +21,7 @@
     "jquery": "^3.5.0",
     "lodash.groupby": "^4.6.0",
     "lodash.map": "^4.6.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.15.0",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
