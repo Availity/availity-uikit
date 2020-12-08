@@ -1,6 +1,10 @@
 {
   "name": "@availity/uikit-monorepo",
+  "private": true,
   "version": "3.2.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "description": "Monorepo for availity-uikit and documentation",
   "scripts": {
     "link": "lerna link",
@@ -8,34 +12,31 @@
     "clean": "lerna clean --yes",
     "lint": "eslint .",
     "postinstall": "lerna bootstrap",
-    "start": "npm start --prefix packages/docs",
-    "build:preview": "npm run build:preview --prefix packages/docs",
-    "build": "npm run build --prefix packages/docs",
-    "deploy": "npm run deploy --prefix packages/docs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write 'packages/*/*.js' 'packages/*/!(node_modules|dist|public)/**/*.js'",
+    "start": "yarn --cwd packages/docs start",
+    "build:preview": "yarn --cwd packages/docs build:preview --prefix",
+    "build": "yarn --cwd packages/docs build ",
+    "deploy": "yarn --cwd packages/docs deploy",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "release": "npm run lint && sh ./scripts/release.sh",
-    "check": "npm-check -u && lerna exec --bail false --concurrency 1 -- npm-check -u",
     "remove-locks": "find . -type f -name 'package-lock.json' -delete",
-    "nuke": "npm run remove-locks && npm run clean && rm -rf ./node_modules",
-    "updateFonts": "node scripts/updateFont.js"
+    "nuke": "yarn remove-locks && yarn clean && rm -rf ./node_modules"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Availity/availity-uikit.git"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
-    "@commitlint/config-conventional": "^7.5.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "babel-eslint": "^10.0.1",
     "conventional-changelog": "^3.0.6",
     "conventional-changelog-cli": "^2.0.12",
-    "conventional-recommended-bump": "^4.0.4",
-    "eslint-config-availity": "^4.0.0",
-    "husky": "^2.2.0",
+    "conventional-recommended-bump": "^6.0.11",
+    "eslint-config-availity": "^7.0.237",
+    "husky": "^4.3.5",
     "lerna": "^3.13.1",
-    "lint-staged": "^8.1.5",
-    "prettier": "^1.16.4"
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
   },
   "keywords": [
     "uikit",
