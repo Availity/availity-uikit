@@ -30,8 +30,8 @@ $gray-darker: #363f45;
 $gray-dark: #48535c;
 $gray: #4d4f53;
 $gray-light: #f8f8f8;
-$gray-lighter: #e8ebeb;
-$gray-lightest: #e8ebeb;
+$gray-lighter: #fbfbfb;
+$gray-lightest: ##fbfbfb;
 $slate-darkest: #2f5263;
 $slate-darker: #2f5263;
 $slate: #3e6887;
@@ -655,10 +655,12 @@ $carousel-control-font-size: 20px !default;
 $carousel-indicator-active-bg: #fff !default;
 $carousel-indicator-border-color: #fff !default;
 $carousel-caption-color: #fff !default;
+
 // Close
 $close-font-weight: bold !default;
 $close-color: #000 !default;
 $close-text-shadow: 0 1px 0 #fff !default;
+
 // Code
 $code-color: #bd4147 !default;
 $code-bg: #f7f7f9 !default;
