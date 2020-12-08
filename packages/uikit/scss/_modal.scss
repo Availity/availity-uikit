@@ -1,12 +1,12 @@
 .modal-header {
-  padding: $modal-title-padding $availity-modal-padding;
+  // padding: $modal-title-padding $availity-modal-padding;
   background-color: $availity-modal-header-bg-color;
   @include border-top-radius($availity-modal-input-border-radius);
 }
 
 .modal-footer {
   border-top: 0;
-  padding: $modal-title-padding $availity-modal-padding;
+  // padding: $modal-title-padding $availity-modal-padding;
   background-color: $availity-modal-footer-bg-color;
   @include border-bottom-radius($availity-modal-input-border-radius);
 }

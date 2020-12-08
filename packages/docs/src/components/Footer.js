@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="footer docs-footer">
     <div className="container">
       <div>
-        Made with <i className="icon icon-heart" /> by <a href="https://www.availity.com/">Availity</a>
+        Made with <span role="img">💖</span> by <a href="https://www.availity.com/">Availity</a>
       </div>
     </div>
   </footer>
