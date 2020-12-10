@@ -3,9 +3,10 @@ html {
 }
 
 body {
-  font-weight: $availity-font-weight-normal;
-  min-height: 100% !important;
-  height: 100%;
+    font-weight: $availity-font-weight-normal;
+    min-height: 100% !important;
+    height: 100%;
+    background-color: $gray-light;
 }
 
 a {
