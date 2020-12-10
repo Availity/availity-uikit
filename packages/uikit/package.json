@@ -6,15 +6,6 @@
   "style": "css/availity-uikit.css",
   "sass": "scss/availity-uikit.scss",
   "main": "index.js",
-  "engines": {
-    "node": ">= 8.0.0",
-    "npm": "^4.0.0"
-  },
-  "scripts": {
-    "build": "node-sass-chokidar --recursive --importer=node_modules/node-sass-tilde-importer scss --output css",
-    "watch:scss": "node-sass-chokidar scss/ -o css/ --watch --recursive --importer=node_modules/node-sass-tilde-importer",
-    "watch": "npm-run-all build watch:scss"
-  },
   "license": "MIT",
   "homepage": "http://availity.github.io/availity-uikit/",
   "repository": {
@@ -34,21 +25,8 @@
     {
       "name": "Robert McGuinness",
       "email": "rob.mcguinness@availity.com"
-    },
-    {
-      "name": "Robert Warner",
-      "email": "rob.warner@availity.com"
-    },
-    {
-      "name": "Bobby Bennett",
-      "email": "bobby.bennett@availity.com"
     }
   ],
-  "devDependencies": {
-    "node-sass-chokidar": "^1.3.3",
-    "node-sass-tilde-importer": "^1.0.2",
-    "npm-run-all": "^4.1.5"
-  },
   "keywords": [
     "css",
     "html",
@@ -59,7 +37,6 @@
     "web"
   ],
   "dependencies": {
-    "bootstrap": "4.3.1"
-  },
-  "gitHead": "25af805b8ce2393bc46272b7d826c6d0dc7587b4"
+    "bootstrap": "4.5.3"
+  }
 }

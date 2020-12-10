@@ -1,124 +1,124 @@
 .card-default,
 .card-secondary {
-    background-color: $gray-lighter;
-    border-color: #d5dada;
+  background-color: $gray-lighter;
+  border-color: #d5dada;
 }
 
 .card-outline-default {
-    @extend .border-secondary;
+  @extend .border-secondary;
 }
 
 .card {
-    .card-blockquote {
-        border-left: 0;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-        &:first-child {
-            margin-top: 0;
-            padding-top: 0;
-        }
-        &:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        footer,
-        small,
-        .small {
-            color: inherit;
-        }
+  .card-blockquote {
+    border-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
     }
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    footer,
+    small,
+    .small {
+      color: inherit;
+    }
+  }
 }
 
 .card.text-white a:not(.card-link) {
-    border-bottom: 1px dotted;
-    &:hover,
-    &:focus {
-        border-bottom: 1px solid;
-    }
-    color: inherit;
-    text-decoration: none;
+  border-bottom: 1px dotted;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid;
+  }
+  color: inherit;
+  text-decoration: none;
 }
 
 .card.text-dark a:not(.card-link) {
-    border-bottom: 1px dotted black;
-    &:hover,
-    &:focus {
-        border-bottom: 1px solid black;
-    }
-    color: inherit;
-    text-decoration: none;
+  border-bottom: 1px dotted black;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid black;
+  }
+  color: inherit;
+  text-decoration: none;
 }
 
 .card-warning,
 .card-default,
 .card-secondary {
-    a:not(.card-link),
-    .card-text,
-    .card-blockquote>footer {
-        color: $card-blockquote-color;
+  a:not(.card-link),
+  .card-text,
+  .card-blockquote > footer {
+    color: $card-blockquote-color;
+  }
+  a:not(.card-link) {
+    border-bottom: 1px dotted;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+      color: $body-color;
     }
-    a:not(.card-link) {
-        border-bottom: 1px dotted;
-        &:hover,
-        &:focus {
-            border-bottom: 1px solid;
-            color: $body-color;
-        }
-    }
+  }
 }
 
 .card-warning,
 .card-default {
-    .card-blockquote {
-        color: $card-blockquote-color;
-    }
+  .card-blockquote {
+    color: $card-blockquote-color;
+  }
 }
 
 a,
 .card-link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .card-header,
 .card-title {
-    &:hover,
-    &:active,
-    &:focus {
-        text-decoration: none;
-    }
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .card-title {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .card-title-secondary {
-    margin-top: 0;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-    font-weight: 300;
-    color: $text-muted;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $text-muted;
 }
 
 .card-subtitle {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul.card-body {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .card-collapsible-link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-collapsible-link {
-    @include iconify-before("down-dir", $text-color, 0.2em);
+  // @include iconify-before("down-dir", $text-color, 0.2em);
 }
 
 .card-collapsible-link.collapsed {
-    @include iconify-before("right-dir", $text-color, 0.2em);
+  // @include iconify-before("right-dir", $text-color, 0.2em);
 }

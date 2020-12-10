@@ -1,114 +1,78 @@
 .btn {
-    border-radius: $border-radius-lg;
+  border-radius: $border-radius-lg;
 }
 
 .btn-container {
-    .btn {
-        margin-right: 5px;
-    }
-    &.btn-container-inline {
-        display: inline-block;
-        margin-right: 15px;
-    }
+  .btn {
+    margin-right: 5px;
+  }
+  &.btn-container-inline {
+    display: inline-block;
+    margin-right: 15px;
+  }
 }
 
 .btn-filters {
-    border-color: darken($gray-light, 10%);
-    background-color: $gray-light;
-    color: $text-darker;
-    font-weight: $font-weight-bold;
-    width: 125px;
-    @include iconify-before("filter");
+  border-color: darken($gray-light, 10%);
+  background-color: $gray-light;
+  color: $text-darker;
+  font-weight: $font-weight-bold;
+  width: 125px;
+  // @include iconify-before("filter");
+  span {
+    &::before {
+      content: 'Show ';
+    }
+  }
+  &.active {
     span {
-        &::before {
-            content: 'Show ';
-        }
+      &::before {
+        content: 'Hide ';
+      }
     }
-    &.active {
-        span {
-            &::before {
-                content: 'Hide ';
-            }
-        }
-    }
+  }
 }
 
 .btn-default {
-    @extend .btn-light;
+  @extend .btn-light;
 }
 
 .btn-outline-default {
-    @extend .btn-outline-secondary;
+  @extend .btn-outline-secondary;
 }
 
 .btn-outline-warning {
-    @include hover-focus-active {
-        color: $btn-warning-color;
-    }
-    color: $state-warning-text;
+  @include hover-focus-active {
+    color: $btn-warning-color;
+  }
+  color: $state-warning-text;
 }
 
 .btn-outline-light {
-    color: $secondary-text-color;
-}
-
-.btn-ghost {
-    border-color: transparent;
-    background-color: transparent;
-    &:hover {
-        background-color: transparent;
-        color: #333;
-        border-color: #adadad;
-    }
-    &:active,
-    &.active {
-        background-image: none;
-        color: #333;
-        background-color: #cdd3d3;
-        border-color: #adadad;
-    }
-    &:focus,
-    &.focus {
-        color: #333;
-        background-color: #cdd3d3;
-        border-color: $gray-lighter;
-    }
-}
-
-.btn-ghost.disabled:hover,
-.btn-ghost[disabled]:hover,
-fieldset[disabled] .btn-ghost:hover,
-.btn-ghost.disabled:focus,
-.btn-ghost[disabled]:focus,
-fieldset[disabled] .btn-ghost:focus,
-.btn-ghost.disabled.focus,
-.btn-ghost[disabled].focus,
-fieldset[disabled] .btn-ghost.focus {
-    background-color: $gray-lighter;
-    border-color: #ccc;
+  color: $secondary-text-color;
 }
 
 .btn-file {
-    position: relative;
-    overflow: hidden;
-    &.btn-link:hover {
-        background-color: $gray-light;
-        text-decoration: none;
-    }
+  position: relative;
+  overflow: hidden;
+  &.btn-link:hover {
+    background-color: $gray-light;
+    text-decoration: none;
+  }
 }
 
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
+.btn-file input[type='file'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
 }

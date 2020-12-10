@@ -1,32 +1,27 @@
 .breadcrumb {
-    background-color: transparent; // We dont' use the background color so padding left is not necessary
-    padding-left: 0;
-    .breadcrumb-item {
-        font-weight: $availity-breadcrumb-font-weight;
-        +.breadcrumb-item::before {
-            font-family: $availity-icon-font;
-            font-weight: $availity-breadcrumb-font-weight;
-            content: map-get($availity-icons, "angle-right");
-        }
-    }
-    >.active {
-        font-weight: $availity-breadcrumb-font-weight-active;
-    }
+  background-color: transparent; // We dont' use the background color so padding left is not necessary
+  padding-left: 0;
+  .breadcrumb-item {
+    font-weight: $availity-breadcrumb-font-weight;
+  }
+  > .active {
+    font-weight: $availity-breadcrumb-font-weight-active;
+  }
 }
 
 .breadcrumb {
-    +h1,
-    +h2,
-    +h3,
-    +h4,
-    +h5,
-    +h6,
-    +.h1,
-    +.h2,
-    +.h3,
-    +.h4,
-    +.h5,
-    +.h6 {
-        margin-top: 0;
-    }
+  + h1,
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6,
+  + .h1,
+  + .h2,
+  + .h3,
+  + .h4,
+  + .h5,
+  + .h6 {
+    margin-top: 0;
+  }
 }
