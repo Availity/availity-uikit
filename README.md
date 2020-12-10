@@ -7,8 +7,6 @@
 
 ## Table of Contents
 
-- [availity-uikit](#availity-uikit)
-  - [Table of Contents](#table-of-contents)
   - [Demo](#demo)
   - [Supported Browsers](#supported-browsers)
   - [Installation](#installation)
