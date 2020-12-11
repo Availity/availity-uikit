@@ -16,7 +16,7 @@ const Component = ({ html, title, id }) => (
     <h3 id={id}>{title}</h3>
     <div className="docs-example"> {ReactHtmlParser(html)}</div>
     <a className="btn btn-default mb-4" href={`#${id}-code`} data-toggle="collapse">
-      View Code <i className="icon icon-code" />
+      View Code
     </a>
     <div id={`${id}-code`} className="collapse">
       <PrismCode component="pre" className="language-markup">
