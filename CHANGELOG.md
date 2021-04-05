@@ -1,3 +1,32 @@
+# [4.0.0](https://github.com/Availity/availity-uikit/compare/v3.2.2...v4.0.0) (2021-04-05)
+
+
+### Bug Fixes
+
+* remove form select background color ([1fcbd13](https://github.com/Availity/availity-uikit/commit/1fcbd13de67024fd391635d2d0e27359e6eb60ab))
+* **uikit:** bad variable value ([b8cdd7f](https://github.com/Availity/availity-uikit/commit/b8cdd7fda4edea6b97e9ecd0455a613544b1cafa))
+* gray light schemes. Closes [#238](https://github.com/Availity/availity-uikit/issues/238) ([8cdd62a](https://github.com/Availity/availity-uikit/commit/8cdd62a514794e5bd03624f8adea84e4bb36fb41))
+
+
+### Code Refactoring
+
+* clean up ([c967e59](https://github.com/Availity/availity-uikit/commit/c967e59b6f8a5d20c11378ed8ec8f52dd4c1fbb3))
+* remove ghost-link Closes [#230](https://github.com/Availity/availity-uikit/issues/230) ([2a02542](https://github.com/Availity/availity-uikit/commit/2a025428d5e4692feb5afb291ce7172647cbad82))
+
+
+### BREAKING CHANGES
+
+* ghost-link css removed in favor of boostrap outline css classes
+* removed the following
+
+- icon fonts css
+- mega menu css
+- spaces css
+- progress bar css
+- icons
+
+
+
 <a name="3.2.1"></a>
 ## [3.2.1](https://github.com/Availity/availity-uikit/compare/v3.2.0...v3.2.1) (2019-11-26)
 
