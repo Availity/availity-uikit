@@ -61,8 +61,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier",
-      "git add"
+      "prettier"
     ]
   },
   "commitlint": {
