@@ -37,6 +37,11 @@ title: File Upload
     <span>Add files...</span>
     <input type="file" name="files[]" multiple aria-label="upload files">
   </span>
+  <span class="btn btn-ghost btn-file">
+    <i class="icon icon-plus-circle"></i>
+    <span>Add files...</span>
+    <input type="file" name="files[]" multiple aria-label="upload files">
+  </span>
   <span class="btn btn-link btn-file">
     <i class="icon icon-plus-circle"></i>
     <span>Add files...</span>
