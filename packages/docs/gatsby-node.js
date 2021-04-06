@@ -7,33 +7,15 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   const allRules = [
     {
       test: require.resolve('jquery'),
-      loader: 'expose-loader',
-      options: {
-        exposes: {
-          globalName: 'jQuery',
-          override: true,
-        },
-      },
+      loader: 'expose-loader?$!expose-loader?jQuery',
     },
     {
       test: require.resolve('holderjs'),
-      loader: 'expose-loader',
-      options: {
-        exposes: {
-          globalName: 'holder.js',
-          override: true,
-        },
-      },
+      loader: 'expose-loader?holder.js',
     },
     {
       test: require.resolve('popper.js'),
-      loader: 'expose-loader',
-      options: {
-        exposes: {
-          globalName: 'Popper',
-          override: true,
-        },
-      },
+      loader: 'expose-loader?Popper',
     },
   ];
 

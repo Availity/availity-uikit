@@ -85,39 +85,9 @@ $pink: #e83e8c !default;
 $teal: $secondary-green;
 $cyan: $secondary-blue;
 $colors: ();
-$colors: map-merge(
-  (
-    'blue': $blue,
-    'indigo': $indigo,
-    'purple': $purple,
-    'pink': $pink,
-    'red': $red,
-    'orange': $orange,
-    'yellow': $yellow,
-    'green': $green,
-    'teal': $teal,
-    'cyan': $cyan,
-    'white': $white,
-    'gray': $gray,
-    'gray-dark': $gray-darkest,
-  ),
-  $colors
-);
+$colors: map-merge( ( 'blue': $blue, 'indigo': $indigo, 'purple': $purple, 'pink': $pink, 'red': $red, 'orange': $orange, 'yellow': $yellow, 'green': $green, 'teal': $teal, 'cyan': $cyan, 'white': $white, 'gray': $gray, 'gray-dark': $gray-darkest), $colors);
 $theme-colors: ();
-$theme-colors: map-merge(
-  (
-    'primary': $brand-primary,
-    'secondary': $secondary-text-color,
-    'success': $brand-success,
-    'info': $brand-info,
-    'warning': $brand-warning,
-    'danger': $brand-danger,
-    'light': $gray-lightest,
-    'dark': $gray-darkest,
-    'faded': $gray-light,
-  ),
-  $theme-colors
-);
+$theme-colors: map-merge( ( 'primary': $brand-primary, 'secondary': $secondary-text-color, 'success': $brand-success, 'info': $brand-info, 'warning': $brand-warning, 'danger': $brand-danger, 'light': $gray-lightest, 'dark': $gray-darkest, 'faded': $gray-light), $theme-colors);
 $theme-color-interval: 10%;
 // Grid containers
 //
@@ -128,21 +98,25 @@ $theme-color-interval: 10%;
 //  lg: 940px,
 //  xl: 1140px
 //) !default;
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-);
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 $grid-float-breakpoint: map-get($grid-breakpoints, sm);
 $grid-float-breakpoint-max: $grid-float-breakpoint - 1;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, 'Times New Roman', Times, serif;
-$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
+$font-family-sans-serif: 'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+$font-family-serif: Georgia,
+'Times New Roman',
+Times,
+serif;
+$font-family-monospace: Menlo,
+Monaco,
+Consolas,
+'Courier New',
+monospace;
 $font-family-base: $font-family-sans-serif;
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-lg: 1.25rem;
@@ -385,18 +359,30 @@ $navbar-default-brand-hover-color: $white;
 $navbar-default-brand-hover-bg: transparent;
 $navbar-default-toggle-hover-bg: $black;
 $navbar-default-toggle-icon-color: $white;
-$navbar-default-toggler-bg: str-replace(
-  url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-default-toggle-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"),
-  '#',
-  '%23'
-) !default;
-$navbar-default-toggler-border: rgba($white, 0.1) !default;
-$navbar-light-color: rgba(0, 0, 0, 0.3) !default;
-$navbar-light-hover-color: rgba(0, 0, 0, 0.6) !default;
-$navbar-light-active-color: rgba(0, 0, 0, 0.8) !default;
-$navbar-light-disabled-color: rgba(0, 0, 0, 0.15) !default;
+$navbar-default-toggler-bg: str-replace( url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-default-toggle-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"),
+'#',
+'%23') !default;
+$navbar-default-toggler-border: rgba($white,
+0.1) !default;
+$navbar-light-color: rgba(0,
+0,
+0,
+0.3) !default;
+$navbar-light-hover-color: rgba(0,
+0,
+0,
+0.6) !default;
+$navbar-light-active-color: rgba(0,
+0,
+0,
+0.8) !default;
+$navbar-light-disabled-color: rgba(0,
+0,
+0,
+0.15) !default;
 // Secondary navbar
-$availity-navbar-secondary-color: lighten($gray-light, 15%) !default;
+$availity-navbar-secondary-color: lighten($gray-light,
+15%) !default;
 $availity-navbar-secondary-bg: $gray-dark !default;
 $availity-navbar-secondary-border: $gray-dark !default;
 // Navbar links
@@ -404,7 +390,8 @@ $availity-navbar-secondary-link-color: $gray-lighter !default;
 $availity-navbar-secondary-link-hover-color: $white !default;
 $availity-navbar-secondary-link-hover-bg: transparent !default;
 $availity-navbar-secondary-link-active-color: $availity-navbar-secondary-link-hover-color !default;
-$availity-navbar-secondary-link-active-bg: darken($availity-navbar-secondary-bg, 10%) !default;
+$availity-navbar-secondary-link-active-bg: darken($availity-navbar-secondary-bg,
+10%) !default;
 $availity-navbar-secondary-link-disabled-color: $secondary-text-color !default;
 $availity-navbar-secondary-link-disabled-bg: transparent !default;
 // Navbar brand label
@@ -417,25 +404,28 @@ $availity-navbar-secondary-toggle-icon-bar-bg: $white !default;
 $availity-navbar-secondary-toggle-border-color: $black !default;
 // Inverted navbar - Reset inverted navbar basics
 $navbar-inverse-bg: $gray-light;
-$navbar-inverse-border: darken($navbar-inverse-bg, 6.5%);
+$navbar-inverse-border: darken($navbar-inverse-bg,
+6.5%);
 // Inverted navbar links
 $navbar-inverse-link-color: $secondary-text-color;
 $navbar-inverse-link-hover-color: $text-color;
 $navbar-inverse-link-hover-bg: transparent;
 $navbar-inverse-link-active-color: $text-color;
-$navbar-inverse-link-active-bg: darken($navbar-inverse-bg, 6.5%);
+$navbar-inverse-link-active-bg: darken($navbar-inverse-bg,
+6.5%);
 $navbar-inverse-link-disabled-color: $disabled-text-color;
 $navbar-inverse-link-disabled-bg: transparent;
 // Inverted navbar brand label
 $navbar-inverse-brand-color: $navbar-inverse-link-color;
-$navbar-inverse-brand-hover-color: darken($navbar-inverse-brand-color, 10%);
+$navbar-inverse-brand-hover-color: darken($navbar-inverse-brand-color,
+10%);
 $navbar-inverse-brand-hover-bg: transparent;
 // Inverted navbar toggle
 $navbar-inverse-toggle-hover-bg: $disabled-text-color;
 $navbar-inverse-toggle-icon-bar-bg: $secondary-text-color;
 $navbar-inverse-toggle-border-color: $disabled-text-color;
 // Navbar + Main
-$availity-navbar-main-padding: ($navbar-height + 10) !default;
+$availity-navbar-main-padding: ($navbar-height+10) !default;
 // Mega menu tiles
 $mega-menu-tiles-max-height: 290px;
 // Navbar Notifications
@@ -503,16 +493,21 @@ $availity-footer-padding: 10px !default;
 //
 // Define colors for form feedback states and, by default, alerts.
 $state-success-text: $brand-success;
-$state-success-bg: lighten($green-lightest, 10%);
+$state-success-bg: lighten($green-lightest,
+10%);
 $state-success-border: $green-darkest;
 $state-info-text: $brand-info;
 $state-info-bg: $slate-lightest;
-$state-info-border: lighten($state-info-text, 20%);
-$state-warning-text: darken($yellow-darkest, 10%);
-$state-warning-bg: lighten($yellow-lightest, 10%);
+$state-info-border: lighten($state-info-text,
+20%);
+$state-warning-text: darken($yellow-darkest,
+10%);
+$state-warning-bg: lighten($yellow-lightest,
+10%);
 $state-warning-border: $yellow-darkest;
 $state-danger-text: $brand-danger;
-$state-danger-bg: lighten($red-lightest, 15%);
+$state-danger-bg: lighten($red-lightest,
+15%);
 $state-danger-border: $red-darkest;
 // Cards
 $card-spacer-x: 1.25rem !default;
@@ -524,7 +519,10 @@ $card-border-radius-inner: $card-border-radius !default;
 $card-cap-bg: $gray-lighter;
 $card-bg: #fff !default;
 $card-link-hover-color: #fff !default;
-$card-blockquote-color: rgba(0, 0, 0, 0.65);
+$card-blockquote-color: rgba(0,
+0,
+0,
+0.65);
 // Tooltips
 $tooltip-max-width: 320px;
 $tooltip-color: $white;
@@ -536,12 +534,17 @@ $tooltip-arrow-color: $tooltip-bg;
 $popover-bg: #fff !default;
 $popover-max-width: 276px !default;
 $popover-border-width: $border-width !default;
-$popover-border-color: rgba(0, 0, 0, 0.2) !default;
-$popover-title-bg: darken($popover-bg, 3%) !default;
+$popover-border-color: rgba(0,
+0,
+0,
+0.2) !default;
+$popover-title-bg: darken($popover-bg,
+3%) !default;
 $popover-arrow-width: 10px !default;
 $popover-arrow-color: $popover-bg !default;
-$popover-arrow-outer-width: ($popover-arrow-width + 1) !default;
-$popover-arrow-outer-color: fade-in($popover-border-color, 0.05) !default;
+$popover-arrow-outer-width: ($popover-arrow-width+1) !default;
+$popover-arrow-outer-color: fade-in($popover-border-color,
+0.05) !default;
 $availity-popover-title-color: $text-darker !default;
 $availity-popover-title-font-weight: $availity-font-weight-bold !default;
 // Labels
@@ -556,12 +559,15 @@ $label-link-hover-color: #fff !default;
 $label-font-weight: bold !default;
 // Modals
 // Padding applied to the modal body
-// $availity-modal-padding: 24px !default;
-// $modal-inner-padding: $availity-modal-padding;
+$availity-modal-padding: 24px !default;
+$modal-inner-padding: $availity-modal-padding;
 $modal-title-padding: 15px !default;
 $modal-title-line-height: $line-height !default;
 $modal-content-bg: #fff !default;
-$modal-content-border-color: rgba(0, 0, 0, 0.2) !default;
+$modal-content-border-color: rgba(0,
+0,
+0,
+0.2) !default;
 $modal-backdrop-bg: #000 !default;
 $modal-backdrop-opacity: 0.5 !default;
 $modal-header-border-color: $gray-lighter;
@@ -579,16 +585,20 @@ $alert-padding: 15px !default;
 $alert-border-radius: 3px;
 $alert-link-font-weight: bold !default;
 $alert-border-width: $border-width !default;
-$alert-success-border: darken($brand-success, 5%);
+$alert-success-border: darken($brand-success,
+5%);
 $alert-success-text: $white;
 $alert-success-bg: $brand-success;
-$alert-info-border: darken($brand-info, 5%);
+$alert-info-border: darken($brand-info,
+5%);
 $alert-info-text: $white;
 $alert-info-bg: $brand-info;
-$alert-warning-border: darken($brand-warning, 5%);
+$alert-warning-border: darken($brand-warning,
+5%);
 $alert-warning-text: $text-darker;
 $alert-warning-bg: $brand-warning;
-$alert-danger-border: darken($brand-danger, 5%);
+$alert-danger-border: darken($brand-danger,
+5%);
 $alert-danger-text: $white;
 $alert-danger-bg: $brand-danger;
 // Progress bars
@@ -606,9 +616,7 @@ $progress-bar-info-bg: $brand-info !default;
 $availity-progress-bar-icon-complete-color: $white !default;
 $availity-progress-bar-height: $progress-bar-height !default;
 $availity-progress-bar-icon-complete-top: -6px !default;
-$availity-progress-bar-icon-complete-height: (
-  $availity-progress-bar-height - $availity-progress-bar-icon-complete-top
-) !default;
+$availity-progress-bar-icon-complete-height: ( $availity-progress-bar-height - $availity-progress-bar-icon-complete-top) !default;
 $availity-progress-bar-icon-complete-right: -1px !default;
 $availity-progress-bar-icon-complete-content: '\e853' !default;
 $availity-progress-bar-icon-complete-content-overlay: '\e85c' !default;
@@ -621,7 +629,8 @@ $list-group-hover-bg: $gray-light;
 $list-group-active-color: $component-active-color !default;
 $list-group-active-bg: $component-active-bg !default;
 $list-group-active-border: $list-group-active-bg !default;
-$list-group-active-text-color: lighten($list-group-active-bg, 40%) !default;
+$list-group-active-text-color: lighten($list-group-active-bg,
+40%) !default;
 $list-group-disabled-color: $gray-light !default;
 $list-group-disabled-bg: $gray-lighter !default;
 $list-group-disabled-text-color: $list-group-disabled-color !default;
@@ -642,12 +651,16 @@ $breadcrumb-bg: transparent;
 $breadcrumb-divider-color: $text-lighter;
 $breadcrumb-color: $text-lighter;
 $breadcrumb-active-color: $text-color;
-// $breadcrumb-divider: map-get($availity-icons, 'angle-right');
+$breadcrumb-divider: map-get($availity-icons,
+"angle-right");
 $availity-breadcrumb-font-weight: $availity-font-weight-bold !default;
 $availity-breadcrumb-font-weight-active: $availity-font-weight-normal !default;
 $availity-breadcrumb-border-color: $gray-light !default;
 // Carousel
-$carousel-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !default;
+$carousel-text-shadow: 0 1px 2px rgba(0,
+0,
+0,
+0.6) !default;
 $carousel-control-color: #fff !default;
 $carousel-control-width: 15% !default;
 $carousel-control-opacity: 0.5 !default;
