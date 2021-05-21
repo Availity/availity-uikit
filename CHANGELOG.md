@@ -1,3 +1,19 @@
+## [4.0.1](https://github.com/Availity/availity-uikit/compare/v4.0.0...v4.0.1) (2021-05-21)
+
+
+### Reverts
+
+* Revert "Fix/background color v4 (#272)" ([4ef4b01](https://github.com/Availity/availity-uikit/commit/4ef4b01acd98bebe67b307fb569708a458fe285b)), closes [#272](https://github.com/Availity/availity-uikit/issues/272)
+* Revert "refactor(uikit): clean up gray colors" ([651df0c](https://github.com/Availity/availity-uikit/commit/651df0cd6059b35780b61b5f6a7f28bfe6114934))
+* Revert "chore: remove availity logo" ([39e404d](https://github.com/Availity/availity-uikit/commit/39e404d4fbea4ac9992e6064d344c3c5d75497b0))
+* Revert "chore: remove animate" ([3cfd72f](https://github.com/Availity/availity-uikit/commit/3cfd72fb61218700bf540287e2f1427da0eb350f))
+* Revert "chore: remove datepicker" ([7e478d4](https://github.com/Availity/availity-uikit/commit/7e478d4077ed04285de0c9d8a2a22866e281bb30))
+* Revert "fix: gray light schemes. Closes #238" ([6a98aaf](https://github.com/Availity/availity-uikit/commit/6a98aaf5ca87fb951e3d7cedf76d42f9840ddf4b)), closes [#238](https://github.com/Availity/availity-uikit/issues/238)
+* Revert "refactor: remove ghost-link Closes #230" ([918f02a](https://github.com/Availity/availity-uikit/commit/918f02ad7f6162a359bb44871c45a30f298fb539)), closes [#230](https://github.com/Availity/availity-uikit/issues/230)
+* Revert "refactor: clean up" ([4ec809d](https://github.com/Availity/availity-uikit/commit/4ec809d69f3f6f697ebdfb813969d68624c0077f))
+
+
+
 # [4.0.0](https://github.com/Availity/availity-uikit/compare/v3.2.2...v4.0.0) (2021-04-05)
 
 
