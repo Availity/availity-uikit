@@ -25,6 +25,14 @@
     {
       "name": "Robert McGuinness",
       "email": "rob.mcguinness@availity.com"
+    },
+    {
+      "name": "Robert Warner",
+      "email": "rob.warner@availity.com"
+    },
+    {
+      "name": "Bobby Bennett",
+      "email": "bobby.bennett@availity.com"
     }
   ],
   "keywords": [
@@ -38,5 +46,6 @@
   ],
   "dependencies": {
     "bootstrap": "4.5.3"
-  }
+  },
+  "gitHead": "25af805b8ce2393bc46272b7d826c6d0dc7587b4"
 }

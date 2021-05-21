@@ -7,12 +7,14 @@
 
 ## Table of Contents
 
-  - [Demo](#demo)
-  - [Supported Browsers](#supported-browsers)
-  - [Installation](#installation)
-  - [Contributing](#contributing)
-  - [Disclaimer](#disclaimer)
-  - [License](#license)
+-   [Demo](#demo)
+-   [Supported Browsers](#supported-browsers)
+-   [Quickstart](#quickstart)
+-   [Icon Fonts](#icon-fonts)
+-   [Contributing](#contributing)
+-   [Authors](#authors)
+-   [Disclaimer](#disclaimer)
+-   [License](#license)
 
 ## Demo
 
@@ -38,12 +40,21 @@ or
 $ yarn add availity-uikit
 ```
 
+## Icon Fonts
+
+Availity uses [Fontello](http://fontello.com/) to manage icon fonts. Our [font configuration](./packages/uikit/fonts/config.json) can be used on Fontello to edit the font catalog.
+
+### Updating Fonts
+
+-   Upload configuration to [Fontello](http://fontello.com/)
+-   After making changes, download zip and extract `font` folder into the uikit [font](./packages/uikit/fonts/)
+-   Replace the [font configuration](./packages/uikit/fonts/config.json) with the new one
+-   `npm run updateFonts` and commit changes
+
 ## Contributing
 
--   `yarn`
--   `yarnt start` runs Gatsby develop server on `http://localhost:8000`
--   Make changes to `*.scss` files in `packages/uikit`
--   Update the documentation in `packages/docs`
+-   `yarn install`
+-   `yarn start` runs Gatsby develop server on `http://localhost:8000`
 
 ## Disclaimer
 

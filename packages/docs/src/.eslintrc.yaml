@@ -9,14 +9,16 @@ rules:
   jsx-a11y/anchor-is-valid:
     - error
     - components:
-        - Link
+      - Link
       specialLink:
-        - to
+      - to
       aspects:
-        - noHref
-        - invalidHref
-        - preferButton
+      - noHref
+      - invalidHref
+      - preferButton
   react/forbid-prop-types: 0
   react/prop-types: 0
 globals:
   graphql: false
+
+
