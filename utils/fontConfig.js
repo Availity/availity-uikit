@@ -2,7 +2,7 @@ const config = require('../packages/uikit/fonts/config.json');
 
 function convertCode(code) {
   const newString = code.toString(16);
-  return '0000'.substr(0, Math.max(4 - newString.length, 0)) + newString;
+  return '0000'.slice(0, Math.max(4 - newString.length, 0)) + newString;
 }
 
 function compareGlyph(a, b) {
