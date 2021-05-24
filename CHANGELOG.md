@@ -1,3 +1,12 @@
+## [4.0.3](https://github.com/Availity/availity-uikit/compare/v4.0.2...v4.0.3) (2021-05-24)
+
+
+### Bug Fixes
+
+* **uikit:** add missing icon variables file ([67622a1](https://github.com/Availity/availity-uikit/commit/67622a1ef53d6123d1a13df183cbfa2ad6fd3381))
+
+
+
 ## [4.0.2](https://github.com/Availity/availity-uikit/compare/v4.0.1...v4.0.2) (2021-05-24)
 
 
