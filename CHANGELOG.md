@@ -1,3 +1,12 @@
+## [4.0.2](https://github.com/Availity/availity-uikit/compare/v4.0.1...v4.0.2) (2021-05-24)
+
+
+### Bug Fixes
+
+* **uikit:** fix incompatible unit ([64e8c4b](https://github.com/Availity/availity-uikit/commit/64e8c4ba2279837bdc76068c9777483d2f24a9a3))
+
+
+
 ## [4.0.1](https://github.com/Availity/availity-uikit/compare/v4.0.0...v4.0.1) (2021-05-21)
 
 
