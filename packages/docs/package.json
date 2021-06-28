@@ -23,7 +23,7 @@
     "lodash.map": "^4.6.0",
     "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
