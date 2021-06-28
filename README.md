@@ -22,9 +22,10 @@
 
 ## Supported Browsers
 
--   Internet Explorer 11+
 -   Google Chrome > 2% market share
 -   Mozilla Firefox > 2% market share
+-   Microsoft Edge
+-   Internet Explorer 11+ (Internet Explorer will no longer be supported starting August 21st, 2021)
 
 ## Installation
 
