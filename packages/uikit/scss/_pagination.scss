@@ -8,6 +8,31 @@
   }
 }
 
+.pagination {
+  > .page-item.active {
+    > .page-link {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+.pagination {
+  > .page-item.disabled {
+    > .page-link {
+      text-decoration: none;
+    }
+  }
+}
+
+.pagination {
+  > .page-item {
+    > .page-link {
+      text-decoration: underline;
+    }
+  }
+}
+
 .pagination-container {
   @include clearfix();
 
