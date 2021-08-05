@@ -1,36 +1,17 @@
 .pagination {
   > .page-item > .page-link {
     font-weight: $availity-pagination-font-weight;
-    &:hover,
+    text-decoration: underline;
     &:focus {
       text-decoration: none;
     }
   }
-}
-
-.pagination {
-  > .page-item.active {
-    > .page-link {
-      text-decoration: none;
-      font-weight: bold;
-    }
+  > .page-item.disabled > .page-link {
+    text-decoration: none;
   }
-}
-
-.pagination {
-  > .page-item.disabled {
-    > .page-link {
-      text-decoration: none;
-    }
-  }
-}
-
-.pagination {
-  > .page-item {
-    > .page-link {
-      text-decoration: underline;
-    }
-  }
+  > .page-item.active > .page-link {
+    text-decoration: none;
+    font-weight: bold;  }
 }
 
 .pagination-container {
