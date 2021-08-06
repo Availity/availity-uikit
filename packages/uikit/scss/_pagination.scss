@@ -2,8 +2,8 @@
   > .page-item > .page-link {
     font-weight: $availity-pagination-font-weight;
     text-decoration: underline;
-    &:focus {
-      text-decoration: none;
+    &:hover {
+      color: black;
     }
   }
   > .page-item.disabled > .page-link {
@@ -11,7 +11,13 @@
   }
   > .page-item.active > .page-link {
     text-decoration: none;
-    font-weight: bold;  }
+    font-weight: bold;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+
 }
 
 .pagination-container {
@@ -41,7 +47,9 @@
 	  background-color: transparent;
 	  border-width: 0;
 
-    &:hover,
+    &:hover {
+      color: black;
+    }
     &:focus {
       background-color: $pagination-hover-bg;
     }
@@ -52,6 +60,7 @@
     &:hover,
     &:focus {
       background-color: $pagination-active-bg;
+      color: white;
     }
   }
 
