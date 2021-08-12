@@ -1,3 +1,7 @@
+## [4.1.2](https://github.com/Availity/availity-uikit/compare/v4.1.1...v4.1.2) (2021-08-12)
+
+
+
 ## [4.1.1](https://github.com/Availity/availity-uikit/compare/v4.1.0...v4.1.1) (2021-08-12)
 
 
