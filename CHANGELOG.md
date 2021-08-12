@@ -1,3 +1,15 @@
+# [4.1.0](https://github.com/Availity/availity-uikit/compare/v4.0.3...v4.1.0) (2021-08-12)
+
+
+### Features
+
+* **pagination:** adding text-decoration, and font-weight for accessibility ([cdce734](https://github.com/Availity/availity-uikit/commit/cdce7348cc773daea0022fe8120211b5782c65ba))
+* **pagination:** consolidating css changes into first pagination ([8342319](https://github.com/Availity/availity-uikit/commit/8342319fb6e1e5481712535a95822a542d0c2893))
+* **pagination:** making text black on hover ([145bc8c](https://github.com/Availity/availity-uikit/commit/145bc8cfc548005790f50c725ea571ef81b4d42c))
+* **pagination:** modify hover and focus effect for unstyled pagination and use variables for colors ([1e3fa87](https://github.com/Availity/availity-uikit/commit/1e3fa87b85edf318d8fbe2290dbd39d80440ae1e))
+
+
+
 ## [4.0.3](https://github.com/Availity/availity-uikit/compare/v4.0.2...v4.0.3) (2021-05-24)
 
 
