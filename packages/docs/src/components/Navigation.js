@@ -55,6 +55,11 @@ const Navigation = ({ location, data }) => (
               <code>v2</code>
             </a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link docs-nav-link" href={`${data.site.siteMetadata.v3}`}>
+              <code>v3</code>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

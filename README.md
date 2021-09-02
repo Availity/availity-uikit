@@ -18,7 +18,7 @@
 
 ## Demo
 
-[http://availity.github.io/availity-uikit/v3](http://availity.github.io/availity-uikit/v3)
+[http://availity.github.io/availity-uikit/v4](http://availity.github.io/availity-uikit/v4)
 
 ## Supported Browsers
 
@@ -29,16 +29,20 @@
 
 ## Installation
 
->
+Add the `availity-uikit` with the package manager of your choice
+
+npm
 
 ```bash
-$ npm install availity-uikit --save
+npm install availity-uikit --save
 ```
 
 or
 
+Yarn
+
 ```bash
-$ yarn add availity-uikit
+yarn add availity-uikit
 ```
 
 ## Icon Fonts
@@ -54,8 +58,35 @@ Availity uses [Fontello](http://fontello.com/) to manage icon fonts. Our [font c
 
 ## Contributing
 
--   `yarn install`
--   `yarn start` runs Gatsby develop server on `http://localhost:8000`
+This monorepo is managed with `yarn workspaces`. If you do not have `yarn` installed already then you will need to install it globally
+
+```bash
+npm i -g yarn
+```
+
+Install the dependencies
+
+```bash
+yarn install
+```
+
+Run the development server. Once running, it can be located at [http://localhost:8000](http://localhost:8000)
+
+```bash
+yarn start
+```
+
+Once the code has been merged into `master`, then you will need to publish the package to `npm`
+
+```bash
+yarn release
+```
+
+With the code published and the changes in GitHub, we will then need to deploy to `gh-pages`
+
+```bash
+yarn deploy
+```
 
 ## Disclaimer
 

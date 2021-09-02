@@ -1,5 +1,6 @@
 ---
 category: List Groups
+title: Default
 ---
 
 <div class="list-group list-group-cards">

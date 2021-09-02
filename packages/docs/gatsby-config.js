@@ -1,10 +1,11 @@
 const Pkg = require('./package.json');
 
 module.exports = {
-  pathPrefix: '/availity-uikit/v3/',
+  pathPrefix: '/availity-uikit/v4/',
   siteMetadata: {
     v1: '/availity-uikit/v1/',
     v2: '/availity-uikit/v2/',
+    v3: '/availity-uikit/v3/',
     title: 'UIkit',
     description: 'Availity UI Kit powered by Bootstrap 4',
     keywords: 'css, bootstrap, uikit',

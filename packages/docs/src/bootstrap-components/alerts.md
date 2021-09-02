@@ -1,5 +1,6 @@
 ---
 category: Alerts
+title: Default
 ---
 
 <div class="alert alert-primary" role="alert">

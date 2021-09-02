@@ -21,6 +21,7 @@ const TemplateWrapper = ({ children, ...props }) => (
           siteMetadata {
             v1
             v2
+            v3
             title
             description
             keywords
@@ -29,7 +30,7 @@ const TemplateWrapper = ({ children, ...props }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Helmet title="Availity UIKit" meta={meta}>
           <html lang="en" amp />
