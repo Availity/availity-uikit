@@ -1,3 +1,12 @@
+## [4.1.3](https://github.com/Availity/availity-uikit/compare/v4.1.1...v4.1.3) (2021-09-02)
+
+
+### Bug Fixes
+
+* **buttons:** fixed accessibility contracts for buttons with CSS provided by UX team ([6792253](https://github.com/Availity/availity-uikit/commit/679225301611f2f034ce76898c5dea3bd93d9642))
+
+
+
 ## [4.1.2](https://github.com/Availity/availity-uikit/compare/v4.1.1...v4.1.2) (2021-08-12)
 
 
