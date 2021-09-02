@@ -148,3 +148,55 @@ fieldset[disabled] .btn-ghost.focus {
     cursor: inherit;
     display: block;
 }
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgb(50, 98, 175);
+  border: 0.1rem solid #fff;
+}
+
+.btn-default:focus,
+.btn-light.focus,
+.btn-light:focus,
+.focus.btn-default {
+  box-shadow: 0 0 0 0.2rem rgb(180, 180, 180);
+  border: 0.1rem solid #fff;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+  border: 0.1rem solid #fff;
+  box-shadow: 0 0 0 0.2rem rgb(21, 116, 97);
+}
+
+.btn-info.focus,
+.btn-info:focus {
+  box-shadow: 0 0 0 0.2rem rgb(62, 104, 135);
+  border: 0.1rem solid #fff;
+}
+
+.btn-warning.focus,
+.btn-warning:focus {
+  box-shadow: 0 0 0 0.15rem rgb(255, 218, 0);
+  border: 0.15rem solid #fff;
+}
+
+.btn-danger.focus,
+.btn-danger:focus {
+  box-shadow: 0 0 0 0.2rem rgb(178, 25, 9);
+  border: 0.1rem solid #fff;
+}
+
+.btn-dark.focus,
+.btn-dark:focus {
+  box-shadow: 0 0 0 0.2rem rgb(48, 56, 63);
+  border: 0.1rem solid #fff;
+}
+
+.btn-ghost.focus,
+.btn-ghost:focus {
+  box-shadow: 0 0 0 0.2rem #cdd3d3;
+  border: 0.1rem solid #fff;
+  color: #333;
+  background-color: #cdd3d3;
+}
