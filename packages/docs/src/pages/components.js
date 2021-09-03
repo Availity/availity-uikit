@@ -33,7 +33,7 @@ Component.propTypes = {
 };
 
 const ComponentGroup = ({ groupName, components }) => {
-  const componentsList = map(components, component => (
+  const componentsList = map(components, (component) => (
     <Component
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
@@ -69,7 +69,7 @@ SideMenu.propTypes = {
 };
 
 const ComponentSideMenu = ({ groupName, components }) => {
-  const componentsList = map(components, component => (
+  const componentsList = map(components, (component) => (
     <SideMenu
       key={slugify(component.node.frontmatter.title)}
       title={component.node.frontmatter.title}
@@ -98,7 +98,7 @@ const ComponentsPage = ({ data, ...props }) => {
   const components = data.allMarkdownRemark.edges;
 
   // Group by frontmatter category property
-  const componentsGrouped = groupBy(components, component => component.node.frontmatter.category);
+  const componentsGrouped = groupBy(components, (component) => component.node.frontmatter.category);
   // Generate component group sections
   const componntsGroupList = map(componentsGrouped, (components, componentGroupName) => (
     <ComponentGroup key={slugify(componentGroupName)} groupName={componentGroupName} components={components} />
@@ -137,6 +137,7 @@ export const pageQuery = graphql`
       siteMetadata {
         v1
         v2
+        v3
         title
         description
         keywords

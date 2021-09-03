@@ -5,7 +5,7 @@ import fontConfig from '../../../../utils/fontConfig';
 
 const { prefix, icons } = fontConfig;
 
-const Icons = icons.map(icon => (
+const Icons = icons.map((icon) => (
   <div className="col-sm-3 text-center mb-4" key={icon.unicode}>
     <i className={`${prefix} ${prefix}-${icon.icon} ${prefix}-2x`} />
     <span className="d-block text-center">{`${prefix}-${icon.icon}`}</span>

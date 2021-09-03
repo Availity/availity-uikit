@@ -37,6 +37,7 @@ export const pageQuery = graphql`
       siteMetadata {
         v1
         v2
+        v3
         title
         description
         keywords
