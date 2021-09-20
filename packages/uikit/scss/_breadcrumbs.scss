@@ -3,6 +3,10 @@
     padding-left: 0;
     .breadcrumb-item {
         font-weight: $availity-breadcrumb-font-weight;
+        text-decoration: underline;
+    &:hover {
+      color: $text-darkest;
+    }
         +.breadcrumb-item::before {
             font-family: $availity-icon-font;
             font-weight: $availity-breadcrumb-font-weight;
@@ -11,6 +15,7 @@
     }
     >.active {
         font-weight: $availity-breadcrumb-font-weight-active;
+        text-decoration: none;
     }
 }
 
