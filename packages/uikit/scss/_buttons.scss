@@ -34,7 +34,7 @@
 }
 
 .btn-default {
-    @extend .btn-light;
+    @extend .btn-secondary;
 }
 
 .btn-outline-default {
@@ -151,52 +151,58 @@ fieldset[disabled] .btn-ghost.focus {
 
 .btn-primary.focus,
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgb(50, 98, 175);
-  border: 0.1rem solid #fff;
+  box-shadow: $btn-box-shadow-focus rgb(50, 98, 175);
+  border: $btn-border-focus;
 }
 
+.btn-default.focus,
 .btn-default:focus,
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: $btn-box-shadow-focus rgb(85, 86, 93);
+  border: $btn-border-focus;
+}
+
 .btn-light.focus,
-.btn-light:focus,
-.focus.btn-default {
-  box-shadow: 0 0 0 0.2rem rgb(180, 180, 180);
-  border: 0.1rem solid #fff;
+.btn-light:focus {
+  box-shadow: $btn-box-shadow-focus rgb(148, 148, 148);
+  border: $btn-border-focus;
 }
 
 .btn-success.focus,
 .btn-success:focus {
-  border: 0.1rem solid #fff;
-  box-shadow: 0 0 0 0.2rem rgb(21, 116, 97);
+  box-shadow: $btn-box-shadow-focus rgb(21, 116, 97);
+  border: $btn-border-focus;
 }
 
 .btn-info.focus,
 .btn-info:focus {
-  box-shadow: 0 0 0 0.2rem rgb(62, 104, 135);
-  border: 0.1rem solid #fff;
+  box-shadow: $btn-box-shadow-focus rgb(62, 104, 135);
+  border: $btn-border-focus;
 }
 
 .btn-warning.focus,
 .btn-warning:focus {
-  box-shadow: 0 0 0 0.15rem rgb(255, 218, 0);
-  border: 0.15rem solid #fff;
+  box-shadow: $btn-box-shadow-focus rgb(255, 218, 0);
+  border: $btn-border-focus;
 }
 
 .btn-danger.focus,
 .btn-danger:focus {
-  box-shadow: 0 0 0 0.2rem rgb(178, 25, 9);
-  border: 0.1rem solid #fff;
+  box-shadow: $btn-box-shadow-focus rgb(178, 25, 9);
+  border: $btn-border-focus;
 }
 
 .btn-dark.focus,
 .btn-dark:focus {
-  box-shadow: 0 0 0 0.2rem rgb(48, 56, 63);
-  border: 0.1rem solid #fff;
+  box-shadow: $btn-box-shadow-focus rgb(48, 56, 63);
+  border: $btn-border-focus;
 }
 
 .btn-ghost.focus,
 .btn-ghost:focus {
-  box-shadow: 0 0 0 0.2rem #cdd3d3;
-  border: 0.1rem solid #fff;
+  box-shadow: $btn-box-shadow-focus #cdd3d3;
+  border: $btn-border-focus;
   color: #333;
   background-color: #cdd3d3;
 }

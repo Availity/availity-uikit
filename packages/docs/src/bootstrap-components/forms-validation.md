@@ -2,21 +2,9 @@
 category: Forms
 title: Validation
 ---
-  <div class="form-group has-danger">
+  <div class="form-group text-danger">
     <label for="text5">Label for text input</label>
-    <input type="text" class="form-control" id="text5" placeholder="has error">
-    <p class="form-control-feedback">Example block-level help text here.</p>
-    <small class="form-text text-muted">Example help text that remains unchanged.</small>
-  </div>
-  <div class="form-group has-success">
-    <label for="text6">Label for text input</label>
-    <input type="text" class="form-control" id="text6" placeholder="has success">
-    <p class="form-control-feedback">Example block-level help text here.</p>
-    <small class="form-text text-muted">Example help text that remains unchanged.</small>
-  </div>
-  <div class="form-group has-warning">
-    <label for="text7">Label for text input</label>
-    <input type="text" class="form-control" id="text7" placeholder="has warning">
-    <p class="form-control-feedback">Example block-level help text here.</p>
-    <small class="form-text text-muted">Example help text that remains unchanged.</small>
+    <input type="text" class="form-control is-touched is-invalid" id="text5" placeholder="has error" aria-invalid="true" aria-describedby="text5-feedback text5-help">
+    <div class="invalid-feedback" id="text5-feedback">Example block-level help text here.</div>
+    <small class="form-text text-muted" id="text5-help">Example help text that remains unchanged.</small>
   </div>

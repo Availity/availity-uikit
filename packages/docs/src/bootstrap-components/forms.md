@@ -7,22 +7,18 @@ title: Default
       <form>
         <h5 class="card-title-secondary">Request Information</h5>
         <div class="form-group">
-          <label for="memberID">
+          <label for="memberID" id="memberID-label">
             Member ID
-            <span class="inline-help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
-              What's this
-            </span>
-          </label>
+            </label>
+            <a href="#Forms-Inline-Help" class="icon icon-help-circle icon-1x text-primary" tabindex="0" aria-label="help" aria-describedby="memberID-label"></a>
           <input type="text" class="form-control" id="memberID" placeholder="">
         </div>
         <div class="form-group">
-          <label for="relationshipToSubscriber">
+          <label for="relationshipToSubscriber" id="relationshipToSubscriber-label">
             Relationship to Subscriber
-            <span class="inline-help" data-toggle="tooltip" data-placement="top" data-original-title="Lorem ipusm cornaer vel eu leo. cum soclies nasctuere abl ultriceis vehiclula et magins.">
-              What's this
-            </span>
           </label>
-          <select class="custom-select custom-block" id="relationshipToSubscriber">
+          <a href="#Forms-Inline-Help" class="icon icon-help-circle icon-1x text-primary" tabindex="0" aria-label="help" aria-describedby="relationshipToSubscriber-label"></a>
+          <select class="form-control custom-select custom-block" id="relationshipToSubscriber">
             <option>Select one</option>
             <option>Option 2</option>
             <option>Option 3</option>
@@ -48,7 +44,7 @@ title: Default
               <label for="serviceType">
                 Service Type
               </label>
-              <select class="custom-select custom-block" id="serviceType">
+              <select class="form-control custom-select custom-block" id="serviceType">
                 <option>Select one</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
