@@ -1,4 +1,5 @@
-label {
+label,
+.label {
 
   font-size: 1rem;
   font-weight: $availity-font-weight-normal;
@@ -12,6 +13,15 @@ label {
     font-weight: $availity-font-weight-bold;
   }
 
+}
+
+.required-asterisk {
+  display: inline;
+  font-size: 130%;
+  line-height: 100%;
+  color: $brand-danger;
+  font-weight: $availity-font-weight-bold;
+  vertical-align: text-top;
 }
 
 .custom-select {
@@ -53,6 +63,15 @@ label {
 select.form-control {
   &:not([size], [multiple]) {
     height: $input-height;
+  }
+}
+
+.form-control {
+  border-color: $input-border-color;
+
+  &:focus {
+    border-color: $input-border-focus;
+    box-shadow: $input-box-shadow-focus;
   }
 }
 

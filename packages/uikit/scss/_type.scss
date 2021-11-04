@@ -53,6 +53,16 @@ strong {
   font-weight: 600;
 }
 
+// preferred default link behavior but unsure of how far-reaching change would be.
+// a,
+.link {
+  font-weight: bold;
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
 .text-normal { text-transform: none; }
 
 .text-truncate { @include text-truncate(); }
