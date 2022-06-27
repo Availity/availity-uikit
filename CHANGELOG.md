@@ -1,3 +1,12 @@
+## [4.1.6](https://github.com/Availity/availity-uikit/compare/v4.1.5...v4.1.6) (2022-06-27)
+
+
+### Bug Fixes
+
+* **uikit:** darken card header and border ([53bd96d](https://github.com/Availity/availity-uikit/commit/53bd96d9b111fadf1bee73d254ce8cdf3a1fcbe6))
+
+
+
 ## [4.1.5](https://github.com/Availity/availity-uikit/compare/v4.1.3...v4.1.5) (2021-11-04)
 
 
