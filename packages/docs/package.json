@@ -2,10 +2,10 @@
   "name": "@availity/availity-uikit-docs",
   "private": true,
   "description": "Documentation for availity-uikit",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "author": "Robert McGuinness <rob.mcguiness@availity.com>",
   "dependencies": {
-    "availity-uikit": "^4.1.5",
+    "availity-uikit": "^4.1.6",
     "bootstrap": "^4.3.1",
     "expose-loader": "^0.7.4",
     "gatsby": "^2.4.2",
