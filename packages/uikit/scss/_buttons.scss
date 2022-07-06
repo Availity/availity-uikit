@@ -124,6 +124,10 @@ fieldset[disabled] .btn-ghost.focus {
   border-color: #ccc;
 }
 
+.btn-link {
+  @extend .link;
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
