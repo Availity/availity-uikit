@@ -1,3 +1,18 @@
+# [4.2.0](https://github.com/Availity/availity-uikit/compare/v4.1.6...v4.2.0) (2022-07-06)
+
+
+### Bug Fixes
+
+* **uikit:** additional gray fixes ([fe7b0d6](https://github.com/Availity/availity-uikit/commit/fe7b0d63663728907b98dcdab179329c39ff3f6f))
+* **uikit:** btn-link extend link styling ([fa38ce3](https://github.com/Availity/availity-uikit/commit/fa38ce3cbea5bd961875c2795d7acb0bae6a3822))
+
+
+### Features
+
+* **uikit:** coordinate page-header changes with availity/page-header ([6248b8f](https://github.com/Availity/availity-uikit/commit/6248b8fedf438a6983f1b646fdbb4a74690427b6))
+
+
+
 ## [4.1.6](https://github.com/Availity/availity-uikit/compare/v4.1.5...v4.1.6) (2022-06-27)
 
 
