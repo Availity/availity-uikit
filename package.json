@@ -19,7 +19,8 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "release": "npm run lint && sh ./scripts/release.sh",
     "remove-locks": "find . -type f -name 'package-lock.json' -delete",
-    "nuke": "yarn remove-locks && yarn clean && rm -rf ./node_modules"
+    "nuke": "yarn remove-locks && yarn clean && rm -rf ./node_modules",
+    "update-fonts": "node scripts/updateFont.js"
   },
   "repository": {
     "type": "git",
