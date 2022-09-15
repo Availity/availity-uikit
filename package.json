@@ -1,7 +1,7 @@
 {
   "name": "@availity/uikit-monorepo",
   "private": true,
-  "version": "4.2.0",
+  "version": "4.2.1",
   "workspaces": [
     "packages/*"
   ],
@@ -19,7 +19,8 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "release": "npm run lint && sh ./scripts/release.sh",
     "remove-locks": "find . -type f -name 'package-lock.json' -delete",
-    "nuke": "yarn remove-locks && yarn clean && rm -rf ./node_modules"
+    "nuke": "yarn remove-locks && yarn clean && rm -rf ./node_modules",
+    "update-fonts": "node scripts/updateFont.js"
   },
   "repository": {
     "type": "git",

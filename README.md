@@ -22,10 +22,9 @@
 
 ## Supported Browsers
 
--   Google Chrome > 2% market share
--   Mozilla Firefox > 2% market share
+-   Google Chrome
+-   Mozilla Firefox
 -   Microsoft Edge
--   Internet Explorer 11+ (Internet Explorer will no longer be supported starting August 21st, 2021)
 
 ## Installation
 
@@ -54,7 +53,9 @@ Availity uses [Fontello](http://fontello.com/) to manage icon fonts. Our [font c
 -   Upload configuration to [Fontello](http://fontello.com/)
 -   After making changes, download zip and extract `font` folder into the uikit [font](./packages/uikit/fonts/)
 -   Replace the [font configuration](./packages/uikit/fonts/config.json) with the new one
--   `npm run updateFonts` and commit changes
+-   `yarn update-fonts` and commit changes
+
+You can find more information on this process [here](https://github.com/fontello/fontello/wiki/How-to-save-and-load-projects)
 
 ## Contributing
 
