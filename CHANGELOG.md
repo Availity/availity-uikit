@@ -1,3 +1,12 @@
+# [4.3.0](https://github.com/Availity/availity-uikit/compare/v4.2.0...v4.3.0) (2022-09-15)
+
+
+### Features
+
+* **uikit:** add user-headset icon ([a07c75f](https://github.com/Availity/availity-uikit/commit/a07c75fd24372aa9f530f1a23cec6eb6475feacc))
+
+
+
 # [4.2.0](https://github.com/Availity/availity-uikit/compare/v4.1.6...v4.2.0) (2022-07-06)
 
 
