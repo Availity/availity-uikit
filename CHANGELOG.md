@@ -1,3 +1,12 @@
+# [4.4.0](https://github.com/Availity/availity-uikit/compare/v4.3.0...v4.4.0) (2023-01-05)
+
+
+### Features
+
+* add hand-holding-gear icon ([87c8ce9](https://github.com/Availity/availity-uikit/commit/87c8ce94384620c5f800957825af9894f048b02b))
+
+
+
 # [4.3.0](https://github.com/Availity/availity-uikit/compare/v4.2.0...v4.3.0) (2022-09-15)
 
 
