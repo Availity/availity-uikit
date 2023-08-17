@@ -43,7 +43,7 @@ const IconsPage = ({ ...props }) => (
           </div>
         </div>
         <h2 className="docs-title">Icons</h2>
-        <div className="row mb-4 justify-content-center">{Icons}</div>
+        <div className="row mb-4">{Icons}</div>
       </div>
     </main>
   </Layout>
