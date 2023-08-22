@@ -1,3 +1,12 @@
+# [4.5.0](https://github.com/Availity/availity-uikit/compare/v4.4.0...v4.5.0) (2023-08-22)
+
+
+### Features
+
+* **uikit:** add icon-play-circle ([a4f926d](https://github.com/Availity/availity-uikit/commit/a4f926d061f52d1310b92bcbdb4cd5f1539600c6))
+
+
+
 # [4.4.0](https://github.com/Availity/availity-uikit/compare/v4.3.0...v4.4.0) (2023-01-05)
 
 
