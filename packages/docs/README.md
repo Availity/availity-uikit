@@ -2,6 +2,14 @@
 
 ## Getting Started
 
-+ `npm install`
-+ `npm start` runs Gatsby develop server on `http://localhost:8000`
+Install dependencies
 
+```
+yarn install
+```
+
+Run the development server on `http://localhost:8000`
+
+```
+yarn start
+```
