@@ -1,3 +1,12 @@
+## [4.5.1](https://github.com/Availity/availity-uikit/compare/v4.5.0...v4.5.1) (2023-08-24)
+
+
+### Bug Fixes
+
+* add video-help icon ([20c36c2](https://github.com/Availity/availity-uikit/commit/20c36c2812003b89725e15967d18447115bae78a))
+
+
+
 # [4.5.0](https://github.com/Availity/availity-uikit/compare/v4.4.0...v4.5.0) (2023-08-22)
 
 
