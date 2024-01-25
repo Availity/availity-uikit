@@ -44,8 +44,6 @@
     "framework",
     "web"
   ],
-  "dependencies": {
-    "bootstrap": "4.5.3"
-  },
+  "dependencies": {},
   "gitHead": "aade0109d5b7857eddf170afcbfb0e1f400c239e"
 }
