@@ -1,0 +1,38 @@
+# This workflow will do a clean install of node dependencies, build the source code, and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+# If adding a step that requires SECRETS or GITHUB WRITE PERMISSIONS be sure to have dependabot skip it.
+# > if: ${{ github.actor != 'dependabot[bot]' }}
+
+name: PR Build
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  # This job will:
+  #   * deploy a draft every time there is a pull request created or synchronized that is not on master branch
+  #   * comment on that pull request with the deploy URL
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set Node Version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Build Docs
+        run: yarn build:preview
