@@ -5,7 +5,7 @@ name: Publish Release
 
 on:
   push:
-    branches: [master]
+    branches: [never]
 
 jobs:
   deploy:
@@ -37,14 +37,8 @@ jobs:
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_USER }}
 
-      - name: Get recommended bump type
-        run: BUMP_TYPE="$(node_modules/.bin/conventional-recommended-bump -p angular)"
+      - name: Publish
+        run: yarn release
 
-      - name: log bump type
-        run: echo $BUMP_TYPE
-
-      # - name: Publish
-      #   run: yarn release
-
-      # - name: Build Docs and Deploy
-      #   run: yarn deploy
+      - name: Build Docs and Deploy
+        run: yarn deploy
