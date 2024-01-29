@@ -36,3 +36,9 @@ jobs:
 
       - name: Build Docs
         run: yarn build:preview
+
+      - name: Get recommended bump type
+        run: BUMP_TYPE="$(node_modules/.bin/conventional-recommended-bump -p angular)"
+
+      - name: log bump type
+        run: echo $BUMP_TYPE

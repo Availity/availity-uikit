@@ -18,7 +18,9 @@
     "deploy": "yarn workspace @availity/availity-uikit-docs deploy",
     "test": "echo \"Error: no test specified\" && exit 0",
     "release": "sh ./scripts/release.sh",
-    "publish": "lerna publish",
+    "publish:uikit": "yarn workspace availity-uikit publish",
+    "bump-type": "conventional-recommended-bump -p angular",
+    "update-changelog": "conventional-changelog -i CHANGELOG.md -o CHANGELOG.md -p angular",
     "remove-locks": "find . -type f -name 'package-lock.json' -delete",
     "nuke": "yarn remove-locks && yarn clean && rm -rf ./node_modules",
     "update-fonts": "node scripts/updateFont.js"

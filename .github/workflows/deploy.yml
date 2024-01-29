@@ -37,8 +37,14 @@ jobs:
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_USER }}
 
-      - name: Publish
-        run: yarn release
+      - name: Get recommended bump type
+        run: BUMP_TYPE="$(node_modules/.bin/conventional-recommended-bump -p angular)"
 
-      - name: Build Docs and Deploy
-        run: yarn deploy
+      - name: log bump type
+        run: echo $BUMP_TYPE
+
+      # - name: Publish
+      #   run: yarn release
+
+      # - name: Build Docs and Deploy
+      #   run: yarn deploy
