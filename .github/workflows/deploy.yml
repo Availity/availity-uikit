@@ -5,7 +5,7 @@ name: Publish Release
 
 on:
   push:
-    branches: [master]
+    branches: [never]
 
 jobs:
   deploy:

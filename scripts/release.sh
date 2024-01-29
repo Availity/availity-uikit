@@ -23,4 +23,4 @@ git add .
 git commit -m "chore: release v${VERSION} [skip ci]"
 
 echo "==> Bumping lerna version"
-yarn publish --repo-version ${VERSION} --yes --no-private
+node_modules/.bin/lerna publish --repo-version ${VERSION} --yes

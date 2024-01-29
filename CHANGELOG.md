@@ -1,3 +1,7 @@
+## [4.6.1](https://github.com/Availity/availity-uikit/compare/v4.6.0...v4.6.1) (2024-01-26)
+
+
+
 # [4.6.0](https://github.com/Availity/availity-uikit/compare/v4.5.1...v4.6.0) (2024-01-26)
 
 
