@@ -1,3 +1,12 @@
+## [4.6.2](https://github.com/Availity/availity-uikit/compare/v4.6.0...v4.6.2) (2024-01-29)
+
+
+### Bug Fixes
+
+* **uikit:** change import to local ([b423ecc](https://github.com/Availity/availity-uikit/commit/b423ecc8de6234961b53467d27c8b75200410f97))
+
+
+
 ## [4.6.1](https://github.com/Availity/availity-uikit/compare/v4.6.0...v4.6.1) (2024-01-26)
 
 
