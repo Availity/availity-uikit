@@ -312,8 +312,19 @@ button {
 // should be doing this automatically, but seems to currently be
 // confused and applies its very visible two-tone outline anyway.
 
-button:focus:not(:focus-visible) {
-  outline: 0;
+// button:focus:not(:focus-visible) {
+//   outline: 0;
+// }
+
+// The commented out section above is the 'new' fix. It conflicts
+// with MUI styling so we are using the old fix instead.
+// Work around a Firefox/IE bug where the transparent `button` background
+// results in a loss of the default `button` focus styles.
+//
+// Credit: https://github.com/suitcss/base/
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 input,
