@@ -21,9 +21,6 @@
     "scss/",
     "README.md"
   ],
-  "scripts": {
-    "publish": "yarn publish --tolerate-republish --access public"
-  },
   "contributors": [
     {
       "name": "Robert McGuinness",
