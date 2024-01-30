@@ -1,3 +1,12 @@
+## [4.6.3](https://github.com/Availity/availity-uikit/compare/v4.6.2...v4.6.3) (2024-01-30)
+
+
+### Bug Fixes
+
+* **uikit:** revert btn focus fix ([fed6758](https://github.com/Availity/availity-uikit/commit/fed67580bf6eee7b178c0be9250388704a18372e))
+
+
+
 ## [4.6.2](https://github.com/Availity/availity-uikit/compare/v4.6.0...v4.6.2) (2024-01-29)
 
 
