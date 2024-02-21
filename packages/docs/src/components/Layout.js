@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import{ Helmet } from 'react-helmet';
 import 'jquery';
 import 'popper.js';
 import 'bootstrap/dist/js/bootstrap';
@@ -33,6 +33,7 @@ const TemplateWrapper = ({ children, ...props }) => (
     render={(data) => (
       <>
         <Helmet title="Availity UIKit" meta={meta}>
+          {/* eslint-disable react/no-unknown-property */}
           <html lang="en" amp />
         </Helmet>
 

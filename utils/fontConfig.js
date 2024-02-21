@@ -33,6 +33,7 @@ const icons = glyphs
     };
   });
 
+/* eslint-disable unicorn/consistent-destructuring */
 module.exports = {
   name,
   prefix: config.css_prefix_text.replace(/-$/, ''),

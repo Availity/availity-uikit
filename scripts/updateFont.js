@@ -1,3 +1,6 @@
+/* eslint-disable unicorn/no-array-push-push */
+/* eslint-disable unicorn/no-array-for-each */
+
 const fs = require('fs');
 const path = require('path');
 
