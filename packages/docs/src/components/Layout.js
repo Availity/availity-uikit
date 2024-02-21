@@ -33,6 +33,7 @@ const TemplateWrapper = ({ children, ...props }) => (
     render={(data) => (
       <>
         <Helmet title="Availity UIKit" meta={meta}>
+          {/* eslint-disable react/no-unknown-property */}
           <html lang="en" amp />
         </Helmet>
 
