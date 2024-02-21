@@ -38,7 +38,7 @@
     "conventional-changelog": "^3.0.6",
     "conventional-changelog-cli": "^2.0.12",
     "conventional-recommended-bump": "^6.0.11",
-    "eslint-config-availity": "^7.0.237",
+    "eslint-config-availity": "^9.0.0",
     "husky": "^4.3.5",
     "jest": "^26.6.3",
     "lerna": "^3.13.1",
