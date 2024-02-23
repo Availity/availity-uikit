@@ -1,3 +1,19 @@
+# [4.7.0](https://github.com/Availity/availity-uikit/compare/v4.5.1...v4.7.0) (2024-02-23)
+
+
+### Bug Fixes
+
+* **uikit:** change import to local ([b423ecc](https://github.com/Availity/availity-uikit/commit/b423ecc8de6234961b53467d27c8b75200410f97))
+* **uikit:** revert btn focus fix ([fed6758](https://github.com/Availity/availity-uikit/commit/fed67580bf6eee7b178c0be9250388704a18372e))
+
+
+### Features
+
+* move bootstrap inside uikit and remove dependency ([158e311](https://github.com/Availity/availity-uikit/commit/158e311861d68fde5ca03adf333db012751ef617))
+* use v4.6.2 of bootstrap ([ee2c8d5](https://github.com/Availity/availity-uikit/commit/ee2c8d58aa1cba31fd1e3793fbb19e25cca001c7))
+
+
+
 ## [4.6.3](https://github.com/Availity/availity-uikit/compare/v4.6.2...v4.6.3) (2024-01-30)
 
 
