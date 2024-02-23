@@ -2,7 +2,7 @@
   "name": "@availity/availity-uikit-docs",
   "private": true,
   "description": "Documentation for availity-uikit",
-  "version": "4.6.3",
+  "version": "4.7.0",
   "author": "Robert McGuinness <rob.mcguiness@availity.com>",
   "dependencies": {
     "availity-uikit": "^4.6.3",
