@@ -1,0 +1,52 @@
+/*
+	object-assign
+	(c) Sindre Sorhus
+	@license MIT
+	*/
+
+/*!
+	 * The buffer module from node.js, for the browser.
+	 *
+	 * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+	 * @license  MIT
+	 */
+
+/*!
+	 * onDomReady.js 1.4.0 (c) 2013 Tubal Martin - MIT license
+	 *
+	 * Specially modified to work with Holder.js
+	 */
+
+/*!
+
+Holder - client side image placeholders
+Version 2.9.9+jl7z
+© 2021 Ivan Malopinsky - https://imsky.co
+
+Site:     http://holderjs.com
+Issues:   https://github.com/imsky/holder/issues
+License:  MIT
+
+*/
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Lea Verou <https://lea.verou.me>
+ * @namespace
+ * @public
+ */
+
+// @license http://opensource.org/licenses/MIT
