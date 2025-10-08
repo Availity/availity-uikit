@@ -9,21 +9,22 @@ on:
 
 jobs:
   deploy:
-    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    if: "${{!contains(github.event.head_commit.message, 'skip ci') && !contains(github.event.head_commit.message, 'Release: Version Updates')}}"
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
         with:
-          token: ${{ secrets.BOT_TOKEN }}
           fetch-depth: 0
           ref: 'master'
 
       - name: Set Node Version
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install Dependencies
         run: yarn install --immutable
